@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz - Les Félins (Chats)</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo">🦁 Quiz Univers Animal</div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="quiz-education-canine.html">Education Canine</a></li>
+                <li><a href="quiz-les-chats.html" class="active">Les Chats</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="quiz-container">
+            <div class="quiz-header">
+                <h1>🐱 Les Félins (Chats)</h1>
+                <p>Questions basées sur les meilleures pratiques et sources vérifiées</p>
+            </div>
+
+            <!-- Quiz Section -->
+            <div id="quiz-container">
+                <div class="progress-bar">
+                    <div id="progress-fill" class="progress-fill"></div>
+                </div>
+                <p style="text-align: center; margin-bottom: 1rem; color: #6b7280;" id="progress-text"></p>
+
+                <div class="question-card" id="question-container">
+                    <!-- Questions will be rendered here -->
+                </div>
+
+                <div class="quiz-navigation">
+                    <button id="prev-btn" class="btn btn-secondary" disabled>← Précédent</button>
+                    <button id="next-btn" class="btn btn-primary" disabled>Suivant →</button>
+                </div>
+            </div>
+
+            <!-- Results Section -->
+            <div id="results-container" class="results-container">
+                <h2>Résultats de votre Quiz</h2>
+                <div class="results-score" id="results-score">0/10</div>
+                <p class="results-message" id="results-message"></p>
+                <div class="results-details" id="results-details"></div>
+                <button id="restart-btn" class="btn btn-primary">Recommencer le Quiz</button>
+                <a href="index.html" class="btn btn-secondary" style="margin-left: 1rem;">Retour à l'Accueil</a>
+            </div>
+        </div>
+
+        <!-- Info Section -->
+        <section class="info" style="margin-top: 3rem;">
+            <h2>À propos de ce Quiz</h2>
+            <div class="info-content">
+                <div>
+                    <p>Ce quiz sur les chats vous propose 10 questions basées sur des sources fiables et les meilleures pratiques en félinologie.</p>
+                </div>
+                <div>
+                    <ul>
+                        <li>📌 Questions vérifiées par des experts</li>
+                        <li>📚 Sources citées pour chaque réponse</li>
+                        <li>🎓 Format adapté et pédagogique</li>
+                        <li>✅ Feedback détaillé à la fin</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Quiz Univers Animal - Tous droits réservés | Site éducatif</p>
+    </footer>
+
+    <script src="questions.js"></script>
+    <script>
+        // Override quizData for this page
+        document.addEventListener('DOMContentLoaded', () => {
+            const quizData = quizzesData.lesChats;
+            quizManager = new QuizManager(quizData);
+            quizManager.init();
+
+            // Setup navigation buttons
+            document.getElementById('next-btn').addEventListener('click', () => quizManager.nextQuestion());
+            document.getElementById('prev-btn').addEventListener('click', () => quizManager.prevQuestion());
+            document.getElementById('restart-btn').addEventListener('click', () => quizManager.restartQuiz());
+        });
+    </script>
+    <script src="script.js"></script>
+    <script src="animations.js"></script>
+</body>
+</html>
