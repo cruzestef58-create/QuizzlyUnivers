@@ -20,13 +20,40 @@
 
     <div class="container">
         <div class="quiz-container">
-            <div class="quiz-header">
-                <h1>🐕 L'Éducation Canine</h1>
-                <p>Questions basées sur les meilleures pratiques et sources vérifiées</p>
+            <!-- Difficulté Selection -->
+            <div id="difficulty-selection" class="difficulty-selection">
+                <div class="difficulty-header">
+                    <h2>Choisissez votre niveau de difficulté</h2>
+                    <p>Sélectionnez le niveau qui vous convient le mieux</p>
+                </div>
+                <div class="difficulty-grid">
+                    <div class="difficulty-card" onclick="startQuiz('facile')">
+                        <div class="difficulty-level">⭐</div>
+                        <h3>Facile</h3>
+                        <p>10 questions de base pour débuter</p>
+                        <div class="difficulty-badge">Débutant</div>
+                    </div>
+                    <div class="difficulty-card active" onclick="startQuiz('moyen')">
+                        <div class="difficulty-level">⭐⭐</div>
+                        <h3>Moyen</h3>
+                        <p>10 questions intermédiaires</p>
+                        <div class="difficulty-badge">Intermédiaire</div>
+                    </div>
+                    <div class="difficulty-card" onclick="startQuiz('difficile')">
+                        <div class="difficulty-level">⭐⭐⭐</div>
+                        <h3>Difficile</h3>
+                        <p>10 questions avancées</p>
+                        <div class="difficulty-badge">Avancé</div>
+                    </div>
+                </div>
             </div>
 
             <!-- Quiz Section -->
-            <div id="quiz-container">
+            <div id="quiz-container" style="display: none;">
+                <div class="quiz-header">
+                    <h1>🐕 L'Éducation Canine</h1>
+                    <p>Questions basées sur les meilleures pratiques et sources vérifiées</p>
+                </div>
                 <div class="progress-bar">
                     <div id="progress-fill" class="progress-fill"></div>
                 </div>

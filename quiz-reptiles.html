@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz - Les Félins (Chats)</title>
+    <title>Quiz - Les Reptiles</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -13,7 +13,8 @@
             <ul class="nav-menu">
                 <li><a href="index.html">Accueil</a></li>
                 <li><a href="quiz-education-canine.html">Education Canine</a></li>
-                <li><a href="quiz-les-chats.html" class="active">Les Chats</a></li>
+                <li><a href="quiz-les-chats.html">Les Chats</a></li>
+                <li><a href="quiz-reptiles.html" class="active">Reptiles</a></li>
             </ul>
         </div>
     </nav>
@@ -27,19 +28,19 @@
                     <p>Sélectionnez le niveau qui vous convient le mieux</p>
                 </div>
                 <div class="difficulty-grid">
-                    <div class="difficulty-card" onclick="startQuizChats('facile')">
+                    <div class="difficulty-card" onclick="startQuizReptiles('facile')">
                         <div class="difficulty-level">⭐</div>
                         <h3>Facile</h3>
                         <p>10 questions de base pour débuter</p>
                         <div class="difficulty-badge">Débutant</div>
                     </div>
-                    <div class="difficulty-card active" onclick="startQuizChats('moyen')">
+                    <div class="difficulty-card active" onclick="startQuizReptiles('moyen')">
                         <div class="difficulty-level">⭐⭐</div>
                         <h3>Moyen</h3>
                         <p>10 questions intermédiaires</p>
                         <div class="difficulty-badge">Intermédiaire</div>
                     </div>
-                    <div class="difficulty-card" onclick="startQuizChats('difficile')">
+                    <div class="difficulty-card" onclick="startQuizReptiles('difficile')">
                         <div class="difficulty-level">⭐⭐⭐</div>
                         <h3>Difficile</h3>
                         <p>10 questions avancées</p>
@@ -51,7 +52,7 @@
             <!-- Quiz Section -->
             <div id="quiz-container" style="display: none;">
                 <div class="quiz-header">
-                    <h1>🐱 Les Félins (Chats)</h1>
+                    <h1>🐍 Les Reptiles</h1>
                     <p>Questions basées sur les meilleures pratiques et sources vérifiées</p>
                 </div>
                 <div class="progress-bar">
@@ -85,7 +86,7 @@
             <h2>À propos de ce Quiz</h2>
             <div class="info-content">
                 <div>
-                    <p>Ce quiz sur les chats vous propose 10 questions basées sur des sources fiables et les meilleures pratiques en félinologie.</p>
+                    <p>Ce quiz sur les reptiles vous propose 10 questions basées sur des sources fiables et les meilleures pratiques en herpétologie.</p>
                 </div>
                 <div>
                     <ul>

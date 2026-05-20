@@ -20,16 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Theme card hover effects
-    const themeCards = document.querySelectorAll('.theme-card:not(.disabled)');
-    themeCards.forEach(card => {
-        card.addEventListener('mouseenter', function() {
-            this.style.background = 'linear-gradient(135deg, rgba(255, 255, 255, 1), rgba(248, 249, 255, 1))';
-        });
-        card.addEventListener('mouseleave', function() {
-            this.style.background = 'rgba(255, 255, 255, 0.95)';
-        });
-    });
+    // Theme card hover effects - removed inline style manipulation to avoid conflicts with CSS transitions
 
     // Add glow effect on scroll
     window.addEventListener('scroll', () => {
@@ -103,41 +94,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // Optional: uncomment to enable particles
     // createParticles();
 
-    // Text glitch effect on hero
-    const heroText = document.querySelector('.hero h1');
-    if (heroText) {
-        const originalText = heroText.textContent;
-        let glitchActive = false;
-
-        const glitchEffect = () => {
-            if (glitchActive) return;
-            glitchActive = true;
-            
-            const chars = '!@#$%^&*()_+-=[]{}|;:,.<>?';
-            let iteration = 0;
-            const maxIterations = 10;
-            
-            const interval = setInterval(() => {
-                heroText.textContent = originalText
-                    .split('')
-                    .map((char, index) => {
-                        if (index < iteration) {
-                            return originalText[index];
-                        }
-                        return chars[Math.floor(Math.random() * chars.length)];
-                    })
-                    .join('');
-                
-                iteration++;
-                
-                if (iteration >= maxIterations) {
-                    clearInterval(interval);
-                    heroText.textContent = originalText;
-                    glitchActive = false;
-                }
-            }, 30);
-        };
-
-        heroText.addEventListener('mouseenter', glitchEffect);
-    }
+    // Text glitch effect disabled - causing issues on hover
+    // Original glitch effect removed
 });

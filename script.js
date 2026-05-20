@@ -1,7 +1,12 @@
 // Quiz Controller
 class QuizManager {
-    constructor(quizData) {
-        this.quizData = quizData;
+    constructor(quizData, difficulty = 'moyen') {
+        this.allQuizData = quizData;
+        this.difficulty = difficulty;
+        this.quizData = {
+            ...quizData,
+            questions: quizData[difficulty] || quizData.moyen
+        };
         this.currentQuestion = 0;
         this.score = 0;
         this.selectedAnswers = [];
@@ -214,15 +219,143 @@ class QuizManager {
     }
 }
 
+// Function to start quiz with difficulty
+function startQuiz(difficulty) {
+    const urlParams = new URLSearchParams(window.location.search);
+    const theme = urlParams.get('theme') || 'educationCanine';
+    
+    document.getElementById('difficulty-selection').style.display = 'none';
+    document.getElementById('quiz-container').style.display = 'block';
+    
+    const quizData = quizzesData[theme] || quizzesData.educationCanine;
+    quizManager = new QuizManager(quizData, difficulty);
+    quizManager.init();
+
+    // Setup navigation buttons - attach listeners once
+    const nextBtn = document.getElementById('next-btn');
+    const prevBtn = document.getElementById('prev-btn');
+    const restartBtn = document.getElementById('restart-btn');
+
+    // Remove old listeners and add new ones
+    nextBtn.onclick = () => quizManager.nextQuestion();
+    prevBtn.onclick = () => quizManager.prevQuestion();
+    restartBtn.onclick = () => {
+        quizManager.restartQuiz();
+        document.getElementById('difficulty-selection').style.display = 'block';
+        document.getElementById('quiz-container').style.display = 'none';
+    };
+}
+
+// Function to start quiz with difficulty for cats
+function startQuizChats(difficulty) {
+    document.getElementById('difficulty-selection').style.display = 'none';
+    document.getElementById('quiz-container').style.display = 'block';
+    
+    const quizData = quizzesData.lesChats;
+    quizManager = new QuizManager(quizData, difficulty);
+    quizManager.init();
+
+    // Setup navigation buttons - attach listeners once
+    const nextBtn = document.getElementById('next-btn');
+    const prevBtn = document.getElementById('prev-btn');
+    const restartBtn = document.getElementById('restart-btn');
+
+    // Remove old listeners and add new ones
+    nextBtn.onclick = () => quizManager.nextQuestion();
+    prevBtn.onclick = () => quizManager.prevQuestion();
+    restartBtn.onclick = () => {
+        quizManager.restartQuiz();
+        document.getElementById('difficulty-selection').style.display = 'block';
+        document.getElementById('quiz-container').style.display = 'none';
+    };
+}
+
+// Function to start quiz with difficulty for ornithology
+function startQuizOrnithologie(difficulty) {
+    document.getElementById('difficulty-selection').style.display = 'none';
+    document.getElementById('quiz-container').style.display = 'block';
+    
+    const quizData = quizzesData.ornithologie;
+    quizManager = new QuizManager(quizData, difficulty);
+    quizManager.init();
+
+    const nextBtn = document.getElementById('next-btn');
+    const prevBtn = document.getElementById('prev-btn');
+    const restartBtn = document.getElementById('restart-btn');
+
+    nextBtn.onclick = () => quizManager.nextQuestion();
+    prevBtn.onclick = () => quizManager.prevQuestion();
+    restartBtn.onclick = () => {
+        quizManager.restartQuiz();
+        document.getElementById('difficulty-selection').style.display = 'block';
+        document.getElementById('quiz-container').style.display = 'none';
+    };
+}
+
+// Function to start quiz with difficulty for reptiles
+function startQuizReptiles(difficulty) {
+    document.getElementById('difficulty-selection').style.display = 'none';
+    document.getElementById('quiz-container').style.display = 'block';
+    
+    const quizData = quizzesData.reptiles;
+    quizManager = new QuizManager(quizData, difficulty);
+    quizManager.init();
+
+    const nextBtn = document.getElementById('next-btn');
+    const prevBtn = document.getElementById('prev-btn');
+    const restartBtn = document.getElementById('restart-btn');
+
+    nextBtn.onclick = () => quizManager.nextQuestion();
+    prevBtn.onclick = () => quizManager.prevQuestion();
+    restartBtn.onclick = () => {
+        quizManager.restartQuiz();
+        document.getElementById('difficulty-selection').style.display = 'block';
+        document.getElementById('quiz-container').style.display = 'none';
+    };
+}
+
+// Function to start quiz with difficulty for marine mammals
+function startQuizMammiferesMarin(difficulty) {
+    document.getElementById('difficulty-selection').style.display = 'none';
+    document.getElementById('quiz-container').style.display = 'block';
+    
+    const quizData = quizzesData.mammiferesMarin;
+    quizManager = new QuizManager(quizData, difficulty);
+    quizManager.init();
+
+    const nextBtn = document.getElementById('next-btn');
+    const prevBtn = document.getElementById('prev-btn');
+    const restartBtn = document.getElementById('restart-btn');
+
+    nextBtn.onclick = () => quizManager.nextQuestion();
+    prevBtn.onclick = () => quizManager.prevQuestion();
+    restartBtn.onclick = () => {
+        quizManager.restartQuiz();
+        document.getElementById('difficulty-selection').style.display = 'block';
+        document.getElementById('quiz-container').style.display = 'none';
+    };
+}
+
 // Initialize quiz when page loads
 let quizManager;
 document.addEventListener('DOMContentLoaded', () => {
-    const quizData = quizzesData.educationCanine;
-    quizManager = new QuizManager(quizData);
-    quizManager.init();
+    // Show difficulty selection
+    const difficultySelection = document.getElementById('difficulty-selection');
+    if (difficultySelection) {
+        difficultySelection.style.display = 'block';
+        document.getElementById('quiz-container').style.display = 'none';
+    } else {
+        // If no difficulty selection (for backward compatibility)
+        const urlParams = new URLSearchParams(window.location.search);
+        const difficulty = urlParams.get('difficulty') || 'moyen';
+        
+        const quizData = quizzesData.educationCanine;
+        quizManager = new QuizManager(quizData, difficulty);
+        quizManager.init();
 
-    // Setup navigation buttons
-    document.getElementById('next-btn').addEventListener('click', () => quizManager.nextQuestion());
-    document.getElementById('prev-btn').addEventListener('click', () => quizManager.prevQuestion());
-    document.getElementById('restart-btn').addEventListener('click', () => quizManager.restartQuiz());
+        // Setup navigation buttons
+        document.getElementById('next-btn').addEventListener('click', () => quizManager.nextQuestion());
+        document.getElementById('prev-btn').addEventListener('click', () => quizManager.prevQuestion());
+        document.getElementById('restart-btn').addEventListener('click', () => quizManager.restartQuiz());
+    }
 });
