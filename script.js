@@ -3,16 +3,38 @@ class QuizManager {
     constructor(quizData, difficulty = 'moyen') {
         this.allQuizData = quizData;
         this.difficulty = difficulty;
+        
+        // Get all questions for the selected difficulty
+        const allQuestions = quizData[difficulty] || quizData.moyen;
+        
+        // Shuffle and select only 10 random questions
         this.quizData = {
             ...quizData,
-            questions: quizData[difficulty] || quizData.moyen
+            questions: this.getRandomQuestions(allQuestions, 10)
         };
+        
         this.currentQuestion = 0;
         this.score = 0;
         this.selectedAnswers = [];
         this.quizStarted = false;
         this.quizFinished = false;
         this.answered = false;
+    }
+
+    // Shuffle array using Fisher-Yates algorithm
+    shuffle(array) {
+        const shuffled = [...array];
+        for (let i = shuffled.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+        }
+        return shuffled;
+    }
+
+    // Get 10 random questions from the pool
+    getRandomQuestions(allQuestions, count = 10) {
+        const shuffled = this.shuffle(allQuestions);
+        return shuffled.slice(0, Math.min(count, shuffled.length));
     }
 
     init() {
@@ -334,6 +356,54 @@ function startQuizMammiferesMarin(difficulty) {
         document.getElementById('difficulty-selection').style.display = 'block';
         document.getElementById('quiz-container').style.display = 'none';
     };
+}
+
+// Function to start quiz with difficulty for lion
+function startQuizLion(difficulty) {
+    document.getElementById('difficulty-selection').style.display = 'none';
+    document.getElementById('quiz-container').style.display = 'block';
+    
+    const quizData = quizzesData.letion;
+    quizManager = new QuizManager(quizData, difficulty);
+    quizManager.init();
+
+    const nextBtn = document.getElementById('next-button');
+    const prevBtn = document.getElementById('prev-button');
+
+    nextBtn.onclick = () => quizManager.nextQuestion();
+    prevBtn.onclick = () => quizManager.prevQuestion();
+}
+
+// Function to start quiz with difficulty for aigle royal
+function startQuizAigleRoyal(difficulty) {
+    document.getElementById('difficulty-selection').style.display = 'none';
+    document.getElementById('quiz-container').style.display = 'block';
+    
+    const quizData = quizzesData.laigleroyal;
+    quizManager = new QuizManager(quizData, difficulty);
+    quizManager.init();
+
+    const nextBtn = document.getElementById('next-button');
+    const prevBtn = document.getElementById('prev-button');
+
+    nextBtn.onclick = () => quizManager.nextQuestion();
+    prevBtn.onclick = () => quizManager.prevQuestion();
+}
+
+// Function to start quiz with difficulty for tigre
+function startQuizTigre(difficulty) {
+    document.getElementById('difficulty-selection').style.display = 'none';
+    document.getElementById('quiz-container').style.display = 'block';
+    
+    const quizData = quizzesData.letigre;
+    quizManager = new QuizManager(quizData, difficulty);
+    quizManager.init();
+
+    const nextBtn = document.getElementById('next-button');
+    const prevBtn = document.getElementById('prev-button');
+
+    nextBtn.onclick = () => quizManager.nextQuestion();
+    prevBtn.onclick = () => quizManager.prevQuestion();
 }
 
 // Initialize quiz when page loads

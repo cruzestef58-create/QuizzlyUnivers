@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz - Le Tigre</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo">🦁 Quiz Univers Animal</div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="quiz-education-canine.html">Education Canine</a></li>
+                <li><a href="quiz-les-chats.html">Les Chats</a></li>
+                <li><a href="quiz-ornithologie.html">Ornithologie</a></li>
+                <li><a href="quiz-reptiles.html">Reptiles</a></li>
+                <li><a href="quiz-mammiferes-marins.html">Mammifères Marins</a></li>
+                <li><a href="quiz-le-lion.html">Le Lion</a></li>
+                <li><a href="quiz-aigle-royal.html">Aigle Royal</a></li>
+                <li><a href="quiz-le-tigre.html" class="active">Le Tigre</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="quiz-container">
+            <!-- Difficulté Selection -->
+            <div id="difficulty-selection" class="difficulty-selection">
+                <div class="difficulty-header">
+                    <h2>Choisissez votre niveau de difficulté</h2>
+                    <p>Sélectionnez le niveau qui vous convient le mieux</p>
+                </div>
+                <div class="difficulty-grid">
+                    <div class="difficulty-card" onclick="startQuizTigre('facile')">
+                        <div class="difficulty-level">⭐</div>
+                        <h3>Facile</h3>
+                        <p>10 questions de base pour débuter</p>
+                        <div class="difficulty-badge">Débutant</div>
+                    </div>
+                    <div class="difficulty-card active" onclick="startQuizTigre('moyen')">
+                        <div class="difficulty-level">⭐⭐</div>
+                        <h3>Moyen</h3>
+                        <p>10 questions intermédiaires</p>
+                        <div class="difficulty-badge">Intermédiaire</div>
+                    </div>
+                    <div class="difficulty-card" onclick="startQuizTigre('difficile')">
+                        <div class="difficulty-level">⭐⭐⭐</div>
+                        <h3>Difficile</h3>
+                        <p>10 questions avancées</p>
+                        <div class="difficulty-badge">Avancé</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quiz Section -->
+            <div id="quiz-container" style="display: none;">
+                <div class="quiz-header">
+                    <h1>🐅 Le Tigre</h1>
+                    <p>Questions basées sur les meilleures pratiques et sources vérifiées</p>
+                </div>
+                <div class="progress-bar">
+                    <div id="progress-fill" class="progress-fill"></div>
+                </div>
+                <p style="text-align: center; margin-bottom: 1rem; color: #6b7280;" id="progress-text"></p>
+
+                <div id="question-container" class="question-container">
+                    <!-- Les questions seront générées ici par JavaScript -->
+                </div>
+
+                <div class="button-container">
+                    <button id="prev-button" class="btn btn-secondary" style="display: none;">← Précédente</button>
+                    <button id="next-button" class="btn btn-primary">Suivante →</button>
+                </div>
+            </div>
+
+            <!-- Résultats -->
+            <div id="results-container" class="results-container" style="display: none;">
+                <div class="results-header">
+                    <h2>🎉 Quiz Terminé!</h2>
+                    <p id="results-message"></p>
+                </div>
+
+                <div class="results-score">
+                    <div class="score-circle">
+                        <span id="score-percentage">0%</span>
+                    </div>
+                    <div class="score-details">
+                        <p><strong id="score-text">0/10</strong> bonnes réponses</p>
+                        <p id="performance-message"></p>
+                    </div>
+                </div>
+
+                <div id="review-section" class="review-section">
+                    <!-- Les réponses seront affichées ici -->
+                </div>
+
+                <div class="button-container">
+                    <button class="btn btn-primary" onclick="location.reload()">Recommencer</button>
+                    <button class="btn btn-secondary" onclick="location.href='index.html'">Retour à l'accueil</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Quiz Univers Animal - Tous droits réservés</p>
+    </footer>
+
+    <script src="questions.js"></script>
+    <script src="script.js"></script>
+    <script>
+        function startQuizTigre(difficulty) {
+            const themeData = quizzesData['letigre'];
+            if (!themeData) {
+                console.error('Theme data not found for letigre');
+                return;
+            }
+            new QuizManager(themeData, difficulty);
+        }
+    </script>
+</body>
+</html>
