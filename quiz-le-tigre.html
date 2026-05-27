@@ -11,15 +11,9 @@
         <div class="navbar-container">
             <div class="logo">🦁 Quiz Univers Animal</div>
             <ul class="nav-menu">
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="quiz-education-canine.html">Education Canine</a></li>
-                <li><a href="quiz-les-chats.html">Les Chats</a></li>
-                <li><a href="quiz-ornithologie.html">Ornithologie</a></li>
-                <li><a href="quiz-reptiles.html">Reptiles</a></li>
-                <li><a href="quiz-mammiferes-marins.html">Mammifères Marins</a></li>
-                <li><a href="quiz-le-lion.html">Le Lion</a></li>
-                <li><a href="quiz-aigle-royal.html">Aigle Royal</a></li>
-                <li><a href="quiz-le-tigre.html" class="active">Le Tigre</a></li>
+                <li><a href="index.html" class="active">Accueil</a></li>
+                <li><a href="javascript:void(0)" class="suggestion-button" onclick="suggestNewTheme()">Proposer un thème</a></li>
+            </ul>
             </ul>
         </div>
     </nav>
@@ -110,15 +104,5 @@
 
     <script src="questions.js"></script>
     <script src="script.js"></script>
-    <script>
-        function startQuizTigre(difficulty) {
-            const themeData = quizzesData['letigre'];
-            if (!themeData) {
-                console.error('Theme data not found for letigre');
-                return;
-            }
-            new QuizManager(themeData, difficulty);
-        }
-    </script>
 </body>
 </html>

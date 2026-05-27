@@ -7,7 +7,7 @@ class QuizManager {
         // Get all questions for the selected difficulty
         const allQuestions = quizData[difficulty] || quizData.moyen;
         
-        // Shuffle and select only 10 random questions
+        // Shuffle and select 10 random questions from the pool of 20+
         this.quizData = {
             ...quizData,
             questions: this.getRandomQuestions(allQuestions, 10)
@@ -57,23 +57,30 @@ class QuizManager {
         progressBar.style.width = progress + '%';
         progressText.textContent = `Question ${this.currentQuestion + 1}/${this.quizData.questions.length}`;
 
-        // Render question
+        // Render question with randomized answer order
+        const optionsWithIndex = question.options.map((option, index) => ({ option, index }));
+        const shuffledOptions = this.shuffle(optionsWithIndex);
+
         let html = `
             <div class="question-number">Question ${this.currentQuestion + 1}</div>
             <div class="question-text">${question.question}</div>
             <div class="options">
         `;
 
-        question.options.forEach((option, index) => {
+        shuffledOptions.forEach((item) => {
             html += `
-                <label class="option">
-                    <input type="radio" name="answer" value="${index}">
-                    ${option}
+                <label class="option" data-index="${item.index}">
+                    <input type="radio" name="answer" value="${item.index}">
+                    <span>${item.option}</span>
                 </label>
             `;
         });
 
         html += `
+            </div>
+            <div class="explanation" id="question-explanation">
+                <div class="explanation-title">💡 Explication :</div>
+                <div class="explanation-text">${question.explanation || 'Pas d\'explication disponible.'}</div>
             </div>
             <div class="source" id="question-source">
                 <div class="source-title">📚 Source :</div>
@@ -123,15 +130,22 @@ class QuizManager {
     showFeedback(isCorrect, question) {
         const options = document.querySelectorAll('.option');
         
-        options.forEach((option, index) => {
-            if (index === question.correct) {
+        options.forEach((option) => {
+            const optionIndex = parseInt(option.dataset.index, 10);
+            if (optionIndex === question.correct) {
                 option.classList.add('correct');
             }
-            if (index === this.selectedAnswers[this.currentQuestion] && !isCorrect) {
+            if (optionIndex === this.selectedAnswers[this.currentQuestion] && !isCorrect) {
                 option.classList.add('incorrect');
             }
             option.classList.add('disabled');
         });
+
+        // Show explanation
+        const explanationElement = document.getElementById('question-explanation');
+        if (explanationElement) {
+            explanationElement.classList.add('show');
+        }
 
         // Show source
         const sourceElement = document.getElementById('question-source');
@@ -141,24 +155,34 @@ class QuizManager {
     }
 
     updateNavigationButtons() {
-        const prevBtn = document.getElementById('prev-btn');
-        const nextBtn = document.getElementById('next-btn');
+        const prevBtn = document.getElementById('prev-button');
+        const nextBtn = document.getElementById('next-button');
 
-        prevBtn.disabled = this.currentQuestion === 0;
-        
-        if (this.answered) {
-            if (this.currentQuestion === this.quizData.questions.length - 1) {
-                nextBtn.textContent = 'Voir les résultats';
+        if (prevBtn) {
+            if (this.currentQuestion === 0) {
+                prevBtn.style.display = 'none';
+                prevBtn.disabled = true;
             } else {
-                nextBtn.textContent = 'Suivant →';
+                prevBtn.style.display = 'inline-block';
+                prevBtn.disabled = false;
             }
-            nextBtn.disabled = false;
-        } else {
-            nextBtn.disabled = true;
-            if (this.currentQuestion === this.quizData.questions.length - 1) {
-                nextBtn.textContent = 'Terminer';
+        }
+        
+        if (nextBtn) {
+            if (this.answered) {
+                if (this.currentQuestion === this.quizData.questions.length - 1) {
+                    nextBtn.textContent = 'Voir les résultats';
+                } else {
+                    nextBtn.textContent = 'Suivant →';
+                }
+                nextBtn.disabled = false;
             } else {
-                nextBtn.textContent = 'Suivant →';
+                nextBtn.disabled = true;
+                if (this.currentQuestion === this.quizData.questions.length - 1) {
+                    nextBtn.textContent = 'Terminer';
+                } else {
+                    nextBtn.textContent = 'Suivant →';
+                }
             }
         }
     }
@@ -191,11 +215,30 @@ class QuizManager {
         resultsContainer.style.display = 'block';
 
         const percentage = (this.score / this.quizData.questions.length) * 100;
-        const scoreElement = document.getElementById('results-score');
+        
+        // Support both old and new structure
+        const scorePercentageElement = document.getElementById('score-percentage');
+        const scoreTextElement = document.getElementById('score-text');
+        const performanceMessageElement = document.getElementById('performance-message');
+        const reviewSection = document.getElementById('review-section');
         const messageElement = document.getElementById('results-message');
+        
+        // Old structure elements
+        const scoreElement = document.getElementById('results-score');
         const detailsElement = document.getElementById('results-details');
 
-        scoreElement.textContent = `${this.score}/${this.quizData.questions.length}`;
+        // Update new structure if elements exist
+        if (scorePercentageElement) {
+            scorePercentageElement.textContent = `${Math.round(percentage)}%`;
+        }
+        if (scoreTextElement) {
+            scoreTextElement.textContent = `${this.score}/${this.quizData.questions.length}`;
+        }
+
+        // Update old structure if elements exist
+        if (scoreElement) {
+            scoreElement.textContent = `${this.score}/${this.quizData.questions.length}`;
+        }
 
         let message = '';
         if (percentage === 100) {
@@ -210,7 +253,12 @@ class QuizManager {
             message = 'Essayez encore ! Vous progresserez. 💪';
         }
 
-        messageElement.textContent = message;
+        if (messageElement) {
+            messageElement.textContent = message;
+        }
+        if (performanceMessageElement) {
+            performanceMessageElement.textContent = message;
+        }
 
         // Show detailed review
         let detailsHtml = '<h3>Récapitulatif de vos réponses :</h3>';
@@ -227,7 +275,12 @@ class QuizManager {
             `;
         });
 
-        detailsElement.innerHTML = detailsHtml;
+        if (reviewSection) {
+            reviewSection.innerHTML = detailsHtml;
+        }
+        if (detailsElement) {
+            detailsElement.innerHTML = detailsHtml;
+        }
     }
 
     restartQuiz() {
@@ -253,19 +306,27 @@ function startQuiz(difficulty) {
     quizManager = new QuizManager(quizData, difficulty);
     quizManager.init();
 
-    // Setup navigation buttons - attach listeners once
-    const nextBtn = document.getElementById('next-btn');
-    const prevBtn = document.getElementById('prev-btn');
-    const restartBtn = document.getElementById('restart-btn');
+    const nextBtn = document.getElementById('next-button') || document.getElementById('next-btn');
+    const prevBtn = document.getElementById('prev-button') || document.getElementById('prev-btn');
 
-    // Remove old listeners and add new ones
+    if (nextBtn) nextBtn.onclick = () => quizManager.nextQuestion();
+    if (prevBtn) prevBtn.onclick = () => quizManager.prevQuestion();
+}
+
+// Function to start quiz with difficulty for education canine
+function startQuizEducationCanine(difficulty) {
+    document.getElementById('difficulty-selection').style.display = 'none';
+    document.getElementById('quiz-container').style.display = 'block';
+    
+    const quizData = quizzesData.educationCanine;
+    quizManager = new QuizManager(quizData, difficulty);
+    quizManager.init();
+
+    const nextBtn = document.getElementById('next-button');
+    const prevBtn = document.getElementById('prev-button');
+
     nextBtn.onclick = () => quizManager.nextQuestion();
     prevBtn.onclick = () => quizManager.prevQuestion();
-    restartBtn.onclick = () => {
-        quizManager.restartQuiz();
-        document.getElementById('difficulty-selection').style.display = 'block';
-        document.getElementById('quiz-container').style.display = 'none';
-    };
 }
 
 // Function to start quiz with difficulty for cats
@@ -277,19 +338,11 @@ function startQuizChats(difficulty) {
     quizManager = new QuizManager(quizData, difficulty);
     quizManager.init();
 
-    // Setup navigation buttons - attach listeners once
-    const nextBtn = document.getElementById('next-btn');
-    const prevBtn = document.getElementById('prev-btn');
-    const restartBtn = document.getElementById('restart-btn');
+    const nextBtn = document.getElementById('next-button');
+    const prevBtn = document.getElementById('prev-button');
 
-    // Remove old listeners and add new ones
     nextBtn.onclick = () => quizManager.nextQuestion();
     prevBtn.onclick = () => quizManager.prevQuestion();
-    restartBtn.onclick = () => {
-        quizManager.restartQuiz();
-        document.getElementById('difficulty-selection').style.display = 'block';
-        document.getElementById('quiz-container').style.display = 'none';
-    };
 }
 
 // Function to start quiz with difficulty for ornithology
@@ -301,17 +354,11 @@ function startQuizOrnithologie(difficulty) {
     quizManager = new QuizManager(quizData, difficulty);
     quizManager.init();
 
-    const nextBtn = document.getElementById('next-btn');
-    const prevBtn = document.getElementById('prev-btn');
-    const restartBtn = document.getElementById('restart-btn');
+    const nextBtn = document.getElementById('next-button');
+    const prevBtn = document.getElementById('prev-button');
 
     nextBtn.onclick = () => quizManager.nextQuestion();
     prevBtn.onclick = () => quizManager.prevQuestion();
-    restartBtn.onclick = () => {
-        quizManager.restartQuiz();
-        document.getElementById('difficulty-selection').style.display = 'block';
-        document.getElementById('quiz-container').style.display = 'none';
-    };
 }
 
 // Function to start quiz with difficulty for reptiles
@@ -323,17 +370,11 @@ function startQuizReptiles(difficulty) {
     quizManager = new QuizManager(quizData, difficulty);
     quizManager.init();
 
-    const nextBtn = document.getElementById('next-btn');
-    const prevBtn = document.getElementById('prev-btn');
-    const restartBtn = document.getElementById('restart-btn');
+    const nextBtn = document.getElementById('next-button');
+    const prevBtn = document.getElementById('prev-button');
 
     nextBtn.onclick = () => quizManager.nextQuestion();
     prevBtn.onclick = () => quizManager.prevQuestion();
-    restartBtn.onclick = () => {
-        quizManager.restartQuiz();
-        document.getElementById('difficulty-selection').style.display = 'block';
-        document.getElementById('quiz-container').style.display = 'none';
-    };
 }
 
 // Function to start quiz with difficulty for marine mammals
@@ -345,17 +386,11 @@ function startQuizMammiferesMarin(difficulty) {
     quizManager = new QuizManager(quizData, difficulty);
     quizManager.init();
 
-    const nextBtn = document.getElementById('next-btn');
-    const prevBtn = document.getElementById('prev-btn');
-    const restartBtn = document.getElementById('restart-btn');
+    const nextBtn = document.getElementById('next-button');
+    const prevBtn = document.getElementById('prev-button');
 
     nextBtn.onclick = () => quizManager.nextQuestion();
     prevBtn.onclick = () => quizManager.prevQuestion();
-    restartBtn.onclick = () => {
-        quizManager.restartQuiz();
-        document.getElementById('difficulty-selection').style.display = 'block';
-        document.getElementById('quiz-container').style.display = 'none';
-    };
 }
 
 // Function to start quiz with difficulty for lion
@@ -408,24 +443,19 @@ function startQuizTigre(difficulty) {
 
 // Initialize quiz when page loads
 let quizManager;
+function suggestNewTheme() {
+    const suggestion = prompt('Quel thème souhaitez-vous proposer pour un nouveau quiz ?');
+    if (suggestion && suggestion.trim()) {
+        alert(`Merci pour votre suggestion : "${suggestion.trim()}". Nous allons l'étudier !`);
+    } else {
+        alert('Aucune suggestion envoyée.');
+    }
+}
 document.addEventListener('DOMContentLoaded', () => {
     // Show difficulty selection
     const difficultySelection = document.getElementById('difficulty-selection');
     if (difficultySelection) {
         difficultySelection.style.display = 'block';
         document.getElementById('quiz-container').style.display = 'none';
-    } else {
-        // If no difficulty selection (for backward compatibility)
-        const urlParams = new URLSearchParams(window.location.search);
-        const difficulty = urlParams.get('difficulty') || 'moyen';
-        
-        const quizData = quizzesData.educationCanine;
-        quizManager = new QuizManager(quizData, difficulty);
-        quizManager.init();
-
-        // Setup navigation buttons
-        document.getElementById('next-btn').addEventListener('click', () => quizManager.nextQuestion());
-        document.getElementById('prev-btn').addEventListener('click', () => quizManager.prevQuestion());
-        document.getElementById('restart-btn').addEventListener('click', () => quizManager.restartQuiz());
     }
 });

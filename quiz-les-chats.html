@@ -11,9 +11,8 @@
         <div class="navbar-container">
             <div class="logo">🦁 Quiz Univers Animal</div>
             <ul class="nav-menu">
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="quiz-education-canine.html">Education Canine</a></li>
-                <li><a href="quiz-les-chats.html" class="active">Les Chats</a></li>
+                <li><a href="index.html" class="active">Accueil</a></li>
+                <li><a href="javascript:void(0)" class="suggestion-button" onclick="suggestNewTheme()">Proposer un thème</a></li>
             </ul>
         </div>
     </nav>
@@ -60,23 +59,40 @@
                 <p style="text-align: center; margin-bottom: 1rem; color: #6b7280;" id="progress-text"></p>
 
                 <div class="question-card" id="question-container">
-                    <!-- Questions will be rendered here -->
+                    <!-- Les questions seront générées ici par JavaScript -->
                 </div>
 
-                <div class="quiz-navigation">
-                    <button id="prev-btn" class="btn btn-secondary" disabled>← Précédent</button>
-                    <button id="next-btn" class="btn btn-primary" disabled>Suivant →</button>
+                <div class="button-container">
+                    <button id="prev-button" class="btn btn-secondary" style="display: none;">← Précédente</button>
+                    <button id="next-button" class="btn btn-primary">Suivante →</button>
                 </div>
             </div>
 
-            <!-- Results Section -->
-            <div id="results-container" class="results-container">
-                <h2>Résultats de votre Quiz</h2>
-                <div class="results-score" id="results-score">0/10</div>
-                <p class="results-message" id="results-message"></p>
-                <div class="results-details" id="results-details"></div>
-                <button id="restart-btn" class="btn btn-primary">Recommencer le Quiz</button>
-                <a href="index.html" class="btn btn-secondary" style="margin-left: 1rem;">Retour à l'Accueil</a>
+            <!-- Résultats -->
+            <div id="results-container" class="results-container" style="display: none;">
+                <div class="results-header">
+                    <h2>🎉 Quiz Terminé!</h2>
+                    <p id="results-message"></p>
+                </div>
+
+                <div class="results-score">
+                    <div class="score-circle">
+                        <span id="score-percentage">0%</span>
+                    </div>
+                    <div class="score-details">
+                        <p><strong id="score-text">0/10</strong> bonnes réponses</p>
+                        <p id="performance-message"></p>
+                    </div>
+                </div>
+
+                <div id="review-section" class="review-section">
+                    <!-- Les réponses seront affichées ici -->
+                </div>
+
+                <div class="button-container">
+                    <button class="btn btn-primary" onclick="location.reload()">Recommencer</button>
+                    <button class="btn btn-secondary" onclick="location.href='index.html'">Retour à l'accueil</button>
+                </div>
             </div>
         </div>
 

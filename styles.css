@@ -555,15 +555,16 @@ body {
 }
 
 /* Question Card */
-.question-card {
-    background: rgba(255, 255, 255, 0.95);
+.question-card,
+.question-container {
+    background: rgba(255, 255, 255, 0.98);
     border-radius: 15px;
     padding: 2.5rem;
     margin-bottom: 2rem;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.16);
     animation: fadeInUp 0.6s ease-out;
     backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.85);
 }
 
 .question-number {
@@ -575,33 +576,38 @@ body {
 }
 
 .question-text {
-    font-size: 1.4rem;
-    font-weight: 700;
+    font-size: 1.6rem;
+    font-weight: 800;
     margin-bottom: 2rem;
-    color: var(--dark-text);
+    color: #000;
     animation: fadeInUp 0.6s ease-out 0.2s both;
+    line-height: 1.5;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.05);
 }
 
 /* Options */
 .options {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
-    margin-bottom: 1.5rem;
+    gap: 1.2rem;
+    margin-bottom: 2rem;
 }
 
 .option {
-    padding: 1.2rem;
-    border: 2px solid #e5e7eb;
-    border-radius: 10px;
-    background: white;
+    padding: 1.4rem;
+    border: 2px solid #d1d5db;
+    border-radius: 12px;
+    background: #ffffff;
     cursor: pointer;
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    font-size: 1rem;
+    font-size: 1.1rem;
+    font-weight: 600;
     display: flex;
     align-items: center;
     animation: slideInRight 0.6s ease-out;
     animation-fill-mode: both;
+    color: #000;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
 
 .option:nth-child(1) { animation-delay: 0.1s; }
@@ -655,14 +661,15 @@ body {
 
 /* Source */
 .source {
-    margin-top: 2rem;
-    padding: 1.5rem;
-    background: linear-gradient(135deg, rgba(99, 102, 241, 0.05), rgba(236, 72, 153, 0.05));
-    border-left: 5px solid var(--primary-color);
-    border-radius: 10px;
+    margin-top: 2.5rem;
+    padding: 2rem;
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.1), rgba(236, 72, 153, 0.08));
+    border-left: 6px solid var(--primary-color);
+    border-radius: 12px;
     display: none;
     animation: slideInUp 0.5s ease-out;
-    border: 1px solid rgba(99, 102, 241, 0.2);
+    border: 1px solid rgba(99, 102, 241, 0.3);
+    box-shadow: 0 4px 15px rgba(99, 102, 241, 0.1);
 }
 
 .source.show {
@@ -670,16 +677,48 @@ body {
 }
 
 .source-title {
-    font-weight: 700;
+    font-weight: 800;
     color: var(--primary-color);
-    margin-bottom: 0.7rem;
-    font-size: 1.05rem;
+    margin-bottom: 1rem;
+    font-size: 1.15rem;
 }
 
 .source-text {
-    color: var(--light-text);
-    font-size: 0.95rem;
-    line-height: 1.7;
+    color: #000;
+    font-size: 1.05rem;
+    line-height: 1.8;
+    font-weight: 600;
+}
+
+/* Explanation */
+.explanation {
+    margin-top: 2rem;
+    padding: 2rem;
+    background: linear-gradient(135deg, rgba(16, 185, 129, 0.08), rgba(16, 185, 129, 0.05));
+    border-left: 6px solid var(--success-color);
+    border-radius: 12px;
+    display: none;
+    animation: slideInUp 0.5s ease-out;
+    border: 1px solid rgba(16, 185, 129, 0.2);
+    box-shadow: 0 4px 15px rgba(16, 185, 129, 0.1);
+}
+
+.explanation.show {
+    display: block;
+}
+
+.explanation-title {
+    font-weight: 800;
+    color: var(--success-color);
+    margin-bottom: 1rem;
+    font-size: 1.15rem;
+}
+
+.explanation-text {
+    color: #000;
+    font-size: 1.05rem;
+    line-height: 1.8;
+    font-weight: 600;
 }
 
 /* Navigation Buttons */

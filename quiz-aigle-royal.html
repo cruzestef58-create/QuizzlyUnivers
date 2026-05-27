@@ -11,15 +11,9 @@
         <div class="navbar-container">
             <div class="logo">🦁 Quiz Univers Animal</div>
             <ul class="nav-menu">
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="quiz-education-canine.html">Education Canine</a></li>
-                <li><a href="quiz-les-chats.html">Les Chats</a></li>
-                <li><a href="quiz-ornithologie.html">Ornithologie</a></li>
-                <li><a href="quiz-reptiles.html">Reptiles</a></li>
-                <li><a href="quiz-mammiferes-marins.html">Mammifères Marins</a></li>
-                <li><a href="quiz-le-lion.html">Le Lion</a></li>
-                <li><a href="quiz-aigle-royal.html" class="active">Aigle Royal</a></li>
-                <li><a href="quiz-le-tigre.html">Le Tigre</a></li>
+                <li><a href="index.html" class="active">Accueil</a></li>
+                <li><a href="javascript:void(0)" class="suggestion-button" onclick="suggestNewTheme()">Proposer un thème</a></li>
+            </ul>
             </ul>
         </div>
     </nav>
@@ -33,19 +27,19 @@
                     <p>Sélectionnez le niveau qui vous convient le mieux</p>
                 </div>
                 <div class="difficulty-grid">
-                    <div class="difficulty-card" onclick="startQuizAigleRoyal('facile')">
+                    <div class="difficulty-card" data-difficulty="facile">
                         <div class="difficulty-level">⭐</div>
                         <h3>Facile</h3>
                         <p>10 questions de base pour débuter</p>
                         <div class="difficulty-badge">Débutant</div>
                     </div>
-                    <div class="difficulty-card active" onclick="startQuizAigleRoyal('moyen')">
+                    <div class="difficulty-card active" data-difficulty="moyen">
                         <div class="difficulty-level">⭐⭐</div>
                         <h3>Moyen</h3>
                         <p>10 questions intermédiaires</p>
                         <div class="difficulty-badge">Intermédiaire</div>
                     </div>
-                    <div class="difficulty-card" onclick="startQuizAigleRoyal('difficile')">
+                    <div class="difficulty-card" data-difficulty="difficile">
                         <div class="difficulty-level">⭐⭐⭐</div>
                         <h3>Difficile</h3>
                         <p>10 questions avancées</p>
@@ -111,14 +105,20 @@
     <script src="questions.js"></script>
     <script src="script.js"></script>
     <script>
-        function startQuizAigleRoyal(difficulty) {
-            const themeData = quizzesData['laigleroyal'];
-            if (!themeData) {
-                console.error('Theme data not found for laigleroyal');
-                return;
-            }
-            new QuizManager(themeData, difficulty);
-        }
+        document.addEventListener('DOMContentLoaded', function() {
+            const cards = document.querySelectorAll('.difficulty-card');
+            cards.forEach(card => {
+                const difficulty = card.dataset.difficulty;
+                if (!difficulty) return;
+                card.addEventListener('click', function() {
+                    if (typeof startQuizAigleRoyal === 'function') {
+                        startQuizAigleRoyal(difficulty);
+                    } else {
+                        console.error('startQuizAigleRoyal is not defined');
+                    }
+                });
+            });
+        });
     </script>
 </body>
 </html>
