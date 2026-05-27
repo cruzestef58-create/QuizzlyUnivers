@@ -530,17 +530,39 @@ function voteForSuggestion(id) {
 }
 
 function showSuggestionModal() {
-    if (!document.getElementById('suggestion-modal')) {
-        createSuggestionModal();
+    try {
+        if (!document.getElementById('suggestion-modal')) {
+            createSuggestionModal();
+        }
+        renderSuggestionModal();
+        const modal = document.getElementById('suggestion-modal');
+        if (modal) {
+            // ensure appended and visible (small timeout to allow render)
+            if (!document.body.contains(modal)) document.body.appendChild(modal);
+            // prevent background scroll while modal is open
+            document.body.style.overflow = 'hidden';
+            setTimeout(() => modal.classList.remove('hidden'), 10);
+        } else {
+            throw new Error('Suggestion modal not available');
+        }
+    } catch (err) {
+        console.error('Failed to open suggestion modal:', err);
+        // Fallback: use simple prompt so users can still suggest
+        const suggestion = prompt('Quel thème souhaitez-vous proposer pour un nouveau quiz ?');
+        if (suggestion && suggestion.trim()) {
+            addThemeSuggestion(suggestion.trim());
+        } else {
+            alert('Aucune suggestion envoyée.');
+        }
     }
-    renderSuggestionModal();
-    document.getElementById('suggestion-modal').classList.remove('hidden');
 }
 
 function hideSuggestionModal() {
     const modal = document.getElementById('suggestion-modal');
     if (modal) {
         modal.classList.add('hidden');
+        // restore background scroll
+        document.body.style.overflow = '';
     }
 }
 
@@ -620,6 +642,11 @@ function renderSuggestionModal() {
 }
 
 function suggestNewTheme() {
+    try {
+        if (!document.getElementById('suggestion-modal')) createSuggestionModal();
+    } catch (e) {
+        console.warn('Could not pre-create suggestion modal:', e);
+    }
     showSuggestionModal();
 }
 

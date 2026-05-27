@@ -402,8 +402,11 @@ body {
 /* Suggestion Modal */
 .modal {
     position: fixed;
-    inset: 0;
-    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 99999;
     background: rgba(0, 0, 0, 0.6);
     display: flex;
     justify-content: center;
@@ -424,6 +427,7 @@ body {
     box-shadow: 0 30px 80px rgba(15, 23, 42, 0.2);
     max-height: calc(100vh - 4rem);
     overflow-y: auto;
+    z-index: 100000;
 }
 
 .modal-close {
