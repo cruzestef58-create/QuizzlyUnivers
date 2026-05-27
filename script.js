@@ -443,19 +443,197 @@ function startQuizTigre(difficulty) {
 
 // Initialize quiz when page loads
 let quizManager;
-function suggestNewTheme() {
-    const suggestion = prompt('Quel thème souhaitez-vous proposer pour un nouveau quiz ?');
-    if (suggestion && suggestion.trim()) {
-        alert(`Merci pour votre suggestion : "${suggestion.trim()}". Nous allons l'étudier !`);
-    } else {
-        alert('Aucune suggestion envoyée.');
+const SUGGESTION_STORAGE_KEY = 'quizThemeSuggestions';
+const SUGGESTION_VOTES_KEY = 'quizThemeVotes';
+
+function normalizeSuggestion(name) {
+    return name.trim().toLowerCase().replace(/\s+/g, ' ');
+}
+
+function getSavedSuggestions() {
+    try {
+        return JSON.parse(localStorage.getItem(SUGGESTION_STORAGE_KEY)) || [];
+    } catch (error) {
+        return [];
     }
 }
+
+function saveSuggestions(suggestions) {
+    localStorage.setItem(SUGGESTION_STORAGE_KEY, JSON.stringify(suggestions));
+}
+
+function getSavedVotes() {
+    try {
+        return JSON.parse(localStorage.getItem(SUGGESTION_VOTES_KEY)) || [];
+    } catch (error) {
+        return [];
+    }
+}
+
+function saveVote(id) {
+    const votes = getSavedVotes();
+    if (!votes.includes(id)) {
+        votes.push(id);
+        localStorage.setItem(SUGGESTION_VOTES_KEY, JSON.stringify(votes));
+    }
+}
+
+function canVote(id) {
+    return !getSavedVotes().includes(id);
+}
+
+function addThemeSuggestion(name) {
+    const trimmedName = name.trim();
+    if (!trimmedName) {
+        alert('Veuillez entrer un thème valide.');
+        return;
+    }
+
+    const suggestions = getSavedSuggestions();
+    const normalizedName = normalizeSuggestion(trimmedName);
+    const existing = suggestions.find(item => normalizeSuggestion(item.name) === normalizedName);
+
+    if (existing) {
+        existing.votes += 1;
+        saveVote(existing.id);
+        saveSuggestions(suggestions);
+        alert(`Merci ! Le thème "${existing.name}" existe déjà. Votre vote a été ajouté.`);
+    } else {
+        const newSuggestion = {
+            id: Date.now(),
+            name: trimmedName,
+            votes: 1,
+            suggestedAt: new Date().toISOString()
+        };
+        saveVote(newSuggestion.id);
+        suggestions.push(newSuggestion);
+        saveSuggestions(suggestions);
+        alert(`Merci pour votre suggestion : "${trimmedName}" ! Elle a bien été enregistrée.`);
+    }
+    renderSuggestionModal();
+}
+
+function voteForSuggestion(id) {
+    const suggestions = getSavedSuggestions();
+    const suggestion = suggestions.find(item => item.id === id);
+    if (!suggestion) {
+        return;
+    }
+    if (!canVote(id)) {
+        alert('Vous avez déjà voté pour ce thème.');
+        return;
+    }
+    suggestion.votes += 1;
+    saveVote(id);
+    saveSuggestions(suggestions);
+    renderSuggestionModal();
+}
+
+function showSuggestionModal() {
+    if (!document.getElementById('suggestion-modal')) {
+        createSuggestionModal();
+    }
+    renderSuggestionModal();
+    document.getElementById('suggestion-modal').classList.remove('hidden');
+}
+
+function hideSuggestionModal() {
+    const modal = document.getElementById('suggestion-modal');
+    if (modal) {
+        modal.classList.add('hidden');
+    }
+}
+
+function createSuggestionModal() {
+    const modal = document.createElement('div');
+    modal.id = 'suggestion-modal';
+    modal.className = 'modal hidden';
+    modal.innerHTML = `
+        <div class="modal-content suggestion-modal-content">
+            <button class="modal-close" aria-label="Fermer">&times;</button>
+            <h2>Propose un nouveau thème</h2>
+            <p>Propose un thème de quiz et vote pour les suggestions déjà proposées. Le thème le plus populaire pourra être ajouté à la fin du mois.</p>
+            <div class="modal-form">
+                <input id="new-theme-input" type="text" placeholder="Ex : Les oiseaux marins" />
+                <button id="submit-theme-button" class="btn btn-primary">Envoyer la suggestion</button>
+            </div>
+            <div class="suggestion-list">
+                <h3>Suggestions en cours</h3>
+                <div id="suggestion-list"></div>
+            </div>
+            <p class="suggestion-note">Le thème avec le plus de votes est visible ici ; il pourra être ajouté au prochain ajout de quiz.</p>
+        </div>
+    `;
+
+    document.body.appendChild(modal);
+    modal.querySelector('.modal-close').addEventListener('click', hideSuggestionModal);
+    modal.addEventListener('click', (event) => {
+        if (event.target === modal) {
+            hideSuggestionModal();
+        }
+    });
+    modal.querySelector('#submit-theme-button').addEventListener('click', () => {
+        const input = document.getElementById('new-theme-input');
+        addThemeSuggestion(input.value);
+        input.value = '';
+    });
+    modal.querySelector('#new-theme-input').addEventListener('keydown', (event) => {
+        if (event.key === 'Enter') {
+            event.preventDefault();
+            modal.querySelector('#submit-theme-button').click();
+        }
+    });
+}
+
+function renderSuggestionModal() {
+    const suggestionList = document.getElementById('suggestion-list');
+    if (!suggestionList) {
+        return;
+    }
+
+    const suggestions = getSavedSuggestions().sort((a, b) => b.votes - a.votes);
+    if (suggestions.length === 0) {
+        suggestionList.innerHTML = '<p>Aucune suggestion pour le moment. Soyez le premier à proposer un thème !</p>';
+        return;
+    }
+
+    suggestionList.innerHTML = suggestions.map(item => {
+        const voteDisabled = !canVote(item.id);
+        return `
+            <div class="suggestion-card">
+                <div class="suggestion-details">
+                    <strong>${item.name}</strong>
+                    <span>${item.votes} vote${item.votes > 1 ? 's' : ''}</span>
+                </div>
+                <button class="btn btn-secondary suggestion-vote-button" data-id="${item.id}" ${voteDisabled ? 'disabled' : ''}>
+                    ${voteDisabled ? 'Déjà voté' : 'Voter'}
+                </button>
+            </div>
+        `;
+    }).join('');
+
+    suggestionList.querySelectorAll('.suggestion-vote-button').forEach(button => {
+        button.addEventListener('click', () => {
+            voteForSuggestion(Number(button.dataset.id));
+        });
+    });
+}
+
+function suggestNewTheme() {
+    showSuggestionModal();
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     // Show difficulty selection
     const difficultySelection = document.getElementById('difficulty-selection');
     if (difficultySelection) {
         difficultySelection.style.display = 'block';
         document.getElementById('quiz-container').style.display = 'none';
+    }
+    // ensure suggestion button works on all pages
+    if (document.querySelector('.suggestion-button')) {
+        if (!document.getElementById('suggestion-modal')) {
+            createSuggestionModal();
+        }
     }
 });
