@@ -3,446 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ClutchFR — Runeterra Wiki | Champions, Builds & Lore</title>
-    <meta name="description" content="ClutchFR, votre wiki communautaire League of Legends en français. Découvrez les champions, builds, runes et l'histoire de Runeterra.">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>Quiz Univers Animal - Testez vos connaissances</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Navbar -->
-    <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <div class="logo-section" onclick="showSection('accueil')">
-                <div class="logo-badge" aria-hidden="true">CFR</div>
-                <div>
-                    <h1>CLUTCHFR</h1>
-                    <p>RUNETERRA WIKI</p>
-                </div>
-            </div>
-
-            <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Menu">
-                <span></span><span></span><span></span>
-            </button>
-
-            <ul class="nav-menu" id="navMenu">
-                <li><a href="#" onclick="showSection('accueil'); setActiveNav(this); closeMenu();" class="nav-link active" id="nav-accueil">ACCUEIL</a></li>
-                <li><a href="#" onclick="showSection('champions'); setActiveNav(this); closeMenu();" class="nav-link" id="nav-champions">CHAMPIONS</a></li>
-                <li><a href="#" onclick="showSection('runes'); setActiveNav(this); closeMenu();" class="nav-link" id="nav-runes">RUNES</a></li>
-                <li><a href="#" onclick="showSection('builds'); setActiveNav(this); closeMenu();" class="nav-link" id="nav-builds">BUILDS</a></li>
-                <li><a href="#" onclick="showSection('maps'); setActiveNav(this); closeMenu();" class="nav-link" id="nav-maps">CARTES</a></li>
-                <li><a href="#" onclick="showSection('lore'); setActiveNav(this); closeMenu();" class="nav-link" id="nav-lore">LORE</a></li>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo">🦁 Quiz Univers Animal</div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active">Accueil</a></li>
+                <li><a href="javascript:void(0)" class="suggestion-button" onclick="suggestNewTheme()">Proposer un thème</a></li>
             </ul>
         </div>
     </nav>
 
-    <!-- Section Accueil -->
-    <section id="accueil" class="section active">
-        <div class="hero-banner">
-            <div class="hero-particles" id="heroParticles"></div>
-            <div class="hero-content">
-                <div class="hero-badge">✦ Patch 16.10 ✦</div>
-                <h2 class="hero-title">Bienvenue sur <span class="hero-title-accent">CLUTCHFR</span></h2>
-                <p class="hero-subtitle">Votre guide complet de Runeterra — champions, builds, runes et histoires.</p>
-                <div class="hero-buttons">
-                    <button class="btn-primary" id="hero-btn-champions" onclick="showSection('champions'); setActiveNav(document.getElementById('nav-champions'))">
-                        <span>⚔️</span> DÉCOUVRIR LES CHAMPIONS
-                    </button>
-                    <button class="btn-secondary" id="hero-btn-lore" onclick="showSection('lore'); setActiveNav(document.getElementById('nav-lore'))">
-                        <span>📖</span> PLONGER DANS L'HISTOIRE
-                    </button>
-                </div>
-                <div class="hero-stats">
-                    <div class="hero-stat">
-                        <span class="hero-stat-number" data-target="168">0</span>
-                        <span class="hero-stat-label">Champions</span>
-                    </div>
-                    <div class="hero-stat-divider"></div>
-                    <div class="hero-stat">
-                        <span class="hero-stat-number" data-target="5">0</span>
-                        <span class="hero-stat-label">Rôles</span>
-                    </div>
-                    <div class="hero-stat-divider"></div>
-                    <div class="hero-stat">
-                        <span class="hero-stat-number" data-target="120">0</span>
-                        <span class="hero-stat-label">Builds</span>
-                    </div>
-                    <div class="hero-stat-divider"></div>
-                    <div class="hero-stat">
-                        <span class="hero-stat-number" data-target="6">0</span>
-                        <span class="hero-stat-label">Régions</span>
-                    </div>
-                </div>
-            </div>
-            <div class="hero-background"></div>
-        </div>
+    <div class="container">
+        <section class="hero">
+            <h1>Bienvenue dans Quiz Univers Animal</h1>
+            <p>Testez vos connaissances sur le monde fascinant des animaux</p>
+            <p class="subtitle">Avec des questions vérifiées et des sources fiables</p>
+        </section>
 
-        <div class="features-container">
-            <div class="feature-card" onclick="showSection('champions'); setActiveNav(document.getElementById('nav-champions'))">
-                <div class="feature-icon">⚔️</div>
-                <h3>Champions</h3>
-                <p>168+ champions uniques avec pouvoirs exceptionnels et builds optimisés.</p>
-                <div class="feature-arrow">→</div>
+        <section class="themes">
+            <h2>Thèmes de Quiz</h2>
+            <div class="theme-grid">
+                <div class="theme-card">
+                    <div class="theme-icon">🐕</div>
+                    <h3>L'Éducation Canine</h3>
+                    <p>Découvrez les secrets pour bien éduquer votre chien et comprendre le comportement canin.</p>
+                    <a href="quiz-education-canine.html" class="btn btn-primary">Commencer le Quiz</a>
+                </div>
+                <div class="theme-card">
+                    <div class="theme-icon">🐱</div>
+                    <h3>Les Félins (Chats)</h3>
+                    <p>Découvrez les secrets du monde des chats et comprenez leur comportement fascinant.</p>
+                    <a href="quiz-les-chats.html" class="btn btn-primary">Commencer le Quiz</a>
+                </div>
+                <div class="theme-card">
+                    <div class="theme-icon">🐦</div>
+                    <h3>L'Ornithologie</h3>
+                    <p>Plongez dans l'univers des oiseaux et de leur biologie fascinante.</p>
+                    <a href="quiz-ornithologie.html" class="btn btn-primary">Commencer le Quiz</a>
+                </div>
+                <div class="theme-card">
+                    <div class="theme-icon">🐍</div>
+                    <h3>Les Reptiles</h3>
+                    <p>Explorez les secrets des serpents, lézards, tortues et autres reptiles.</p>
+                    <a href="quiz-reptiles.html" class="btn btn-primary">Commencer le Quiz</a>
+                </div>
+                <div class="theme-card">
+                    <div class="theme-icon">🐋</div>
+                    <h3>Les Mammifères Marins</h3>
+                    <p>Découvrez les merveilles des océans : baleines, dauphins et autres créatures marines.</p>
+                    <a href="quiz-mammiferes-marins.html" class="btn btn-primary">Commencer le Quiz</a>
+                </div>
+                <div class="theme-card">
+                    <div class="theme-icon">🦁</div>
+                    <h3>Le Lion</h3>
+                    <p>Explorez la vie du roi de la savane, ses comportements et ses stratégies de chasse.</p>
+                    <a href="quiz-le-lion.html" class="btn btn-primary">Commencer le Quiz</a>
+                </div>
+                <div class="theme-card">
+                    <div class="theme-icon">🦅</div>
+                    <h3>L'Aigle Royal</h3>
+                    <p>Découvrez le roi des rapaces et ses capacités exceptionnelles de vol et de chasse.</p>
+                    <a href="quiz-aigle-royal.html" class="btn btn-primary">Commencer le Quiz</a>
+                </div>
+                <div class="theme-card">
+                    <div class="theme-icon">🐅</div>
+                    <h3>Le Tigre</h3>
+                    <p>Plongez dans la vie du félin le plus majestueux et découvrez ses secrets.</p>
+                    <a href="quiz-le-tigre.html" class="btn btn-primary">Commencer le Quiz</a>
+                </div>
             </div>
-            <div class="feature-card" onclick="showSection('runes'); setActiveNav(document.getElementById('nav-runes'))">
-                <div class="feature-icon">✨</div>
-                <h3>Runes</h3>
-                <p>Personnalisez vos champions avec la magie des runes et keystones.</p>
-                <div class="feature-arrow">→</div>
-            </div>
-            <div class="feature-card" onclick="showSection('builds'); setActiveNav(document.getElementById('nav-builds'))">
-                <div class="feature-icon">🎯</div>
-                <h3>Stratégie</h3>
-                <p>Les builds les plus performants pour chaque rôle, patch 16.10.</p>
-                <div class="feature-arrow">→</div>
-            </div>
-            <div class="feature-card" onclick="showSection('maps'); setActiveNav(document.getElementById('nav-maps'))">
-                <div class="feature-icon">🗺️</div>
-                <h3>Cartes</h3>
-                <p>Découvrez les arènes et régions stratégiques de Runeterra.</p>
-                <div class="feature-arrow">→</div>
-            </div>
-            <div class="feature-card" onclick="showSection('lore'); setActiveNav(document.getElementById('nav-lore'))">
-                <div class="feature-icon">📖</div>
-                <h3>Légendes</h3>
-                <p>Plongez dans les histoires épiques des régions de Runeterra.</p>
-                <div class="feature-arrow">→</div>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon">🏆</div>
-                <h3>Esports</h3>
-                <p>Suivez les meilleures compétitions mondiales de LoL.</p>
-                <div class="feature-arrow">→</div>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Section Champions -->
-    <section id="champions" class="section">
-        <div class="section-header">
-            <h2>CHAMPIONS</h2>
-            <div class="header-line"></div>
-            <p class="section-subtitle">Explorez tous les champions de League of Legends</p>
-        </div>
-        <div class="container">
-            <div class="search-bar">
-                <div class="search-input-wrapper">
-                    <span class="search-icon">🔍</span>
-                    <input type="text" id="championSearch" placeholder="Rechercher un champion..." onkeyup="filterChampions()">
-                </div>
-                <select id="roleFilter" onchange="filterChampions()">
-                    <option value="">Tous les rôles</option>
-                    <option value="top">🛡️ Top</option>
-                    <option value="jungle">🌿 Jungle</option>
-                    <option value="mid">⚡ Mid</option>
-                    <option value="adc">🏹 ADC</option>
-                    <option value="support">💚 Support</option>
-                </select>
+        <section class="info">
+            <h2>À propos de ce site</h2>
+            <div class="info-content">
+                <p>Ce site propose des quiz éducatifs basés sur des sources fiables et vérifiées. Chaque question a été soigneusement sélectionnée pour vous permettre d'apprendre des faits réels et utiles sur l'univers animal.</p>
+                <ul>
+                    <li>✅ Questions vérifiées par des experts</li>
+                    <li>📚 Sources citées pour chaque question</li>
+                    <li>📊 Suivi de vos résultats</li>
+                    <li>🎓 Format pédagogique et engageant</li>
+                </ul>
             </div>
-            <div class="champions-count" id="championsCount"></div>
-            <div id="championsList" class="champions-grid"></div>
-        </div>
-    </section>
+        </section>
+    </div>
 
-    <!-- Section Runes -->
-    <section id="runes" class="section">
-        <div class="section-header">
-            <h2>RUNES</h2>
-            <div class="header-line"></div>
-            <p class="section-subtitle">Maîtrisez les chemins de runes de Runeterra</p>
-        </div>
-        <div class="container">
-            <div class="runes-content">
-                <div class="rune-tree">
-                    <div class="rune-tree-header">
-                        <img src="https://cdn.darkintaqt.com/lol/c-assets/perk-images/Styles/7201_Precision.png" alt="Précision" class="rune-tree-header-icon">
-                        <div>
-                            <h3>Précision</h3>
-                            <p class="rune-desc">Améliorez vos attaques et capacités.</p>
-                        </div>
-                    </div>
-                    <ul>
-                        <li><strong>⚡ Attaque-éclair</strong> — Vitesse d'attaque burst</li>
-                        <li><strong>⚔️ Conquérant</strong> — Dégâts adaptables en combat</li>
-                        <li><strong>🏃 Présence d'esprit</strong> — Régénération de mana</li>
-                        <li><strong>💀 Coup de grâce</strong> — Plus de dégâts aux cibles basses</li>
-                    </ul>
-                </div>
-                <div class="rune-tree">
-                    <div class="rune-tree-header">
-                        <img src="https://cdn.darkintaqt.com/lol/c-assets/perk-images/Styles/7200_Domination.png" alt="Domination" class="rune-tree-header-icon">
-                        <div>
-                            <h3>Domination</h3>
-                            <p class="rune-desc">Dégâts burst et assassinat ciblé.</p>
-                        </div>
-                    </div>
-                    <ul>
-                        <li><strong>⚡ Électrocution</strong> — Combo de 3 attaques</li>
-                        <li><strong>🌑 Moisson Noire</strong> — Puissance croissante</li>
-                        <li><strong>🗡️ Impact Soudain</strong> — Létalité au dash</li>
-                        <li><strong>🩸 Goût du Sang</strong> — Soin sur CC</li>
-                    </ul>
-                </div>
-                <div class="rune-tree">
-                    <div class="rune-tree-header">
-                        <img src="https://cdn.darkintaqt.com/lol/c-assets/perk-images/Styles/7204_Resolve.png" alt="Ténacité" class="rune-tree-header-icon">
-                        <div>
-                            <h3>Ténacité</h3>
-                            <p class="rune-desc">Défense, endurance et survie.</p>
-                        </div>
-                    </div>
-                    <ul>
-                        <li><strong>🛡️ Étreinte du Mort-Vivant</strong> — Soin en combat</li>
-                        <li><strong>💥 Réplique</strong> — CC sur dégâts reçus</li>
-                        <li><strong>🔰 Conditionnement</strong> — Stats défensives</li>
-                        <li><strong>❤️ Revitaliser</strong> — Bonus soins</li>
-                    </ul>
-                </div>
-                <div class="rune-tree">
-                    <div class="rune-tree-header">
-                        <img src="https://cdn.darkintaqt.com/lol/c-assets/perk-images/Styles/7203_Whimsy.png" alt="Inspiration" class="rune-tree-header-icon">
-                        <div>
-                            <h3>Inspiration</h3>
-                            <p class="rune-desc">Magie créative et innovations.</p>
-                        </div>
-                    </div>
-                    <ul>
-                        <li><strong>❄️ Glacial Augment</strong> — Ralentissement universel</li>
-                        <li><strong>⭐ Premier Coup</strong> — Or bonus au premier hit</li>
-                        <li><strong>👟 Chaussures Magiques</strong> — Bottes gratuites</li>
-                        <li><strong>🎯 Perspicacité Cosmique</strong> — Réduction CD</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="runes-hint">
-                <span>💡</span>
-                <p>Cliquez sur un champion pour voir ses runes recommandées avec les vraies icônes DDragon !</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Section Builds -->
-    <section id="builds" class="section">
-        <div class="section-header">
-            <h2>BUILDS</h2>
-            <div class="header-line"></div>
-            <p class="section-subtitle">Les meilleures configurations par rôle — Patch 16.10</p>
-        </div>
-        <div class="container">
-            <div class="builds-role-filter">
-                <button class="role-btn active" data-role="all" onclick="filterBuilds(this, 'all')">Tous</button>
-                <button class="role-btn" data-role="top" onclick="filterBuilds(this, 'top')">🛡️ Top</button>
-                <button class="role-btn" data-role="jungle" onclick="filterBuilds(this, 'jungle')">🌿 Jungle</button>
-                <button class="role-btn" data-role="mid" onclick="filterBuilds(this, 'mid')">⚡ Mid</button>
-                <button class="role-btn" data-role="adc" onclick="filterBuilds(this, 'adc')">🏹 ADC</button>
-                <button class="role-btn" data-role="support" onclick="filterBuilds(this, 'support')">💚 Support</button>
-            </div>
-            <div class="builds-grid" id="buildsList"></div>
-        </div>
-    </section>
-
-    <!-- Section Maps -->
-    <section id="maps" class="section">
-        <div class="section-header">
-            <h2>CARTES</h2>
-            <div class="header-line"></div>
-            <p class="section-subtitle">Les arènes légendaires de Runeterra</p>
-        </div>
-        <div class="container">
-            <div class="maps-grid">
-                <div class="map-card map-card-featured">
-                    <div class="map-badge">5v5 · CLASSIQUE</div>
-                    <div class="map-content">
-                        <div class="map-icon">🏟️</div>
-                        <h3>La Faille de l'Invocateur</h3>
-                        <p>La carte emblématique de League of Legends. Trois lignes stratégiques, une forêt centrale regorgeant d'objectifs neutres, et la base adverse à détruire. Des milliers de parties s'y jouent chaque seconde.</p>
-                        <div class="map-features">
-                            <span class="map-feature-tag">Baron Nashor</span>
-                            <span class="map-feature-tag">Dragon</span>
-                            <span class="map-feature-tag">Rift Herald</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="map-card">
-                    <div class="map-badge">Exploration</div>
-                    <div class="map-content">
-                        <div class="map-icon">🌍</div>
-                        <h3>Runeterra</h3>
-                        <p>Explorez les régions de Demacia, Noxus, Piltover, Zaun et Ionie. Un monde riche en conflits, magie et secrets ancestraux.</p>
-                        <div class="map-features">
-                            <span class="map-feature-tag">6 Régions</span>
-                            <span class="map-feature-tag">Lore riche</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="map-card">
-                    <div class="map-badge">Battle Royale</div>
-                    <div class="map-content">
-                        <div class="map-icon">⚔️</div>
-                        <h3>Arène des Anciens</h3>
-                        <p>Une arène intense avec des combats cycliques et compétitifs. Choisissez vos augments et survivez jusqu'au bout dans ce mode frénétique.</p>
-                        <div class="map-features">
-                            <span class="map-feature-tag">2v2v2v2</span>
-                            <span class="map-feature-tag">Augments</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="map-card">
-                    <div class="map-badge">3v3</div>
-                    <div class="map-content">
-                        <div class="map-icon">🌑</div>
-                        <h3>Domaine du Crépuscule</h3>
-                        <p>Un terrain plus petit où chaque décision compte. Moins de farming, plus d'action directe — parfait pour les duellistes.</p>
-                        <div class="map-features">
-                            <span class="map-feature-tag">Combat rapide</span>
-                            <span class="map-feature-tag">Tactique</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Section Lore -->
-    <section id="lore" class="section">
-        <div class="section-header">
-            <h2>LORE</h2>
-            <div class="header-line"></div>
-            <p class="section-subtitle">L'univers épique de Runeterra vous attend</p>
-        </div>
-        <div class="container">
-            <div class="lore-intro">
-                <p>Runeterra est un monde façonné par des runes anciennes, des conflits millénaires et une magie omniprésente. Chaque région possède sa propre culture, ses héros et ses légendes.</p>
-            </div>
-            <div class="lore-content">
-                <div class="lore-card lore-card-demacia">
-                    <div class="lore-card-image">
-                        <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Garen_0.jpg" alt="Demacia" loading="lazy">
-                        <div class="lore-card-overlay"></div>
-                    </div>
-                    <div class="lore-card-body">
-                        <div class="lore-region-badge" style="background: linear-gradient(135deg, #3a7bd5, #1a4a9e);">DEMACIA</div>
-                        <h3>Le Royaume de l'Honneur</h3>
-                        <p>Un royaume noble où l'honneur et la justice guident les champions. La magie y est pourtant interdite, créant une tension profonde entre les idéaux et la réalité.</p>
-                        <div class="lore-champions-preview">
-                            <img src="https://ddragon.leagueoflegends.com/cdn/16.10.1/img/champion/Garen.png" alt="Garen" title="Garen">
-                            <img src="https://ddragon.leagueoflegends.com/cdn/16.10.1/img/champion/Lux.png" alt="Lux" title="Lux">
-                            <img src="https://ddragon.leagueoflegends.com/cdn/16.10.1/img/champion/Jarvan%20IV.png" alt="Jarvan IV" title="Jarvan IV">
-                            <img src="https://ddragon.leagueoflegends.com/cdn/16.10.1/img/champion/Fiora.png" alt="Fiora" title="Fiora">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="lore-card lore-card-noxus">
-                    <div class="lore-card-image">
-                        <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Darius_0.jpg" alt="Noxus" loading="lazy">
-                        <div class="lore-card-overlay"></div>
-                    </div>
-                    <div class="lore-card-body">
-                        <div class="lore-region-badge" style="background: linear-gradient(135deg, #c0392b, #922b21);">NOXUS</div>
-                        <h3>L'Empire de la Conquête</h3>
-                        <p>Une cité militariste qui valorise la force et la conquête. Pour Noxus, la faiblesse est le seul véritable péché — la puissance peut venir de n'importe qui.</p>
-                        <div class="lore-champions-preview">
-                            <img src="https://ddragon.leagueoflegends.com/cdn/16.10.1/img/champion/Darius.png" alt="Darius" title="Darius">
-                            <img src="https://ddragon.leagueoflegends.com/cdn/16.10.1/img/champion/Draven.png" alt="Draven" title="Draven">
-                            <img src="https://ddragon.leagueoflegends.com/cdn/16.10.1/img/champion/Katarina.png" alt="Katarina" title="Katarina">
-                            <img src="https://ddragon.leagueoflegends.com/cdn/16.10.1/img/champion/Swain.png" alt="Swain" title="Swain">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="lore-card lore-card-piltover">
-                    <div class="lore-card-image">
-                        <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Caitlyn_0.jpg" alt="Piltover" loading="lazy">
-                        <div class="lore-card-overlay"></div>
-                    </div>
-                    <div class="lore-card-body">
-                        <div class="lore-region-badge" style="background: linear-gradient(135deg, #f39c12, #d68910);">PILTOVER</div>
-                        <h3>La Cité du Progrès</h3>
-                        <p>Ville d'innovation technologique et magie hextech. Piltover est le moteur du progrès de Runeterra, où science et magie fusionnent pour créer l'impossible.</p>
-                        <div class="lore-champions-preview">
-                            <img src="https://ddragon.leagueoflegends.com/cdn/16.10.1/img/champion/Caitlyn.png" alt="Caitlyn" title="Caitlyn">
-                            <img src="https://ddragon.leagueoflegends.com/cdn/16.10.1/img/champion/Jayce.png" alt="Jayce" title="Jayce">
-                            <img src="https://ddragon.leagueoflegends.com/cdn/16.10.1/img/champion/Vi.png" alt="Vi" title="Vi">
-                            <img src="https://ddragon.leagueoflegends.com/cdn/16.10.1/img/champion/Heimerdinger.png" alt="Heimerdinger" title="Heimerdinger">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="lore-card lore-card-zaun">
-                    <div class="lore-card-image">
-                        <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Jinx_0.jpg" alt="Zaun" loading="lazy">
-                        <div class="lore-card-overlay"></div>
-                    </div>
-                    <div class="lore-card-body">
-                        <div class="lore-region-badge" style="background: linear-gradient(135deg, #1abc9c, #148f77);">ZAUN</div>
-                        <h3>Les Sous-Cités Rebelles</h3>
-                        <p>Une métropole sombre nichée sous Piltover, riche en expériences chimiques et rébellion. Les Zaunites survivent grâce à leur ingéniosité et leur résistance.</p>
-                        <div class="lore-champions-preview">
-                            <img src="https://ddragon.leagueoflegends.com/cdn/16.10.1/img/champion/Jinx.png" alt="Jinx" title="Jinx">
-                            <img src="https://ddragon.leagueoflegends.com/cdn/16.10.1/img/champion/Viktor.png" alt="Viktor" title="Viktor">
-                            <img src="https://ddragon.leagueoflegends.com/cdn/16.10.1/img/champion/Singed.png" alt="Singed" title="Singed">
-                            <img src="https://ddragon.leagueoflegends.com/cdn/16.10.1/img/champion/Warwick.png" alt="Warwick" title="Warwick">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="lore-card lore-card-ionia">
-                    <div class="lore-card-image">
-                        <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Yasuo_0.jpg" alt="Ionie" loading="lazy">
-                        <div class="lore-card-overlay"></div>
-                    </div>
-                    <div class="lore-card-body">
-                        <div class="lore-region-badge" style="background: linear-gradient(135deg, #9b59b6, #7d3c98);">IONIE</div>
-                        <h3>La Terre de la Magie</h3>
-                        <p>Terre spirituelle où la magie ancienne vit en harmonie avec ses habitants. Ionie est une île de paix et de contemplation — mais même les plus sages peuvent être poussés à la guerre.</p>
-                        <div class="lore-champions-preview">
-                            <img src="https://ddragon.leagueoflegends.com/cdn/16.10.1/img/champion/Yasuo.png" alt="Yasuo" title="Yasuo">
-                            <img src="https://ddragon.leagueoflegends.com/cdn/16.10.1/img/champion/Ahri.png" alt="Ahri" title="Ahri">
-                            <img src="https://ddragon.leagueoflegends.com/cdn/16.10.1/img/champion/Irelia.png" alt="Irelia" title="Irelia">
-                            <img src="https://ddragon.leagueoflegends.com/cdn/16.10.1/img/champion/Zed.png" alt="Zed" title="Zed">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="lore-card lore-card-freljord">
-                    <div class="lore-card-image">
-                        <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ashe_0.jpg" alt="Freljord" loading="lazy">
-                        <div class="lore-card-overlay"></div>
-                    </div>
-                    <div class="lore-card-body">
-                        <div class="lore-region-badge" style="background: linear-gradient(135deg, #85c1e9, #2e86c1);">FRELJORD</div>
-                        <h3>Les Terres de Glace</h3>
-                        <p>Un territoire de glace éternelle où des tribus guerrières se battent pour la survie. Les Freljordiens vénèrent les esprits anciens et affrontent des hivers qui durent des années.</p>
-                        <div class="lore-champions-preview">
-                            <img src="https://ddragon.leagueoflegends.com/cdn/16.10.1/img/champion/Ashe.png" alt="Ashe" title="Ashe">
-                            <img src="https://ddragon.leagueoflegends.com/cdn/16.10.1/img/champion/Braum.png" alt="Braum" title="Braum">
-                            <img src="https://ddragon.leagueoflegends.com/cdn/16.10.1/img/champion/Tryndamere.png" alt="Tryndamere" title="Tryndamere">
-                            <img src="https://ddragon.leagueoflegends.com/cdn/16.10.1/img/champion/Sejuani.png" alt="Sejuani" title="Sejuani">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
     <footer>
-        <div class="footer-content">
-            <div class="footer-logo">
-                <div class="logo-badge" style="width:40px;height:40px;font-size:0.9rem;">CFR</div>
-                <div>
-                    <p class="footer-brand">CLUTCHFR</p>
-                    <p class="footer-sub">Runeterra Wiki</p>
-                </div>
-            </div>
-            <p>© 2026 ClutchFR | Site Communautaire Non-Officiel</p>
-            <p style="color: var(--text-muted); font-size: 0.8rem; margin-top: 0.3rem;">Créé avec passion pour l'univers de Runeterra. ClutchFR n'est pas affilié à Riot Games.</p>
-        </div>
+        <p>&copy; 2026 Quiz Univers Animal - Tous droits réservés | Site éducatif</p>
     </footer>
 
-    <!-- Bouton retour en haut -->
-    <button class="back-to-top" id="backToTop" onclick="scrollToTop()" aria-label="Retour en haut">↑</button>
-
+    <script src="animations.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
