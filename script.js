@@ -641,6 +641,109 @@ function renderSuggestionModal() {
     });
 }
 
+// ── Report / Suggestion modal ──────────────────────────────────────────────
+
+function createReportModal() {
+    const modal = document.createElement('div');
+    modal.id = 'report-modal';
+    modal.className = 'modal hidden';
+    modal.innerHTML = `
+        <div class="modal-content report-modal-content">
+            <button class="modal-close" aria-label="Fermer">&times;</button>
+            <h2>🐛 Signaler un bug ou faire une suggestion</h2>
+            <p>Tu as trouvé une erreur dans une question, une explication incorrecte, ou tu as une idée d'amélioration ? Dis-le nous !</p>
+            <div class="report-form">
+                <label class="report-label">Type</label>
+                <div class="report-type-buttons">
+                    <button class="report-type-btn active" data-type="bug">🐛 Bug / Erreur</button>
+                    <button class="report-type-btn" data-type="suggestion">💡 Suggestion</button>
+                </div>
+                <label class="report-label">Quiz concerné</label>
+                <select id="report-quiz-select" class="report-select">
+                    <option value="">— Choisir un quiz —</option>
+                    <option>Éducation Canine</option>
+                    <option>Les Chats</option>
+                    <option>Ornithologie</option>
+                    <option>Reptiles</option>
+                    <option>Mammifères Marins</option>
+                    <option>Le Lion</option>
+                    <option>L'Aigle Royal</option>
+                    <option>Le Tigre</option>
+                    <option value="general">Général / Autre</option>
+                </select>
+                <label class="report-label">Description</label>
+                <textarea id="report-text" class="report-textarea" placeholder="Décris le problème ou la suggestion ici…" rows="4"></textarea>
+                <button id="report-submit-btn" class="btn btn-primary">Envoyer</button>
+            </div>
+            <div id="report-history" class="report-history"></div>
+        </div>
+    `;
+    document.body.appendChild(modal);
+
+    modal.querySelector('.modal-close').addEventListener('click', closeReportModal);
+    modal.addEventListener('click', e => { if (e.target === modal) closeReportModal(); });
+
+    modal.querySelectorAll('.report-type-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+            modal.querySelectorAll('.report-type-btn').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+        });
+    });
+
+    modal.querySelector('#report-submit-btn').addEventListener('click', submitReport);
+    renderReportHistory();
+}
+
+function openReportModal() {
+    if (!document.getElementById('report-modal')) createReportModal();
+    renderReportHistory();
+    const modal = document.getElementById('report-modal');
+    document.body.style.overflow = 'hidden';
+    setTimeout(() => modal.classList.remove('hidden'), 10);
+}
+
+function closeReportModal() {
+    const modal = document.getElementById('report-modal');
+    if (modal) modal.classList.add('hidden');
+    document.body.style.overflow = '';
+}
+
+function submitReport() {
+    const typeBtn = document.querySelector('.report-type-btn.active');
+    const type = typeBtn ? typeBtn.dataset.type : 'bug';
+    const quiz = document.getElementById('report-quiz-select').value;
+    const text = document.getElementById('report-text').value.trim();
+
+    if (!text) { alert('Merci d\'écrire une description avant d\'envoyer.'); return; }
+
+    const reports = JSON.parse(localStorage.getItem('quizReports') || '[]');
+    reports.push({ type, quiz: quiz || 'Général', text, date: new Date().toLocaleDateString('fr-FR') });
+    localStorage.setItem('quizReports', JSON.stringify(reports));
+
+    document.getElementById('report-quiz-select').value = '';
+    document.getElementById('report-text').value = '';
+    alert('Merci pour ton retour ! Il a bien été enregistré. 🙏');
+    renderReportHistory();
+}
+
+function renderReportHistory() {
+    const container = document.getElementById('report-history');
+    if (!container) return;
+    const reports = JSON.parse(localStorage.getItem('quizReports') || '[]');
+    if (reports.length === 0) { container.innerHTML = ''; return; }
+    container.innerHTML = `<h3>Tes signalements (${reports.length})</h3>` +
+        reports.slice().reverse().map(r => `
+            <div class="report-card">
+                <span class="report-tag report-tag-${r.type}">${r.type === 'bug' ? '🐛 Bug' : '💡 Suggestion'}</span>
+                <span class="report-quiz-tag">${r.quiz}</span>
+                <p>${r.text}</p>
+                <small>${r.date}</small>
+            </div>
+        `).join('');
+}
+
+// ── End Report modal ───────────────────────────────────────────────────────
+
 function suggestNewTheme() {
     try {
         if (!document.getElementById('suggestion-modal')) createSuggestionModal();

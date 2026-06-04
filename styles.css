@@ -111,6 +111,149 @@ body {
     color: var(--secondary-color);
 }
 
+.report-button {
+    background: rgba(239, 68, 68, 0.2);
+    border: 1px solid rgba(239, 68, 68, 0.5);
+    border-radius: 20px;
+    padding: 0.3rem 0.9rem !important;
+    font-size: 0.85rem !important;
+    transition: all 0.3s !important;
+}
+
+.report-button:hover {
+    background: rgba(239, 68, 68, 0.4) !important;
+    color: white !important;
+}
+
+/* Report Modal */
+.report-modal-content {
+    max-width: 520px;
+}
+
+.report-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    margin-top: 1rem;
+}
+
+.report-label {
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--dark-text);
+}
+
+.report-type-buttons {
+    display: flex;
+    gap: 0.6rem;
+}
+
+.report-type-btn {
+    flex: 1;
+    padding: 0.5rem;
+    border: 2px solid #e5e7eb;
+    border-radius: 8px;
+    background: white;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.2s;
+}
+
+.report-type-btn.active {
+    border-color: var(--primary-color);
+    background: #eef2ff;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.report-select {
+    width: 100%;
+    padding: 0.6rem 0.8rem;
+    border: 2px solid #e5e7eb;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.report-select:focus {
+    border-color: var(--primary-color);
+}
+
+.report-textarea {
+    width: 100%;
+    padding: 0.7rem 0.9rem;
+    border: 2px solid #e5e7eb;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-family: inherit;
+    resize: vertical;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.report-textarea:focus {
+    border-color: var(--primary-color);
+}
+
+.report-history {
+    margin-top: 1.5rem;
+}
+
+.report-history h3 {
+    font-size: 0.95rem;
+    color: var(--light-text);
+    margin-bottom: 0.6rem;
+    border-top: 1px solid #e5e7eb;
+    padding-top: 1rem;
+}
+
+.report-card {
+    background: #f9fafb;
+    border-radius: 8px;
+    padding: 0.7rem 0.9rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.report-tag {
+    display: inline-block;
+    padding: 0.15rem 0.6rem;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    width: fit-content;
+}
+
+.report-tag-bug {
+    background: #fee2e2;
+    color: #dc2626;
+}
+
+.report-tag-suggestion {
+    background: #fef9c3;
+    color: #ca8a04;
+}
+
+.report-quiz-tag {
+    font-size: 0.78rem;
+    color: var(--light-text);
+    font-style: italic;
+}
+
+.report-card p {
+    margin: 0;
+    color: var(--dark-text);
+}
+
+.report-card small {
+    color: var(--light-text);
+    font-size: 0.75rem;
+}
+
 /* Container */
 .container {
     max-width: 1200px;
