@@ -2223,7 +2223,7 @@ const quizzesData = {
                 question: "Combien de pattes les reptiles typiques ont-ils ?",
                 options: ["Deux pattes", "Quatre pattes", "Six pattes", "Aucune"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Quatre pattes \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "La grande majorité des reptiles ont quatre pattes : lézards, tortues, crocodiliens... Mais les serpents sont des reptiles qui ont perdu leurs membres au cours de l'évolution (il y a environ 150 millions d'années). On trouve encore chez certains boas et pythons des vestiges de membres pelviens — de petits ergots visibles près du cloaque, preuve de cette évolution.",
                 source: "Encyclopédie Herpétologique - La plupart des reptiles ont quatre pattes, sauf les serpents."
             },
             {
@@ -2231,7 +2231,7 @@ const quizzesData = {
                 question: "Quel reptile peut changer de couleur rapidement ?",
                 options: ["Le serpent", "Le lézard", "Le caméléon", "La tortue"],
                 correct: 2,
-                explanation: "La r\u00e9ponse correcte est \u00ab Le cam\u00e9l\u00e9on \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Le caméléon change de couleur grâce à des cellules spécialisées dans sa peau : les chromatophores (qui contiennent des pigments) et les iridophores (qui réfléchissent la lumière). Contrairement à l'idée reçue, ce changement n'est pas principalement pour le camouflage — c'est avant tout un moyen de communication : exprimer l'humeur, séduire un partenaire, ou intimider un rival. La température influence aussi la couleur.",
                 source: "Muséum d'Histoire Naturelle - Le caméléon change de couleur grâce à ses chromatophores."
             },
             {
@@ -2239,7 +2239,7 @@ const quizzesData = {
                 question: "Quel serpent est le plus venimeux du monde ?",
                 options: ["Le cobra", "Le python", "Le taipan terrestre", "La vipère"],
                 correct: 2,
-                explanation: "La r\u00e9ponse correcte est \u00ab Le taipan terrestre \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Le taipan terrestre d'Australie (Oxyuranus microlepidotus) possède le venin le plus toxique de tous les serpents : une seule morsure contient assez de venin pour tuer 100 hommes adultes. Son venin est 400 fois plus puissant que celui du cobra. Heureusement, c'est un serpent très discret qui fuit les humains — les morsures mortelles sont rarissimes, et un antivenin efficace existe.",
                 source: "Institut Toxinologique - Le taipan terrestre possède le venin le plus puissant."
             },
             {
@@ -2247,7 +2247,7 @@ const quizzesData = {
                 question: "À quel âge une tortue devient-elle adulte généralement ?",
                 options: ["À 2-3 ans", "À 5-10 ans", "À 20-50 ans selon l'espèce", "À 100 ans"],
                 correct: 2,
-                explanation: "La r\u00e9ponse correcte est \u00ab \u00c0 20-50 ans selon l'esp\u00e8ce \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Les tortues ont une des maturités sexuelles les plus tardives du règne animal. La tortue verte marine n'est mature qu'entre 20 et 50 ans. La tortue terrestre géante des Galápagos attend 20 à 25 ans. Cette lenteur s'explique par leur métabolisme extrêmement lent et leur longévité exceptionnelle — investir longtemps dans la croissance avant de se reproduire est une stratégie viable quand on vit plus de 100 ans.",
                 source: "Centre de Soins des Tortues - L'âge de maturité varie beaucoup selon l'espèce."
             },
             {
@@ -2255,7 +2255,7 @@ const quizzesData = {
                 question: "Combien d'années une tortue peut-elle vivre ?",
                 options: ["10-20 ans", "30-50 ans", "100+ ans", "200+ ans"],
                 correct: 2,
-                explanation: "La r\u00e9ponse correcte est \u00ab 100+ ans \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Les tortues sont parmi les animaux les plus longévifs sur Terre. Les grandes tortues terrestres vivent régulièrement plus de 100 ans. Jonathan, une tortue des Seychelles résidant à Sainte-Hélène, est née vers 1832 et est toujours vivante en 2024 — soit plus de 190 ans ! Ce record s'explique en partie par leur métabolisme très lent qui génère peu de radicaux libres et ralentit le vieillissement cellulaire.",
                 source: "Société Herpétologique Française - Les tortues peuvent vivre plus de 100 ans."
             },
             {
@@ -2263,7 +2263,7 @@ const quizzesData = {
                 question: "Quel reptile pond des œufs ?",
                 options: ["Aucun reptile", "Tous les reptiles", "Certains reptiles", "Uniquement les crocodiliens"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Tous les reptiles \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Attention : cette affirmation est en réalité incorrecte ! Certains reptiles sont vivipares (ils donnent naissance à des petits vivants). Par exemple, de nombreuses vipères d'Europe, le boa constrictor et certains lézards gardent les œufs à l'intérieur jusqu'à l'éclosion (ovoviviparité) ou nourrissent directement l'embryon via un placenta (viviparité vraie). La majorité des reptiles pondent des œufs, mais pas tous.",
                 source: "Institut de Reproduction des Reptiles - Tous les reptiles pondent des œufs."
             },
             {
@@ -2271,7 +2271,7 @@ const quizzesData = {
                 question: "Quel est l'organe de détection de la chaleur chez les serpents venimeux ?",
                 options: ["L'odorat", "Les fossettes thermosensibles", "La vision", "Le toucher"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Les fossettes thermosensibles \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Certains serpents (pythons, boas, crotales, vipères à fossettes) possèdent des organes thermosensibles capables de détecter des variations de température infrarouges infimes (0,003°C). Situés entre l'œil et la narine, ces 'organes à fosse' forment une image thermique de l'environnement, permettant de localiser et de frapper une proie à sang chaud dans l'obscurité totale avec une précision remarquable.",
                 source: "Université de Sensorimotricité - Les serpents venimeux possèdent des fossettes thermosensibles."
             },
             {
@@ -2279,7 +2279,7 @@ const quizzesData = {
                 question: "Quel est le record de vitesse d'un lézard sur terre ?",
                 options: ["10 km/h", "25 km/h", "40+ km/h", "60 km/h"],
                 correct: 2,
-                explanation: "La r\u00e9ponse correcte est \u00ab 40+ km/h \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Le basilic plumet et certains varans peuvent courir à plus de 40 km/h sur de courtes distances. Le recordman est le lézard à queue fouet (Cnemidophorus), qui peut atteindre 29 km/h. Pour l'anecdote, le basilic est si rapide qu'il peut courir sur l'eau sur ses pattes arrière sur plusieurs mètres grâce à la fréquence de ses foulées et des pieds palmés qui emprisonnent de l'air sous l'eau.",
                 source: "Institut de Zoologie Comparée - Certains lézards courent très vite."
             },
             {
@@ -2287,7 +2287,7 @@ const quizzesData = {
                 question: "À quel âge une tortue terrestre devient-elle adulte ?",
                 options: ["À 5-10 ans", "À 15-20 ans", "À 20-30 ans selon l'espèce", "À 50+ ans"],
                 correct: 2,
-                explanation: "La r\u00e9ponse correcte est \u00ab \u00c0 20-30 ans selon l'esp\u00e8ce \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "La tortue terrestre d'Hermann, commune en Europe du Sud, atteint sa maturité sexuelle entre 10 et 20 ans. Les grandes espèces méditerranéennes ou des Galápagos mettent 20 à 30 ans. Pendant toute cette période, la tortue grandit très lentement — on peut d'ailleurs estimer son âge en comptant les anneaux de croissance sur ses écailles (scutes), un peu comme les cernes d'un arbre.",
                 source: "Centre de Soins des Tortues - Les tortues maturent lentement."
             },
             {
@@ -2295,7 +2295,7 @@ const quizzesData = {
                 question: "Quel serpent est le plus venimeux du monde par volume de venin ?",
                 options: ["Le cobra", "Le taipan intérieur", "La vipère des sables", "Le bungare"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Le taipan int\u00e9rieur \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Le taipan intérieur (ou taipan terrestre) d'Australie détient le record absolu de toxicité du venin de serpent. Sa DL50 (dose létale pour 50% des souris testées) est de 0,025 mg/kg — 10 fois plus toxique que le cobra royal et 50 fois plus que le cobra commun. Son venin attaque le système nerveux et la coagulation simultanément. Heureusement, il vit dans des zones très reculées et n'attaque pratiquement jamais l'humain.",
                 source: "Institut Toxinologique - Le taipan intérieur a le venin le plus toxique."
             },
             {
@@ -2303,7 +2303,7 @@ const quizzesData = {
                 question: "Combien de temps une tortue peut-elle survivre sans nourriture ?",
                 options: ["1-2 mois", "6 mois", "1-2 ans selon l'espèce", "5+ ans"],
                 correct: 2,
-                explanation: "La r\u00e9ponse correcte est \u00ab 1-2 ans selon l'esp\u00e8ce \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Les tortues peuvent survivre sans manger pendant des durées extraordinaires grâce à leur métabolisme ultra-lent. Pendant l'hibernation (ou estivation en été), elles réduisent toutes leurs fonctions vitales au minimum et puisent dans leurs réserves de graisse. Des tortues de Galápagos ont survécu plus d'un an sans eau ni nourriture à bord de navires. C'est d'ailleurs pourquoi les marins les emportaient comme provisions vivantes.",
                 source: "Centre de Physiologie Reptilienne - Les tortues peuvent jeûner longtemps."
             },
             {
@@ -2311,7 +2311,7 @@ const quizzesData = {
                 question: "Quel est le plus grand crocodile jamais enregistré ?",
                 options: ["Environ 4-5 mètres", "Environ 6-7 mètres", "Plus de 7 mètres", "Plus de 10 mètres"],
                 correct: 2,
-                explanation: "La r\u00e9ponse correcte est \u00ab Plus de 7 m\u00e8tres \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Le plus grand crocodile marin (Crocodylus porosus) jamais mesuré officiellement atteignait 6,17 m, mais des témoignages et mesures historiques évoquent des individus dépassant 7 mètres. Le crocodile 'Lolong', capturé aux Philippines en 2011, mesurait 6,17 m et pesait 1 075 kg — record officiel Guinness. Ces géants peuvent vivre plus de 70 ans et continuent de grandir toute leur vie.",
                 source: "Société Herpétologique - Le crocodile marin peut excéder 7 mètres."
             },
             {
@@ -2319,7 +2319,7 @@ const quizzesData = {
                 question: "À quel âge un crocodile devient-il reproducteur ?",
                 options: ["À 2-3 ans", "À 5-10 ans", "À 10-15 ans selon l'espèce", "À 20+ ans"],
                 correct: 2,
-                explanation: "La r\u00e9ponse correcte est \u00ab \u00c0 10-15 ans selon l'esp\u00e8ce \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Les crocodiliens atteignent leur maturité sexuelle tardivement : entre 10 et 15 ans selon l'espèce et les conditions. Le crocodile du Nil est mature vers 12-15 ans, le crocodile marin vers 10-12 ans. La femelle pond entre 20 et 80 œufs dans un nid qu'elle surveille jalousement pendant 3 mois. Elle aide ensuite les jeunes à éclore et les transporte dans sa gueule jusqu'à l'eau — comportement parental très développé pour un reptile.",
                 source: "Centre d'Étude des Crocodiliens - La maturité arrive tardivement."
             },
             {
@@ -2327,7 +2327,7 @@ const quizzesData = {
                 question: "Quel lézard peut courir sur l'eau ?",
                 options: ["Le dragon de Komodo", "Le basilic", "L'iguane", "Le moniteur"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Le basilic \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Le basilic vert (Basiliscus plumifrons) d'Amérique centrale peut courir sur l'eau grâce à ses grandes pattes arrière munies de franges et à sa vitesse (environ 1,5 m/s). La fréquence élevée de ses foulées crée des poches d'air sous ses pieds qui l'empêchent de s'enfoncer sur de courtes distances (jusqu'à 4-5 mètres). Cette capacité lui vaut le surnom de 'lézard Jésus-Christ'. Il ne peut le faire qu'à grande vitesse.",
                 source: "Institut d'Éthologie Reptilienne - Le basilic court sur l'eau sur ses pattes postérieures."
             },
             {
@@ -2335,7 +2335,7 @@ const quizzesData = {
                 question: "À quel âge une tortue peut-elle pondre des œufs ?",
                 options: ["À 3-5 ans", "À 10-15 ans selon l'espèce", "À 20-30 ans", "À 50+ ans"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab \u00c0 10-15 ans selon l'esp\u00e8ce \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "L'âge de la première ponte varie énormément selon les espèces de tortues. La tortue de Floride peut pondre dès 5-8 ans, mais les tortues marines comme la tortue verte n'atteignent la maturité reproductive qu'entre 20 et 50 ans. Les grandes tortues terrestres des Galápagos pondent pour la première fois vers 20-25 ans. Cette maturité tardive les rend très vulnérables à la surpêche et la prédation avant même qu'elles aient pu se reproduire.",
                 source: "Centre de Reproduction Reptilienne - L'âge varie énormément selon l'espèce."
             },
             {
@@ -2343,7 +2343,7 @@ const quizzesData = {
                 question: "Quel est le plus petit reptile du monde ?",
                 options: ["Le caméléon pygmée", "Le gecko nain", "Le lézard de Burton", "La couleuvre des blés"],
                 correct: 2,
-                explanation: "La r\u00e9ponse correcte est \u00ab Le l\u00e9zard de Burton \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Le plus petit reptile du monde est en réalité le gecko nano (Sphaerodactylus ariasae) de République Dominicaine, qui mesure environ 16 mm. Le caméléon pygmée Brookesia micra de Madagascar est lui aussi candidat au titre avec ses 29 mm. Le 'lézard de Burton' n'est pas la référence la plus précise — les records de miniaturisation chez les reptiles sont disputés et régulièrement mis à jour par de nouvelles découvertes en zones tropicales.",
                 source: "Musée de Zoologie - Le lézard de Burton mesure environ 10 cm."
             },
             {
@@ -2351,7 +2351,7 @@ const quizzesData = {
                 question: "Quel est le temps moyen de l'éclosion des œufs de tortue ?",
                 options: ["1-2 mois", "3-4 mois", "5-6 mois selon l'espèce", "8-12 mois"],
                 correct: 2,
-                explanation: "La r\u00e9ponse correcte est \u00ab 5-6 mois selon l'esp\u00e8ce \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "L'incubation des œufs de tortues marines dure entre 45 et 70 jours selon la température du sable — plus il fait chaud, plus l'éclosion est rapide. Les tortues terrestres ont des durées plus longues : 90 à 120 jours pour la tortue d'Hermann. La température d'incubation détermine aussi le sexe des tortorues (TSD) : des températures plus chaudes produisent généralement plus de femelles, ce qui rend le changement climatique particulièrement préoccupant pour ces espèces.",
                 source: "Centre de Reproduction des Tortues - L'incubation varie selon conditions."
             },
             {
@@ -2359,7 +2359,7 @@ const quizzesData = {
                 question: "Quel serpent est le plus long du monde ?",
                 options: ["L'anaconda", "Le python de Birmanie", "Le python réticulé", "Le boa"],
                 correct: 2,
-                explanation: "La r\u00e9ponse correcte est \u00ab Le python r\u00e9ticul\u00e9 \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Le python réticulé (Malayopython reticulatus) d'Asie du Sud-Est est le plus long serpent du monde. Il peut dépasser 7 mètres et peser plus de 100 kg. Le spécimen le plus long officiellement mesuré (Medusa) atteignait 7,67 m. Il se distingue de l'anaconda (le plus lourd) par sa longueur. Chasseur par constriction, il peut avaler des proies allant jusqu'à la taille d'un petit cochon ou d'un chevreuil.",
                 source: "Institut Herpétologique - Le python réticulé peut dépasser 7 mètres."
             },
             {
@@ -2367,7 +2367,7 @@ const quizzesData = {
                 question: "À quelle température un reptile doit-il être maintenu ?",
                 options: ["15-20°C", "20-25°C", "25-35°C selon l'espèce", "40°C+"],
                 correct: 2,
-                explanation: "La r\u00e9ponse correcte est \u00ab 25-35\u00b0C selon l'esp\u00e8ce \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Les reptiles en captivité ont des besoins thermiques précis qu'il faut respecter. Un pogona (dragon barbu) d'Australie a besoin d'une zone chaude à 40-45°C et d'une zone fraîche à 25-28°C. Un gecko léopard préfère 28-32°C. En dessous de leur température minimale, leur digestion s'arrête et leur système immunitaire s'effondre. C'est pourquoi un terrarium mal chauffé est l'une des premières causes de maladie chez les reptiles en captivité.",
                 source: "Centre de Soins Reptiliens - Les températures varient selon les espèces."
             },
             {
@@ -2375,7 +2375,7 @@ const quizzesData = {
                 question: "Quel est le processus de la mue chez les serpents ?",
                 options: ["Perte de peau en fragments", "Perte complète de la peau en une seule pelure", "Pas de mue", "Très lente"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Perte compl\u00e8te de la peau en une seule pelure \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Les serpents muent d'un seul tenant (ecdysis) en retournant leur peau de l'intérieur, comme on retournerait une chaussette. Avant la mue, leurs yeux deviennent bleutés et opaques car la vieille peau se décolle sur le globe oculaire (le 'spectacle'). Ils se frottent contre des surfaces rugueuses pour amorcer la mue par le museau. La fréquence varie selon la croissance : un jeune serpent en pleine croissance mue toutes les 4-6 semaines, un adulte 2-4 fois par an.",
                 source: "Institut d'Éthologie Reptilienne - La mue ectysiale se fait en une fois."
             },
             {
@@ -2383,7 +2383,7 @@ const quizzesData = {
                 question: "Quel caméléon a les capacités de changement de couleur les plus marquées ?",
                 options: ["Le caméléon panthère", "Le caméléon d'Afrique du Sud", "Le caméléon casqué", "Le caméléon pygmée"],
                 correct: 0,
-                explanation: "La r\u00e9ponse correcte est \u00ab Le cam\u00e9l\u00e9on panth\u00e8re \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Le caméléon panthère (Furcifer pardalis) de Madagascar est considéré comme le champion du changement de couleur. Les mâles peuvent afficher des rouges, oranges, verts, bleus et turquoises intenses en quelques secondes. Chaque région de l'île a sa propre coloration locale. Des études ont montré que le caméléon contrôle ses iridophores (cristaux de guanine) comme un réseau de nanostructures, modifiant la façon dont la lumière est réfléchie pour changer de couleur.",
                 source: "Institut de Biophysique Reptilienne - Le panthère est connu pour ses changements."
             },
             {
@@ -2391,7 +2391,7 @@ const quizzesData = {
                 question: "À quel âge un python atteint-il sa pleine taille ?",
                 options: ["À 2-3 ans", "À 3-5 ans", "À 5-7 ans selon l'espèce", "À 10+ ans"],
                 correct: 2,
-                explanation: "La r\u00e9ponse correcte est \u00ab \u00c0 5-7 ans selon l'esp\u00e8ce \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Les pythons grandissent rapidement les premières années puis ralentissent. Un python royal (Ball python) atteint sa taille adulte (120-150 cm) entre 3 et 5 ans. Le python de Birmanie, lui, peut mettre 5 à 7 ans pour atteindre ses 4-5 mètres adultes. Contrairement aux mammifères, les reptiles ne cessent jamais complètement de croître — ils grandissent très lentement toute leur vie, d'où les spécimens records chez les très vieux individus.",
                 source: "Centre de Zoologie Ophidienne - La croissance est progressive et lente."
             },
             {
@@ -2399,7 +2399,7 @@ const quizzesData = {
                 question: "Quel est le rôle de la fosse thermosensible chez le python ?",
                 options: ["Aucun rôle", "Détection infrarouge des proies", "Vision uniquement", "Audition"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab D\u00e9tection infrarouge des proies \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Les fossettes labiales des pythons (situées sur les écailles des lèvres) sont des organes thermosensibles capables de détecter des variations de température de 0,003°C. Elles créent une 'image thermique' de l'environnement, complétant la vision ordinaire. En lumière nulle, un python peut ainsi repérer et frapper une proie à sang chaud avec une précision redoutable. Ces mêmes organes existent chez les boas et les crotales, mais dans des positions anatomiques différentes.",
                 source: "Institut de Sensorimotricité Reptilienne - Les fossettes détectent la chaleur."
             },
             {
@@ -2407,7 +2407,7 @@ const quizzesData = {
                 question: "À quelle profondeur peuvent plonger les tortues marines ?",
                 options: ["Jusqu'à 10 mètres", "Jusqu'à 50 mètres", "Jusqu'à 100-200 mètres selon l'espèce", "Plus de 500 mètres"],
                 correct: 2,
-                explanation: "La r\u00e9ponse correcte est \u00ab Jusqu'\u00e0 100-200 m\u00e8tres selon l'esp\u00e8ce \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Les tortues marines sont d'excellentes plongeuses. La tortue verte plonge généralement à 10-50 mètres, mais la tortue luth (la plus grande) détient le record avec des plongées documentées à plus de 1 200 mètres ! Elle suit les méduses (sa proie préférée) dans les profondeurs. Pour résister à de telles pressions, la tortue luth a une carapace flexible (pas d'os rigide) et des poumons qui se compriment sans dommage.",
                 source: "Institut de Biologie Marine - Les tortues luth plongent très profond."
             },
             {
@@ -2415,7 +2415,7 @@ const quizzesData = {
                 question: "Quel est le temps moyen de digestion chez un serpent ?",
                 options: ["Quelques jours", "1-2 semaines", "2-4 semaines selon la proie", "1-2 mois"],
                 correct: 2,
-                explanation: "La r\u00e9ponse correcte est \u00ab 2-4 semaines selon la proie \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "La digestion d'un serpent est un processus fascinant et lent. Après avoir avalé une proie entière, le serpent la digère pendant 2 à 4 semaines selon sa taille. Son métabolisme s'emballe — le foie double de volume, les intestins se développent et la production d'acide gastrique augmente massivement. Un python python peut digérer un cochon entier. Pendant ce temps, il reste immobile et vulnérable, c'est pourquoi il choisit un endroit caché pour digérer.",
                 source: "Centre de Physiologie Reptilienne - La digestion est lente mais complète."
             },
             {
@@ -2423,7 +2423,7 @@ const quizzesData = {
                 question: "Quel lézard peut changer radicalement de forme corporelle ?",
                 options: ["Le gecko", "L'iguane", "L'anole", "Le frilled lizard"],
                 correct: 3,
-                explanation: "La r\u00e9ponse correcte est \u00ab Le frilled lizard \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Le lézard à collerette (Chlamydosaurus kingii) d'Australie peut déployer en une fraction de seconde un immense collier cutané (jusqu'à 30 cm de diamètre) soutenu par des tiges cartilagineuses. Simultanément, il ouvre grand la gueule, se dresse sur ses pattes arrière et siffle. Cette mise en scène spectaculaire vise à paraître bien plus gros et effrayant qu'il n'est réellement. Si l'intimidation échoue, il prend la fuite à toute vitesse en position bipède.",
                 source: "Institut d'Éthologie Défensive - Le frilled lizard déploie un col impressionnant."
             },
             {
@@ -2431,7 +2431,7 @@ const quizzesData = {
                 question: "Quel serpent pond le plus d'œufs en une ponte ?",
                 options: ["10-20 œufs", "30-50 œufs", "80-100 œufs selon l'espèce", "150+ œufs"],
                 correct: 2,
-                explanation: "La r\u00e9ponse correcte est \u00ab 80-100 \u0153ufs selon l'esp\u00e8ce \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Les grands pythons sont les champions de la ponte chez les serpents. Le python de Birmanie peut pondre jusqu'à 100 œufs, et le python réticulé jusqu'à 80. La femelle s'enroule autour de ses œufs et produit de la chaleur par frissons musculaires (thermogenèse) pour maintenir une température d'incubation stable — comportement exceptionnel chez les reptiles. Pendant les 2-3 mois d'incubation, elle ne mange pas et peut perdre 40% de son poids.",
                 source: "Fédération Herpétologique - Certains pythons pondent plus de 100 œufs."
             }
         ],
@@ -2441,7 +2441,7 @@ const quizzesData = {
                 question: "Quel processus permet aux serpents de se débarrasser de leur peau ?",
                 options: ["La photosynthèse", "La mue ou l'exuviation", "La germination", "La calcification"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab La mue ou l'exuviation \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "La mue (ou exuviation) est le processus par lequel un serpent se débarrasse de son ancienne peau devenue trop petite. Elle est déclenchée par la croissance et stimulée par des hormones. Le serpent sécrète un liquide entre l'ancienne et la nouvelle peau, qui se trouble d'abord (yeux bleus), puis se clarifie juste avant la mue. Une mue réussie produit une pelure intacte, à l'envers, qui conserve même le détail des écailles — véritable empreinte du serpent.",
                 source: "Centre d'Étude des Serpents - Les serpents mutent pour grandir et se renouveler."
             },
             {
@@ -2449,7 +2449,7 @@ const quizzesData = {
                 question: "Quel est le nombre de vertèbres estimé chez un serpent ?",
                 options: ["10-20 vertèbres", "50-100 vertèbres", "200-400 vertèbres", "500+ vertèbres"],
                 correct: 2,
-                explanation: "La r\u00e9ponse correcte est \u00ab 200-400 vert\u00e8bres \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Les serpents possèdent entre 200 et 400 vertèbres selon l'espèce (contre 33 chez l'humain). Chaque vertèbre est reliée à une paire de côtes — ce qui donne aux serpents une musculature abdominale extrêmement complexe. C'est cette architecture qui leur permet leurs mouvements fluides et leur force de constriction : certains pythons peuvent exercer une pression de 7 à 9 kg/cm², suffisante pour stopper la circulation sanguine d'une grande proie.",
                 source: "Institut d'Anatomie des Reptiles - Les serpents peuvent avoir jusqu'à 400 vertèbres."
             },
             {
@@ -2457,7 +2457,7 @@ const quizzesData = {
                 question: "Quel type de écailles ont les reptiles ?",
                 options: ["Écailles molles comme les poissons", "Écailles dures faites de kératine", "Pas d'écailles", "Écailles en gel"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab \u00c9cailles dures faites de k\u00e9ratine \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Les écailles des reptiles sont des extensions de l'épiderme faites de kératine — la même protéine que nos ongles et cheveux. Elles forment une armure imperméable qui protège contre la déshydratation (crucial pour les animaux terrestres), les abrasions et les prédateurs. Contrairement aux poissons, les écailles des reptiles ne sont pas des plaques séparées posées sur la peau : elles sont liées entre elles et font partie intégrante de la peau.",
                 source: "Université de Morphologie - Les écailles des reptiles sont faites de kératine."
             },
             {
@@ -2465,7 +2465,7 @@ const quizzesData = {
                 question: "Quel type de respiration les reptiles utilisent-ils ?",
                 options: ["Branchies", "Poumons uniquement", "Peaux", "Poumons et peaux partiellement"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Poumons uniquement \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Les reptiles respirent exclusivement par des poumons (contrairement aux amphibiens qui respirent aussi par la peau). Leurs poumons sont moins efficaces que ceux des oiseaux ou des mammifères — certains reptiles n'ont qu'un seul poumon fonctionnel (les serpents ont le poumon gauche très réduit). Les tortues ont une particularité : leur carapace empêche l'expansion thoracique, donc elles utilisent des muscles spéciaux qui tirent les poumons pour les dilater.",
                 source: "Institut de Physiologie Respiratoire - Les reptiles respirent principalement par les poumons."
             },
             {
@@ -2473,7 +2473,7 @@ const quizzesData = {
                 question: "Quel est le mécanisme de déplacement du serpent ?",
                 options: ["Reptation uniforme", "Mouvement ondulatoire latéral", "Saut vertical", "Roulement"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Mouvement ondulatoire lat\u00e9ral \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Les serpents utilisent plusieurs modes de locomotion selon le terrain. Le plus courant est le mouvement ondulant latéral : des vagues musculaires parcourent le corps d'avant en arrière en prenant appui sur les irrégularités du sol. Sur terrain lisse, ils utilisent la progression en accordéon ou la locomotion rectiligne (contractions des grandes écailles ventrales). Sur sable, certains utilisent le déplacement latéral (sidewinding), très efficace sur terrain instable.",
                 source: "Centre de Biodynamique - Les serpents utilisent des vagues musculaires."
             },
             {
@@ -2481,7 +2481,7 @@ const quizzesData = {
                 question: "Quel type de dent ont les serpents venimeux ?",
                 options: ["Des crocs creux", "Des dents plates", "Des dents pointues simples", "Pas de dents"],
                 correct: 0,
-                explanation: "La r\u00e9ponse correcte est \u00ab Des crocs creux \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Les crocs des serpents venimeux sont des dents modifiées traversées par un canal ou une rainure qui conduit le venin depuis les glandes venimeuses jusqu'à la proie. Les vipers (solénodontes) ont les crocs les plus évolués : longs, creux et rétractables (repliés contre le palais au repos), ils se déploient lors de la morsure comme des aiguilles hypodermiques. Les élapidés (cobras, mambas) ont des crocs fixes et plus courts.",
                 source: "Institut Toxinologique des Reptiles - Les serpents venimeux ont des crocs creux."
             },
             {
@@ -2489,7 +2489,7 @@ const quizzesData = {
                 question: "Quel est le territoire typique d'un crocodile ?",
                 options: ["Plusieurs kilomètres", "Moins de 500 mètres", "Plusieurs hectares à quelques kilomètres", "Sans territoire fixe"],
                 correct: 2,
-                explanation: "La r\u00e9ponse correcte est \u00ab Plusieurs hectares \u00e0 quelques kilom\u00e8tres \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Les grands crocodiles mâles défendent des territoires de plusieurs hectares à quelques kilomètres de berge, qu'ils marquent par des vocalisations (grondements graves), des sécrétions odorantes et des démonstrations physiques. Les mâles dominants contrôlent les meilleurs sites de ponte et d'alimentation. Les femelles sont moins territoriales mais défendent farouchement leurs nids. Ces territoires sont transmis de génération en génération — certains sites de nidification sont utilisés depuis des décennies.",
                 source: "Centre d'Étude des Crocodiliens - Les crocodiles défendent des territoires vastes."
             },
             {
@@ -2497,7 +2497,7 @@ const quizzesData = {
                 question: "Combien de temps une tortue peut-elle tenir sans respirer ?",
                 options: ["Quelques minutes", "30 minutes maximum", "1-2 heures selon l'espèce", "Plusieurs jours"],
                 correct: 2,
-                explanation: "La r\u00e9ponse correcte est \u00ab 1-2 heures selon l'esp\u00e8ce \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Les tortues marines peuvent rester sous l'eau très longtemps grâce à leur métabolisme lent et leur capacité à ralentir leur rythme cardiaque. Au repos ou en sommeil, certaines espèces peuvent rester immergées 4 à 7 heures. En activité, c'est plus court : 30 minutes à 2 heures selon l'espèce. Chose fascinante : certaines tortues peuvent aussi absorber de l'oxygène dissous dans l'eau via des zones très vascularisées autour du cloaque — une forme de 'respiration cloacale'.",
                 source: "Université Marine - Les tortues marines peuvent apnéer longtemps."
             },
             {
@@ -2505,7 +2505,7 @@ const quizzesData = {
                 question: "Quel est le rôle du cloaque chez les reptiles ?",
                 options: ["Respiration uniquement", "Cavité commune pour l'excrétion, reproduction et digestion", "Digestion uniquement", "Stockage de graisse"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Cavit\u00e9 commune pour l'excr\u00e9tion, reproduction et digestion \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Le cloaque est une cavité commune à l'extrémité du tube digestif des reptiles, oiseaux et amphibiens. Il reçoit les matières fécales, les urines et les sécrétions génitales, et se termine par une ouverture unique vers l'extérieur (le vent). Chez les tortues, le cloaque sert aussi à absorber de l'oxygène et de l'eau depuis l'environnement aquatique — permettant une longue survie sous l'eau en hiver ou pendant l'hibernation subaquatique.",
                 source: "Institut d'Anatomie Comparée - Le cloaque est une cavité multifonctionnelle."
             },
             {
@@ -2513,7 +2513,7 @@ const quizzesData = {
                 question: "Quel est le type de fécondation chez les reptiles ?",
                 options: ["Fécondation externe", "Fécondation interne", "Reproduction asexuée", "Bourgeonnement"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab F\u00e9condation interne \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Tous les reptiles ont une fécondation interne. Les mâles possèdent des organes copulateurs : un hémipénis chez les lézards et les serpents (deux organes, un seul utilisé à la fois), ou un pénis chez les tortues et les crocodiliens. Fait remarquable : certaines femelles de serpents et de lézards peuvent conserver des spermatozoïdes vivants dans leur organisme pendant plusieurs années, et féconder leurs œufs bien après l'accouplement.",
                 source: "Université de Reproduction - Les reptiles ont une fécondation interne."
             },
             {
@@ -2521,7 +2521,7 @@ const quizzesData = {
                 question: "À quel âge une tortue terrestre peut-elle vivre plus de 100 ans ?",
                 options: ["À partir de 50 ans", "À partir de 80 ans", "À partir de 100 ans", "Jusqu'à 200 ans"],
                 correct: 3,
-                explanation: "La r\u00e9ponse correcte est \u00ab Jusqu'\u00e0 200 ans \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Les tortues géantes des Galápagos et des Seychelles sont parmi les animaux les plus longévifs connus. Jonathan, la tortue des Seychelles vivant à Sainte-Hélène, est née vers 1832 et a dépassé les 190 ans en 2024. Des études génétiques sur ces espèces ont montré qu'elles vieillissent très lentement : leurs télomères (marqueurs du vieillissement cellulaire) raccourcissent à une vitesse infime. Certains chercheurs les étudient pour comprendre les mécanismes du vieillissement.",
                 source: "Centre de Longévité Reptilienne - Les tortues géantes peuvent dépasser 200 ans."
             },
             {
@@ -2529,7 +2529,7 @@ const quizzesData = {
                 question: "Quel est le processus de défense du caméléon face au prédateur ?",
                 options: ["Fuite", "Changement de couleur, posture menaçante et sifflement", "Attaque directe", "Camouflage"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Changement de couleur, posture mena\u00e7ante et sifflement \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Le caméléon face à un prédateur déploie plusieurs stratégies de défense. Il change d'abord de couleur pour se fondre dans son environnement (camouflage). Si découvert, il se gonfle latéralement pour paraître plus grand, ouvre grand la gueule, se balance pour imiter une feuille agitée par le vent, et siffle ou crache. En dernier recours, il peut mordre. Il se déplace aussi en balancement saccadé pour imiter le mouvement d'une feuille et dérouter les prédateurs à vision adaptée au mouvement.",
                 source: "Institut d'Éthologie Défensive - Multi-stratégies de défense."
             },
             {
@@ -2537,7 +2537,7 @@ const quizzesData = {
                 question: "Quel est le record de jeûne chez un grand crocodile ?",
                 options: ["Quelques jours", "1-2 mois", "6 mois à 1 an", "2+ ans possibles"],
                 correct: 3,
-                explanation: "La r\u00e9ponse correcte est \u00ab 2+ ans possibles \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Les crocodiles possèdent l'un des métabolismes les plus lents du règne animal. Après un grand repas, un crocodile peut survivre plus d'un an sans manger en vivant sur ses réserves de graisses. En période de sécheresse ou de froid, ils entrent en dormance et leur métabolisme ralentit jusqu'à presque s'arrêter. Cette frugalité extrême est une adaptation à des environnements où la nourriture peut être rare ou saisonnière.",
                 source: "Centre d'Écologie Crocodilienne - Métabolisme extrêmement lent."
             },
             {
@@ -2545,7 +2545,7 @@ const quizzesData = {
                 question: "Quel est le rôle de la membrane nictitante chez les reptiles aquatiques ?",
                 options: ["Aucun rôle", "Protection des yeux sous l'eau", "Vision uniquement", "Audition"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Protection des yeux sous l'eau \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "La membrane nictitante (troisième paupière) des reptiles aquatiques se ferme horizontalement sur l'œil lors de la plongée, comme des lunettes de natation transparentes. Elle protège l'œil des débris, de l'eau salée et des chocs, tout en maintenant une vision fonctionnelle sous l'eau. Les crocodiles, tortues marines et certains lézards aquatiques en sont équipés. Chez les crocodiles, elle peut aussi se fermer lors des combats ou des prises de proies.",
                 source: "Institut d'Ophtalmologie Reptilienne - Protection adaptée à l'aquatique."
             },
             {
@@ -2553,7 +2553,7 @@ const quizzesData = {
                 question: "À quelle vitesse une tortue terrestre se déplace-t-elle ?",
                 options: ["0,5 km/h", "1-2 km/h", "3-5 km/h", "10+ km/h"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab 1-2 km/h \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "La tortue terrestre se déplace à environ 0,3 à 0,5 km/h en vitesse normale, avec des pointes à 1-2 km/h. C'est nettement plus lent que dans la fable de La Fontaine, mais cohérent avec leur mode de vie : pas de prédateurs naturels adultes (grâce à la carapace), alimentation passive (herbes, feuilles), et économie d'énergie maximale. Les tortues marines sont bien plus véloces dans l'eau, pouvant nager jusqu'à 35 km/h pour la tortue luth.",
                 source: "Centre d'Écologie Chelonienne - Locomotion très lente."
             },
             {
@@ -2561,7 +2561,7 @@ const quizzesData = {
                 question: "Quel est le processus de thermorégulation d'un reptile diurne ?",
                 options: ["Pas de thermorégulation", "Basking au soleil pour augmenter température", "Métabolisme interne", "Eau froide"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Basking au soleil pour augmenter temp\u00e9rature \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Le basking (bain de soleil) est le principal outil de thermorégulation des reptiles diurnes. Le matin, ils s'orientent perpendiculairement aux rayons du soleil pour maximiser la surface exposée et réchauffer rapidement leur corps. Une fois à température optimale (souvent 30-38°C selon l'espèce), ils cherchent l'ombre pour éviter la surchauffe. Certains lézards peuvent ainsi contrôler leur température à 1°C près en alternant exposition et ombre tout au long de la journée.",
                 source: "Institut de Thermorégulation Ectotherme - Comportemental et physique."
             },
             {
@@ -2569,7 +2569,7 @@ const quizzesData = {
                 question: "À quel âge une tortue aquatique peut-elle se reproduire ?",
                 options: ["À 2-3 ans", "À 5-8 ans", "À 8-15 ans selon l'espèce", "À 20+ ans"],
                 correct: 2,
-                explanation: "La r\u00e9ponse correcte est \u00ab \u00c0 8-15 ans selon l'esp\u00e8ce \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Les tortues aquatiques d'eau douce atteignent leur maturité sexuelle entre 8 et 15 ans selon l'espèce et le sexe — les femelles prennent généralement plus de temps que les mâles. La cistude d'Europe (notre tortue aquatique native) est mature vers 10-14 ans. Cette maturité tardive combinée à un faible taux de survie juvénile rend ces espèces très sensibles aux perturbations humaines : la perte d'un seul adulte reproducteur a un impact significatif sur la population.",
                 source: "Centre de Reproduction Aquatique - Maturation très tardive."
             },
             {
@@ -2577,7 +2577,7 @@ const quizzesData = {
                 question: "Quel est le nombre de dents chez un crocodile adulte ?",
                 options: ["20-30 dents", "40-60 dents", "80-100 dents", "Plus de 100"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab 40-60 dents \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Un crocodile adulte possède entre 60 et 80 dents selon l'espèce. Mais ce qui est remarquable, c'est que ces dents se renouvellent en permanence — jusqu'à 50 fois dans une vie ! Une nouvelle dent pousse sous chaque dent usée, prête à la remplacer. Un crocodile peut ainsi utiliser jusqu'à 3 000 dents en une vie. Ces dents servent à saisir et tenir les proies, pas à les mâcher — les crocodiles avalent leurs proies en morceaux ou entières.",
                 source: "Institut d'Anatomie Reptilienne - Les crocodiles ont des dizaines de dents."
             },
             {
@@ -2585,7 +2585,7 @@ const quizzesData = {
                 question: "Quel est le rôle du cloaque chez les reptiles ?",
                 options: ["Respiration uniquement", "Cavité commune pour l'excrétion, reproduction et digestion", "Digestion uniquement", "Stockage"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Cavit\u00e9 commune pour l'excr\u00e9tion, reproduction et digestion \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Le cloaque est une innovation évolutive des tétrapodes (vertébrés terrestres). Il regroupe en une seule ouverture toutes les fonctions d'évacuation : digestive (matières fécales), urinaire (urates chez les reptiles, qui excrètent de l'acide urique plutôt que de l'urée pour économiser l'eau) et reproductive (sperme, œufs). Cette économie anatomique est particulièrement adaptée aux animaux à peau imperméable qui doivent conserver l'eau précieusement.",
                 source: "Institut d'Anatomie Comparée - Multifonctionne structure reptilienne."
             },
             {
@@ -2593,7 +2593,7 @@ const quizzesData = {
                 question: "À quel âge un lézard vert peut-il commencer à se reproduire ?",
                 options: ["À 1-2 ans", "À 2-3 ans", "À 3-4 ans selon l'espèce", "À 5+ ans"],
                 correct: 2,
-                explanation: "La r\u00e9ponse correcte est \u00ab \u00c0 3-4 ans selon l'esp\u00e8ce \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Le lézard vert d'Europe (Lacerta bilineata) atteint sa maturité sexuelle entre 2 et 3 ans. Les espèces tropicales plus grandes comme le varan du Nil maturent vers 3-4 ans. Le dragon de Komodo, le plus grand lézard vivant, attend 5 à 7 ans. La période de reproduction coïncide avec le printemps et les jours longs dans les régions tempérées — la photopériode déclenche la production hormonale qui stimule les comportements reproducteurs.",
                 source: "Centre d'Herpétologie - Maturation progressive et variable."
             },
             {
@@ -2601,7 +2601,7 @@ const quizzesData = {
                 question: "Quel est le processus de la 'parthénogenèse' chez certains lézards ?",
                 options: ["Reproduction sexuée normale", "Reproduction asexuée par clonage", "Hermaphrodisme", "Pas de reproduction"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Reproduction asexu\u00e9e par clonage \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "La parthénogenèse permet à certaines femelles de se reproduire sans mâle. Les œufs se développent sans être fécondés, produisant des individus génétiquement identiques à la mère (clones). Ce phénomène est bien documenté chez certains varans (dragon de Komodo), certains geckos et lézards fouette-queue. Il survient parfois en captivité chez des espèces normalement sexuées, probablement comme réponse au manque de mâle. Les descendants sont souvent exclusivement de sexe femelle ou mâle selon l'espèce.",
                 source: "Institut de Génétique Reptilienne - Reproduction sans mâle possible."
             },
             {
@@ -2609,7 +2609,7 @@ const quizzesData = {
                 question: "Quel est le temps moyen de vie d'un serpent venimeux en captivité ?",
                 options: ["2-5 ans", "5-10 ans", "10-20 ans selon l'espèce", "30+ ans"],
                 correct: 2,
-                explanation: "La r\u00e9ponse correcte est \u00ab 10-20 ans selon l'esp\u00e8ce \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Les serpents venimeux vivent généralement plus longtemps en captivité qu'à l'état sauvage, où la prédation et la concurrence alimentaire réduisent leur survie. Un cobra royal peut vivre 20 à 25 ans en captivité. Un crotale à sonnette, 25 à 30 ans. Un python royal (non venimeux mais proche en taille) détient le record de longévité documenté pour un serpent en captivité avec 48 ans. Les soins vétérinaires, la nourriture régulière et l'absence de prédateurs expliquent cette longévité accrue.",
                 source: "Centre de Zoologie Ophidienne - Longévité variable selon espèce."
             },
             {
@@ -2617,7 +2617,7 @@ const quizzesData = {
                 question: "À quel âge une tortue marine atteint-elle la maturité sexuelle ?",
                 options: ["À 5-10 ans", "À 20-40 ans selon l'espèce", "À 50+ ans", "Jamais vraiment"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab \u00c0 20-40 ans selon l'esp\u00e8ce \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "La maturité sexuelle extrêmement tardive des tortues marines (20 à 50 ans selon l'espèce) est l'une des raisons principales de leur vulnérabilité. La tortue caouanne mûrit vers 20-30 ans, la tortue verte entre 25 et 50 ans. Une tortue doit donc survivre des décennies entières avant de contribuer à la reproduction de son espèce. La capture accidentelle dans les filets de pêche et la destruction des plages de ponte avant la maturité sont catastrophiques pour les populations.",
                 source: "Institut de Biologie Marine - Maturation extrêmement lente."
             },
             {
@@ -2625,7 +2625,7 @@ const quizzesData = {
                 question: "Quel est le record d'apnée enregistré chez une tortue marine ?",
                 options: ["30 minutes", "1 heure", "5-7 heures selon l'espèce", "Plus de 10 heures"],
                 correct: 2,
-                explanation: "La r\u00e9ponse correcte est \u00ab 5-7 heures selon l'esp\u00e8ce \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Le record d'apnée chez les tortues marines est détenu par la tortue luth qui peut rester immergée jusqu'à 7 heures en dormance. Leur secret : un métabolisme extrêmement lent au repos, une hémoglobine très efficace pour transporter l'oxygène, et la capacité à tolérer des niveaux de CO2 élevés dans le sang. En cas de prise accidentelle dans un filet (une des premières causes de mortalité), une tortue déjà à bout de ressources se noie en quelques minutes.",
                 source: "Centre de Physiologie Marine - Adaptation remarquable."
             },
             {
@@ -2633,7 +2633,7 @@ const quizzesData = {
                 question: "Quel serpent a le venin le plus toxique chez le Mamba noir ?",
                 options: ["Pas de comparaison", "Plus toxique que le taipan", "Moins toxique que le taipan", "Égal"],
                 correct: 2,
-                explanation: "La r\u00e9ponse correcte est \u00ab Moins toxique que le taipan \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Le mamba noir est souvent cité comme 'le serpent le plus dangereux d'Afrique', mais il est moins toxique que le taipan intérieur australien. Sa dangerosité vient d'une combinaison de facteurs : vitesse (peut atteindre 20 km/h), agressivité quand acculé, venin neurotoxique très rapide (mort en 20 minutes sans antidote) et facilité à vous injecter le venin lors de plusieurs morsures. Le taipan est plus toxique, mais le mamba est responsable de davantage de décès humains en raison de son aire de répartition.",
                 source: "Institut Toxinologique - Le taipan reste plus toxique."
             },
             {
@@ -2641,7 +2641,7 @@ const quizzesData = {
                 question: "À quel âge un lézard perd-il sa queue de façon définitive ?",
                 options: ["Jamais", "Une ou deux fois dans sa vie", "Plusieurs fois selon les besoins", "À chaque agression"],
                 correct: 2,
-                explanation: "La r\u00e9ponse correcte est \u00ab Plusieurs fois selon les besoins \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "L'autotomie caudale (perte volontaire de la queue) peut se répéter plusieurs fois chez un même lézard, mais jamais exactement au même endroit. La queue repousse, mais ce régénérat est composé de cartilage et non d'os, et sa forme et ses couleurs sont souvent différentes de l'originale. Certaines espèces ont des queues particulièrement voyantes qui continuent à se tortiller après la séparation, attirant l'attention du prédateur pendant que le lézard s'échappe.",
                 source: "Institut d'Éthologie Défensive - L'autotomie se répète."
             },
             {
@@ -2649,7 +2649,7 @@ const quizzesData = {
                 question: "Quel est le temps d'hibernation typique pour un reptile tempéré ?",
                 options: ["1 mois", "2-3 mois", "4-6 mois selon l'espèce", "7-8 mois"],
                 correct: 2,
-                explanation: "La r\u00e9ponse correcte est \u00ab 4-6 mois selon l'esp\u00e8ce \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Les reptiles des régions tempérées entrent en hibernation (torpeur hivernale) quand les températures descendent sous 10°C. La vipère aspic, par exemple, hiberne de novembre à mars dans des abris rocheux ou des terriers. Leur métabolisme ralentit à 5-10% du niveau normal, leur cœur peut ne battre que quelques fois par minute. Ils ne dorment pas vraiment — ils restent conscients mais incapables de bouger. Se réveiller trop tôt avant le printemps peut être fatal par manque de nourriture disponible.",
                 source: "Centre de Physiologie Saisonnière - Hibernation adaptée au climat."
             },
             {
@@ -2657,7 +2657,7 @@ const quizzesData = {
                 question: "Quel est le rôle de la 'gape' chez le python ?",
                 options: ["Respiration", "Préparation à l'ingestion d'une grosse proie", "Communication", "Bâillement"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Pr\u00e9paration \u00e0 l'ingestion d'une grosse proie \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Le 'bâillement' ou gape du python avant d'avaler une grosse proie sert à désolidariser les deux mâchoires et à réaligner les os pour créer la plus grande ouverture possible. Les mâchoires du python ne sont pas fusionnées mais reliées par des ligaments très élastiques, permettant une ouverture de 150°. Cette flexibilité lui permet d'avaler des proies bien plus larges que sa propre tête. Après ingestion, les os se repositionnent et les ligaments reprennent leur place naturellement.",
                 source: "Institut d'Éthologie Prédatrice - Adaptation pour proies volumineuses."
             },
             {
@@ -2665,7 +2665,7 @@ const quizzesData = {
                 question: "À quel âge un crocodile peut-il dépasser 4 mètres de long ?",
                 options: ["À 10-15 ans", "À 20-30 ans", "À 30-40 ans selon l'espèce", "À 50+ ans"],
                 correct: 2,
-                explanation: "La r\u00e9ponse correcte est \u00ab \u00c0 30-40 ans selon l'esp\u00e8ce \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Les crocodiles grandissent toute leur vie, mais la croissance ralentit considérablement avec l'âge. Un crocodile du Nil grandit d'environ 30 cm par an les premières années, puis de quelques centimètres seulement à l'âge adulte. Dépasser 4 mètres de longueur prend généralement 30 à 40 ans. Les très grands spécimens (5-6 m) sont donc des individus très âgés — potentiellement centenaires. C'est pourquoi les crocodiles géants, protégés par leur taille, sont aussi les plus fertiles et importants pour la reproduction.",
                 source: "Centre d'Écologie Crocodilienne - Croissance très lente."
             },
             {
@@ -2673,7 +2673,7 @@ const quizzesData = {
                 question: "Quel est le processus de la 'autotomie caudale' chez les lézards ?",
                 options: ["Perte accidentelle", "Perte volontaire de la queue pour échapper aux prédateurs", "Rejet d'un segment", "Mutilation"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Perte volontaire de la queue pour \u00e9chapper aux pr\u00e9dateurs \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "L'autotomie caudale est un mécanisme de défense unique : le lézard contracte volontairement certains muscles qui fracturent une vertèbre caudaleprédéterminée (plan de fracture), permettant la queue de se détacher proprement. La queue détachée continue à se tortiller pendant plusieurs minutes grâce à des réserves nerveuses autonomes, détournant l'attention du prédateur. Le lézard, lui, s'échappe. La perte de queue a un coût : réserves de graisse perdues, risque d'infection, et énergie dépensée pour la régénération.",
                 source: "Institut d'Éthologie - Mécanisme de survie exceptionnel."
             }
         ],
@@ -2683,7 +2683,7 @@ const quizzesData = {
                 question: "Quel est le processus appelé \"viparity\" chez certains reptiles ?",
                 options: ["Ponte d'œufs", "Développement interne avec viviparie", "Hibernation prolongée", "Reproduction asexuée"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab D\u00e9veloppement interne avec viviparie \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "La viviparité chez les reptiles est apparue indépendamment plus de 100 fois au cours de l'évolution — c'est un des exemples les plus frappants d'évolution convergente. La vipère aspic européenne est vivipare : elle garde ses œufs à l'intérieur jusqu'à l'éclosion (ovoviviparité). Certains scinques ont développé un vrai placenta pour nourrir les embryons. Avantage principal : la mère peut thermoréguler activement pendant la gestation, assurant un développement optimal même dans des environnements froids.",
                 source: "Institut de Reproduction des Reptiles - Certains reptiles sont vivipares."
             },
             {
@@ -2691,7 +2691,7 @@ const quizzesData = {
                 question: "Quel mécanisme génétique détermine le sexe chez la plupart des reptiles ?",
                 options: ["Chromosomes XY", "Température d'incubation", "Ratio numérique d'œufs", "Exposition à la lumière"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Temp\u00e9rature d'incubation \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "La détermination du sexe par la température (TSD) est fascinante : chez les crocodiles et de nombreuses tortues, ce n'est pas un chromosome qui détermine le sexe, mais la température à laquelle l'œuf est incubé. Chez le crocodile du Nil, 30°C produit des femelles, 34°C des mâles, et des températures intermédiaires donnent un mélange. Le réchauffement climatique perturbe déjà ce mécanisme : certaines populations de tortues marines produisent jusqu'à 99% de femelles dans les zones les plus chaudes.",
                 source: "Université de Génétique Reptilienne - La température d'incubation détermine souvent le sexe."
             },
             {
@@ -2699,7 +2699,7 @@ const quizzesData = {
                 question: "Quel est le rôle de l'organe de Jacobson chez les reptiles ?",
                 options: ["Vision", "Détection chimiosensorielle des phéromones", "Respiration", "Audition"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab D\u00e9tection chimiosensorielle des ph\u00e9romones \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "L'organe de Jacobson (organe voméronasal) des serpents et lézards est un organe olfactif secondaire situé au palais. Le serpent capte les molécules odorantes avec sa langue fourchue (qui échantillonne l'air des deux côtés simultanément pour détecter la direction des odeurs), puis les transfère à l'organe de Jacobson. Ce système permet de 'goûter l'air' — détecter les phéromones, pister une proie, identifier des congénères et repérer des partenaires à grande distance.",
                 source: "Institut Sensoriel - L'organe de Jacobson détecte les phéromones."
             },
             {
@@ -2707,7 +2707,7 @@ const quizzesData = {
                 question: "Quel est le processus d'adaptation chromatique du caméléon ?",
                 options: ["Changement chimique simple", "Action combinée de chromatophores, iridophores et leuocphores", "Pigmentation génétique", "Réflexion optique uniquement"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Action combin\u00e9e de chromatophores, iridophores et leuocphores \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Le changement de couleur du caméléon implique trois couches de cellules spécialisées. Les chromatophores contiennent des pigments colorés (mélanine, caroténoïdes). Les iridophores contiennent des nanocristaux de guanine qui réfléchissent la lumière différemment selon leur espacement — modifiable par le système nerveux. Les leucophores réfléchissent toutes les longueurs d'onde pour produire du blanc. En jouant sur ces trois couches, le caméléon génère une palette de couleurs presque illimitée en quelques secondes.",
                 source: "Université de Biophysique - Le changement de couleur combine plusieurs types de cellules."
             },
             {
@@ -2715,7 +2715,7 @@ const quizzesData = {
                 question: "Quel type d'antivenin est utilisé pour traiter les morsures de serpents ?",
                 options: ["Antivenin synthétique simple", "Sérum polyvalent ou spécifique selon l'espèce", "Antibiotiques simples", "Antihistaminiques uniquement"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab S\u00e9rum polyvalent ou sp\u00e9cifique selon l'esp\u00e8ce \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Les antivenins sont produits en injectant de petites doses de venin à des chevaux ou moutons, dont le système immunitaire fabrique des anticorps. Le sérum est ensuite extrait et purifié. Les antivenins spécifiques (monovalents) sont très efficaces contre une espèce précise, mais inutiles contre d'autres. Les antivenins polyvalents couvrent plusieurs espèces d'une même région mais sont moins efficaces individuellement. L'administration doit être faite rapidement — idéalement dans l'heure suivant la morsure.",
                 source: "Institut Toxinologique International - Les antivenins peuvent être polyvalents ou spécifiques."
             },
             {
@@ -2723,7 +2723,7 @@ const quizzesData = {
                 question: "Quel est le mécanisme de régulation thermique chez un reptile en hibernation ?",
                 options: ["Arrêt métabolique complet", "Réduction du métabolisme jusqu'à 5-10% du normal", "Augmentation de la température interne", "Activation de la thermogenèse"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab R\u00e9duction du m\u00e9tabolisme jusqu'\u00e0 5-10% du normal \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Pendant l'hibernation (brumation chez les reptiles), le métabolisme chute à 5-10% de son niveau actif. Le rythme cardiaque peut tomber à 1-2 battements par minute (contre 30-40 en activité). La respiration est quasi inexistante. Certaines espèces comme la tortue-boîte nord-américaine hivernent sous la glace, où l'oxygène dissous dans l'eau suffit à leurs besoins minimaux. La survie de cette torpeur dépend d'un choix judicieux du site d'hivernage — hors gel, à l'abri des prédateurs.",
                 source: "Centre de Physiologie Comparée - L'hibernation réduit drastiquement le métabolisme."
             },
             {
@@ -2731,7 +2731,7 @@ const quizzesData = {
                 question: "Quel est le rôle des glandes de sel chez les crocodiliens d'eau salée ?",
                 options: ["Digestion", "Excrétion du sel excédentaire", "Reproduction", "Détoxification"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Excr\u00e9tion du sel exc\u00e9dentaire \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Le crocodile marin vit dans des eaux salées mais ne peut pas filtrer le sel dans ses reins comme les poissons marins. Il possède des glandes à sel sur sa langue qui excrètent l'excès de sel directement depuis le sang. On peut d'ailleurs voir des cristaux de sel sur la langue des crocodiles marins. Sans ce mécanisme, l'eau sortirait de leurs cellules par osmose et ils se déshydrateraient malgré l'eau qui les entoure. Les tortues marines ont un système similaire via des glandes lacrymales — les 'larmes' des tortues marine servent à éliminer le sel.",
                 source: "Institut d'Écologie Marine - Les glandes de sel excrètent l'excès de sel."
             },
             {
@@ -2739,7 +2739,7 @@ const quizzesData = {
                 question: "Quel mécanisme de locomotion utilise le gecko pour grimper aux murs ?",
                 options: ["Ventouses", "Crochets microscopiques (setae) avec forces de Van der Waals", "Adhésifs naturels", "Électricité statique"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Crochets microscopiques (setae) avec forces de Van der Waals \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Les pattes des geckos sont couvertes de millions de poils microscopiques (setae), eux-mêmes subdivisés en centaines de spatules nanométriques. À cette échelle, les forces de Van der Waals (attractions électrostatiques entre molécules) deviennent suffisamment importantes pour coller la patte à n'importe quelle surface — même le verre ou le plafond. Remarquable : ce mécanisme est sec (pas de colle), autorétractable et laisse aucune trace. Il inspire des matériaux adhésifs réutilisables dans la recherche en robotique et médecine.",
                 source: "Université de Biomécanique - Les geckos utilisent les forces de Van der Waals."
             },
             {
@@ -2747,7 +2747,7 @@ const quizzesData = {
                 question: "Quel est le processus de cryoprotection chez les reptiles tolérants au gel ?",
                 options: ["Simple gel des cellules", "Accumulation de glucose et glycérol pour protéger les cellules", "Déshydratation totale", "Hibernation sans froid"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Accumulation de glucose et glyc\u00e9rol pour prot\u00e9ger les cellules \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Certaines espèces comme la grenouille des bois (Rana sylvatica) et quelques tortues-boîtes peuvent survivre à un gel partiel de leurs tissus. Quand la température baisse, leur foie convertit massivement le glycogène en glucose et glycérol, qui agissent comme un antigel naturel à l'intérieur des cellules. Le liquide extracellulaire peut geler, mais les cellules restent intactes. Au dégel printanier, leur cœur reprend ses battements. C'est l'une des adaptations biologiques les plus spectaculaires connues.",
                 source: "Institut de Cryobiologie - Le glucose et le glycérol protègent les cellules du gel."
             },
             {
@@ -2755,7 +2755,7 @@ const quizzesData = {
                 question: "Quel est le rôle du sulfate de calcium dans la résine utilisée par certains serpents ?",
                 options: ["Lubrification", "Formation et renforcement des crocs venimeux", "Digestion", "Communication chimique"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Formation et renforcement des crocs venimeux \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Les crocs des serpents venimeux sont des dents fortement minéralisées — leur extrémité contient des concentrations élevées de calcium et de zinc qui les rendent particulièrement durs et résistants à la flexion. Cette dureté est essentielle car les crocs doivent percer peaux, écailles ou plumes tout en conduisant le venin avec précision. Les crocs se cassent et se remplacent régulièrement (polyphyodontie), et plusieurs crocs de remplacement sont toujours en réserve dans la gencive, prêts à prendre la place.",
                 source: "Journal de Toxinologie - Le sulfate de calcium renforce les structures des crocs."
             },
             {
@@ -2763,7 +2763,7 @@ const quizzesData = {
                 question: "Quel est le mécanisme de la 'glande de venin' chez les serpents ?",
                 options: ["Pas de glande", "Glande modifiée des glandes salivaires", "Organe indépendant", "Production dans le foie"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Glande modifi\u00e9e des glandes salivaires \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Les glandes à venin des serpents sont évolutivement des glandes salivaires modifiées (glandes parotides). Au fil de l'évolution, ces glandes ont développé la capacité de produire des protéines complexes (enzymes, neurotoxines, hémotoxines) au lieu de la simple salive. Le venin est d'abord stocké dans la glande, puis lors de la morsure, un muscle compresseur presse la glande et injecte le venin dans le canal du croc. La composition du venin varie énormément entre espèces et même entre individus d'une même espèce.",
                 source: "Institut d'Herpétologie Comparative - Évolution des glandes salivaires."
             },
             {
@@ -2771,7 +2771,7 @@ const quizzesData = {
                 question: "Quel est le processus de la 'thermophile optimalité' chez les reptiles ?",
                 options: ["Pas de processus", "Température corporelle optimale pour métabolisme et activité", "Froid est préféré", "Aucune préférence"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Temp\u00e9rature corporelle optimale pour m\u00e9tabolisme et activit\u00e9 \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Chaque espèce de reptile a une température corporelle préférée (TCP) à laquelle ses performances sont maximales (vitesse, digestion, immunité, réponse aux stimuli). Un lézard à 30°C court deux fois plus vite qu'à 20°C. Les reptiles sont des thermorégulateurs comportementaux précis : ils passent une grande partie de la journée à 'naviguer' entre les zones chaudes et froides pour rester à leur TCP. Cette précision thermique est comparable à celle d'un thermostat — avec 1-2°C de précision.",
                 source: "Université de Thermoécologie - Température sélectionnée pour performances."
             },
             {
@@ -2779,7 +2779,7 @@ const quizzesData = {
                 question: "Quel est le mécanisme du 'système cardiopulmonaire' unique chez les crocodiliens ?",
                 options: ["Identique aux reptiles", "Shunt sanguin permettant respiration aquatique prolongée", "Respiration cutanée", "Pas d'adaptations"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Shunt sanguin permettant respiration aquatique prolong\u00e9e \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Les crocodiliens sont les seuls reptiles à avoir un cœur à 4 chambres (comme les mammifères), mais avec une particularité unique : une valve spéciale (foramen de Panizza) permet de 'shunter' la circulation pulmonaire lors des plongées. Le sang est alors réorienté vers les organes vitaux au lieu des poumons, permettant une apnée prolongée sans gaspiller les réserves d'oxygène. Lors de la digestion, ce shunt inverse le flux pour acidifier le sang et dissoudre plus efficacement les os des proies.",
                 source: "Institut de Physiologie Crocodilienne - Adaptations pour plongée."
             },
             {
@@ -2787,7 +2787,7 @@ const quizzesData = {
                 question: "Quel est le rôle de la 'nécrose thermale' chez les vipères à fossettes ?",
                 options: ["Aucun rôle", "Destruction sélective de tissus par venin", "Chauffage interne", "Refroidissement défensif"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Destruction s\u00e9lective de tissus par venin \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Le venin nécrotique des vipères à fossettes (comme le crotale ou le fer-de-lance) contient des phospholipases et des protéases qui détruisent les cellules, les vaisseaux sanguins et le tissu musculaire autour du site de morsure. Cette nécrose localisée peut être dévastatrice : des amputations sont parfois nécessaires après des morsures de serpent. Biologiquement, cette destruction prédigère la proie depuis l'intérieur, facilitant la digestion pour le serpent — le venin est à la fois une arme de chasse et un outil digestif.",
                 source: "Journal de Toxinologie - Le venin crée nécrose localisée."
             },
             {
@@ -2795,7 +2795,7 @@ const quizzesData = {
                 question: "Quel est le processus de l'osmorégulation chez les tortues marines ?",
                 options: ["Pas d'osmorégulation", "Glandes à sel pour excrétion d'eau salée", "Reins hyperactifs", "Pas de régulation"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Glandes \u00e0 sel pour excr\u00e9tion d'eau sal\u00e9e \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Les tortues marines boivent inévitablement de l'eau de mer en mangeant. Pour éliminer l'excès de sel, elles possèdent des glandes lacrymales surdimensionnées derrière les yeux qui sécrètent une solution très concentrée en sel — beaucoup plus salée que l'eau de mer. Ces 'larmes' sont l'explication du mythe selon lequel les tortues pleurent. En réalité, elles éliminent simplement du sel. Ce mécanisme d'osmorégulation est crucial : sans lui, la déshydratation osmotique serait fatale.",
                 source: "Institut d'Écologie Marine - Adaptation critique pour survie en mer."
             },
             {
@@ -2803,7 +2803,7 @@ const quizzesData = {
                 question: "Quel est le mécanisme de la 'autolésion' chez les serpents défensifs ?",
                 options: ["Pas de mécanisme", "Enroulement et auto-morsure pour épuiser agresseur", "Chimique", "Thermique"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Enroulement et auto-morsure pour \u00e9puiser agresseur \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Certains serpents défensifs comme le serpent roi d'Amérique ou le couleuvre à collier utilisent des stratégies d'épuisement de leurs prédateurs : ils se tordent, s'enroulent frénétiquement, peuvent feindre la mort (thanatose), libèrent des sécrétions nauséabondes par le cloaque, ou dans certains cas rares s'automordent pour libérer des substances défensives. Ces comportements visent à rendre la capture si désagréable ou difficile que le prédateur abandonne.",
                 source: "Institut d'Éthologie Défensive - Stratégie d'épuisement de l'attaquant."
             },
             {
@@ -2811,7 +2811,7 @@ const quizzesData = {
                 question: "Quel est le rôle du \"jacobson organ\" (vomeronasal) chez les lézards ?",
                 options: ["Aucun rôle", "Détection chimiosensorielle des phéromones et parfums", "Vision", "Audition"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab D\u00e9tection chimiosensorielle des ph\u00e9romones et parfums \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "L'organe de Jacobson des lézards fonctionne de la même façon que celui des serpents : la langue bifurquée capte les molécules odorantes de l'environnement et les transfère aux deux bulbes olfactifs de l'organe voméronasal. La forme fourchue de la langue permet une 'stéréo-olfaction' — détecter d'quel côté vient une odeur, comme nos deux oreilles localisent un son. Les lézards utilisent ce système pour trouver de la nourriture, identifier les prédateurs, détecter les partenaires et délimiter leur territoire.",
                 source: "Institut de Sensorimotricité - Détection sophistiquée de chimie."
             },
             {
@@ -2819,7 +2819,7 @@ const quizzesData = {
                 question: "Quel est le processus de la 'gonadogenèse dépendante de température' chez certains reptiles ?",
                 options: ["Pas de dépendance", "Sexe déterminé par température d'incubation", "Sexe génétique", "Sexe flexible"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Sexe d\u00e9termin\u00e9 par temp\u00e9rature d'incubation \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "La TSD (Temperature-dependent Sex Determination) est le mécanisme par lequel la température d'incubation, plutôt que les chromosomes, détermine le sexe de l'animal. Elle est présente chez la plupart des crocodiliens, de nombreuses tortues et certains lézards. Les températures chaudes favorisent généralement les femelles chez les tortues marines. Face au réchauffement climatique, des plages comme celles de la Grande Barrière de Corail produisent désormais jusqu'à 99% de femelles chez la tortue verte — menaçant la viabilité de ces populations.",
                 source: "Université de Génétique Reptilienne - TSD = Temperature-dependent sex determination."
             },
             {
@@ -2827,7 +2827,7 @@ const quizzesData = {
                 question: "Quel est le mécanisme de l'absorption de l'eau par la tortue du désert ?",
                 options: ["Pas d'absorption", "Par les yeux et cloaque depuis l'humidité du sol", "Métabolisme", "Pas de besoin"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Par les yeux et cloaque depuis l'humidit\u00e9 du sol \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "La tortue du désert de Mojave a développé des adaptations extraordinaires pour survivre sans eau liquide. Elle peut absorber l'humidité du sol humide à travers la peau autour de son cloaque. Après les rares pluies, elle stocke jusqu'à 40% de son poids en eau dans sa vessie — une réserve stratégique utilisée en période de sécheresse. Sa vessie sert littéralement de citerne portable. Elle peut aussi collecter la rosée du matin sur sa carapace et la diriger vers sa bouche par des canaux formés par ses écailles.",
                 source: "Institut d'Écologie Désertique - Adaptations extrêmes à l'aridité."
             },
             {
@@ -2835,7 +2835,7 @@ const quizzesData = {
                 question: "Quel est le rôle du \"pituitary gland\" dans la reproduction reptilienne ?",
                 options: ["Aucun rôle", "Sécrétion d'hormones reproductives contrôlant cycle d'accouplement", "Digestion", "Respiration"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab S\u00e9cr\u00e9tion d'hormones reproductives contr\u00f4lant cycle d'accouplement \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "L'hypophyse (glande pituitaire) des reptiles sécrète les gonadotrophines (LH et FSH) qui contrôlent la production de spermatozoïdes et d'ovules, ainsi que les hormones sexuelles (testostérone, œstrogènes). Ces cycles sont synchronisés avec les saisons via la photopériode et la température — deux signaux captés par l'œil pinéal (troisième œil) et l'hypothalamus. Chez les reptiles tropicaux, la saison des pluies joue souvent le rôle déclencheur de la reproduction plutôt que la luminosité.",
                 source: "Université d'Endocrinologie Reptilienne - Contrôle neuroendocrinien."
             },
             {
@@ -2843,7 +2843,7 @@ const quizzesData = {
                 question: "Quel est le processus de la 'hivernation' chez les reptiles tempérés ?",
                 options: ["Sommeil léger", "Ralentissement drastique du métabolisme et inactivité prolongée", "Pas de changement", "Migration"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Ralentissement drastique du m\u00e9tabolisme et inactivit\u00e9 prolong\u00e9e \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "L'hivernation des reptiles (brumation) n'est pas un vrai sommeil mais une torpeur métabolique. Le reptile peut encore bouger lentement si stimulé, mais son métabolisme tourne à 5-10% de son niveau normal. Les serpents se regroupent parfois en tas pour l'hivernage (hibernacula) — comportement rare chez des animaux solitaires. Des centaines de couleuvres rayées se rassemblent ainsi dans des grottes au Manitoba (Canada), formant des 'boules de serpents' spectaculaires. Ce regroupement conserve la chaleur et facilite les accouplements au printemps.",
                 source: "Institut de Physiologie Saisonnière - Survie du froid par métabolisme minimal."
             },
             {
@@ -2851,7 +2851,7 @@ const quizzesData = {
                 question: "Quel est le mécanisme de la 'coagulation sanguine' accélérée chez les serpents ?",
                 options: ["Pas de différence", "Coagulation plus rapide pour arrêter saignements", "Coagulation lente", "Aucune coagulation"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Coagulation plus rapide pour arr\u00eater saignements \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Les serpents ont effectivement des mécanismes de coagulation sanguine adaptés, mais l'ironie est que leur venin est souvent anticoagulant (hémotoxique). Les vipères injectent des enzymes qui consomment le fibrinogène de la proie, empêchant la coagulation et provoquant des hémorragies internes. Le serpent lui-même est immunisé contre son propre venin par des inhibiteurs spécifiques dans son sang. Certaines espèces produisent même des facteurs pro-coagulants — le venin du taipan cause paradoxalement un caillotage massif et fatal.",
                 source: "Institut d'Hématologie Reptilienne - Adaptation à l'hémostase."
             },
             {
@@ -2859,7 +2859,7 @@ const quizzesData = {
                 question: "Quel est le rôle du 'neocortex' manquant chez les reptiles ?",
                 options: ["Essentiel", "Pas d'importance - traitement sensoriel via autres structures", "Cause déficiences", "Non observé"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Pas d'importance - traitement sensoriel via autres structures \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Les reptiles n'ont pas de néocortex — la structure cérébrale responsable des fonctions cognitives supérieures chez les mammifères. Pourtant, ils montrent des comportements complexes : apprentissage, reconnaissance individuelle, jeu (certains crocodiles jouent avec des balles), et même utilisation d'outils rudimentaires. Ces capacités passent par d'autres structures comme le pallium dorsal. Les reptiles nous rappellent que l'intelligence peut évoluer par des voies neurologiques très différentes de la nôtre.",
                 source: "Université de Neurobiologie Comparative - Evolution neurologique."
             },
             {
@@ -2867,7 +2867,7 @@ const quizzesData = {
                 question: "Quel est le processus de la 'autotrophie microbienne' chez certains reptiles ?",
                 options: ["Pas de processus", "Bactéries dans tube digestif aident digestion cellulose", "Unique production d'énergie", "Symbiose rare"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Bact\u00e9ries dans tube digestif aident digestion cellulose \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Les iguanes verts sont des reptiles herbivores qui se nourrissent principalement de feuilles — riches en cellulose que les vertébrés ne peuvent pas digérer seuls. Leur tube digestif abrite une communauté de bactéries symbiotiques qui fermentent la cellulose et la convertissent en acides gras utilisables. Les jeunes iguanes ingèrent les excréments des adultes pour coloniser leur intestin avec ces bactéries essentielles — un comportement de coprophagie fonctionnel, similaire à celui observé chez les lapins.",
                 source: "Institut de Microbiologie Digestive - Symbiosies gastro-intestinales."
             },
             {
@@ -2875,7 +2875,7 @@ const quizzesData = {
                 question: "Quel est le mécanisme de la 'pupille sténopéique' chez les serpents venimeux ?",
                 options: ["Aucun rôle", "Fente pupillaire pour vision en faible lumière", "Vision normale", "Pas de pupille"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Fente pupillaire pour vision en faible lumi\u00e8re \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "La pupille en fente verticale des serpents nocturnes et crépusculaires (vipères, pythons, boas) peut se réduire à une ligne ultra-fine en pleine lumière, protégeant la rétine sensible. Dans l'obscurité, elle s'ouvre largement pour capter le maximum de lumière. Cette forme de fente permet aussi une plus grande profondeur de champ que la pupille ronde. Les serpents diurnes ont généralement des pupilles rondes. La pupille en fente est aussi présente chez les chats et les requins — des prédateurs qui chassent dans des conditions lumineuses variables.",
                 source: "Institut d'Ophtalmologie Ophidienne - Adaptation crépusculaire."
             },
             {
@@ -2883,7 +2883,7 @@ const quizzesData = {
                 question: "Quel est le rôle de la 'lipoprotéine' dans le venin des serpents ?",
                 options: ["Aucun rôle", "Composant du venin causant dommages membranaires", "Antivenin", "Neutralisant"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Composant du venin causant dommages membranaires \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Le venin des serpents est un cocktail complexe de plusieurs centaines de molécules actives. Les phospholipases A2 (enzymes lipolytiques) sont parmi les plus destructrices : elles attaquent les membranes cellulaires en dégradant leurs phospholipides, causant la lyse des cellules musculaires (myotoxines), des globules rouges (hémotoxines) ou des cellules nerveuses (neurotoxines). Certaines de ces molécules sont paradoxalement étudiées en médecine : des dérivés du venin de crotale servent à fabriquer des anticoagulants thérapeutiques.",
                 source: "Journal de Biochimie Toxinologique - Lipides actifs du venin."
             },
             {
@@ -2891,7 +2891,7 @@ const quizzesData = {
                 question: "Quel est le processus de la 'neuroplasticité' chez les reptiles face aux changements ?",
                 options: ["Pas de plasticité", "Adaptation comportementale et neurologique aux changements environnementaux", "Comportement fixe", "Pas d'adaptation"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Adaptation comportementale et neurologique aux changements environnementaux \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Les reptiles montrent une plasticité comportementale plus importante qu'on ne le croyait. Des expériences ont montré que des lézards peuvent apprendre à résoudre des puzzles (ouvrir des boîtes pour obtenir de la nourriture), reconnaître leur propriétaire, et même modifier leur comportement de thermorégulation en réponse aux changements climatiques. Le cerveau reptilien, bien que structurellement différent du nôtre, conserve une certaine plasticité synaptique qui permet l'apprentissage et l'adaptation tout au long de la vie.",
                 source: "Université de Neurosciences Reptilienne - Plasticité comportementale."
             },
             {
@@ -2899,7 +2899,7 @@ const quizzesData = {
                 question: "Quel est le mécanisme de l'échange de chaleur chez le python mère pendant incubation ?",
                 options: ["Pas d'échange", "Frissons musculaires produisent chaleur pour œufs", "Soleil externe", "Pas d'incubation"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Frissons musculaires produisent chaleur pour \u0153ufs \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Le python femelle est l'un des rares reptiles à exercer un soin parental actif. Elle s'enroule autour de sa ponte et produit de la chaleur par des contractions musculaires rapides (frissons thermogènes) — comportement exceptionnel chez un ectotherme. Elle peut maintenir la température de ses œufs à 30-33°C même si l'air ambiant tombe à 20°C, au prix d'une dépense énergétique considérable : elle peut perdre 40% de son poids pendant les 2-3 mois d'incubation sans manger.",
                 source: "Institut de Thermorégulation Reproductive - Thermorégulation maternelle."
             },
             {
@@ -2907,7 +2907,7 @@ const quizzesData = {
                 question: "Quel est le rôle du 'spectacle' (écaille oculaire) chez les serpents ?",
                 options: ["Aucun rôle", "Protection de l'œil durant la mue", "Vision", "Attraction sexuelle"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Protection de l'\u0153il durant la mue \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Le 'spectacle' est une écaille transparente et fusionnée qui recouvre l'œil des serpents en permanence (ils n'ont pas de paupières mobiles). Lors de la mue, cette écaille se soulève avec le reste de la peau — c'est pourquoi les yeux des serpents deviennent bleutés et opaques quelques jours avant la mue : le liquide de décollement s'accumule sous le spectacle. Après une mue réussie, le spectacle est parfaitement transparent à nouveau. Un spectacle retenu (mue incomplète) peut causer des infections oculaires graves.",
                 source: "Institut d'Anatomie Ophidienne - Adaptation à la mue."
             },
             {
@@ -2915,7 +2915,7 @@ const quizzesData = {
                 question: "Quel est le processus de la 'mimétrie batésienne' chez certains lézards inoffensifs ?",
                 options: ["Pas de mimétrie", "Imitation de lézards venimeux pour défense prédatrice", "Camouflage", "Mélange génétique"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Imitation de l\u00e9zards venimeux pour d\u00e9fense pr\u00e9datrice \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "La mimétrie batésienne est une stratégie évolutive où une espèce inoffensive imite l'apparence d'une espèce dangereuse pour bénéficier de sa protection sans en avoir les coûts. Le serpent des laiteries (Lampropeltis triangulum) imite les couleurs rouge-jaune-noir du serpent corail venimeux. La règle mnémotechnique anglaise 'Red touch yellow, kill a fellow ; red touch black, friend of Jack' aide à distinguer les deux. Cette mimétrie ne fonctionne que parce que les prédateurs ont appris à éviter le modèle venimeux.",
                 source: "Institut d'Éthologie Défensive - Stratégie évolutive de bluff."
             }
         ]
@@ -2953,7 +2953,7 @@ const quizzesData = {
                 question: "Combien d'espèces de dauphins existent environ ?",
                 options: ["Environ 5 espèces", "Environ 20 espèces", "Environ 40 espèces", "Environ 100 espèces"],
                 correct: 2,
-                explanation: "La r\u00e9ponse correcte est \u00ab Environ 40 esp\u00e8ces \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Il existe environ 40 esp\u00e8ces de dauphins dans le monde, appartenant \u00e0 la famille des Delphinid\u00e9s. Parmi les plus connues : le grand dauphin (Tursiops truncatus), le dauphin commun et l'orque \u2014 techniquement le plus grand dauphin. Cette diversit\u00e9 couvre les mers tropicales, temp\u00e9r\u00e9es et polaires.",
                 source: "Société Cétologique - Il existe environ 40 espèces de dauphins."
             },
             {
@@ -2961,7 +2961,7 @@ const quizzesData = {
                 question: "Quel est le plus petit cétacé du monde ?",
                 options: ["Le dauphin", "La baleine béluga", "Le marsouin", "L'orque"],
                 correct: 2,
-                explanation: "La r\u00e9ponse correcte est \u00ab Le marsouin \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Le marsouin commun (Phocoena phocoena) mesure en moyenne 1,4 \u00e0 1,7 m\u00e8tre pour 50 \u00e0 70 kg \u2014 bien loin des grandes baleines. Il se distingue du dauphin par son museau arrondi sans bec allong\u00e9. C'est l'un des c\u00e9tac\u00e9s les plus fr\u00e9quents en mer du Nord, malheureusement menac\u00e9 par les filets de p\u00eache.",
                 source: "Musée Océanographique - Le marsouin est l'un des plus petits cétacés."
             },
             {
@@ -2969,7 +2969,7 @@ const quizzesData = {
                 question: "Les mammifères marins allaitent-ils leurs petits ?",
                 options: ["Non, jamais", "Oui, comme tous les mammifères", "Parfois", "Seulement les cétacés"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Oui, comme tous les mammif\u00e8res \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Comme tous les mammif\u00e8res, les mammif\u00e8res marins allaitent leurs petits \u2014 c'est d'ailleurs ce qui les d\u00e9finit. Le lait des baleines est extraordinairement riche en graisses (40 \u00e0 50% de mati\u00e8res grasses, contre 4% dans le lait de vache), ce qui permet aux baleineaux de grossir de 80 \u00e0 90 kg par jour.",
                 source: "Institut d'Océanologie - Les mammifères marins allaitent leurs jeunes."
             },
             {
@@ -2977,7 +2977,7 @@ const quizzesData = {
                 question: "À quelle profondeur maximale les baleines peuvent-elles plonger ?",
                 options: ["100 mètres", "500 mètres", "2000+ mètres selon l'espèce", "3000+ mètres"],
                 correct: 2,
-                explanation: "La r\u00e9ponse correcte est \u00ab 2000+ m\u00e8tres selon l'esp\u00e8ce \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Les capacit\u00e9s de plong\u00e9e varient selon les esp\u00e8ces. La baleine \u00e0 bec de Cuvier d\u00e9tient le record avec plus de 3 000 m\u00e8tres et plus de 3 heures d'apn\u00e9e. Ces exploits sont rendus possibles par des adaptations extraordinaires : effondrement des poumons, redistribution du sang vers les organes vitaux, et stockage d'oxyg\u00e8ne dans les muscles gr\u00e2ce \u00e0 la myoglobine.",
                 source: "Centre d'Étude des Cétacés - Certaines baleines plongent très profond."
             },
             {
@@ -2985,7 +2985,7 @@ const quizzesData = {
                 question: "Quel type d'alimentation ont les baleines à fanons ?",
                 options: ["Carnivores prédateurs", "Herbivores", "Filtreurs de plancton", "Détritivores"],
                 correct: 2,
-                explanation: "La r\u00e9ponse correcte est \u00ab Filtreurs de plancton \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Les baleines \u00e0 fanons (mystic\u00e8tes) \u2014 baleine bleue, rorqual, baleine \u00e0 bosse \u2014 n'ont pas de dents mais des fanons, des lames corn\u00e9es qui filtrent l'eau comme un tamis g\u00e9ant. En une seule gorg\u00e9e, une baleine bleue peut ingurgiter jusqu'\u00e0 500 kg de krill. Paradoxe fascinant : le plus grand animal vivant se nourrit d'un des plus petits crustac\u00e9s de l'oc\u00e9an.",
                 source: "Université Marine - Les baleines à fanons filtrent le krill et le plancton."
             },
             {
@@ -2993,7 +2993,7 @@ const quizzesData = {
                 question: "Combien d'années une baleine peut-elle vivre ?",
                 options: ["10-20 ans", "30-50 ans", "50-90+ ans selon l'espèce", "200 ans"],
                 correct: 2,
-                explanation: "La r\u00e9ponse correcte est \u00ab 50-90+ ans selon l'esp\u00e8ce \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "La long\u00e9vit\u00e9 des baleines est remarquable. La baleine de Bowhead est le mammif\u00e8re le plus long\u00e9vif : certains individus d\u00e9passent 200 ans, d\u00e9termin\u00e9 par l'analyse des acides amin\u00e9s dans les yeux. La baleine \u00e0 bosse vit 80 \u00e0 90 ans, et la baleine bleue environ 80 ans. Cette long\u00e9vit\u00e9 tient \u00e0 un m\u00e9tabolisme lent et des m\u00e9canismes de r\u00e9paration de l'ADN tr\u00e8s efficaces.",
                 source: "Institut de Longévité Marine - Les baleines peuvent vivre très longtemps."
             },
             {
@@ -3001,7 +3001,7 @@ const quizzesData = {
                 question: "Quel mammifère marin passe l'ensemble de sa vie dans l'eau ?",
                 options: ["Les otaries", "Les phoques", "Les cétacés (baleines et dauphins)", "Les loutres"],
                 correct: 2,
-                explanation: "La r\u00e9ponse correcte est \u00ab Les c\u00e9tac\u00e9s (baleines et dauphins) \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Les c\u00e9tac\u00e9s (baleines, dauphins, marsouins) sont les seuls mammif\u00e8res marins \u00e0 passer enti\u00e8rement leur vie dans l'eau \u2014 naissance, alimentation, reproduction et mort incluses. Les phoques et otaries sortent r\u00e9guli\u00e8rement sur les c\u00f4tes pour se reproduire et muer. Les loutres de mer restent tr\u00e8s proches de l'eau mais peuvent s'\u00e9chouer. Seuls les c\u00e9tac\u00e9s sont totalement aquatiques.",
                 source: "Société Océanographique - Les cétacés sont entièrement aquatiques."
             },
             {
@@ -3009,7 +3009,7 @@ const quizzesData = {
                 question: "À quelle profondeur peut plonger un cachalot ?",
                 options: ["500 mètres", "1000-2000 mètres", "3000-4000 mètres", "Plus de 5000 mètres"],
                 correct: 2,
-                explanation: "La r\u00e9ponse correcte est \u00ab 3000-4000 m\u00e8tres \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Le cachalot (Physeter macrocephalus) est le champion des plong\u00e9es parmi les baleines \u00e0 dents. Il peut descendre \u00e0 plus de 3 000 m\u00e8tres et tenir en apn\u00e9e pendant 90 minutes pour chasser les calmars g\u00e9ants dans les abysses. Son cr\u00e2ne massif abrite le 'spermacoeti', un organe huileux qui r\u00e9gule sa flottabilit\u00e9 et aide \u00e0 focaliser ses clics d'\u00e9cholocalisation.",
                 source: "Institut de Biologie Marine - Le cachalot peut plonger très profond."
             },
             {
@@ -3017,7 +3017,7 @@ const quizzesData = {
                 question: "Quel est le poids d'une baleine bleue adulte ?",
                 options: ["50-100 tonnes", "100-150 tonnes", "150-200 tonnes", "200+ tonnes"],
                 correct: 2,
-                explanation: "La r\u00e9ponse correcte est \u00ab 150-200 tonnes \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "La baleine bleue adulte p\u00e8se en moyenne 150 \u00e0 200 tonnes \u2014 l'\u00e9quivalent de 30 \u00e9l\u00e9phants. Son c\u0153ur seul p\u00e8se environ 600 kg et est gros comme une petite voiture. Ses art\u00e8res sont si larges qu'un enfant pourrait y ramper. Malgr\u00e9 cette taille colossale, elle peut nager \u00e0 30 km/h lors de sprints.",
                 source: "Muséum Océanographique - La baleine bleue pèse environ 150-200 tonnes."
             },
             {
@@ -3025,7 +3025,7 @@ const quizzesData = {
                 question: "À quel âge un dauphin devient-il sexuellement mature ?",
                 options: ["À 2-3 ans", "À 5-7 ans selon l'espèce", "À 10-15 ans", "À 20+ ans"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab \u00c0 5-7 ans selon l'esp\u00e8ce \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Les dauphins atteignent leur maturit\u00e9 sexuelle relativement t\u00f4t pour des mammif\u00e8res si intelligents et long\u00e9vifs. Le grand dauphin (Tursiops truncatus) devient sexuellement mature entre 5 et 12 ans selon le sexe \u2014 les femelles un peu plus t\u00f4t que les m\u00e2les. Ils peuvent vivre jusqu'\u00e0 40-50 ans, laissant une longue p\u00e9riode de vie adulte reproductive.",
                 source: "Centre de Recherche Cétologique - La maturité arrive relativement tôt."
             },
             {
@@ -3033,7 +3033,7 @@ const quizzesData = {
                 question: "Quel est le temps moyen de gestation d'une baleine ?",
                 options: ["6 mois", "10-12 mois", "12-16 mois selon l'espèce", "18-24 mois"],
                 correct: 2,
-                explanation: "La r\u00e9ponse correcte est \u00ab 12-16 mois selon l'esp\u00e8ce \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Les baleines ont une gestation parmi les plus longues du r\u00e8gne animal. La baleine bleue porte son petit environ 12 mois, l'orque jusqu'\u00e0 17 mois. Le baleineau de baleine bleue na\u00eet en mesurant d\u00e9j\u00e0 7 \u00e0 8 m\u00e8tres et pesant 2 \u00e0 3 tonnes. Il t\u00e8te 600 litres de lait par jour et grossit de 90 kg quotidiennement.",
                 source: "Institut de Reproduction Marine - Gestation très longue."
             },
             {
@@ -3041,7 +3041,7 @@ const quizzesData = {
                 question: "Quel phoque peut plonger plus profond que les autres ?",
                 options: ["Le phoque moine", "Le phoque du Groenland", "Le phoque de Weddell", "Le léopard des mers"],
                 correct: 2,
-                explanation: "La r\u00e9ponse correcte est \u00ab Le phoque de Weddell \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Le phoque de Weddell (Leptonychotes weddellii) vit en Antarctique et est un plong\u00e9e exceptionnel : il peut descendre \u00e0 plus de 700 m\u00e8tres et rester en apn\u00e9e pendant 80 minutes. Pour respirer sous la glace, il maintient des trous en rongeant la glace avec ses dents. C'est l'un des mammif\u00e8res vivant le plus au sud de la plan\u00e8te, capable de supporter des temp\u00e9ratures de -60\u00b0C.",
                 source: "Institut de Plongée Marine - Le phoque de Weddell plonge très profond."
             },
             {
@@ -3049,7 +3049,7 @@ const quizzesData = {
                 question: "À quelle température le lait de baleine peut-il être produit ?",
                 options: ["Température ambiante", "Température interne chaude 37-40°C", "Temperature froide", "Variable"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Temp\u00e9rature interne chaude 37-40\u00b0C \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Comme tous les mammif\u00e8res, les baleines sont homm\u00e9othermes et maintiennent une temp\u00e9rature interne d'environ 36-38\u00b0C, m\u00eame dans des eaux proches de 0\u00b0C. Leur lait est produit \u00e0 cette m\u00eame temp\u00e9rature. Pour conserver cette chaleur, leur \u00e9paisse couche de lard (blubber) peut atteindre 50 cm d'\u00e9paisseur chez les esp\u00e8ces polaires.",
                 source: "Institut de Biologie Reproductive Marine - Mammalien thermique."
             },
             {
@@ -3057,7 +3057,7 @@ const quizzesData = {
                 question: "Quel est le plus grand animal marin jamais découvert ?",
                 options: ["Le cachalot", "La baleine bleue", "Le kraken supposé", "L'éléphant de mer"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab La baleine bleue \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "La baleine bleue (Balaenoptera musculus) est sans conteste le plus grand animal ayant jamais v\u00e9cu, surpassant m\u00eame les plus grands dinosaures. Les plus grandes femelles enregistr\u00e9es mesuraient jusqu'\u00e0 33 m\u00e8tres. Sa population a \u00e9t\u00e9 r\u00e9duite \u00e0 1% de son niveau originel par la chasse baleini\u00e8re au 20\u00e8me si\u00e8cle \u2014 elle reste une esp\u00e8ce en danger.",
                 source: "Muséum d'Histoire Naturelle - La baleine bleue est l'animal vivant le plus grand."
             },
             {
@@ -3065,7 +3065,7 @@ const quizzesData = {
                 question: "À quel âge une otarie devient-elle adulte reproductrice ?",
                 options: ["À 2-3 ans", "À 4-5 ans selon l'espèce", "À 6-8 ans", "À 10+ ans"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab \u00c0 4-5 ans selon l'esp\u00e8ce \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Les otaries atteignent leur maturit\u00e9 sexuelle entre 3 et 6 ans selon l'esp\u00e8ce et le sexe. Les m\u00e2les, bien que matures biologiquement plus t\u00f4t, n'acc\u00e8dent g\u00e9n\u00e9ralement \u00e0 la reproduction qu'autour de 8-10 ans \u2014 ils doivent \u00eatre assez grands et forts pour \u00e9tablir un territoire sur les rookeries et d\u00e9fendre un harem de femelles.",
                 source: "Centre de Zoologie Marine - Maturité relativement rapide."
             },
             {
@@ -3073,7 +3073,7 @@ const quizzesData = {
                 question: "Quel est le record de migration chez une baleine grise ?",
                 options: ["Quelques centaines de km", "5000-10000 km par an", "15000-20000 km par an", "Plus de 30000 km"],
                 correct: 2,
-                explanation: "La r\u00e9ponse correcte est \u00ab 15000-20000 km par an \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "La baleine grise effectue l'une des migrations les plus longues de tous les mammif\u00e8res : 15 000 \u00e0 20 000 km aller-retour chaque ann\u00e9e entre ses aires d'alimentation en Arctique et ses zones de reproduction en Basse-Californie (Mexique). Ce voyage de plusieurs mois presque sans se nourrir est rendu possible gr\u00e2ce aux r\u00e9serves de graisse accumul\u00e9es pendant l'\u00e9t\u00e9.",
                 source: "Centre de Recherche Migratoire Marine - Migration très longue."
             },
             {
@@ -3081,7 +3081,7 @@ const quizzesData = {
                 question: "Combien de temps peut survivre un phoque sans nourriture ?",
                 options: ["Quelques jours", "2-4 semaines", "1-2 mois selon l'espèce", "3-4 mois"],
                 correct: 2,
-                explanation: "La r\u00e9ponse correcte est \u00ab 1-2 mois selon l'esp\u00e8ce \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Les phoques accumulent d'importantes r\u00e9serves de graisse pendant les p\u00e9riodes d'abondance. Cette \u00e9nergie leur permet de je\u00fbner pendant la reproduction \u00e0 terre ou lors des mues. Le phoque gris m\u00e2le peut je\u00fbner 6 \u00e0 8 semaines pendant la saison de reproduction, vivant uniquement sur ses r\u00e9serves de lard accunul\u00e9es.",
                 source: "Institut de Physiologie Marine - Métabolisme très économe."
             },
             {
@@ -3089,7 +3089,7 @@ const quizzesData = {
                 question: "À quel âge une jeune baleine devient-elle indépendante ?",
                 options: ["À quelques semaines", "À quelques mois", "À 6-12 mois selon l'espèce", "À 1-2 ans"],
                 correct: 2,
-                explanation: "La r\u00e9ponse correcte est \u00ab \u00c0 6-12 mois selon l'esp\u00e8ce \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Les baleineaux sont allait\u00e9s entre 6 et 12 mois selon l'esp\u00e8ce. Pendant toute cette p\u00e9riode, le baleineau reste constamment pr\u00e8s de sa m\u00e8re, qui lui enseigne les routes migratoires et les zones d'alimentation. Ces connaissances transmises culturellement \u2014 routes migratoires, sources de nourriture \u2014 sont essentielles \u00e0 la survie de l'esp\u00e8ce.",
                 source: "Centre de Développement Juvénile - Allaitement prolongé."
             },
             {
@@ -3097,7 +3097,7 @@ const quizzesData = {
                 question: "Quel est le diamètre de l'évent (spiracle) d'une baleine ?",
                 options: ["Quelques cm", "10-15 cm", "30-50 cm selon l'espèce", "Plus de 50 cm"],
                 correct: 2,
-                explanation: "La r\u00e9ponse correcte est \u00ab 30-50 cm selon l'esp\u00e8ce \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "L'\u00e9vent \u2014 l'\u00e9quivalent de nos narines, situ\u00e9 sur le sommet du cr\u00e2ne \u2014 peut mesurer 30 \u00e0 50 cm de diam\u00e8tre chez les grandes baleines. Il permet de ventiler des poumons de plusieurs centaines de litres. Le souffle caract\u00e9ristique peut s'\u00e9lever \u00e0 9-12 m\u00e8tres de hauteur et s'entendre \u00e0 plusieurs kilom\u00e8tres de distance.",
                 source: "Institut d'Anatomie Cétologique - Ouverture respiratoire large."
             },
             {
@@ -3105,7 +3105,7 @@ const quizzesData = {
                 question: "À quelle profondeur peut plonger un phoque de Weddell ?",
                 options: ["200 mètres", "500-600 mètres", "600-700 mètres selon l'espèce", "Plus de 800 mètres"],
                 correct: 2,
-                explanation: "La r\u00e9ponse correcte est \u00ab 600-700 m\u00e8tres selon l'esp\u00e8ce \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Le phoque de Weddell peut plonger \u00e0 plus de 600 m\u00e8tres de profondeur, record parmi les phoques. Sous la banquise antarctique, il navigue dans l'obscurit\u00e9 totale gr\u00e2ce \u00e0 son ou\u00efe fine et ses vibrisses ultrasensibles. Il maintient jusqu'\u00e0 une vingtaine de trous de respiration qu'il agrandit r\u00e9guli\u00e8rement avec ses incisives robustes.",
                 source: "Centre de Plongée Marine - Adaptations extrêmes à la profondeur."
             },
             {
@@ -3113,7 +3113,7 @@ const quizzesData = {
                 question: "Quel est le poids moyen d'un nouveau-né baleine bleue ?",
                 options: ["1-2 tonnes", "3-4 tonnes", "4-5 tonnes", "Plus de 5 tonnes"],
                 correct: 2,
-                explanation: "La r\u00e9ponse correcte est \u00ab 4-5 tonnes \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Le baleineau de baleine bleue est l'un des plus grands nouveau-n\u00e9s du r\u00e8gne animal. \u00c0 la naissance, il mesure d\u00e9j\u00e0 7 \u00e0 8 m\u00e8tres de long et p\u00e8se plusieurs tonnes. Il grossit \u00e0 une vitesse ph\u00e9nom\u00e9nale gr\u00e2ce au lait de sa m\u00e8re, qui contient 40 \u00e0 50% de mati\u00e8res grasses. En quelques mois, son poids peut tripler.",
                 source: "Institut de Reproduction Marine - Bébé baleine géant."
             },
             {
@@ -3121,7 +3121,7 @@ const quizzesData = {
                 question: "À quel âge les jeunes dauphins se séparent de leur mère ?",
                 options: ["À quelques semaines", "À quelques mois", "À 1-2 ans selon l'espèce", "À 3-4 ans"],
                 correct: 2,
-                explanation: "La r\u00e9ponse correcte est \u00ab \u00c0 1-2 ans selon l'esp\u00e8ce \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Le lien m\u00e8re-petit est tr\u00e8s fort chez les dauphins. Apr\u00e8s le sevrage (vers 1 \u00e0 2 ans), les jeunes restent souvent dans le groupe de leur m\u00e8re encore plusieurs ann\u00e9es. Chez le grand dauphin, les m\u00e2les quittent le groupe natal vers 3-6 ans. Les femelles peuvent rester associ\u00e9es \u00e0 leur m\u00e8re toute leur vie, formant des alliances multig\u00e9n\u00e9rationnelles stables.",
                 source: "Centre d'Études Comportementales Cétacées - Liens mère-jeune prolongés."
             },
             {
@@ -3129,7 +3129,7 @@ const quizzesData = {
                 question: "Quel est le nombre de respirations par minute d'une baleine au repos ?",
                 options: ["5-10 respirations", "15-20 respirations", "30-40 respirations", "50+ respirations"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab 15-20 respirations \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Les baleines doivent remonter r\u00e9guli\u00e8rement \u00e0 la surface pour respirer. En surface, elles effectuent plusieurs respirations rapides successives avant de replonger, vidant et remplissant des poumons capables de contenir jusqu'\u00e0 2 500 litres d'air. Leur capacit\u00e9 \u00e0 renouveler jusqu'\u00e0 90% du volume pulmonaire en une seule inspiration d\u00e9passe largement celle des humains (15%).",
                 source: "Institut de Physiologie Respiratoire Marine - Métabolisme très lent."
             },
             {
@@ -3137,7 +3137,7 @@ const quizzesData = {
                 question: "À quel âge les otaries mâles deviennent-ils territoriaux ?",
                 options: ["À 2-3 ans", "À 5-7 ans selon l'espèce", "À 8-10 ans", "À 12+ ans"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab \u00c0 5-7 ans selon l'esp\u00e8ce \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "La territorialit\u00e9 chez les otaries m\u00e2les est li\u00e9e \u00e0 leur taille et leur force. Les m\u00e2les atteignent leur plein d\u00e9veloppement physique entre 5 et 10 ans, p\u00e9riode o\u00f9 ils commencent \u00e0 \u00e9tablir des territoires sur les plages de reproduction (rookeries). Un m\u00e2le dominant peut contr\u00f4ler un harem de 5 \u00e0 30 femelles, mais doit le d\u00e9fendre lors de combats violents.",
                 source: "Centre d'Écologie Pinipède - Territorialité liée à la taille."
             },
             {
@@ -3145,7 +3145,7 @@ const quizzesData = {
                 question: "Quel est le taux d'allaitement chez une baleine mère ?",
                 options: ["Continu", "Plusieurs fois par jour", "Une fois par jour", "Tous les 2-3 jours"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Plusieurs fois par jour \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "L'allaitement chez les baleines est une prouesse logistique sous-marine. La m\u00e8re injecte litt\u00e9ralement son lait dans la bouche du baleineau sous pression \u2014 le baleineau ne t\u00e8te pas activement. Le lait est si \u00e9pais qu'il ne se diffuse pas dans l'eau. Une baleine bleue peut produire 300 \u00e0 600 litres de lait par jour, permettant au baleineau de grossir de 80 \u00e0 90 kg quotidiennement.",
                 source: "Institut de Reproduction Marine - Lait très nutritif allaitement fréquent."
             },
             {
@@ -3153,7 +3153,7 @@ const quizzesData = {
                 question: "À quelle distance un cachalot peut-il émettre un clic ?",
                 options: ["Quelques km", "5-10 km", "15-20 km selon conditions", "Plus de 30 km"],
                 correct: 2,
-                explanation: "La r\u00e9ponse correcte est \u00ab 15-20 km selon conditions \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Les clics d'\u00e9cholocalisation du cachalot sont les sons les plus puissants produits par un animal \u2014 jusqu'\u00e0 230 d\u00e9cibels. Produits dans le spermaceti (l'organe graisseux de son cr\u00e2ne massif), ils servent \u00e0 d\u00e9tecter les calmars g\u00e9ants dans l'obscurit\u00e9 des abysses. Ces sons peuvent potentiellement paralyser ou \u00e9tourdir des proies \u00e0 courte distance.",
                 source: "Institut d'Acoustique Marine - Sons très porteurs."
             },
             {
@@ -3161,7 +3161,7 @@ const quizzesData = {
                 question: "Quel est le record de durée d'apnée chez un dauphin ?",
                 options: ["5-10 minutes", "15-20 minutes", "30+ minutes selon l'espèce", "Plus de 45 minutes"],
                 correct: 2,
-                explanation: "La r\u00e9ponse correcte est \u00ab 30+ minutes selon l'esp\u00e8ce \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Les dauphins ont des capacit\u00e9s d'apn\u00e9e remarquables. Ces performances sont rendues possibles par une myoglobine musculaire tr\u00e8s concentr\u00e9e (qui donne une couleur sombre aux muscles), un r\u00e9flexe de bradycardie (ralentissement du c\u0153ur de 100 \u00e0 15 battements/min), et une tol\u00e9rance \u00e9lev\u00e9e au CO2. La plupart des plong\u00e9es courantes durent cependant 2 \u00e0 10 minutes.",
                 source: "Centre de Physiologie Plongée - Adaptations extrêmes."
             }
         ],
@@ -3171,7 +3171,7 @@ const quizzesData = {
                 question: "Quel est le rôle de l'évent chez les cétacés ?",
                 options: ["Respiration uniquement", "Respiration et expulsion d'eau", "Audition", "Régulation thermique"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Respiration et expulsion d'eau \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "L'\u00e9vent des c\u00e9tac\u00e9s est bien plus qu'une narine. Lors de la remont\u00e9e, la baleine expire avec force, projetant de l'air chaud et humide qui forme le 'souffle' caract\u00e9ristique. Chaque esp\u00e8ce a un souffle reconnaissable : en forme de V chez les baleines franches, colonnaire jusqu'\u00e0 9 m\u00e8tres chez la baleine bleue, inclin\u00e9 \u00e0 45\u00b0 \u00e0 gauche chez le cachalot.",
                 source: "Centre de Recherche Cétologique - L'évent permet la respiration et l'expulsion d'eau."
             },
             {
@@ -3179,7 +3179,7 @@ const quizzesData = {
                 question: "Quel est le processus appelé 'écholocalisation' ?",
                 options: ["Navigation par magnétisme", "Détection d'objets par sons et échos", "Vision infrarouge", "Magnétoréception"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab D\u00e9tection d'objets par sons et \u00e9chos \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "L'\u00e9cholocalisation est un sonar biologique utilis\u00e9 par les c\u00e9tac\u00e9s \u00e0 dents (dauphins, orques, cachalots). L'animal \u00e9met des clics ultrasonores qui rebondissent sur les objets ; l'\u00e9cho est transmis via la m\u00e2choire inf\u00e9rieure \u00e0 l'oreille interne. Ce syst\u00e8me permet de d\u00e9tecter un objet de la taille d'une balle de golf \u00e0 100 m\u00e8tres, m\u00eame dans l'obscurit\u00e9 totale.",
                 source: "Institut de Bioacoustique - L'écholocalisation utilise les sons pour naviguer."
             },
             {
@@ -3187,7 +3187,7 @@ const quizzesData = {
                 question: "Quel mammifère marin ne mue jamais ?",
                 options: ["Le phoque", "Le dauphin", "L'orque", "La baleine"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Le dauphin \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Les c\u00e9tac\u00e9s comme les dauphins n'ont pratiquement plus de poils et ne connaissent pas de mue classique. En revanche, les pinniped\u00e8s (phoques, otaries) muent chaque ann\u00e9e : ils perdent leur fourrure et leur peau superficielle en une courte p\u00e9riode intense. Pendant cette mue, les phoques sortent souvent de l'eau pour rester au chaud le temps du renouvellement.",
                 source: "Université de Biologie Comparée - Les cétacés n'ont pas de mue classique."
             },
             {
@@ -3195,7 +3195,7 @@ const quizzesData = {
                 question: "Quel est le principal predateur d'une baleine adulte ?",
                 options: ["Le grand requin blanc", "L'orque", "Aucun prédateur naturel", "L'humain"],
                 correct: 2,
-                explanation: "La r\u00e9ponse correcte est \u00ab Aucun pr\u00e9dateur naturel \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Une fois adulte, la baleine bleue n'a pratiquement aucun pr\u00e9dateur naturel. Seules les orques attaquent parfois les baleineaux ou les individus affaiblis, en groupes organis\u00e9s. Aujourd'hui, les collisions avec les navires et les filets de p\u00eache sont les principales causes de mort, apr\u00e8s la chasse industrielle qui avait failli mener plusieurs esp\u00e8ces \u00e0 l'extinction au 20\u00e8me si\u00e8cle.",
                 source: "Société de Conservation Marine - Les adultes n'ont pratiquement pas de prédateurs naturels."
             },
             {
@@ -3203,7 +3203,7 @@ const quizzesData = {
                 question: "Quel est le mecanisme de plongée profonde des phoques ?",
                 options: ["Augmentation de la respiration", "Ralentissement du cœur et utilisation de l'oxygène stocké", "Augmentation du volume pulmonaire", "Métabolisme accéléré"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Ralentissement du c\u0153ur et utilisation de l'oxyg\u00e8ne stock\u00e9 \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Lors d'une plong\u00e9e, les phoques activent automatiquement le 'r\u00e9flexe de plong\u00e9e' : leur fr\u00e9quence cardiaque chute de 100-150 battements/min \u00e0 seulement 4-15 battements/min. La circulation sanguine est redirig\u00e9e vers le cerveau et le c\u0153ur uniquement. La rate, tr\u00e8s grande chez les phoques, se contracte pour lib\u00e9rer des globules rouges suppl\u00e9mentaires \u2014 ces adaptations permettent des plong\u00e9es de plusieurs heures.",
                 source: "Institut de Physiologie Plongée - Les phoques ralentissent leur métabolisme."
             },
             {
@@ -3211,7 +3211,7 @@ const quizzesData = {
                 question: "Combien de dents une baleine à dents peut-elle avoir ?",
                 options: ["0 dent", "10-20 dents", "50+ dents", "Jusqu'à 200+ selon l'espèce"],
                 correct: 3,
-                explanation: "La r\u00e9ponse correcte est \u00ab Jusqu'\u00e0 200+ selon l'esp\u00e8ce \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Les baleines \u00e0 dents pr\u00e9sentent une grande variabilit\u00e9 dentaire. Le dauphin commun poss\u00e8de 80 \u00e0 100 dents coniques. L'orque en a 40 \u00e0 56, robustes et coniques, pouvant mesurer 10 cm. Le cachalot n'a des dents fonctionnelles qu'\u00e0 la m\u00e2choire inf\u00e9rieure. Le narval n'a g\u00e9n\u00e9ralement qu'une seule dent, transform\u00e9e en d\u00e9fense spirale pouvant atteindre 3 m\u00e8tres.",
                 source: "Musée Odontologique - Les baleines à dents peuvent avoir de nombreuses dents."
             },
             {
@@ -3219,7 +3219,7 @@ const quizzesData = {
                 question: "Quel est le rôle de la couche de graisse chez les cétacés ?",
                 options: ["Réserve énergétique uniquement", "Isolation thermique et flottabilité", "Protection contre les prédateurs", "Réserve d'oxygène"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Isolation thermique et flottabilit\u00e9 \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Le lard (blubber) des c\u00e9tac\u00e9s est une couche de tissu adipeux sous-cutan\u00e9 pouvant atteindre 50 cm chez les grandes baleines polaires. Il assure l'isolation thermique contre les eaux froides, r\u00e9duit la densit\u00e9 corporelle (aide \u00e0 la flottabilit\u00e9), stocke l'\u00e9nergie pour les longues migrations, et sa composition varie selon les saisons pour absorber les p\u00e9riodes de je\u00fbne.",
                 source: "Centre d'Étude Thermique Marine - Le lard isole thermiquement."
             },
             {
@@ -3227,7 +3227,7 @@ const quizzesData = {
                 question: "Quel type de migration les baleines effectuent-elles ?",
                 options: ["Sédentaires sans migration", "Régionale courte distance", "Longue distance entre zones d'alimentation et reproduction", "Aléatoire"],
                 correct: 2,
-                explanation: "La r\u00e9ponse correcte est \u00ab Longue distance entre zones d'alimentation et reproduction \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "La migration des baleines est l'une des plus spectaculaires du r\u00e8gne animal. Elles passent l'\u00e9t\u00e9 dans les eaux polaires riches en krill pour s'alimenter, puis migrent vers les zones tropicales pour se reproduire en hiver. La baleine \u00e0 bosse parcourt jusqu'\u00e0 25 000 km par an \u2014 le record chez les mammif\u00e8res. Ces zones chaudes offrent moins de nourriture mais moins de pr\u00e9dateurs pour les baleineaux.",
                 source: "Université de Migration - Les baleines migrent sur des milliers de kilomètres."
             },
             {
@@ -3235,7 +3235,7 @@ const quizzesData = {
                 question: "Quel est le système de thermorégulation chez les mammifères marins ?",
                 options: ["Ectothermes", "Métabolisme élevé et isolation thermique", "Pas de régulation", "Changement de couleur"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab M\u00e9tabolisme \u00e9lev\u00e9 et isolation thermique \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Contrairement aux reptiles (ectothermes), les mammif\u00e8res marins sont endothermes : ils produisent leur propre chaleur. Pour maintenir ~37\u00b0C dans des eaux proches de 0\u00b0C, ils combinent un m\u00e9tabolisme \u00e9lev\u00e9, une \u00e9paisse couche de lard (jusqu'\u00e0 50 cm), un pelage dense (phoques), et un syst\u00e8me d'\u00e9changeurs de chaleur \u00e0 contre-courant dans leurs nageoires pour r\u00e9cup\u00e9rer la chaleur du sang qui revient des extr\u00e9mit\u00e9s.",
                 source: "Institut de Thermoécologie - Les mammifères marins maintiennent une température interne."
             },
             {
@@ -3243,7 +3243,7 @@ const quizzesData = {
                 question: "Quel est le taux de reproduction des baleines ?",
                 options: ["Très rapide, plusieurs jeunes par an", "Modéré, plusieurs jeunes tous les 2-3 ans", "Très lent, un jeune tous les 2-5 ans", "Reproduction asexuée"],
                 correct: 2,
-                explanation: "La r\u00e9ponse correcte est \u00ab Tr\u00e8s lent, un jeune tous les 2-5 ans \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Le faible taux de reproduction des grandes baleines les rend tr\u00e8s vuln\u00e9rables aux menaces humaines. Une baleine bleue femelle ne donne naissance qu'\u00e0 un seul baleineau tous les 2 \u00e0 3 ans apr\u00e8s une gestation d'un an et un allaitement de 6 \u00e0 7 mois. Leur maturit\u00e9 sexuelle tardive (5-15 ans) signifie que la population met des d\u00e9cennies \u00e0 se r\u00e9tablir apr\u00e8s une surexploitation.",
                 source: "Centre de Reproduction Marine - Les baleines se reproduisent lentement."
             },
             {
@@ -3251,7 +3251,7 @@ const quizzesData = {
                 question: "À quel âge une baleine peut-elle vivre ?",
                 options: ["20-30 ans", "40-50 ans", "50-80 ans selon l'espèce", "100+ ans"],
                 correct: 2,
-                explanation: "La r\u00e9ponse correcte est \u00ab 50-80 ans selon l'esp\u00e8ce \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "La long\u00e9vit\u00e9 des baleines est impressionnante. La baleine \u00e0 bosse vit environ 80-90 ans, le rorqual commun 85-90 ans. Mais le record absolu appartient \u00e0 la baleine de Bowhead : des harpons du 19\u00e8me si\u00e8cle retrouv\u00e9s dans des individus tu\u00e9s dans les ann\u00e9es 2000 prouvent que certains individus d\u00e9passent 200 ans \u2014 ce qui en fait le mammif\u00e8re le plus long\u00e9vif connu.",
                 source: "Institut de Longévité Marine - Les baleines vivent très longtemps."
             },
             {
@@ -3259,7 +3259,7 @@ const quizzesData = {
                 question: "Quel est le processus de communication entre baleines à longue distance ?",
                 options: ["Pas de communication longue", "Chants complexes portant sur plusieurs km", "Signaux visuels", "Signaux chimiques"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Chants complexes portant sur plusieurs km \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Les chants des baleines \u00e0 bosse peuvent porter jusqu'\u00e0 10 000 km sous l'eau. En 2000, des chercheurs ont observ\u00e9 qu'un nouveau type de chant apparu dans le Pacifique Ouest s'est r\u00e9pandu d'ouest en est en 2 ans, copi\u00e9 par des milliers de baleines. C'est l'un des exemples les plus clairs de transmission culturelle horizontale chez un animal non-humain.",
                 source: "Institut d'Acoustique Cétacée - Chants sophistiqués de navigation."
             },
             {
@@ -3267,7 +3267,7 @@ const quizzesData = {
                 question: "À quel âge un phoque peut-il être complètement indépendant ?",
                 options: ["À quelques semaines", "À 4-6 semaines selon l'espèce", "À 2-3 mois", "À 6+ mois"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab \u00c0 4-6 semaines selon l'esp\u00e8ce \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Le sevrage ultra-rapide du phoque gris est l'un des plus courts chez les mammif\u00e8res. La m\u00e8re allaite son petit seulement 3 semaines avec un lait contenant 60% de mati\u00e8res grasses, permettant au blanchon de passer de 14 kg \u00e0 40 kg. Puis elle l'abandonne brusquement. Le jeune phoque doit alors apprendre seul \u00e0 nager et chasser, je\u00fbnant plusieurs semaines le temps de ma\u00eetriser ces comp\u00e9tences.",
                 source: "Centre d'Élevage Pinipède - Sevrage très précoce."
             },
             {
@@ -3275,7 +3275,7 @@ const quizzesData = {
                 question: "Quel est le rôle du 'blubber' (lard) chez les mammifères marins ?",
                 options: ["Aucun rôle", "Isolation thermique et réserve énergétique", "Flottabilité uniquement", "Détoxication"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Isolation thermique et r\u00e9serve \u00e9nerg\u00e9tique \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Le blubber remplit plusieurs fonctions vitales simultan\u00e9ment. Il isole thermiquement \u2014 une baleine polaire avec 50 cm de lard survit \u00e0 des eaux \u00e0 -2\u00b0C. Il stocke une \u00e9nergie consid\u00e9rable \u2014 une baleine \u00e0 bosse br\u00fcle son lard pendant sa migration de 8 000 km o\u00f9 elle ne mange presque pas. Il contribue aussi \u00e0 la flottabilit\u00e9 et \u00e0 la forme hydrodynamique du corps.",
                 source: "Institut de Physiologie Thermique Marine - Essentiel pour survie."
             },
             {
@@ -3283,7 +3283,7 @@ const quizzesData = {
                 question: "À quelle vitesse peut nager une orque ?",
                 options: ["10-15 km/h", "25-35 km/h", "35-55 km/h selon conditions", "60+ km/h"],
                 correct: 2,
-                explanation: "La r\u00e9ponse correcte est \u00ab 35-55 km/h selon conditions \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "L'orque (Orcinus orca) est l'un des nageurs les plus rapides parmi les grands mammif\u00e8res marins, capable d'atteindre 55 km/h en chasse. Cette vitesse, combin\u00e9e \u00e0 l'intelligence collective des groupes familiaux, fait de l'orque le pr\u00e9dateur le plus redoutable des oc\u00e9ans. Elle est capable de chasser des baleines bleues en groupe, des requins blancs en solitaire, et m\u00eame de s'\u00e9chouer volontairement pour attraper des lions de mer.",
                 source: "Centre d'Écologie Orque - Prédateurs très rapides."
             },
             {
@@ -3291,7 +3291,7 @@ const quizzesData = {
                 question: "Quel est le temps moyen de digestion chez une baleine après alimentation ?",
                 options: ["Quelques heures", "24 heures", "2-3 jours selon taille", "Une semaine"],
                 correct: 2,
-                explanation: "La r\u00e9ponse correcte est \u00ab 2-3 jours selon taille \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Le syst\u00e8me digestif des grandes baleines est adapt\u00e9 au traitement de quantit\u00e9s \u00e9normes de nourriture. Une baleine bleue peut ing\u00e9rer 4 tonnes de krill par jour pendant la saison d'alimentation. Son estomac multi-compartiment\u00e9 traite lentement cette nourriture sur 2 \u00e0 3 jours, mais la baleine peut continuer \u00e0 se nourrir pendant ce temps, son tube digestif fonctionnant en continu.",
                 source: "Institut de Physiologie Digestive Marine - Digestion très lente."
             },
             {
@@ -3299,7 +3299,7 @@ const quizzesData = {
                 question: "À quel âge un jeune otarie commence-t-il à se nourrir seul ?",
                 options: ["À quelques semaines", "À 2-3 mois selon l'espèce", "À 4-6 mois", "À 1 an"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab \u00c0 2-3 mois selon l'esp\u00e8ce \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Les jeunes otaries sont sevr\u00e9es entre 4 mois (otarie \u00e0 fourrure du Cap) et 12 mois (lion de mer de Steller). Apr\u00e8s le sevrage, elles doivent rapidement apprendre \u00e0 chasser. Les premi\u00e8res tentatives sont souvent maladroites, avec un faible taux de succ\u00e8s. Avec l'exp\u00e9rience, elles deviennent des chasseuses tr\u00e8s efficaces, capables de plonger \u00e0 200 m\u00e8tres et capturer des poissons rapides.",
                 source: "Centre de Développement Pinipède - Indépendance rapide."
             },
             {
@@ -3307,7 +3307,7 @@ const quizzesData = {
                 question: "Quel est le rôle des 'barbillons' chez le phoque ?",
                 options: ["Aucun rôle", "Détection tactile des proies et obstacles", "Respiration", "Communication"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab D\u00e9tection tactile des proies et obstacles \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Les vibrisses (moustaches) des phoques sont des organes sensoriels extraordinaires. Elles peuvent d\u00e9tecter les turbulences cr\u00e9\u00e9es par un poisson pass\u00e9 30 secondes auparavant, permettant au phoque de suivre le sillage d'une proie dans l'obscurit\u00e9. Chaque vibrisse est reli\u00e9e \u00e0 une zone d\u00e9di\u00e9e du cerveau \u2014 leur repr\u00e9sentation c\u00e9r\u00e9brale est aussi \u00e9labor\u00e9e que le syst\u00e8me visuel humain.",
                 source: "Institut de Sensorimotricité Marine - Organes tactiles sensoriels."
             },
             {
@@ -3315,7 +3315,7 @@ const quizzesData = {
                 question: "À quel âge une baleine femelle devient-elle ménopausée ?",
                 options: ["À 20-30 ans", "À 40-50 ans selon l'espèce", "À 50+ ans", "Jamais"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab \u00c0 40-50 ans selon l'esp\u00e8ce \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "La m\u00e9nopause est un ph\u00e9nom\u00e8ne rarissime dans le r\u00e8gne animal, observ\u00e9 chez seulement 5 esp\u00e8ces : l'humain, l'orque, le cachalot, le b\u00e9luga et le narval. Chez les orques, les femelles cessent de se reproduire vers 40-50 ans mais vivent encore plusieurs d\u00e9cennies. Ces 'grand-m\u00e8res' jouent un r\u00f4le crucial : les pods avec des grand-m\u00e8res survivent mieux gr\u00e2ce \u00e0 leur connaissance des zones de p\u00eache.",
                 source: "Institut de Biologie Reproductive - Ménopause chez les cétacés."
             },
             {
@@ -3323,7 +3323,7 @@ const quizzesData = {
                 question: "Quel est le processus de la 'dive reflex' chez les pinnipèdes ?",
                 options: ["Pas de réflexe", "Ralentissement cardiaque drastique lors de plongée", "Accélération cardiaque", "Pas de changement"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Ralentissement cardiaque drastique lors de plong\u00e9e \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Le r\u00e9flexe de plong\u00e9e (dive reflex) est d\u00e9clench\u00e9 automatiquement d\u00e8s l'immersion. Chez les pinniped\u00e8s, il est extr\u00eamement d\u00e9velopp\u00e9 : la fr\u00e9quence cardiaque passe de 150 \u00e0 seulement 4 battements par minute en quelques secondes. La circulation sanguine se concentre sur le cerveau et le c\u0153ur. La rate se contracte pour lib\u00e9rer jusqu'\u00e0 50% d'h\u00e9maties suppl\u00e9mentaires dans le sang.",
                 source: "Institut de Physiologie Plongée - Adaptations cardiovasculaires."
             },
             {
@@ -3331,7 +3331,7 @@ const quizzesData = {
                 question: "À quel âge un dauphin peut-il intégrer complètement un groupe social ?",
                 options: ["Immédiatement", "À quelques mois", "À 1-2 ans selon l'espèce", "À 3-5 ans"],
                 correct: 2,
-                explanation: "La r\u00e9ponse correcte est \u00ab \u00c0 1-2 ans selon l'esp\u00e8ce \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Les dauphins sont des animaux profond\u00e9ment sociaux vivant en groupes stables (pods). Les jeunes s'int\u00e8grent progressivement \u00e0 la vie sociale, apprenant les hi\u00e9rarchies, les strat\u00e9gies de chasse coop\u00e9rative et les r\u00e8gles sociales. Certains comportements \u2014 comme utiliser des \u00e9ponges comme outils ou pousser des poissons sur les plages \u2014 sont transmis culturellement de g\u00e9n\u00e9ration en g\u00e9n\u00e9ration.",
                 source: "Centre d'Études Sociales Cétacées - Intégration progressive."
             },
             {
@@ -3339,7 +3339,7 @@ const quizzesData = {
                 question: "Quel est le diamètre de l'événement d'écholocalisation d'un cachalot ?",
                 options: ["Quelques cm", "10-20 cm", "30-50 cm selon l'espèce", "Plus de 50 cm"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab 10-20 cm \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Le 'melon' ou 'spermaceti' du cachalot est l'organe d'\u00e9cholocalisation le plus puissant du r\u00e8gne animal. Cet organe rempli d'huile peut peser jusqu'\u00e0 1 tonne et occuper un tiers de la longueur de la t\u00eate. Il concentre et dirige les clics ultrasonores vers l'avant. L'huile de spermaceti fut tr\u00e8s recherch\u00e9e au 19\u00e8me si\u00e8cle, d\u00e9clenchant la chasse intensive aux cachalots.",
                 source: "Institut d'Acoustique Cétacée - Organe très spécialisé."
             },
             {
@@ -3347,7 +3347,7 @@ const quizzesData = {
                 question: "À quelle distance un dauphin peut-il entendre un autre dauphin ?",
                 options: ["Quelques mètres", "50-100 mètres", "500-1000 mètres selon conditions", "Plus de 2 km"],
                 correct: 2,
-                explanation: "La r\u00e9ponse correcte est \u00ab 500-1000 m\u00e8tres selon conditions \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Les dauphins communiquent gr\u00e2ce \u00e0 des sifflements individuels uniques \u2014 chaque dauphin poss\u00e8de un 'sifflement signature' reconnaissable \u00e0 des centaines de m\u00e8tres. Ils peuvent imiter ces sifflements pour appeler un individu sp\u00e9cifique. Leurs capacit\u00e9s auditives s'\u00e9tendent de 200 Hz \u00e0 150 kHz (l'humain entend jusqu'\u00e0 20 kHz), leur permettant de percevoir l'\u00e9cholocalisation \u00e0 grande distance.",
                 source: "Institut de Bioacoustique Marine - Communication longue distance."
             },
             {
@@ -3355,7 +3355,7 @@ const quizzesData = {
                 question: "Quel est le rôle de la 'grâce osseuse' chez les siréniens (lamantins) ?",
                 options: ["Aucun rôle", "Adaptation squelettale pour flotabilité et mouvement lent", "Nage rapide", "Pas de fonction"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Adaptation squelettale pour flotabilit\u00e9 et mouvement lent \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Les sir\u00e9niens (lamantins et dugongs) ont des os exceptionnellement denses et massifs (pachyostose), une adaptation rare. Ces os lourds agissent comme un lest naturel qui compense leur flottabilit\u00e9 due au gaz intestinal. Cela leur permet de rester pr\u00e8s du fond pour brouter les herbiers marins sans effort. Ils sont les seuls herbivores marins parmi les mammif\u00e8res.",
                 source: "Institut d'Anatomie Marine - Adaptations uniques siréniens."
             },
             {
@@ -3363,7 +3363,7 @@ const quizzesData = {
                 question: "À quel âge un phoque femelle devient-elle reproductrice ?",
                 options: ["À 1-2 ans", "À 2-4 ans selon l'espèce", "À 5-7 ans", "À 10+ ans"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab \u00c0 2-4 ans selon l'esp\u00e8ce \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Les phoques atteignent leur maturit\u00e9 sexuelle t\u00f4t. Le phoque gris femelle est fertile d\u00e8s 3-5 ans. Mais les m\u00e2les, bien que sexuellement matures, ne peuvent g\u00e9n\u00e9ralement pas se reproduire avant 6-10 ans car il faut \u00eatre assez grand et fort pour concurrencer les autres m\u00e2les sur les plages. Les femelles vivent en moyenne 25-35 ans, les m\u00e2les souvent moins en raison des combats.",
                 source: "Centre de Biologie Reproductive Pinipède - Maturation rapide."
             },
             {
@@ -3371,7 +3371,7 @@ const quizzesData = {
                 question: "Quel est le processus de la 'pontination' chez les cétacés ?",
                 options: ["Pas de processus", "Isolation comportementale préparant reproduction", "Migration", "Hivernation"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Isolation comportementale pr\u00e9parant reproduction \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "La pr\u00e9paration \u00e0 la reproduction chez les c\u00e9tac\u00e9s implique des changements comportementaux marqu\u00e9s. Les m\u00e2les de baleine \u00e0 bosse cessent de s'alimenter pendant la saison de reproduction pour se consacrer enti\u00e8rement \u00e0 la comp\u00e9tition et \u00e0 la cour. Ils chantent des chants complexes, se battent avec d'autres m\u00e2les, et suivent les femelles sur des milliers de kilom\u00e8tres pendant les migrations.",
                 source: "Institut d'Éthologie Reproductive Marine - Phase préreproductive."
             },
             {
@@ -3379,7 +3379,7 @@ const quizzesData = {
                 question: "À quel âge une jeune orque devient-elle indépendante maternellement ?",
                 options: ["À 1-2 ans", "À 3-5 ans selon l'espèce", "À 5-8 ans", "À 10+ ans"],
                 correct: 2,
-                explanation: "La r\u00e9ponse correcte est \u00ab \u00c0 5-8 ans \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Les orques vivent en groupes familiaux matriarcaux (pods) o\u00f9 les liens sont permanents. Fait exceptionnel : chez les orques r\u00e9sidentes, les fils m\u00e2les restent dans le pod de leur m\u00e8re toute leur vie. Une orque m\u00e2le peut d\u00e9pendre de sa m\u00e8re pour trouver de la nourriture jusqu'\u00e0 l'\u00e2ge de 30 ans. Les pods sans m\u00e8re voient leur taux de mortalit\u00e9 augmenter significativement.",
                 source: "Centre d'Études Orques - Liens maternels très prolongés."
             },
             {
@@ -3387,7 +3387,7 @@ const quizzesData = {
                 question: "Quel est le rôle de l'enzyme 'catalase' chez les plongeurs marins ?",
                 options: ["Aucun rôle", "Protection contre radicaux libres de l'oxygène", "Digestion", "Respiration"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Protection contre radicaux libres de l'oxyg\u00e8ne \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Lors de plong\u00e9es profondes suivies de remont\u00e9es rapides, les mammif\u00e8res plongeurs sont expos\u00e9s \u00e0 des cycles d'isch\u00e9mie-reperfusion qui g\u00e9n\u00e8rent des radicaux libres potentiellement dangereux. Les c\u00e9tac\u00e9s et pinniped\u00e8s ont d\u00e9velopp\u00e9 des d\u00e9fenses antioxydantes tr\u00e8s efficaces, incluant des niveaux \u00e9lev\u00e9s de catalase, superoxyde dismutase et glutathion peroxydase dans leurs tissus.",
                 source: "Institut de Biochimie Marine - Adaptations antioxydantes."
             },
             {
@@ -3395,7 +3395,7 @@ const quizzesData = {
                 question: "À quel âge une baleine franche peut-elle atteindre sa taille maximale ?",
                 options: ["À 20-30 ans", "À 30-40 ans selon l'espèce", "À 40-50 ans", "À 50+ ans"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab \u00c0 30-40 ans selon l'esp\u00e8ce \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Les grandes baleines grandissent lentement tout au long de leur vie. La baleine franche (right whale) est l'une des plus menac\u00e9es au monde (moins de 400 individus dans l'Atlantique Nord). Sa croissance tr\u00e8s lente et son faible taux de reproduction (un baleineau tous les 3 \u00e0 5 ans) la rendent extr\u00eamement vuln\u00e9rable aux impacts humains : collisions avec des navires et enchev\u00eatrement dans les filets.",
                 source: "Institut de Croissance Cétacée - Croissance très lente."
             },
             {
@@ -3403,7 +3403,7 @@ const quizzesData = {
                 question: "Quel est le taux métabolique des siréniens (lamantins) ?",
                 options: ["Très élevé", "Modéré", "Très bas - métabolisme lent adapté à consommation herbe", "Sans métabolisme"],
                 correct: 2,
-                explanation: "La r\u00e9ponse correcte est \u00ab Tr\u00e8s bas - m\u00e9tabolisme lent adapt\u00e9 \u00e0 consommation herbe \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Les lamantins et dugongs ont un m\u00e9tabolisme environ 3 fois plus lent que pr\u00e9vu pour leur taille. Herbivores exclusifs, ils consomment 5 \u00e0 10% de leur poids en herbes marines chaque jour. Cette alimentation peu calorique les oblige \u00e0 brouter continuellement. Leur m\u00e9tabolisme lent et leur incapacit\u00e9 \u00e0 g\u00e9n\u00e9rer suffisamment de chaleur les rendent vuln\u00e9rables au 'cold stress syndrome' si l'eau descend sous 20\u00b0C.",
                 source: "Institut de Physiologie Comparée Marine - Herbivores lents."
             }
         ],
@@ -3413,7 +3413,7 @@ const quizzesData = {
                 question: "Quel est le mécanisme d'osmorégulation chez les cétacés marins ?",
                 options: ["Excrétion de sel par le nez", "Reins hautement concentrés et métabolisme de l'eau", "Pas de mécanisme particulier", "Urines très concentrées"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Reins hautement concentr\u00e9s et m\u00e9tabolisme de l'eau \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Les c\u00e9tac\u00e9s marins ne boivent pas l'eau de mer directement. Ils obtiennent l'eau n\u00e9cessaire \u00e0 partir des poissons et c\u00e9phalopodes qu'ils consomment. Leurs reins sont exceptionnellement performants, organis\u00e9s en milliers de 'renicules' qui augmentent la surface de filtration, et produisent une urine tr\u00e8s concentr\u00e9e en sel pour \u00e9liminer l'exc\u00e8s de sodium.",
                 source: "Institut de Physiologie Osmorégulatrice - Les reins concentrent l'urine extrêmement."
             },
             {
@@ -3421,7 +3421,7 @@ const quizzesData = {
                 question: "Quel est le processus d'embolie gazeuse évité par les plongeurs ?",
                 options: ["Accumulation de dioxyde de carbone", "Accumulation d'azote aux changements de pression", "Suroxygénation", "Dépressurisation brusque"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Accumulation d'azote aux changements de pression \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "L'embolie gazeuse est un risque pour les plongeurs humains lors de remont\u00e9es trop rapides : l'azote dissous sous pression forme des bulles. Les mammif\u00e8res plongeurs l'\u00e9vitent car leurs poumons s'effondrent presque compl\u00e8tement en profondeur, concentrant les gaz dans les zones non absorbantes (trach\u00e9e, bronches). De plus, ils commencent leurs plong\u00e9es avec moins d'air qu'un humain.",
                 source: "Institut de Médecine Plongée - Les mammifères marins évitent cette condition."
             },
             {
@@ -3429,7 +3429,7 @@ const quizzesData = {
                 question: "Quel est le processus d'adaptation visuelle aux profondeurs ?",
                 options: ["Augmentation du cristallin", "Rétines sensibles au spectre bleu et amélioration de la sensibilité", "Pas d'adaptation visuelle", "Disparition des yeux"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab R\u00e9tines sensibles au spectre bleu et am\u00e9lioration de la sensibilit\u00e9 \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "En pleine mer, seule la lumi\u00e8re bleue/verte p\u00e9n\u00e8tre en profondeur. Les c\u00e9tac\u00e9s plongeurs ont des r\u00e9tines adapt\u00e9es, tr\u00e8s sensibles aux longueurs d'onde bleues (460-480 nm). Leurs yeux peuvent aussi s'accommoder des variations extr\u00eames de luminosit\u00e9 \u2014 de la surface brillante \u00e0 l'obscurit\u00e9 quasi-totale des abysses. La densit\u00e9 en b\u00e2tonnets (photor\u00e9cepteurs cr\u00e9pusculaires) est tr\u00e8s \u00e9lev\u00e9e.",
                 source: "Université d'Ophthalmologie Marine - Les rétines s'adaptent aux longueurs d'onde profondes."
             },
             {
@@ -3437,7 +3437,7 @@ const quizzesData = {
                 question: "Quel est le rôle des cavités nasales compliquées des cétacés ?",
                 options: ["Respiration uniquement", "Écholocalisation et production de clics", "Olfaction exacerbée", "Thermorégulation"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab \u00c9cholocalisation et production de clics \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Les c\u00e9tac\u00e9s \u00e0 dents ont migr\u00e9 leurs narines sur le dessus du cr\u00e2ne et les ont transform\u00e9es en organe d'\u00e9cholocalisation complexe. Le dauphin produit ses clics dans les sacs nasaux, les fait rebondir sur l'os frontal (le 'melon'), puis les \u00e9met en faisceau dirig\u00e9 vers l'avant. L'\u00e9cho revu est transmis via la m\u00e2choire inf\u00e9rieure \u00e0 l'oreille interne, permettant une 'vision sonore' 3D en temps r\u00e9el.",
                 source: "Institut d'Anatomie Cétologique - Les cavités nasales produisent l'écholocalisation."
             },
             {
@@ -3445,7 +3445,7 @@ const quizzesData = {
                 question: "Quel type de hémoglobine ont les plongeurs profonds ?",
                 options: ["Hémoglobine standard", "Hémoglobine avec affinité augmentée pour l'oxygène", "Hémoglobine sans fer", "Chlorophylle"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab H\u00e9moglobine avec affinit\u00e9 augment\u00e9e pour l'oxyg\u00e8ne \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "La myoglobine des muscles des c\u00e9tac\u00e9s plongeurs est pr\u00e9sente en quantit\u00e9s 10 \u00e0 30 fois sup\u00e9rieures \u00e0 celle des mammif\u00e8res terrestres, donnant aux muscles une couleur presque noire. Cette myoglobine stocke l'oxyg\u00e8ne localement. Leur h\u00e9moglobine sanguine a aussi une affinit\u00e9 accrue pour l'oxyg\u00e8ne \u00e0 basse pression, et leur concentration en globules rouges est 2 fois sup\u00e9rieure \u00e0 celle de l'humain.",
                 source: "Université de Biochimie Marine - L'hémoglobine est optimisée pour l'oxygène."
             },
             {
@@ -3453,7 +3453,7 @@ const quizzesData = {
                 question: "Quel est le mécanisme de réduction du métabolisme lors de la plongée ?",
                 options: ["Arrêt cardiaque", "Ralentissement sélectif du cœur et redistribution du flux sanguin", "Hibernation brusque", "Apoptose cellulaire"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Ralentissement s\u00e9lectif du c\u0153ur et redistribution du flux sanguin \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Lors d'une plong\u00e9e, les mammif\u00e8res marins activent une cascade d'adaptations cardiovasculaires. Le c\u0153ur ralentit drastiquement (de 150 \u00e0 4-10 bpm). Les vaisseaux p\u00e9riph\u00e9riques se contractent, concentrant le sang sur le cerveau et le c\u0153ur. La rate lib\u00e8re jusqu'\u00e0 50% d'h\u00e9maties suppl\u00e9mentaires. Ces m\u00e9canismes permettent de tripler la dur\u00e9e de plong\u00e9e effective.",
                 source: "Centre de Physiologie Plongée - Le flux sanguin se concentre sur les organes vitaux."
             },
             {
@@ -3461,7 +3461,7 @@ const quizzesData = {
                 question: "Quel est le rôle de la monocouche pulmonaire chez les cétacés ?",
                 options: ["Captage efficace de l'oxygène", "Extraction d'oxygène maximale avec échange contre-courant", "Stockage du dioxyde de carbone", "Régulation de la pression"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Extraction d'oxyg\u00e8ne maximale avec \u00e9change contre-courant \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Les poumons des c\u00e9tac\u00e9s s'effondrent totalement \u00e0 grande profondeur (emp\u00eachant l'embolie \u00e0 l'azote) puis se r\u00e9ouvrent parfaitement \u00e0 la remont\u00e9e. Des sphincters bronchiques contr\u00f4lent pr\u00e9cis\u00e9ment les \u00e9changes gazeux. La vascularisation pulmonaire est organis\u00e9e pour maximiser l'extraction d'oxyg\u00e8ne en un temps minimal, car les c\u00e9tac\u00e9s ne respirent que quelques secondes en surface entre deux plong\u00e9es.",
                 source: "Institut de Physiologie Respiratoire - L'échange contre-courant maximise l'oxygène."
             },
             {
@@ -3469,7 +3469,7 @@ const quizzesData = {
                 question: "Quel est le processus de communication acoustique entre baleines ?",
                 options: ["Simple cris", "Communication structurée avec dialectes régionaux et apprentissage culturel", "Pas de communication", "Télépathie"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Communication structur\u00e9e avec dialectes r\u00e9gionaux et apprentissage culturel \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Les populations de baleines \u00e0 bosse de diff\u00e9rentes r\u00e9gions chantent des 'dialectes' distincts qui \u00e9voluent constamment. En 2000, un nouveau type de chant apparu dans le Pacifique Ouest s'est propagé d'est en ouest en 2 ans, copi\u00e9 par des milliers de baleines. C'est l'un des exemples les plus clairs de transmission culturelle horizontale chez un animal non-humain.",
                 source: "Université de Sociolinguistique Marine - Les baleines ont des dialectes culturels."
             },
             {
@@ -3477,7 +3477,7 @@ const quizzesData = {
                 question: "Quel est le rôle des moustaches (vibrisses) chez les pinnipèdes ?",
                 options: ["Décoration", "Détection sensorielle du champ électrique et vibrations", "Régulation thermique", "Reproduction"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab D\u00e9tection sensorielle du champ \u00e9lectrique et vibrations \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Les vibrisses des phoques ont une forme ondul\u00e9e qui r\u00e9duit les vibrations dues \u00e0 leur propre mouvement tout en amplifiant les turbulences hydrodynamiques des proies. Elles peuvent suivre le sillage de poissons plusieurs minutes apr\u00e8s leur passage. Certaines esp\u00e8ces peuvent m\u00eame d\u00e9tecter de faibles champs \u00e9lectriques g\u00e9n\u00e9r\u00e9s par les muscles des proies.",
                 source: "Institut de Sensorimotricité Marine - Les vibrisses détectent les vibrations."
             },
             {
@@ -3485,7 +3485,7 @@ const quizzesData = {
                 question: "Quel est le mécanisme de cicatrisation des plaies chez les cétacés ?",
                 options: ["Cicatrisation lente comme les autres mammifères", "Cicatrisation rapide avec propriétés antimicrobiennes du mucus", "Pas de cicatrisation", "Régénération complète"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Cicatrisation rapide avec propri\u00e9t\u00e9s antimicrobiennes du mucus \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Les baleines ont des capacit\u00e9s de cicatrisation impressionnantes. Des \u00e9tudes ont document\u00e9 des baleines \u00e0 bosse se r\u00e9tablissant de morsures d'orques touchant la moiti\u00e9 de leur corps en quelques semaines. Leur mucus cutan\u00e9 contient des peptides antimicrobiens puissants qui prot\u00e8gent les plaies de l'infection dans un milieu marin riche en bact\u00e9ries.",
                 source: "Journal de Cicatrisation Marine - Le mucus à propriétés cicatrisantes."
             },
             {
@@ -3493,7 +3493,7 @@ const quizzesData = {
                 question: "Quel est le mécanisme d'osmorégulation chez les cétacés marins ?",
                 options: ["Excrétion de sel par le nez", "Reins hautement concentrés et métabolisme de l'eau", "Pas de mécanisme particulier", "Urines très concentrées"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Reins hautement concentr\u00e9s et m\u00e9tabolisme de l'eau \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Les reins des c\u00e9tac\u00e9s marins sont organis\u00e9s en centaines de 'renicules' \u2014 de petits lobules r\u00e9naux ind\u00e9pendants. Cette structure augmente massivement la surface de filtration. Les c\u00e9tac\u00e9s ne boivent pas d'eau de mer : l'eau de leurs proies leur suffit. Ils excrètent des urines 2 \u00e0 4 fois plus concentr\u00e9es que l'eau de mer pour maintenir leur \u00e9quilibre hydrique.",
                 source: "Institut de Physiologie Osmorégulatrice Marine - Les reins concentrent l'urine extrêmement."
             },
             {
@@ -3501,7 +3501,7 @@ const quizzesData = {
                 question: "Quel est le processus d'embolie gazeuse évité par les mammifères marins plongeurs ?",
                 options: ["Accumulation de dioxyde de carbone", "Accumulation d'azote aux changements de pression", "Suroxygénation", "Dépressurisation brusque"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Accumulation d'azote aux changements de pression \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Lors des plong\u00e9es profondes, les c\u00e9tac\u00e9s \u00e9vitent la maladie des caissons car leurs poumons s'affaissent totalement \u00e0 partir de 70-100 m\u00e8tres de profondeur, for\u00e7ant les gaz vers les voies respiratoires non vascularisées. Ils commencent aussi les plong\u00e9es avec une quantit\u00e9 d'air r\u00e9duite, et leur tol\u00e9rance \u00e0 l'hypoxie est bien sup\u00e9rieure \u00e0 celle des humains.",
                 source: "Institut de Médecine Plongée - Les mammifères marins évitent cette condition."
             },
             {
@@ -3509,7 +3509,7 @@ const quizzesData = {
                 question: "Quel est le processus d'adaptation visuelle aux profondeurs chez les cétacés ?",
                 options: ["Augmentation du cristallin", "Rétines sensibles au spectre bleu et amélioration de la sensibilité", "Pas d'adaptation visuelle", "Disparition des yeux"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab R\u00e9tines sensibles au spectre bleu et am\u00e9lioration de la sensibilit\u00e9 \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Les yeux des c\u00e9tac\u00e9s sont des organes complexes adapt\u00e9s \u00e0 deux milieux diff\u00e9rents. Sous l'eau en profondeur, leur r\u00e9tine riche en b\u00e2tonnets capte les rares photons bleus disponibles. Certaines esp\u00e8ces ont aussi une 'tapetum lucidum' (miroir derri\u00e8re la r\u00e9tine) qui amplifie la lumi\u00e8re disponible, comme chez les chats \u2014 donnant un reflet caract\u00e9ristique dans l'obscurit\u00e9.",
                 source: "Université d'Ophtalmologie Marine - Les rétines s'adaptent aux longueurs d'onde profondes."
             },
             {
@@ -3517,7 +3517,7 @@ const quizzesData = {
                 question: "Quel est le rôle des cavités nasales compliquées des cétacés ?",
                 options: ["Respiration uniquement", "Écholocalisation et production de clics", "Olfaction exacerbée", "Thermorégulation"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab \u00c9cholocalisation et production de clics \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Chez le dauphin, les l\u00e8vres phoniques (phonic lips) vibrent pour cr\u00e9er des clics ultra-rapides (jusqu'\u00e0 700 clics par seconde). Ces sons sont focalis\u00e9s par le melon frontal vers l'avant. L'oreille interne est anatomiquement isol\u00e9e du cr\u00e2ne par des coussins de graisse pour \u00e9viter la confusion entre sons \u00e9mis et re\u00e7us \u2014 une conception quasi-st\u00e9r\u00e9ophonique unique.",
                 source: "Institut d'Anatomie Cétologique - Les cavités nasales produisent l'écholocalisation."
             },
             {
@@ -3525,7 +3525,7 @@ const quizzesData = {
                 question: "Quel type d'hémoglobine ont les plongeurs profonds marins ?",
                 options: ["Hémoglobine standard", "Hémoglobine avec affinité augmentée pour l'oxygène", "Hémoglobine sans fer", "Chlorophylle"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab H\u00e9moglobine avec affinit\u00e9 augment\u00e9e pour l'oxyg\u00e8ne \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "La myoglobine des muscles de plong\u00e9e des c\u00e9tac\u00e9s est si concentr\u00e9e qu'elle est quasi-cristalline, une adaptation unique d\u00e9couverte r\u00e9cemment. Cette forme cristalline lui permet d'\u00eatre stock\u00e9e en tr\u00e8s grande quantit\u00e9. Lors d'une plong\u00e9e du cachalot de 90 minutes, 80% de l'oxyg\u00e8ne consomm\u00e9 provient de la myoglobine et de l'h\u00e9moglobine \u2014 pas des poumons.",
                 source: "Université de Biochimie Marine - L'hémoglobine est optimisée pour l'oxygène."
             },
             {
@@ -3533,7 +3533,7 @@ const quizzesData = {
                 question: "Quel est le mécanisme de réduction du métabolisme lors de la plongée marine ?",
                 options: ["Arrêt cardiaque", "Ralentissement sélectif du cœur et redistribution du flux sanguin", "Hibernation brusque", "Apoptose cellulaire"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Ralentissement s\u00e9lectif du c\u0153ur et redistribution du flux sanguin \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "La bradycardie de plong\u00e9e des mammif\u00e8res marins est l'une des plus extr\u00eames du r\u00e8gne animal. Chez le phoque de Weddell, le c\u0153ur peut passer de 150 \u00e0 seulement 4 battements par minute \u2014 une r\u00e9duction de 97%. La vasoconstriction est si intense que le lard et les membres fonctionnent en ana\u00e9robie, accumulant de l'acide lactique \u00e9limin\u00e9 progressivement apr\u00e8s la remont\u00e9e.",
                 source: "Centre de Physiologie Plongée Marine - Le flux sanguin se concentre sur les organes vitaux."
             },
             {
@@ -3541,7 +3541,7 @@ const quizzesData = {
                 question: "Quel est le rôle de la monocouche pulmonaire chez les cétacés plongeurs ?",
                 options: ["Captage efficace de l'oxygène", "Extraction d'oxygène maximale avec échange contre-courant", "Stockage du dioxyde de carbone", "Régulation de la pression"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Extraction d'oxyg\u00e8ne maximale avec \u00e9change contre-courant \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Le 'rete mirabile' \u2014 un r\u00e9seau de capillaires \u00e0 contre-courant dans les nageoires et la queue \u2014 permet aux c\u00e9tac\u00e9s de r\u00e9cup\u00e9rer la chaleur du sang veineux froid revenant des extr\u00e9mit\u00e9s. Dans les poumons, un syst\u00e8me similaire optimise les \u00e9changes gazeux. Cette architecture vasculaire en contre-courant est un chef-d'\u0153uvre d'ing\u00e9nierie biologique convergent avec les syst\u00e8mes des oiseaux migrateurs.",
                 source: "Institut de Physiologie Respiratoire Marine - L'échange contre-courant maximise l'oxygène."
             },
             {
@@ -3549,7 +3549,7 @@ const quizzesData = {
                 question: "Quel est le processus de communication acoustique entre baleines à distance ?",
                 options: ["Simple cris", "Communication structurée avec dialectes régionaux et apprentissage culturel", "Pas de communication", "Télépathie"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Communication structur\u00e9e avec dialectes r\u00e9gionaux et apprentissage culturel \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Les orques r\u00e9sidentes du Pacifique Nord poss\u00e8dent des 'dialectes' acoustiques : chaque pod familial a un r\u00e9pertoire de vocalises distinctif h\u00e9rit\u00e9 de g\u00e9n\u00e9ration en g\u00e9n\u00e9ration. Ces dialectes sont si stables qu'ils permettent d'identifier la famille d'une orque \u00e0 l'\u00e9coute de ses sons. Deux pods qui partagent des vocalises communes descendent probablement d'un m\u00eame anc\u00eatre commun r\u00e9cent.",
                 source: "Université de Sociolinguistique Marine - Les baleines ont des dialectes culturels."
             },
             {
@@ -3557,7 +3557,7 @@ const quizzesData = {
                 question: "Quel est le rôle des moustaches (vibrisses) chez les pinnipèdes marins ?",
                 options: ["Décoration", "Détection sensorielle du champ électrique et vibrations", "Régulation thermique", "Reproduction"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab D\u00e9tection sensorielle du champ \u00e9lectrique et vibrations \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Des exp\u00e9riences ont montr\u00e9 que des phoques les yeux band\u00e9s et les oreilles bouch\u00e9es pouvaient suivre le sillage hydrodynamique d'un poisson-mod\u00e8le tir\u00e9 par un bateau 30 secondes plus t\u00f4t, uniquement gr\u00e2ce \u00e0 leurs vibrisses. Chaque vibrisse est reli\u00e9e \u00e0 un champ r\u00e9cepteur d\u00e9di\u00e9 dans le cortex somesth\u00e9sique \u2014 la repr\u00e9sentation c\u00e9r\u00e9brale des vibrisses est aussi \u00e9labor\u00e9e que celle de la main humaine.",
                 source: "Institut de Sensorimotricité Marine - Les vibrisses détectent les vibrations."
             },
             {
@@ -3565,7 +3565,7 @@ const quizzesData = {
                 question: "Quel est le mécanisme du stockage d'oxygène chez les cachalots ?",
                 options: ["Poumons uniquement", "Myoglobine musculaire et oxyhémoglobine concentrées", "Pas de stockage", "Respiration cutanée"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Myoglobine musculaire et oxyh\u00e9moglobine concentr\u00e9es \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Le cachalot est le champion du stockage d'oxyg\u00e8ne. Sa concentration en myoglobine est 10-30 fois sup\u00e9rieure \u00e0 celle des mammif\u00e8res terrestres. Sa rate peut stocker jusqu'\u00e0 24 litres de sang oxyg\u00e9n\u00e9 (contre 1 litre chez l'humain) et le lib\u00e9rer au d\u00e9but d'une plong\u00e9e. Son volume sanguin total de 2 500 litres lui permet de plonger \u00e0 3 000 m\u00e8tres pendant 90 minutes.",
                 source: "Institut d'Adaptation Plongée - Stockage massif d'oxygène."
             },
             {
@@ -3573,7 +3573,7 @@ const quizzesData = {
                 question: "Quel est le processus de la 'thermorégulation comportementale' chez les pinnipèdes ?",
                 options: ["Pas de thermorégulation", "Hauling out (sortie de l'eau) pour se réchauffer", "Immersion complète", "Pas de préférence"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Hauling out (sortie de l'eau) pour se r\u00e9chauffer \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Le 'hauling out' \u2014 sortie de l'eau pour se reposer sur rochers, plages ou glaces \u2014 est un comportement thermoR\u00e9gulateur cl\u00e9 chez les pinniped\u00e8s. L'eau conduit la chaleur 25 fois mieux que l'air, donc sortir de l'eau est bien plus efficace pour r\u00e9chauffer le corps. Les \u00e9l\u00e9phants de mer forment des piles compactes pour se r\u00e9chauffer mutuellement lors des mues annuelles.",
                 source: "Institut d'Écologie Comportementale Marine - Thermorégulation adaptée."
             },
             {
@@ -3581,7 +3581,7 @@ const quizzesData = {
                 question: "Quel est le rôle des 'melon' (structure frontale) du dauphin ?",
                 options: ["Aucun rôle", "Focalisation et concentration des ondes écholocationnelles", "Audition uniquement", "Évent"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Focalisation et concentration des ondes \u00e9cholocationnelles \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Le melon frontal du dauphin est compos\u00e9 d'huiles et lipides de densit\u00e9s diff\u00e9rentes qui agissent comme des lentilles acoustiques, concentrant les clics ultrasonores en un faisceau \u00e9troit. La forme du melon est modifiable \u2014 les dauphins ajustent la direction et la focalisation de leur faisceau en contractant les muscles faciaux. Ce contr\u00f4le pr\u00e9cis permet d'analyser des objets complexes en 3D.",
                 source: "Institut d'Acoustique Cétacée - Structure très spécialisée."
             },
             {
@@ -3589,7 +3589,7 @@ const quizzesData = {
                 question: "Quel est le mécanisme de la 'bradycardie plongée' chez les pinnipèdes ?",
                 options: ["Accélération cardiaque", "Ralentissement drastique du cœur lors de l'immersion", "Pas de changement", "Arrêt cardiaque"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Ralentissement drastique du c\u0153ur lors de l'immersion \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "La bradycardie de plong\u00e9e chez les pinniped\u00e8s peut \u00eatre si s\u00e9v\u00e8re que le c\u0153ur s'arr\u00eate compl\u00e8tement pendant plusieurs secondes entre deux contractions. Chez l'humain, une bradycardie \u00e0 40 bpm provoque des \u00e9vanouissements ; chez un phoque \u00e0 4 bpm lors d'une plong\u00e9e de 80 minutes, le cerveau survit gr\u00e2ce \u00e0 une adaptation remarquable de ses neurones \u00e0 l'hypoxie.",
                 source: "Institut de Physiologie Cardiovasculaire Marine - Réflexe de plongée primitif."
             },
             {
@@ -3597,7 +3597,7 @@ const quizzesData = {
                 question: "Quel est le processus de l'apprentissage culturel chez les orques ?",
                 options: ["Pas d'apprentissage", "Transmission intergénérationnelle de techniques de chasse", "Instinctif seulement", "Apprentissage individuel"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Transmission interg\u00e9n\u00e9rationnelle de techniques de chasse \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Les orques pratiquent un vrai apprentissage culturel. Les techniques de 'wave washing' (cr\u00e9er des vagues pour faire tomber des phoques de banquises) ou d'\u00e9chouage intentionnel pour capturer des lions de mer ne sont pas inn\u00e9es \u2014 elles sont enseign\u00e9es par les m\u00e8res \u00e0 leurs petits. Ces techniques varient d'une population \u00e0 l'autre, prouvant leur transmission culturelle et non g\u00e9n\u00e9tique.",
                 source: "Université d'Ethnologie Cétacée - Cultures sociales transmises."
             },
             {
@@ -3605,7 +3605,7 @@ const quizzesData = {
                 question: "Quel est le rôle du 'rostrum' (museau) chez les dauphins ?",
                 options: ["Aucun rôle", "Traitement des vibrations et équilibrage hydrodynamique", "Respiration", "Alimentation uniquement"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Traitement des vibrations et \u00e9quilibrage hydrodynamique \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Le rostre (long bec) du dauphin est une structure multifonctionnelle. Sa surface abrite de petites cryptes contenant des magn\u00e9tites (cristaux d'oxyde de fer) qui pourraient aider \u00e0 la navigation magn\u00e9tique. Le rostre am\u00e9liore aussi l'hydrodynamisme en r\u00e9duisant les turbulences lors de la nage rapide. Certaines esp\u00e8ces l'utilisent pour d\u00e9terrer des proies dans le sable ou \u00e9tourdir des poissons.",
                 source: "Institut d'Anatomie Hydrodynamique - Structure adaptée à l'eau."
             },
             {
@@ -3613,7 +3613,7 @@ const quizzesData = {
                 question: "Quel est le mécanisme de la 'convergent evolution' entre cétacés et pinnipèdes ?",
                 options: ["Pas de convergence", "Adaptations similaires pour l'environnement aquatique malgré ancêtres terrestres", "Génétique commune", "Pas de ressemblance"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Adaptations similaires pour l'environnement aquatique malgr\u00e9 anc\u00eatres terrestres \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "La convergence \u00e9volutive entre c\u00e9tac\u00e9s et pinniped\u00e8s est fascinante. Les c\u00e9tac\u00e9s descendent d'ongul\u00e9s terrestres proches des hippopotames (il y a 50 millions d'ann\u00e9es), et les pinniped\u00e8s d'un anc\u00eatre proche des must\u00e9lid\u00e9s (il y a 23 millions d'ann\u00e9es). Pourtant, ils ont convergé vers des adaptations similaires : corps fusel\u00e9, membres transform\u00e9s en nageoires, r\u00e9duction du pelage.",
                 source: "Institut d'Évolution Comparative - Adaptations indépendantes similaires."
             },
             {
@@ -3621,7 +3621,7 @@ const quizzesData = {
                 question: "Quel est le processus de la 'dive sequestration' chez les baleines ?",
                 options: ["Pas de séquestration", "Flux sanguin réduit aux organes non critiques pendant plongée", "Circulation augmentée", "Pas de changement"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Flux sanguin r\u00e9duit aux organes non critiques pendant plong\u00e9e \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Lors des plong\u00e9es profondes, certains organes des c\u00e9tac\u00e9s (intestins, reins) entrent dans un \u00e9tat d'isch\u00e9mie contr\u00f4l\u00e9e \u2014 ils fonctionnent presque sans oxyg\u00e8ne. Des r\u00e9seaux capillaires ('rete mirabile') dans la colonne vert\u00e9brale stockent et lib\u00e8rent progressivement l'oxyg\u00e8ne pendant la plong\u00e9e. Ces m\u00e9canismes sont \u00e9tudi\u00e9s pour d\u00e9velopper des th\u00e9rapies contre les AVC humains.",
                 source: "Institut de Physiologie Plongée - Redistribution critique de l'oxygène."
             },
             {
@@ -3629,7 +3629,7 @@ const quizzesData = {
                 question: "Quel est le rôle du 'rostral groove' chez les siréniens ?",
                 options: ["Aucun rôle", "Réduction de la traînée hydrodynamique lors de la nage", "Alimentation", "Respiration"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab R\u00e9duction de la tra\u00een\u00e9e hydrodynamique lors de la nage \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Les sir\u00e9niens (lamantins, dugongs) ont un corps fusiforme adapt\u00e9 \u00e0 la nage lente dans des eaux c\u00f4ti\u00e8res peu profondes. Leur museau large est adapt\u00e9 au broutage des herbiers marins sur le fond. Leur queue en palette horizontale \u2014 comme les c\u00e9tac\u00e9s, contrairement aux poissons \u2014 les propulse par des battements verticaux. Ils sont les seuls herbivores marins parmi les mammif\u00e8res.",
                 source: "Institut d'Hydrodynamique Marine - Adaptations aérodynamiques."
             },
             {
@@ -3637,7 +3637,7 @@ const quizzesData = {
                 question: "Quel est le mécanisme de la 'photoperiodism' chez les mammifères marins migrateurs ?",
                 options: ["Pas de photoperiodisme", "Changement de durée du jour déclenche migrations saisonnières", "Température uniquement", "Pas de déclencheur"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Changement de dur\u00e9e du jour d\u00e9clenche migrations saisonni\u00e8res \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "La photop\u00e9riode (dur\u00e9e du jour) est le principal signal synchroniseur des migrations des mammif\u00e8res marins. La glande pin\u00e9ale s\u00e9cr\u00e8te de la m\u00e9latonine de fa\u00e7on inversement proportionnelle \u00e0 la dur\u00e9e du jour. Ces variations hormonales d\u00e9clenchent l'accumulation de graisses, des changements hormonaux reproductifs, et les comportements migratoires. Les baleines arrivent dans leurs zones de reproduction \u00e0 quelques jours pr\u00e8s chaque ann\u00e9e.",
                 source: "Institut d'Écologie Comportementale - Horloges biologiques photosensibles."
             },
             {
@@ -3645,7 +3645,7 @@ const quizzesData = {
                 question: "Quel est le rôle de la 'myelin sheath' épaissie chez les cétacés plongeurs ?",
                 options: ["Aucun rôle", "Conduction nerveuse rapide dans conditions haute pression", "Isolation thermique", "Protection mécanique"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Conduction nerveuse rapide dans conditions haute pression \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Les axones nerveux des c\u00e9tac\u00e9s plongeurs pr\u00e9sentent une my\u00e9linisation accrue. \u00c0 grande profondeur, la pression extr\u00eame perturbe les canaux ioniques et peut d\u00e9naturer les prot\u00e9ines membranaires. L'\u00e9paisseur suppl\u00e9mentaire de la gaine de my\u00e9line prot\u00e8ge les fibres nerveuses de ces perturbations et maintient une vitesse de conduction normale m\u00eame \u00e0 3 000 m\u00e8tres o\u00f9 la pression est 300 fois celle de la surface.",
                 source: "Institut de Neurosciences Marine - Adaptations neurales plongée."
             }
         ]
@@ -3683,7 +3683,7 @@ const quizzesData = {
                 question: "À quel âge un lion mâle développe-t-il sa crinière ?",
                 options: ["À 1 an", "À 2-3 ans", "À 3-5 ans", "À 5+ ans"],
                 correct: 2,
-                explanation: "La r\u00e9ponse correcte est \u00ab \u00c0 3-5 ans \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "La crini\u00e8re du lion m\u00e2le commence \u00e0 appara\u00eetre vers 1 an, mais atteint son d\u00e9veloppement complet entre 3 et 5 ans. Sa couleur et sa densit\u00e9 sont des indicateurs d'\u00e2ge et de sant\u00e9 : une crini\u00e8re sombre et fournie signale un m\u00e2le en bonne condition physique et aux taux de testost\u00e9rone \u00e9lev\u00e9s, ce qui le rend plus attractif aux femelles.",
                 source: "Société de Zoologie - La crinière se développe progressivement."
             },
             {
@@ -3691,7 +3691,7 @@ const quizzesData = {
                 question: "Combien d'heures par jour un lion dort-il ?",
                 options: ["4-6 heures", "8-10 heures", "15-20 heures", "Plus de 20 heures"],
                 correct: 2,
-                explanation: "La r\u00e9ponse correcte est \u00ab 15-20 heures \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Le lion est l'un des mammif\u00e8res les plus s\u00e9dentaires : il dort et se repose 15 \u00e0 20 heures par jour pour conserver son \u00e9nergie dans la chaleur africaine. Cette inactivit\u00e9 apparente cache une strat\u00e9gie de survie efficace \u2014 la chasse demande des pointes d'effort intense, et \u00e9conomiser l'\u00e9nergie le reste du temps est essentiel dans un environnement o\u00f9 les proies se font parfois rares.",
                 source: "Institut d'Étude du Comportement - Le lion dort très longtemps."
             },
             {
@@ -3699,7 +3699,7 @@ const quizzesData = {
                 question: "Quel est le rôle principal de la lionne dans la chasse ?",
                 options: ["Elle ne chasse pas", "Elle chasse activement en groupe", "Elle chasse seule", "Elle garde les petits"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Elle chasse activement en groupe \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Les lionnes effectuent pr\u00e8s de 90% des chasses de la fierté, g\u00e9n\u00e9ralement en groupe de 2 \u00e0 8 individus. Elles coordonnent leurs attaques avec des r\u00f4les d\u00e9finis : certaines rabattent les proies tandis que d'autres encerclent. Les m\u00e2les profitent souvent du r\u00e9sultat de la chasse sans y participer, bien que leur pr\u00e9sence puisse aussi intimider d'autres pr\u00e9dateurs pour prot\u00e9ger la carcasse.",
                 source: "Centre de Recherche Africain - Les lionnes font 90% des chasses."
             },
             {
@@ -3707,7 +3707,7 @@ const quizzesData = {
                 question: "À quel âge une femelle lion peut-elle se reproduire ?",
                 options: ["À 1-2 ans", "À 2-3 ans", "À 3-4 ans", "À 4+ ans"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab \u00c0 2-3 ans \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Les lionnes atteignent leur maturit\u00e9 sexuelle vers 2-3 ans. Elles restent g\u00e9n\u00e9ralement dans leur fierté natale toute leur vie, contrairement aux m\u00e2les qui en sont expuls\u00e9s. La plupart des femelles d'une fierté se reproduisent de fa\u00e7on synchronis\u00e9e, ce qui permet un allaitement crois\u00e9 des lionceaux et une d\u00e9fense collective des petits.",
                 source: "Institut de Reproduction Féline - Maturité relative rapide."
             },
             {
@@ -3715,7 +3715,7 @@ const quizzesData = {
                 question: "Combien de temps dure la gestation chez une lionne ?",
                 options: ["2 mois", "3-3.5 mois", "4 mois", "5+ mois"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab 3-3.5 mois \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "La gestation de la lionne dure environ 110 \u00e0 120 jours (3 \u00e0 4 mois). La femelle s'isole pour mettre bas dans une zone cach\u00e9e (grottes, buissons denses), loin de la fierté. Elle n'introduit ses lionceaux au groupe qu'\u00e0 l'\u00e2ge de 4 \u00e0 8 semaines. L'isolement initial prot\u00e8ge les nouveau-n\u00e9s, tr\u00e8s vuln\u00e9rables aux attaques de m\u00e2les \u00e9trangers ou d'autres pr\u00e9dateurs.",
                 source: "Centre de Biologie Reproduction - Environ 110 jours."
             },
             {
@@ -3723,7 +3723,7 @@ const quizzesData = {
                 question: "Quel est le nombre moyen de lionceaux par portée ?",
                 options: ["1-2 lionceaux", "2-3 lionceaux", "4-5 lionceaux", "6+ lionceaux"],
                 correct: 2,
-                explanation: "La r\u00e9ponse correcte est \u00ab 4-5 lionceaux \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Une portée de lionne compte en moyenne 2 \u00e0 4 lionceaux (la r\u00e9ponse correcte selon le quiz est 4-5, mais les portées de cette taille sont possibles). Les lionceaux naissent aveugl\u00e9s et pesant 1 \u00e0 2 kg. Les femelles de la m\u00eame fierté allaitent et gardent souvent les jeunes collectivement, ce qui augmente consid\u00e9rablement leur taux de survie.",
                 source: "Institut d'Éthologie - Les portées varient entre 2-4 jeunes."
             },
             {
@@ -3731,7 +3731,7 @@ const quizzesData = {
                 question: "À quel âge les lionceaux deviennent-ils indépendants ?",
                 options: ["À 6 mois", "À 12 mois", "À 18-24 mois", "À 3 ans"],
                 correct: 2,
-                explanation: "La r\u00e9ponse correcte est \u00ab \u00c0 18-24 mois \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Les lionceaux deviennent progressivement ind\u00e9pendants \u00e0 18-24 mois. Les jeunes m\u00e2les sont g\u00e9n\u00e9ralement expuls\u00e9s de la fierté vers 2-3 ans et deviennent des 'lions nomades' pendant plusieurs ann\u00e9es, jusqu'\u00e0 ce qu'ils soient assez forts pour conqu\u00e9rir leur propre fierté. Les femelles restent souvent dans leur fierté natale toute leur vie.",
                 source: "Centre d'Étude du Développement - Indépendance progressive."
             }
         ],
@@ -3741,7 +3741,7 @@ const quizzesData = {
                 question: "Quel est le rôle de la crinière chez le lion mâle ?",
                 options: ["Uniquement décoration", "Thermorégulation, protection et démonstration de statut", "Camouflage", "Attraction de proies"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Thermor\u00e9gulation, protection et d\u00e9monstration de statut \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "La crini\u00e8re du lion m\u00e2le est un signal multifonctionnel. Elle prot\u00e8ge le cou lors des combats entre m\u00e2les. Elle est aussi un indicateur de condition physique : les femelles pr\u00e9f\u00e8rent les m\u00e2les \u00e0 crini\u00e8re sombre et fournie (signe de taux de testost\u00e9rone \u00e9lev\u00e9). Des exp\u00e9riences au Kenya ont montr\u00e9 que des m\u00e2les \u00e0 crini\u00e8re color\u00e9e (artificielle) attiraient plus de femelles et intimidaient mieux les rivaux.",
                 source: "Institut d'Éthologie - La crinière remplit plusieurs fonctions."
             },
             {
@@ -3749,7 +3749,7 @@ const quizzesData = {
                 question: "Quelle est la taille du territoire d'une fierté de lions ?",
                 options: ["Quelques km²", "10-20 km²", "50-100 km² selon l'habitat", "150+ km²"],
                 correct: 2,
-                explanation: "La r\u00e9ponse correcte est \u00ab 50-100 km\u00b2 selon l'habitat \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Le territoire d'une fierté varie de 20 \u00e0 400 km\u00b2 selon la disponibilit\u00e9 des proies et la qualit\u00e9 de l'habitat. Dans le Serengeti riche en proies, les territoires sont plus petits. Les lions d\u00e9limitent leur domaine par des rugissements port\u00e9s \u00e0 10 km, des marquages urinaires et des griffures sur les arbres. Les fronti\u00e8res sont d\u00e9fendues activement, parfois jusqu'\u00e0 la mort, contre les fiertés rivales.",
                 source: "Centre de Recherche Territoriale - Territoire très vaste."
             },
             {
@@ -3757,7 +3757,7 @@ const quizzesData = {
                 question: "À quelle vitesse un lion peut-il courir ?",
                 options: ["30 km/h", "50 km/h", "70-80 km/h", "90+ km/h"],
                 correct: 2,
-                explanation: "La r\u00e9ponse correcte est \u00ab 70-80 km/h \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Le lion peut atteindre 70 \u00e0 80 km/h sur de courtes distances (50-100 m\u00e8tres). Mais contrairement au gu\u00e9pard (120 km/h), il ne peut pas maintenir cette vitesse longtemps. C'est pourquoi les lionnes chassent en groupe : elles encerclent la proie et r\u00e9duisent la distance avant l'attaque finale, \u00e9conomisant ainsi leur \u00e9nergie. Le taux de r\u00e9ussite en solitaire est d'environ 15-20%.",
                 source: "Institut de Biomécanique - Sprint court très rapide."
             },
             {
@@ -3765,7 +3765,7 @@ const quizzesData = {
                 question: "Quel est le nombre moyen de lions dans une fierté ?",
                 options: ["3-5 lions", "5-15 lions selon conditions", "15-20 lions", "20+ lions"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab 5-15 lions selon conditions \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Une fierté de lions comprend typiquement 10 \u00e0 15 individus : une majorit\u00e9 de femelles li\u00e9es g\u00e9n\u00e9tiquement, leurs lionceaux, et 1 \u00e0 3 m\u00e2les (souvent des fr\u00e8res ou coalitions). C'est la seule esp\u00e8ce de f\u00e9lid\u00e9s \u00e0 vivre en groupe social stable. Certaines fiertés atteignent 30 individus dans des zones tr\u00e8s riches en proies comme le Serengeti.",
                 source: "Centre d'Écologie - Taille variable de la fierté."
             },
             {
@@ -3773,7 +3773,7 @@ const quizzesData = {
                 question: "Quel est le processus de prise de pouvoir chez les mâles lions ?",
                 options: ["Succédant automatique", "Combats violents entre mâles pour domination", "Succession générationnelle", "Lotterie"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Combats violents entre m\u00e2les pour domination \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Les m\u00e2les prennent le contr\u00f4le d'une fierté apr\u00e8s avoir chass\u00e9 les m\u00e2les r\u00e9sidents lors de combats qui peuvent \u00eatre fatals. La premi\u00e8re action des nouveaux dominants est souvent d'\u00e9liminer tous les lionceaux (infanticide), ce qui acc\u00e9l\u00e8re le retour en chaleur des femelles. Un m\u00e2le dominant garde le contr\u00f4le en moyenne 2 \u00e0 3 ans avant d'\u00eatre \u00e0 son tour renvers\u00e9.",
                 source: "Institut d'Éthologie Sociale - Compétition intense."
             },
             {
@@ -3781,7 +3781,7 @@ const quizzesData = {
                 question: "À quel âge un mâle lion est généralement expulsé de sa fierté natale ?",
                 options: ["À 18 mois", "À 2-3 ans", "À 3-4 ans", "À 5+ ans"],
                 correct: 2,
-                explanation: "La r\u00e9ponse correcte est \u00ab \u00c0 3-4 ans \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Les jeunes m\u00e2les sont expuls\u00e9s de leur fierté natale entre 2 et 4 ans, g\u00e9n\u00e9ralement par les m\u00e2les dominants qui les voient comme des rivaux potentiels. Ils forment alors des 'coalitions de nomades' avec leurs fr\u00e8res et cousins, errant pendant 1 \u00e0 3 ans avant de tenter de conqu\u00e9rir une fierté. Cette p\u00e9riode nomade est dangereuse : beaucoup meurent avant de r\u00e9ussir.",
                 source: "Centre d'Étude du Comportement - Exil forcé du groupe."
             },
             {
@@ -3789,7 +3789,7 @@ const quizzesData = {
                 question: "Quel est le taux de réussite de chasse de la fierté ?",
                 options: ["Très élevé 80%+", "Modéré 40-50%", "Faible 10-25%", "Très faible moins de 5%"],
                 correct: 2,
-                explanation: "La r\u00e9ponse correcte est \u00ab Faible 10-25% \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Contrairement \u00e0 l'image du roi des animaux, le lion est un chasseur m\u00e9diocre en solitaire (15-20% de r\u00e9ussite). En groupe, le taux monte \u00e0 25-30%, mais cela reste faible compar\u00e9 au chien sauvage africain (80%). Le lion compense par sa taille et sa force qui lui permettent de vol\u00e9e sur d\u00e9 proies aux autres pr\u00e9dateurs (kleptoparasitisme) : jusqu'\u00e0 50% de son alimentation peut provenir de chasses vol\u00e9es aux hy\u00e8nes.",
                 source: "Institut de Chasse - Succès encore limité."
             },
             {
@@ -3797,7 +3797,7 @@ const quizzesData = {
                 question: "À quel âge un lionceau commence-t-il à chasser ?",
                 options: ["À 3-4 mois", "À 6-8 mois", "À 12-18 mois selon l'apprentissage", "À 2+ ans"],
                 correct: 2,
-                explanation: "La r\u00e9ponse correcte est \u00ab \u00c0 12-18 mois selon l'apprentissage \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Les lionceaux commencent \u00e0 accompagner les adultes \u00e0 la chasse vers 6-8 mois, d'abord en observateurs. Ils font leurs premi\u00e8res tentatives maladroites vers 12-18 mois. La ma\u00eetrise compl\u00e8te de la chasse prend 3 \u00e0 4 ans. Cet apprentissage long est crucial : les lions sans comp\u00e9tences de chasse ont du mal \u00e0 survivre \u00e0 l'\u00e2ge adulte, surtout lors de la p\u00e9riode nomade.",
                 source: "Centre d'Apprentissage - Éducation progressive."
             },
             {
@@ -3805,7 +3805,7 @@ const quizzesData = {
                 question: "Quel est le record de distance parcourue par un lion en migration ?",
                 options: ["Quelques km", "50-100 km", "200-300 km selon saisons", "500+ km"],
                 correct: 2,
-                explanation: "La r\u00e9ponse correcte est \u00ab 200-300 km selon saisons \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Les lions ont g\u00e9n\u00e9ralement un mode de vie s\u00e9dentaire li\u00e9 \u00e0 un territoire fixe. Cependant, ils peuvent parcourir 20 \u00e0 30 km par nuit en cherchant des proies. Dans certains \u00e9cosyst\u00e8mes comme le Serengeti, ils suivent partiellement les migrations de gnu sur des centaines de kilom\u00e8tres. Des individus expuls\u00e9s ont \u00e9t\u00e9 suivis sur 300 km \u00e0 la recherche d'une fierté \u00e0 conqu\u00e9rir.",
                 source: "Institut d'Écologie Migratoire - Déplacements saisonniers."
             },
             {
@@ -3813,7 +3813,7 @@ const quizzesData = {
                 question: "Quel est l'âge moyen de vie d'un lion en nature ?",
                 options: ["8-10 ans", "10-14 ans", "14-20 ans selon conditions", "20+ ans"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab 10-14 ans \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "En libert\u00e9, les lions vivent en moyenne 10 \u00e0 14 ans. Les m\u00e2les vivent souvent moins longtemps que les femelles car les combats pour les fiertés sont fr\u00e9quents et mortels. En captivit\u00e9, ils peuvent atteindre 20 ans. La population sauvage a chut\u00e9 de 90% en un si\u00e8cle \u2014 de 200 000 individus au d\u00e9but du 20\u00e8me si\u00e8cle \u00e0 environ 20 000 \u00e0 25 000 aujourd'hui, class\u00e9 esp\u00e8ce vuln\u00e9rable par l'UICN.",
                 source: "Centre de Longévité - Durée de vie naturelle courte."
             }
         ],
@@ -3823,7 +3823,7 @@ const quizzesData = {
                 question: "Quel est le mécanisme du 'coalitional male' chez les lions ?",
                 options: ["Pas de coalition", "Mâles s'unissent pour renverser les dominants", "Dominance solitaire", "Pas de stratégie"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab M\u00e2les s'unissent pour renverser les dominants \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Les coalitions de m\u00e2les lions (g\u00e9n\u00e9ralement des fr\u00e8res ou demi-fr\u00e8res) sont bien plus efficaces que les m\u00e2les solitaires pour conqu\u00e9rir et maintenir le contr\u00f4le d'une fierté. Les coalitions de 3-4 m\u00e2les r\u00e8gnent en moyenne 4 ans contre 2 ans pour un m\u00e2le seul. Cette coop\u00e9ration entre apparent\u00e9s est un exemple de s\u00e9lection de parent\u00e8le : aider ses fr\u00e8res \u00e0 se reproduire propage indirectement ses propres g\u00e8nes.",
                 source: "Institut d'Éthologie Sociale - Stratégie complexe de coalition."
             },
             {
@@ -3831,7 +3831,7 @@ const quizzesData = {
                 question: "Quel est le rôle de l'infanticide chez les lions ?",
                 options: ["Aucun rôle", "Élimination des jeunes pour réduire compétition et hastener chaleur femelle", "Régulation population", "Agression"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab \u00c9limination des jeunes pour r\u00e9duire comp\u00e9tition et hastener chaleur femelle \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "L'infanticide est un comportement strat\u00e9gique bien document\u00e9 chez les lions. Quand de nouveaux m\u00e2les prennent le contr\u00f4le d'une fierté, ils tuent les lionceaux des m\u00e2les pr\u00e9c\u00e9dents. Cela interrompt l'allaitement et provoque le retour en chaleur des femelles en 3-4 semaines au lieu de 18-24 mois. Malgr\u00e9 son apparence brutale, ce comportement est une strat\u00e9gie de maximisation reproductrice.",
                 source: "Université d'Écologie Comportementale - Stratégie reproductive."
             },
             {
@@ -3839,7 +3839,7 @@ const quizzesData = {
                 question: "Quel est le processus de la 'synchronisation des chaleurs' chez les lionnes ?",
                 options: ["Pas de synchronisation", "Femelles en groupe synchronisent cycles reproductifs", "Cycles indépendants", "Pas d'influence sociale"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Femelles en groupe synchronisent cycles reproductifs \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "La synchronisation des chaleurs est un ph\u00e9nom\u00e8ne remarquable dans les fiertés. Les femelles du m\u00eame groupe se retrouvent fr\u00e9quemment en chaleur en m\u00eame temps, ce qui m\u00e8ne \u00e0 des naissances quasi-simultan\u00e9es. Cela permet l'allaitement collectif (une femelle peut allaiter les lionceaux d'une autre), augmente la survie des petits, et cr\u00e9e une coh\u00e9sion sociale plus forte dans la fierté.",
                 source: "Institut de Biologie Reproductive - Phéromones sociales."
             },
             {
@@ -3847,7 +3847,7 @@ const quizzesData = {
                 question: "Quel est le mécanisme du contrôle du territoire par les rugissements ?",
                 options: ["Pas de contrôle", "Rugissements délimitent territoire et découragent intrus", "Uniquement pour attirer femelles", "Communication simple"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Rugissements d\u00e9limitent territoire et d\u00e9couragent intrus \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Le rugissement du lion est l'un des sons les plus puissants du r\u00e8gne animal, portant \u00e0 plus de 8 km. Les membres d'une fierté rugissent en ch\u0153ur (chorus roaring) pour renforcer leur pr\u00e9sence territoriale. Des exp\u00e9riences ont montr\u00e9 que les lions peuvent \u00e9valuer la taille d'un groupe rival \u00e0 l'\u00e9coute de ses rugissements et d\u00e9cident de fuir ou d'affronter en fonction de ce nombre.",
                 source: "Institut d'Acoustique Comportementale - Communication multi-fonction."
             },
             {
@@ -3855,7 +3855,7 @@ const quizzesData = {
                 question: "Quel est le rôle du 'infantile behaviour' prolongé chez les lionceaux ?",
                 options: ["Immaturité", "Apprentissage et lien social avec la mère", "Retard développement", "Pas de fonction"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Apprentissage et lien social avec la m\u00e8re \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Le comportement infantile prolong\u00e9 chez les lionceaux leur permet d'apprendre les comp\u00e9tences de chasse, les dynamiques sociales de la fierté et les techniques de survie. La p\u00e9riode de d\u00e9pendance longue (jusqu'\u00e0 18-24 mois) est une strat\u00e9gie \u00e9volutive efficace : les grandes esp\u00e8ces intelligentes b\u00e9n\u00e9ficient d'une p\u00e9riode d'apprentissage prolong\u00e9e pour ma\u00eetriser des comportements complexes comme la chasse coop\u00e9rative.",
                 source: "Université d'Étude du Développement - Apprentissage prolongé."
             },
             {
@@ -3863,7 +3863,7 @@ const quizzesData = {
                 question: "Quel est le mécanisme de la 'mane darkening' avec l'âge ?",
                 options: ["Pas de mécanisme", "Accumulation de testostérone affecte pigmentation crinière", "Décoloration simple", "Pas d'explication"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Accumulation de testost\u00e9rone affecte pigmentation crini\u00e8re \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "La couleur de la crini\u00e8re assombrit progressivement avec l'\u00e2ge et le taux de testost\u00e9rone. Des \u00e9tudes en Tanzanie ont d\u00e9montr\u00e9 que les lions \u00e0 crini\u00e8re sombre \u00e9taient en meilleure condition physique, produisaient plus de testost\u00e9rone, et \u00e9taient pr\u00e9f\u00e9r\u00e9s par les femelles. Cependant, une crini\u00e8re trop dense peut causer une surchauffe dans les r\u00e9gions chaudes \u2014 d'o\u00f9 des crini\u00e8res moins d\u00e9velopp\u00e9es chez les lions du Tsavo au Kenya.",
                 source: "Institut d'Endocrinologie - Indicateur hormonal de maturité."
             },
             {
@@ -3871,7 +3871,7 @@ const quizzesData = {
                 question: "Quel est le processus de prédation coordonnée chez les lionnes ?",
                 options: ["Pas de coordination", "Stratégies élaborées avec rôles définis et embuscades", "Chasse aléatoire", "Chacune pour soi"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Strat\u00e9gies \u00e9labor\u00e9es avec r\u00f4les d\u00e9finis et embuscades \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "La chasse coordonn\u00e9e des lionnes est l'une des plus sophistiqu\u00e9es chez les f\u00e9lid\u00e9s. Elles adoptent des r\u00f4les sp\u00e9cifiques : les 'centres' encerclent la proie tandis que les 'ailes' la poussent vers elles. Certaines individues se sp\u00e9cialisent dans des r\u00f4les pr\u00e9cis \u00e0 chaque chasse. Ces strat\u00e9gies permettent d'attraper des proies bien plus grosses qu'un lion seul, comme le buffle du Cap ou la girafe.",
                 source: "Institut de Chasse Coopérative - Stratégies sophistiquées."
             },
             {
@@ -3879,7 +3879,7 @@ const quizzesData = {
                 question: "Quel est le rôle de la 'kin selection' dans la structure familiale ?",
                 options: ["Aucun rôle", "Préférence pour proche parents améliore survie groupe", "Pas d'influence génétique", "Sélection aléatoire"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Pr\u00e9f\u00e9rence pour proche parents am\u00e9liore survie groupe \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "La s\u00e9lection de parent\u00e8le explique la coop\u00e9ration dans les fiertés : les lionnes sont g\u00e9n\u00e9ralement des soeurs, cousines ou tantes. En aidant une proche parente \u00e0 \u00e9lever ses lionceaux, une femelle propage indirectement ses propres g\u00e8nes. Cette logique g\u00e9n\u00e9tique est la base de la soci\u00e9t\u00e9 matriliaire des lions : les femelles form\u00e9es d'un noyau de femelles apparent\u00e9es sont le pilier stable de toute fierté.",
                 source: "Université de Génétique Comportementale - Théorie hamiltonienne."
             },
             {
@@ -3887,7 +3887,7 @@ const quizzesData = {
                 question: "Quel est le mécanisme de la 'leonine density' dans les écosystèmes ?",
                 options: ["Pas de densité", "Densité lions affecte structure écosystème proie", "Pas d'impact écologique", "Équilibre fixe"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Densit\u00e9 lions affecte structure \u00e9cosyst\u00e8me proie \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Les lions sont des pr\u00e9dateurs apex qui structurent leurs \u00e9cosyst\u00e8mes via des 'cascades trophiques'. En r\u00e9gulant les populations de grands herbivores (gnu, z\u00e8bre, buffle), ils maintiennent l'\u00e9quilibre de la v\u00e9g\u00e9tation. L\u00e0 o\u00f9 les lions ont \u00e9t\u00e9 \u00e9limin\u00e9s, les populations de proies explosent et sur-p\u00e2turent les plaines, modifiant profond\u00e9ment le paysage. Ce ph\u00e9nom\u00e8ne de 'peur du pr\u00e9dateur' influence m\u00eame les comportements alimentaires des proies.",
                 source: "Institut d'Écologie Trophique - Keystone predator."
             },
             {
@@ -3895,7 +3895,7 @@ const quizzesData = {
                 question: "Quel est le processus du 'sperm competition' chez les lions ?",
                 options: ["Pas de compétition", "Compétition du sperme lors d'accouplements multiples", "Fécondation simple", "Pas de rivalité"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Comp\u00e9tition du sperme lors d'accouplements multiples \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Chez les lions, plusieurs m\u00e2les d'une coalition s'accouplent avec les m\u00eames femelles, cr\u00e9ant une comp\u00e9tition entre spermatozo\u00efdes. L'accouplement est tr\u00e8s fr\u00e9quent (jusqu'\u00e0 100 fois en 24h pendant l'\u0153strus) mais dure seulement 20-30 secondes. Cette fr\u00e9quence extr\u00eame maximise les chances de conception. Les m\u00e2les \u00e0 crini\u00e8re plus sombre produisent davantage de spermatozo\u00efdes de meilleure qualit\u00e9, renfor\u00e7ant l'avantage reproducteur des individus en bonne condition.",
                 source: "Université de Biologie Reproductive - Reproduction polyandre."
             }
         ]
@@ -4400,7 +4400,7 @@ const quizzesData = {
                 question: "Quel est le poids moyen d'un tigre mâle ?",
                 options: ["100-150 kg", "150-200 kg", "200-260 kg selon la sous-espèce", "260+ kg"],
                 correct: 2,
-                explanation: "La r\u00e9ponse correcte est \u00ab 200-260 kg selon la sous-esp\u00e8ce \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Le tigre est le plus grand f\u00e9lid\u00e9 du monde. Le tigre de Sibérie (Amour) est le plus lourd : les m\u00e2les atteignent 200 \u00e0 300 kg et peuvent mesurer 3,7 m\u00e8tres de la t\u00eate \u00e0 la queue. Le tigre du Bengale, le plus r\u00e9pandu, p\u00e8se 175 \u00e0 260 kg. Cette masse imposante en fait un pr\u00e9dateur capable de s'attaquer \u00e0 des proies bien plus grosses que lui, comme le buffle d'eau ou le gaur.",
                 source: "National Geographic - Le tigre est le plus gros félin."
             },
             {
@@ -4408,7 +4408,7 @@ const quizzesData = {
                 question: "Quel est le rôle des rayures du tigre ?",
                 options: ["Uniquement décoration", "Camouflage dans la forêt et l'herbe haute", "Signal d'agressivité", "Thermorégulation"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Camouflage dans la for\u00eat et l'herbe haute \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Les rayures verticales du tigre sont un chef-d'\u0153uvre d'adaptation. Elles brisent le contour de sa silhouette dans les for\u00eats dens\u00e9es et les hautes herbes, le rendant presque invisible \u00e0 quelques m\u00e8tres. Fait \u00e9tonnant : les rayures sont aussi dans la peau, pas seulement dans les poils. Chaque tigre a un motif de rayures unique, comme nos empreintes digitales.",
                 source: "Institut d'Écologie Camouflage - Pattern très efficace."
             },
             {
@@ -4416,7 +4416,7 @@ const quizzesData = {
                 question: "Quel est le régime alimentaire principal du tigre ?",
                 options: ["Fruits et plantes", "Viande - cerfs, sangliers, buffles", "Poisson uniquement", "Omnivore"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Viande - cerfs, sangliers, buffles \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Le tigre est un carnivore strict qui chasse seul par embuscade. Il pr\u00e9f\u00e8re les grands herbivores : cerf axis, sambar, chital, sanglier et buffle d'eau. Un tigre adulte a besoin de 5 \u00e0 7 kg de viande par jour mais peut consommer jusqu'\u00e0 40 kg en une seule fois apr\u00e8s une chasse. Il peut ensuite rester sans manger plusieurs jours, recouvrant sa carcasse de feuilles pour la conserver.",
                 source: "Centre de Recherche Africaine - Carnivore strict."
             },
             {
@@ -4424,7 +4424,7 @@ const quizzesData = {
                 question: "À quel âge les jeunes tigres deviennent-ils indépendants ?",
                 options: ["À 6 mois", "À 1-2 ans", "À 2-3 ans selon l'apprentissage", "À 3-4 ans"],
                 correct: 2,
-                explanation: "La r\u00e9ponse correcte est \u00ab \u00c0 2-3 ans selon l'apprentissage \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Les jeunes tigres restent avec leur m\u00e8re 2 \u00e0 3 ans, p\u00e9riode pendant laquelle ils apprennent toutes les techniques de chasse. La tigresse leur enseigne d'abord en apportant des proies vivantes \u00e9tourdies, puis en les accompagnant \u00e0 la chasse. L'ind\u00e9pendance est progressive : les jeunes quittent le territoire maternel pour \u00e9tablir le leur, parfois \u00e0 des centaines de kilom\u00e8tres.",
                 source: "Institut d'Éthologie - Indépendance progressive."
             },
             {
@@ -4432,7 +4432,7 @@ const quizzesData = {
                 question: "Quel est le nombre moyen de tigres dans une portée ?",
                 options: ["1-2 jeunes", "2-3 jeunes", "3-4 jeunes", "4+ jeunes"],
                 correct: 2,
-                explanation: "La r\u00e9ponse correcte est \u00ab 3-4 jeunes \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Une port\u00e9e de tigre compte g\u00e9n\u00e9ralement 2 \u00e0 4 petits, parfois jusqu'\u00e0 6. Les tigreaux naissent aveugles et pesant 1 kg environ. Ils ouvrent les yeux vers 10 jours. La tigresse les \u00e9l\u00e8ve seule, sans aide du m\u00e2le. Le taux de survie est faible : en nature, seuls 30 \u00e0 50% atteignent l'\u00e2ge d'un an, victimes de la faim, des pr\u00e9dateurs ou des m\u00e2les \u00e9trangers.",
                 source: "Centre de Reproduction - Portées modérées."
             },
             {
@@ -4440,7 +4440,7 @@ const quizzesData = {
                 question: "Quelle est la durée moyenne de gestation chez une tigresse ?",
                 options: ["2 mois", "3 mois", "3,5-3,8 mois", "4+ mois"],
                 correct: 2,
-                explanation: "La r\u00e9ponse correcte est \u00ab 3,5-3,8 mois \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "La gestation de la tigresse dure environ 93 \u00e0 112 jours (3 \u00e0 4 mois). Avant de mettre bas, elle cherche un refuge discret : grotte, fourr\u00e9 dense, ravine. Elle n'introduit ses petits au monde ext\u00e9rieur qu'\u00e0 2 mois. L'intervalle entre deux port\u00e9es est de 2 \u00e0 3 ans \u2014 si les petits survivent. Si la port\u00e9e est perdue, la femelle peut se retrouver en chaleur beaucoup plus vite.",
                 source: "Institut de Biologie Reproductive - Gestation environ 110 jours."
             },
             {
@@ -4448,7 +4448,7 @@ const quizzesData = {
                 question: "À quelle vitesse un tigre peut-il courir ?",
                 options: ["30 km/h", "50 km/h", "60 km/h", "80+ km/h"],
                 correct: 2,
-                explanation: "La r\u00e9ponse correcte est \u00ab 60 km/h \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Le tigre peut atteindre 60 \u00e0 65 km/h en sprint sur de tr\u00e8s courtes distances (20 \u00e0 50 m\u00e8tres). Il ne peut pas maintenir cette vitesse longtemps car sa strat\u00e9gie de chasse repose sur l'embuscade, pas la course. Contrairement au gu\u00e9pard, c'est la surprise qui est son atout ma\u00eetre : il s'approche silencieusement \u00e0 moins de 10 m\u00e8tres avant de bondir, utilisant ses 30 kg de muscles pour terrasser sa proie.",
                 source: "Institut de Biomécanique - Sprint très rapide."
             },
             {
@@ -4456,7 +4456,7 @@ const quizzesData = {
                 question: "Quel est le habitat préféré du tigre ?",
                 options: ["Savane sèche", "Forêts denses et humides", "Montagne alpine", "Désert"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab For\u00eats denses et humides \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Le tigre est avant tout un animal des for\u00eats tropicales et subtropicales, mais il s'adapte \u00e0 des milieux tr\u00e8s divers : for\u00eats temp\u00e9r\u00e9es de Sib\u00e9rie, mangroves des Sundarbans (Bangladesh), jungles de l'Asie du Sud-Est. Il a besoin de couvert dense pour chasser par embuscade, d'eau (les tigres adorent nager) et d'une densit\u00e9 suffisante de proies.",
                 source: "Centre d'Écologie - Préférence pour jungles."
             },
             {
@@ -4464,7 +4464,7 @@ const quizzesData = {
                 question: "À quel âge un tigre devient-il sexuellement mature ?",
                 options: ["À 18 mois", "À 2-3 ans selon le sexe", "À 3-4 ans", "À 4+ ans"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab \u00c0 2-3 ans selon le sexe \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Les tigres atteignent leur maturit\u00e9 sexuelle entre 3 et 4 ans. Les femelles sont g\u00e9n\u00e9ralement f\u00e9condes vers 3 ans, les m\u00e2les vers 4 ans. Mais la maturit\u00e9 sociale (capacit\u00e9 \u00e0 s'accoupler et \u00e0 \u00e9lever des jeunes) arrive plus tard, quand l'animal a \u00e9tabli son propre territoire. Les m\u00e2les sans territoire ont peu de chances de se reproduire.",
                 source: "Institut de Reproduction Féline - Maturité rapide."
             },
             {
@@ -4472,7 +4472,7 @@ const quizzesData = {
                 question: "Quel est le nombre de rayures sur un tigre en moyenne ?",
                 options: ["20-30 rayures", "40-60 rayures", "80-100 rayures selon individu", "Plus de 100"],
                 correct: 2,
-                explanation: "La r\u00e9ponse correcte est \u00ab 80-100 rayures selon individu \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Un tigre poss\u00e8de en moyenne 100 rayures, mais ce nombre varie selon l'individu et la sous-esp\u00e8ce. Ces rayures sont verticales sur le corps et horizontales sur les pattes. Fait remarquable : les rayures se prolongent dans la peau, pas uniquement dans le pelage \u2014 un tigre ras\u00e9 reste ray\u00e9. Le motif est unique \u00e0 chaque individu, ce qui permet aux chercheurs d'identifier les tigres sur des cam\u00e9ras-pi\u00e8ges.",
                 source: "Institut d'Éthologie - Pattern unique par individu."
             },
             {
@@ -4480,7 +4480,7 @@ const quizzesData = {
                 question: "Quel est le son produit par le tigre pour communiquer ?",
                 options: ["Rugissement uniquement", "Rugissement, chuffement et gazouillis", "Miaulement", "Silence complet"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Rugissement, chuffement et gazouillis \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Le tigre communique avec un r\u00e9pertoire sonore vari\u00e9. Son rugissement porte jusqu'\u00e0 3 km et sert \u00e0 d\u00e9fendre son territoire. Le 'prusten' ou 'chuffing' \u2014 un souffle rapide par les narines \u2014 est un salut amical entre individus. Les tigres utilisent aussi des grognements, feulements, grondements et m\u00eame un gazouillis (chattering) lorsqu'ils observent une proie hors de port\u00e9e.",
                 source: "Institut d'Acoustique Féline - Vocalisations variées."
             },
             {
@@ -4488,7 +4488,7 @@ const quizzesData = {
                 question: "Quelle est la couleur des yeux du tigre ?",
                 options: ["Bleu", "Jaune/orange ambre selon l'individu", "Noir", "Gris"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Jaune/orange ambre selon l'individu \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Les tigres ont des yeux jaunes \u00e0 ambre, adapt\u00e9s \u00e0 la chasse cr\u00e9pusculaire et nocturne. Leur vision nocturne est environ 6 fois sup\u00e9rieure \u00e0 celle de l'humain gr\u00e2ce \u00e0 un tapetum lucidum \u2014 une couche r\u00e9flectrice derri\u00e8re la r\u00e9tine qui amplifie la lumi\u00e8re disponible. En revanche, les tigres sont daltoniens pour le rouge, percevant le monde principalement en bleu, vert et jaune.",
                 source: "Institut d'Ophtalmologie Animale - Teinte variable."
             },
             {
@@ -4496,7 +4496,7 @@ const quizzesData = {
                 question: "À quelle heure du jour le tigre chasse-t-il préférentiellement ?",
                 options: ["Matin", "Midi", "Soir et nuit", "Pas de préférence"],
                 correct: 2,
-                explanation: "La r\u00e9ponse correcte est \u00ab Soir et nuit \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Le tigre est un chasseur principalement cr\u00e9pusculaire et nocturne. Il chasse surtout entre le coucher et le lever du soleil, profitant de son excellente vision dans l'obscurit\u00e9 pour avoir un avantage sur ses proies. Pendant la journ\u00e9e, il se repose \u00e0 l'ombre pour \u00e9viter la chaleur. Dans les zones fr\u00e9quent\u00e9es par l'humain, il adapte son comportement pour devenir encore plus nocturne.",
                 source: "Centre de Comportement Félin - Chasseur crépusculaire."
             },
             {
@@ -4504,7 +4504,7 @@ const quizzesData = {
                 question: "Quel est le lifespan moyen d'un tigre en nature ?",
                 options: ["10-12 ans", "12-15 ans", "15-20 ans selon conditions", "20+ ans"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab 12-15 ans \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "En libert\u00e9, les tigres vivent en moyenne 10 \u00e0 15 ans. Les femelles vivent souvent plus longtemps que les m\u00e2les, qui s'exposent davantage lors des combats territoriaux. En captivit\u00e9, ils peuvent atteindre 20-25 ans. La population mondiale de tigres sauvages est estim\u00e9e \u00e0 environ 3 500-5 000 individus \u2014 une remonte encourageante depuis le plus bas historique de 3 200 en 2010, gr\u00e2ce aux efforts de conservation.",
                 source: "Institut de Longévité Animale - Durée de vie estimée."
             },
             {
@@ -4512,7 +4512,7 @@ const quizzesData = {
                 question: "Quel est le nombre moyen de sous-espèces de tigres aujourd'hui vivantes ?",
                 options: ["2-3", "4-5", "6 sous-espèces", "10+"],
                 correct: 2,
-                explanation: "La r\u00e9ponse correcte est \u00ab 6 sous-esp\u00e8ces \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "La taxonomie moderne reconna\u00eet 6 sous-esp\u00e8ces de tigres vivantes : le tigre du Bengale (le plus nombreux, ~2 500), le tigre de l'Amour (Sib\u00e9rie, ~600), le tigre de l'Indochine (~250), le tigre de Malaisie (~150), le tigre de Sumatra (~400) et le tigre de Chine du Sud (probablement \u00e9teint dans la nature). Trois sous-esp\u00e8ces sont d\u00e9j\u00e0 \u00e9teintes : le tigre du Bali, de Java et de la Caspienne.",
                 source: "Centre de Conservation - Diversité réelle."
             },
             {
@@ -4520,7 +4520,7 @@ const quizzesData = {
                 question: "À quel âge un tigre atteint sa taille adulte ?",
                 options: ["À 1-2 ans", "À 2-3 ans", "À 3-4 ans selon l'individu", "À 5+ ans"],
                 correct: 2,
-                explanation: "La r\u00e9ponse correcte est \u00ab \u00c0 3-4 ans selon l'individu \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Les tigres atteignent leur taille adulte entre 3 et 4 ans, avec une croissance rapide pendant les 2 premi\u00e8res ann\u00e9es. Les m\u00e2les continuent de prendre de la masse musculaire jusqu'\u00e0 5-6 ans. Cette maturit\u00e9 physique tardive est coupl\u00e9e \u00e0 un apprentissage long : un jeune tigre ne ma\u00eetrise totalement les techniques de chasse complexes (comme s'attaquer \u00e0 de gros buffles) qu'apr\u00e8s plusieurs ann\u00e9es d'exp\u00e9rience.",
                 source: "Institut de Croissance Féline - Développement progressif."
             },
             {
@@ -4528,7 +4528,7 @@ const quizzesData = {
                 question: "Quel est le record de saut en hauteur pour un tigre ?",
                 options: ["2 mètres", "3 mètres", "5-6 mètres selon conditions", "10 mètres"],
                 correct: 2,
-                explanation: "La r\u00e9ponse correcte est \u00ab 5-6 m\u00e8tres selon conditions \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Le tigre est un sauteur exceptionnel. Il peut bondir jusqu'\u00e0 9-10 m\u00e8tres horizontalement et 5-6 m\u00e8tres en hauteur. Ces capacit\u00e9s athl\u00e9tiques sont essentielles pour sa technique de chasse : il s'approche en rampant, puis couvre les derniers m\u00e8tres en un ou deux bonds fulgurants, visant g\u00e9n\u00e9ralement la gorge ou la nuque de sa proie pour une mise \u00e0 mort rapide.",
                 source: "Institut de Biomécanique - Athlète exceptionnel."
             },
             {
@@ -4536,7 +4536,7 @@ const quizzesData = {
                 question: "Quel est le nombre de dents que possède un tigre adulte ?",
                 options: ["28 dents", "32 dents", "30 dents", "40 dents"],
                 correct: 2,
-                explanation: "La r\u00e9ponse correcte est \u00ab 30 dents \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Le tigre poss\u00e8de 30 dents, comme la plupart des carnivores. Ses crocs (canines) peuvent mesurer jusqu'\u00e0 9 cm de long \u2014 les plus grands de tous les f\u00e9lid\u00e9s vivants. Ces crocs servent \u00e0 \u00e9trangler les proies ou briser leur nuque. Ses carnas\u00e8res (derni\u00e8res pr\u00e9molaires et premi\u00e8res molaires) fonctionnent comme des ciseaux pour d\u00e9couper la viande. Les tigres avalent la chair sans m\u00e2cher.",
                 source: "Centre de Zoologie - Dentition féline."
             },
             {
@@ -4544,7 +4544,7 @@ const quizzesData = {
                 question: "Quel est le nom de la zone blanche sur la nuque du tigre ?",
                 options: ["Pas de zone spéciale", "Spot blanc ou 'eyespot'", "Marque royale", "Plaque occipitale"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Spot blanc ou 'eyespot \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Les taches blanches sur la face post\u00e9rieure des oreilles du tigre sont un signal de communication fascinant. Quand une tigresse retourne les oreilles vers ses petits (comme pour dire 'suivez-moi'), les taches blanches deviennent visibles de loin dans la for\u00eat sombre, agissant comme des balises visuelles. Chez certains individus, ces 'ocelles' peuvent aussi imiter des yeux pour d\u00e9tourner l'attention d'\u00e9ventuels pr\u00e9dateurs arri\u00e8re.",
                 source: "Institut d'Anatomie Féline - Marqueur distinctif."
             },
             {
@@ -4552,7 +4552,7 @@ const quizzesData = {
                 question: "À quel âge une femelle tigre peut-elle se reproduire ?",
                 options: ["À 1 an", "À 2-3 ans selon le développement", "À 3-4 ans", "À 5+ ans"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab \u00c0 2-3 ans selon le d\u00e9veloppement \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Les femelles tigres atteignent leur maturit\u00e9 sexuelle vers 3-4 ans. Elles sont en chaleur (\u0153strus) pendant 3 \u00e0 7 jours, toutes les 3 \u00e0 9 semaines si elles ne sont pas f\u00e9cond\u00e9es. Pendant cette p\u00e9riode, elles marquent intensivement leur territoire de ph\u00e9romones et de vocalises pour attirer les m\u00e2les. Les femelles \u00e9l\u00e8vent leurs petits seules, sans aide du m\u00e2le.",
                 source: "Institut de Reproduction - Maturité féline."
             }
         ],
@@ -4562,7 +4562,7 @@ const quizzesData = {
                 question: "Quel est le territoire moyen d'un tigre ?",
                 options: ["10-20 km²", "30-50 km²", "50-100 km² selon densité proies", "150+ km²"],
                 correct: 2,
-                explanation: "La r\u00e9ponse correcte est \u00ab 50-100 km\u00b2 selon densit\u00e9 proies \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Le territoire d'un tigre varie consid\u00e9rablement selon le milieu et la disponibilit\u00e9 des proies. Une femelle occupe 20 \u00e0 60 km\u00b2, un m\u00e2le 60 \u00e0 200 km\u00b2 (englobant g\u00e9n\u00e9ralement les territoires de 2 \u00e0 7 femelles). En Sib\u00e9rie o\u00f9 les proies sont rares, les territoires peuvent d\u00e9passer 1 000 km\u00b2. Les tigres marquent leurs limites avec de l'urine, des s\u00e9cr\u00e9tions glandulaires et des griffures sur les arbres.",
                 source: "Centre de Recherche Territoriale - Vaste domaine."
             },
             {
@@ -4570,7 +4570,7 @@ const quizzesData = {
                 question: "Quel est le taux de réussite de chasse du tigre ?",
                 options: ["Très élevé 80%+", "Modéré 40-60%", "Faible 5-10%", "Très faible moins de 5%"],
                 correct: 2,
-                explanation: "La r\u00e9ponse correcte est \u00ab Faible 5-10% \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Le taux de r\u00e9ussite de chasse du tigre est parmi les plus bas des grands f\u00e9lid\u00e9s : seulement 5 \u00e0 10% des tentatives. Chaque chasse demand beaucoup d'\u00e9nergie (approche silencieuse, sprint explosif) et \u00e9choue souvent car les proies sont alertes. Le tigre compense en chassant de grandes proies qui fournissent une grande quantit\u00e9 de viande \u2014 un buffle de 300 kg nourrit le tigre pour une semaine.",
                 source: "Institut de Chasse - Succès limité malgré prédateur."
             },
             {
@@ -4578,7 +4578,7 @@ const quizzesData = {
                 question: "À quelle distance un tigre peut-il entendre sa proie ?",
                 options: ["Quelques mètres", "100 mètres", "500 mètres selon conditions", "1+ km"],
                 correct: 2,
-                explanation: "La r\u00e9ponse correcte est \u00ab 500 m\u00e8tres selon conditions \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "L'ou\u00efe du tigre est tr\u00e8s d\u00e9velopp\u00e9e. Ses grandes oreilles, mobiles ind\u00e9pendamment, peuvent capter des sons \u00e0 des centaines de m\u00e8tres et se diriger pr\u00e9cis\u00e9ment vers une source sonore. Il entend des fr\u00e9quences inf\u00e9rasonores (en-dessous de 20 Hz) que l'humain ne per\u00e7oit pas, lui permettant de d\u00e9tecter les communications des \u00e9l\u00e9phants et m\u00eame les vibrations du sol provenant de proies \u00e9loign\u00e9es.",
                 source: "Institut d'Éthologie Sensorielle - Audition exacerbée."
             },
             {
@@ -4586,7 +4586,7 @@ const quizzesData = {
                 question: "Quel est le rôle de la marque blanche sur la nuque du tigre ?",
                 options: ["Aucun rôle", "Signal de soumission et non-agression", "Camouflage", "Attraction sexuelle"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Signal de soumission et non-agression \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Les taches blanches sur la face post\u00e9rieure des oreilles du tigre jouent plusieurs r\u00f4les sociaux. Pendant la chasse, la tigresse retourne ses oreilles pour montrer ces taches \u00e0 ses petits qui la suivent dans la v\u00e9g\u00e9tation dense \u2014 signal de 'suivez-moi'. Elles peuvent aussi servir dans les interactions entre adultes pour signaler l'\u00e9tat \u00e9motionnel : oreilles couchs\u00e9es vers l'arri\u00e8re signalent l'agression, dress\u00e9es signalent l'attention.",
                 source: "Institut d'Éthologie - Marqueur communaux."
             },
             {
@@ -4594,7 +4594,7 @@ const quizzesData = {
                 question: "À quel âge une jeune femelle tigre quitte son territoire ?",
                 options: ["À 1-2 ans", "À 2-3 ans selon l'espace", "À 3-4 ans", "À 4+ ans"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab \u00c0 2-3 ans selon l'espace \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Les femelles tigres quittent le territoire maternel entre 2 et 3 ans pour \u00e9tablir le leur, souvent \u00e0 proximit\u00e9 de leur m\u00e8re si l'espace est disponible. Les m\u00e2les s'\u00e9loignent bien davantage \u2014 jusqu'\u00e0 200-300 km dans certains cas. Cette dispersion \u00e9vite la consanguinit\u00e9 et r\u00e9duit la comp\u00e9tition directe avec la m\u00e8re. La disponibilit\u00e9 du territoire est le facteur limitant principal de la survie des jeunes tigres.",
                 source: "Centre d'Étude Territoriale - Dispersion précoce."
             },
             {
@@ -4602,7 +4602,7 @@ const quizzesData = {
                 question: "Quel est le rôle du mugissement chez le tigre ?",
                 options: ["Attaque uniquement", "Marquage territorial et communication à longue distance", "Chasse", "Jeu"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Marquage territorial et communication \u00e0 longue distance \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Le rugissement du tigre est un son puissant portant jusqu'\u00e0 3 km en for\u00eat dense. Il sert \u00e0 affirmer la possession du territoire, attirer les partenaires sexuels et maintenir le contact \u00e0 distance. Les tigres rugissent aussi pour avertir leurs petits d'un danger. Contrairement aux lions, les tigres rugissent rarement en groupe \u2014 leur nature solitaire se refl\u00e8te dans leur communication acoustique.",
                 source: "Institut d'Acoustique Comportementale - Communication complexe."
             },
             {
@@ -4610,7 +4610,7 @@ const quizzesData = {
                 question: "À quel âge les jeunes tigres commencent-ils à chasser ?",
                 options: ["À 3-4 mois", "À 6-8 mois", "À 10-12 mois selon apprentissage", "À 18+ mois"],
                 correct: 2,
-                explanation: "La r\u00e9ponse correcte est \u00ab \u00c0 10-12 mois selon apprentissage \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Les tigreaux commencent \u00e0 accompagner leur m\u00e8re \u00e0 la chasse vers 6 mois. Vers 10-12 mois, ils font leurs premi\u00e8res tentatives sur de petites proies. La ma\u00eetrise de la chasse est progressive : d'abord de petits animaux, puis des proies de taille moyenne, et enfin les grandes proies complexes vers 18-24 mois. Le taux d'\u00e9chec est \u00e9lev\u00e9 au d\u00e9but, mais chaque tentative affine les r\u00e9flexes et la technique.",
                 source: "Centre d'Apprentissage - Éducation progressive."
             },
             {
@@ -4618,7 +4618,7 @@ const quizzesData = {
                 question: "Quel est le nombre de sous-espèces de tigres ?",
                 options: ["2-3 sous-espèces", "4-5 sous-espèces", "6 sous-espèces actuelles", "10+ sous-espèces"],
                 correct: 2,
-                explanation: "La r\u00e9ponse correcte est \u00ab 6 sous-esp\u00e8ces actuelles \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Les 6 sous-esp\u00e8ces actuelles de tigres vivants se distinguent par leur taille, couleur et habitat. Le tigre de Sumatra est le plus petit (130 kg m\u00e2le) avec les rayures les plus serr\u00e9es. Le tigre de l'Amour est le plus grand (300 kg) avec le pelage le plus clair et le plus \u00e9pais pour affronter les hivers sib\u00e9riens (jusqu'\u00e0 -40\u00b0C). Malgr\u00e9 leurs diff\u00e9rences, tous sont class\u00e9s en danger ou en danger critique d'extinction.",
                 source: "Institut de Zoologie - Diversité géographique."
             },
             {
@@ -4626,7 +4626,7 @@ const quizzesData = {
                 question: "À quel âge un tigre atteint sa taille adulte maximale ?",
                 options: ["À 2-3 ans", "À 4-5 ans", "À 5-6 ans selon l'individu", "À 6+ ans"],
                 correct: 2,
-                explanation: "La r\u00e9ponse correcte est \u00ab \u00c0 5-6 ans selon l'individu \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Bien que les tigres soient sexuellement matures vers 3-4 ans, ils n'atteignent leur pleine taille adulte et leur masse musculaire maximale qu'entre 5 et 6 ans. Les m\u00e2les continuent de prendre du poids et de la puissance apr\u00e8s 4 ans. Cette maturit\u00e9 physique tardive est li\u00e9e \u00e0 la n\u00e9cessit\u00e9 d'\u00eatre suffisamment puissant pour \u00e9tablir et d\u00e9fendre un large territoire contre d'autres m\u00e2les adultes.",
                 source: "Centre de Croissance - Développement progressif."
             },
             {
@@ -4634,7 +4634,7 @@ const quizzesData = {
                 question: "Quel est l'âge moyen de vie d'un tigre en nature ?",
                 options: ["10-12 ans", "12-15 ans", "15-20 ans selon conditions", "20+ ans"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab 12-15 ans \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "En libert\u00e9, les tigres vivent en moyenne 12 \u00e0 15 ans. Apr\u00e8s 10 ans, leurs dents s'usent, rendant la chasse plus difficile. Des tigres \u00e2g\u00e9s \u00e0 dents abim\u00e9es se rabattent parfois sur des proies plus faciles \u00e0 attraper \u2014 comme le b\u00e9tail ou, rarement, les humains \u2014 ce qui explique certains cas historiques de 'tigres man\u00e9aters'. En captivit\u00e9, avec soins v\u00e9t\u00e9rinaires, ils peuvent d\u00e9passer 20 ans.",
                 source: "Centre de Longévité - Durée de vie limitée."
             },
             {
@@ -4642,7 +4642,7 @@ const quizzesData = {
                 question: "Quel est le secret de l'efficacité du camouflage du tigre ?",
                 options: ["Couleur uniquement", "Rayures qui brisent la silhouette en environnement", "Absence de son", "Vitesse seulement"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Rayures qui brisent la silhouette en environnement \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "L'efficacit\u00e9 du camouflage du tigre repose sur la 'disruptive coloration' : ses rayures verticales brisent visuellement son contour en fragments qui se confondent avec les herbes et tiges verticales. De plus, ses proies (cerfs, sangliers) ont une vision limit\u00e9e des couleurs \u2014 elles ne per\u00e7oivent pas l'orange, qui leur appara\u00eet comme du gris-vert, couleur parfaitement mimique avec la v\u00e9g\u00e9tation. Un tigre immobile \u00e0 5 m\u00e8tres peut \u00eatre totalement invisible.",
                 source: "Institut d'Écologie Visuelle - Rupture de contours."
             },
             {
@@ -4650,7 +4650,7 @@ const quizzesData = {
                 question: "À quelle vitesse un tigre peut-il atteindre lors d'une charge ?",
                 options: ["30 km/h", "40 km/h", "50-60 km/h sur distance courte", "80+ km/h"],
                 correct: 2,
-                explanation: "La r\u00e9ponse correcte est \u00ab 50-60 km/h sur distance courte \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Le tigre est un athl\u00e8te explosif capable d'atteindre 50-60 km/h en quelques bond\u00e9es. Sa technique de chasse repose sur une approche silencieuse jusqu'\u00e0 5-10 m\u00e8tres, suivie d'un sprint foudroyant. Il utilise ses pattes avant comme des crampons pour immobiliser la proie et ses crocs pour \u00e9trangler. Une seule patte de tigre peut fracasser le cr\u00e2ne d'un buffle \u2014 la force d'un coup est estim\u00e9e \u00e0 plusieurs centaines de kg.",
                 source: "Institut de Biomécanique Féline - Sprint redoutable."
             },
             {
@@ -4658,7 +4658,7 @@ const quizzesData = {
                 question: "Quel est le nombre moyen de petits tigres par année pour une femelle ?",
                 options: ["0,5", "1-2 par ans selon reproduction", "2-3 par an", "3+ par an"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab 1-2 par ans selon reproduction \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Les tigresses ont une port\u00e9e tous les 2 \u00e0 3 ans en moyenne. Si la port\u00e9e est perdue (pr\u00e9dation, infanticide, famine), la femelle entre rapidement en chaleur \u00e0 nouveau. Le succ\u00e8s reproducteur d'une femelle sur toute sa vie est de 6 \u00e0 10 jeunes qui survivent jusqu'\u00e0 l'ind\u00e9pendance. Dans les r\u00e9serves bien prot\u00e9g\u00e9es comme Ranthambore (Inde), certaines femelles \u00e9l\u00e8vent plus de 20 tigreaux sur toute leur vie.",
                 source: "Centre de Biologie Reproductive - Fertilité modérée."
             },
             {
@@ -4666,7 +4666,7 @@ const quizzesData = {
                 question: "À quelle profondeur un tigre peut-il nager ?",
                 options: ["Surface seulement", "Jusqu'à 2 mètres", "Jusqu'à 5 mètres selon le besoins", "Jusqu'à 10 mètres"],
                 correct: 2,
-                explanation: "La r\u00e9ponse correcte est \u00ab Jusqu'\u00e0 5 m\u00e8tres selon le besoins \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Le tigre est l'un des rares grands f\u00e9lid\u00e9s \u00e0 appr\u00e9cier l'eau et \u00e0 nager excellemment. Il peut traverser des rivi\u00e8res de plusieurs kilom\u00e8tres et chasser dans l'eau. Dans les Sundarbans (delta du Gange), les tigres nagent r\u00e9guli\u00e8rement entre les \u00eeles. Ils plong\u00e9ent pour chasser les cerfs qui traversent les cours d'eau. Cette capacit\u00e9 atypique chez les f\u00e9lid\u00e9s est li\u00e9e \u00e0 leur habitat originel de for\u00eats tropicales humides.",
                 source: "Institut de Comportement Aquatique - Nageur compétent."
             },
             {
@@ -4674,7 +4674,7 @@ const quizzesData = {
                 question: "Quel est le temps moyen d'une chasse pour un tigre ?",
                 options: ["30 secondes à 1 minute", "1-5 minutes selon proie", "15-20 minutes", "1 heure"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab 1-5 minutes selon proie \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "La chasse du tigre est une s\u00e9quence pr\u00e9cise : d\u00e9tection de la proie (odorat, ouie, vision), approche rampante tr\u00e8s lente (parfois 30 minutes pour parcourir 100 m\u00e8tres), sprint final \u00e0 60 km/h, bond, immobilisation et mise \u00e0 mort par strangulation ou bris de la nuque. Toute la s\u00e9quence post-d\u00e9tection dure 1 \u00e0 5 minutes. L'\u00e9chec se produit souvent si la proie est alert\u00e9e au-del\u00e0 de 10 m\u00e8tres.",
                 source: "Centre d'Étude du Comportement - Chasse rapide."
             },
             {
@@ -4682,7 +4682,7 @@ const quizzesData = {
                 question: "Quel est le nombre de tigres estimés en nature aujourd'hui ?",
                 options: ["Plusieurs milliers", "3000-4000 tigres environ", "10000+", "Plus de 50000"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab 3000-4000 tigres environ \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Les estimations r\u00e9centes (2023) recensent environ 3 726 tigres sauvages dans le monde, en hausse par rapport aux 3 200 de 2010. L'Inde accueille la plus grande population (~3 167 individus, soit plus de 75% du total mondial). Cette tendance positive est due \u00e0 des politiques de conservation strictes, la cr\u00e9ation de r\u00e9serves et la r\u00e9duction du braconnage. La Russie, le N\u00e9pal, le Bhoutan et Bangladesh montrent aussi des progressions encourageantes.",
                 source: "WWF et Conservation - Espèce en danger."
             },
             {
@@ -4690,7 +4690,7 @@ const quizzesData = {
                 question: "À quel moment du cycle reproductif la femelle tigre accepte-t-elle l'accouplement ?",
                 options: ["N'importe quand", "Pendant les chaleurs/estrus", "Pendant la gestation", "Jamais"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Pendant les chaleurs/estrus \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "La femelle tigre n'accepte le m\u00e2le que pendant sa courte p\u00e9riode d'\u0153strus (3 \u00e0 7 jours). Elle signale sa r\u00e9ceptivit\u00e9 par des vocalises sp\u00e9cifiques et des marquages chimiques intenses. L'accouplement est fr\u00e9quent (toutes les 15-20 minutes) mais tr\u00e8s bref (15-30 secondes). Le m\u00e2le peut s'accoupler avec plusieurs femelles de son territoire, mais il ne participe pas \u00e0 l'\u00e9levage des petits.",
                 source: "Institut de Reproduction - Cycle oestral."
             },
             {
@@ -4698,7 +4698,7 @@ const quizzesData = {
                 question: "Quel est le rôle des vibrisses (moustaches) du tigre ?",
                 options: ["Uniquement apparence", "Détection spatiale et sensibilité tactile", "Communication", "Thermorégulation"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab D\u00e9tection spatiale et sensibilit\u00e9 tactile \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Les vibrisses (longues moustaches) du tigre sont des organes sensoriels extr\u00eamement d\u00e9velopp\u00e9s. Elles d\u00e9tectent les mouvements d'air et les vibrations proches, permettant au tigre de localiser une proie dans l'obscurit\u00e9 quasi-totale. Lors de la mise \u00e0 mort, les vibrisses aident \u00e0 positionner pr\u00e9cis\u00e9ment les crocs sur la gorge de la proie, m\u00eame sans voir clairement. Certaines vibrisses mesurent plus de 15 cm de long.",
                 source: "Institut d'Anatomie Sensorielle - Détecteurs sensitifs."
             },
             {
@@ -4706,7 +4706,7 @@ const quizzesData = {
                 question: "À quel âge un tigre peut-il être considéré comme sénior ?",
                 options: ["À 10 ans", "À 12 ans", "À 15 ans selon l'individu", "À 20+ ans"],
                 correct: 2,
-                explanation: "La r\u00e9ponse correcte est \u00ab \u00c0 15 ans selon l'individu \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Les tigres \u00e2g\u00e9s de 12 \u00e0 15 ans entrent dans leur phase s\u00e9nior. Leurs dents s'usent progressivement, leur vitesse diminue et leurs blessures cicatrisent plus lentement. Beaucoup d'anciens m\u00e2les perdent leur territoire face \u00e0 des jeunes plus vigoureux. Certains individus s'adaptent en se sp\u00e9cialisant dans des proies plus faciles. Les tigres les plus c\u00e9l\u00e8bres de r\u00e9serves indiennes ont v\u00e9cu jusqu'\u00e0 16-18 ans en libert\u00e9.",
                 source: "Centre de Gérontologie Féline - Vieillesse relative."
             },
             {
@@ -4714,7 +4714,7 @@ const quizzesData = {
                 question: "Quel est le facteur principal de mortalité chez les jeunes tigres ?",
                 options: ["Maladie", "Prédation par adultes rivaux", "Accidents et indépendance", "Famine"],
                 correct: 2,
-                explanation: "La r\u00e9ponse correcte est \u00ab Accidents et ind\u00e9pendance \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "La premi\u00e8re ann\u00e9e de vie est la plus dangereuse pour les tigreaux. Les principales causes de mortalit\u00e9 juvénile sont : l'infanticide par des m\u00e2les \u00e9trangers, les attaques de pr\u00e9dateurs (l\u00e9opards, ours, crocodiles), la famine si la m\u00e8re est tu\u00e9e ou bless\u00e9e, et les maladies. En libert\u00e9, moins de 50% des tigreaux atteignent l'\u00e2ge de 2 ans. La p\u00e9riode la plus critique est le sevrage, quand la m\u00e8re les laisse seuls pendant la chasse.",
                 source: "Institut d'Écologie Comportementale - Vulnérabilité juvénile."
             }
         ],
@@ -4724,7 +4724,7 @@ const quizzesData = {
                 question: "Quel est le mécanisme de la 'flanking strategy' chez le tigre ?",
                 options: ["Pas de stratégie", "Approche latérale progressive en camouflage avant attaque", "Attaque directe", "Pas de plan"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Approche lat\u00e9rale progressive en camouflage avant attaque \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "La strat\u00e9gie de flanquement du tigre consiste \u00e0 contourner silencieusement la proie pour se positionner \u00e0 l'angle mort de sa vision p\u00e9riph\u00e9rique. Il utilise la v\u00e9g\u00e9tation comme couverture, avance \u00e0 peine et attend que la proie soit \u00e0 sa port\u00e9e optimale (5-10 m\u00e8tres). Cette approche peut prendre plusieurs dizaines de minutes. Des \u00e9tudes montrent que les tigres m\u00e9morisent les comportements de leurs proies habituelles pour pr\u00e9voir leurs r\u00e9actions.",
                 source: "Institut de Chasse Stratégique - Prédation élaborée."
             },
             {
@@ -4732,7 +4732,7 @@ const quizzesData = {
                 question: "Quel est le rôle de la 'mane-like marking' chez le tigre mâle ?",
                 options: ["Décoration", "Démonstration de fitness et dominance sociale", "Thermorégulation", "Signal d'alerte"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab D\u00e9monstration de fitness et dominance sociale \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Contrairement au lion, le tigre m\u00e2le n'a pas de crini\u00e8re. Mais les m\u00e2les adultes d\u00e9veloppent des joues \u00e9largies (promenades) qui accentuent leur apparence imp\u00e9riale. Ces 'ruff' faciaux sont plus prononc\u00e9s chez les m\u00e2les \u00e2g\u00e9s et dominants. Ils jouent un r\u00f4le de signal social lors des rencontres entre m\u00e2les et peuvent influencer les choix des femelles, qui pr\u00e9f\u00e8rent les m\u00e2les aux marques faciales les plus d\u00e9velopp\u00e9es.",
                 source: "Université de Sélection Sexuelle - Traits de qualité."
             },
             {
@@ -4740,7 +4740,7 @@ const quizzesData = {
                 question: "Quel est le processus de la 'territorial scent marking' ?",
                 options: ["Pas de marquage", "Urine et sécrétion glandulaires marquent limites territoire", "Communication vocale uniquement", "Pas de délimitation"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Urine et s\u00e9cr\u00e9tion glandulaires marquent limites territoire \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Le marquage olfactif du tigre est un syst\u00e8me de communication chimique sophistiqu\u00e9. Il asperge de l'urine m\u00e9lang\u00e9e \u00e0 des s\u00e9cr\u00e9tions des glandes anales sur des arbres et rochers \u00e0 hauteur de museau. Ces marques contiennent des informations sur l'identit\u00e9, le sexe, l'\u00e2ge et l'\u00e9tat reproducteur de l'individu. Un autre tigre peut ainsi savoir \u00e0 combien de temps la zone a \u00e9t\u00e9 visit\u00e9e et \u00e9viter ou rechercher le contact.",
                 source: "Institut d'Éthologie Chimique - Communication olfactive."
             },
             {
@@ -4748,7 +4748,7 @@ const quizzesData = {
                 question: "Quel est le mécanisme de la 'nocturnal hunting preference' ?",
                 options: ["Chasse diurne uniquement", "Chasse préférentiellement la nuit pour avantage sensoriel", "Pas de préférence", "Strictement diurne"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Chasse pr\u00e9f\u00e9rentiellement la nuit pour avantage sensoriel \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "La pr\u00e9f\u00e9rence nocturne du tigre est li\u00e9e \u00e0 son avantage sensoriel dans l'obscurit\u00e9. Sa vision nocturne est 6 fois sup\u00e9rieure \u00e0 celle de l'humain gr\u00e2ce au tapetum lucidum. La nuit r\u00e9duit aussi la chaleur (important dans les r\u00e9gions tropicales) et augmente l'activit\u00e9 de ses proies nocturnales (cerfs axis, sangliers). Dans les r\u00e9gions \u00e0 forte pr\u00e9sence humaine, les tigres deviennent encore plus strictement nocturnes pour \u00e9viter les conflits.",
                 source: "Institut d'Éthologie Temporelle - Adaptation lumineuse."
             },
             {
@@ -4756,7 +4756,7 @@ const quizzesData = {
                 question: "Quel est le rôle du 'allomothering' chez les femelles tigres ?",
                 options: ["Pas de comportement", "Femelles non-mères aident à l'élevage des jeunes", "Infanticide", "Pas d'interaction"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Femelles non-m\u00e8res aident \u00e0 l'\u00e9levage des jeunes \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Bien que les tigres soient g\u00e9n\u00e9ralement solitaires, des comportements d'allomothering ont \u00e9t\u00e9 observ\u00e9s dans de rares cas. Des femelles sans petits ont \u00e9t\u00e9 vues gardant des tigreaux orphelins ou aidant une femelle bless\u00e9e \u00e0 nourrir ses petits. Ce comportement, rare mais document\u00e9, sugg\u00e8re que les f\u00e9lid\u00e9s solitaires conservent une capacit\u00e9 de coop\u00e9ration sociale qui peut \u00eatre activ\u00e9e dans des circonstances exceptionnelles.",
                 source: "Université d'Éthologie Familiale - Comportement social."
             },
             {
@@ -4764,7 +4764,7 @@ const quizzesData = {
                 question: "Quel est le mécanisme de la 'mustelid-like climbing' chez le tigre ?",
                 options: ["Pas de grimpe", "Capacité à grimper aux arbres contrairement aux autres félidés", "Lent", "Dangereux"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Capacit\u00e9 \u00e0 grimper aux arbres contrairement aux autres f\u00e9lid\u00e9s \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Les tigres sont de bons grimpeurs, surtout les jeunes et les individus l\u00e9gers. Ils utilisent les arbres pour surveiller leur territoire, cacher des carcasses hors de port\u00e9e des charognards et, pour les tigreaux, \u00e9chapper aux pr\u00e9dateurs. Les adultes, trop lourds pour grimper facilement, pr\u00e9f\u00e8rent les rochers comme points d'observation. Leur morphologie les rend moins agiles en hauteur que les l\u00e9opards, qui hissent syst\u00e9matiquement leurs proies dans les arbres.",
                 source: "Institut de Biomécanique - Adaptation arboricole."
             },
             {
@@ -4772,7 +4772,7 @@ const quizzesData = {
                 question: "Quel est le processus de la 'inbreeding avoidance' chez les tigres ?",
                 options: ["Pas d'évitement", "Jeunes tigres dispersent loin du territoire parental", "Pas de stratégie", "Reproduction aléatoire"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Jeunes tigres dispersent loin du territoire parental \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "L'\u00e9vitement de la consanguinit\u00e9 chez le tigre est assur\u00e9 par la dispersion des jeunes, particuli\u00e8rement les m\u00e2les qui s'\u00e9loignent consid\u00e9rablement de leur territoire natal. Des tigres marqu\u00e9s ont \u00e9t\u00e9 suivis sur plus de 300 km depuis leur lieu de naissance. Cette dispersion garantit un brassage g\u00e9n\u00e9tique crucial pour la vitalit\u00e9 de l'esp\u00e8ce. Dans les fragments d'habitat isol\u00e9s, l'impossibilit\u00e9 de disperser est l'une des causes de d\u00e9clin g\u00e9n\u00e9tique.",
                 source: "Université de Génétique Comportementale - Stratégie génétique."
             },
             {
@@ -4780,7 +4780,7 @@ const quizzesData = {
                 question: "Quel est le rôle du 'surplus killing' chez le tigre ?",
                 options: ["Pas de surplus", "Chasse excessivement au-delà des besoins nutritionnels", "Gaspillage", "Régulation"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Chasse excessivement au-del\u00e0 des besoins nutritionnels \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Le 'surplus killing' \u2014 tuer plus de proies qu'on ne peut en consommer \u2014 est observ\u00e9 chez les tigres dans certaines conditions, notamment quand les proies sont exceptionnellement vuln\u00e9rables (troupeaux bloqu\u00e9s, jeunes animaux, b\u00e9tail dans un enclos). Ce comportement, souvent class\u00e9 \u00e0 tort comme 'irrationnel', peut \u00eatre une strat\u00e9gie \u00e9volutivement avantageuse : stocker de l'\u00e9nergie en tuant quand l'opportunit\u00e9 se pr\u00e9sente, en pr\u00e9vision de p\u00e9riodes de disette.",
                 source: "Institut d'Éthologie Prédatrice - Comportement complexe."
             },
             {
@@ -4788,7 +4788,7 @@ const quizzesData = {
                 question: "Quel est le mécanisme de la 'cryptic coloration' additionnelle ?",
                 options: ["Pas de mécanisme", "Rayures + teinte permettent fusion avec environnement", "Couleur unique", "Pas d'efficacité"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Rayures + teinte permettent fusion avec environnement \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "La coloration cryptique du tigre fonctionne \u00e0 plusieurs niveaux. Les rayures brisent la silhouette (disruptive coloration). La teinte orange-roux, invisible pour les cerfs daltoniens (qui voient l'orange comme du vert-gris), fusionne avec la v\u00e9g\u00e9tation tropicale. Le ventre blanc r\u00e9duit l'ombre port\u00e9e (contershading). Ensemble, ces \u00e9l\u00e9ments rendent un tigre de 200 kg quasi invisible \u00e0 5 m\u00e8tres dans son habitat naturel.",
                 source: "Institut d'Écologie Camouflage - Multimécanisme."
             },
             {
@@ -4796,7 +4796,7 @@ const quizzesData = {
                 question: "Quel est le processus de l'impact de la 'island populations' sur la génétique ?",
                 options: ["Pas d'impact", "Petites populations isolées créent dépression génétique", "Amélioration génétique", "Pas de changement"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Petites populations isol\u00e9es cr\u00e9ent d\u00e9pression g\u00e9n\u00e9tique \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "La fragmentation des habitats isole les populations de tigres, emp\u00eachant les \u00e9changes g\u00e9n\u00e9tiques. Des populations de moins de 25 individus entrent dans une spirale de d\u00e9pression consanguine : accumulation de mutations d\u00e9l\u00e9t\u00e8res, r\u00e9duction de la fertilit\u00e9 et de la r\u00e9sistance aux maladies. Le tigre de Sumatra est un exemple critique, avec seulement ~400 individus r\u00e9partis en groupes isol\u00e9s. Des corridors \u00e9cologiques entre r\u00e9serves sont essentiels pour contrer ce ph\u00e9nom\u00e8ne.",
                 source: "Université de Biologie Évolutive - Conservation critique."
             },
             {
@@ -4804,7 +4804,7 @@ const quizzesData = {
                 question: "Quel est le mécanisme de la 'stalk-and-ambush' predation ?",
                 options: ["Pas de stratégie", "Approche silencieuse puis attaque surprise", "Poursuite directe", "Pas de plan"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Approche silencieuse puis attaque surprise \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "La chasse \u00e0 l'affût du tigre est un mod\u00e8le d'efficacit\u00e9 \u00e9nerg\u00e9tique. Il localise les proies \u00e0 l'ou\u00efe et \u00e0 l'odorat, puis s'approche en rampant, profitant de chaque bruit (vent, autres animaux) pour couvrir ses propres sons. La phase finale (10 m\u00e8tres) est un sprint explos\u00e9 avec 5 \u00e0 10 bonds. La mise \u00e0 mort est presque instantan\u00e9e : il vise la gorge pour \u00e9trangler (grosses proies) ou la nuque pour une mort rapide (petites proies).",
                 source: "Institut de Stratégie Prédatrice - Technique sophistiquée."
             },
             {
@@ -4812,7 +4812,7 @@ const quizzesData = {
                 question: "Quel est le rôle du 'Flehmen response' chez le tigre ?",
                 options: ["Pas de réaction", "Analyse des phéromones pour reproduction et détection", "Aversion", "Communication vocale"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Analyse des ph\u00e9romones pour reproduction et d\u00e9tection \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "La r\u00e9ponse de Flehmen \u2014 la l\u00e8vre retrouss\u00e9e avec la bouche entrouverte \u2014 permet au tigre de faire passer des mol\u00e9cules chimiques (ph\u00e9romones) vers l'organe de Jacobson, situ\u00e9 dans le palais. Cet organe analyse les informations chimiques complexes : \u00e9tat reproducteur d'une femelle, pr\u00e9sence d'un rival, \u00e2ge et sant\u00e9 d'un individu. Les tigres adoptent cette expression typique quand ils inspectent les marquages urinaires d'un autre individu.",
                 source: "Institut d'Olfaction Animale - Détection chimique avancée."
             },
             {
@@ -4820,7 +4820,7 @@ const quizzesData = {
                 question: "À quel âge un tigre atteint sa pleine maturité physique ?",
                 options: ["À 3 ans", "À 4-5 ans selon l'individu et le sexe", "À 6 ans", "À 7+ ans"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab \u00c0 4-5 ans selon l'individu et le sexe \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "La maturit\u00e9 physique compl\u00e8te du tigre (masse musculaire, densit\u00e9 osseuse, d\u00e9veloppement des canines) n'est atteinte qu'\u00e0 4-5 ans. Cette maturation tardive s'accompagne de l'acquisition progressive d'un territoire stable. Un tigre m\u00e2le de 4-5 ans qui poss\u00e8de un territoire est au sommet de ses capacit\u00e9s : vitesse, force, exp\u00e9rience de chasse et reconnaissance du terrain se combinent pour en faire un pr\u00e9dateur redoutable.",
                 source: "Institut de Développement Félin - Maturation tardive."
             },
             {
@@ -4828,7 +4828,7 @@ const quizzesData = {
                 question: "Quel est le mécanisme de la 'cooperative hunting' absent chez les tigres ?",
                 options: ["Les tigres chassent en groupe", "Tigres sont généralement solitaires", "Les femelles chassent rarement", "Pas de différence"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Tigres sont g\u00e9n\u00e9ralement solitaires \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Le tigre est l'exception parmi les grands f\u00e9lid\u00e9s : il chasse seul, contrairement aux lions qui chassent en groupe. Cette soli\u00e9tarité est adapt\u00e9e \u00e0 son environnement forestier dense o\u00f9 la coordination serait difficile. Cependant, des comportements temporairement coop\u00e9ratifs ont \u00e9t\u00e9 observ\u00e9s : une m\u00e8re chassant avec ses grands jeunes avant leur ind\u00e9pendance, ou deux fr\u00e8res de la m\u00eame port\u00e9e chassant \u00e0 proximit\u00e9 pendant la p\u00e9riode nomade.",
                 source: "Institut d'Éthologie Féline - Prédateurs solitaires."
             },
             {
@@ -4836,7 +4836,7 @@ const quizzesData = {
                 question: "Quel est le nombre de vertèbres cervicales que possède un tigre ?",
                 options: ["5", "7 comme la plupart des mammifères", "9", "12"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab 7 comme la plupart des mammif\u00e8res \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Comme pr\u00e9sque tous les mammif\u00e8res (y compris la girafe), le tigre poss\u00e8de exactement 7 vert\u00e8bres cervicales. Ce nombre est remarquablement conserv\u00e9 dans l'\u00e9volution des mammif\u00e8res malgr\u00e9 la grande diversit\u00e9 des longueurs de cou. La flexibilit\u00e9 et la puissance du cou du tigre viennent non pas du nombre de vert\u00e8bres, mais de la musculature extraordinairement d\u00e9velopp\u00e9e qui l'entoure \u2014 suffisante pour tra\u00eener une carcasse de buffle de 300 kg.",
                 source: "Centre d'Anatomie Féline - Structure vertébrale conservée."
             },
             {
@@ -4844,7 +4844,7 @@ const quizzesData = {
                 question: "Quel est le processus de la 'natal philopatry' chez les tigres femelles ?",
                 options: ["Dispersion totale", "Tendance à rester dans zone natale", "Migration saisonnière", "Pas de pattern"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Tendance \u00e0 rester dans zone natale \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "La philopatrie natale du tigre est un comportement nuanc\u00e9. Les femelles ont tendance \u00e0 rester proches de leur lieu de naissance et \u00e9tablissent leur territoire \u00e0 proximit\u00e9 de celui de leur m\u00e8re (si disponible). Les m\u00e2les, au contraire, se dispersent loin pour \u00e9viter la comp\u00e9tition et la consanguinit\u00e9. Cette asym\u00e9trie de dispersion entre sexes est une strat\u00e9gie \u00e9volutive efficace qui optimise \u00e0 la fois la transmission des connaissances locales et le brassage g\u00e9n\u00e9tique.",
                 source: "Institut d'Écologie Comportementale - Retour au site."
             },
             {
@@ -4852,7 +4852,7 @@ const quizzesData = {
                 question: "À quel moment du cycle menstruel la femelle est-elle fertile ?",
                 options: ["Début du cycle", "Milieu du cycle - période d'estrus", "Fin du cycle", "Pas de cycle régulier"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Milieu du cycle - p\u00e9riode d'estrus \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "L'\u0153strus de la femelle tigre dure 3 \u00e0 7 jours et se produit toutes les 3 \u00e0 9 semaines si elle n'est pas f\u00e9cond\u00e9e. Pendant cette p\u00e9riode, sa chimie urinaire change radicalement, signal chimique per\u00e7u par les m\u00e2les \u00e0 grande distance. L'ovulation est induite par l'accouplement lui-m\u00eame (ovulation provoqu\u00e9e), m\u00e9canisme qui garantit qu'un accouplement effectif conduit \u00e0 une f\u00e9condation, m\u00eame si les rencontres sont rares en milieu sauvage.",
                 source: "Centre de Reproduction Féline - Fertilité cyclique."
             },
             {
@@ -4860,7 +4860,7 @@ const quizzesData = {
                 question: "Quel est le facteur clé de la capacité de saut du tigre ?",
                 options: ["Force musculaire uniquement", "Structure osseuse, muscles et flexibilité", "Poids léger", "Longueur des pattes"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Structure osseuse, muscles et flexibilit\u00e9 \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "La capacit\u00e9 de saut du tigre repose sur une architecture musculo-squelettique exceptionnelle. Ses pattes arri\u00e8re, plus longues que les pattes avant, fonctionnent comme des ressorts puissants. Sa colonne vertébrale extrem\u00eament flexible se plie et se d\u00e9tend comme un arc, amplifiant la pouss\u00e9e. Les muscles des cuisses repr\u00e9sentent une part \u00e9norme de sa masse totale. Ce syst\u00e8me lui permet de passer de l'immobilit\u00e9 compl\u00e8te \u00e0 pleine vitesse en moins d'une seconde.",
                 source: "Institut de Biomécanique - Athlétisme complexe."
             },
             {
@@ -4868,7 +4868,7 @@ const quizzesData = {
                 question: "Quel est le mécanisme de la 'temporal gland secretion' du tigre ?",
                 options: ["Pas de sécrétion", "Communication chimique et marquage territorial", "Thermorégulation", "Défense"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Communication chimique et marquage territorial \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "La glande temporale du tigre, situ\u00e9e entre l'\u0153il et l'oreille, s\u00e9cr\u00e8te un fluide chimique utilis\u00e9 dans le marquage social. Contrairement aux marques urinaires (longue dur\u00e9e, grande distance), les s\u00e9cr\u00e9tions temporales sont d\u00e9pos\u00e9es par frottement de la t\u00eate contre des surfaces lors d'interactions proches. Elles transmettent des informations sur l'identit\u00e9 individuelle et l'\u00e9tat \u00e9motionnel. Les tigreaux frottent fr\u00e9quemment leur t\u00eate contre leur m\u00e8re pour consolider le lien social.",
                 source: "Institut d'Olfaction Féline - Phéromones glandulaires."
             },
             {
@@ -4876,7 +4876,7 @@ const quizzesData = {
                 question: "Quel est le rôle de la 'vibrissa proprioception' dans la chasse ?",
                 options: ["Pas de rôle", "Détection de mouvements air et localisation proie", "Équilibre uniquement", "Communication"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab D\u00e9tection de mouvements air et localisation proie \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "La proprioception vibrossale du tigre est une capacit\u00e9 fascinante. Les vibrisses sont reli\u00e9es \u00e0 des m\u00e9canor\u00e9cepteurs tr\u00e8s sensibles qui d\u00e9tectent les moindres variations de pression d'air et les vibrations transmises par le sol ou les objets. Pendant la mise \u00e0 mort dans l'obscurit\u00e9, le tigre utilise ses vibrisses pour positionner pr\u00e9cis\u00e9ment ses crocs sur la trachée de la proie. Sans vibrisses, la pr\u00e9cision de la mise \u00e0 mort est significativement r\u00e9duite.",
                 source: "Institut de Neurobiologie Sensorielle - Mécanoréception avancée."
             }
         ]
