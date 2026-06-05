@@ -180,6 +180,7 @@ class QuizManager {
     nextQuestion() {
         if (this.currentQuestion < this.quizData.questions.length - 1) {
             this.currentQuestion++;
+            window.scrollTo({ top: 0, behavior: 'smooth' });
             this.renderQuestion();
         } else {
             this.finishQuiz();

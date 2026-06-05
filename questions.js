@@ -111,7 +111,7 @@ const quizzesData = {
             {
                 id: 14,
                 question: "Quelle est la vision des couleurs chez le chien ?",
-                options: ["Identique à l'humain", "Daltonisme total", "Pas de distinction rouge-vert", "Meilleure vision nocturne"],
+                options: ["Vision trichromatique identique à l'humain avec perception du rouge, vert et bleu via 3 types de cônes", "Vision entièrement achromatique percevant uniquement des nuances de gris comme les chauves-souris nocturnes", "Pas de distinction rouge-vert", "Vision nocturne supérieure à l'humain mais identique aux chats avec une résolution diurne très réduite"],
                 correct: 2,
                 explanation: "Les chiens ne voient pas le monde en noir et blanc comme on le croyait autrefois. Ils distinguent les couleurs, mais leur spectre est limité : ils voient bien le bleu et le jaune, mais confondent le rouge et le vert (qui leur apparaissent tous les deux jaunâtres). C'est similaire à une forme de daltonisme rouge-vert chez l'humain.",
                 source: "Université de Biologie Canine - Les chiens voient principalement en bleu et jaune."
@@ -297,7 +297,7 @@ const quizzesData = {
             {
                 id: 17,
                 question: "Quel est le rôle du jeu dans l'éducation d'un chien ?",
-                options: ["Aucun rôle", "Permet la sociabilisation et renforce la relation", "Uniquement pour le divertissement", "Crée des comportements agressifs"],
+                options: ["Développement musculaire prioritaire, les interactions sociales survenant indépendamment", "Permet la sociabilisation et renforce la relation", "Dépense d'énergie physique uniquement, sans impact sur les apprentissages comportementaux", "Stimulation de la compétitivité naturelle qui peut être redirigée vers les ordres d'obéissance"],
                 correct: 1,
                 explanation: "Le jeu n'est pas juste du divertissement : c'est un outil d'éducation puissant. Il apprend au chien les règles sociales (quand mordre trop fort, le jeu s'arrête), renforce la confiance envers son maître et crée une association positive avec l'apprentissage. Un chien qui joue régulièrement avec son maître est plus motivé à obéir et à apprendre de nouvelles choses.",
                 source: "University of Bristol - Le jeu est essentiel pour le développement physique et mental du chien."
@@ -361,7 +361,7 @@ const quizzesData = {
             {
                 id: 35,
                 question: "Quel est le rôle de la glucosamine pour les articulations du chien ?",
-                options: ["Aucun rôle", "Soutien du cartilage et réduction de l'arthrite", "Renforcement des muscles", "Anti-inflammatoire"],
+                options: ["Augmentation de la densité osseuse par stimulation des ostéoblastes via une voie hormonale", "Soutien du cartilage et réduction de l'arthrite", "Renforcement des fibres musculaires périarticulaires qui stabilisent les grosses articulations", "Inhibition des cytokines pro-inflammatoires à l'origine des douleurs articulaires chroniques"],
                 correct: 1,
                 explanation: "La glucosamine est un composant naturel du cartilage. En supplément, elle aide à ralentir la dégradation du cartilage et réduit l'inflammation articulaire, particulièrement chez les chiens âgés ou les grandes races sujettes à l'arthrite et à la dysplasie. Elle est souvent associée à la chondroïtine pour un effet renforcé. Les résultats sont graduels et visibles après plusieurs semaines de traitement.",
                 source: "Université Vétérinaire - La glucosamine soutient la santé articulaire."
@@ -425,7 +425,7 @@ const quizzesData = {
             {
                 id: 43,
                 question: "Quel est le rôle de l'exercice physique dans la gestion de l'anxiété ?",
-                options: ["Aucun rôle", "Libération d'endorphines et réduction du stress", "Augmentation du stress", "Pas de relation"],
+                options: ["Augmentation de la vigilance par activation du système nerveux sympathique lors du contact", "Libération d'endorphines et réduction du stress", "Renforcement conditionné uniquement s'il est associé systématiquement à une récompense alimentaire", "Stimulation de l'ocytocine chez le chien uniquement, sans effet mesurable sur le cortisol humain"],
                 correct: 1,
                 explanation: "Comme chez l'humain, l'exercice physique déclenche chez le chien la libération d'endorphines (hormones du bien-être) et réduit le taux de cortisol (hormone du stress). Un chien anxieux qui manque d'exercice va accumuler de l'énergie nerveuse et devenir encore plus agité. Une marche dynamique ou une session de jeu intense avant une situation stressante (orage, visite vétérinaire) peut réduire significativement l'anxiété.",
                 source: "Institut d'Étude de l'Anxiété - L'exercice régulier améliore la santé mentale du chien."
@@ -449,7 +449,7 @@ const quizzesData = {
             {
                 id: 46,
                 question: "Quel est le rôle des enzymes digestives chez le chien ?",
-                options: ["Aucun rôle", "Décomposition des aliments et absorption des nutriments", "Production d'énergie uniquement", "Détoxification"],
+                options: ["Régulation hormonale de l'appétit et synthèse des acides aminés essentiels", "Décomposition des aliments et absorption des nutriments", "Production d'ATP via la fermentation des fibres solubles par les bactéries intestinales", "Neutralisation des métabolites toxiques issus de la dégradation des protéines animales"],
                 correct: 1,
                 explanation: "Les enzymes digestives décomposent les aliments en molécules assimilables : les protéases découpent les protéines, les lipases s'occupent des graisses, et les amylases gèrent les glucides. Un manque d'enzymes (comme dans l'insuffisance pancréatique exocrine) provoque une malabsorption : le chien mange normalement mais maigrit et a des selles molles et abondantes malgré un bon appétit.",
                 source: "Centre de Nutrition Canine - Les enzymes digestives sont essentielles à la santé."
@@ -473,7 +473,7 @@ const quizzesData = {
             {
                 id: 49,
                 question: "Quel est le taux d'apprentissage optimal pour les chiens ?",
-                options: ["Un apprentissage par jour", "Plusieurs courtes sessions quotidiennes", "Une session longue par semaine", "Pas de rythme spécifique"],
+                options: ["Une seule session intensive de 45 à 60 minutes par jour pour maximiser la consolidation mémorielle", "Plusieurs courtes sessions quotidiennes", "Une session longue de 30 minutes tous les deux jours en alternant stimulation physique et mentale", "Une longue session hebdomadaire intensive suivie de renforcements verbaux quotidiens informels"],
                 correct: 1,
                 explanation: "Plusieurs courtes sessions quotidiennes de 5 à 10 minutes sont bien plus efficaces qu'une longue session hebdomadaire. Le cerveau consolide les apprentissages entre les sessions, notamment pendant le sommeil. Cette régularité crée aussi une routine que le chien anticipe avec plaisir. L'idéal est d'intégrer des micro-sessions dans la vie quotidienne : avant les repas, lors des balades, au moment du jeu.",
                 source: "Institut de Psychologie Canine - L'apprentissage distribué est plus efficace."
@@ -523,7 +523,7 @@ const quizzesData = {
             {
                 id: 25,
                 question: "Quel est le rôle des phéromones dans la communication canine ?",
-                options: ["Aucun rôle", "Communication chimique pour l'identification et l'apaisement", "Uniquement pour l'attaque", "Uniquement olfactive"],
+                options: ["Marquage acoustique du territoire par des ultrasons inaudibles pour les humains", "Communication chimique pour l'identification et l'apaisement", "Régulation thermique corporelle grâce aux glandes sudoripares concentrées dans les coussinets", "Signalisation visuelle à distance via la posture de la queue et l'orientation des oreilles"],
                 correct: 1,
                 explanation: "Les phéromones sont des molécules chimiques produites par les glandes du chien (pattes, oreilles, région anale...) et détectées via l'organe de Jacobson dans le museau. Elles transmettent des informations sur l'identité, l'état de santé, le sexe et l'état émotionnel. La phéromone apaisante maternelle (DAP) est d'ailleurs commercialisée pour réduire l'anxiété chez le chien — c'est un produit vétérinaire réel.",
                 source: "Dr. Sophie Cadieu, Institut Pasteur - Les phéromones jouent un rôle crucial dans la communication canine."
@@ -555,7 +555,7 @@ const quizzesData = {
             {
                 id: 29,
                 question: "Comment la théorie de l'apprentissage observationnel s'applique-t-elle aux chiens ?",
-                options: ["Ne s'applique pas", "Les chiens apprennent en observant d'autres chiens", "Uniquement par imitation directe", "Pas de preuve scientifique"],
+                options: ["Apprentissage exclusivement conditionnel, l'observation n'ayant aucun effet sur la mémorisation", "Les chiens apprennent en observant d'autres chiens", "Transmission des comportements par voie épigénétique entre générations de chiens éduqués", "Apprentissage uniquement par contact physique avec l'objet ou la personne concernée"],
                 correct: 1,
                 explanation: "Des études ont montré que les chiens peuvent apprendre un comportement simplement en observant un congénère le réaliser. Ce phénomène s'appelle l'apprentissage observationnel ou par imitation. C'est d'ailleurs pourquoi un chiot qui vit avec un chien adulte bien éduqué apprend plus vite les règles de la maison. Les chiens apprennent aussi en observant les humains, surtout ceux avec qui ils ont un lien fort.",
                 source: "University of Lincoln - Études montrant que les chiens apprennent par observation."
@@ -571,7 +571,7 @@ const quizzesData = {
             {
                 id: 51,
                 question: "Quel est le mécanisme de la 'protéine C réactive' en tant que marqueur inflammatoire chez le chien ?",
-                options: ["Pas de protéine C réactive", "Marqueur d'inflammation et d'infection", "Protéine structurale", "Enzyme digestive"],
+                options: ["Protéine de transport spécialisée dans l'acheminement du fer vers les tissus musculaires", "Marqueur d'inflammation et d'infection", "Enzyme hépatique catalysant la dégradation des glucides complexes en glucose assimilable", "Facteur de coagulation activé par les lésions vasculaires lors de blessures traumatiques"],
                 correct: 1,
                 explanation: "La protéine C réactive (CRP) est produite par le foie en réponse à une inflammation ou infection. Chez le chien, un taux élevé de CRP indique qu'il se passe quelque chose d'anormal : infection bactérienne, cancer, trauma tissulaire ou maladie auto-immune. C'est un outil de diagnostic utile en médecine vétérinaire car il permet de détecter une inflammation même avant que les symptômes visibles apparaissent.",
                 source: "Université Vétérinaire d'Immunologie - La PCR est un marqueur important chez le chien."
@@ -579,7 +579,7 @@ const quizzesData = {
             {
                 id: 52,
                 question: "Quel est le rôle du thalamus dans le traitement sensoriel du chien ?",
-                options: ["Pas de rôle", "Relai et filtrage des informations sensorielles", "Production de neurotransmetteurs uniquement", "Contrôle moteur"],
+                options: ["Synthèse et stockage de la dopamine libérée lors des expériences de récompense chez le chien", "Relai et filtrage des informations sensorielles", "Production de neurotransmetteurs uniquement, sans implication dans le traitement de l'information", "Contrôle moteur des membres antérieurs via des projections directes vers la moelle épinière"],
                 correct: 1,
                 explanation: "Le thalamus est comme un central téléphonique du cerveau : il reçoit presque toutes les informations sensorielles (vue, ouïe, toucher, goût) et les redirige vers les zones du cortex appropriées. Il filtre aussi ces informations pour que le cerveau ne soit pas submergé. Chez le chien, cette structure joue un rôle crucial dans la vigilance et la réaction aux stimuli de l'environnement.",
                 source: "Institut de Neurosciences Comparées - Le thalamus est crucial pour la perception sensorielle."
@@ -595,7 +595,7 @@ const quizzesData = {
             {
                 id: 54,
                 question: "Quel est le rôle de l'hippocampe dans la mémoire spatiale du chien ?",
-                options: ["Aucun rôle", "Formation et récupération de la mémoire spatiale", "Production de hormones", "Régulation thermique"],
+                options: ["Traitement des émotions sociales et reconnaissance des expressions faciales des congénères", "Formation et récupération de la mémoire spatiale", "Synthèse des glucocorticoïdes régulant la réponse au stress lors des situations nouvelles", "Coordination des mouvements fins lors des activités d'exploration et de manipulation d'objets"],
                 correct: 1,
                 explanation: "L'hippocampe est la structure cérébrale responsable de la mémoire spatiale et épisodique. Chez le chien, il lui permet de mémoriser les trajets, de retrouver des objets cachés et de se souvenir de la localisation de ressources importantes (nourriture, eau, lieu de repos). Des études ont montré que les chiens ont une excellente mémoire spatiale, capable de retrouver des cachettes même après plusieurs semaines.",
                 source: "Institut d'Étude de la Mémoire - L'hippocampe est essentiel pour la navigation."
@@ -611,7 +611,7 @@ const quizzesData = {
             {
                 id: 56,
                 question: "Quel est le rôle des amygdales dans le traitement de la peur chez le chien ?",
-                options: ["Aucun rôle", "Traitement des émotions aversives et création de souvenirs de peur", "Production d'adrénaline uniquement", "Contrôle moteur"],
+                options: ["Régulation des cycles circadiens et sécrétion de mélatonine liée aux périodes d'obscurité", "Traitement des émotions aversives et création de souvenirs de peur", "Coordination des mouvements réflexes rapides comme le saut défensif ou l'esquive", "Intégration des signaux olfactifs complexes permettant la reconnaissance d'un individu connu"],
                 correct: 1,
                 explanation: "L'amygdale est la structure cérébrale qui traite les émotions, surtout la peur. Quand un chien vit une expérience traumatisante, l'amygdale encode ce souvenir émotionnel fortement et rapidement — c'est un mécanisme de survie. C'est pourquoi une seule mauvaise expérience peut créer une phobie durable. Le contre-conditionnement agit justement sur l'amygdale pour 'réécrire' l'association émotionnelle liée à ce souvenir.",
                 source: "Université de Neurosciences des Émotions - L'amygdale est le centre émotionnel."
@@ -627,7 +627,7 @@ const quizzesData = {
             {
                 id: 58,
                 question: "Quel est le rôle du cortex préfrontal dans la prise de décision du chien ?",
-                options: ["Aucun rôle", "Évaluation des conséquences et contrôle des impulsions", "Mémoire uniquement", "Sensibilité gustative"],
+                options: ["Traitement des signaux douloureux et activation des comportements de protection des blessures", "Évaluation des conséquences et contrôle des impulsions", "Stockage à long terme des souvenirs épisodiques liés aux expériences passées marquantes", "Régulation de la sensibilité gustative et olfactive pour le choix des aliments appropriés"],
                 correct: 1,
                 explanation: "Le cortex préfrontal est moins développé chez le chien que chez l'humain, mais il joue quand même un rôle dans l'inhibition des impulsions et l'évaluation des conséquences. C'est la région qui permet au chien de 'réfléchir avant d'agir'. L'entraînement à l'auto-contrôle (attendre avant de manger, ne pas sauter sur commande) renforce cette zone et améliore la capacité du chien à gérer ses émotions et ses impulsions.",
                 source: "Université de Neurosciences Décisionnelles - Le cortex préfrontal régule le comportement."
@@ -643,7 +643,7 @@ const quizzesData = {
             {
                 id: 60,
                 question: "Quel est le rôle du cervelet dans la coordination motrice du chien ?",
-                options: ["Aucun rôle", "Coordination et équilibre des mouvements", "Production de neurotransmetteurs", "Stockage de mémoire"],
+                options: ["Traitement des émotions liées à la récompense et intégration des signaux de renforcement positif", "Coordination et équilibre des mouvements", "Synthèse exclusive des neurotransmetteurs inhibiteurs comme le GABA et la glycine", "Stockage des souvenirs procéduraux liés aux séquences motrices apprises par entraînement"],
                 correct: 1,
                 explanation: "Le cervelet est responsable de la coordination motrice fine, de l'équilibre et de la précision des mouvements chez le chien. C'est lui qui permet au chien de courir, sauter et attraper des objets avec précision. Une atteinte du cervelet (hypoplasie cérébelleuse, traumatisme) provoque une démarche 'ébrieuse', des tremblements et une mauvaise coordination — sans douleur, mais de façon visible dès les premiers pas.",
                 source: "Université de Neurosciences Motrices - Le cervelet coordonne les mouvements complexes."
@@ -651,7 +651,7 @@ const quizzesData = {
             {
                 id: 61,
                 question: "Quel est le mécanisme de la 'meta-cognition' chez les chiens ?",
-                options: ["Pas de conscience", "Conscience de ses propres états mentaux et connaissances", "Simple réflexe", "Imitation"],
+                options: ["Réponse automatique stéréotypée déclenchée par des stimuli environnementaux récurrents", "Conscience de ses propres états mentaux et connaissances", "Apprentissage associatif classique liant un stimulus neutre à une conséquence prévisible", "Reproduction fidèle du comportement observé chez un congénère ou un humain familier"],
                 correct: 1,
                 explanation: "La métacognition — savoir ce qu'on sait et ne sait pas — a été étudiée chez le chien via des expériences où le chien peut choisir de répondre ou de chercher plus d'informations. Les résultats suggèrent que les chiens ont une forme rudimentaire de cette capacité : face à une tâche incertaine, ils cherchent davantage d'indices avant de répondre. C'est bien plus qu'un simple réflexe conditionné.",
                 source: "Université de Cognition Animale - Certaines études suggèrent une forme de métacognition."
@@ -659,7 +659,7 @@ const quizzesData = {
             {
                 id: 62,
                 question: "Quel est le rôle du noyau accumbens dans la récompense ?",
-                options: ["Aucun rôle", "Centre du plaisir et de la récompense", "Production de cortisol", "Contrôle moteur"],
+                options: ["Régulation du cycle veille-sommeil et modulation de l'humeur via la sérotonine", "Centre du plaisir et de la récompense", "Synthèse et libération de cortisol lors des situations de stress aigu ou chronique", "Contrôle des mouvements volontaires précis via des connexions directes au cervelet"],
                 correct: 1,
                 explanation: "Le noyau accumbens est le centre de la récompense dans le cerveau. Quand le chien reçoit une friandise, un câlin ou réussit une tâche, cette zone libère de la dopamine, créant une sensation de plaisir. C'est ce mécanisme que le renforcement positif exploite. Des études d'IRM fonctionnelle sur des chiens réveillés ont montré que l'odeur de leur maître active plus fortement cette zone que n'importe quelle autre odeur.",
                 source: "Institut de Neurobiologie de la Récompense - L'accumbens libère de la dopamine."
@@ -675,7 +675,7 @@ const quizzesData = {
             {
                 id: 64,
                 question: "Quel est le rôle de l'insula dans l'intéroception du chien ?",
-                options: ["Aucun rôle", "Conscience interne de l'état corporel", "Vision uniquement", "Audition"],
+                options: ["Traitement des signaux proprioceptifs permettant la coordination des membres en terrain irrégulier", "Conscience interne de l'état corporel", "Traitement des informations visuelles à haute résolution via la voie tectale accessoire", "Intégration des sons complexes comme la voix humaine dans une carte acoustique tridimensionnelle"],
                 correct: 1,
                 explanation: "L'insula est une région cérébrale qui traite les signaux venant de l'intérieur du corps : faim, soif, douleur, chaleur, rythme cardiaque. Chez le chien, cette zone lui permet de 'sentir' son état interne et d'adapter son comportement en conséquence (chercher à boire quand soif, se reposer quand fatigué). C'est aussi impliqué dans les émotions viscérales comme le dégoût ou le malaise.",
                 source: "Institut de Neurosciences Intéroceptives - L'insula traite les sensations internes."
@@ -683,7 +683,7 @@ const quizzesData = {
             {
                 id: 65,
                 question: "Quel est le mécanisme de la 'working memory' chez le chien ?",
-                options: ["Pas de mémoire de travail", "Maintien temporaire d'informations pour les tâches actuelles", "Mémoire permanente", "Oubli immédiat"],
+                options: ["Consolidation nocturne des souvenirs par transfert hippocampo-cortical pendant le sommeil paradoxal", "Maintien temporaire d'informations pour les tâches actuelles", "Encodage définitif des expériences émotionnellement chargées dans le cortex préfrontal ventromédian", "Stockage distribué des informations sensorielles sur plusieurs semaines avant stabilisation complète"],
                 correct: 1,
                 explanation: "La mémoire de travail est une mémoire à court terme qui maintient des informations disponibles le temps d'accomplir une tâche. Chez le chien, elle est limitée mais réelle : il peut se souvenir où vous avez caché un objet pendant quelques minutes et planifier son action en conséquence. Cette capacité est sollicitée dans les jeux de flair et les exercices de recherche, et peut être améliorée par l'entraînement.",
                 source: "Université de Cognition Canine - Les chiens ont une mémoire de travail fonctionnelle."
@@ -691,7 +691,7 @@ const quizzesData = {
             {
                 id: 66,
                 question: "Quel est le rôle du système nerveux autonome dans la réaction au stress ?",
-                options: ["Aucun rôle", "Activation du sympathique et régulation du parasympathique", "Sensoriel uniquement", "Moteur uniquement"],
+                options: ["Transmission des signaux douloureux depuis les récepteurs périphériques jusqu'au thalamus somatosensoriel", "Activation du sympathique et régulation du parasympathique", "Traitement des informations sensorielles proprioceptives issues des fuseaux neuromusculaires", "Coordination des mouvements automatiques des membres via des boucles réflexes spinales"],
                 correct: 1,
                 explanation: "Face au stress, le système nerveux sympathique s'active : rythme cardiaque accéléré, pupilles dilatées, muscles tendus, digestion ralentie — c'est la réaction 'combat ou fuite'. Le parasympathique fait l'inverse : il calme et régule le retour au repos. Un chien chroniquement stressé reste bloqué en mode sympathique, ce qui épuise son organisme. Les exercices de relaxation et la cohérence cardiaque aident à rééquilibrer ces deux systèmes.",
                 source: "Institut de Physiologie du Stress - L'autonome règle les réactions de stress."
@@ -707,7 +707,7 @@ const quizzesData = {
             {
                 id: 68,
                 question: "Quel est le rôle du cortex cingulaire antérieur dans la détection d'erreur ?",
-                options: ["Aucun rôle", "Détection des erreurs et conflit cognitif", "Production de salive", "Contrôle de l'équilibre"],
+                options: ["Intégration des signaux olfactifs pour identifier les émotions des congénères à distance", "Détection des erreurs et conflit cognitif", "Régulation de la sécrétion salivaire lors des préparations à l'ingestion d'aliments", "Maintien de l'équilibre postural via l'intégration des informations vestibulaires et proprioceptives"],
                 correct: 1,
                 explanation: "Le cortex cingulaire antérieur (CCA) est impliqué dans la détection des conflits et des erreurs. Quand un chien fait un mouvement incorrect et ne reçoit pas la récompense attendue, c'est cette zone qui signale 'quelque chose ne va pas'. Ce signal est crucial pour l'ajustement du comportement. Des études montrent que les chiens bien entraînés ont une activité plus efficace de cette zone, ce qui les rend plus rapides à corriger leurs erreurs.",
                 source: "Institut de Neurosciences de l'Erreur - Le CCA détecte les divergences attentionnelles."
@@ -723,7 +723,7 @@ const quizzesData = {
             {
                 id: 70,
                 question: "Quel est le rôle de la substance grise dans le traitement cognitif ?",
-                options: ["Pas de rôle", "Traitement de l'information (neurones et synapses)", "Transmission longue distance uniquement", "Stockage permanent"],
+                options: ["Apport métabolique exclusif aux neurones via la production de lactate par les astrocytes", "Traitement de l'information (neurones et synapses)", "Transmission des signaux électriques sur longue distance uniquement via les axones myélinisés", "Stockage permanent des souvenirs déclaratifs dans les réseaux synaptiques corticaux stabilisés"],
                 correct: 1,
                 explanation: "La substance grise contient les corps cellulaires des neurones et leurs connexions locales (synapses) — c'est là que le traitement de l'information se fait réellement. Par opposition, la substance blanche est constituée d'axones myélinisés qui transmettent les signaux à longue distance entre régions cérébrales. Chez le chien, les régions olfactives de la substance grise sont proportionnellement beaucoup plus grandes que chez l'humain, reflétant leur capacité olfactive exceptionnelle.",
                 source: "Institut d'Anatomie Cérébrale - La substance grise effectue les calculs neuronaux."
@@ -1083,7 +1083,7 @@ const quizzesData = {
             {
                 id: 34,
                 question: "Quel est le rôle des pattes postérieures dans l'équilibre du chat ?",
-                options: ["Aucun rôle", "Stabilisation et ajustement fin de la posture", "Locomotion uniquement", "Défense"],
+                options: ["Génération de la puissance de propulsion lors des sauts, sans contribution à l'équilibre statique", "Stabilisation et ajustement fin de la posture", "Détection des vibrations du sol via des récepteurs spécialisés dans les coussinets plantaires", "Protection du ventre par un repli défensif réflexe lors d'attaques provenant du sol"],
                 correct: 1,
                 explanation: "Les pattes postérieures du chat jouent un rôle clé dans la stabilité et les ajustements posturaux fins. Très musclées, elles sont le moteur principal des sauts et de la course. Lors d'une chute, ce sont elles qui s'étendent en premier pour amortir l'impact. Le chat est digitigrade (il marche sur les doigts), ce qui lui donne une grande précision dans ses mouvements et une foulée naturellement silencieuse.",
                 source: "Institut de Biomécanique - Les pattes postérieures assurent la stabilité."
@@ -1099,7 +1099,7 @@ const quizzesData = {
             {
                 id: 36,
                 question: "Quel est le rôle de la troisième paupière (nictitante) chez le chat ?",
-                options: ["Aucun rôle", "Protection et lubrification de l'œil", "Vision uniquement", "Audition"],
+                options: ["Filtration des longueurs d'onde UV pour protéger la rétine lors de l'exposition au soleil intense", "Protection et lubrification de l'œil", "Focalisation de la lumière sur la fovéa centrale pour maximiser la résolution visuelle centrale", "Amplification des sons haute fréquence grâce à une membrane tympanique accessible depuis l'extérieur"],
                 correct: 1,
                 explanation: "La troisième paupière (membrane nictitante) est un tissu semi-transparent qui glisse horizontalement sur l'œil. Elle protège la cornée des égratignures et débris, et contribue à la lubrification oculaire en étalant les larmes. Quand cette membrane est visible sur un chat éveillé et en bonne santé, c'est souvent un signe de fatigue extrême, de maladie (parasites, infection, déshydratation) ou de stress — à surveiller.",
                 source: "Institut d'Ophtalmologie Féline - Elle protège l'œil des débris."
@@ -1131,7 +1131,7 @@ const quizzesData = {
             {
                 id: 40,
                 question: "Quel est le rôle du caecum digestif chez le chat ?",
-                options: ["Aucun rôle", "Absorption de l'eau et fermentation mineure", "Stockage de nourriture", "Production d'enzymes"],
+                options: ["Dégradation des fibres végétales par des enzymes pancréatiques sécrétées en continu", "Absorption de l'eau et fermentation mineure", "Synthèse des vitamines B12 et K directement assimilables par la muqueuse intestinale adjacente", "Régulation du transit via des contractions péristaltiques coordonnées par le système nerveux entérique"],
                 correct: 1,
                 explanation: "Le caecum est une petite poche à la jonction du petit et du gros intestin. Chez le chat, carnivore strict, il est très réduit et joue un rôle minimal dans la digestion, contrairement aux herbivores chez qui il est massif (ex : le lapin). Le tube digestif du chat est globalement plus court que celui du chien ou de l'humain, car la viande se digère plus rapidement que les végétaux.",
                 source: "Centre de Nutrition Féline - Le caecum est rudimentaire chez le chat."
@@ -1179,7 +1179,7 @@ const quizzesData = {
             {
                 id: 46,
                 question: "Quel est le rôle de la prostrate chez le chat mâle ?",
-                options: ["Aucun rôle", "Production de fluide séminal", "Digestion", "Respiration"],
+                options: ["Synthèse des androgènes régulant les comportements territoriaux et le marquage urinaire", "Production de fluide séminal", "Sécrétion d'enzymes protéolytiques dégradant les protéines de la proie ingérée", "Régulation de la fréquence respiratoire via des chémorécepteurs sensibles au CO2 sanguin"],
                 correct: 1,
                 explanation: "La prostate du chat mâle produit une partie du liquide séminal qui nourrit et transporte les spermatozoïdes lors de l'éjaculation. Contrairement au chien et à l'humain, les maladies de la prostate sont rares chez le chat. La castration réduit considérablement la taille de la prostate et les risques associés. Les mâles castrés présentent rarement des problèmes prostatiques au cours de leur vie.",
                 source: "Institut d'Anatomie Reproductive - La prostrate soutient la reproduction."
@@ -1187,7 +1187,7 @@ const quizzesData = {
             {
                 id: 47,
                 question: "Quel est le processus de la 'hiérarchie linéaire' chez les chats de groupe ?",
-                options: ["Pas de hiérarchie", "Ordre dominance établi mais flexibilité possible", "Hiérarchie stricte fixe", "Anarchie complète"],
+                options: ["Territoire divisé en secteurs exclusifs sans interaction directe entre individus adultes", "Ordre dominance établi mais flexibilité possible", "Hiérarchie stricte et permanente avec un mâle alpha contrôlant toutes les ressources du groupe", "Organisation matricielle où chaque femelle reproduite gère indépendamment un sous-groupe familial"],
                 correct: 1,
                 explanation: "Contrairement aux chiens, les chats sont des animaux plutôt solitaires qui n'ont pas besoin de hiérarchie sociale stricte. Dans les groupes de chats (colonies félines), des préférences existent mais elles sont flexibles et dépendent du contexte : un chat dominant pour l'accès à la nourriture peut être subordiné pour les zones de couchage. Les conflits se résolvent souvent par l'évitement plutôt que par la confrontation directe.",
                 source: "Institut d'Éthologie Féline - Les chats ont des rapports moins hiérarchiques."
@@ -1203,7 +1203,7 @@ const quizzesData = {
             {
                 id: 49,
                 question: "Quel est le rôle du temps de jeu structuré pour un chat ?",
-                options: ["Aucun rôle", "Enrichissement mental et dépense énergétique", "Ennui accru", "Agressivité"],
+                options: ["Développement de la musculature abdominale et dorsale grâce aux mouvements de chasse simulée", "Enrichissement mental et dépense énergétique", "Renforcement des comportements prédateurs pouvant devenir problématiques envers les petits animaux", "Stimulation des glandes sébacées favorisant un pelage plus dense pendant les mois froids"],
                 correct: 1,
                 explanation: "Le jeu structuré n'est pas un luxe pour les chats : c'est une nécessité. Il simule les étapes de la chasse (repérage, approche, attaque, capture), ce qui satisfait les instincts prédateurs du chat. Sans jeu quotidien, les chats peuvent développer de l'anxiété, de l'ennui et des comportements destructeurs. 2 sessions de 10-15 minutes par jour avec une canne à plumes ou un jouet interactif suffisent pour la plupart des chats.",
                 source: "Institut de Comportement Animal - Le jeu est essentiel pour le bien-être."
@@ -1269,7 +1269,7 @@ const quizzesData = {
             {
                 id: 27,
                 question: "Quel est le secret de la flexibilité vertébrale exceptionnelle du chat ?",
-                options: ["Muscle puissants", "Vertèbres disques lombaires flexibles", "Pas de clavicule et colonne flexible", "Tendons élastiques"],
+                options: ["Muscles rétracteurs des griffes exceptionnellement puissants permettant des sauts de précision extrême", "Vertèbres disques lombaires flexibles", "Absence de clavicule rigide et colonne vertébrale hyper-flexible", "Tendons de la cheville élastiques stockant l'énergie comme des ressorts biologiques"],
                 correct: 2,
                 explanation: "La flexibilité exceptionnelle du chat vient de deux adaptations anatomiques clés : une clavicule vestigiale non fusionnée (ce qui permet l'épaule de s'effacer pour passer dans des espaces étroits) et des vertèbres lombaires avec des disques intervertébraux très élastiques. Cette colonne 'ressort' est à la base du galop en foulées bondissantes typique du chat et de sa capacité à se faufiler dans des espaces incroyablement étroits.",
                 source: "American Veterinary Medical Association - Absence de fusion claviculaire permettant la rotation."
@@ -1301,7 +1301,7 @@ const quizzesData = {
             {
                 id: 51,
                 question: "Quel est le mécanisme du 'syndrome héréditaire polycystique rénal' chez les chats ?",
-                options: ["Pas de syndrome", "Mutation génétique causant des kystes rénaux progressifs", "Infection virale", "Malnutrition"],
+                options: ["Inflammation chronique des glomérules rénaux déclenchée par un dépôt d'immunocomplexes circulants", "Mutation génétique causant des kystes rénaux progressifs", "Infection virale chronique à parvovirus félin entraînant une glomérulopathie membranoproliférative", "Carence prolongée en taurine provoquant une dégénérescence progressive des tubules collecteurs"],
                 correct: 1,
                 explanation: "La maladie polykystique rénale (PKD) est une maladie héréditaire autosomale dominante très répandue chez certaines races, notamment le Persan et ses dérivés. Une seule copie du gène muté suffit pour développer la maladie. Des kystes se forment dans les reins dès la naissance et grossissent progressivement, détruisant le tissu rénal. L'insuffisance rénale apparaît généralement entre 7 et 10 ans. Un test ADN permet de détecter le gène avant la reproduction.",
                 source: "Institut de Génétique Féline - Condition héréditaire dans certaines races."
@@ -1317,7 +1317,7 @@ const quizzesData = {
             {
                 id: 53,
                 question: "Quel est le processus de la 'cardiomyopathie hypertrophique féline' ?",
-                options: ["Pas de maladie", "Épaississement du myocarde cardiaque", "Dilatation cardiaque", "Fibrillation"],
+                options: ["Dégénérescence progressive des valves auriculo-ventriculaires due à des dépôts de collagène anormal", "Épaississement du myocarde cardiaque", "Dilatation des ventricules avec amincissement de la paroi causant une insuffisance systolique", "Inflammation chronique du péricarde provoquant une constriction progressive du sac péricardique"],
                 correct: 1,
                 explanation: "La cardiomyopathie hypertrophique féline (HCM) est la maladie cardiaque la plus fréquente chez le chat : le muscle du ventricule gauche s'épaissit anormalement, réduisant le volume de sang éjecté à chaque battement. Elle touche environ 15% des chats adultes, avec une prédisposition génétique dans les races Maine Coon, Ragdoll et Persan. Souvent silencieuse, elle peut provoquer soudainement une thrombose aortique (paralysie des pattes arrière) ou une insuffisance cardiaque.",
                 source: "Journal de Cardiologie Vétérinaire - Maladie commune chez les chats."
@@ -1325,7 +1325,7 @@ const quizzesData = {
             {
                 id: 54,
                 question: "Quel est le rôle de la taurine dans la santé cardiaque féline ?",
-                options: ["Aucun rôle", "Amino-acide essentiel pour la fonction cardiaque et rétinienne", "Production d'énergie uniquement", "Défense immunitaire"],
+                options: ["Précurseur de la mélatonine régulant le cycle veille-sommeil et la reproduction saisonnière du chat", "Amino-acide essentiel pour la fonction cardiaque et rétinienne", "Substrat énergétique prioritaire pour les muscles squelettiques lors des sprints intenses", "Modulateur de la réponse immunitaire innée contre les agents pathogènes intracellulaires"],
                 correct: 1,
                 explanation: "La taurine est un acide aminé indispensable au chat car, contrairement à l'humain et au chien, le chat ne peut pas la synthétiser en quantité suffisante. Une carence en taurine provoque une dégénérescence de la rétine (cécité irréversible) et une cardiomyopathie dilatée (cœur qui se dilate et perd sa force). C'est pourquoi on ne peut pas nourrir un chat avec des croquettes pour chiens — elles ne contiennent pas assez de taurine.",
                 source: "Institut de Nutrition Féline - Acide aminé critique non synthétisable par les chats."
@@ -1333,7 +1333,7 @@ const quizzesData = {
             {
                 id: 55,
                 question: "Quel est le mécanisme de la 'diabète sucré féline' ?",
-                options: ["Pas de diabète", "Résistance à l'insuline et dysfonction pancréatique", "Infection virale", "Carence alimentaire"],
+                options: ["Hyperglycémie transitoire liée au stress sans atteinte pancréatique durable, réversible en quelques jours", "Résistance à l'insuline et dysfonction pancréatique", "Infection virale chronique par coronavirus félin modifiant le métabolisme glucidique hépatique", "Carence en chrome et en vanadium perturbant les récepteurs cellulaires à l'insuline chez le chat âgé"],
                 correct: 1,
                 explanation: "Le diabète félin ressemble au diabète de type 2 humain : le pancréas produit de l'insuline mais les cellules y résistent, ou la production devient insuffisante. Il touche souvent les chats en surpoids, âgés, stérilisés ou nourris principalement aux croquettes riches en glucides. Bonne nouvelle : avec un régime alimentaire pauvre en glucides et une perte de poids, de nombreux chats diabétiques entrent en rémission et n'ont plus besoin d'insuline.",
                 source: "Université de Pathologie Féline - Condition fréquente et souvent réversible."
@@ -1341,7 +1341,7 @@ const quizzesData = {
             {
                 id: 56,
                 question: "Quel est le rôle du complexe B dans le métabolisme félin ?",
-                options: ["Aucun rôle", "Essentiels pour l'énergie et la neurologie", "Uniquement pour les os", "Vision uniquement"],
+                options: ["Régulation de la coagulation sanguine et de la densité minérale osseuse via la vitamine K2", "Essentiels pour l'énergie et la neurologie", "Renforcement exclusif de la matrice osseuse en association avec le calcium et le phosphore", "Maintien de l'acuité visuelle nocturne grâce aux phospholipides des membranes photoréceptrices"],
                 correct: 1,
                 explanation: "Les vitamines du complexe B (B1/thiamine, B2/riboflavine, B3/niacine, B12...) sont des cofacteurs essentiels au métabolisme énergétique et au bon fonctionnement du système nerveux. Le chat a des besoins particulièrement élevés en niacine (B3) car il ne peut pas la synthétiser à partir du tryptophane comme les autres mammifères. Une alimentation exclusivement à base de viande crue non équilibrée peut provoquer des carences en vitamine B1 causant des troubles neurologiques graves.",
                 source: "Institut de Nutrition Vétérinaire - Cofacteurs métaboliques critiques."
@@ -1349,7 +1349,7 @@ const quizzesData = {
             {
                 id: 57,
                 question: "Quel est le processus d'ammoniémie (toxicité ammoniaque) chez le chat ?",
-                options: ["Pas de processus", "Accumulation d'ammoniaque due à dysfonction hépatique", "Infection urinaire", "Intoxication alimentaire"],
+                options: ["Cristallisation des oxalates de calcium dans le parenchyme hépatique bloquant le métabolisme biliaire", "Accumulation d'ammoniaque due à dysfonction hépatique", "Colonisation bactérienne des voies biliaires provoquant une cholangite ascendante progressive", "Intoxication chronique aux mycotoxines alimentaires détruisant les hépatocytes de la zone centrolobulaire"],
                 correct: 1,
                 explanation: "L'ammoniaque est un déchet normal du métabolisme des protéines, normalement traité et converti en urée par le foie, puis éliminé par les reins. En cas de dysfonction hépatique (shunt portosystémique, cirrhose, lipidose hépatique), l'ammoniaque s'accumule dans le sang et devient neurotoxique. Symptômes : désorientation, crises convulsives, coma. C'est une urgence médicale nécessitant une hospitalisation immédiate.",
                 source: "Université de Toxicologie Féline - Urgence médicale potentielle."
@@ -1357,7 +1357,7 @@ const quizzesData = {
             {
                 id: 58,
                 question: "Quel est le rôle de la vitamine A dans la santé féline ?",
-                options: ["Aucun rôle", "Vision, immunité et santé épithéliale", "Uniquement pour les os", "Coagulation"],
+                options: ["Synthèse hormonale des glucocorticoïdes surrénaliens régulant la réponse au stress chronique", "Vision, immunité et santé épithéliale", "Minéralisation osseuse exclusive en synergie avec la vitamine D3 et le phosphore alimentaire", "Activation des facteurs de coagulation dépendants de la carboxylation par la vitamine K"],
                 correct: 1,
                 explanation: "La vitamine A est indispensable au chat pour la vision (composant de la rhodopsine, le pigment rétinien), le système immunitaire et le renouvellement des tissus épithéliaux (peau, muqueuses). Point crucial : le chat ne peut pas convertir le bêta-carotène (précurseur végétal de la vitamine A) en vitamine A active, contrairement aux humains. Il doit donc en obtenir directement via les tissus animaux (foie notamment). Une alimentation végétarienne peut causer une cécité.",
                 source: "Institut de Nutrition Féline - Nutriment essentiel chez les carnivores."
@@ -1365,7 +1365,7 @@ const quizzesData = {
             {
                 id: 59,
                 question: "Quel est le processus de la 'iléite lymphoplasmacytaire' chez le chat ?",
-                options: ["Pas de maladie", "Inflammation chronique de l'intestin grêle", "Infection bactérienne", "Allergie alimentaire"],
+                options: ["Malabsorption secondaire à une atrophie villositaire causée par une entéropathie exsudative chronique", "Inflammation chronique de l'intestin grêle", "Prolifération bactérienne anaérobie dans l'iléon terminal due à un ralentissement du transit", "Réaction d'hypersensibilité alimentaire de type IV aux protéines bovines ou aviaires de l'alimentation"],
                 correct: 1,
                 explanation: "L'iléite lymphoplasmacytaire est la forme la plus courante de maladie inflammatoire de l'intestin (IBD) chez le chat. Des cellules immunitaires (lymphocytes et plasmocytes) infiltrent la paroi de l'intestin grêle, perturbant l'absorption des nutriments. Symptômes : vomissements chroniques, diarrhée, perte de poids malgré un bon appétit. Le diagnostic nécessite une biopsie. Le traitement repose sur des corticostéroïdes et souvent un régime hypoallergénique.",
                 source: "Journal de Gastroentérologie Féline - Inflammatory bowel disease féline."
@@ -1373,7 +1373,7 @@ const quizzesData = {
             {
                 id: 60,
                 question: "Quel est le rôle de la fibrinogène dans la coagulation féline ?",
-                options: ["Aucun rôle", "Formation du caillot sanguin et fibrines", "Transport de l'oxygène", "Défense immunitaire"],
+                options: ["Transport des hormones liposolubles et des vitamines A, D, E dans le courant circulatoire", "Formation du caillot sanguin et fibrines", "Acheminement de l'oxygène depuis les poumons vers les tissus via les érythrocytes", "Production d'anticorps spécifiques lors de la première exposition à un agent pathogène"],
                 correct: 1,
                 explanation: "Le fibrinogène est une protéine plasmatique produite par le foie qui joue un rôle central dans la coagulation. Lors d'une lésion vasculaire, la thrombine convertit le fibrinogène en fibrine, qui forme un réseau fibreux constituant la structure du caillot sanguin. Chez le chat, un taux bas de fibrinogène peut indiquer une coagulopathie sévère (CIVD) ou une insuffisance hépatique grave. C'est un des marqueurs mesurés lors de bilans de coagulation vétérinaires.",
                 source: "Institut d'Hématologie - Facteur critique de coagulation."
@@ -1381,7 +1381,7 @@ const quizzesData = {
             {
                 id: 61,
                 question: "Quel est le mécanisme de la 'hyperthyroïdie féline' ?",
-                options: ["Pas de maladie", "Hyperproduction de thyroïdine par nodules hyperactifs", "Hypothyroïdie", "Carence iodée"],
+                options: ["Inflammation auto-immune de la thyroïde détruisant progressivement les follicules producteurs", "Hyperproduction de thyroïdine par nodules hyperactifs", "Réduction de la synthèse de T4 par atrophie glandulaire liée à l'âge et à la sédentarité", "Insuffisance en iode alimentaire réduisant la production des hormones thyroïdiennes T3 et T4"],
                 correct: 1,
                 explanation: "L'hyperthyroïdie est la maladie endocrinienne la plus fréquente du chat âgé (plus de 8 ans). Elle est causée par des nodules bénins dans la glande thyroïde qui produisent un excès d'hormones thyroïdiennes. Symptômes classiques : perte de poids malgré un appétit augmenté, hyperactivité, vomissements, pelage terne. Le traitement peut être médical (méthimazole), chirurgical ou par iode radioactif — ce dernier étant souvent curatif en une seule injection.",
                 source: "Université d'Endocrinologie Féline - Maladie très courante chez les chats âgés."
@@ -1389,7 +1389,7 @@ const quizzesData = {
             {
                 id: 62,
                 question: "Quel est le rôle des immunoglobulines (anticorps) chez le chat ?",
-                options: ["Aucun rôle", "Défense immunitaire spécifique contre pathogènes", "Transport de nutriments", "Régulation thermique"],
+                options: ["Stockage du fer hépatique sous forme de ferritine mobilisable lors des périodes de croissance", "Défense immunitaire spécifique contre pathogènes", "Transport des acides gras essentiels depuis l'intestin jusqu'aux dépôts adipeux périphériques", "Régulation de la température corporelle via la vasoconstriction et vasodilatation périphériques"],
                 correct: 1,
                 explanation: "Les immunoglobulines (anticorps) sont des protéines en forme de Y produites par les lymphocytes B du système immunitaire. Chaque anticorps reconnaît spécifiquement un antigène (bactérie, virus, toxine) et le neutralise ou le marque pour destruction. Les chatons reçoivent des anticorps maternels via le colostrum dans les premières heures de vie, leur assurant une protection temporaire avant que leur propre système immunitaire soit fonctionnel. Les vaccins fonctionnent en stimulant la production de ces anticorps spécifiques.",
                 source: "Institut d'Immunologie Féline - Protéines défensives essentielles."
@@ -1397,7 +1397,7 @@ const quizzesData = {
             {
                 id: 63,
                 question: "Quel est le processus d'hypercalcémie chez le chat ?",
-                options: ["Pas de processus", "Surélévation du calcium sanguin par diverses causes", "Carence calcique", "Acidose"],
+                options: ["Précipitation des sels de calcium dans les reins et les tissus mous par excès de vitamine D3 active", "Surélévation du calcium sanguin par diverses causes", "Déminéralisation osseuse progressive liée à une insuffisance en parathormone circulante", "Acidose tubulaire rénale distale empêchant la réabsorption du bicarbonate et du calcium filtré"],
                 correct: 1,
                 explanation: "L'hypercalcémie (taux de calcium anormalement élevé dans le sang) peut avoir de nombreuses causes chez le chat : certains cancers (lymphome, carcinome), hyperparathyroïdie, toxicité à la vitamine D, ou maladie granulomateuse. Le calcium en excès endommage les reins, le cœur et le système nerveux. Symptômes : léthargie, anorexie, vomissements, soif excessive. C'est une urgence médicale nécessitant une hospitalisation et un traitement de la cause sous-jacente.",
                 source: "Université de Pathologie - Urgence médicale potentielle."
@@ -1405,7 +1405,7 @@ const quizzesData = {
             {
                 id: 64,
                 question: "Quel est le rôle de l'interféron dans la réponse immunitaire féline ?",
-                options: ["Aucun rôle", "Protéine antivirale et modulation immunitaire", "Digestion", "Neurologique"],
+                options: ["Enzyme de restriction dégradant l'ARN viral double brin dans les cellules infectées par un virus ARN", "Protéine antivirale et modulation immunitaire", "Accélérateur de la digestion des protéines virales capturées par phagocytose dans les macrophages", "Neurotransmetteur inhibiteur activé lors des réponses inflammatoires au niveau du système nerveux central"],
                 correct: 1,
                 explanation: "Les interférons sont des protéines de signalisation (cytokines) produites par les cellules infectées pour alerter les cellules voisines et activer les défenses immunitaires. L'interféron félin oméga est utilisé en médecine vétérinaire comme traitement immunomodulateur pour des maladies chroniques comme le FIV (virus de l'immunodéficience féline) ou la panleucopénie. Il stimule le système immunitaire et possède une activité antivirale directe.",
                 source: "Institut d'Immunologie Vétérinaire - Cytokine défensive importante."
@@ -1413,7 +1413,7 @@ const quizzesData = {
             {
                 id: 65,
                 question: "Quel est le mécanisme de la 'néphrite tubulointerstitielle' féline ?",
-                options: ["Pas de maladie", "Inflammation des tubules et interstitium rénaux", "Lithiase rénale", "Infection urinaire simple"],
+                options: ["Nécrose des cellules épithéliales glomérulaires par dépôt de complexes immuns IgA néphropathiques", "Inflammation des tubules et interstitium rénaux", "Formation de calculs oxalocalciques dans le bassinet rénal obstruant progressivement le flux urinaire", "Prolifération bactérienne ascendante depuis la vessie colonisant les voies collectrices excrétrices"],
                 correct: 1,
                 explanation: "La néphrite tubulointerstitielle est une inflammation des tubules rénaux et du tissu conjonctif environnant (interstitium). C'est une cause majeure d'insuffisance rénale chronique chez le chat âgé. Elle peut être causée par des infections (bactériennes, virales), des toxines, des médicaments néphrotoxiques ou des maladies auto-immunes. La maladie rénale chronique est la première cause de mort chez les chats de plus de 10 ans.",
                 source: "Journal de Néphropathologie Féline - Cause courante d'insuffisance rénale."
@@ -1421,7 +1421,7 @@ const quizzesData = {
             {
                 id: 66,
                 question: "Quel est le rôle des kinins dans l'inflammation féline ?",
-                options: ["Aucun rôle", "Vasodilatation et augmentation de la perméabilité vasculaire", "Coagulation", "Digestion"],
+                options: ["Activation des plaquettes et initiation de la cascade de coagulation lors de lésions vasculaires", "Vasodilatation et augmentation de la perméabilité vasculaire", "Stimulation de la sécrétion d'acide chlorhydrique gastrique lors des phases d'hypersensibilité alimentaire", "Activation des récepteurs de la douleur dans les tissus périphériques lors des inflammations chroniques"],
                 correct: 1,
                 explanation: "Les kinines (dont la bradykinine est la principale) sont des peptides vasoactifs libérés lors de lésions tissulaires ou d'infections. Elles provoquent une vasodilatation (rougeur, chaleur) et une augmentation de la perméabilité vasculaire (œdème), permettant aux cellules immunitaires de rejoindre le site d'inflammation. Elles sont aussi responsables en partie de la douleur inflammatoire. Des médicaments anti-inflammatoires bloquent certaines de ces voies.",
                 source: "Institut d'Inflammologie - Médiateurs critiques de l'inflammation."
@@ -1429,7 +1429,7 @@ const quizzesData = {
             {
                 id: 67,
                 question: "Quel est le processus de la 'steatite' ou 'maladie du chat jaune' ?",
-                options: ["Pas de maladie", "Inflammation du tissu adipeux par acides gras libres", "Hépatite virale", "Pancréatite"],
+                options: ["Infiltration lymphocytaire du tissu conjonctif sous-cutané causant des nodules indurés palpables", "Inflammation du tissu adipeux par acides gras libres", "Nécrose hépatique focale par infection au FHV-1 entraînant une libération massive d'enzymes hépatiques", "Autodigestion du parenchyme pancréatique par activation prématurée des zymogènes intracellulaires"],
                 correct: 1,
                 explanation: "La stéatite (maladie du chat jaune) est une inflammation douloureuse du tissu adipeux causée par un excès d'acides gras polyinsaturés non oxydés dans l'alimentation (souvent du thon en excès). Elle se manifeste par une sensibilité au toucher, une fièvre et une dépression sévère. Le traitement comprend de la vitamine E, des anti-inflammatoires et un changement d'alimentation. C'est une maladie entièrement évitable en proposant une alimentation équilibrée.",
                 source: "Université de Pathologie Féline - Condition nutritionnelle évitable."
@@ -1437,7 +1437,7 @@ const quizzesData = {
             {
                 id: 68,
                 question: "Quel est le rôle des prostaglandines dans la protection gastrique féline ?",
-                options: ["Aucun rôle", "Protection muqueuse et régulation acide", "Digestion", "Motilité"],
+                options: ["Stimulation des contractions musculaires lisses de la paroi gastrique améliorant le brassage du bol alimentaire", "Protection muqueuse et régulation acide", "Activation des enzymes protéolytiques gastriques nécessaires à la dégradation des protéines carnées", "Régulation du rythme péristaltique duodénal via les cellules entérochromaffines du plexus de Meissner"],
                 correct: 1,
                 explanation: "Les prostaglandines sont des médiateurs lipidiques produits localement dans les tissus gastriques. Dans l'estomac, elles stimulent la production de mucus protecteur et de bicarbonate, et réduisent la sécrétion d'acide gastrique. C'est pourquoi les anti-inflammatoires non stéroïdiens (AINS) comme l'aspirine ou l'ibuprofène, qui bloquent la production de prostaglandines, peuvent causer des ulcères gastriques sévères chez le chat — et sont particulièrement dangereux pour eux.",
                 source: "Institut de Gastroentérologie - Messagers chimiques protecteurs."
@@ -1445,7 +1445,7 @@ const quizzesData = {
             {
                 id: 69,
                 question: "Quel est le mécanisme de la 'feline primary secretory otitis media' ?",
-                options: ["Pas de maladie", "Accumulation de mucus dans l'oreille moyenne", "Infection bactérienne", "Trauma"],
+                options: ["Dégénérescence progressive des cellules ciliées cochléaires liée à l'exposition aux sons forts répétés", "Accumulation de mucus dans l'oreille moyenne", "Colonisation bactérienne par Pseudomonas aeruginosa de l'oreille externe et du canal auditif", "Rupture traumatique de la membrane tympanique par barotraumatisme lors d'une chute de hauteur"],
                 correct: 1,
                 explanation: "La PSOM (Primary Secretory Otitis Media) est une accumulation de mucus épais dans l'oreille moyenne, particulièrement décrite chez le Cavalier King Charles Spaniel mais aussi rapportée chez le chat. Elle peut entraîner des douleurs chroniques, des démangeaisons, des otites récurrentes et dans les cas sévères, des signes neurologiques (perte d'équilibre, penchement de tête). Le traitement nécessite souvent une myringotomie pour drainer le mucus accumulé.",
                 source: "Journal d'Otologie Féline - Condition chronique progressive."
@@ -1453,7 +1453,7 @@ const quizzesData = {
             {
                 id: 70,
                 question: "Quel est le rôle du système de l'angiotensine dans la pression artérielle féline ?",
-                options: ["Aucun rôle", "Régulation critique de la vasoconstriction et pression artérielle", "Digestion", "Thermorégulation"],
+                options: ["Catalyse des réactions d'oxydoréduction dans la chaîne respiratoire mitochondriale des cellules rénales", "Régulation critique de la vasoconstriction et pression artérielle", "Accélération de la digestion des triglycérides via l'activation de la lipase pancréatique exocrine", "Régulation de la dissipation thermique par contrôle de la sudation et de la vasodilatation cutanée"],
                 correct: 1,
                 explanation: "Le système rénine-angiotensine est un mécanisme hormonal essentiel de régulation de la pression artérielle. Quand la pression chute, les reins libèrent de la rénine qui déclenche une cascade produisant l'angiotensine II, un puissant vasoconstricteur. Chez le chat, l'hypertension artérielle est fréquente (souvent secondaire à une maladie rénale ou thyroïdienne) et peut causer des dommages oculaires sévères (décollement de rétine = cécité soudaine). Les inhibiteurs de l'ECA bloquent ce système pour traiter l'hypertension.",
                 source: "Institut de Physiologie Cardiovasculaire - Système homéostatique majeur."
@@ -1845,7 +1845,7 @@ const quizzesData = {
             {
                 id: 38,
                 question: "Quel est le rôle du plumage secondaire chez les oiseaux ?",
-                options: ["Aucun rôle", "Vol et isolation thermique", "Uniquement l'apparence", "Communication"],
+                options: ["Propulsion aérodynamique grâce à leur surface portante large", "Vol et isolation thermique", "Détection des variations de pression atmosphérique pour naviguer", "Régulation de la température par convection cutanée"],
                 correct: 1,
                 explanation: "Les plumes secondaires (rémiges secondaires) sont situées sur la partie interne de l'aile. Elles génèrent principalement la portance (sustentation) lors du vol plané, tandis que les primaires (en bout d'aile) assurent surtout la propulsion. Le dessous des plumes secondaires est recouvert de duvet qui assure aussi l'isolation thermique. Perdre plusieurs rémiges secondaires simultanément compromet sérieusement la capacité de vol.",
                 source: "Institut de Morphologie Aviaire - Les plumes secondaires sont essentielles au vol."
@@ -1861,7 +1861,7 @@ const quizzesData = {
             {
                 id: 40,
                 question: "Quel est le processus appelé 'imprinting' chez les oiseaux ?",
-                options: ["Pas de processus", "Fixation précoce sur la mère ou parent adoptif", "Apprentissage tardif", "Instinct pur"],
+                options: ["Mémorisation progressive par essais-erreurs répétés sur plusieurs semaines", "Fixation précoce sur la mère ou parent adoptif", "Reconnaissance olfactive développée après 3 semaines de vie", "Apprentissage social transmis par observation des congénères adultes"],
                 correct: 1,
                 explanation: "L'empreinte (imprinting) est un apprentissage irréversible qui se produit dans une courte fenêtre critique après l'éclosion. Le poussin fixe comme 'mère' le premier objet mobile qu'il voit. Konrad Lorenz a célèbrement démontré ce phénomène avec des oies qui le suivaient partout. L'empreinte s'applique aussi au chant (les oisillons mémorisent le chant de leur espèce dans les premières semaines) et au choix du partenaire sexuel à l'âge adulte.",
                 source: "Institut d'Éthologie - L'imprinting est crucial pour le développement."
@@ -1893,7 +1893,7 @@ const quizzesData = {
             {
                 id: 44,
                 question: "Quel est le mécanisme de la thermorégulation chez les oiseaux hibernants ?",
-                options: ["Pas de thermorégulation", "Métabolisme élevé et tremblements", "Réduction du métabolisme et torpeur", "Recherche de chaleur"],
+                options: ["Migration vers des zones équatoriales où la température reste stable toute l'année", "Métabolisme élevé et tremblements musculaires continus pour maintenir 40°C", "Réduction du métabolisme et torpeur", "Accumulation de réserves lipidiques sous-cutanées servant d'isolation thermique"],
                 correct: 2,
                 explanation: "Contrairement aux mammifères, peu d'oiseaux hibernent vraiment. Mais certains entrent en torpeur — un ralentissement métabolique temporaire. L'engoulevent d'Amérique est le seul oiseau connu faisant une hibernation prolongée de plusieurs semaines. Les colibris entrent en torpeur chaque nuit pour économiser l'énergie. Le martinet noir, lui, ne dort pratiquement jamais — il peut rester en vol continu pendant 10 mois, dormant en planant.",
                 source: "Institut de Physiologie - Certains oiseaux entrent en torpeur."
@@ -1909,7 +1909,7 @@ const quizzesData = {
             {
                 id: 46,
                 question: "Quel est le rôle des glandes uropygienne chez les oiseaux aquatiques ?",
-                options: ["Aucun rôle", "Production d'huile pour l'imperméabilité", "Reproduction", "Digestion"],
+                options: ["Sécrétion de phéromones attractives pour la sélection du partenaire sexuel", "Production d'huile pour l'imperméabilité", "Stockage de réserves énergétiques mobilisées lors des longues migrations", "Synthèse d'enzymes digestives transférées à la salive via un canal spécialisé"],
                 correct: 1,
                 explanation: "La glande uropygienne (ou glande du croupion) sécrète une huile à base de cires et d'acides gras. L'oiseau la prélève avec son bec et la répartit sur ses plumes lors du toilettage. Cette huile imperméabilise les plumes, les assouplit, prévient la croissance de bactéries et de champignons, et peut même avoir un rôle dans la communication olfactive chez certaines espèces. Les pingouins et canards ont des glandes particulièrement développées.",
                 source: "Institut d'Ornithologie - L'huile protège le plumage de l'eau."
@@ -1917,7 +1917,7 @@ const quizzesData = {
             {
                 id: 47,
                 question: "Quel est le processus de nidification chez les oiseaux cavicoles ?",
-                options: ["Construction de nid exposé", "Utilisation ou creusement de cavités", "Nid flottant", "Pas de nid"],
+                options: ["Construction d'une plateforme végétale suspendue entre deux branches par des fils de soie", "Utilisation ou creusement de cavités", "Assemblage d'un nid en coupe fixé à la fourche d'un arbuste par de la boue séchée", "Creusement d'un terrier souterrain tapissé de plumes et de mousses pour isoler les œufs"],
                 correct: 1,
                 explanation: "Les oiseaux cavicoles nichent dans des creux naturels ou creusés — trous d'arbres, falaises, terriers. Le pic est l'exemple parfait : il creuse lui-même ses cavités avec son bec puissant, qui peut frapper 20 fois par seconde grâce à un crâne épaissi et un cerveau protégé par des muscles et une structure osseuse amortissante. Ces cavités sont ensuite souvent réutilisées par d'autres espèces (mésanges, chouettes, étourneaux) qui ne peuvent pas creuser elles-mêmes.",
                 source: "Centre d'Ornithologie - Les cavicoles creusent ou utilisent des cavités."
@@ -2031,7 +2031,7 @@ const quizzesData = {
             {
                 id: 51,
                 question: "Quel est le mécanisme de la 'vision binoculaire' chez les rapaces ?",
-                options: ["Pas de binocularité", "Chevauchement des champs visuels pour perception en profondeur", "Pas de perception profonde", "Vision périphérique uniquement"],
+                options: ["Multiplication des cônes rétiniens permettant de percevoir 4 couleurs primaires au lieu de 3", "Chevauchement des champs visuels pour perception en profondeur", "Dilatation rapide de la pupille permettant d'adapter la mise au point en moins de 100ms", "Présence d'un second fovéa latéral augmentant la résolution dans l'axe de vol"],
                 correct: 1,
                 explanation: "La vision binoculaire résulte du chevauchement des champs visuels des deux yeux, permettant le calcul précis des distances en 3D. Les rapaces diurnes ont un champ binoculaire de 35 à 50° devant eux, essentiel pour calculer la trajectoire d'une proie en mouvement. En contrepartie, leur vision périphérique est réduite. Les espèces proies (pigeons, lapins) ont des yeux sur les côtés de la tête — peu de binoculaire mais un champ visuel de près de 360° pour détecter les prédateurs.",
                 source: "Institut d'Ophtalmologie Aviaire - Les rapaces ont excellente vision 3D."
@@ -2039,7 +2039,7 @@ const quizzesData = {
             {
                 id: 52,
                 question: "Quel est le rôle du crop (jabot) dans la digestion aviaire ?",
-                options: ["Aucun rôle", "Stockage temporaire et ramollissement de nourriture", "Digestion chimique", "Absorption de nutriments"],
+                options: ["Production de sécrétions acides amorçant la dégradation chimique des protéines", "Stockage temporaire et ramollissement de nourriture", "Digestion chimique des glucides complexes via des amylases spécifiques aux oiseaux", "Absorption des lipides solubles grâce à une muqueuse richement vascularisée"],
                 correct: 1,
                 explanation: "Le jabot (crop) est une dilatation musculaire de l'œsophage servant de réservoir. La nourriture y est stockée et ramollie par l'humidité et des sécrétions avant de descendre vers l'estomac. Cela permet à l'oiseau de manger vite (vulnérable en mangeant) et de digérer en sécurité. Chez les pigeons, le jabot produit le 'lait de pigeon' pour nourrir les poussins. Chez les rapaces, il leur permet d'avaler une grosse proie entière puis de la digérer sur plusieurs heures.",
                 source: "Université de Physiologie Digestive Aviaire - Le crop est essentiel."
@@ -2047,7 +2047,7 @@ const quizzesData = {
             {
                 id: 53,
                 question: "Quel est le processus de la 'mue stratégique' chez les oiseaux migrateurs ?",
-                options: ["Pas de mue", "Renouvellement des plumes planifié avant migration", "Mue aléatoire", "Pas de renouvellement"],
+                options: ["Renouvellement simultané de toutes les rémiges pendant une pause migratoire de 10 jours", "Renouvellement des plumes planifié avant migration", "Remplacement progressif des plumes abîmées en continu tout au long de l'année", "Régénération accélérée des tectrices primaires déclenchée par les changements hormonaux d'automne"],
                 correct: 1,
                 explanation: "La mue stratégique est un timing crucial chez les migrateurs. Les oiseaux doivent renouveler leurs plumes usées avant le grand voyage pour assurer des ailes performantes. Certaines espèces muent avant de partir, d'autres pendant une halte migratoire, d'autres à l'arrivée sur les quartiers d'hiver. La mue et la migration sont deux processus très coûteux en énergie qui ne peuvent généralement pas se superposer. Des perturbations du calendrier (changement climatique) créent des décalages problématiques.",
                 source: "Centre de Recherche Migratoire - La mue doit s'achever avant migration."
@@ -2055,7 +2055,7 @@ const quizzesData = {
             {
                 id: 54,
                 question: "Quel est le rôle des marques génétiques sur les plumes ?",
-                options: ["Aucun rôle", "Identification et communication", "Uniquement décoration", "Protection thermique"],
+                options: ["Résistance mécanique renforcée par des liaisons croisées de kératine bêta denses", "Identification et communication", "Isolation thermique supplémentaire par emprisonnement d'air entre les barbules", "Réduction de la friction lors des plongeons à grande vitesse dans l'eau"],
                 correct: 1,
                 explanation: "Les motifs et couleurs des plumes transmettent de nombreuses informations : l'identité spécifique (pour éviter les hybridations), le sexe, l'âge (juvénile vs adulte), et surtout la qualité génétique. Des études ont montré que la vivacité des couleurs (souvent liée à l'alimentation en caroténoïdes) indique la santé et la résistance parasitaire du porteur. Les femelles choisissent préférentiellement les mâles aux couleurs les plus vives — ce que Darwin appelait la sélection sexuelle.",
                 source: "Institut d'Éthologie Ornithologique - Les marques communiquent le statut."
@@ -2063,7 +2063,7 @@ const quizzesData = {
             {
                 id: 55,
                 question: "Quel est le processus du 'chant territorial' chez les oiseaux ?",
-                options: ["Simple plaisir", "Marquage territorial et attraction des femelles", "Exercice", "Communication de danger"],
+                options: ["Synchronisation physiologique entre partenaires pour coordonner la ponte et l'incubation", "Marquage territorial et attraction des femelles", "Renforcement des liens familiaux entre parents et oisillons encore dans le nid", "Avertissement collectif contre les prédateurs via un code acoustique partagé par l'espèce"],
                 correct: 1,
                 explanation: "Le chant territorial remplit simultanément deux fonctions : repousser les mâles rivaux et attirer les femelles. Ces deux destinataires interprètent le même message différemment. La complexité du chant (nombre de phrases, originalité, durée) signale la qualité génétique du chanteur aux femelles, et sa puissance avertit les rivaux de sa condition physique. Des expériences ont montré que les femelles préfèrent les mâles au répertoire le plus vaste.",
                 source: "Institut d'Étude des Vocalisations - Le chant remplit plusieurs fonctions."
@@ -2071,7 +2071,7 @@ const quizzesData = {
             {
                 id: 56,
                 question: "Quel est le mécanisme de la 'préférence des partenaires' chez les oiseaux ?",
-                options: ["Aléatoire", "Sélection basée sur traits de qualité (couleur, chant, répertoire)", "Familiarité uniquement", "Proximité spatiale"],
+                options: ["Sélection basée sur la compatibilité immunologique détectée via les phéromones olfactives", "Sélection basée sur traits de qualité (couleur, chant, répertoire)", "Choix du partenaire déterminé par l'ordre d'arrivée sur les sites de reproduction", "Préférence pour les individus génétiquement proches afin de renforcer les traits locaux adaptés"],
                 correct: 1,
                 explanation: "La sélection du partenaire chez les oiseaux est rarement aléatoire. Les femelles évaluent les mâles sur des indicateurs honnêtes de leur valeur génétique : l'intensité des couleurs (liée à la santé et l'alimentation), la complexité du chant (liée aux capacités cognitives), la qualité du nid ou du berceau, et les comportements de parade. Cette sélection rigoureuse est le moteur de l'évolution des ornements spectaculaires chez les mâles comme le paon, le paradisier ou le quetzal.",
                 source: "Université de Biologie Reproductive Aviaire - Sélection sexuelle opère."
@@ -2079,7 +2079,7 @@ const quizzesData = {
             {
                 id: 57,
                 question: "Quel est le rôle de la 'crèche' chez les oiseaux coloniaux ?",
-                options: ["Aucun rôle", "Groupement des jeunes pour protection et thermorégulation", "Confinement", "Apprentissage"],
+                options: ["Tri sélectif des individus les plus forts pour concentrer les ressources alimentaires disponibles", "Groupement des jeunes pour protection et thermorégulation", "Stimulation de la maturation sexuelle précoce par exposition aux signaux hormonaux des adultes", "Transmission accélérée des techniques de chasse via l'observation des adultes chasseurs"],
                 correct: 1,
                 explanation: "Les crèches d'oisillons sont observées chez de nombreuses espèces coloniales (manchots, flamants, hérons, cormorans). Les jeunes se regroupent pendant que les parents partent se nourrir. Ces crèches offrent une meilleure protection contre les prédateurs (les adultes 'gardiens' surveillent), une thermorégulation collective (les poussins se réchauffent mutuellement), et stimulent le développement social. Chez les manchots empereurs, les crèches peuvent regrouper des milliers de poussins.",
                 source: "Centre d'Ornithologie Sociale - Les crèches sont communes chez colonies."
@@ -2087,7 +2087,7 @@ const quizzesData = {
             {
                 id: 58,
                 question: "Quel est le processus du 'parasitisme de couvée' chez certains oiseaux ?",
-                options: ["Pas de parasitisme", "Ponte des œufs dans nids d'autres espèces", "Partage de nids", "Adoption volontaire"],
+                options: ["Destruction des nids concurrents pour forcer la cohabitation et le partage des soins parentaux", "Ponte des œufs dans nids d'autres espèces", "Coopération entre espèces partageant volontairement le même nid pour diluer le risque de prédation", "Adoption active des poussins abandonnés par d'autres espèces après détection de leurs cris de détresse"],
                 correct: 1,
                 explanation: "Le parasitisme de couvée est une stratégie reproductive où l'oiseau pond ses œufs dans le nid d'une autre espèce, qui élèvera le jeune parasite à sa place. Le coucou gris d'Europe en est l'exemple le plus connu : la femelle observe les nids d'oiseaux hôtes (rousserolle, rouge-gorge...) et pond un œuf mimétique quand l'hôte s'absente. Le jeune coucou expulse ensuite tous les œufs ou poussins du nid pour monopoliser les soins des parents adoptifs.",
                 source: "Institut d'Éthologie Aviaire - Stratégie reproductive du coucou."
@@ -2095,7 +2095,7 @@ const quizzesData = {
             {
                 id: 59,
                 question: "Quel est le mécanisme de la 'dominance hiérarchique' dans un groupe d'oiseaux ?",
-                options: ["Pas de hiérarchie", "Ordre établi par combats ritualisés et menaces", "Aléatoire", "Basé sur l'âge uniquement"],
+                options: ["Rotation équitable des rôles sociaux régulée par des signaux chimiques saisonniers", "Ordre établi par combats ritualisés et menaces", "Spécialisation fonctionnelle héréditaire attribuant des rôles fixes dès la naissance", "Attribution des rangs selon la taille corporelle mesurée à la saison des pluies"],
                 correct: 1,
                 explanation: "La hiérarchie de dominance chez les oiseaux de groupe (l'ordre de picage ou 'peck order', terme inventé pour les poules) s'établit par des confrontations initiales : postures menaçantes, poursuites, combats ritualisés. Une fois la hiérarchie établie, de simples signaux (gonflement des plumes, regard fixe) suffisent à maintenir l'ordre sans confrontations coûteuses. Les individus dominants accèdent en priorité à la nourriture, aux perchoirs et aux partenaires.",
                 source: "Université d'Éthologie Sociale - Les oiseaux établissent peck orders."
@@ -2103,7 +2103,7 @@ const quizzesData = {
             {
                 id: 60,
                 question: "Quel est le rôle du 'lissage des plumes' chez les oiseaux de groupe ?",
-                options: ["Hygiène uniquement", "Hygiène, renforcement social et hiérarchie", "Divertissement", "Thermorégulation"],
+                options: ["Hygiène uniquement, les plumes étant trop fragiles pour supporter d'autres manipulations", "Hygiène, renforcement social et hiérarchie", "Stimulation de la production de mélatonine favorisant la synchronisation des cycles de mue", "Transmission de micro-organismes bénéfiques renforçant le microbiome cutané des plumes"],
                 correct: 1,
                 explanation: "L'allopreening (lissage mutuel des plumes) est un comportement observé chez de nombreuses espèces sociales (perroquets, corbeaux, cigognes, manchots). Il sert d'abord à l'hygiène en atteignant les zones inaccessibles seul (tête, cou). Mais c'est aussi un puissant outil de cohésion sociale : il renforce les liens entre partenaires, consolide les alliances et apaise les tensions. Les individus dominants reçoivent généralement plus de lissage qu'ils n'en donnent.",
                 source: "Centre d'Ornithologie Comportementale - L'allopreening a fonction sociale."
@@ -2111,7 +2111,7 @@ const quizzesData = {
             {
                 id: 61,
                 question: "Quel est le processus de la 'synchronisation des pontes' ?",
-                options: ["Hasard", "Synchronisation des femelles pour ponte collective", "Pas de synchronisation", "Prédéterminé génétiquement"],
+                options: ["Compétition entre femelles induisant des pontes décalées pour monopoliser les ressources mâles", "Synchronisation des femelles pour ponte collective", "Cascade hormonale déclenchée par la première femelle à pondre dans la colonie", "Réponse individuelle aux conditions météorologiques locales sans coordination entre individus"],
                 correct: 1,
                 explanation: "La synchronisation des pontes dans une colonie présente plusieurs avantages évolutifs. Elle sature les prédateurs (trop de nids et de jeunes à la fois pour tous les menacer), assure que tous les jeunes atteignent l'indépendance avant l'hiver ensemble, et facilite la formation de crèches. Cette synchronisation est déclenchée par des signaux environnementaux communs (photopériode, température) mais aussi par des interactions sociales — la présence de voisins nicheurs stimule la reproduction.",
                 source: "Institut de Biologie Reproductive - Synchronisation comportementale."
@@ -2127,7 +2127,7 @@ const quizzesData = {
             {
                 id: 63,
                 question: "Quel est le rôle des 'couleurs structurales' chez les oiseaux ?",
-                options: ["Aucun rôle", "Communication, thermorégulation et camouflage", "Uniquement beauté", "Protection UV"],
+                options: ["Renforcement de la kératine alaire pour résister aux contraintes mécaniques pendant le vol", "Communication, thermorégulation et camouflage", "Indicateur de statut reproducteur visible uniquement sous lumière ultraviolette par les congénères", "Absorption sélective des longueurs d'onde nocives pour protéger la rétine lors du vol"],
                 correct: 1,
                 explanation: "Les couleurs structurales des plumes (comme le bleu du geai ou le vert métallique du colibri) ne proviennent pas de pigments mais de nanostructures qui diffractent la lumière par interférence — comme un film de savon. Ces couleurs changent selon l'angle d'observation et sont souvent invisibles aux UV. Fonctionnellement, les couleurs vives servent à la communication sexuelle et à la reconnaissance spécifique, les couleurs cryptiques au camouflage, et les couleurs sombres à l'absorption de chaleur solaire.",
                 source: "Institut de Biophysique Aviaire - Interférence lumineuse crée couleurs."
@@ -2135,7 +2135,7 @@ const quizzesData = {
             {
                 id: 64,
                 question: "Quel est le processus de l'imprinting territorial chez les oiseaux ?",
-                options: ["Pas d'imprinting", "Apprentissage précoce du habitat natal", "Apprentissage tardif", "Instinctif uniquement"],
+                options: ["Mémorisation des coordonnées géomagnétiques du territoire via des dépôts de magnétite nasale", "Apprentissage précoce du habitat natal", "Reconnaissance des partenaires potentiels basée sur les signaux olfactifs du groupe d'origine", "Encodage de la carte migratoire via les constellations stellaires observées pendant les premières nuits"],
                 correct: 1,
                 explanation: "L'empreinte territoriale se produit quand le jeune oiseau mémorise les caractéristiques de son habitat natal (odeurs, sons, paysages, latitude) pendant une période critique après l'envol. Cette mémoire le guidera pour revenir nicher exactement au même endroit à l'âge adulte — parfois à quelques mètres du nid d'origine. Ce phénomène, appelé philopatrie natale, est particulièrement fort chez les saumons mais aussi très documenté chez les oiseaux marins et migrateurs.",
                 source: "Institut d'Éthologie Spatiale - Imprinting détermine retour site."
@@ -2151,7 +2151,7 @@ const quizzesData = {
             {
                 id: 66,
                 question: "Quel est le rôle de la 'parole gestuelle' chez les corvidés ?",
-                options: ["Aucun rôle", "Communication complexe par gestes et postures", "Jeu uniquement", "Agressivité"],
+                options: ["Régulation de la distance sociale par des postures standardisées évitant les conflits directs", "Communication complexe par gestes et postures", "Transmission culturelle d'techniques d'utilisation d'outils via démonstration gestuelle aux juvéniles", "Signalisation de la qualité génétique aux femelles par des parades ritualisées à composante gestuelle"],
                 correct: 1,
                 explanation: "Les corvidés (corbeaux, corneilles, geais, pies) ont développé une communication gestuelle remarquablement sophistiquée. Des études ont montré que les corbeaux utilisent des gestes de pointage et de présentation d'objets pour attirer l'attention de leurs partenaires — une capacité longtemps crue exclusive aux grands singes et aux humains. Ils peuvent aussi montrer des objets, 'inviter' au jeu par des postures codées, et même 'mentir' en cachant de la nourriture quand ils se croient observés.",
                 source: "Institut de Cognition Aviaire - Les corvidés communiquent sophistiquement."
@@ -2159,7 +2159,7 @@ const quizzesData = {
             {
                 id: 67,
                 question: "Quel est le processus de la 'compétition spermique' chez les oiseaux ?",
-                options: ["Pas de compétition", "Compétition des spermes entre mâles", "Sélection passive", "Déterminé génétiquement"],
+                options: ["Sélection des spermatozoïdes par la femelle via des cryptes utérines qui filtrent selon les antigènes", "Compétition des spermes entre mâles", "Fécondation exclusive du premier mâle s'étant accouplé grâce à un mécanisme de verrouillage chimique", "Choix différé de la femelle qui stocke les spermes plusieurs semaines avant de décider de la fécondation"],
                 correct: 1,
                 explanation: "La compétition spermatique se produit quand une femelle s'accouple avec plusieurs mâles et que leurs spermatozoïdes rivalisent pour féconder les ovules. Chez les oiseaux, même les espèces apparemment monogames pratiquent souvent des accouplements extra-conjugaux. En réponse, les mâles ont évolué des testicules proportionnellement plus grands, des spermatozoïdes plus rapides, et des comportements de 'garde rapprochée' de la femelle pendant sa période fertile pour limiter les accouplements rivaux.",
                 source: "Université de Biologie Reproductive - Sperm competition est intense."
@@ -2167,7 +2167,7 @@ const quizzesData = {
             {
                 id: 68,
                 question: "Quel est le mécanisme de la 'mémoire spatiale' chez les gélinottes ?",
-                options: ["Pas de mémoire", "Mémorisation précise des caches de nourriture", "Guidage olfactif", "Recherche aléatoire"],
+                options: ["Recours aux marques visuelles laissées intentionnellement près des sites de stockage", "Mémorisation précise des caches de nourriture", "Guidage olfactif via les traces de phéromones déposées lors du stockage initial", "Récupération aléatoire compensée par un taux de stockage si élevé que les pertes restent négligeables"],
                 correct: 1,
                 explanation: "Les geais et mésanges huppées (Poecile atricapillus) cachent des dizaines de milliers de graines chaque automne et les retrouvent mois plus tard sous la neige avec une précision stupéfiante — jusqu'à 30 000 caches pour un seul oiseau. L'hippocampe de ces espèces est proportionnellement plus grand que celui des espèces non stockeuses, et grossit en automne (période de stockage) pour rétrécir en été. C'est un exemple remarquable de plasticité cérébrale saisonnière.",
                 source: "Institut de Cognition Aviaire - Mémoire spatiale exceptionnelle."
@@ -2175,7 +2175,7 @@ const quizzesData = {
             {
                 id: 69,
                 question: "Quel est le rôle du 'chanteur secondaire' chez certains oiseaux ?",
-                options: ["Aucun rôle", "Assistance à la reproduction du couple principal", "Compétition", "Protection du nid"],
+                options: ["Occupation temporaire du territoire en attendant qu'un partenaire reproducteur se libère", "Assistance à la reproduction du couple principal", "Compétition directe avec le mâle dominant pour prendre le contrôle du groupe familial", "Spécialisation dans la défense périmétrique du territoire pendant que les parents chassent"],
                 correct: 1,
                 explanation: "Chez certaines espèces (geais du Florida, merles, suricates), des individus adultes non reproducteurs — souvent des jeunes de l'année précédente — aident le couple reproducteur à élever les poussins. Ces 'aides au nid' apportent de la nourriture, surveillent le nid et défendent le territoire. En aidant leurs parents ou proches, ils favorisent indirectement leurs propres gènes (sélection de parentèle). Les familles avec aides élèvent statistiquement plus de jeunes avec succès.",
                 source: "Institut d'Éthologie Reproduction - Aides-reproduction favorisent les jeunes."
@@ -2183,7 +2183,7 @@ const quizzesData = {
             {
                 id: 70,
                 question: "Quel est le processus de la 'divulgation de réseau' chez les corvidés ?",
-                options: ["Pas de divulgation", "Partage d'information sur sources de nourriture", "Compétition", "Territorialité"],
+                options: ["Dissimulation systématique des ressources alimentaires pour éviter toute concurrence intra-groupe", "Partage d'information sur sources de nourriture", "Transmission des connaissances migratoires via des vocalisations codées émises en vol", "Marquage olfactif des zones riches pour guider uniquement les membres apparentés de la famille"],
                 correct: 1,
                 explanation: "Certains corvidés partagent l'information sur les sources de nourriture au sein de leur groupe social — parfois appelé 'réseau d'information'. Les corneilles noires se rassemblent en dortoirs communs où les individus qui ont trouvé de la nourriture sont 'suivis' le lendemain matin par les autres. Mais les corvidés savent aussi dissimuler leurs caches quand ils se sentent observés, démontrant une 'théorie de l'esprit' — la capacité de comprendre que les autres ont leur propre savoir.",
                 source: "Université de Cognition Sociale Aviaire - Corvidés communiquent ressources."
@@ -2397,7 +2397,7 @@ const quizzesData = {
             {
                 id: 26,
                 question: "Quel est le rôle de la fosse thermosensible chez le python ?",
-                options: ["Aucun rôle", "Détection infrarouge des proies", "Vision uniquement", "Audition"],
+                options: ["Analyse des gradients chimiques olfactifs pour localiser les proies par concentration moléculaire", "Détection infrarouge des proies", "Perception visuelle haute résolution de la chaleur corporelle des proies à sang chaud", "Transmission des vibrations basse fréquence du sol via les écailles ventrales jusqu'à l'oreille interne"],
                 correct: 1,
                 explanation: "Les fossettes labiales des pythons (situées sur les écailles des lèvres) sont des organes thermosensibles capables de détecter des variations de température de 0,003°C. Elles créent une 'image thermique' de l'environnement, complétant la vision ordinaire. En lumière nulle, un python peut ainsi repérer et frapper une proie à sang chaud avec une précision redoutable. Ces mêmes organes existent chez les boas et les crotales, mais dans des positions anatomiques différentes.",
                 source: "Institut de Sensorimotricité Reptilienne - Les fossettes détectent la chaleur."
@@ -2479,7 +2479,7 @@ const quizzesData = {
             {
                 id: 16,
                 question: "Quel type de dent ont les serpents venimeux ?",
-                options: ["Des crocs creux", "Des dents plates", "Des dents pointues simples", "Pas de dents"],
+                options: ["Des crocs cannelés avec un sillon ventral guidant le venin vers la plaie par capillarité", "Des dents plates à couronne large pour broyer les carapaces de tortues et d'œufs", "Des dents pointues simples acérées et courbées vers l'arrière pour retenir les proies vivantes", "Des dents polyphyodontes à remplacement continu toute la vie sans spécialisation fonctionnelle"],
                 correct: 0,
                 explanation: "Les crocs des serpents venimeux sont des dents modifiées traversées par un canal ou une rainure qui conduit le venin depuis les glandes venimeuses jusqu'à la proie. Les vipers (solénodontes) ont les crocs les plus évolués : longs, creux et rétractables (repliés contre le palais au repos), ils se déploient lors de la morsure comme des aiguilles hypodermiques. Les élapidés (cobras, mambas) ont des crocs fixes et plus courts.",
                 source: "Institut Toxinologique des Reptiles - Les serpents venimeux ont des crocs creux."
@@ -2543,7 +2543,7 @@ const quizzesData = {
             {
                 id: 34,
                 question: "Quel est le rôle de la membrane nictitante chez les reptiles aquatiques ?",
-                options: ["Aucun rôle", "Protection des yeux sous l'eau", "Vision uniquement", "Audition"],
+                options: ["Filtration des longueurs d'onde UV permettant la vision dans les profondeurs aquatiques turbides", "Protection des yeux sous l'eau", "Amplification de la sensibilité aux mouvements latéraux par augmentation du champ visuel périphérique", "Détection des changements d'intensité lumineuse signalant les prédateurs approchant par le dessus"],
                 correct: 1,
                 explanation: "La membrane nictitante (troisième paupière) des reptiles aquatiques se ferme horizontalement sur l'œil lors de la plongée, comme des lunettes de natation transparentes. Elle protège l'œil des débris, de l'eau salée et des chocs, tout en maintenant une vision fonctionnelle sous l'eau. Les crocodiles, tortues marines et certains lézards aquatiques en sont équipés. Chez les crocodiles, elle peut aussi se fermer lors des combats ou des prises de proies.",
                 source: "Institut d'Ophtalmologie Reptilienne - Protection adaptée à l'aquatique."
@@ -2559,7 +2559,7 @@ const quizzesData = {
             {
                 id: 36,
                 question: "Quel est le processus de thermorégulation d'un reptile diurne ?",
-                options: ["Pas de thermorégulation", "Basking au soleil pour augmenter température", "Métabolisme interne", "Eau froide"],
+                options: ["Régulation biochimique autonome via des réactions exothermiques mitochondriales contrôlées", "Basking au soleil pour augmenter température", "Génération de chaleur métabolique interne via l'oxydation des lipides comme les mammifères", "Absorption calorique depuis l'eau tempérée des milieux aquatiques chauds tropicaux"],
                 correct: 1,
                 explanation: "Le basking (bain de soleil) est le principal outil de thermorégulation des reptiles diurnes. Le matin, ils s'orientent perpendiculairement aux rayons du soleil pour maximiser la surface exposée et réchauffer rapidement leur corps. Une fois à température optimale (souvent 30-38°C selon l'espèce), ils cherchent l'ombre pour éviter la surchauffe. Certains lézards peuvent ainsi contrôler leur température à 1°C près en alternant exposition et ombre tout au long de la journée.",
                 source: "Institut de Thermorégulation Ectotherme - Comportemental et physique."
@@ -2599,7 +2599,7 @@ const quizzesData = {
             {
                 id: 41,
                 question: "Quel est le processus de la 'parthénogenèse' chez certains lézards ?",
-                options: ["Reproduction sexuée normale", "Reproduction asexuée par clonage", "Hermaphrodisme", "Pas de reproduction"],
+                options: ["Reproduction par hermaphrodisme séquentiel où les femelles deviennent mâles selon les besoins du groupe", "Reproduction asexuée par clonage", "Fécondation croisée par des individus bisexuels changeant de rôle selon les signaux hormonaux", "Reproduction par bourgeonnement parthenogénétique produisant des clones imparfaits à viabilité réduite"],
                 correct: 1,
                 explanation: "La parthénogenèse permet à certaines femelles de se reproduire sans mâle. Les œufs se développent sans être fécondés, produisant des individus génétiquement identiques à la mère (clones). Ce phénomène est bien documenté chez certains varans (dragon de Komodo), certains geckos et lézards fouette-queue. Il survient parfois en captivité chez des espèces normalement sexuées, probablement comme réponse au manque de mâle. Les descendants sont souvent exclusivement de sexe femelle ou mâle selon l'espèce.",
                 source: "Institut de Génétique Reptilienne - Reproduction sans mâle possible."
@@ -2631,7 +2631,7 @@ const quizzesData = {
             {
                 id: 45,
                 question: "Quel serpent a le venin le plus toxique chez le Mamba noir ?",
-                options: ["Pas de comparaison", "Plus toxique que le taipan", "Moins toxique que le taipan", "Égal"],
+                options: ["Toxicité équivalente au taipan avec une composition vénimeuse similaire à base de dendrotoxines", "Plus toxique que le taipan avec une DL50 sur souris inférieure de 30% à celle du taipan intérieur", "Moins toxique que le taipan avec un venin à dominante hémotoxique plutôt que neurotoxique", "Venin de composition totalement différente sans possibilité de comparaison de la toxicité systémique"],
                 correct: 2,
                 explanation: "Le mamba noir est souvent cité comme 'le serpent le plus dangereux d'Afrique', mais il est moins toxique que le taipan intérieur australien. Sa dangerosité vient d'une combinaison de facteurs : vitesse (peut atteindre 20 km/h), agressivité quand acculé, venin neurotoxique très rapide (mort en 20 minutes sans antidote) et facilité à vous injecter le venin lors de plusieurs morsures. Le taipan est plus toxique, mais le mamba est responsable de davantage de décès humains en raison de son aire de répartition.",
                 source: "Institut Toxinologique - Le taipan reste plus toxique."
@@ -2639,7 +2639,7 @@ const quizzesData = {
             {
                 id: 46,
                 question: "À quel âge un lézard perd-il sa queue de façon définitive ?",
-                options: ["Jamais", "Une ou deux fois dans sa vie", "Plusieurs fois selon les besoins", "À chaque agression"],
+                options: ["Une fois par an uniquement pendant la saison sèche pour renouveler toutes les écailles simultanément", "Une ou deux fois dans sa vie lors des étapes clés de la croissance juvénile uniquement", "Plusieurs fois selon les besoins", "À chaque fois que l'animal subit une agression sérieuse endommageant plus de 10% de la surface cutanée"],
                 correct: 2,
                 explanation: "L'autotomie caudale (perte volontaire de la queue) peut se répéter plusieurs fois chez un même lézard, mais jamais exactement au même endroit. La queue repousse, mais ce régénérat est composé de cartilage et non d'os, et sa forme et ses couleurs sont souvent différentes de l'originale. Certaines espèces ont des queues particulièrement voyantes qui continuent à se tortiller après la séparation, attirant l'attention du prédateur pendant que le lézard s'échappe.",
                 source: "Institut d'Éthologie Défensive - L'autotomie se répète."
@@ -2745,7 +2745,7 @@ const quizzesData = {
             {
                 id: 29,
                 question: "Quel est le processus de cryoprotection chez les reptiles tolérants au gel ?",
-                options: ["Simple gel des cellules", "Accumulation de glucose et glycérol pour protéger les cellules", "Déshydratation totale", "Hibernation sans froid"],
+                options: ["Formation de cristaux de glace extracellulaires préservant l'intégrité membranaire des cellules vitales", "Accumulation de glucose et glycérol pour protéger les cellules", "Déshydratation préalable réduisant la teneur en eau libre disponible pour la cristallisation", "Induction d'une hypothermie contrôlée via la sécrétion d'hormones cryoprotectrices spécifiques"],
                 correct: 1,
                 explanation: "Certaines espèces comme la grenouille des bois (Rana sylvatica) et quelques tortues-boîtes peuvent survivre à un gel partiel de leurs tissus. Quand la température baisse, leur foie convertit massivement le glycogène en glucose et glycérol, qui agissent comme un antigel naturel à l'intérieur des cellules. Le liquide extracellulaire peut geler, mais les cellules restent intactes. Au dégel printanier, leur cœur reprend ses battements. C'est l'une des adaptations biologiques les plus spectaculaires connues.",
                 source: "Institut de Cryobiologie - Le glucose et le glycérol protègent les cellules du gel."
@@ -2761,7 +2761,7 @@ const quizzesData = {
             {
                 id: 51,
                 question: "Quel est le mécanisme de la 'glande de venin' chez les serpents ?",
-                options: ["Pas de glande", "Glande modifiée des glandes salivaires", "Organe indépendant", "Production dans le foie"],
+                options: ["Vésicule spécialisée située dans la cavité abdominale qui stocke le venin sous pression osmotique", "Glande modifiée des glandes salivaires", "Organe vénimeux néoformé sans homologie avec d'autres structures glandulaires connues", "Synthèse hépatique des toxines peptidiques transportées via le sang jusqu'aux crocs tubulaires"],
                 correct: 1,
                 explanation: "Les glandes à venin des serpents sont évolutivement des glandes salivaires modifiées (glandes parotides). Au fil de l'évolution, ces glandes ont développé la capacité de produire des protéines complexes (enzymes, neurotoxines, hémotoxines) au lieu de la simple salive. Le venin est d'abord stocké dans la glande, puis lors de la morsure, un muscle compresseur presse la glande et injecte le venin dans le canal du croc. La composition du venin varie énormément entre espèces et même entre individus d'une même espèce.",
                 source: "Institut d'Herpétologie Comparative - Évolution des glandes salivaires."
@@ -2769,7 +2769,7 @@ const quizzesData = {
             {
                 id: 52,
                 question: "Quel est le processus de la 'thermophile optimalité' chez les reptiles ?",
-                options: ["Pas de processus", "Température corporelle optimale pour métabolisme et activité", "Froid est préféré", "Aucune préférence"],
+                options: ["Gradient thermique minimal permettant la digestion basale sans activité locomotrice significative", "Température corporelle optimale pour métabolisme et activité", "Températures fraîches préférées car elles ralentissent les prédateurs plus que le reptile lui-même", "Indifférence thermique totale, l'efficacité enzymatique étant stable sur une plage de 15 à 40°C"],
                 correct: 1,
                 explanation: "Chaque espèce de reptile a une température corporelle préférée (TCP) à laquelle ses performances sont maximales (vitesse, digestion, immunité, réponse aux stimuli). Un lézard à 30°C court deux fois plus vite qu'à 20°C. Les reptiles sont des thermorégulateurs comportementaux précis : ils passent une grande partie de la journée à 'naviguer' entre les zones chaudes et froides pour rester à leur TCP. Cette précision thermique est comparable à celle d'un thermostat — avec 1-2°C de précision.",
                 source: "Université de Thermoécologie - Température sélectionnée pour performances."
@@ -2785,7 +2785,7 @@ const quizzesData = {
             {
                 id: 54,
                 question: "Quel est le rôle de la 'nécrose thermale' chez les vipères à fossettes ?",
-                options: ["Aucun rôle", "Destruction sélective de tissus par venin", "Chauffage interne", "Refroidissement défensif"],
+                options: ["Paralyse neuromusculaire rapide bloquant la libération d'acétylcholine aux jonctions présynaptiques", "Destruction sélective de tissus par venin", "Génération de chaleur biochimique par réaction exothermique lors de l'enroulement musculaire intense", "Sécrétion cutanée de toxines refroidissantes répulsives dissuadant les prédateurs à sang chaud"],
                 correct: 1,
                 explanation: "Le venin nécrotique des vipères à fossettes (comme le crotale ou le fer-de-lance) contient des phospholipases et des protéases qui détruisent les cellules, les vaisseaux sanguins et le tissu musculaire autour du site de morsure. Cette nécrose localisée peut être dévastatrice : des amputations sont parfois nécessaires après des morsures de serpent. Biologiquement, cette destruction prédigère la proie depuis l'intérieur, facilitant la digestion pour le serpent — le venin est à la fois une arme de chasse et un outil digestif.",
                 source: "Journal de Toxinologie - Le venin crée nécrose localisée."
@@ -2793,7 +2793,7 @@ const quizzesData = {
             {
                 id: 55,
                 question: "Quel est le processus de l'osmorégulation chez les tortues marines ?",
-                options: ["Pas d'osmorégulation", "Glandes à sel pour excrétion d'eau salée", "Reins hyperactifs", "Pas de régulation"],
+                options: ["Absorption cutanée directe de l'eau douce des pluies via des aquaporines dermiques spécialisées", "Glandes à sel pour excrétion d'eau salée", "Concentration maximale de l'urine via des tubes collecteurs rénaux à gradient osmotique extrême", "Recyclage métabolique de l'eau contenue dans les proies marines digérées sans perte urinaire"],
                 correct: 1,
                 explanation: "Les tortues marines boivent inévitablement de l'eau de mer en mangeant. Pour éliminer l'excès de sel, elles possèdent des glandes lacrymales surdimensionnées derrière les yeux qui sécrètent une solution très concentrée en sel — beaucoup plus salée que l'eau de mer. Ces 'larmes' sont l'explication du mythe selon lequel les tortues pleurent. En réalité, elles éliminent simplement du sel. Ce mécanisme d'osmorégulation est crucial : sans lui, la déshydratation osmotique serait fatale.",
                 source: "Institut d'Écologie Marine - Adaptation critique pour survie en mer."
@@ -2801,7 +2801,7 @@ const quizzesData = {
             {
                 id: 56,
                 question: "Quel est le mécanisme de la 'autolésion' chez les serpents défensifs ?",
-                options: ["Pas de mécanisme", "Enroulement et auto-morsure pour épuiser agresseur", "Chimique", "Thermique"],
+                options: ["Libération d'une sécrétion cloacale nauséabonde décourageant les prédateurs sans combat physique", "Enroulement et auto-morsure pour épuiser agresseur", "Injection d'un venin de défense distinct du venin de chasse via des glandes cutanées dorsales", "Production de chaleur corporelle intense par contractions musculaires repoussant les prédateurs frigoriphiles"],
                 correct: 1,
                 explanation: "Certains serpents défensifs comme le serpent roi d'Amérique ou le couleuvre à collier utilisent des stratégies d'épuisement de leurs prédateurs : ils se tordent, s'enroulent frénétiquement, peuvent feindre la mort (thanatose), libèrent des sécrétions nauséabondes par le cloaque, ou dans certains cas rares s'automordent pour libérer des substances défensives. Ces comportements visent à rendre la capture si désagréable ou difficile que le prédateur abandonne.",
                 source: "Institut d'Éthologie Défensive - Stratégie d'épuisement de l'attaquant."
@@ -2809,7 +2809,7 @@ const quizzesData = {
             {
                 id: 57,
                 question: "Quel est le rôle du \"jacobson organ\" (vomeronasal) chez les lézards ?",
-                options: ["Aucun rôle", "Détection chimiosensorielle des phéromones et parfums", "Vision", "Audition"],
+                options: ["Régulation de la pression intrabuccale lors de la déglutition de proies de grande taille", "Détection chimiosensorielle des phéromones et parfums", "Focalisation des rayons lumineux sur la fovéa rétinienne lors de la vision de près", "Transmission des vibrations aériennes vers l'oreille interne par voie osseuse crânienne"],
                 correct: 1,
                 explanation: "L'organe de Jacobson des lézards fonctionne de la même façon que celui des serpents : la langue bifurquée capte les molécules odorantes de l'environnement et les transfère aux deux bulbes olfactifs de l'organe voméronasal. La forme fourchue de la langue permet une 'stéréo-olfaction' — détecter d'quel côté vient une odeur, comme nos deux oreilles localisent un son. Les lézards utilisent ce système pour trouver de la nourriture, identifier les prédateurs, détecter les partenaires et délimiter leur territoire.",
                 source: "Institut de Sensorimotricité - Détection sophistiquée de chimie."
@@ -2817,7 +2817,7 @@ const quizzesData = {
             {
                 id: 58,
                 question: "Quel est le processus de la 'gonadogenèse dépendante de température' chez certains reptiles ?",
-                options: ["Pas de dépendance", "Sexe déterminé par température d'incubation", "Sexe génétique", "Sexe flexible"],
+                options: ["Sexe déterminé par l'humidité du substrat d'incubation via des récepteurs hygrométriques embryonnaires", "Sexe déterminé par température d'incubation", "Sexe déterminé par les chromosomes sexuels Z et W comme chez les oiseaux et certains mammifères", "Sexe déterminé par le ratio hormonal maternel transmis aux œufs lors de la ponte en saison chaude"],
                 correct: 1,
                 explanation: "La TSD (Temperature-dependent Sex Determination) est le mécanisme par lequel la température d'incubation, plutôt que les chromosomes, détermine le sexe de l'animal. Elle est présente chez la plupart des crocodiliens, de nombreuses tortues et certains lézards. Les températures chaudes favorisent généralement les femelles chez les tortues marines. Face au réchauffement climatique, des plages comme celles de la Grande Barrière de Corail produisent désormais jusqu'à 99% de femelles chez la tortue verte — menaçant la viabilité de ces populations.",
                 source: "Université de Génétique Reptilienne - TSD = Temperature-dependent sex determination."
@@ -2825,7 +2825,7 @@ const quizzesData = {
             {
                 id: 59,
                 question: "Quel est le mécanisme de l'absorption de l'eau par la tortue du désert ?",
-                options: ["Pas d'absorption", "Par les yeux et cloaque depuis l'humidité du sol", "Métabolisme", "Pas de besoin"],
+                options: ["Uniquement par ingestion d'eau libre lors des épisodes de pluie et des rosées matinales abondantes", "Par les yeux et cloaque depuis l'humidité du sol", "Synthèse métabolique de l'eau par oxydation des lipides de réserve comme certains mammifères désertiques", "Absorption cutanée passive sur toute la surface du corps grâce à une peau très fine et perméable"],
                 correct: 1,
                 explanation: "La tortue du désert de Mojave a développé des adaptations extraordinaires pour survivre sans eau liquide. Elle peut absorber l'humidité du sol humide à travers la peau autour de son cloaque. Après les rares pluies, elle stocke jusqu'à 40% de son poids en eau dans sa vessie — une réserve stratégique utilisée en période de sécheresse. Sa vessie sert littéralement de citerne portable. Elle peut aussi collecter la rosée du matin sur sa carapace et la diriger vers sa bouche par des canaux formés par ses écailles.",
                 source: "Institut d'Écologie Désertique - Adaptations extrêmes à l'aridité."
@@ -2833,7 +2833,7 @@ const quizzesData = {
             {
                 id: 60,
                 question: "Quel est le rôle du \"pituitary gland\" dans la reproduction reptilienne ?",
-                options: ["Aucun rôle", "Sécrétion d'hormones reproductives contrôlant cycle d'accouplement", "Digestion", "Respiration"],
+                options: ["Détection des phéromones sexuelles via un contact direct avec les sécrétions cloacales des congénères", "Sécrétion d'hormones reproductives contrôlant cycle d'accouplement", "Activation des enzymes digestives pancréatiques nécessaires à la dégradation des protéines des proies", "Régulation de la fréquence respiratoire lors des plongées prolongées en milieu aquatique"],
                 correct: 1,
                 explanation: "L'hypophyse (glande pituitaire) des reptiles sécrète les gonadotrophines (LH et FSH) qui contrôlent la production de spermatozoïdes et d'ovules, ainsi que les hormones sexuelles (testostérone, œstrogènes). Ces cycles sont synchronisés avec les saisons via la photopériode et la température — deux signaux captés par l'œil pinéal (troisième œil) et l'hypothalamus. Chez les reptiles tropicaux, la saison des pluies joue souvent le rôle déclencheur de la reproduction plutôt que la luminosité.",
                 source: "Université d'Endocrinologie Reptilienne - Contrôle neuroendocrinien."
@@ -2841,7 +2841,7 @@ const quizzesData = {
             {
                 id: 61,
                 question: "Quel est le processus de la 'hivernation' chez les reptiles tempérés ?",
-                options: ["Sommeil léger", "Ralentissement drastique du métabolisme et inactivité prolongée", "Pas de changement", "Migration"],
+                options: ["Sommeil léger entrecoupé de périodes d'activité réduite lors des journées ensoleillées hivernales", "Ralentissement drastique du métabolisme et inactivité prolongée", "Maintien d'un niveau d'activité constant grâce aux réserves lipidiques accumulées en automne", "Migration vers des zones plus chaudes à basse altitude où la végétation reste disponible"],
                 correct: 1,
                 explanation: "L'hivernation des reptiles (brumation) n'est pas un vrai sommeil mais une torpeur métabolique. Le reptile peut encore bouger lentement si stimulé, mais son métabolisme tourne à 5-10% de son niveau normal. Les serpents se regroupent parfois en tas pour l'hivernage (hibernacula) — comportement rare chez des animaux solitaires. Des centaines de couleuvres rayées se rassemblent ainsi dans des grottes au Manitoba (Canada), formant des 'boules de serpents' spectaculaires. Ce regroupement conserve la chaleur et facilite les accouplements au printemps.",
                 source: "Institut de Physiologie Saisonnière - Survie du froid par métabolisme minimal."
@@ -2849,7 +2849,7 @@ const quizzesData = {
             {
                 id: 62,
                 question: "Quel est le mécanisme de la 'coagulation sanguine' accélérée chez les serpents ?",
-                options: ["Pas de différence", "Coagulation plus rapide pour arrêter saignements", "Coagulation lente", "Aucune coagulation"],
+                options: ["Coagulation identique aux mammifères via la voie extrinsèque mais avec des facteurs protéiques distincts", "Coagulation plus rapide pour arrêter saignements", "Coagulation significativement ralentie en raison d'une concentration réduite en facteur VIII plasmatique", "Coagulation inexistante compensée par une cicatrisation épidermique ultra-rapide par kératinisation"],
                 correct: 1,
                 explanation: "Les serpents ont effectivement des mécanismes de coagulation sanguine adaptés, mais l'ironie est que leur venin est souvent anticoagulant (hémotoxique). Les vipères injectent des enzymes qui consomment le fibrinogène de la proie, empêchant la coagulation et provoquant des hémorragies internes. Le serpent lui-même est immunisé contre son propre venin par des inhibiteurs spécifiques dans son sang. Certaines espèces produisent même des facteurs pro-coagulants — le venin du taipan cause paradoxalement un caillotage massif et fatal.",
                 source: "Institut d'Hématologie Reptilienne - Adaptation à l'hémostase."
@@ -2865,7 +2865,7 @@ const quizzesData = {
             {
                 id: 64,
                 question: "Quel est le processus de la 'autotrophie microbienne' chez certains reptiles ?",
-                options: ["Pas de processus", "Bactéries dans tube digestif aident digestion cellulose", "Unique production d'énergie", "Symbiose rare"],
+                options: ["Production d'enzymes cellulosiques propres sécrétées par les entérocytes des tortues herbivores", "Bactéries dans tube digestif aident digestion cellulose", "Fermentation acide des fibres végétales dans un estomac à compartiments multiples comme les ruminants", "Absorption directe des sucres simples issus de la lyse mécanique des parois cellulaires végétales"],
                 correct: 1,
                 explanation: "Les iguanes verts sont des reptiles herbivores qui se nourrissent principalement de feuilles — riches en cellulose que les vertébrés ne peuvent pas digérer seuls. Leur tube digestif abrite une communauté de bactéries symbiotiques qui fermentent la cellulose et la convertissent en acides gras utilisables. Les jeunes iguanes ingèrent les excréments des adultes pour coloniser leur intestin avec ces bactéries essentielles — un comportement de coprophagie fonctionnel, similaire à celui observé chez les lapins.",
                 source: "Institut de Microbiologie Digestive - Symbiosies gastro-intestinales."
@@ -2873,7 +2873,7 @@ const quizzesData = {
             {
                 id: 65,
                 question: "Quel est le mécanisme de la 'pupille sténopéique' chez les serpents venimeux ?",
-                options: ["Aucun rôle", "Fente pupillaire pour vision en faible lumière", "Vision normale", "Pas de pupille"],
+                options: ["Densité exceptionnelle de bâtonnets rétiniens permettant la détection de mouvements imperceptibles", "Fente pupillaire pour vision en faible lumière", "Présence d'un tapetum lucidum derrière la rétine amplifiant les photons disponibles la nuit", "Cornée bombée à rayon de courbure variable compensant la mise au point dans l'obscurité"],
                 correct: 1,
                 explanation: "La pupille en fente verticale des serpents nocturnes et crépusculaires (vipères, pythons, boas) peut se réduire à une ligne ultra-fine en pleine lumière, protégeant la rétine sensible. Dans l'obscurité, elle s'ouvre largement pour capter le maximum de lumière. Cette forme de fente permet aussi une plus grande profondeur de champ que la pupille ronde. Les serpents diurnes ont généralement des pupilles rondes. La pupille en fente est aussi présente chez les chats et les requins — des prédateurs qui chassent dans des conditions lumineuses variables.",
                 source: "Institut d'Ophtalmologie Ophidienne - Adaptation crépusculaire."
@@ -2881,7 +2881,7 @@ const quizzesData = {
             {
                 id: 66,
                 question: "Quel est le rôle de la 'lipoprotéine' dans le venin des serpents ?",
-                options: ["Aucun rôle", "Composant du venin causant dommages membranaires", "Antivenin", "Neutralisant"],
+                options: ["Inhibiteur de la coagulation sanguine bloquant la conversion du fibrinogène en fibrine stable", "Composant du venin causant dommages membranaires", "Antidote naturel neutralisant les effets des venins de serpents appartenant à la même famille", "Enzyme de réparation cellulaire présente dans le venin permettant la cicatrisation post-morsure"],
                 correct: 1,
                 explanation: "Le venin des serpents est un cocktail complexe de plusieurs centaines de molécules actives. Les phospholipases A2 (enzymes lipolytiques) sont parmi les plus destructrices : elles attaquent les membranes cellulaires en dégradant leurs phospholipides, causant la lyse des cellules musculaires (myotoxines), des globules rouges (hémotoxines) ou des cellules nerveuses (neurotoxines). Certaines de ces molécules sont paradoxalement étudiées en médecine : des dérivés du venin de crotale servent à fabriquer des anticoagulants thérapeutiques.",
                 source: "Journal de Biochimie Toxinologique - Lipides actifs du venin."
@@ -2889,7 +2889,7 @@ const quizzesData = {
             {
                 id: 67,
                 question: "Quel est le processus de la 'neuroplasticité' chez les reptiles face aux changements ?",
-                options: ["Pas de plasticité", "Adaptation comportementale et neurologique aux changements environnementaux", "Comportement fixe", "Pas d'adaptation"],
+                options: ["Modification de la composition des écailles corporelles en réponse aux variations de température ambiante", "Adaptation comportementale et neurologique aux changements environnementaux", "Rigidité comportementale génétiquement programmée sans aucune capacité de modification ontogénétique", "Adaptation morphologique uniquement via des changements de pigmentation cutanée saisonniers"],
                 correct: 1,
                 explanation: "Les reptiles montrent une plasticité comportementale plus importante qu'on ne le croyait. Des expériences ont montré que des lézards peuvent apprendre à résoudre des puzzles (ouvrir des boîtes pour obtenir de la nourriture), reconnaître leur propriétaire, et même modifier leur comportement de thermorégulation en réponse aux changements climatiques. Le cerveau reptilien, bien que structurellement différent du nôtre, conserve une certaine plasticité synaptique qui permet l'apprentissage et l'adaptation tout au long de la vie.",
                 source: "Université de Neurosciences Reptilienne - Plasticité comportementale."
@@ -2905,7 +2905,7 @@ const quizzesData = {
             {
                 id: 69,
                 question: "Quel est le rôle du 'spectacle' (écaille oculaire) chez les serpents ?",
-                options: ["Aucun rôle", "Protection de l'œil durant la mue", "Vision", "Attraction sexuelle"],
+                options: ["Filtre optique permanent réduisant l'éblouissement lors de la chasse dans des milieux très éclairés", "Protection de l'œil durant la mue", "Lentille de focalisation variable permettant d'ajuster la mise au point comme un objectif photographique", "Signalisation sexuelle par iridescence réfléchissant les UV visibles uniquement par les congénères"],
                 correct: 1,
                 explanation: "Le 'spectacle' est une écaille transparente et fusionnée qui recouvre l'œil des serpents en permanence (ils n'ont pas de paupières mobiles). Lors de la mue, cette écaille se soulève avec le reste de la peau — c'est pourquoi les yeux des serpents deviennent bleutés et opaques quelques jours avant la mue : le liquide de décollement s'accumule sous le spectacle. Après une mue réussie, le spectacle est parfaitement transparent à nouveau. Un spectacle retenu (mue incomplète) peut causer des infections oculaires graves.",
                 source: "Institut d'Anatomie Ophidienne - Adaptation à la mue."
@@ -2913,7 +2913,7 @@ const quizzesData = {
             {
                 id: 70,
                 question: "Quel est le processus de la 'mimétrie batésienne' chez certains lézards inoffensifs ?",
-                options: ["Pas de mimétrie", "Imitation de lézards venimeux pour défense prédatrice", "Camouflage", "Mélange génétique"],
+                options: ["Ressemblance morphologique due à un ancêtre commun récent plutôt qu'à une pression sélective convergente", "Imitation de lézards venimeux pour défense prédatrice", "Camouflage cryptique correspondant exactement à la coloration du substrat rocheux de l'habitat", "Hybridation génétique naturelle entre espèces sympatriques produisant des phénotypes intermédiaires"],
                 correct: 1,
                 explanation: "La mimétrie batésienne est une stratégie évolutive où une espèce inoffensive imite l'apparence d'une espèce dangereuse pour bénéficier de sa protection sans en avoir les coûts. Le serpent des laiteries (Lampropeltis triangulum) imite les couleurs rouge-jaune-noir du serpent corail venimeux. La règle mnémotechnique anglaise 'Red touch yellow, kill a fellow ; red touch black, friend of Jack' aide à distinguer les deux. Cette mimétrie ne fonctionne que parce que les prédateurs ont appris à éviter le modèle venimeux.",
                 source: "Institut d'Éthologie Défensive - Stratégie évolutive de bluff."
@@ -3233,7 +3233,7 @@ const quizzesData = {
             {
                 id: 19,
                 question: "Quel est le système de thermorégulation chez les mammifères marins ?",
-                options: ["Ectothermes", "Métabolisme élevé et isolation thermique", "Pas de régulation", "Changement de couleur"],
+                options: ["Ectothermes régulant leur température en se déplaçant entre eaux superficielles chaudes et profondes froides", "Métabolisme élevé et isolation thermique", "Refroidissement actif par évaporation buccale lors des sorties à l'air libre sur les plages", "Changement de couleur cutanée permettant d'absorber plus ou moins de rayonnement solaire infrarouge"],
                 correct: 1,
                 explanation: "Contrairement aux reptiles (ectothermes), les mammif\u00e8res marins sont endothermes : ils produisent leur propre chaleur. Pour maintenir ~37\u00b0C dans des eaux proches de 0\u00b0C, ils combinent un m\u00e9tabolisme \u00e9lev\u00e9, une \u00e9paisse couche de lard (jusqu'\u00e0 50 cm), un pelage dense (phoques), et un syst\u00e8me d'\u00e9changeurs de chaleur \u00e0 contre-courant dans leurs nageoires pour r\u00e9cup\u00e9rer la chaleur du sang qui revient des extr\u00e9mit\u00e9s.",
                 source: "Institut de Thermoécologie - Les mammifères marins maintiennent une température interne."
@@ -3257,7 +3257,7 @@ const quizzesData = {
             {
                 id: 32,
                 question: "Quel est le processus de communication entre baleines à longue distance ?",
-                options: ["Pas de communication longue", "Chants complexes portant sur plusieurs km", "Signaux visuels", "Signaux chimiques"],
+                options: ["Percussion de la surface de l'eau via les nageoires pectorales pour créer des ondes basse fréquence", "Chants complexes portant sur plusieurs km", "Échanges visuels par synchronisation des sauts et acrobaties perceptibles à plusieurs km de distance", "Marquage chimique de zones de rencontre via des sécrétions cutanées persistant plusieurs jours dans l'eau"],
                 correct: 1,
                 explanation: "Les chants des baleines \u00e0 bosse peuvent porter jusqu'\u00e0 10 000 km sous l'eau. En 2000, des chercheurs ont observ\u00e9 qu'un nouveau type de chant apparu dans le Pacifique Ouest s'est r\u00e9pandu d'ouest en est en 2 ans, copi\u00e9 par des milliers de baleines. C'est l'un des exemples les plus clairs de transmission culturelle horizontale chez un animal non-humain.",
                 source: "Institut d'Acoustique Cétacée - Chants sophistiqués de navigation."
@@ -3273,7 +3273,7 @@ const quizzesData = {
             {
                 id: 34,
                 question: "Quel est le rôle du 'blubber' (lard) chez les mammifères marins ?",
-                options: ["Aucun rôle", "Isolation thermique et réserve énergétique", "Flottabilité uniquement", "Détoxication"],
+                options: ["Stockage des contaminants lipophiles comme les PCB protégeant ainsi les organes vitaux", "Isolation thermique et réserve énergétique", "Flottabilité passive uniquement permettant l'économie d'énergie lors des pauses en surface", "Neutralisation des toxines marines ingérées avec les proies par séquestration dans les adipocytes"],
                 correct: 1,
                 explanation: "Le blubber remplit plusieurs fonctions vitales simultan\u00e9ment. Il isole thermiquement \u2014 une baleine polaire avec 50 cm de lard survit \u00e0 des eaux \u00e0 -2\u00b0C. Il stocke une \u00e9nergie consid\u00e9rable \u2014 une baleine \u00e0 bosse br\u00fcle son lard pendant sa migration de 8 000 km o\u00f9 elle ne mange presque pas. Il contribue aussi \u00e0 la flottabilit\u00e9 et \u00e0 la forme hydrodynamique du corps.",
                 source: "Institut de Physiologie Thermique Marine - Essentiel pour survie."
@@ -3305,7 +3305,7 @@ const quizzesData = {
             {
                 id: 38,
                 question: "Quel est le rôle des 'barbillons' chez le phoque ?",
-                options: ["Aucun rôle", "Détection tactile des proies et obstacles", "Respiration", "Communication"],
+                options: ["Génération de micro-turbulences hydrodynamiques améliorant la portance natatoire à faible vitesse", "Détection tactile des proies et obstacles", "Absorption de l'oxygène dissous dans l'eau lors des plongées profondes en complément des poumons", "Signalisation d'état émotionnel lors des interactions sociales par mouvements vibratoires codifiés"],
                 correct: 1,
                 explanation: "Les vibrisses (moustaches) des phoques sont des organes sensoriels extraordinaires. Elles peuvent d\u00e9tecter les turbulences cr\u00e9\u00e9es par un poisson pass\u00e9 30 secondes auparavant, permettant au phoque de suivre le sillage d'une proie dans l'obscurit\u00e9. Chaque vibrisse est reli\u00e9e \u00e0 une zone d\u00e9di\u00e9e du cerveau \u2014 leur repr\u00e9sentation c\u00e9r\u00e9brale est aussi \u00e9labor\u00e9e que le syst\u00e8me visuel humain.",
                 source: "Institut de Sensorimotricité Marine - Organes tactiles sensoriels."
@@ -3313,7 +3313,7 @@ const quizzesData = {
             {
                 id: 39,
                 question: "À quel âge une baleine femelle devient-elle ménopausée ?",
-                options: ["À 20-30 ans", "À 40-50 ans selon l'espèce", "À 50+ ans", "Jamais"],
+                options: ["À 20-30 ans pour toutes les baleines à fanons selon les marqueurs isotopiques des os de l'oreille", "À 40-50 ans selon l'espèce", "À 50 ans et au-delà, certaines espèces ne vieillissant biologiquement presque pas après 80 ans", "La longévité ne peut jamais être estimée avec précision car les cétacés ne montrent aucun signe externe de vieillissement"],
                 correct: 1,
                 explanation: "La m\u00e9nopause est un ph\u00e9nom\u00e8ne rarissime dans le r\u00e8gne animal, observ\u00e9 chez seulement 5 esp\u00e8ces : l'humain, l'orque, le cachalot, le b\u00e9luga et le narval. Chez les orques, les femelles cessent de se reproduire vers 40-50 ans mais vivent encore plusieurs d\u00e9cennies. Ces 'grand-m\u00e8res' jouent un r\u00f4le crucial : les pods avec des grand-m\u00e8res survivent mieux gr\u00e2ce \u00e0 leur connaissance des zones de p\u00eache.",
                 source: "Institut de Biologie Reproductive - Ménopause chez les cétacés."
@@ -3321,7 +3321,7 @@ const quizzesData = {
             {
                 id: 40,
                 question: "Quel est le processus de la 'dive reflex' chez les pinnipèdes ?",
-                options: ["Pas de réflexe", "Ralentissement cardiaque drastique lors de plongée", "Accélération cardiaque", "Pas de changement"],
+                options: ["Arrêt volontaire de la respiration déclenché par la fermeture réflexe de l'épiglotte lors de l'immersion", "Ralentissement cardiaque drastique lors de plongée", "Accélération cardiaque pour maximiser le débit sanguin vers les muscles actifs pendant la plongée", "Redistribution du volume sanguin vers les organes abdominaux pour réduire la consommation d'O2 musculaire"],
                 correct: 1,
                 explanation: "Le r\u00e9flexe de plong\u00e9e (dive reflex) est d\u00e9clench\u00e9 automatiquement d\u00e8s l'immersion. Chez les pinniped\u00e8s, il est extr\u00eamement d\u00e9velopp\u00e9 : la fr\u00e9quence cardiaque passe de 150 \u00e0 seulement 4 battements par minute en quelques secondes. La circulation sanguine se concentre sur le cerveau et le c\u0153ur. La rate se contracte pour lib\u00e9rer jusqu'\u00e0 50% d'h\u00e9maties suppl\u00e9mentaires dans le sang.",
                 source: "Institut de Physiologie Plongée - Adaptations cardiovasculaires."
@@ -3353,7 +3353,7 @@ const quizzesData = {
             {
                 id: 44,
                 question: "Quel est le rôle de la 'grâce osseuse' chez les siréniens (lamantins) ?",
-                options: ["Aucun rôle", "Adaptation squelettale pour flotabilité et mouvement lent", "Nage rapide", "Pas de fonction"],
+                options: ["Renforcement de la ceinture pectorale pour résister aux forces de traction lors de la saisie des proies", "Adaptation squelettale pour flotabilité et mouvement lent", "Amplification de la poussée natatoire grâce à des leviers osseux optimisés pour les sprints aquatiques", "Réduction de la surface de résistance hydrodynamique frontale lors des plongées verticales rapides"],
                 correct: 1,
                 explanation: "Les sir\u00e9niens (lamantins et dugongs) ont des os exceptionnellement denses et massifs (pachyostose), une adaptation rare. Ces os lourds agissent comme un lest naturel qui compense leur flottabilit\u00e9 due au gaz intestinal. Cela leur permet de rester pr\u00e8s du fond pour brouter les herbiers marins sans effort. Ils sont les seuls herbivores marins parmi les mammif\u00e8res.",
                 source: "Institut d'Anatomie Marine - Adaptations uniques siréniens."
@@ -3369,7 +3369,7 @@ const quizzesData = {
             {
                 id: 46,
                 question: "Quel est le processus de la 'pontination' chez les cétacés ?",
-                options: ["Pas de processus", "Isolation comportementale préparant reproduction", "Migration", "Hivernation"],
+                options: ["Augmentation progressive du temps de plongée liée à la maturation des réserves en myoglobine musculaire", "Isolation comportementale préparant reproduction", "Migration vers les zones d'alimentation estivales pour constituer des réserves lipidiques avant l'accouplement", "Jeûne volontaire permettant de concentrer les phéromones excrétées dans les sécrétions cutanées"],
                 correct: 1,
                 explanation: "La pr\u00e9paration \u00e0 la reproduction chez les c\u00e9tac\u00e9s implique des changements comportementaux marqu\u00e9s. Les m\u00e2les de baleine \u00e0 bosse cessent de s'alimenter pendant la saison de reproduction pour se consacrer enti\u00e8rement \u00e0 la comp\u00e9tition et \u00e0 la cour. Ils chantent des chants complexes, se battent avec d'autres m\u00e2les, et suivent les femelles sur des milliers de kilom\u00e8tres pendant les migrations.",
                 source: "Institut d'Éthologie Reproductive Marine - Phase préreproductive."
@@ -3385,7 +3385,7 @@ const quizzesData = {
             {
                 id: 48,
                 question: "Quel est le rôle de l'enzyme 'catalase' chez les plongeurs marins ?",
-                options: ["Aucun rôle", "Protection contre radicaux libres de l'oxygène", "Digestion", "Respiration"],
+                options: ["Catalyse de la dégradation des peroxydes lipidiques dans les tissus profonds lors des plongées prolongées", "Protection contre radicaux libres de l'oxygène", "Accélération du transit intestinal permettant une extraction maximale des nutriments des proies ingérées", "Régulation de la fréquence respiratoire en modifiant la sensibilité des chémorécepteurs au CO2"],
                 correct: 1,
                 explanation: "Lors de plong\u00e9es profondes suivies de remont\u00e9es rapides, les mammif\u00e8res plongeurs sont expos\u00e9s \u00e0 des cycles d'isch\u00e9mie-reperfusion qui g\u00e9n\u00e8rent des radicaux libres potentiellement dangereux. Les c\u00e9tac\u00e9s et pinniped\u00e8s ont d\u00e9velopp\u00e9 des d\u00e9fenses antioxydantes tr\u00e8s efficaces, incluant des niveaux \u00e9lev\u00e9s de catalase, superoxyde dismutase et glutathion peroxydase dans leurs tissus.",
                 source: "Institut de Biochimie Marine - Adaptations antioxydantes."
@@ -3411,7 +3411,7 @@ const quizzesData = {
             {
                 id: 21,
                 question: "Quel est le mécanisme d'osmorégulation chez les cétacés marins ?",
-                options: ["Excrétion de sel par le nez", "Reins hautement concentrés et métabolisme de l'eau", "Pas de mécanisme particulier", "Urines très concentrées"],
+                options: ["Excrétion de sel par des glandes nasales comme chez les reptiles marins et certains oiseaux côtiers", "Reins hautement concentrés et métabolisme de l'eau", "Absorption cutanée d'eau douce depuis l'eau de mer via des aquaporines dermiques spécialisées", "Urines très concentrées éliminant l'excès de sodium avec une perte hydrique minimale"],
                 correct: 1,
                 explanation: "Les c\u00e9tac\u00e9s marins ne boivent pas l'eau de mer directement. Ils obtiennent l'eau n\u00e9cessaire \u00e0 partir des poissons et c\u00e9phalopodes qu'ils consomment. Leurs reins sont exceptionnellement performants, organis\u00e9s en milliers de 'renicules' qui augmentent la surface de filtration, et produisent une urine tr\u00e8s concentr\u00e9e en sel pour \u00e9liminer l'exc\u00e8s de sodium.",
                 source: "Institut de Physiologie Osmorégulatrice - Les reins concentrent l'urine extrêmement."
@@ -3467,7 +3467,7 @@ const quizzesData = {
             {
                 id: 28,
                 question: "Quel est le processus de communication acoustique entre baleines ?",
-                options: ["Simple cris", "Communication structurée avec dialectes régionaux et apprentissage culturel", "Pas de communication", "Télépathie"],
+                options: ["Vocalisations stéréotypées génétiquement programmées sans variation individuelle ni apprentissage", "Communication structurée avec dialectes régionaux et apprentissage culturel", "Signaux de percussion corporelle sur la surface de l'eau sans structure acoustique codifiée", "Émissions d'ultrasons servant exclusivement à la navigation sans fonction de communication sociale"],
                 correct: 1,
                 explanation: "Les populations de baleines \u00e0 bosse de diff\u00e9rentes r\u00e9gions chantent des 'dialectes' distincts qui \u00e9voluent constamment. En 2000, un nouveau type de chant apparu dans le Pacifique Ouest s'est propagé d'est en ouest en 2 ans, copi\u00e9 par des milliers de baleines. C'est l'un des exemples les plus clairs de transmission culturelle horizontale chez un animal non-humain.",
                 source: "Université de Sociolinguistique Marine - Les baleines ont des dialectes culturels."
@@ -3483,7 +3483,7 @@ const quizzesData = {
             {
                 id: 30,
                 question: "Quel est le mécanisme de cicatrisation des plaies chez les cétacés ?",
-                options: ["Cicatrisation lente comme les autres mammifères", "Cicatrisation rapide avec propriétés antimicrobiennes du mucus", "Pas de cicatrisation", "Régénération complète"],
+                options: ["Cicatrisation nécessitant une sortie prolongée hors de l'eau pour permettre la coagulation sanguine normale", "Cicatrisation rapide avec propriétés antimicrobiennes du mucus", "Régénération tissulaire partielle via des cellules souches dermiques activées par la pression hydrostatique", "Réparation exclusivement externe via un dépôt progressif de fibrine imperméabilisant la plaie sous l'eau"],
                 correct: 1,
                 explanation: "Les baleines ont des capacit\u00e9s de cicatrisation impressionnantes. Des \u00e9tudes ont document\u00e9 des baleines \u00e0 bosse se r\u00e9tablissant de morsures d'orques touchant la moiti\u00e9 de leur corps en quelques semaines. Leur mucus cutan\u00e9 contient des peptides antimicrobiens puissants qui prot\u00e8gent les plaies de l'infection dans un milieu marin riche en bact\u00e9ries.",
                 source: "Journal de Cicatrisation Marine - Le mucus à propriétés cicatrisantes."
@@ -3491,7 +3491,7 @@ const quizzesData = {
             {
                 id: 51,
                 question: "Quel est le mécanisme d'osmorégulation chez les cétacés marins ?",
-                options: ["Excrétion de sel par le nez", "Reins hautement concentrés et métabolisme de l'eau", "Pas de mécanisme particulier", "Urines très concentrées"],
+                options: ["Excrétion de sel par des glandes nasales comme chez les reptiles marins et certains oiseaux côtiers", "Reins hautement concentrés et métabolisme de l'eau", "Absorption cutanée d'eau douce depuis l'eau de mer via des aquaporines dermiques spécialisées", "Urines très concentrées éliminant l'excès de sodium avec une perte hydrique minimale"],
                 correct: 1,
                 explanation: "Les reins des c\u00e9tac\u00e9s marins sont organis\u00e9s en centaines de 'renicules' \u2014 de petits lobules r\u00e9naux ind\u00e9pendants. Cette structure augmente massivement la surface de filtration. Les c\u00e9tac\u00e9s ne boivent pas d'eau de mer : l'eau de leurs proies leur suffit. Ils excrètent des urines 2 \u00e0 4 fois plus concentr\u00e9es que l'eau de mer pour maintenir leur \u00e9quilibre hydrique.",
                 source: "Institut de Physiologie Osmorégulatrice Marine - Les reins concentrent l'urine extrêmement."
@@ -3547,7 +3547,7 @@ const quizzesData = {
             {
                 id: 58,
                 question: "Quel est le processus de communication acoustique entre baleines à distance ?",
-                options: ["Simple cris", "Communication structurée avec dialectes régionaux et apprentissage culturel", "Pas de communication", "Télépathie"],
+                options: ["Vocalisations stéréotypées génétiquement programmées sans variation individuelle ni apprentissage", "Communication structurée avec dialectes régionaux et apprentissage culturel", "Signaux de percussion corporelle sur la surface de l'eau sans structure acoustique codifiée", "Émissions d'ultrasons servant exclusivement à la navigation sans fonction de communication sociale"],
                 correct: 1,
                 explanation: "Les orques r\u00e9sidentes du Pacifique Nord poss\u00e8dent des 'dialectes' acoustiques : chaque pod familial a un r\u00e9pertoire de vocalises distinctif h\u00e9rit\u00e9 de g\u00e9n\u00e9ration en g\u00e9n\u00e9ration. Ces dialectes sont si stables qu'ils permettent d'identifier la famille d'une orque \u00e0 l'\u00e9coute de ses sons. Deux pods qui partagent des vocalises communes descendent probablement d'un m\u00eame anc\u00eatre commun r\u00e9cent.",
                 source: "Université de Sociolinguistique Marine - Les baleines ont des dialectes culturels."
@@ -3563,7 +3563,7 @@ const quizzesData = {
             {
                 id: 60,
                 question: "Quel est le mécanisme du stockage d'oxygène chez les cachalots ?",
-                options: ["Poumons uniquement", "Myoglobine musculaire et oxyhémoglobine concentrées", "Pas de stockage", "Respiration cutanée"],
+                options: ["Poumons à très grande capacité totale représentant 12% du volume corporel contre 7% chez l'humain", "Myoglobine musculaire et oxyhémoglobine concentrées", "Rate hypertrophiée libérant un bolus d'érythrocytes supplémentaires lors du début de la plongée", "Respiration cutanée partielle via une peau très vascularisée absorbant l'oxygène dissous dans l'eau froide"],
                 correct: 1,
                 explanation: "Le cachalot est le champion du stockage d'oxyg\u00e8ne. Sa concentration en myoglobine est 10-30 fois sup\u00e9rieure \u00e0 celle des mammif\u00e8res terrestres. Sa rate peut stocker jusqu'\u00e0 24 litres de sang oxyg\u00e9n\u00e9 (contre 1 litre chez l'humain) et le lib\u00e9rer au d\u00e9but d'une plong\u00e9e. Son volume sanguin total de 2 500 litres lui permet de plonger \u00e0 3 000 m\u00e8tres pendant 90 minutes.",
                 source: "Institut d'Adaptation Plongée - Stockage massif d'oxygène."
@@ -3571,7 +3571,7 @@ const quizzesData = {
             {
                 id: 61,
                 question: "Quel est le processus de la 'thermorégulation comportementale' chez les pinnipèdes ?",
-                options: ["Pas de thermorégulation", "Hauling out (sortie de l'eau) pour se réchauffer", "Immersion complète", "Pas de préférence"],
+                options: ["Maintien d'une température constante grâce à une couche de graisse sous-cutanée de plus de 30 cm", "Hauling out (sortie de l'eau) pour se réchauffer", "Immersion totale permanente dans les eaux profondes et froides pour optimiser la conductivité thermique", "Absence de besoin thermorégulateur grâce à un métabolisme de base 4 fois supérieur aux mammifères terrestres"],
                 correct: 1,
                 explanation: "Le 'hauling out' \u2014 sortie de l'eau pour se reposer sur rochers, plages ou glaces \u2014 est un comportement thermoR\u00e9gulateur cl\u00e9 chez les pinniped\u00e8s. L'eau conduit la chaleur 25 fois mieux que l'air, donc sortir de l'eau est bien plus efficace pour r\u00e9chauffer le corps. Les \u00e9l\u00e9phants de mer forment des piles compactes pour se r\u00e9chauffer mutuellement lors des mues annuelles.",
                 source: "Institut d'Écologie Comportementale Marine - Thermorégulation adaptée."
@@ -3579,7 +3579,7 @@ const quizzesData = {
             {
                 id: 62,
                 question: "Quel est le rôle des 'melon' (structure frontale) du dauphin ?",
-                options: ["Aucun rôle", "Focalisation et concentration des ondes écholocationnelles", "Audition uniquement", "Évent"],
+                options: ["Résonance des fréquences vocales émises lors de la communication sociale en eaux peu profondes", "Focalisation et concentration des ondes écholocationnelles", "Réception passive des sons basse fréquence produits par les baleines à plusieurs kilomètres de distance", "Émission de sons pendant la respiration via l'évent lors des vocalisations de surface"],
                 correct: 1,
                 explanation: "Le melon frontal du dauphin est compos\u00e9 d'huiles et lipides de densit\u00e9s diff\u00e9rentes qui agissent comme des lentilles acoustiques, concentrant les clics ultrasonores en un faisceau \u00e9troit. La forme du melon est modifiable \u2014 les dauphins ajustent la direction et la focalisation de leur faisceau en contractant les muscles faciaux. Ce contr\u00f4le pr\u00e9cis permet d'analyser des objets complexes en 3D.",
                 source: "Institut d'Acoustique Cétacée - Structure très spécialisée."
@@ -3587,7 +3587,7 @@ const quizzesData = {
             {
                 id: 63,
                 question: "Quel est le mécanisme de la 'bradycardie plongée' chez les pinnipèdes ?",
-                options: ["Accélération cardiaque", "Ralentissement drastique du cœur lors de l'immersion", "Pas de changement", "Arrêt cardiaque"],
+                options: ["Accélération cardiaque compensatoire maximisant l'apport en O2 aux muscles pendant les premières minutes", "Ralentissement drastique du cœur lors de l'immersion", "Maintien du rythme cardiaque basal identique à celui de surface pour préserver les fonctions cérébrales", "Arrêt cardiaque volontaire contrôlé pendant 2 à 3 minutes suivi d'une reprise automatique rythmique"],
                 correct: 1,
                 explanation: "La bradycardie de plong\u00e9e chez les pinniped\u00e8s peut \u00eatre si s\u00e9v\u00e8re que le c\u0153ur s'arr\u00eate compl\u00e8tement pendant plusieurs secondes entre deux contractions. Chez l'humain, une bradycardie \u00e0 40 bpm provoque des \u00e9vanouissements ; chez un phoque \u00e0 4 bpm lors d'une plong\u00e9e de 80 minutes, le cerveau survit gr\u00e2ce \u00e0 une adaptation remarquable de ses neurones \u00e0 l'hypoxie.",
                 source: "Institut de Physiologie Cardiovasculaire Marine - Réflexe de plongée primitif."
@@ -3603,7 +3603,7 @@ const quizzesData = {
             {
                 id: 65,
                 question: "Quel est le rôle du 'rostrum' (museau) chez les dauphins ?",
-                options: ["Aucun rôle", "Traitement des vibrations et équilibrage hydrodynamique", "Respiration", "Alimentation uniquement"],
+                options: ["Stockage des réserves lipidiques mobilisées lors des longues migrations sans escale alimentaire", "Traitement des vibrations et équilibrage hydrodynamique", "Régulation de la flottabilité globale par compression ou expansion des tissus graisseux internes", "Captation des particules nutritives en suspension filtrant l'eau de mer comme un organe accessoire"],
                 correct: 1,
                 explanation: "Le rostre (long bec) du dauphin est une structure multifonctionnelle. Sa surface abrite de petites cryptes contenant des magn\u00e9tites (cristaux d'oxyde de fer) qui pourraient aider \u00e0 la navigation magn\u00e9tique. Le rostre am\u00e9liore aussi l'hydrodynamisme en r\u00e9duisant les turbulences lors de la nage rapide. Certaines esp\u00e8ces l'utilisent pour d\u00e9terrer des proies dans le sable ou \u00e9tourdir des poissons.",
                 source: "Institut d'Anatomie Hydrodynamique - Structure adaptée à l'eau."
@@ -3611,7 +3611,7 @@ const quizzesData = {
             {
                 id: 66,
                 question: "Quel est le mécanisme de la 'convergent evolution' entre cétacés et pinnipèdes ?",
-                options: ["Pas de convergence", "Adaptations similaires pour l'environnement aquatique malgré ancêtres terrestres", "Génétique commune", "Pas de ressemblance"],
+                options: ["Descendance phylogénétique directe d'un ancêtre aquatique commun réadapté à la vie terrestre", "Adaptations similaires pour l'environnement aquatique malgré ancêtres terrestres", "Partage d'un patrimoine génétique commun responsable des morphologies natatoires convergentes", "Influence du milieu aquatique sur le développement embryonnaire modifiant directement la morphologie adulte"],
                 correct: 1,
                 explanation: "La convergence \u00e9volutive entre c\u00e9tac\u00e9s et pinniped\u00e8s est fascinante. Les c\u00e9tac\u00e9s descendent d'ongul\u00e9s terrestres proches des hippopotames (il y a 50 millions d'ann\u00e9es), et les pinniped\u00e8s d'un anc\u00eatre proche des must\u00e9lid\u00e9s (il y a 23 millions d'ann\u00e9es). Pourtant, ils ont convergé vers des adaptations similaires : corps fusel\u00e9, membres transform\u00e9s en nageoires, r\u00e9duction du pelage.",
                 source: "Institut d'Évolution Comparative - Adaptations indépendantes similaires."
@@ -3619,7 +3619,7 @@ const quizzesData = {
             {
                 id: 67,
                 question: "Quel est le processus de la 'dive sequestration' chez les baleines ?",
-                options: ["Pas de séquestration", "Flux sanguin réduit aux organes non critiques pendant plongée", "Circulation augmentée", "Pas de changement"],
+                options: ["Augmentation de la pression artérielle systémique pour maintenir la perfusion de tous les organes en plongée", "Flux sanguin réduit aux organes non critiques pendant plongée", "Redistribution du sang vers les muscles locomoteurs pour maximiser la durée de nage efficace", "Maintien d'une circulation systémique uniforme grâce à l'absence de résistances vasculaires périphériques"],
                 correct: 1,
                 explanation: "Lors des plong\u00e9es profondes, certains organes des c\u00e9tac\u00e9s (intestins, reins) entrent dans un \u00e9tat d'isch\u00e9mie contr\u00f4l\u00e9e \u2014 ils fonctionnent presque sans oxyg\u00e8ne. Des r\u00e9seaux capillaires ('rete mirabile') dans la colonne vert\u00e9brale stockent et lib\u00e8rent progressivement l'oxyg\u00e8ne pendant la plong\u00e9e. Ces m\u00e9canismes sont \u00e9tudi\u00e9s pour d\u00e9velopper des th\u00e9rapies contre les AVC humains.",
                 source: "Institut de Physiologie Plongée - Redistribution critique de l'oxygène."
@@ -3627,7 +3627,7 @@ const quizzesData = {
             {
                 id: 68,
                 question: "Quel est le rôle du 'rostral groove' chez les siréniens ?",
-                options: ["Aucun rôle", "Réduction de la traînée hydrodynamique lors de la nage", "Alimentation", "Respiration"],
+                options: ["Augmentation de la portance verticale lors des nages lentes grâce à l'effet de surface de la nageoire", "Réduction de la traînée hydrodynamique lors de la nage", "Capture des proies en entourant les bancs de poissons par des mouvements coordonnés circulaires", "Régulation de la pression hydrostatique interne lors des changements rapides de profondeur de plongée"],
                 correct: 1,
                 explanation: "Les sir\u00e9niens (lamantins, dugongs) ont un corps fusiforme adapt\u00e9 \u00e0 la nage lente dans des eaux c\u00f4ti\u00e8res peu profondes. Leur museau large est adapt\u00e9 au broutage des herbiers marins sur le fond. Leur queue en palette horizontale \u2014 comme les c\u00e9tac\u00e9s, contrairement aux poissons \u2014 les propulse par des battements verticaux. Ils sont les seuls herbivores marins parmi les mammif\u00e8res.",
                 source: "Institut d'Hydrodynamique Marine - Adaptations aérodynamiques."
@@ -3635,7 +3635,7 @@ const quizzesData = {
             {
                 id: 69,
                 question: "Quel est le mécanisme de la 'photoperiodism' chez les mammifères marins migrateurs ?",
-                options: ["Pas de photoperiodisme", "Changement de durée du jour déclenche migrations saisonnières", "Température uniquement", "Pas de déclencheur"],
+                options: ["Détection des variations de pression barométrique anticipant les changements saisonniers à venir", "Changement de durée du jour déclenche migrations saisonnières", "Réponse thermique directe au refroidissement progressif des eaux de surface en automne boréal", "Stimulation par les variations de salinité liées à la fonte des glaces polaires en début de printemps"],
                 correct: 1,
                 explanation: "La photop\u00e9riode (dur\u00e9e du jour) est le principal signal synchroniseur des migrations des mammif\u00e8res marins. La glande pin\u00e9ale s\u00e9cr\u00e8te de la m\u00e9latonine de fa\u00e7on inversement proportionnelle \u00e0 la dur\u00e9e du jour. Ces variations hormonales d\u00e9clenchent l'accumulation de graisses, des changements hormonaux reproductifs, et les comportements migratoires. Les baleines arrivent dans leurs zones de reproduction \u00e0 quelques jours pr\u00e8s chaque ann\u00e9e.",
                 source: "Institut d'Écologie Comportementale - Horloges biologiques photosensibles."
@@ -3643,7 +3643,7 @@ const quizzesData = {
             {
                 id: 70,
                 question: "Quel est le rôle de la 'myelin sheath' épaissie chez les cétacés plongeurs ?",
-                options: ["Aucun rôle", "Conduction nerveuse rapide dans conditions haute pression", "Isolation thermique", "Protection mécanique"],
+                options: ["Transmission des vibrations basse fréquence produites par les proies vers les récepteurs acoustiques", "Conduction nerveuse rapide dans conditions haute pression", "Isolation thermique des axones nerveux contre le refroidissement des eaux profondes à 4°C", "Protection mécanique des nerfs périphériques contre les contraintes de pression lors des grandes profondeurs"],
                 correct: 1,
                 explanation: "Les axones nerveux des c\u00e9tac\u00e9s plongeurs pr\u00e9sentent une my\u00e9linisation accrue. \u00c0 grande profondeur, la pression extr\u00eame perturbe les canaux ioniques et peut d\u00e9naturer les prot\u00e9ines membranaires. L'\u00e9paisseur suppl\u00e9mentaire de la gaine de my\u00e9line prot\u00e8ge les fibres nerveuses de ces perturbations et maintient une vitesse de conduction normale m\u00eame \u00e0 3 000 m\u00e8tres o\u00f9 la pression est 300 fois celle de la surface.",
                 source: "Institut de Neurosciences Marine - Adaptations neurales plongée."
@@ -3821,7 +3821,7 @@ const quizzesData = {
             {
                 id: 21,
                 question: "Quel est le mécanisme du 'coalitional male' chez les lions ?",
-                options: ["Pas de coalition", "Mâles s'unissent pour renverser les dominants", "Dominance solitaire", "Pas de stratégie"],
+                options: ["Compétition exclusive entre frères issus de la même portée sans alliance possible avec des étrangers", "Mâles s'unissent pour renverser les dominants", "Maintien de la dominance solitaire par un seul mâle pendant toute sa vie reproductive de 10 à 15 ans", "Hiérarchie déterminée uniquement par le combat singulier sans possibilité d'entraide entre rivaux"],
                 correct: 1,
                 explanation: "Les coalitions de m\u00e2les lions (g\u00e9n\u00e9ralement des fr\u00e8res ou demi-fr\u00e8res) sont bien plus efficaces que les m\u00e2les solitaires pour conqu\u00e9rir et maintenir le contr\u00f4le d'une fierté. Les coalitions de 3-4 m\u00e2les r\u00e8gnent en moyenne 4 ans contre 2 ans pour un m\u00e2le seul. Cette coop\u00e9ration entre apparent\u00e9s est un exemple de s\u00e9lection de parent\u00e8le : aider ses fr\u00e8res \u00e0 se reproduire propage indirectement ses propres g\u00e8nes.",
                 source: "Institut d'Éthologie Sociale - Stratégie complexe de coalition."
@@ -3829,7 +3829,7 @@ const quizzesData = {
             {
                 id: 22,
                 question: "Quel est le rôle de l'infanticide chez les lions ?",
-                options: ["Aucun rôle", "Élimination des jeunes pour réduire compétition et hastener chaleur femelle", "Régulation population", "Agression"],
+                options: ["Test de la résistance physique des lionceaux pour identifier les individus génétiquement supérieurs", "Élimination des jeunes pour réduire compétition et hastener chaleur femelle", "Régulation de la densité de population du groupe en éliminant les individus en surnombre", "Comportement d'agression non fonctionnel lié au stress de la prise de contrôle du nouveau territoire"],
                 correct: 1,
                 explanation: "L'infanticide est un comportement strat\u00e9gique bien document\u00e9 chez les lions. Quand de nouveaux m\u00e2les prennent le contr\u00f4le d'une fierté, ils tuent les lionceaux des m\u00e2les pr\u00e9c\u00e9dents. Cela interrompt l'allaitement et provoque le retour en chaleur des femelles en 3-4 semaines au lieu de 18-24 mois. Malgr\u00e9 son apparence brutale, ce comportement est une strat\u00e9gie de maximisation reproductrice.",
                 source: "Université d'Écologie Comportementale - Stratégie reproductive."
@@ -3837,7 +3837,7 @@ const quizzesData = {
             {
                 id: 23,
                 question: "Quel est le processus de la 'synchronisation des chaleurs' chez les lionnes ?",
-                options: ["Pas de synchronisation", "Femelles en groupe synchronisent cycles reproductifs", "Cycles indépendants", "Pas d'influence sociale"],
+                options: ["Ovulation individuelle déclenchée par le comportement de cour du mâle dominant du groupe", "Femelles en groupe synchronisent cycles reproductifs", "Cycles reproductifs déterminés uniquement par la disponibilité des ressources alimentaires du territoire", "Reproduction individuelle désynchronisée pour étaler les naissances et réduire la compétition entre mères"],
                 correct: 1,
                 explanation: "La synchronisation des chaleurs est un ph\u00e9nom\u00e8ne remarquable dans les fiertés. Les femelles du m\u00eame groupe se retrouvent fr\u00e9quemment en chaleur en m\u00eame temps, ce qui m\u00e8ne \u00e0 des naissances quasi-simultan\u00e9es. Cela permet l'allaitement collectif (une femelle peut allaiter les lionceaux d'une autre), augmente la survie des petits, et cr\u00e9e une coh\u00e9sion sociale plus forte dans la fierté.",
                 source: "Institut de Biologie Reproductive - Phéromones sociales."
@@ -3845,7 +3845,7 @@ const quizzesData = {
             {
                 id: 24,
                 question: "Quel est le mécanisme du contrôle du territoire par les rugissements ?",
-                options: ["Pas de contrôle", "Rugissements délimitent territoire et découragent intrus", "Uniquement pour attirer femelles", "Communication simple"],
+                options: ["Communication exclusive avec les lionnes du groupe pour coordonner les déplacements lors des chasses", "Rugissements délimitent territoire et découragent intrus", "Signal d'alarme dirigé vers les hyènes et autres prédateurs lors des confrontations directes nocturnes", "Expression émotionnelle sans fonction de signalisation territoriale mesurable dans les études de terrain"],
                 correct: 1,
                 explanation: "Le rugissement du lion est l'un des sons les plus puissants du r\u00e8gne animal, portant \u00e0 plus de 8 km. Les membres d'une fierté rugissent en ch\u0153ur (chorus roaring) pour renforcer leur pr\u00e9sence territoriale. Des exp\u00e9riences ont montr\u00e9 que les lions peuvent \u00e9valuer la taille d'un groupe rival \u00e0 l'\u00e9coute de ses rugissements et d\u00e9cident de fuir ou d'affronter en fonction de ce nombre.",
                 source: "Institut d'Acoustique Comportementale - Communication multi-fonction."
@@ -3853,7 +3853,7 @@ const quizzesData = {
             {
                 id: 25,
                 question: "Quel est le rôle du 'infantile behaviour' prolongé chez les lionceaux ?",
-                options: ["Immaturité", "Apprentissage et lien social avec la mère", "Retard développement", "Pas de fonction"],
+                options: ["Immaturité physiologique prolongée liée à une gestation courte comparée aux autres grands félins", "Apprentissage et lien social avec la mère", "Retard de développement des glandes lacrymales rendant l'ouverture des yeux impossible avant 6 semaines", "Absence de musculature développée dans les membres postérieurs empêchant la marche avant 3 mois"],
                 correct: 1,
                 explanation: "Le comportement infantile prolong\u00e9 chez les lionceaux leur permet d'apprendre les comp\u00e9tences de chasse, les dynamiques sociales de la fierté et les techniques de survie. La p\u00e9riode de d\u00e9pendance longue (jusqu'\u00e0 18-24 mois) est une strat\u00e9gie \u00e9volutive efficace : les grandes esp\u00e8ces intelligentes b\u00e9n\u00e9ficient d'une p\u00e9riode d'apprentissage prolong\u00e9e pour ma\u00eetriser des comportements complexes comme la chasse coop\u00e9rative.",
                 source: "Université d'Étude du Développement - Apprentissage prolongé."
@@ -3861,7 +3861,7 @@ const quizzesData = {
             {
                 id: 26,
                 question: "Quel est le mécanisme de la 'mane darkening' avec l'âge ?",
-                options: ["Pas de mécanisme", "Accumulation de testostérone affecte pigmentation crinière", "Décoloration simple", "Pas d'explication"],
+                options: ["Effet de l'alimentation riche en mélanine provenant des proies consommées colorant progressivement les poils", "Accumulation de testostérone affecte pigmentation crinière", "Décoloration naturelle par photolyse des mélanines sous l'effet de la radiation solaire en milieu ouvert", "Remplacement progressif des mélanocytes par des cellules kératinisées blanches lors du vieillissement"],
                 correct: 1,
                 explanation: "La couleur de la crini\u00e8re assombrit progressivement avec l'\u00e2ge et le taux de testost\u00e9rone. Des \u00e9tudes en Tanzanie ont d\u00e9montr\u00e9 que les lions \u00e0 crini\u00e8re sombre \u00e9taient en meilleure condition physique, produisaient plus de testost\u00e9rone, et \u00e9taient pr\u00e9f\u00e9r\u00e9s par les femelles. Cependant, une crini\u00e8re trop dense peut causer une surchauffe dans les r\u00e9gions chaudes \u2014 d'o\u00f9 des crini\u00e8res moins d\u00e9velopp\u00e9es chez les lions du Tsavo au Kenya.",
                 source: "Institut d'Endocrinologie - Indicateur hormonal de maturité."
@@ -3869,7 +3869,7 @@ const quizzesData = {
             {
                 id: 27,
                 question: "Quel est le processus de prédation coordonnée chez les lionnes ?",
-                options: ["Pas de coordination", "Stratégies élaborées avec rôles définis et embuscades", "Chasse aléatoire", "Chacune pour soi"],
+                options: ["Regroupement opportuniste sans rôles prédéfinis, chaque lionne agissant de façon individuelle", "Stratégies élaborées avec rôles définis et embuscades", "Poursuite collective désorganisée épuisant les proies par la fatigue avant l'immobilisation finale", "Chasse solitaire de chaque femelle puis regroupement pour partager la proie après la mise à mort"],
                 correct: 1,
                 explanation: "La chasse coordonn\u00e9e des lionnes est l'une des plus sophistiqu\u00e9es chez les f\u00e9lid\u00e9s. Elles adoptent des r\u00f4les sp\u00e9cifiques : les 'centres' encerclent la proie tandis que les 'ailes' la poussent vers elles. Certaines individues se sp\u00e9cialisent dans des r\u00f4les pr\u00e9cis \u00e0 chaque chasse. Ces strat\u00e9gies permettent d'attraper des proies bien plus grosses qu'un lion seul, comme le buffle du Cap ou la girafe.",
                 source: "Institut de Chasse Coopérative - Stratégies sophistiquées."
@@ -3877,7 +3877,7 @@ const quizzesData = {
             {
                 id: 28,
                 question: "Quel est le rôle de la 'kin selection' dans la structure familiale ?",
-                options: ["Aucun rôle", "Préférence pour proche parents améliore survie groupe", "Pas d'influence génétique", "Sélection aléatoire"],
+                options: ["Compétition entre femelles non apparentées pour les ressources alimentaires déstabilisant le groupe social", "Préférence pour proche parents améliore survie groupe", "Influence génétique limitée aux mâles dominants transmettant leurs gènes via l'accouplement préférentiel", "Sélection aléatoire des partenaires de chasse sans corrélation avec le degré de parenté entre femelles"],
                 correct: 1,
                 explanation: "La s\u00e9lection de parent\u00e8le explique la coop\u00e9ration dans les fiertés : les lionnes sont g\u00e9n\u00e9ralement des soeurs, cousines ou tantes. En aidant une proche parente \u00e0 \u00e9lever ses lionceaux, une femelle propage indirectement ses propres g\u00e8nes. Cette logique g\u00e9n\u00e9tique est la base de la soci\u00e9t\u00e9 matriliaire des lions : les femelles form\u00e9es d'un noyau de femelles apparent\u00e9es sont le pilier stable de toute fierté.",
                 source: "Université de Génétique Comportementale - Théorie hamiltonienne."
@@ -3885,7 +3885,7 @@ const quizzesData = {
             {
                 id: 29,
                 question: "Quel est le mécanisme de la 'leonine density' dans les écosystèmes ?",
-                options: ["Pas de densité", "Densité lions affecte structure écosystème proie", "Pas d'impact écologique", "Équilibre fixe"],
+                options: ["Présence des lions neutralisée par les comportements anti-prédateur des ongulés qui s'y adaptent rapidement", "Densité lions affecte structure écosystème proie", "Impact écologique limité aux proies directement chassées sans effet en cascade sur la végétation", "Équilibre prédateur-proie autorégulé par la disponibilité alimentaire sans effet sur la structure végétale"],
                 correct: 1,
                 explanation: "Les lions sont des pr\u00e9dateurs apex qui structurent leurs \u00e9cosyst\u00e8mes via des 'cascades trophiques'. En r\u00e9gulant les populations de grands herbivores (gnu, z\u00e8bre, buffle), ils maintiennent l'\u00e9quilibre de la v\u00e9g\u00e9tation. L\u00e0 o\u00f9 les lions ont \u00e9t\u00e9 \u00e9limin\u00e9s, les populations de proies explosent et sur-p\u00e2turent les plaines, modifiant profond\u00e9ment le paysage. Ce ph\u00e9nom\u00e8ne de 'peur du pr\u00e9dateur' influence m\u00eame les comportements alimentaires des proies.",
                 source: "Institut d'Écologie Trophique - Keystone predator."
@@ -3893,7 +3893,7 @@ const quizzesData = {
             {
                 id: 30,
                 question: "Quel est le processus du 'sperm competition' chez les lions ?",
-                options: ["Pas de compétition", "Compétition du sperme lors d'accouplements multiples", "Fécondation simple", "Pas de rivalité"],
+                options: ["Monopole de fécondation assuré par le mâle dominant empêchant physiquement les autres mâles d'approcher", "Compétition du sperme lors d'accouplements multiples", "Fécondation garantie dès le premier accouplement sans nécessité de copulations répétées avec le même mâle", "Rivalité limitée aux combats de territoire sans composante biochimique dans la compétition reproductrice"],
                 correct: 1,
                 explanation: "Chez les lions, plusieurs m\u00e2les d'une coalition s'accouplent avec les m\u00eames femelles, cr\u00e9ant une comp\u00e9tition entre spermatozo\u00efdes. L'accouplement est tr\u00e8s fr\u00e9quent (jusqu'\u00e0 100 fois en 24h pendant l'\u0153strus) mais dure seulement 20-30 secondes. Cette fr\u00e9quence extr\u00eame maximise les chances de conception. Les m\u00e2les \u00e0 crini\u00e8re plus sombre produisent davantage de spermatozo\u00efdes de meilleure qualit\u00e9, renfor\u00e7ant l'avantage reproducteur des individus en bonne condition.",
                 source: "Université de Biologie Reproductive - Reproduction polyandre."
@@ -4027,7 +4027,7 @@ const quizzesData = {
             {
                 id: 16,
                 question: "À quelle distance les aigles royaux migrent-ils généralement ?",
-                options: ["Non-migrateurs", "Jusqu'à 1000 km", "Jusqu'à 5000 km", "Pas de migration"],
+                options: ["Sédentaires toute l'année, défendant un même territoire de 50 à 200 km² sans déplacement saisonnier", "Jusqu'à 1000 km pour les juvéniles dispersant depuis les territoires parentaux trop encombrés", "Jusqu'à 5000 km pour certaines populations nordiques suivant les migrations de leurs proies préférées", "Déplacements uniquement altitudinaux de quelques dizaines de km entre l'été montagnard et l'hiver en plaine"],
                 correct: 0,
                 explanation: "L'aigle royal est principalement s\u00e9dentaire et territorial. Les adultes \u00e9tablis restent toute l'ann\u00e9e dans leur territoire de 50 \u00e0 200 km\u00b2. Seuls les jeunes, sans territoire \u00e9tabli, se d\u00e9placent sur de longues distances. Les populations nordiques (Scandinavie, Canada) peuvent effectuer des d\u00e9placements saisonniers vers le sud en hiver, mais la majorit\u00e9 des aigles royaux europ\u00e9ens sont r\u00e9sidents permanents de leur massif montagneux.",
                 source: "Centre de Zoologie Migratoire - Résidents généralement."
@@ -4077,7 +4077,7 @@ const quizzesData = {
             {
                 id: 12,
                 question: "Quel est le mécanisme de la parade aérienne nuptiale ?",
-                options: ["Pas de parade", "Piqués et loopings spectaculaires pour séduction", "Appels uniquement", "Contact physique"],
+                options: ["Offrandes alimentaires répétées permettant à la femelle d'évaluer les capacités de chasse du mâle", "Piqués et loopings spectaculaires pour séduction", "Démonstration de territoire par des survols prolongés à très basse altitude au-dessus du futur site de nid", "Chants mélodieux complexes émis depuis les points culminants du territoire pour attirer la femelle"],
                 correct: 1,
                 explanation: "La parade nuptiale de l'aigle royal est l'un des spectacles les plus impressionnants de la faune europ\u00e9enne. Les deux partenaires effectuent une s\u00e9rie de piqués vertigineux, loopings et remontées en chandelle au-dessus du territoire, parfois en se touchant les serres. Cette parade, appel\u00e9e 'sky dance' ou 'roller-coasting', peut durer plusieurs heures et se d\u00e9roule surtout de janvier \u00e0 mars, avant la ponte.",
                 source: "Institut d'Éthologie Reproductrice - Affichages élaborés."
@@ -4101,7 +4101,7 @@ const quizzesData = {
             {
                 id: 15,
                 question: "Quel est le rôle du 'kleptoparasitism' chez l'aigle royal ?",
-                options: ["Aucun rôle", "Vol de proies à d'autres rapaces", "Communication", "Territorialité"],
+                options: ["Technique de chasse coopérative où les deux partenaires rabattent les proies vers une zone commune", "Vol de proies à d'autres rapaces", "Signal de communication inter-individuel permettant la coordination des patrouilles territoriales", "Défense du territoire contre les grands rapaces concurrents par des démonstrations aériennes ostentatoires"],
                 correct: 1,
                 explanation: "Le klepto-parasitisme (vol de nourriture) est un comportement observ\u00e9 chez l'aigle royal, bien que moins fr\u00e9quent que chez l'aigle de mer. Il peut harceler des buses, des corneilles ou des faucons p\u00e8lerins jusqu'\u00e0 ce qu'ils l\u00e2chent leur proie. Ironiquement, l'aigle royal est lui-m\u00eame victime de klepto-parasitisme de la part de l'aigle de mer en Scandinavie, qui est plus grand et plus agressif.",
                 source: "Institut d'Éthologie Alimentaire - Stratégie prédatrice."
@@ -4150,7 +4150,7 @@ const quizzesData = {
             {
                 id: 21,
                 question: "Quel est le processus de l'imprinting chez les aigles royaux ?",
-                options: ["Pas d'imprinting", "Reconnaissance de la mère et du site par exposition précoce", "Apprentissage tardif", "Pas de lien"],
+                options: ["Mémorisation génétiquement encodée du site natal sans nécessité d'exposition sensorielle précoce", "Reconnaissance de la mère et du site par exposition précoce", "Apprentissage différé se produisant uniquement lors du premier retour de migration à l'âge adulte", "Association du site natal via l'odorat des plantes locales mémorisé pendant les premiers vols d'exploration"],
                 correct: 1,
                 explanation: "L'empreinte (imprinting) chez les aigles royaux se produit dans les premi\u00e8res semaines apr\u00e8s l'\u00e9closion. L'aiglon m\u00e9morise l'apparence de ses parents et les caract\u00e9ristiques de son site de nidification (paysage, odeurs, sons). Cette m\u00e9moire le guidera \u00e0 l'\u00e2ge adulte pour chercher un partenaire de la m\u00eame esp\u00e8ce et revenir se reproduire dans des habitats similaires. C'est pourquoi des aiglons \u00e9lev\u00e9s par l'humain ne peuvent g\u00e9n\u00e9ralement pas \u00eatre rel\u00e2ch\u00e9s.",
                 source: "Institut d'Éthologie Développementale - Lien précoce."
@@ -4166,7 +4166,7 @@ const quizzesData = {
             {
                 id: 23,
                 question: "Quel est le rôle du 'wing morphology' dans l'efficacité du vol ?",
-                options: ["Pas de rôle", "Ailes longues et larges permettent vol thermique efficace", "Vol uniquement actif", "Pas d'impact"],
+                options: ["Ailes étroites et pointues optimisant la vitesse lors des piqués de chasse en générant moins de résistance", "Ailes longues et larges permettent vol thermique efficace", "Surface alaire réduite concentrant la portance sur une petite zone pour les virages rapides en chasse", "Ailes asymétriques réduisant la résistance lors des virages serrés dans les terrains boisés montagneux"],
                 correct: 1,
                 explanation: "Les ailes de l'aigle royal ont une forme sp\u00e9cifiquement adapt\u00e9e au vol plané en montagne : longues (2,3 m d'envergure), larges avec des r\u00e9miges \u00e9mancip\u00e9es (primaires s\u00e9par\u00e9es comme des doigts) qui r\u00e9duisent les tourbillons en bout d'aile. Cette morphologie permet un ratio planée/descente exceptionnel. Les \u00e9mancipes fonctionnent comme des spoilers individuels r\u00e9glables, contr\u00f4l\u00e9s mus par mus par l'aigle pour ajuster finement sa trajectoire.",
                 source: "Institut de Biomécanique Aviaire - Design aérodynamique."
@@ -4190,7 +4190,7 @@ const quizzesData = {
             {
                 id: 26,
                 question: "Quel est le rôle de la 'prey specialization' pour le tigre ?",
-                options: ["Pas de spécialisation", "Préférence pour certaines proies augmente efficacité", "Accepte tout proies", "Pas de choix"],
+                options: ["Opportunisme alimentaire total sans préférence, chassant toute proie accessible quelle que soit l'espèce", "Préférence pour certaines proies augmente efficacité", "Sélection des proies les plus petites et les plus faciles à transporter vers le nid en altitude", "Alternance saisonnière stricte entre espèces de proies imposée par les cycles de disponibilité naturelle"],
                 correct: 1,
                 explanation: "L'aigle royal est un g\u00e9n\u00e9raliste adaptable, mais d\u00e9veloppe des sp\u00e9cialisations locales selon les proies disponibles. Dans les Alpes, il se sp\u00e9cialise sur la marmotte (jusqu'\u00e0 80% du r\u00e9gime \u00e9t\u00e9). Dans les Highlands \u00e9cossais, il cible le lagop\u00e8de et le li\u00e8vre variable. Cette sp\u00e9cialisation locale, transmise par apprentissage parental, lui permet de ma\u00eetriser des techniques de chasse sp\u00e9cifiques et d'am\u00e9liorer consid\u00e9rablement son taux de succ\u00e8s.",
                 source: "Institut d'Écologie Prédatrice - Adaptation alimentaire."
@@ -4214,7 +4214,7 @@ const quizzesData = {
             {
                 id: 29,
                 question: "Quel est le rôle du 'siblicide' dans la structure sociale ?",
-                options: ["Pas de fratricide", "Aîné tue cadet pour monopoliser ressources maternelles", "Fratrie harmonieuse", "Partage équitable"],
+                options: ["Compétition vocale où l'aiglonneau le plus bruyant reçoit plus de nourriture sans élimination physique", "Aîné tue cadet pour monopoliser ressources maternelles", "Coopération entre aiglonneaux partageant équitablement la nourriture apportée par les parents", "Différenciation des rôles entre aînés et cadets, ces derniers consommant les restes laissés par l'aîné"],
                 correct: 1,
                 explanation: "Le ca\u00efnisme (fratricide) est un comportement fr\u00e9quent chez l'aigle royal, observ\u00e9 dans plus de 50% des nid\u00e9es comportant deux \u0153ufs. L'a\u00een\u00e9, qui \u00e9clot 3-4 jours avant son fr\u00e8re, le domine d\u00e8s le d\u00e9but : il monopolise la nourriture apport\u00e9e par les parents et peut attaquer physiquement le cadet. La mort du cadet survient g\u00e9n\u00e9ralement par inanition dans les 2 premi\u00e8res semaines. Les parents n'interviennent pas.",
                 source: "Institut d'Éthologie Familiale - Compétition intense."
@@ -4232,7 +4232,7 @@ const quizzesData = {
             {
                 id: 21,
                 question: "Quel est le mécanisme de la 'thermal soaring' utilisé par l'aigle royal ?",
-                options: ["Pas de thermals", "Utilisation de courants d'air chaud pour économiser énergie", "Vol actif seulement", "Pas de stratégie"],
+                options: ["Vol en rase-mottes le long des versants exposés pour bénéficier de l'effet de sol porteur", "Utilisation de courants d'air chaud pour économiser énergie", "Vol battu continu uniquement, les grands rapaces manquant de sensibilité aux variations thermiques verticales", "Exploitation des vents forts en altitude pour maintenir une vitesse élevée sans dépense énergétique musculaire"],
                 correct: 1,
                 explanation: "Le 'thermal soaring' est la technique de locomotion signature de l'aigle royal. Il localise les colonnes d'air chaud ascendant (thermiques) cr\u00e9\u00e9es par le soleil chauffant les versants rocheux, puis y entre en cercles serr\u00e9s pour s'\u00e9lever sans battre des ailes. Une fois \u00e0 altitude, il planie vers un nouveau thermique ou fonçe sur une proie. Ce syst\u00e8me lui permet de parcourir 100 km/jour en d\u00e9pensant \u00e0 peine plus d'\u00e9nergie que d'habitude.",
                 source: "Institut d'Aérodynamique Aviaire - Efficacité énergétique."
@@ -4240,7 +4240,7 @@ const quizzesData = {
             {
                 id: 22,
                 question: "Quel est le processus de la 'monogamie à vie' chez les aigles royaux ?",
-                options: ["Pas de monogamie", "Couples restent ensemble plusieurs années reproductives", "Changement annuel", "Polygamie"],
+                options: ["Promiscuité saisonnière avec remplacement du partenaire après chaque saison de reproduction réussie", "Couples restent ensemble plusieurs années reproductives", "Remplacement annuel du partenaire le moins performant par un individu plus compétent du voisinage", "Polygynie saisonnière où le mâle défend plusieurs femelles sur des territoires adjacents simultanément"],
                 correct: 1,
                 explanation: "L'aigle royal est monogame et les couples restent en g\u00e9n\u00e9ral unis pour la vie, souvent 10 \u00e0 20 ans. Ils ne se s\u00e9parent qu'en cas de d\u00e9c\u00e8s d'un partenaire ou d'\u00e9checs reproducteurs r\u00e9p\u00e9t\u00e9s. Cette fid\u00e9lit\u00e9 est avant tout une strat\u00e9gie \u00e9volutive : les couples exp\u00e9riment\u00e9s qui connaissent leur territoire et se coordonnent parfaitement ont un succ\u00e8s reproducteur bien sup\u00e9rieur aux nouveaux couples. L'amour n'y est pour rien \u2014 c'est de l'efficacit\u00e9 darwinienne.",
                 source: "Université de Biologie Reproductive - Liens durables."
@@ -4248,7 +4248,7 @@ const quizzesData = {
             {
                 id: 23,
                 question: "Quel est le rôle du 'Cainism' (fratricide) chez les aigles royaux ?",
-                options: ["Pas de fratricide", "Aîné tue cadet pour monopoliser nourriture", "Pas de compétition", "Partage équitable"],
+                options: ["Compétition vocale où l'aiglonneau le plus bruyant accapare la nourriture sans agression physique directe", "Aîné tue cadet pour monopoliser nourriture", "Différenciation des rôles permettant à chaque aiglonneau d'exploiter une ressource alimentaire distincte", "Partage équitable régulé par les parents qui surveillent l'apport et redistributent en cas d'inégalité"],
                 correct: 1,
                 explanation: "Le ca\u00efnisme est un ph\u00e9nom\u00e8ne adaptatif : les parents pondent deux \u0153ufs comme 'assurance' en cas de mort du premier \u0153uf ou de l'a\u00een\u00e9 en bas \u00e2ge. Une fois l'a\u00een\u00e9 bien \u00e9tabli, le cadet devient superflu. Les ressources alimentaires des Alpes ne permettent g\u00e9n\u00e9ralement pas d'\u00e9lever deux aiglons simultan\u00e9ment. Ce sacrifice programm\u00e9 du cadet est donc une strat\u00e9gie reproductrice efficace qui maximise le succ\u00e8s de l'a\u00een\u00e9.",
                 source: "Institut d'Éthologie Familiale - Compétition sibling."
@@ -4264,7 +4264,7 @@ const quizzesData = {
             {
                 id: 25,
                 question: "Quel est le processus de territorialité chez les aigles royaux ?",
-                options: ["Pas de territorialité", "Défense active du territoire par actes aériens", "Passive", "Pas de défense"],
+                options: ["Tolérance des intrus tant qu'ils ne s'approchent pas du site de nidification actif pendant la saison", "Défense active du territoire par actes aériens", "Délimitation par dépôt de fientes sur les rochers marquant les limites sans confrontation directe", "Abandon du territoire à tout concurrent plus grand sans résistance pour éviter les blessures mortelles"],
                 correct: 1,
                 explanation: "La territorialit\u00e9 de l'aigle royal est multimodale. La d\u00e9fense primaire est a\u00e9rienne : les r\u00e9sidents d\u00e9collent \u00e0 vue d'un intrus et le pourchassent en piqués mena\u00e7ants jusqu'\u00e0 la fronti\u00e8re du territoire. Les survols r\u00e9guliers ('boundary patrols') servent \u00e0 surveiller et afficher la possession. Les cris et les parrades au-dessus du nid signalent l'occupation. Les confrontations physiques sont rares mais peuvent causer des blessures graves.",
                 source: "Institut d'Éthologie Territoriale - Démonstration élaborée."
@@ -4272,7 +4272,7 @@ const quizzesData = {
             {
                 id: 26,
                 question: "Quel est le rôle du 'nesting site fidelity' ?",
-                options: ["Pas de fidelité", "Réutilisation du même nid pendant plusieurs années", "Nouveau nid chaque année", "Pas de préférence"],
+                options: ["Construction d'un nouveau nid chaque saison, l'ancien étant abandonné après les parasites accumulés", "Réutilisation du même nid pendant plusieurs années", "Alternance entre deux nids sur le même territoire en rotation annuelle pour éviter les parasites", "Utilisation du nid de la saison précédente uniquement si la reproduction a été couronnée de succès"],
                 correct: 1,
                 explanation: "La fid\u00e9lit\u00e9 au site de nidification est quasi-absolue chez l'aigle royal. Des aires sont utilis\u00e9es depuis des d\u00e9cennies, voire des si\u00e8cles, par des g\u00e9n\u00e9rations successives. Le couple agrandit son aire \u00e0 chaque saison en apportant de nouvelles branches et verdure fra\u00eeche (qui a des propri\u00e9t\u00e9s antiparasitaires). Cette fid\u00e9lit\u00e9 r\u00e9duit le co\u00fbt \u00e9nerg\u00e9tique li\u00e9 \u00e0 la recherche d'un nouveau site et garantit l'utilisation des meilleurs emplacements.",
                 source: "Institut d'Écologie Reproductive - Nids traditionnels."
@@ -4280,7 +4280,7 @@ const quizzesData = {
             {
                 id: 27,
                 question: "Quel est le mécanisme du 'inverse sexual size dimorphism' ?",
-                options: ["Pas de dimorphisme", "Femelles plus grandes pour rôle reproducteur", "Mâles plus grands", "Identiques"],
+                options: ["Taille identique entre mâles et femelles, le dimorphisme étant uniquement visible dans la coloration du plumage", "Femelles plus grandes pour rôle reproducteur", "Mâles significativement plus grands avec une envergure supérieure de 20% pour les combats territoriaux", "Dimorphisme inversé selon les saisons, les femelles dominant en été et les mâles en hiver"],
                 correct: 1,
                 explanation: "Le dimorphisme sexuel invers\u00e9 (femelle 25-30% plus grande) chez les rapaces est expliqu\u00e9 par plusieurs th\u00e9ories. La principale : les femelles plus grandes supportent mieux le je\u00fbne lors de l'incubation (3-6 semaines sur le nid). Une autre : la diff\u00e9rence de taille r\u00e9duit la comp\u00e9tition alimentaire entre partenaires, leur permettant de chasser des proies de tailles diff\u00e9rentes. La femelle \u00e9tant plus grande peut aussi mieux d\u00e9fendre le nid et les jeunes contre les pr\u00e9dateurs.",
                 source: "Université de Zoologie Comparative - Évolution adaptative."
@@ -4288,7 +4288,7 @@ const quizzesData = {
             {
                 id: 28,
                 question: "Quel est le processus de la 'philopatry' chez les jeunes aigles ?",
-                options: ["Pas de philopatry", "Tendance à retourner au site natal pour reproduction", "Errance constante", "Absence de retour"],
+                options: ["Dispersion systématique loin du site natal pour éviter la consanguinité et coloniser de nouveaux territoires", "Tendance à retourner au site natal pour reproduction", "Errance continue sans site préférentiel, le choix de nidification étant dicté uniquement par la disponibilité", "Retour au site natal uniquement en cas d'échec reproducteur ailleurs, servant de territoire de repli"],
                 correct: 1,
                 explanation: "La philopatrie natale de l'aigle royal est tr\u00e8s prononc\u00e9e, surtout chez les femelles. Des \u00e9tudes de baguage ont montr\u00e9 que de nombreux jeunes \u00e9tablis leur territoire \u00e0 quelques kilom\u00e8tres seulement de leur lieu de naissance. Les m\u00e2les se dispersent un peu plus loin. Ce comportement favorise l'adaptation locale : les aigles \u00e9lev\u00e9s dans les Alpes connaissent instinctivement et par apprentissage les ressources sp\u00e9cifiques de cet environnement.",
                 source: "Institut d'Écologie Comportementale - Retour au bercail."
@@ -4296,7 +4296,7 @@ const quizzesData = {
             {
                 id: 29,
                 question: "Quel est le rôle des 'cliff ledges' dans la nidification ?",
-                options: ["Aucun rôle", "Protection des nids contre prédateurs et intempéries", "Isolation thermique", "Signal visuel"],
+                options: ["Régulation de l'humidité interne du nid par absorption ou restitution hydrique selon les conditions météo", "Protection des nids contre prédateurs et intempéries", "Isolation thermique supplémentaire par emprisonnement d'une couche d'air dans les branchages accumulés", "Signal visuel indiquant aux prédateurs potentiels la taille et la dangerosité du propriétaire du nid"],
                 correct: 1,
                 explanation: "Les vires de falaises sont l'habitat de nidification id\u00e9al de l'aigle royal. Ces corniches naturelles offrent une protection contre les pr\u00e9dateurs terrestres (renard, martre, ours) qui ne peuvent pas les atteindre. La roche surplombante prot\u00e8ge du vent, de la pluie et de la neige. La hauteur (souvent 100-500 m\u00e8tres au-dessus du sol) facilite aussi le d\u00e9collage. Ces sites exceptionnels sont utilis\u00e9s pendant des g\u00e9n\u00e9rations car ils sont extr\u00eamement rares.",
                 source: "Institut d'Écologie Nidification - Choix de site critique."
@@ -4312,7 +4312,7 @@ const quizzesData = {
             {
                 id: 31,
                 question: "Quel est le processus de l'établissement du territoire chez les jeunes ?",
-                options: ["Pas d'établissement", "Compétition pour sites de nidification disponibles", "Territoire donné par parents", "Pas de territorialité"],
+                options: ["Héritage du territoire parental dès que les parents atteignent une taille critique insuffisante pour défendre", "Compétition pour sites de nidification disponibles", "Attribution par consensus entre individus matures sans confrontation physique directe", "Colonisation aléatoire des zones non défendues sans évaluation préalable de la qualité du site"],
                 correct: 1,
                 explanation: "Les jeunes aigles royaux sans territoire errent sur de vastes zones, parfois 500 \u00e0 1 000 km de leur lieu de naissance. Ils recherchent des espaces libres o\u00f9 les adultes sont absents. L'\u00e9tablissement du territoire passe par des p\u00e9riodes de prospection intensive, de confrontations avec les r\u00e9sidents et parfois d'attente que des adultes meurent ou abandonnent. Dans les populations bien \u00e9tablies, il peut falloir plusieurs ann\u00e9es avant de trouver un territoire disponible.",
                 source: "Institut d'Éthologie Territoriale - Compétition intense."
@@ -4320,7 +4320,7 @@ const quizzesData = {
             {
                 id: 32,
                 question: "Quel est le rôle du 'dynamic soaring' dans l'efficacité énergétique ?",
-                options: ["Pas de soaring", "Utilisation de gradients de vent pour vol sans effort", "Vol actif seulement", "Pas d'efficacité"],
+                options: ["Exploitation des vents de versant en volant au ras des crêtes rocheuses pour maintenir l'altitude sans effort", "Utilisation de gradients de vent pour vol sans effort", "Vol battu continu avec période de glissé planifié permettant de récupérer entre deux phases de propulsion", "Utilisation des courants d'air froids descendants pour accélérer lors des descentes vers les proies"],
                 correct: 1,
                 explanation: "Le 'dynamic soaring' est une technique de vol utilis\u00e9e par l'aigle royal dans les environnements montagneux \u00e0 fort vent. Il exploite les gradients de vitesse du vent (plus fort en altitude, plus faible pr\u00e8s du sol) pour acc\u00e9l\u00e9rer sans battre des ailes : monter face au vent (qui le propulse vers le haut), se retourner avec le vent dans le dos (qui l'acc\u00e9l\u00e8re), puis redescendre. Les albatros sont les champions de cette technique mais l'aigle royal en ma\u00eetrise une version adapt\u00e9e aux reliefs.",
                 source: "Institut d'Aérodynamique - Technique de vol extrême."
@@ -4336,7 +4336,7 @@ const quizzesData = {
             {
                 id: 34,
                 question: "Quel est le mécanisme du 'mate guarding' chez les aigles royaux ?",
-                options: ["Pas de guarding", "Proximité constante du couple lors de reproduction", "Liberté complète", "Pas de vigilance"],
+                options: ["Séparation des territoires de chasse des deux partenaires pour maximiser la surface couverte sans compétition", "Proximité constante du couple lors de reproduction", "Indépendance totale des deux partenaires pendant la période de couvaison pour optimiser la recherche de nourriture", "Surveillance du périmètre par le seul mâle pendant que la femelle couve en permanence sans jamais quitter les œufs"],
                 correct: 1,
                 explanation: "Le 'mate guarding' chez l'aigle royal est subtil. Le m\u00e2le surveille sa partenaire surtout en p\u00e9riode f\u00e9conde (avant la ponte), restant \u00e0 proximit\u00e9 et pourchassant les m\u00e2les intrus. Mais la vraie protection est territoriale : en maintenant un territoire exclusif bien d\u00e9fendu, le couple s'assure qu'aucun m\u00e2le \u00e9tranger ne peut approcher la femelle. La fid\u00e9lit\u00e9 \u00e0 long terme du couple r\u00e9duit aussi le risque d'infid\u00e9lit\u00e9 extraconjugale.",
                 source: "Université de Biologie Reproductive - Stratégie paternelle."
@@ -4368,7 +4368,7 @@ const quizzesData = {
             {
                 id: 38,
                 question: "Quel est le rôle du 'reverse sexual dimorphism' dans la reproduction ?",
-                options: ["Aucun rôle", "Femelles plus grandes pour ponte et protection des jeunes", "Mâles plus grands", "Pas de dimorphisme"],
+                options: ["Avantage à la taille équivalente entre les sexes, les rôles de chasse étant partagés sans spécialisation", "Femelles plus grandes pour ponte et protection des jeunes", "Mâles légèrement plus grands avec une longueur d'aile supérieure de 5% leur conférant une plus grande portée", "Dimorphisme uniquement comportemental, les deux sexes ayant des morphologies strictement identiques"],
                 correct: 1,
                 explanation: "Le dimorphisme sexuel invers\u00e9 de l'aigle royal (femelle 25-33% plus lourde) divise encore les biologistes. Plusieurs facteurs y contribuent : la femelle passe de longues p\u00e9riodes sur le nid \u00e0 je\u00fbner (r\u00e9serves \u00e9nerg\u00e9tiques n\u00e9cessaires), elle d\u00e9fend les aiglons contre les intrus (taille intimidante), et la diff\u00e9rence de taille r\u00e9duit la comp\u00e9tition intrasexuelle pour les proies. Le m\u00e2le, plus petit et plus agile, est sp\u00e9cialis\u00e9 dans la capture de proies rapides.",
                 source: "Université d'Évolution - Sélection naturelle."
@@ -4384,7 +4384,7 @@ const quizzesData = {
             {
                 id: 40,
                 question: "À quel degré de complexité cognitive les aigles royaux opèrent-ils ?",
-                options: ["Bas niveau", "Moyen avec reconnaissance et mémoire spatiale avancée", "Hautement primitif", "Pas de cognition"],
+                options: ["Niveau purement instinctif sans capacité d'apprentissage individuel au-delà des comportements génétiques", "Moyen avec reconnaissance et mémoire spatiale avancée", "Très bas comparé aux corvides, les rapaces étant limités aux comportements de chasse stéréotypés", "Cognition exclusive liée à la chasse sans capacité de résolution de problèmes en dehors du contexte prédatoire"],
                 correct: 1,
                 explanation: "La cognition de l'aigle royal est plus d\u00e9velopp\u00e9e qu'on ne le pensait. Des \u00e9tudes r\u00e9v\u00e8lent une m\u00e9moire spatiale exceptionnelle (il m\u00e9morise les sites de chasse productifs et les comportements des proies), une capacit\u00e9 de planification (il anticipe les trajets migratoires de ses proies) et m\u00eame une certaine flexibilit\u00e9 comportementale. Au Kazakhstan, des aigles royaux dress\u00e9s par des fauconniers executent des t\u00e2ches complexes, d\u00e9montrant des capacit\u00e9s d'apprentissage comparables \u00e0 celles des corvid\u00e9s.",
                 source: "Université de Neuroscience Aviaire - Cerveau développé."
@@ -4494,7 +4494,7 @@ const quizzesData = {
             {
                 id: 13,
                 question: "À quelle heure du jour le tigre chasse-t-il préférentiellement ?",
-                options: ["Matin", "Midi", "Soir et nuit", "Pas de préférence"],
+                options: ["Tôt le matin juste après l'aube quand les proies reprennent leur activité et leur vigilance est réduite", "En milieu de journée profitant de la somnolence des proies épuisées par la chaleur équatoriale intense", "Soir et nuit", "En fin d'après-midi lors du pic d'activité des herbivores se rendant aux points d'eau pour boire"],
                 correct: 2,
                 explanation: "Le tigre est un chasseur principalement cr\u00e9pusculaire et nocturne. Il chasse surtout entre le coucher et le lever du soleil, profitant de son excellente vision dans l'obscurit\u00e9 pour avoir un avantage sur ses proies. Pendant la journ\u00e9e, il se repose \u00e0 l'ombre pour \u00e9viter la chaleur. Dans les zones fr\u00e9quent\u00e9es par l'humain, il adapte son comportement pour devenir encore plus nocturne.",
                 source: "Centre de Comportement Félin - Chasseur crépusculaire."
@@ -4542,7 +4542,7 @@ const quizzesData = {
             {
                 id: 19,
                 question: "Quel est le nom de la zone blanche sur la nuque du tigre ?",
-                options: ["Pas de zone spéciale", "Spot blanc ou 'eyespot'", "Marque royale", "Plaque occipitale"],
+                options: ["Cerné oculaire noir accentué visible chez tous les félins sauvages comme marqueur taxonomique", "Spot blanc ou 'eyespot'", "Plaque de poils blancs plus denses formant un miroir réfléchissant les signaux lumineux", "Anneau dépigmenté entourant la pupille réduisant l'éblouissement lors de la chasse en plein soleil"],
                 correct: 1,
                 explanation: "Les taches blanches sur la face post\u00e9rieure des oreilles du tigre sont un signal de communication fascinant. Quand une tigresse retourne les oreilles vers ses petits (comme pour dire 'suivez-moi'), les taches blanches deviennent visibles de loin dans la for\u00eat sombre, agissant comme des balises visuelles. Chez certains individus, ces 'ocelles' peuvent aussi imiter des yeux pour d\u00e9tourner l'attention d'\u00e9ventuels pr\u00e9dateurs arri\u00e8re.",
                 source: "Institut d'Anatomie Féline - Marqueur distinctif."
@@ -4584,7 +4584,7 @@ const quizzesData = {
             {
                 id: 14,
                 question: "Quel est le rôle de la marque blanche sur la nuque du tigre ?",
-                options: ["Aucun rôle", "Signal de soumission et non-agression", "Camouflage", "Attraction sexuelle"],
+                options: ["Communication de statut dominant lors des rencontres agonistiques entre mâles de force comparable", "Signal de soumission et non-agression", "Amélioration du camouflage lors des affûts nocturnes dans les zones à végétation clairsemée", "Attraction des femelles en période d'œstrus grâce à la réflectance de la zone blanche sous lumière UV"],
                 correct: 1,
                 explanation: "Les taches blanches sur la face post\u00e9rieure des oreilles du tigre jouent plusieurs r\u00f4les sociaux. Pendant la chasse, la tigresse retourne ses oreilles pour montrer ces taches \u00e0 ses petits qui la suivent dans la v\u00e9g\u00e9tation dense \u2014 signal de 'suivez-moi'. Elles peuvent aussi servir dans les interactions entre adultes pour signaler l'\u00e9tat \u00e9motionnel : oreilles couchs\u00e9es vers l'arri\u00e8re signalent l'agression, dress\u00e9es signalent l'attention.",
                 source: "Institut d'Éthologie - Marqueur communaux."
@@ -4688,7 +4688,7 @@ const quizzesData = {
             {
                 id: 27,
                 question: "À quel moment du cycle reproductif la femelle tigre accepte-t-elle l'accouplement ?",
-                options: ["N'importe quand", "Pendant les chaleurs/estrus", "Pendant la gestation", "Jamais"],
+                options: ["À n'importe quel moment de l'année car les tigresses n'ont pas de cycle saisonnier défini", "Pendant les chaleurs/estrus", "Pendant la période post-partum des 3 premiers mois suivant la mise bas des chatons", "Exclusivement lors des saisons sèches quand la concentration autour des points d'eau facilite les rencontres"],
                 correct: 1,
                 explanation: "La femelle tigre n'accepte le m\u00e2le que pendant sa courte p\u00e9riode d'\u0153strus (3 \u00e0 7 jours). Elle signale sa r\u00e9ceptivit\u00e9 par des vocalises sp\u00e9cifiques et des marquages chimiques intenses. L'accouplement est fr\u00e9quent (toutes les 15-20 minutes) mais tr\u00e8s bref (15-30 secondes). Le m\u00e2le peut s'accoupler avec plusieurs femelles de son territoire, mais il ne participe pas \u00e0 l'\u00e9levage des petits.",
                 source: "Institut de Reproduction - Cycle oestral."
@@ -4722,7 +4722,7 @@ const quizzesData = {
             {
                 id: 21,
                 question: "Quel est le mécanisme de la 'flanking strategy' chez le tigre ?",
-                options: ["Pas de stratégie", "Approche latérale progressive en camouflage avant attaque", "Attaque directe", "Pas de plan"],
+                options: ["Poursuite à grande vitesse démarrant à plus de 200 mètres de la proie pour l'épuiser par la course", "Approche latérale progressive en camouflage avant attaque", "Attaque frontale directe depuis une position élevée exploitant l'effet de surprise gravitationnel", "Encerclement progressif de la proie en décrivant des cercles concentriques rétrécissant sur plusieurs heures"],
                 correct: 1,
                 explanation: "La strat\u00e9gie de flanquement du tigre consiste \u00e0 contourner silencieusement la proie pour se positionner \u00e0 l'angle mort de sa vision p\u00e9riph\u00e9rique. Il utilise la v\u00e9g\u00e9tation comme couverture, avance \u00e0 peine et attend que la proie soit \u00e0 sa port\u00e9e optimale (5-10 m\u00e8tres). Cette approche peut prendre plusieurs dizaines de minutes. Des \u00e9tudes montrent que les tigres m\u00e9morisent les comportements de leurs proies habituelles pour pr\u00e9voir leurs r\u00e9actions.",
                 source: "Institut de Chasse Stratégique - Prédation élaborée."
@@ -4738,7 +4738,7 @@ const quizzesData = {
             {
                 id: 23,
                 question: "Quel est le processus de la 'territorial scent marking' ?",
-                options: ["Pas de marquage", "Urine et sécrétion glandulaires marquent limites territoire", "Communication vocale uniquement", "Pas de délimitation"],
+                options: ["Griffades sur les troncs d'arbres uniquement, sans recours aux marquages olfactifs chimiques", "Urine et sécrétion glandulaires marquent limites territoire", "Communication vocale par rugissements délimitant le territoire sans dépôt de marqueurs chimiques", "Patrouilles visuelles quotidiennes sans laisser de traces permettant aux intrus d'identifier le propriétaire"],
                 correct: 1,
                 explanation: "Le marquage olfactif du tigre est un syst\u00e8me de communication chimique sophistiqu\u00e9. Il asperge de l'urine m\u00e9lang\u00e9e \u00e0 des s\u00e9cr\u00e9tions des glandes anales sur des arbres et rochers \u00e0 hauteur de museau. Ces marques contiennent des informations sur l'identit\u00e9, le sexe, l'\u00e2ge et l'\u00e9tat reproducteur de l'individu. Un autre tigre peut ainsi savoir \u00e0 combien de temps la zone a \u00e9t\u00e9 visit\u00e9e et \u00e9viter ou rechercher le contact.",
                 source: "Institut d'Éthologie Chimique - Communication olfactive."
@@ -4746,7 +4746,7 @@ const quizzesData = {
             {
                 id: 24,
                 question: "Quel est le mécanisme de la 'nocturnal hunting preference' ?",
-                options: ["Chasse diurne uniquement", "Chasse préférentiellement la nuit pour avantage sensoriel", "Pas de préférence", "Strictement diurne"],
+                options: ["Chasse exclusivement à l'aube et au crépuscule lors des transitions lumineuses pour maximiser la surprise", "Chasse préférentiellement la nuit pour avantage sensoriel", "Alternance stricte chasse/repos toutes les 12 heures indépendamment des conditions lumineuses", "Chasse uniquement en pleine journée quand les proies sont actives et détectables à grande distance"],
                 correct: 1,
                 explanation: "La pr\u00e9f\u00e9rence nocturne du tigre est li\u00e9e \u00e0 son avantage sensoriel dans l'obscurit\u00e9. Sa vision nocturne est 6 fois sup\u00e9rieure \u00e0 celle de l'humain gr\u00e2ce au tapetum lucidum. La nuit r\u00e9duit aussi la chaleur (important dans les r\u00e9gions tropicales) et augmente l'activit\u00e9 de ses proies nocturnales (cerfs axis, sangliers). Dans les r\u00e9gions \u00e0 forte pr\u00e9sence humaine, les tigres deviennent encore plus strictement nocturnes pour \u00e9viter les conflits.",
                 source: "Institut d'Éthologie Temporelle - Adaptation lumineuse."
@@ -4754,7 +4754,7 @@ const quizzesData = {
             {
                 id: 25,
                 question: "Quel est le rôle du 'allomothering' chez les femelles tigres ?",
-                options: ["Pas de comportement", "Femelles non-mères aident à l'élevage des jeunes", "Infanticide", "Pas d'interaction"],
+                options: ["Mères tigresses partageant leur territoire de chasse et leurs proies avec d'autres femelles en lactation", "Femelles non-mères aident à l'élevage des jeunes", "Infanticide systématique des petits des femelles voisines pour réduire la compétition territoriale future", "Enseignement des techniques de chasse aux jeunes d'autres femelles pendant les périodes de dispersion"],
                 correct: 1,
                 explanation: "Bien que les tigres soient g\u00e9n\u00e9ralement solitaires, des comportements d'allomothering ont \u00e9t\u00e9 observ\u00e9s dans de rares cas. Des femelles sans petits ont \u00e9t\u00e9 vues gardant des tigreaux orphelins ou aidant une femelle bless\u00e9e \u00e0 nourrir ses petits. Ce comportement, rare mais document\u00e9, sugg\u00e8re que les f\u00e9lid\u00e9s solitaires conservent une capacit\u00e9 de coop\u00e9ration sociale qui peut \u00eatre activ\u00e9e dans des circonstances exceptionnelles.",
                 source: "Université d'Éthologie Familiale - Comportement social."
@@ -4762,7 +4762,7 @@ const quizzesData = {
             {
                 id: 26,
                 question: "Quel est le mécanisme de la 'mustelid-like climbing' chez le tigre ?",
-                options: ["Pas de grimpe", "Capacité à grimper aux arbres contrairement aux autres félidés", "Lent", "Dangereux"],
+                options: ["Incapacité totale à grimper aux arbres due au poids excessif et aux griffes semi-rétractiles peu acérées", "Capacité à grimper aux arbres contrairement aux autres félidés", "Montée en arbre lente et laborieuse réservée uniquement aux situations d'urgence face aux prédateurs", "Comportement dangereux pour l'animal car la descente est impossible une fois en hauteur"],
                 correct: 1,
                 explanation: "Les tigres sont de bons grimpeurs, surtout les jeunes et les individus l\u00e9gers. Ils utilisent les arbres pour surveiller leur territoire, cacher des carcasses hors de port\u00e9e des charognards et, pour les tigreaux, \u00e9chapper aux pr\u00e9dateurs. Les adultes, trop lourds pour grimper facilement, pr\u00e9f\u00e8rent les rochers comme points d'observation. Leur morphologie les rend moins agiles en hauteur que les l\u00e9opards, qui hissent syst\u00e9matiquement leurs proies dans les arbres.",
                 source: "Institut de Biomécanique - Adaptation arboricole."
@@ -4770,7 +4770,7 @@ const quizzesData = {
             {
                 id: 27,
                 question: "Quel est le processus de la 'inbreeding avoidance' chez les tigres ?",
-                options: ["Pas d'évitement", "Jeunes tigres dispersent loin du territoire parental", "Pas de stratégie", "Reproduction aléatoire"],
+                options: ["Tolérance de la présence des jeunes adultes sur le territoire parental jusqu'à l'âge de 5 ans révolus", "Jeunes tigres dispersent loin du territoire parental", "Héritage partiel du territoire parental par le premier jeune à atteindre la maturité reproductive", "Reproduction indifférente à la proximité génétique, régulée uniquement par la disponibilité des partenaires"],
                 correct: 1,
                 explanation: "L'\u00e9vitement de la consanguinit\u00e9 chez le tigre est assur\u00e9 par la dispersion des jeunes, particuli\u00e8rement les m\u00e2les qui s'\u00e9loignent consid\u00e9rablement de leur territoire natal. Des tigres marqu\u00e9s ont \u00e9t\u00e9 suivis sur plus de 300 km depuis leur lieu de naissance. Cette dispersion garantit un brassage g\u00e9n\u00e9tique crucial pour la vitalit\u00e9 de l'esp\u00e8ce. Dans les fragments d'habitat isol\u00e9s, l'impossibilit\u00e9 de disperser est l'une des causes de d\u00e9clin g\u00e9n\u00e9tique.",
                 source: "Université de Génétique Comportementale - Stratégie génétique."
@@ -4778,7 +4778,7 @@ const quizzesData = {
             {
                 id: 28,
                 question: "Quel est le rôle du 'surplus killing' chez le tigre ?",
-                options: ["Pas de surplus", "Chasse excessivement au-delà des besoins nutritionnels", "Gaspillage", "Régulation"],
+                options: ["Chasse strictement proportionnelle aux besoins caloriques journaliers sans aucun stockage de proies", "Chasse excessivement au-delà des besoins nutritionnels", "Gaspillage involontaire dû à une incapacité à évaluer la quantité de nourriture nécessaire avant la chasse", "Auto-régulation instinctive empêchant toute chasse superflue une fois la ration quotidienne atteinte"],
                 correct: 1,
                 explanation: "Le 'surplus killing' \u2014 tuer plus de proies qu'on ne peut en consommer \u2014 est observ\u00e9 chez les tigres dans certaines conditions, notamment quand les proies sont exceptionnellement vuln\u00e9rables (troupeaux bloqu\u00e9s, jeunes animaux, b\u00e9tail dans un enclos). Ce comportement, souvent class\u00e9 \u00e0 tort comme 'irrationnel', peut \u00eatre une strat\u00e9gie \u00e9volutivement avantageuse : stocker de l'\u00e9nergie en tuant quand l'opportunit\u00e9 se pr\u00e9sente, en pr\u00e9vision de p\u00e9riodes de disette.",
                 source: "Institut d'Éthologie Prédatrice - Comportement complexe."
@@ -4786,7 +4786,7 @@ const quizzesData = {
             {
                 id: 29,
                 question: "Quel est le mécanisme de la 'cryptic coloration' additionnelle ?",
-                options: ["Pas de mécanisme", "Rayures + teinte permettent fusion avec environnement", "Couleur unique", "Pas d'efficacité"],
+                options: ["Couleur orange du pelage servant de signal d'avertissement aux proies comme chez les insectes aposématiques", "Rayures + teinte permettent fusion avec environnement", "Teinte uniforme sans rayures visible uniquement dans les zones densément boisées à faible luminosité", "Camouflage exclusivement efficace sous lumière UV invisible à l'œil humain mais pas à celui des proies"],
                 correct: 1,
                 explanation: "La coloration cryptique du tigre fonctionne \u00e0 plusieurs niveaux. Les rayures brisent la silhouette (disruptive coloration). La teinte orange-roux, invisible pour les cerfs daltoniens (qui voient l'orange comme du vert-gris), fusionne avec la v\u00e9g\u00e9tation tropicale. Le ventre blanc r\u00e9duit l'ombre port\u00e9e (contershading). Ensemble, ces \u00e9l\u00e9ments rendent un tigre de 200 kg quasi invisible \u00e0 5 m\u00e8tres dans son habitat naturel.",
                 source: "Institut d'Écologie Camouflage - Multimécanisme."
@@ -4794,7 +4794,7 @@ const quizzesData = {
             {
                 id: 30,
                 question: "Quel est le processus de l'impact de la 'island populations' sur la génétique ?",
-                options: ["Pas d'impact", "Petites populations isolées créent dépression génétique", "Amélioration génétique", "Pas de changement"],
+                options: ["Adaptation rapide des petites populations isolées par dérive génétique créant de nouvelles sous-espèces adaptées", "Petites populations isolées créent dépression génétique", "Amélioration génétique par sélection naturelle intensive éliminant les individus porteurs de gènes délétères", "Stabilité génétique maintenue par les comportements de dispersion des jeunes mâles entre territoires isolés"],
                 correct: 1,
                 explanation: "La fragmentation des habitats isole les populations de tigres, emp\u00eachant les \u00e9changes g\u00e9n\u00e9tiques. Des populations de moins de 25 individus entrent dans une spirale de d\u00e9pression consanguine : accumulation de mutations d\u00e9l\u00e9t\u00e8res, r\u00e9duction de la fertilit\u00e9 et de la r\u00e9sistance aux maladies. Le tigre de Sumatra est un exemple critique, avec seulement ~400 individus r\u00e9partis en groupes isol\u00e9s. Des corridors \u00e9cologiques entre r\u00e9serves sont essentiels pour contrer ce ph\u00e9nom\u00e8ne.",
                 source: "Université de Biologie Évolutive - Conservation critique."
@@ -4802,7 +4802,7 @@ const quizzesData = {
             {
                 id: 31,
                 question: "Quel est le mécanisme de la 'stalk-and-ambush' predation ?",
-                options: ["Pas de stratégie", "Approche silencieuse puis attaque surprise", "Poursuite directe", "Pas de plan"],
+                options: ["Poursuite à vitesse maximale sur longue distance compensant le manque d'élément surprise", "Approche silencieuse puis attaque surprise", "Attaque frontale directe après vocalisation d'intimidation paralysant momentanément la proie de surprise", "Encerclement par deux individus coopérant malgré la solitarité connue du tigre en dehors de la famille"],
                 correct: 1,
                 explanation: "La chasse \u00e0 l'affût du tigre est un mod\u00e8le d'efficacit\u00e9 \u00e9nerg\u00e9tique. Il localise les proies \u00e0 l'ou\u00efe et \u00e0 l'odorat, puis s'approche en rampant, profitant de chaque bruit (vent, autres animaux) pour couvrir ses propres sons. La phase finale (10 m\u00e8tres) est un sprint explos\u00e9 avec 5 \u00e0 10 bonds. La mise \u00e0 mort est presque instantan\u00e9e : il vise la gorge pour \u00e9trangler (grosses proies) ou la nuque pour une mort rapide (petites proies).",
                 source: "Institut de Stratégie Prédatrice - Technique sophistiquée."
@@ -4810,7 +4810,7 @@ const quizzesData = {
             {
                 id: 32,
                 question: "Quel est le rôle du 'Flehmen response' chez le tigre ?",
-                options: ["Pas de réaction", "Analyse des phéromones pour reproduction et détection", "Aversion", "Communication vocale"],
+                options: ["Rejet systématique des odeurs d'autres espèces animales sans analyse chimique détaillée", "Analyse des phéromones pour reproduction et détection", "Aversion et évitement immédiat de toute zone contenant des odeurs de congénères inconnues", "Communication vocale comme seul vecteur d'information lors des rencontres avec des individus inconnus"],
                 correct: 1,
                 explanation: "La r\u00e9ponse de Flehmen \u2014 la l\u00e8vre retrouss\u00e9e avec la bouche entrouverte \u2014 permet au tigre de faire passer des mol\u00e9cules chimiques (ph\u00e9romones) vers l'organe de Jacobson, situ\u00e9 dans le palais. Cet organe analyse les informations chimiques complexes : \u00e9tat reproducteur d'une femelle, pr\u00e9sence d'un rival, \u00e2ge et sant\u00e9 d'un individu. Les tigres adoptent cette expression typique quand ils inspectent les marquages urinaires d'un autre individu.",
                 source: "Institut d'Olfaction Animale - Détection chimique avancée."
@@ -4826,7 +4826,7 @@ const quizzesData = {
             {
                 id: 34,
                 question: "Quel est le mécanisme de la 'cooperative hunting' absent chez les tigres ?",
-                options: ["Les tigres chassent en groupe", "Tigres sont généralement solitaires", "Les femelles chassent rarement", "Pas de différence"],
+                options: ["Les tigres forment des groupes familiaux stables de 3 à 5 individus partageant les proies équitablement", "Tigres sont généralement solitaires", "Les femelles délèguent la chasse aux mâles et se consacrent exclusivement à l'élevage des jeunes", "Différence de comportement inexistante car les tigres modifient leur socialité selon la disponibilité des proies"],
                 correct: 1,
                 explanation: "Le tigre est l'exception parmi les grands f\u00e9lid\u00e9s : il chasse seul, contrairement aux lions qui chassent en groupe. Cette soli\u00e9tarité est adapt\u00e9e \u00e0 son environnement forestier dense o\u00f9 la coordination serait difficile. Cependant, des comportements temporairement coop\u00e9ratifs ont \u00e9t\u00e9 observ\u00e9s : une m\u00e8re chassant avec ses grands jeunes avant leur ind\u00e9pendance, ou deux fr\u00e8res de la m\u00eame port\u00e9e chassant \u00e0 proximit\u00e9 pendant la p\u00e9riode nomade.",
                 source: "Institut d'Éthologie Féline - Prédateurs solitaires."
@@ -4842,7 +4842,7 @@ const quizzesData = {
             {
                 id: 36,
                 question: "Quel est le processus de la 'natal philopatry' chez les tigres femelles ?",
-                options: ["Dispersion totale", "Tendance à rester dans zone natale", "Migration saisonnière", "Pas de pattern"],
+                options: ["Dispersion obligatoire loin de la zone natale pour éviter toute compétition avec la mère encore présente", "Tendance à rester dans zone natale", "Migration saisonnière régulière entre forêts de basse et haute altitude selon les cycles de disponibilité des proies", "Absence de pattern spatial cohérent, chaque tigre se déplaçant de façon totalement imprévisible"],
                 correct: 1,
                 explanation: "La philopatrie natale du tigre est un comportement nuanc\u00e9. Les femelles ont tendance \u00e0 rester proches de leur lieu de naissance et \u00e9tablissent leur territoire \u00e0 proximit\u00e9 de celui de leur m\u00e8re (si disponible). Les m\u00e2les, au contraire, se dispersent loin pour \u00e9viter la comp\u00e9tition et la consanguinit\u00e9. Cette asym\u00e9trie de dispersion entre sexes est une strat\u00e9gie \u00e9volutive efficace qui optimise \u00e0 la fois la transmission des connaissances locales et le brassage g\u00e9n\u00e9tique.",
                 source: "Institut d'Écologie Comportementale - Retour au site."
@@ -4850,7 +4850,7 @@ const quizzesData = {
             {
                 id: 37,
                 question: "À quel moment du cycle menstruel la femelle est-elle fertile ?",
-                options: ["Début du cycle", "Milieu du cycle - période d'estrus", "Fin du cycle", "Pas de cycle régulier"],
+                options: ["Début du cycle lorsque les niveaux de progestérone sont à leur maximum favorisant la réceptivité", "Milieu du cycle - période d'estrus", "Fin du cycle lors du déclin hormonal déclenchant la nidation ou la menstruation selon la fécondation", "Absence de cycle régulier chez les femelles sauvages qui ovulent uniquement en réponse à la stimulation mâle"],
                 correct: 1,
                 explanation: "L'\u0153strus de la femelle tigre dure 3 \u00e0 7 jours et se produit toutes les 3 \u00e0 9 semaines si elle n'est pas f\u00e9cond\u00e9e. Pendant cette p\u00e9riode, sa chimie urinaire change radicalement, signal chimique per\u00e7u par les m\u00e2les \u00e0 grande distance. L'ovulation est induite par l'accouplement lui-m\u00eame (ovulation provoqu\u00e9e), m\u00e9canisme qui garantit qu'un accouplement effectif conduit \u00e0 une f\u00e9condation, m\u00eame si les rencontres sont rares en milieu sauvage.",
                 source: "Centre de Reproduction Féline - Fertilité cyclique."
@@ -4866,7 +4866,7 @@ const quizzesData = {
             {
                 id: 39,
                 question: "Quel est le mécanisme de la 'temporal gland secretion' du tigre ?",
-                options: ["Pas de sécrétion", "Communication chimique et marquage territorial", "Thermorégulation", "Défense"],
+                options: ["Lubrification de la fourrure pour la rendre imperméable lors des longues sessions de nage dans les rivières", "Communication chimique et marquage territorial", "Thermorégulation cutanée en facilitant l'évaporation de l'humidité lors des périodes de chaleur intense", "Défense active contre les ectoparasites en créant un environnement chimique hostile sur la peau"],
                 correct: 1,
                 explanation: "La glande temporale du tigre, situ\u00e9e entre l'\u0153il et l'oreille, s\u00e9cr\u00e8te un fluide chimique utilis\u00e9 dans le marquage social. Contrairement aux marques urinaires (longue dur\u00e9e, grande distance), les s\u00e9cr\u00e9tions temporales sont d\u00e9pos\u00e9es par frottement de la t\u00eate contre des surfaces lors d'interactions proches. Elles transmettent des informations sur l'identit\u00e9 individuelle et l'\u00e9tat \u00e9motionnel. Les tigreaux frottent fr\u00e9quemment leur t\u00eate contre leur m\u00e8re pour consolider le lien social.",
                 source: "Institut d'Olfaction Féline - Phéromones glandulaires."
@@ -4874,7 +4874,7 @@ const quizzesData = {
             {
                 id: 40,
                 question: "Quel est le rôle de la 'vibrissa proprioception' dans la chasse ?",
-                options: ["Pas de rôle", "Détection de mouvements air et localisation proie", "Équilibre uniquement", "Communication"],
+                options: ["Régulation de la pression auriculo-nasosinusienne lors des passages rapides dans la végétation dense", "Détection de mouvements air et localisation proie", "Maintien de l'équilibre postural lors des déplacements sur les substrats instables comme la neige profonde", "Communication inter-individuelle par vibrations basse fréquence transmises à travers la végétation dense"],
                 correct: 1,
                 explanation: "La proprioception vibrossale du tigre est une capacit\u00e9 fascinante. Les vibrisses sont reli\u00e9es \u00e0 des m\u00e9canor\u00e9cepteurs tr\u00e8s sensibles qui d\u00e9tectent les moindres variations de pression d'air et les vibrations transmises par le sol ou les objets. Pendant la mise \u00e0 mort dans l'obscurit\u00e9, le tigre utilise ses vibrisses pour positionner pr\u00e9cis\u00e9ment ses crocs sur la trachée de la proie. Sans vibrisses, la pr\u00e9cision de la mise \u00e0 mort est significativement r\u00e9duite.",
                 source: "Institut de Neurobiologie Sensorielle - Mécanoréception avancée."
