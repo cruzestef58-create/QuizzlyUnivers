@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    background: linear-gradient(135deg, #667eea 0%, #4f8ef7 100%);
+}
+
 :root {
     --primary-color: #6366f1;
     --secondary-color: #ec4899;
@@ -19,16 +23,8 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     color: var(--dark-text);
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #667eea 0%, #4f8ef7 100%);
     min-height: 100vh;
-    animation: gradientShift 8s ease infinite;
-    background-size: 400% 400%;
-}
-
-@keyframes gradientShift {
-    0% { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
-    50% { background: linear-gradient(135deg, #764ba2 0%, #f093fb 100%); }
-    100% { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
 }
 
 /* Navigation */
@@ -545,13 +541,11 @@ body {
 /* Suggestion Modal */
 .modal {
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
+    inset: 0;
     z-index: 99999;
     background: rgba(0, 0, 0, 0.6);
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 1.5rem;
@@ -683,9 +677,15 @@ body {
 
 .difficulty-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
     margin-bottom: 2rem;
+}
+
+@media (max-width: 700px) {
+    .difficulty-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 .difficulty-card {
@@ -914,15 +914,8 @@ body {
 
 /* Source */
 .source {
-    margin-top: 2.5rem;
-    padding: 2rem;
-    background: linear-gradient(135deg, rgba(99, 102, 241, 0.1), rgba(236, 72, 153, 0.08));
-    border-left: 6px solid var(--primary-color);
-    border-radius: 12px;
+    margin-top: 0.75rem;
     display: none;
-    animation: slideInUp 0.5s ease-out;
-    border: 1px solid rgba(99, 102, 241, 0.3);
-    box-shadow: 0 4px 15px rgba(99, 102, 241, 0.1);
 }
 
 .source.show {
@@ -930,17 +923,14 @@ body {
 }
 
 .source-title {
-    font-weight: 800;
-    color: var(--primary-color);
-    margin-bottom: 1rem;
-    font-size: 1.15rem;
+    display: none;
 }
 
 .source-text {
-    color: #000;
-    font-size: 1.05rem;
-    line-height: 1.8;
-    font-weight: 600;
+    color: #9ca3af;
+    font-size: 0.78rem;
+    font-style: italic;
+    font-weight: 400;
 }
 
 /* Explanation */

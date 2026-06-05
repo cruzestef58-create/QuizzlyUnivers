@@ -7,7 +7,7 @@ const quizzesData = {
             {
                 id: 1,
                 question: "À quel âge peut-on commencer l'éducation d'un chiot ?",
-                options: ["À partir de 3 mois", "À partir de 6 mois", "À partir de 8 mois", "À partir de 1 an"],
+                options: ["À partir de 3 mois", "À partir de 6 mois, une fois que le chiot a terminé son protocole vaccinal complet et que son système immunitaire est suffisamment développé pour fréquenter d'autres animaux en toute sécurité", "À partir de 8 mois, quand il a dépassé la phase de dentition et peut mieux se concentrer sur les exercices sans être distrait par l'inconfort des gencives et la poussée des dents définitives", "À partir de 1 an, car le cerveau n'est pas suffisamment mature avant et les commandes apprises trop tôt créent de mauvaises habitudes qu'il faut ensuite déconstruire entièrement"],
                 correct: 0,
                 explanation: "Les chiots commencent à comprendre les commandes autour de 8 semaines. Cependant, l'éducation formelle en classe est recommandée à partir de 3 mois, quand ils ont reçu leurs premiers vaccins et peuvent socialiser en sécurité avec d'autres chiots.",
                 source: "Association Française de Comportement Animal (AFCA) - L'éducation formelle commence généralement vers 3 mois."
@@ -15,7 +15,7 @@ const quizzesData = {
             {
                 id: 2,
                 question: "Quel renforcement est le plus efficace pour l'apprentissage du chien ?",
-                options: ["Les punitions sévères", "Les récompenses positives", "L'ignorance du comportement", "La répétition sans reward"],
+                options: ["Les punitions sévères appliquées immédiatement après le comportement indésirable, afin que le chien associe clairement l'acte à la conséquence", "Les récompenses positives", "L'ignorance systématique du comportement, qui permet au chien de trouver lui-même le comportement approprié par essais-erreurs", "La répétition intensive des exercices sur de longues sessions, ce qui ancre les automatismes par la fréquence"],
                 correct: 1,
                 explanation: "Les récompenses positives (friandises, jeux, caresses) stimulent les zones du plaisir du cerveau du chien et renforcent les comportements désirés. Les punitions créent de l'anxiété et peuvent causer des problèmes comportementaux à long terme.",
                 source: "Université du Québec - Le renforcement positif crée des apprentissages durables et renforce la relation humain-chien."
@@ -626,11 +626,11 @@ const quizzesData = {
             },
             {
                 id: 58,
-                question: "Quel est le rôle de la préfrontal cortex dans la prise de décision du chien ?",
+                question: "Quel est le rôle du cortex préfrontal dans la prise de décision du chien ?",
                 options: ["Aucun rôle", "Évaluation des conséquences et contrôle des impulsions", "Mémoire uniquement", "Sensibilité gustative"],
                 correct: 1,
                 explanation: "Le cortex préfrontal est moins développé chez le chien que chez l'humain, mais il joue quand même un rôle dans l'inhibition des impulsions et l'évaluation des conséquences. C'est la région qui permet au chien de 'réfléchir avant d'agir'. L'entraînement à l'auto-contrôle (attendre avant de manger, ne pas sauter sur commande) renforce cette zone et améliore la capacité du chien à gérer ses émotions et ses impulsions.",
-                source: "Université de Neurosciences Décisionnelles - La préfrontal cortex régule le comportement."
+                source: "Université de Neurosciences Décisionnelles - Le cortex préfrontal régule le comportement."
             },
             {
                 id: 59,
@@ -715,7 +715,7 @@ const quizzesData = {
             {
                 id: 69,
                 question: "Quel est le mécanisme du 'fear extinction' à niveau neuronal ?",
-                options: ["Effacement de la mémoire", "Formation d'une nouvelle mémoire inhibitrice via la préfrontal cortex", "Désactivation de l'amygdale", "Oubli complet"],
+                options: ["Effacement de la mémoire", "Formation d'une nouvelle mémoire inhibitrice via le cortex préfrontal", "Désactivation de l'amygdale", "Oubli complet"],
                 correct: 1,
                 explanation: "Contrairement à ce qu'on croyait, l'extinction de la peur n'efface pas la mémoire originale de peur — elle crée une nouvelle mémoire inhibitrice dans le cortex préfrontal qui supprime la réaction de l'amygdale. C'est pourquoi la peur peut revenir dans de nouveaux contextes ou sous stress (c'est le 'retour de la peur'). Le traitement doit donc se faire dans de nombreux contextes différents pour être durable.",
                 source: "Université de Modification de la Peur - L'extinction crée de nouvelles associations."
@@ -737,7 +737,7 @@ const quizzesData = {
             {
                 id: 1,
                 question: "Combien d'heures par jour un chat dort-il en moyenne ?",
-                options: ["4 à 6 heures", "8 à 10 heures", "12 à 16 heures", "18 à 20 heures"],
+                options: ["4 à 6 heures seulement, car ce sont des animaux nocturnes très actifs", "8 à 10 heures, comme la plupart des mammifères domestiques", "12 à 16 heures", "18 à 20 heures uniquement pour les chats âgés ou convalescents"],
                 correct: 2,
                 explanation: "Les chats sont des animaux crépusculaires et crepusculaires. Ils dorment 12 à 16 heures par jour pour conserver leur énergie, ce qui leur permet d'être alerte pendant les heures d'activité.",
                 source: "Institut Félin International - Les chats dorment entre 12 et 16 heures par jour pour conserver leur énergie."
@@ -745,7 +745,7 @@ const quizzesData = {
             {
                 id: 2,
                 question: "Combien de dents permanentes un chat adulte possède-t-il ?",
-                options: ["30 dents", "28 dents", "32 dents", "26 dents"],
+                options: ["30 dents, soit autant que chez le chien adulte de taille comparable", "28 dents", "32 dents, comme c'est le cas pour la majorité des carnivores domestiques", "26 dents, les canines incluses mais sans les prémolaires supplémentaires"],
                 correct: 1,
                 explanation: "Les chats adultes ont 28 dents permanentes : 16 à la mâchoire supérieure et 12 à la mâchoire inférieure. Cela diffère légèrement des chiens qui en ont 42. Ces dents incluent des crocs pointus pour chasser.",
                 source: "Association Française de Vétérinaires - Un chat adulte possède 28 dents permanentes (16 en haut, 12 en bas)."
@@ -753,7 +753,7 @@ const quizzesData = {
             {
                 id: 3,
                 question: "Que signifie quand un chat ronronne ?",
-                options: ["Uniquement qu'il est content", "Contentement, mais aussi stress ou douleur", "Un signe d'agressivité", "Aucune signification"],
+                options: ["Exclusivement un signe de bien-être et de satisfaction profonde envers son environnement", "Contentement, mais aussi stress ou douleur", "Un signal d'avertissement précédant généralement une morsure ou une attaque", "Un réflexe respiratoire involontaire sans lien avec l'état émotionnel de l'animal"],
                 correct: 1,
                 explanation: "Le ronronnement est une vibration produite par les cordes vocales d'un chat. Bien qu'il indique généralement le contentement, les chats ronronnent aussi pour s'auto-apaiser en cas de douleur ou de stress. C'est un mécanisme complexe de communication.",
                 source: "Université de Cambridge - Le ronronnement peut indiquer le bien-être mais aussi la douleur ou l'anxiété."
@@ -761,7 +761,7 @@ const quizzesData = {
             {
                 id: 4,
                 question: "Que signifie quand un chat bande sa queue en forme de brosse ?",
-                options: ["Le chat est heureux", "Le chat a peur ou se sent menacé", "Le chat veut jouer", "Le chat veut être caressé"],
+                options: ["Le chat est en état d'excitation intense et cherche à attirer l'attention pour jouer", "Le chat a peur ou se sent menacé", "Le chat prépare une posture de chasse et s'apprête à bondir sur une proie", "Le chat ressent de l'affection et sollicite des caresses ou une interaction sociale"],
                 correct: 1,
                 explanation: "Quand un chat a peur ou se sent menacé, ses muscles érecteurs des poils se contractent et font gonfler sa queue comme une brosse. Combiné à une posture de côté (pour paraître plus grand), c'est un signal d'avertissement clair : 'je suis effrayé, ne m'approche pas'. Si l'intrus continue, le chat peut passer à l'attaque défensive.",
                 source: "Association Française de Vétérinaires - Une queue gonflée en brosse est un signe de peur ou de stress."
@@ -769,7 +769,7 @@ const quizzesData = {
             {
                 id: 5,
                 question: "À quel âge les chatons ouvrent-ils leurs yeux ?",
-                options: ["À la naissance", "À 5-10 jours", "À 3 semaines", "À 6 semaines"],
+                options: ["Dès la naissance, bien que leur vision reste très limitée pendant les premières semaines", "À 5-10 jours", "À 3 semaines, une fois que leur système nerveux central est pleinement développé", "À 6 semaines, en même temps que les premières dents définitives commencent à percer"],
                 correct: 1,
                 explanation: "Les chatons naissent les yeux fermés car leur système nerveux n'est pas encore mature. Leurs yeux s'ouvrent entre 5 et 10 jours, mais leur vision reste floue encore 2-3 semaines. Ils sont totalement dépendants de leur mère pendant cette période pour se nourrir, se réchauffer et être stimulés pour uriner et déféquer.",
                 source: "Fédération Internationale Féline - Les chatons ouvrent généralement leurs yeux entre 5 et 10 jours."
@@ -777,7 +777,7 @@ const quizzesData = {
             {
                 id: 6,
                 question: "Combien de vibrisses (moustaches) possède un chat ?",
-                options: ["4 moustaches", "8 moustaches", "Environ 24 moustaches", "Plus de 50 moustaches"],
+                options: ["4 moustaches principales, réparties en deux rangées de chaque côté du museau", "8 moustaches regroupées symétriquement pour détecter les mouvements d'air latéraux", "Environ 24 moustaches", "Plus de 50 moustaches fines réparties sur l'ensemble de la face et des joues"],
                 correct: 2,
                 explanation: "Le chat possède environ 24 vibrisses principales, disposées en 4 rangées de chaque côté du museau. Ces moustaches sont des organes sensoriels ultra-précis reliés à des nerfs : elles détectent les variations de pression d'air, permettant au chat de naviguer dans l'obscurité totale et d'évaluer si un espace est suffisamment large pour son corps. Les couper est donc très néfaste.",
                 source: "Institut de Recherche Féline - Les chats possèdent environ 24 vibrisses principales."
@@ -785,7 +785,7 @@ const quizzesData = {
             {
                 id: 7,
                 question: "Quel est le cri d'accouplement des chattes en chaleur ?",
-                options: ["Un miaulement normal", "Un cri très bruyant et répété", "Aucun son particulier", "Un ronronnement intense"],
+                options: ["Un miaulement grave et prolongé similaire à celui produit lors d'une douleur physique intense", "Un cri très bruyant et répété", "Une vocalisation discrète et basse destinée uniquement aux mâles situés à proximité immédiate", "Un ronronnement intense et modulé dont la fréquence évolue tout au long du cycle hormonal"],
                 correct: 1,
                 explanation: "Les chattes en chaleur émettent des vocalisations intenses et répétées, souvent décrites comme un 'gémissement' ou un 'hurlement'. Ce comportement peut durer plusieurs jours et est destiné à attirer les mâles à distance. Il s'accompagne de roulades, de postures particulières et de marquages urinaires. La stérilisation est la seule solution durable pour l'éviter.",
                 source: "Association Française de Comportement Félin - Les chattes en chaleur produisent des miaulements très particuliers."
@@ -793,7 +793,7 @@ const quizzesData = {
             {
                 id: 8,
                 question: "À quel âge un chaton est-il complètement sevré ?",
-                options: ["À 4 semaines", "À 6-8 semaines", "À 3 mois", "À 6 mois"],
+                options: ["À 4 semaines, dès que les premières dents de lait ont percé et que le chaton commence à mastiquer", "À 6-8 semaines", "À 3 mois, une fois que le système digestif est pleinement mature pour les aliments solides", "À 6 mois, en parallèle du développement hormonal et du changement des dents définitives"],
                 correct: 1,
                 explanation: "Vers 6-8 semaines, le chaton est capable de manger des aliments solides de façon autonome et n'a plus besoin du lait maternel. C'est aussi la période où il apprend les comportements sociaux essentiels avec ses frères et sœurs. Séparer un chaton de sa mère avant 8 semaines peut provoquer des troubles comportementaux comme l'anxiété, la succion de tissu ou des difficultés à socialiser.",
                 source: "American Veterinary Medical Association - Le sevrage complet du chaton se fait vers 6-8 semaines."
@@ -809,7 +809,7 @@ const quizzesData = {
             {
                 id: 10,
                 question: "Que signifie quand un chat frotte sa tête contre vous ?",
-                options: ["Il a des démangeaisons", "Il marque son territoire avec ses phéromones", "Il veut vous attaquer", "Il a faim"],
+                options: ["Il ressent des démangeaisons faciales persistantes", "Il marque son territoire avec ses phéromones", "Il exprime une irritation territoriale et vous avertit discrètement d'un risque d'agression imminente", "Il réclame de la nourriture via ce signal spécifique, distinct du miaulement, pour attirer votre attention vers sa gamelle"],
                 correct: 1,
                 explanation: "Quand un chat frotte sa tête contre vous (comportement appelé 'bunting'), il dépose ses phéromones faciales produites par des glandes situées au niveau des joues, du menton et du front. C'est un signal d'appartenance et d'affection : il vous 'marque' comme faisant partie de son groupe social. C'est un des comportements les plus positifs qu'un chat puisse avoir envers vous.",
                 source: "Institut de Comportement Animal - Les glandes faciales du chat produisent des phéromones pour marquage territorial."
@@ -817,7 +817,7 @@ const quizzesData = {
             {
                 id: 11,
                 question: "Quel est le record de saut vertical pour un chat ?",
-                options: ["50 cm", "1 mètre", "1,5 mètre", "2 mètres"],
+                options: ["50 cm, soit environ deux fois la hauteur au garrot d'un chat adulte moyen", "1 mètre, soit déjà trois fois sa hauteur au garrot grâce à ses pattes arrière musclées", "1,5 mètre", "2 mètres, comparable aux capacités de certains félins sauvages comme le serval ou le caracal"],
                 correct: 2,
                 explanation: "Un chat peut sauter jusqu'à 1,5 mètre verticalement, soit environ 5 fois sa propre hauteur. Cela équivaut pour un humain moyen à sauter par-dessus une maison de 3 étages. Cette performance est rendue possible par leurs pattes arrière très musclées et leur colonne vertébrale extrêmement flexible qui agit comme un ressort.",
                 source: "Institut de Zoologie - Les chats peuvent sauter 1,5 mètre de haut."
@@ -825,7 +825,7 @@ const quizzesData = {
             {
                 id: 12,
                 question: "Combien d'années vivent généralement les chats domestiques ?",
-                options: ["5-7 ans", "10-12 ans", "15-18 ans", "20+ ans"],
+                options: ["5 à 7 ans, ce qui correspond à l'espérance de vie des chats harets vivant en milieu naturel sauvage", "10 à 12 ans, durée typique pour un chat avec accès extérieur et suivi vétérinaire régulier", "15-18 ans", "20 ans et plus, ce qui constitue un record exceptionnel réservé à quelques individus très rares"],
                 correct: 2,
                 explanation: "Les chats domestiques vivent en moyenne 15 à 18 ans, soit bien plus que leurs ancêtres sauvages (5-7 ans en nature). Des chats de 20 ans ou plus existent. Le record enregistré est Creme Puff, morte à 38 ans au Texas. Les chats vivant exclusivement en intérieur vivent généralement 2 à 5 ans de plus que ceux ayant accès à l'extérieur.",
                 source: "Association Féline Française - L'espérance de vie moyenne est 15-18 ans."
@@ -833,7 +833,7 @@ const quizzesData = {
             {
                 id: 13,
                 question: "Quel est le temps moyen d'un chat pour faire ses besoins ?",
-                options: ["10 secondes", "30 secondes", "1 minute", "5 minutes"],
+                options: ["10 secondes à peine, le chat étant particulièrement rapide pour cette fonction physiologique essentielle", "30 secondes", "1 minute en moyenne, car le chat prend le temps de choisir l'endroit précis avant et après l'élimination", "5 minutes au minimum, le comportement de grattage et de recouvrement étant très développé chez le chat"],
                 correct: 1,
                 explanation: "Un chat passe en moyenne 30 à 40 secondes à faire ses besoins. Il accordera généralement plusieurs minutes à creuser et à recouvrir — c'est un comportement instinctif pour cacher son odeur des prédateurs. Un chat qui passe un temps anormalement long dans sa litière, ou qui crie en urinant, peut souffrir d'une obstruction ou d'une infection urinaire — à consulter en urgence.",
                 source: "Institut d'Éthologie Féline - Un chat passe généralement 30-40 secondes."
@@ -841,7 +841,7 @@ const quizzesData = {
             {
                 id: 14,
                 question: "À quel âge les chatons commencent-ils à chasser ?",
-                options: ["À 2 mois", "À 3-4 mois", "À 6 mois", "À 1 an"],
+                options: ["À 2 mois, dès que leurs sens sont suffisamment développés pour repérer et suivre une proie en mouvement", "À 3-4 mois", "À 6 mois, une fois la dentition définitive en place permettant de tuer et consommer des proies réelles", "À 1 an, lorsque le chat a atteint sa pleine maturité physique et que ses réflexes sont pleinement opérationnels"],
                 correct: 1,
                 explanation: "Vers 3-4 mois, les chatons commencent à affiner leurs instincts de prédateur : ils guettent, se tapissent, bondissent et 'tuent' leurs jouets. La mère enseigne la chasse en apportant d'abord des proies mortes, puis vivantes. Les chatons élevés seuls sans stimulation de chasse peuvent développer des frustrations ou des comportements d'agression par jeu envers leurs propriétaires.",
                 source: "Fédération Féline Française - Les instincts de chasse émergent vers 3-4 mois."
@@ -849,7 +849,7 @@ const quizzesData = {
             {
                 id: 15,
                 question: "Quel est le bruit que produit un chat satisfait ?",
-                options: ["Miaulement", "Ronronnement", "Craquement", "Feulement"],
+                options: ["Miaulement doux et répété réservé aux interactions positives avec les humains", "Ronronnement", "Claquement rapide des dents produit en observant une proie depuis la fenêtre", "Feulement grave et sourd émis dans la gorge comme expression de confiance et de bien-être profond"],
                 correct: 1,
                 explanation: "Le ronronnement est produit par les vibrations rapides des muscles du larynx (25 à 150 Hz). Un chat satisfait ronronne souvent lors des caresses ou quand il s'installe confortablement. Fait intéressant : certaines fréquences du ronronnement (25-50 Hz) correspondent à celles utilisées en médecine pour accélérer la guérison osseuse — ce qui pourrait expliquer pourquoi les chats récupèrent vite de leurs blessures.",
                 source: "Institut de Comportement Animal - Le ronronnement est signe de contentement."
@@ -857,7 +857,7 @@ const quizzesData = {
             {
                 id: 16,
                 question: "À quelle distance un chat peut-il entendre ?",
-                options: ["Jusqu'à 1 mètre", "Jusqu'à 10 mètres", "Jusqu'à 100 mètres", "Sans limite définie"],
+                options: ["Jusqu'à 1 mètre seulement leur sensibilité étant axée sur les très hautes fréquences ultrasoniques", "Jusqu'à 10 mètres permettant de localiser des rongeurs dans un périmètre rapproché de leur terrier", "Jusqu'à 100 mètres", "Sans limite définie"],
                 correct: 2,
                 explanation: "Les chats entendent des sons jusqu'à des fréquences de 79 000 Hz (contre 20 000 Hz chez l'humain), ce qui leur permet de détecter les ultrasons émis par les rongeurs. Ils peuvent percevoir des sons jusqu'à 100 mètres. Chacune de leurs oreilles peut pivoter indépendamment jusqu'à 180° pour localiser précisément une source sonore — comme une antenne satellite.",
                 source: "Institut de Sensorimotricité Féline - L'audition du chat est excellente jusqu'à 100m."
@@ -2197,7 +2197,7 @@ const quizzesData = {
             {
                 id: 1,
                 question: "Combien d'espèces de reptiles existent environ sur Terre ?",
-                options: ["Environ 3000 espèces", "Environ 11000 espèces", "Environ 50000 espèces", "Environ 100000 espèces"],
+                options: ["Environ 6000 espèces, principalement des lézards et des serpents tropicaux", "Environ 11000 espèces", "Environ 25000 espèces, un chiffre proche de celui des oiseaux actuellement connus", "Environ 40000 espèces, soit autant que les poissons osseux de nos océans"],
                 correct: 1,
                 explanation: "Les herpetologues ont identifié plus de 11000 espèces de reptiles, ce qui inclut les lezards, serpents, crocodiliens, tortues et tuataras. Cette diversité montre l'adaptabilité remarquable des reptiles.",
                 source: "Musée de Zoologie - Il existe environ 11000 espèces de reptiles identifiées."
@@ -2205,7 +2205,7 @@ const quizzesData = {
             {
                 id: 2,
                 question: "Quel est le plus grand reptile du monde ?",
-                options: ["Le python", "L'anaconda", "Le crocodile marin", "Le Godzilla"],
+                options: ["Le python réticulé d'Asie du Sud-Est, qui peut dépasser 7 mètres de longueur", "L'anaconda vert d'Amazonie, reconnu comme le plus lourd des serpents", "Le crocodile marin", "Le varan de Komodo, le plus grand lézard terrestre avec ses 3 mètres"],
                 correct: 2,
                 explanation: "Le crocodile marin d'Asie du Sud-Est est le plus grand reptile vivant. Les mâles peuvent atteindre 6 à 7 métres de longueur et peser plus d'une tonne. C'est un prédateur formidable et aité depuis des millénaires.",
                 source: "Société Herpétologique - Le crocodile marin peut atteindre 6-7 mètres de long."
@@ -2213,7 +2213,7 @@ const quizzesData = {
             {
                 id: 3,
                 question: "Les reptiles sont-ils à sang chaud ou à sang froid ?",
-                options: ["À sang chaud", "À sang froid (ectothermes)", "Les deux selon l'espèce", "Ni l'un ni l'autre"],
+                options: ["À sang chaud, car leur activité musculaire intense génère suffisamment de chaleur interne", "À sang froid (ectothermes)", "Les deux selon l'espèce : les grandes espèces tropicales maintiennent une température stable grâce à leur masse corporelle", "Ni l'un ni l'autre : ils régulent leur température via des processus chimiques internes indépendants de l'environnement"],
                 correct: 1,
                 explanation: "Les reptiles sont ectothermes, ce qui signifie qu'ils régulent leur température en utilisant l'environnement externe. Ils doivent se chauffer au soleil ou chercher l'ombre pour maintenir une température optimale. C'est très différent des mammifères.",
                 source: "Institut de Biologie Comparée - Les reptiles sont ectothermes et dépendent de l'environnement."
@@ -2221,7 +2221,7 @@ const quizzesData = {
             {
                 id: 4,
                 question: "Combien de pattes les reptiles typiques ont-ils ?",
-                options: ["Deux pattes", "Quatre pattes", "Six pattes", "Aucune"],
+                options: ["Deux pattes, comme certains lézards bipèdes qui courent dressés sur les pattes arrière", "Quatre pattes", "Six pattes, comme les insectes auxquels les lézards sont parfois comparés", "Aucune, car tous les reptiles ont perdu leurs membres au cours de l'évolution, comme les serpents"],
                 correct: 1,
                 explanation: "La grande majorité des reptiles ont quatre pattes : lézards, tortues, crocodiliens... Mais les serpents sont des reptiles qui ont perdu leurs membres au cours de l'évolution (il y a environ 150 millions d'années). On trouve encore chez certains boas et pythons des vestiges de membres pelviens — de petits ergots visibles près du cloaque, preuve de cette évolution.",
                 source: "Encyclopédie Herpétologique - La plupart des reptiles ont quatre pattes, sauf les serpents."
@@ -2229,7 +2229,7 @@ const quizzesData = {
             {
                 id: 5,
                 question: "Quel reptile peut changer de couleur rapidement ?",
-                options: ["Le serpent", "Le lézard", "Le caméléon", "La tortue"],
+                options: ["Le serpent, qui modifie la brillance de ses écailles selon son état émotionnel et la luminosité ambiante", "Le lézard anole, qui change du vert au brun en quelques secondes selon son humeur et la température", "Le caméléon", "La tortue, dont la peau peut s'assombrir ou s'éclaircir progressivement selon l'exposition au soleil"],
                 correct: 2,
                 explanation: "Le caméléon change de couleur grâce à des cellules spécialisées dans sa peau : les chromatophores (qui contiennent des pigments) et les iridophores (qui réfléchissent la lumière). Contrairement à l'idée reçue, ce changement n'est pas principalement pour le camouflage — c'est avant tout un moyen de communication : exprimer l'humeur, séduire un partenaire, ou intimider un rival. La température influence aussi la couleur.",
                 source: "Muséum d'Histoire Naturelle - Le caméléon change de couleur grâce à ses chromatophores."
@@ -2237,7 +2237,7 @@ const quizzesData = {
             {
                 id: 6,
                 question: "Quel serpent est le plus venimeux du monde ?",
-                options: ["Le cobra", "Le python", "Le taipan terrestre", "La vipère"],
+                options: ["Le cobra royal, dont le venin est suffisamment puissant pour tuer un éléphant adulte en quelques heures", "Le mamba noir d'Afrique, réputé pour sa vitesse et la rapidité foudroyante de son venin neurotoxique", "Le taipan terrestre", "La vipère de Russell, responsable du plus grand nombre de morsures mortelles en Asie du Sud"],
                 correct: 2,
                 explanation: "Le taipan terrestre d'Australie (Oxyuranus microlepidotus) possède le venin le plus toxique de tous les serpents : une seule morsure contient assez de venin pour tuer 100 hommes adultes. Son venin est 400 fois plus puissant que celui du cobra. Heureusement, c'est un serpent très discret qui fuit les humains — les morsures mortelles sont rarissimes, et un antivenin efficace existe.",
                 source: "Institut Toxinologique - Le taipan terrestre possède le venin le plus puissant."
@@ -2245,7 +2245,7 @@ const quizzesData = {
             {
                 id: 7,
                 question: "À quel âge une tortue devient-elle adulte généralement ?",
-                options: ["À 2-3 ans", "À 5-10 ans", "À 20-50 ans selon l'espèce", "À 100 ans"],
+                options: ["À 2-3 ans, comme la plupart des reptiles à croissance rapide des régions tropicales", "À 5-10 ans, un délai comparable à celui des varans et des crocodiles juvéniles", "À 20-50 ans selon l'espèce", "À 100 ans, une fois que leur carapace a atteint sa taille et sa dureté définitives"],
                 correct: 2,
                 explanation: "Les tortues ont une des maturités sexuelles les plus tardives du règne animal. La tortue verte marine n'est mature qu'entre 20 et 50 ans. La tortue terrestre géante des Galápagos attend 20 à 25 ans. Cette lenteur s'explique par leur métabolisme extrêmement lent et leur longévité exceptionnelle — investir longtemps dans la croissance avant de se reproduire est une stratégie viable quand on vit plus de 100 ans.",
                 source: "Centre de Soins des Tortues - L'âge de maturité varie beaucoup selon l'espèce."
@@ -2253,7 +2253,7 @@ const quizzesData = {
             {
                 id: 8,
                 question: "Combien d'années une tortue peut-elle vivre ?",
-                options: ["10-20 ans", "30-50 ans", "100+ ans", "200+ ans"],
+                options: ["10-20 ans, une longévité comparable à celle des chiens et des chats domestiques", "30-50 ans, soit un peu plus que les grands singes comme les chimpanzés en captivité", "100+ ans", "200+ ans, une durée de vie qui en ferait l'animal vertébré le plus longévif connu à ce jour"],
                 correct: 2,
                 explanation: "Les tortues sont parmi les animaux les plus longévifs sur Terre. Les grandes tortues terrestres vivent régulièrement plus de 100 ans. Jonathan, une tortue des Seychelles résidant à Sainte-Hélène, est née vers 1832 et est toujours vivante en 2024 — soit plus de 190 ans ! Ce record s'explique en partie par leur métabolisme très lent qui génère peu de radicaux libres et ralentit le vieillissement cellulaire.",
                 source: "Société Herpétologique Française - Les tortues peuvent vivre plus de 100 ans."
@@ -2261,7 +2261,7 @@ const quizzesData = {
             {
                 id: 9,
                 question: "Quel reptile pond des œufs ?",
-                options: ["Aucun reptile", "Tous les reptiles", "Certains reptiles", "Uniquement les crocodiliens"],
+                options: ["Aucun reptile, car ils ont tous évolué vers la viviparité au cours de l'évolution", "Tous les reptiles", "Certains reptiles seulement, les autres donnant naissance directement à des petits vivants", "Uniquement les crocodiliens et les tortues marines, les serpents et lézards étant tous vivipares"],
                 correct: 1,
                 explanation: "Attention : cette affirmation est en réalité incorrecte ! Certains reptiles sont vivipares (ils donnent naissance à des petits vivants). Par exemple, de nombreuses vipères d'Europe, le boa constrictor et certains lézards gardent les œufs à l'intérieur jusqu'à l'éclosion (ovoviviparité) ou nourrissent directement l'embryon via un placenta (viviparité vraie). La majorité des reptiles pondent des œufs, mais pas tous.",
                 source: "Institut de Reproduction des Reptiles - Tous les reptiles pondent des œufs."
@@ -2269,7 +2269,7 @@ const quizzesData = {
             {
                 id: 10,
                 question: "Quel est l'organe de détection de la chaleur chez les serpents venimeux ?",
-                options: ["L'odorat", "Les fossettes thermosensibles", "La vision", "Le toucher"],
+                options: ["L'odorat, grâce à l'organe de Jacobson qui analyse les molécules volatiles libérées par la chaleur des proies", "Les fossettes thermosensibles", "La vision, leurs yeux contenant des photorécepteurs capables de percevoir le rayonnement infrarouge émis par les corps chauds", "Le toucher, via des terminaisons nerveuses cutanées extrêmement sensibles aux variations thermiques de l'air"],
                 correct: 1,
                 explanation: "Certains serpents (pythons, boas, crotales, vipères à fossettes) possèdent des organes thermosensibles capables de détecter des variations de température infrarouges infimes (0,003°C). Situés entre l'œil et la narine, ces 'organes à fosse' forment une image thermique de l'environnement, permettant de localiser et de frapper une proie à sang chaud dans l'obscurité totale avec une précision remarquable.",
                 source: "Université de Sensorimotricité - Les serpents venimeux possèdent des fossettes thermosensibles."
@@ -2277,7 +2277,7 @@ const quizzesData = {
             {
                 id: 11,
                 question: "Quel est le record de vitesse d'un lézard sur terre ?",
-                options: ["10 km/h", "25 km/h", "40+ km/h", "60 km/h"],
+                options: ["10 km/h, soit la vitesse d'un humain marchant d'un pas soutenu sur terrain plat", "25 km/h, une performance comparable à celle d'un chien de taille moyenne au trot", "40+ km/h", "60 km/h, ce qui leur permettrait de dépasser un cheval au galop sur courte distance"],
                 correct: 2,
                 explanation: "Le basilic plumet et certains varans peuvent courir à plus de 40 km/h sur de courtes distances. Le recordman est le lézard à queue fouet (Cnemidophorus), qui peut atteindre 29 km/h. Pour l'anecdote, le basilic est si rapide qu'il peut courir sur l'eau sur ses pattes arrière sur plusieurs mètres grâce à la fréquence de ses foulées et des pieds palmés qui emprisonnent de l'air sous l'eau.",
                 source: "Institut de Zoologie Comparée - Certains lézards courent très vite."
@@ -2285,7 +2285,7 @@ const quizzesData = {
             {
                 id: 12,
                 question: "À quel âge une tortue terrestre devient-elle adulte ?",
-                options: ["À 5-10 ans", "À 15-20 ans", "À 20-30 ans selon l'espèce", "À 50+ ans"],
+                options: ["À 5-10 ans, maturité comparable à celle des varans et des petits crocodiliens", "À 15-20 ans, délai similaire à celui des tortues marines des zones tempérées", "À 20-30 ans selon l'espèce", "À 50+ ans, réservé aux grandes tortues géantes des îles isolées"],
                 correct: 2,
                 explanation: "La tortue terrestre d'Hermann, commune en Europe du Sud, atteint sa maturité sexuelle entre 10 et 20 ans. Les grandes espèces méditerranéennes ou des Galápagos mettent 20 à 30 ans. Pendant toute cette période, la tortue grandit très lentement — on peut d'ailleurs estimer son âge en comptant les anneaux de croissance sur ses écailles (scutes), un peu comme les cernes d'un arbre.",
                 source: "Centre de Soins des Tortues - Les tortues maturent lentement."
@@ -2293,7 +2293,7 @@ const quizzesData = {
             {
                 id: 13,
                 question: "Quel serpent est le plus venimeux du monde par volume de venin ?",
-                options: ["Le cobra", "Le taipan intérieur", "La vipère des sables", "Le bungare"],
+                options: ["Le cobra royal, dont une seule morsure peut injecter suffisamment de venin pour tuer un éléphant adulte", "Le taipan intérieur", "La vipère des sables, responsable de la majorité des morsures mortelles en Afrique et au Moyen-Orient", "Le bungare rayé, dont le venin neurotoxique agit sans douleur initiale, retardant dangereusement la prise en charge médicale"],
                 correct: 1,
                 explanation: "Le taipan intérieur (ou taipan terrestre) d'Australie détient le record absolu de toxicité du venin de serpent. Sa DL50 (dose létale pour 50% des souris testées) est de 0,025 mg/kg — 10 fois plus toxique que le cobra royal et 50 fois plus que le cobra commun. Son venin attaque le système nerveux et la coagulation simultanément. Heureusement, il vit dans des zones très reculées et n'attaque pratiquement jamais l'humain.",
                 source: "Institut Toxinologique - Le taipan intérieur a le venin le plus toxique."
@@ -2301,7 +2301,7 @@ const quizzesData = {
             {
                 id: 14,
                 question: "Combien de temps une tortue peut-elle survivre sans nourriture ?",
-                options: ["1-2 mois", "6 mois", "1-2 ans selon l'espèce", "5+ ans"],
+                options: ["1-2 mois, soit la durée maximale tolérée grâce aux réserves de glycogène hépatique", "6 mois, durée correspondant à l'hibernation des tortues en régions tempérées", "1-2 ans selon l'espèce", "5+ ans, leur métabolisme pouvant s'arrêter presque totalement en période de sécheresse extrême"],
                 correct: 2,
                 explanation: "Les tortues peuvent survivre sans manger pendant des durées extraordinaires grâce à leur métabolisme ultra-lent. Pendant l'hibernation (ou estivation en été), elles réduisent toutes leurs fonctions vitales au minimum et puisent dans leurs réserves de graisse. Des tortues de Galápagos ont survécu plus d'un an sans eau ni nourriture à bord de navires. C'est d'ailleurs pourquoi les marins les emportaient comme provisions vivantes.",
                 source: "Centre de Physiologie Reptilienne - Les tortues peuvent jeûner longtemps."
@@ -2309,7 +2309,7 @@ const quizzesData = {
             {
                 id: 15,
                 question: "Quel est le plus grand crocodile jamais enregistré ?",
-                options: ["Environ 4-5 mètres", "Environ 6-7 mètres", "Plus de 7 mètres", "Plus de 10 mètres"],
+                options: ["Environ 4-5 mètres, une taille déjà impressionnante correspondant aux grands mâles du crocodile du Nil", "Environ 6-7 mètres, taille des plus grands crocodiles du Nil jamais mesurés dans les deltas africains", "Plus de 7 mètres", "Plus de 10 mètres, une longueur théoriquement possible chez les espèces préhistoriques comme le Sarcosuchus"],
                 correct: 2,
                 explanation: "Le plus grand crocodile marin (Crocodylus porosus) jamais mesuré officiellement atteignait 6,17 m, mais des témoignages et mesures historiques évoquent des individus dépassant 7 mètres. Le crocodile 'Lolong', capturé aux Philippines en 2011, mesurait 6,17 m et pesait 1 075 kg — record officiel Guinness. Ces géants peuvent vivre plus de 70 ans et continuent de grandir toute leur vie.",
                 source: "Société Herpétologique - Le crocodile marin peut excéder 7 mètres."
@@ -2317,7 +2317,7 @@ const quizzesData = {
             {
                 id: 16,
                 question: "À quel âge un crocodile devient-il reproducteur ?",
-                options: ["À 2-3 ans", "À 5-10 ans", "À 10-15 ans selon l'espèce", "À 20+ ans"],
+                options: ["À 2-3 ans, soit une maturité précoce favorisée par l'abondance de nourriture dans les milieux tropicaux", "À 5-10 ans, délai comparable à celui des varans géants et des gros lézards tropicaux", "À 10-15 ans selon l'espèce", "À 20+ ans, seuil atteint uniquement chez les crocodiles marins vivant dans des eaux à faible température"],
                 correct: 2,
                 explanation: "Les crocodiliens atteignent leur maturité sexuelle tardivement : entre 10 et 15 ans selon l'espèce et les conditions. Le crocodile du Nil est mature vers 12-15 ans, le crocodile marin vers 10-12 ans. La femelle pond entre 20 et 80 œufs dans un nid qu'elle surveille jalousement pendant 3 mois. Elle aide ensuite les jeunes à éclore et les transporte dans sa gueule jusqu'à l'eau — comportement parental très développé pour un reptile.",
                 source: "Centre d'Étude des Crocodiliens - La maturité arrive tardivement."
@@ -2325,7 +2325,7 @@ const quizzesData = {
             {
                 id: 17,
                 question: "Quel lézard peut courir sur l'eau ?",
-                options: ["Le dragon de Komodo", "Le basilic", "L'iguane", "Le moniteur"],
+                options: ["Le dragon de Komodo, qui peut traverser des bras de mer entre îles en nageant sur de longues distances", "Le basilic", "L'iguane marin des Galápagos, qui plonge dans l'océan et nage entre les rochers pour brouter les algues", "Le varan du Nil, capable de traverser des rivières à la surface en agitant vigoureusement sa queue aplatie"],
                 correct: 1,
                 explanation: "Le basilic vert (Basiliscus plumifrons) d'Amérique centrale peut courir sur l'eau grâce à ses grandes pattes arrière munies de franges et à sa vitesse (environ 1,5 m/s). La fréquence élevée de ses foulées crée des poches d'air sous ses pieds qui l'empêchent de s'enfoncer sur de courtes distances (jusqu'à 4-5 mètres). Cette capacité lui vaut le surnom de 'lézard Jésus-Christ'. Il ne peut le faire qu'à grande vitesse.",
                 source: "Institut d'Éthologie Reptilienne - Le basilic court sur l'eau sur ses pattes postérieures."
@@ -2333,7 +2333,7 @@ const quizzesData = {
             {
                 id: 18,
                 question: "À quel âge une tortue peut-elle pondre des œufs ?",
-                options: ["À 3-5 ans", "À 10-15 ans selon l'espèce", "À 20-30 ans", "À 50+ ans"],
+                options: ["À 3-5 ans, une maturité précoce observée chez certaines tortues d'eau douce des régions tropicales", "À 10-15 ans selon l'espèce", "À 20-30 ans, délai typique des tortues marines qui doivent atteindre une grande taille avant de pondre", "À 50+ ans, une maturité extrêmement tardive que l'on observe uniquement chez les tortues géantes des îles isolées"],
                 correct: 1,
                 explanation: "L'âge de la première ponte varie énormément selon les espèces de tortues. La tortue de Floride peut pondre dès 5-8 ans, mais les tortues marines comme la tortue verte n'atteignent la maturité reproductive qu'entre 20 et 50 ans. Les grandes tortues terrestres des Galápagos pondent pour la première fois vers 20-25 ans. Cette maturité tardive les rend très vulnérables à la surpêche et la prédation avant même qu'elles aient pu se reproduire.",
                 source: "Centre de Reproduction Reptilienne - L'âge varie énormément selon l'espèce."
@@ -2341,7 +2341,7 @@ const quizzesData = {
             {
                 id: 19,
                 question: "Quel est le plus petit reptile du monde ?",
-                options: ["Le caméléon pygmée", "Le gecko nain", "Le lézard de Burton", "La couleuvre des blés"],
+                options: ["Le caméléon pygmée Brookesia micra, qui tient sur la tête d'une allumette", "Le gecko nain Sphaerodactylus ariasae des Caraïbes, mesurant à peine 16 mm", "Le lézard de Burton", "La couleuvre des blés juvénile, mesurant moins de 20 cm à l'éclosion"],
                 correct: 2,
                 explanation: "Le plus petit reptile du monde est en réalité le gecko nano (Sphaerodactylus ariasae) de République Dominicaine, qui mesure environ 16 mm. Le caméléon pygmée Brookesia micra de Madagascar est lui aussi candidat au titre avec ses 29 mm. Le 'lézard de Burton' n'est pas la référence la plus précise — les records de miniaturisation chez les reptiles sont disputés et régulièrement mis à jour par de nouvelles découvertes en zones tropicales.",
                 source: "Musée de Zoologie - Le lézard de Burton mesure environ 10 cm."
@@ -2349,7 +2349,7 @@ const quizzesData = {
             {
                 id: 20,
                 question: "Quel est le temps moyen de l'éclosion des œufs de tortue ?",
-                options: ["1-2 mois", "3-4 mois", "5-6 mois selon l'espèce", "8-12 mois"],
+                options: ["1-2 mois, durée typique des crocodiliens incubant dans des amas de végétation en décomposition", "3-4 mois, durée observée chez les pythons qui couvent activement leurs œufs en frissonnant", "5-6 mois selon l'espèce", "8-12 mois, durée prolongée documentée chez certaines tortues des régions froides qui diapausent en développement"],
                 correct: 2,
                 explanation: "L'incubation des œufs de tortues marines dure entre 45 et 70 jours selon la température du sable — plus il fait chaud, plus l'éclosion est rapide. Les tortues terrestres ont des durées plus longues : 90 à 120 jours pour la tortue d'Hermann. La température d'incubation détermine aussi le sexe des tortorues (TSD) : des températures plus chaudes produisent généralement plus de femelles, ce qui rend le changement climatique particulièrement préoccupant pour ces espèces.",
                 source: "Centre de Reproduction des Tortues - L'incubation varie selon conditions."
@@ -2357,7 +2357,7 @@ const quizzesData = {
             {
                 id: 21,
                 question: "Quel serpent est le plus long du monde ?",
-                options: ["L'anaconda", "Le python de Birmanie", "Le python réticulé", "Le boa"],
+                options: ["L'anaconda vert d'Amazonie, qui dépasse les 5 mètres et constitue le serpent le plus lourd du monde", "Le python de Birmanie, une espèce invasive en Floride pouvant dépasser 6 mètres et 90 kilogrammes", "Le python réticulé", "Le boa constricteur, dont les plus grands spécimens d'Amérique centrale atteignent régulièrement 5 à 6 mètres"],
                 correct: 2,
                 explanation: "Le python réticulé (Malayopython reticulatus) d'Asie du Sud-Est est le plus long serpent du monde. Il peut dépasser 7 mètres et peser plus de 100 kg. Le spécimen le plus long officiellement mesuré (Medusa) atteignait 7,67 m. Il se distingue de l'anaconda (le plus lourd) par sa longueur. Chasseur par constriction, il peut avaler des proies allant jusqu'à la taille d'un petit cochon ou d'un chevreuil.",
                 source: "Institut Herpétologique - Le python réticulé peut dépasser 7 mètres."
@@ -2365,7 +2365,7 @@ const quizzesData = {
             {
                 id: 22,
                 question: "À quelle température un reptile doit-il être maintenu ?",
-                options: ["15-20°C", "20-25°C", "25-35°C selon l'espèce", "40°C+"],
+                options: ["15-20°C, une plage de températures adaptée aux reptiles des régions méditerranéennes comme la tortue d'Hermann", "20-25°C, une température ambiante suffisante pour maintenir l'activité des espèces comme le boa constrictor", "25-35°C selon l'espèce", "40°C+, une température que certains reptiles désertiques comme l'agame de Bibron peuvent tolérer brièvement au basking"],
                 correct: 2,
                 explanation: "Les reptiles en captivité ont des besoins thermiques précis qu'il faut respecter. Un pogona (dragon barbu) d'Australie a besoin d'une zone chaude à 40-45°C et d'une zone fraîche à 25-28°C. Un gecko léopard préfère 28-32°C. En dessous de leur température minimale, leur digestion s'arrête et leur système immunitaire s'effondre. C'est pourquoi un terrarium mal chauffé est l'une des premières causes de maladie chez les reptiles en captivité.",
                 source: "Centre de Soins Reptiliens - Les températures varient selon les espèces."
@@ -2373,7 +2373,7 @@ const quizzesData = {
             {
                 id: 23,
                 question: "Quel est le processus de la mue chez les serpents ?",
-                options: ["Perte de peau en fragments", "Perte complète de la peau en une seule pelure", "Pas de mue", "Très lente"],
+                options: ["Perte progressive de la peau en fragments irréguliers, comme chez les lézards en période de croissance", "Perte complète de la peau en une seule pelure", "Aucun renouvellement cutané, la peau des serpents grandissant avec eux tout au long de leur vie", "Mue très lente sur plusieurs semaines, le serpent restant partiellement couvert de son ancienne peau"],
                 correct: 1,
                 explanation: "Les serpents muent d'un seul tenant (ecdysis) en retournant leur peau de l'intérieur, comme on retournerait une chaussette. Avant la mue, leurs yeux deviennent bleutés et opaques car la vieille peau se décolle sur le globe oculaire (le 'spectacle'). Ils se frottent contre des surfaces rugueuses pour amorcer la mue par le museau. La fréquence varie selon la croissance : un jeune serpent en pleine croissance mue toutes les 4-6 semaines, un adulte 2-4 fois par an.",
                 source: "Institut d'Éthologie Reptilienne - La mue ectysiale se fait en une fois."
@@ -2381,7 +2381,7 @@ const quizzesData = {
             {
                 id: 24,
                 question: "Quel caméléon a les capacités de changement de couleur les plus marquées ?",
-                options: ["Le caméléon panthère", "Le caméléon d'Afrique du Sud", "Le caméléon casqué", "Le caméléon pygmée"],
+                options: ["Le caméléon panthère", "Le caméléon de Namaqua, qui alterne noir et blanc pour thermoréguler dans son habitat désertique d'Afrique australe", "Le caméléon casqué, qui affiche des teintes vives lors des parades nuptiales et adapte sa couleur à la saison dans son habitat montagneux", "Le caméléon pygmée Rhampholeon, dont la gamme chromatique précise lui permet un camouflage quasi parfait parmi les feuilles mortes"],
                 correct: 0,
                 explanation: "Le caméléon panthère (Furcifer pardalis) de Madagascar est considéré comme le champion du changement de couleur. Les mâles peuvent afficher des rouges, oranges, verts, bleus et turquoises intenses en quelques secondes. Chaque région de l'île a sa propre coloration locale. Des études ont montré que le caméléon contrôle ses iridophores (cristaux de guanine) comme un réseau de nanostructures, modifiant la façon dont la lumière est réfléchie pour changer de couleur.",
                 source: "Institut de Biophysique Reptilienne - Le panthère est connu pour ses changements."
@@ -2927,7 +2927,7 @@ const quizzesData = {
             {
                 id: 1,
                 question: "Quel est le plus grand animal marin jamais existant ?",
-                options: ["Le grand requin blanc", "La baleine bleue", "Le kraken", "L'éléphant"],
+                options: ["Le grand requin blanc, prédateur de 6 mètres et 2 tonnes", "La baleine bleue", "Le mégalodon, requin préhistorique pouvant atteindre 18 mètres", "Le diplodocus, dinosaure de 27 mètres considéré longtemps comme le plus grand vertébré"],
                 correct: 1,
                 explanation: "La baleine bleue est l'animal le plus grand ayant jamais existé sur Terre. Elle peut mesurer jusqu'à 30 mètres de long et peser 190 tonnes. Malgré sa taille massice, elle se nourrit de minuscules krill.",
                 source: "Muséum d'Histoire Naturelle - La baleine bleue est l'animal le plus grand connu."
@@ -2935,7 +2935,7 @@ const quizzesData = {
             {
                 id: 2,
                 question: "Les mammifères marins respirent par quoi ?",
-                options: ["Des branchies", "Des poumons", "La peau", "Ils ne respirent pas"],
+                options: ["Des branchies très développées, similaires à celles des gros poissons marins", "Des poumons", "La peau, richement vascularisée, qui absorbe l'oxygène dissous dans l'eau", "Un organe hybride appelé pneumobranchie, entre poumon et branchie"],
                 correct: 1,
                 explanation: "Tous les mammifères respirent de l'air avec des poumons, y compris les mammifères marins. C'est pourquoi les cétacés (baleines et dauphins) doivent régulièrement remonter à la surface. Ce n'est pas comme les poissons qui ont des branchies.",
                 source: "Institut de Biologie Marine - Les mammifères marins respirent de l'air avec des poumons."
@@ -2943,7 +2943,7 @@ const quizzesData = {
             {
                 id: 3,
                 question: "Quel mammifère marin est connu pour ses chants complexes ?",
-                options: ["Le dauphin", "La baleine", "L'otarie", "Le phoque"],
+                options: ["Le dauphin, dont les cliquetis et sifflements forment un langage élaboré utilisé pour coordonner la chasse", "La baleine", "L'otarie, capable d'imiter des sons humains et de produire des séquences vocales apprises", "Le phoque de Weddell, dont les trilles résonnent sous la banquise sur plusieurs kilomètres"],
                 correct: 1,
                 explanation: "Les baleines, notamment la baleine à bosse, produisent des chants complexes et merveilleusement structurés. Ces chants peuvent durer 30 minutes et se transmettre entre populations. Ils servent probablement à la communication et à l'accouplement.",
                 source: "Centre de Recherche Marine - Les baleines produisent des chants élaborés et structurés."
@@ -2951,7 +2951,7 @@ const quizzesData = {
             {
                 id: 4,
                 question: "Combien d'espèces de dauphins existent environ ?",
-                options: ["Environ 5 espèces", "Environ 20 espèces", "Environ 40 espèces", "Environ 100 espèces"],
+                options: ["Environ 5 espèces, dont le grand dauphin et le dauphin commun, les deux seules vraiment bien documentées", "Environ 20 espèces réparties entre océans tropicaux et tempérés", "Environ 40 espèces", "Environ 100 espèces, en comptant toutes les populations géographiquement isolées reconnues localement"],
                 correct: 2,
                 explanation: "Il existe environ 40 esp\u00e8ces de dauphins dans le monde, appartenant \u00e0 la famille des Delphinid\u00e9s. Parmi les plus connues : le grand dauphin (Tursiops truncatus), le dauphin commun et l'orque \u2014 techniquement le plus grand dauphin. Cette diversit\u00e9 couvre les mers tropicales, temp\u00e9r\u00e9es et polaires.",
                 source: "Société Cétologique - Il existe environ 40 espèces de dauphins."
@@ -2959,7 +2959,7 @@ const quizzesData = {
             {
                 id: 5,
                 question: "Quel est le plus petit cétacé du monde ?",
-                options: ["Le dauphin", "La baleine béluga", "Le marsouin", "L'orque"],
+                options: ["Le dauphin de Maui, espèce endémique de Nouvelle-Zélande, mesurant environ 1,2 mètre à maturité", "La baleine béluga, dont la taille adulte dépasse rarement 4 à 5 mètres pour les femelles", "Le marsouin", "L'orque naine, sous-espèce tropicale atteignant au maximum 2,5 mètres selon certaines classifications"],
                 correct: 2,
                 explanation: "Le marsouin commun (Phocoena phocoena) mesure en moyenne 1,4 \u00e0 1,7 m\u00e8tre pour 50 \u00e0 70 kg \u2014 bien loin des grandes baleines. Il se distingue du dauphin par son museau arrondi sans bec allong\u00e9. C'est l'un des c\u00e9tac\u00e9s les plus fr\u00e9quents en mer du Nord, malheureusement menac\u00e9 par les filets de p\u00eache.",
                 source: "Musée Océanographique - Le marsouin est l'un des plus petits cétacés."
@@ -2967,7 +2967,7 @@ const quizzesData = {
             {
                 id: 6,
                 question: "Les mammifères marins allaitent-ils leurs petits ?",
-                options: ["Non, jamais", "Oui, comme tous les mammifères", "Parfois", "Seulement les cétacés"],
+                options: ["Non, ils nourrissent leurs petits par régurgitation d'aliments semi-digérés, comme certains oiseaux marins", "Oui, comme tous les mammifères", "Seulement les espèces côtières, car les cétacés du large ont perdu cette capacité lors de leur adaptation aquatique", "Seulement les cétacés à fanons, qui produisent du lait ; les dauphins et phoques transmettent les nutriments autrement"],
                 correct: 1,
                 explanation: "Comme tous les mammif\u00e8res, les mammif\u00e8res marins allaitent leurs petits \u2014 c'est d'ailleurs ce qui les d\u00e9finit. Le lait des baleines est extraordinairement riche en graisses (40 \u00e0 50% de mati\u00e8res grasses, contre 4% dans le lait de vache), ce qui permet aux baleineaux de grossir de 80 \u00e0 90 kg par jour.",
                 source: "Institut d'Océanologie - Les mammifères marins allaitent leurs jeunes."
@@ -2975,7 +2975,7 @@ const quizzesData = {
             {
                 id: 7,
                 question: "À quelle profondeur maximale les baleines peuvent-elles plonger ?",
-                options: ["100 mètres", "500 mètres", "2000+ mètres selon l'espèce", "3000+ mètres"],
+                options: ["100 mètres environ, profondeur au-delà de laquelle la pression serait trop élevée pour les poumons des cétacés", "500 mètres pour les espèces les plus adaptées, selon les mesures enregistrées par biologistes marins", "2000+ mètres selon l'espèce", "3000+ mètres, profondeur réservée aux seuls céphalopodes et poissons des abysses, inaccessible aux mammifères"],
                 correct: 2,
                 explanation: "Les capacit\u00e9s de plong\u00e9e varient selon les esp\u00e8ces. La baleine \u00e0 bec de Cuvier d\u00e9tient le record avec plus de 3 000 m\u00e8tres et plus de 3 heures d'apn\u00e9e. Ces exploits sont rendus possibles par des adaptations extraordinaires : effondrement des poumons, redistribution du sang vers les organes vitaux, et stockage d'oxyg\u00e8ne dans les muscles gr\u00e2ce \u00e0 la myoglobine.",
                 source: "Centre d'Étude des Cétacés - Certaines baleines plongent très profond."
@@ -2983,7 +2983,7 @@ const quizzesData = {
             {
                 id: 8,
                 question: "Quel type d'alimentation ont les baleines à fanons ?",
-                options: ["Carnivores prédateurs", "Herbivores", "Filtreurs de plancton", "Détritivores"],
+                options: ["Carnivores prédateurs actifs, chassant des poissons et calmars comme les baleines à dents", "Herbivores consommant des algues et herbiers marins grâce à leurs fanons en forme de peignes végétaux", "Filtreurs de plancton", "Opportunistes omnivores, variant leur régime selon la saison entre proies animales et matière organique"],
                 correct: 2,
                 explanation: "Les baleines \u00e0 fanons (mystic\u00e8tes) \u2014 baleine bleue, rorqual, baleine \u00e0 bosse \u2014 n'ont pas de dents mais des fanons, des lames corn\u00e9es qui filtrent l'eau comme un tamis g\u00e9ant. En une seule gorg\u00e9e, une baleine bleue peut ingurgiter jusqu'\u00e0 500 kg de krill. Paradoxe fascinant : le plus grand animal vivant se nourrit d'un des plus petits crustac\u00e9s de l'oc\u00e9an.",
                 source: "Université Marine - Les baleines à fanons filtrent le krill et le plancton."
@@ -2991,7 +2991,7 @@ const quizzesData = {
             {
                 id: 9,
                 question: "Combien d'années une baleine peut-elle vivre ?",
-                options: ["10-20 ans", "30-50 ans", "50-90+ ans selon l'espèce", "200 ans"],
+                options: ["10-20 ans, durée de vie comparable à celle des grands dauphins étudiés en captivité sur plusieurs générations", "30-50 ans, longévité maximale observée chez la majorité des grandes espèces de rorquals et mysticètes", "50-90+ ans selon l'espèce", "200 ans, chiffre invérifiable car aucun individu n'a pu être suivi sur une telle durée avec certitude scientifique"],
                 correct: 2,
                 explanation: "La long\u00e9vit\u00e9 des baleines est remarquable. La baleine de Bowhead est le mammif\u00e8re le plus long\u00e9vif : certains individus d\u00e9passent 200 ans, d\u00e9termin\u00e9 par l'analyse des acides amin\u00e9s dans les yeux. La baleine \u00e0 bosse vit 80 \u00e0 90 ans, et la baleine bleue environ 80 ans. Cette long\u00e9vit\u00e9 tient \u00e0 un m\u00e9tabolisme lent et des m\u00e9canismes de r\u00e9paration de l'ADN tr\u00e8s efficaces.",
                 source: "Institut de Longévité Marine - Les baleines peuvent vivre très longtemps."
@@ -2999,7 +2999,7 @@ const quizzesData = {
             {
                 id: 10,
                 question: "Quel mammifère marin passe l'ensemble de sa vie dans l'eau ?",
-                options: ["Les otaries", "Les phoques", "Les cétacés (baleines et dauphins)", "Les loutres"],
+                options: ["Les otaries, qui ne quittent l'eau que quelques jours par an lors de périodes de ponte sur les rochers côtiers", "Les phoques, qui mettent bas en mer et n'ont pas besoin de sortir de l'eau pour se reproduire", "Les cétacés (baleines et dauphins)", "Les loutres de mer, qui dorment, se nourrissent et se reproduisent exclusivement en flottant à la surface"],
                 correct: 2,
                 explanation: "Les c\u00e9tac\u00e9s (baleines, dauphins, marsouins) sont les seuls mammif\u00e8res marins \u00e0 passer enti\u00e8rement leur vie dans l'eau \u2014 naissance, alimentation, reproduction et mort incluses. Les phoques et otaries sortent r\u00e9guli\u00e8rement sur les c\u00f4tes pour se reproduire et muer. Les loutres de mer restent tr\u00e8s proches de l'eau mais peuvent s'\u00e9chouer. Seuls les c\u00e9tac\u00e9s sont totalement aquatiques.",
                 source: "Société Océanographique - Les cétacés sont entièrement aquatiques."
@@ -3007,7 +3007,7 @@ const quizzesData = {
             {
                 id: 11,
                 question: "À quelle profondeur peut plonger un cachalot ?",
-                options: ["500 mètres", "1000-2000 mètres", "3000-4000 mètres", "Plus de 5000 mètres"],
+                options: ["500 mètres, profondeur atteinte lors des plongées alimentaires ordinaires pour capturer des poissons de fond", "1000-2000 mètres, limite physiologique estimée par les chercheurs avant les premières balises d'enregistrement", "3000-4000 mètres", "Plus de 5000 mètres, profondeur que seuls les robots sous-marins télécommandés peuvent atteindre actuellement"],
                 correct: 2,
                 explanation: "Le cachalot (Physeter macrocephalus) est le champion des plong\u00e9es parmi les baleines \u00e0 dents. Il peut descendre \u00e0 plus de 3 000 m\u00e8tres et tenir en apn\u00e9e pendant 90 minutes pour chasser les calmars g\u00e9ants dans les abysses. Son cr\u00e2ne massif abrite le 'spermacoeti', un organe huileux qui r\u00e9gule sa flottabilit\u00e9 et aide \u00e0 focaliser ses clics d'\u00e9cholocalisation.",
                 source: "Institut de Biologie Marine - Le cachalot peut plonger très profond."
@@ -3015,7 +3015,7 @@ const quizzesData = {
             {
                 id: 12,
                 question: "Quel est le poids d'une baleine bleue adulte ?",
-                options: ["50-100 tonnes", "100-150 tonnes", "150-200 tonnes", "200+ tonnes"],
+                options: ["50-100 tonnes, poids comparable au rorqual commun souvent confondu avec la baleine bleue dans les récits historiques", "100-150 tonnes, fourchette estimée d'après les premières pesées lors de la chasse baleinière industrielle au XXe siècle", "150-200 tonnes", "200+ tonnes, masse que certains grands mâles dépasseraient selon les estimations basées sur leur longueur maximale enregistrée"],
                 correct: 2,
                 explanation: "La baleine bleue adulte p\u00e8se en moyenne 150 \u00e0 200 tonnes \u2014 l'\u00e9quivalent de 30 \u00e9l\u00e9phants. Son c\u0153ur seul p\u00e8se environ 600 kg et est gros comme une petite voiture. Ses art\u00e8res sont si larges qu'un enfant pourrait y ramper. Malgr\u00e9 cette taille colossale, elle peut nager \u00e0 30 km/h lors de sprints.",
                 source: "Muséum Océanographique - La baleine bleue pèse environ 150-200 tonnes."
@@ -3023,7 +3023,7 @@ const quizzesData = {
             {
                 id: 13,
                 question: "À quel âge un dauphin devient-il sexuellement mature ?",
-                options: ["À 2-3 ans", "À 5-7 ans selon l'espèce", "À 10-15 ans", "À 20+ ans"],
+                options: ["À 2-3 ans, période où les jeunes dauphins atteignent leur taille adulte et commencent à s'éloigner du groupe maternel", "À 5-7 ans selon l'espèce", "À 10-15 ans, comme chez la plupart des grands mammifères à longue durée de vie tels que les éléphants ou les grands singes", "À 20+ ans, au terme d'une longue phase juvénile comparable à celle des grands cétacés comme les baleines à bosse"],
                 correct: 1,
                 explanation: "Les dauphins atteignent leur maturit\u00e9 sexuelle relativement t\u00f4t pour des mammif\u00e8res si intelligents et long\u00e9vifs. Le grand dauphin (Tursiops truncatus) devient sexuellement mature entre 5 et 12 ans selon le sexe \u2014 les femelles un peu plus t\u00f4t que les m\u00e2les. Ils peuvent vivre jusqu'\u00e0 40-50 ans, laissant une longue p\u00e9riode de vie adulte reproductive.",
                 source: "Centre de Recherche Cétologique - La maturité arrive relativement tôt."
@@ -3031,7 +3031,7 @@ const quizzesData = {
             {
                 id: 14,
                 question: "Quel est le temps moyen de gestation d'une baleine ?",
-                options: ["6 mois", "10-12 mois", "12-16 mois selon l'espèce", "18-24 mois"],
+                options: ["6 mois, durée comparable à celle des dauphins de petite taille dont le développement fœtal est plus rapide", "10-12 mois, gestation similaire à celle de nombreux grands mammifères terrestres comme le cheval ou la girafe", "12-16 mois selon l'espèce", "18-24 mois, période observée chez les éléphants qui partagent avec les baleines une taille et une longévité comparables"],
                 correct: 2,
                 explanation: "Les baleines ont une gestation parmi les plus longues du r\u00e8gne animal. La baleine bleue porte son petit environ 12 mois, l'orque jusqu'\u00e0 17 mois. Le baleineau de baleine bleue na\u00eet en mesurant d\u00e9j\u00e0 7 \u00e0 8 m\u00e8tres et pesant 2 \u00e0 3 tonnes. Il t\u00e8te 600 litres de lait par jour et grossit de 90 kg quotidiennement.",
                 source: "Institut de Reproduction Marine - Gestation très longue."
@@ -3039,7 +3039,7 @@ const quizzesData = {
             {
                 id: 15,
                 question: "Quel phoque peut plonger plus profond que les autres ?",
-                options: ["Le phoque moine", "Le phoque du Groenland", "Le phoque de Weddell", "Le léopard des mers"],
+                options: ["Le phoque moine de Méditerranée, dont les plongées répétées jusqu'à 500 mètres pour chasser les mérous l'ont rendu champion chez les espèces tempérées", "Le phoque du Groenland, qui effectue des plongées de plus de 400 mètres lors de ses migrations sous la banquise arctique", "Le phoque de Weddell", "Le léopard des mers, prédateur antarctique capable de plongées profondes pour chasser pingouins et phoques crabiers"],
                 correct: 2,
                 explanation: "Le phoque de Weddell (Leptonychotes weddellii) vit en Antarctique et est un plong\u00e9e exceptionnel : il peut descendre \u00e0 plus de 700 m\u00e8tres et rester en apn\u00e9e pendant 80 minutes. Pour respirer sous la glace, il maintient des trous en rongeant la glace avec ses dents. C'est l'un des mammif\u00e8res vivant le plus au sud de la plan\u00e8te, capable de supporter des temp\u00e9ratures de -60\u00b0C.",
                 source: "Institut de Plongée Marine - Le phoque de Weddell plonge très profond."
@@ -3047,7 +3047,7 @@ const quizzesData = {
             {
                 id: 16,
                 question: "À quelle température le lait de baleine peut-il être produit ?",
-                options: ["Température ambiante", "Température interne chaude 37-40°C", "Temperature froide", "Variable"],
+                options: ["À la température de l'eau environnante, les glandes mammaires fonctionnant en équilibre thermique avec le milieu marin pour préserver l'énergie", "Température interne chaude 37-40°C", "À une température abaissée d'environ 20-25°C, permettant un refroidissement partiel qui épaissit naturellement le lait avant injection", "À une température variable selon la profondeur de l'individu et la saison, régulée par des mécanismes hormonaux spécifiques"],
                 correct: 1,
                 explanation: "Comme tous les mammif\u00e8res, les baleines sont homm\u00e9othermes et maintiennent une temp\u00e9rature interne d'environ 36-38\u00b0C, m\u00eame dans des eaux proches de 0\u00b0C. Leur lait est produit \u00e0 cette m\u00eame temp\u00e9rature. Pour conserver cette chaleur, leur \u00e9paisse couche de lard (blubber) peut atteindre 50 cm d'\u00e9paisseur chez les esp\u00e8ces polaires.",
                 source: "Institut de Biologie Reproductive Marine - Mammalien thermique."
@@ -3055,7 +3055,7 @@ const quizzesData = {
             {
                 id: 17,
                 question: "Quel est le plus grand animal marin jamais découvert ?",
-                options: ["Le cachalot", "La baleine bleue", "Le kraken supposé", "L'éléphant de mer"],
+                options: ["Le cachalot mâle, dont les spécimens de 20 mètres et 50 tonnes ont longtemps été considérés comme les plus grands mammifères connus", "La baleine bleue", "Le mégalodon, requin préhistorique de 15 à 18 mètres dont des fossiles datant de moins de 3 millions d'années ont été découverts", "L'éléphant de mer du sud, pinnipède pouvant peser jusqu'à 4 tonnes considéré le plus grand carnivore terrestre avant les redécouvertes marines"],
                 correct: 1,
                 explanation: "La baleine bleue (Balaenoptera musculus) est sans conteste le plus grand animal ayant jamais v\u00e9cu, surpassant m\u00eame les plus grands dinosaures. Les plus grandes femelles enregistr\u00e9es mesuraient jusqu'\u00e0 33 m\u00e8tres. Sa population a \u00e9t\u00e9 r\u00e9duite \u00e0 1% de son niveau originel par la chasse baleini\u00e8re au 20\u00e8me si\u00e8cle \u2014 elle reste une esp\u00e8ce en danger.",
                 source: "Muséum d'Histoire Naturelle - La baleine bleue est l'animal vivant le plus grand."
@@ -3063,7 +3063,7 @@ const quizzesData = {
             {
                 id: 18,
                 question: "À quel âge une otarie devient-elle adulte reproductrice ?",
-                options: ["À 2-3 ans", "À 4-5 ans selon l'espèce", "À 6-8 ans", "À 10+ ans"],
+                options: ["À 2-3 ans, période où les jeunes ont déjà acquis leur taille adulte et maîtrisent suffisamment la nage pour se reproduire", "À 4-5 ans selon l'espèce", "À 6-8 ans, âge auquel la plupart des pinnipèdes atteignent leur plein développement musculaire et osseux nécessaire à la reproduction", "À 10+ ans, maturité tardive comparable à celle des grands cétacés qui dédient leur première décennie à l'apprentissage social"],
                 correct: 1,
                 explanation: "Les otaries atteignent leur maturit\u00e9 sexuelle entre 3 et 6 ans selon l'esp\u00e8ce et le sexe. Les m\u00e2les, bien que matures biologiquement plus t\u00f4t, n'acc\u00e8dent g\u00e9n\u00e9ralement \u00e0 la reproduction qu'autour de 8-10 ans \u2014 ils doivent \u00eatre assez grands et forts pour \u00e9tablir un territoire sur les rookeries et d\u00e9fendre un harem de femelles.",
                 source: "Centre de Zoologie Marine - Maturité relativement rapide."
@@ -3071,7 +3071,7 @@ const quizzesData = {
             {
                 id: 19,
                 question: "Quel est le record de migration chez une baleine grise ?",
-                options: ["Quelques centaines de km", "5000-10000 km par an", "15000-20000 km par an", "Plus de 30000 km"],
+                options: ["Quelques centaines de km, la baleine grise étant une espèce plutôt côtière qui suit les cordons littoraux sans grands déplacements océaniques", "5000-10000 km par an, distance comparable à celle des rorquals qui migrent entre l'Atlantique Nord et les Açores", "15000-20000 km par an", "Plus de 30000 km, distance qui correspondrait à un tour complet du globe, enregistrée grâce aux balises satellite modernes"],
                 correct: 2,
                 explanation: "La baleine grise effectue l'une des migrations les plus longues de tous les mammif\u00e8res : 15 000 \u00e0 20 000 km aller-retour chaque ann\u00e9e entre ses aires d'alimentation en Arctique et ses zones de reproduction en Basse-Californie (Mexique). Ce voyage de plusieurs mois presque sans se nourrir est rendu possible gr\u00e2ce aux r\u00e9serves de graisse accumul\u00e9es pendant l'\u00e9t\u00e9.",
                 source: "Centre de Recherche Migratoire Marine - Migration très longue."
@@ -3079,7 +3079,7 @@ const quizzesData = {
             {
                 id: 20,
                 question: "Combien de temps peut survivre un phoque sans nourriture ?",
-                options: ["Quelques jours", "2-4 semaines", "1-2 mois selon l'espèce", "3-4 mois"],
+                options: ["Quelques jours car leur métabolisme élevé exige un apport quasi-continu pour maintenir la chaleur corporelle constante", "2-4 semaines pour les jeunes phoques apprenant à chasser après le sevrage brutal de leur mère", "1-2 mois selon l'espèce", "3-4 mois comme les éléphants de mer mâles lors des longues saisons de reproduction où l'alimentation est quasiment abandonnée"],
                 correct: 2,
                 explanation: "Les phoques accumulent d'importantes r\u00e9serves de graisse pendant les p\u00e9riodes d'abondance. Cette \u00e9nergie leur permet de je\u00fbner pendant la reproduction \u00e0 terre ou lors des mues. Le phoque gris m\u00e2le peut je\u00fbner 6 \u00e0 8 semaines pendant la saison de reproduction, vivant uniquement sur ses r\u00e9serves de lard accunul\u00e9es.",
                 source: "Institut de Physiologie Marine - Métabolisme très économe."
@@ -3087,7 +3087,7 @@ const quizzesData = {
             {
                 id: 21,
                 question: "À quel âge une jeune baleine devient-elle indépendante ?",
-                options: ["À quelques semaines", "À quelques mois", "À 6-12 mois selon l'espèce", "À 1-2 ans"],
+                options: ["À quelques semaines dès que le baleineau nage et accompagne sa mère lors des plongées", "À quelques mois quand la mère abandonne progressivement son petit comme chez les phoques", "À 6-12 mois selon l'espèce", "À 1-2 ans durée observée chez les cachalots dont les jeunes restent liés au groupe"],
                 correct: 2,
                 explanation: "Les baleineaux sont allait\u00e9s entre 6 et 12 mois selon l'esp\u00e8ce. Pendant toute cette p\u00e9riode, le baleineau reste constamment pr\u00e8s de sa m\u00e8re, qui lui enseigne les routes migratoires et les zones d'alimentation. Ces connaissances transmises culturellement \u2014 routes migratoires, sources de nourriture \u2014 sont essentielles \u00e0 la survie de l'esp\u00e8ce.",
                 source: "Centre de Développement Juvénile - Allaitement prolongé."
@@ -3095,7 +3095,7 @@ const quizzesData = {
             {
                 id: 22,
                 question: "Quel est le diamètre de l'évent (spiracle) d'une baleine ?",
-                options: ["Quelques cm", "10-15 cm", "30-50 cm selon l'espèce", "Plus de 50 cm"],
+                options: ["Quelques centimètres comparable à la narine d'un mammifère terrestre de grande taille", "10-15 cm de diamètre mesure enregistrée chez plusieurs rorquals étudiés en détail", "30-50 cm selon l'espèce", "Plus de 50 cm chez la baleine bleue adulte selon les mesures sur spécimens échoués"],
                 correct: 2,
                 explanation: "L'\u00e9vent \u2014 l'\u00e9quivalent de nos narines, situ\u00e9 sur le sommet du cr\u00e2ne \u2014 peut mesurer 30 \u00e0 50 cm de diam\u00e8tre chez les grandes baleines. Il permet de ventiler des poumons de plusieurs centaines de litres. Le souffle caract\u00e9ristique peut s'\u00e9lever \u00e0 9-12 m\u00e8tres de hauteur et s'entendre \u00e0 plusieurs kilom\u00e8tres de distance.",
                 source: "Institut d'Anatomie Cétologique - Ouverture respiratoire large."
@@ -3103,7 +3103,7 @@ const quizzesData = {
             {
                 id: 23,
                 question: "À quelle profondeur peut plonger un phoque de Weddell ?",
-                options: ["200 mètres", "500-600 mètres", "600-700 mètres selon l'espèce", "Plus de 800 mètres"],
+                options: ["200 mètres lors des plongées ordinaires sous la banquise pour chasser les poissons", "500-600 mètres selon premières études avec émetteurs acoustiques dans les années 1970", "600-700 mètres selon les mesures modernes", "Plus de 800 mètres profondeur atteinte par les éléphants de mer souvent cités comme pinnipèdes les plus profonds"],
                 correct: 2,
                 explanation: "Le phoque de Weddell peut plonger \u00e0 plus de 600 m\u00e8tres de profondeur, record parmi les phoques. Sous la banquise antarctique, il navigue dans l'obscurit\u00e9 totale gr\u00e2ce \u00e0 son ou\u00efe fine et ses vibrisses ultrasensibles. Il maintient jusqu'\u00e0 une vingtaine de trous de respiration qu'il agrandit r\u00e9guli\u00e8rement avec ses incisives robustes.",
                 source: "Centre de Plongée Marine - Adaptations extrêmes à la profondeur."
@@ -3111,7 +3111,7 @@ const quizzesData = {
             {
                 id: 24,
                 question: "Quel est le poids moyen d'un nouveau-né baleine bleue ?",
-                options: ["1-2 tonnes", "3-4 tonnes", "4-5 tonnes", "Plus de 5 tonnes"],
+                options: ["1-2 tonnes poids comparable à un nouveau-né de cachalot dont la gestation est pourtant plus courte", "3-4 tonnes estimation longtemps retenue dans la littérature scientifique avant les premières pesées directes", "4-5 tonnes", "Plus de 5 tonnes ce que certains auteurs avancent pour les femelles de très grande taille ayant porté plusieurs gestations"],
                 correct: 2,
                 explanation: "Le baleineau de baleine bleue est l'un des plus grands nouveau-n\u00e9s du r\u00e8gne animal. \u00c0 la naissance, il mesure d\u00e9j\u00e0 7 \u00e0 8 m\u00e8tres de long et p\u00e8se plusieurs tonnes. Il grossit \u00e0 une vitesse ph\u00e9nom\u00e9nale gr\u00e2ce au lait de sa m\u00e8re, qui contient 40 \u00e0 50% de mati\u00e8res grasses. En quelques mois, son poids peut tripler.",
                 source: "Institut de Reproduction Marine - Bébé baleine géant."
@@ -3657,7 +3657,7 @@ const quizzesData = {
             {
                 id: 1,
                 question: "Quel est le poids moyen d'un lion mâle ?",
-                options: ["100-150 kg", "150-200 kg", "200-250 kg", "250+ kg"],
+                options: ["100-150 kg, comparable à un grand léopard mâle en pleine forme", "150-200 kg, soit un poids proche de celui d'une tigresse adulte d'Asie", "200-250 kg", "250-300 kg, notamment chez les lions des savanes d'Afrique orientale"],
                 correct: 2,
                 explanation: "Un lion mâle adulte pèse en moyenne 200 à 250 kilogrammes, avec une longueur totale pouvant dépasser 2,5 mètres. Les femelles sont plus légères, pesant 130 à 180 kg. Cette taille massive leur permet de dominer leur environnement.",
                 source: "National Geographic - Le lion mâle pèse environ 200-250 kg."
@@ -3665,7 +3665,7 @@ const quizzesData = {
             {
                 id: 2,
                 question: "Quel est le rugissement du lion utilisé pour ?",
-                options: ["Attirer les femelles", "Marquer le territoire et communiquer", "Chasser uniquement", "Aucune raison"],
+                options: ["Attirer les femelles en période de reproduction et signaler sa disponibilité aux lionnes proches", "Marquer le territoire et communiquer", "Coordonner les attaques de chasse et déstabiliser les proies par la peur avant l'assaut", "Avertir les membres de la fierté d'un danger imminent comme l'approche d'hyènes rivales"],
                 correct: 1,
                 explanation: "Le rugissement du lion est une forme de communication puissante. Il peut porter jusqu'à 10 kilomètres et sert à marquer le territoire, appeler les autres lions et déclarer sa force. Les lions rugissent surtout au crépuscule et à l'aube.",
                 source: "Institut d'Éthologie Féline - Le rugissement porte jusqu'à 10 km."
@@ -3673,7 +3673,7 @@ const quizzesData = {
             {
                 id: 3,
                 question: "Quelle est la principale nourriture du lion ?",
-                options: ["Les plantes", "La viande - gnus, zèbres, antilopes", "Le poisson", "Les insectes"],
+                options: ["Les fruits et tubercules, complétés occasionnellement par des charognes dans la savane", "La viande - gnus, zèbres, antilopes", "Les poissons des rivières et lacs africains, chassés à l'affût comme certains félins d'Asie", "Les petits mammifères et reptiles, capturés lors de chasses nocturnes solitaires"],
                 correct: 1,
                 explanation: "Le lion est un carnivore strict et un prédateur féroce. Il chasse principalement les gnus, zèbres, antilopes et buffles. Un lion peut consommer jusqu'à 40 kilos de viande en un seul repas et peut rester des semaines sans manger.",
                 source: "Centre de Recherche Africaine - Le lion est carnivore strict."
@@ -3681,7 +3681,7 @@ const quizzesData = {
             {
                 id: 4,
                 question: "À quel âge un lion mâle développe-t-il sa crinière ?",
-                options: ["À 1 an", "À 2-3 ans", "À 3-5 ans", "À 5+ ans"],
+                options: ["Dès 1 an, la crinière est déjà bien visible et commence à couvrir les épaules du jeune mâle", "Entre 2 et 3 ans, lorsque les premières hormones sexuelles stimulent la croissance des poils", "À 3-5 ans", "Seulement après 6 ou 7 ans, une fois le mâle établi dans sa propre fierté"],
                 correct: 2,
                 explanation: "La crini\u00e8re du lion m\u00e2le commence \u00e0 appara\u00eetre vers 1 an, mais atteint son d\u00e9veloppement complet entre 3 et 5 ans. Sa couleur et sa densit\u00e9 sont des indicateurs d'\u00e2ge et de sant\u00e9 : une crini\u00e8re sombre et fournie signale un m\u00e2le en bonne condition physique et aux taux de testost\u00e9rone \u00e9lev\u00e9s, ce qui le rend plus attractif aux femelles.",
                 source: "Société de Zoologie - La crinière se développe progressivement."
@@ -3689,7 +3689,7 @@ const quizzesData = {
             {
                 id: 5,
                 question: "Combien d'heures par jour un lion dort-il ?",
-                options: ["4-6 heures", "8-10 heures", "15-20 heures", "Plus de 20 heures"],
+                options: ["4 à 6 heures par jour, car il reste actif et en alerte la majeure partie du temps pour surveiller son territoire", "8 à 10 heures par jour, alternant courtes siestes et longues périodes de surveillance active de la fierté", "15-20 heures", "Environ 22 heures sur 24, ne se réveillant que pour boire et se nourrir lors des chasses"],
                 correct: 2,
                 explanation: "Le lion est l'un des mammif\u00e8res les plus s\u00e9dentaires : il dort et se repose 15 \u00e0 20 heures par jour pour conserver son \u00e9nergie dans la chaleur africaine. Cette inactivit\u00e9 apparente cache une strat\u00e9gie de survie efficace \u2014 la chasse demande des pointes d'effort intense, et \u00e9conomiser l'\u00e9nergie le reste du temps est essentiel dans un environnement o\u00f9 les proies se font parfois rares.",
                 source: "Institut d'Étude du Comportement - Le lion dort très longtemps."
@@ -3697,7 +3697,7 @@ const quizzesData = {
             {
                 id: 6,
                 question: "Quel est le rôle principal de la lionne dans la chasse ?",
-                options: ["Elle ne chasse pas", "Elle chasse activement en groupe", "Elle chasse seule", "Elle garde les petits"],
+                options: ["Elle reste au camp pour surveiller et protéger les lionceaux pendant que le mâle chasse seul", "Elle chasse activement en groupe", "Elle traque ses proies seule en utilisant la végétation comme couvert, à la manière d'un léopard", "Elle se charge uniquement de rabattre les proies, laissant le mâle effectuer la mise à mort finale"],
                 correct: 1,
                 explanation: "Les lionnes effectuent pr\u00e8s de 90% des chasses de la fierté, g\u00e9n\u00e9ralement en groupe de 2 \u00e0 8 individus. Elles coordonnent leurs attaques avec des r\u00f4les d\u00e9finis : certaines rabattent les proies tandis que d'autres encerclent. Les m\u00e2les profitent souvent du r\u00e9sultat de la chasse sans y participer, bien que leur pr\u00e9sence puisse aussi intimider d'autres pr\u00e9dateurs pour prot\u00e9ger la carcasse.",
                 source: "Centre de Recherche Africain - Les lionnes font 90% des chasses."
@@ -3907,7 +3907,7 @@ const quizzesData = {
             {
                 id: 1,
                 question: "Quel est l'envergure d'un aigle royal ?",
-                options: ["1,5-2 mètres", "2-2,5 mètres", "2,3-2,8 mètres", "3+ mètres"],
+                options: ["1,5-2 mètres, soit une envergure proche du faucon pélerin ou de la bondrée apivore", "2-2,5 mètres, comparable à l'envergure du balbuzard pêcheur ou du milan royal", "2,3-2,8 mètres", "3+ mètres, une valeur que seuls les grands albatros et certains vautours des Andes atteignent"],
                 correct: 2,
                 explanation: "L'aigle royal possède une envergure remarquable de 2,3 à 2,8 mètres. Cela en fait l'un des plus grands aigles d'Europe. Cette grande envergure lui permet de planer sans effort pendant de longues périodes et de chercher des proies sur de vastes territoires.",
                 source: "National Geographic - L'envergure peut atteindre 2,8 mètres."
@@ -3915,7 +3915,7 @@ const quizzesData = {
             {
                 id: 2,
                 question: "À quelle vitesse un aigle royal peut-il voler en piqué ?",
-                options: ["100 km/h", "150 km/h", "200 km/h", "240+ km/h"],
+                options: ["100 km/h, vitesse maximale en vol horizontal soutenu lors des longues patrouilles territoriales", "150 km/h, performance enregistrée lors des poursuites rasantes au-dessus des alpages en été", "200 km/h, valeur documentée pour l'aigle de Bonelli lors d'attaques en piqué incliné sur ses proies", "240+ km/h"],
                 correct: 3,
                 explanation: "L'aigle royal peut atteindre une vitesse de 240 km/h ou plus en piqé (plongeon vertical), ce qui le rend extrêmement rapide. Cette vitesse foudroyante lui permet d'attraper des préda-teurs en fuite. C'est bien moins rapide que le faucon pélerin mais impressionnant néanmoins.",
                 source: "Institut d'Ornithologie - Piqués extrêmement rapides."
@@ -3923,7 +3923,7 @@ const quizzesData = {
             {
                 id: 3,
                 question: "Quel est l'animal préféré de chasse de l'aigle royal ?",
-                options: ["Les lapins", "Les lièvres et lapins", "Les oiseaux", "Les poissons"],
+                options: ["Les lapins uniquement, en particulier le lapin de garenne dont les effectifs fluctuent fortement selon les années", "Les lièvres et lapins", "Les oiseaux de taille moyenne comme les lagopèdes, perdrix et gélinottes qui abondent en zone alpine", "Les poissons, capturés en piqué à la surface des lacs de montagne et des torrents glaciaires"],
                 correct: 1,
                 explanation: "L'aigle royal chasse principalement les lièvres et les lapins. Ces petits mammifères constituent plus de 95% de son régime alimentaire. L'aigle royal est un chasseur spécialisé et passe des heures à planer pour détecter sa proie.",
                 source: "Centre de Recherche Cynégétique - Prédateur de rongeurs."
@@ -3931,65 +3931,65 @@ const quizzesData = {
             {
                 id: 4,
                 question: "À quelle distance un aigle royal peut-il voir une proie ?",
-                options: ["1 km", "3 km", "5 km", "10+ km"],
+                options: ["1 km, soit une acuité similaire à celle de la buse variable qui chasse également en milieu ouvert", "3 km", "5 km, distance documentée pour le faucon pèlerin grâce à sa fovéa centrale particulièrement dense", "10+ km, une capacité réservée aux vautours planant à très haute altitude sur les colonnes thermiques"],
                 correct: 2,
-                explanation: "La r\u00e9ponse correcte est \u00ab 5 km \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "La vision de l'aigle royal est l'une des plus per\u00e7antes du r\u00e8gne animal. Il peut rep\u00e9rer un lapin \u00e0 plus de 3 km de distance gr\u00e2ce \u00e0 une densit\u00e9 de c\u00f4nes r\u00e9tiniens 5 fois sup\u00e9rieure \u00e0 celle de l'humain. Ses deux fov\u00e9as (zones de vision maximale, contre une seule chez l'humain) lui permettent \u00e0 la fois une vision frontale pr\u00e9cise et une vision lat\u00e9rale large. Ses yeux, proportionnellement aussi grands que les n\u00f4tres, sont fix\u00e9s dans leurs orbites \u2014 il tourne la t\u00eate pour regarder.",
                 source: "Institut d'Ophtalmologie Aviaire - Vision exceptionnel."
             },
             {
                 id: 5,
                 question: "À quel âge les aigles royaux se reproduisent-ils pour la première fois ?",
-                options: ["À 2-3 ans", "À 4-5 ans", "À 5-7 ans", "À 7+ ans"],
+                options: ["À 2-3 ans, dès que le jeune a acquis son premier plumage de vol et maîtrisé les techniques de base", "À 4-5 ans, quand le plumage intermédiaire montre les premières plumes brun doré caractéristiques de l'adulte", "À 5-7 ans", "À 7+ ans, une fois que la fidélité territoriale est pleinement établie et le partenaire définitivement choisi"],
                 correct: 2,
-                explanation: "La r\u00e9ponse correcte est \u00ab \u00c0 5-7 ans \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "L'aigle royal est un oiseau \u00e0 maturit\u00e9 tardive. Les jeunes passent plusieurs ann\u00e9es \u00e0 errer et explorer avant de s'\u00e9tablir. La reproduction d\u00e9bute entre 5 et 7 ans, quand le couple a trouv\u00e9 un territoire et construit son nid. Cette longue p\u00e9riode de jeunesse est n\u00e9cessaire pour acqu\u00e9rir les techniques de chasse complexes et la connaissance du territoire indispensables \u00e0 un \u00e9levage r\u00e9ussi.",
                 source: "Centre d'Études Reproductrices - Maturation tardive."
             },
             {
                 id: 6,
                 question: "Combien de temps dure l'incubation des œufs d'aigle royal ?",
-                options: ["15 jours", "25-30 jours", "40-45 jours", "60+ jours"],
+                options: ["15 jours, durée correspondant à certains petits passereaux comme le moineau domestique dont le cycle d'incubation est très court", "25-30 jours, durée proche de celle de la buse variable ou de la crécerelle, deux rapaces de taille nettement inférieure à l'aigle royal", "40-45 jours", "60+ jours, durée qu'on observe chez certains grands albatros dont les œufs nécessitent une incubation exceptionnellement prolongée en milieu pélagique"],
                 correct: 2,
-                explanation: "La r\u00e9ponse correcte est \u00ab 40-45 jours \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "L'incubation des \u0153ufs d'aigle royal dure 40 \u00e0 45 jours, assur\u00e9e principalement par la femelle mais aussi par le m\u00e2le. Pendant cette p\u00e9riode, la femelle quitte rarement le nid. Le m\u00e2le apporte de la nourriture et prend le relais pour l'incubation quelques heures par jour. La temp\u00e9rature des \u0153ufs est maintenue \u00e0 37-38\u00b0C gr\u00e2ce \u00e0 la plaque incubatrice, une zone d\u00e9plum\u00e9e sur l'abdomen de l'oiseau riche en vaisseaux sanguins.",
                 source: "Institut d'Ornithologie - Incubation longue."
             },
             {
                 id: 7,
                 question: "Combien d'œufs pond généralement une aigle royale ?",
-                options: ["1-2 œufs", "2-3 œufs", "3-4 œufs", "4+ œufs"],
+                options: ["1-2 œufs, comme chez les grands rapaces solitaires tel le condor des Andes qui ne pond qu'un seul œuf par cycle en raison de l'investissement parental très lourd", "2-3 œufs", "3-4 œufs, une ponte proche de celle des buses variables ou des éperviers d'Europe qui élèvent plusieurs poussins simultanément", "4+ œufs, couvée comparable à celle des rapaces diurnes de taille moyenne comme la crécerelle dans les bonnes années"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab 2-3 \u0153ufs \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "L'aigle royale pond g\u00e9n\u00e9ralement 1 \u00e0 3 \u0153ufs (2 en moyenne), \u00e0 intervalle de 3 \u00e0 4 jours. Les \u0153ufs mesurent environ 7 cm et p\u00e8sent 130 g. Fait crucial : l'incubation commence d\u00e8s le premier \u0153uf, ce qui cr\u00e9e un d\u00e9calage d'\u00e2ge entre les aiglons. L'a\u00een\u00e9 \u00e9clot 3 \u00e0 4 jours avant le cadet, lui donnant un avantage de taille qui m\u00e8nera souvent au cainsme (fratricide).",
                 source: "Centre d'Étude Reproductive - Petit nombre de jeunes."
             },
             {
                 id: 8,
                 question: "À quel âge un aiglon quitte le nid ?",
-                options: ["6-8 semaines", "8-12 semaines", "12-16 semaines", "16+ semaines"],
+                options: ["6-8 semaines, délai observé chez les buses et milans qui s'envolent plus tôt grâce à un développement musculaire rapide et un poids corporel nettement inférieur", "8-12 semaines, durée caractéristique du faucon pèlerin dont les poussins quittent le nid après 35 à 42 jours de croissance intensive sur leurs falaises", "12-16 semaines", "16+ semaines, période valable pour le vautour fauve ou le condor de Californie dont les poussins restent au nid près de 4 à 5 mois"],
                 correct: 2,
-                explanation: "La r\u00e9ponse correcte est \u00ab 12-16 semaines \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Les aiglons quittent le nid (envol ou 'fledging') \u00e0 10 \u00e0 13 semaines apr\u00e8s l'\u00e9closion. Mais le d\u00e9part du nid ne signifie pas l'ind\u00e9pendance : pendant encore 3 \u00e0 6 mois, les jeunes restent dans le territoire parental, nourris par leurs parents le temps de ma\u00eetriser le vol et la chasse. La chasse ind\u00e9pendante n'est efficace qu'apr\u00e8s 6 \u00e0 12 mois d'apprentissage.",
                 source: "Institut d'Ornithologie Appliquée - Envol tardif."
             },
             {
                 id: 9,
                 question: "Quel est le poids moyen d'une aigle royale femelle ?",
-                options: ["2-3 kg", "3-4 kg", "4-6 kg", "6+ kg"],
+                options: ["2-3 kg, masse comparable à celle d'une buse variable adulte ou d'un faucon pèlerin femelle, deux rapaces de taille nettement plus modeste", "3-4 kg, gabarit proche de l'aigle de Bonelli femelle ou du circaète Jean-le-Blanc, qui sont des aigles de taille intermédiaire", "4-6 kg", "6+ kg, poids que l'on rencontre chez les grands vautours comme le gypaète barbu ou chez l'aigle de mer eurasien, nettement plus massif"],
                 correct: 2,
-                explanation: "La r\u00e9ponse correcte est \u00ab 4-6 kg \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "La femelle aigle royal est nettement plus grande que le m\u00e2le : elle p\u00e8se 3,6 \u00e0 6,7 kg contre 2,8 \u00e0 4,6 kg pour le m\u00e2le. Ce dimorphisme sexuel invers\u00e9 (la femelle plus grande) est typique des rapaces. Les th\u00e9ories l'expliquent par la n\u00e9cessit\u00e9 pour la femelle de jeûner sur le nid pendant l'incubation (r\u00e9serves \u00e9nerg\u00e9tiques plus importantes) et de d\u00e9fendre le nid contre les pr\u00e9dateurs.",
                 source: "Centre de Zoologie - Les femelles sont plus lourdes."
             },
             {
                 id: 10,
                 question: "Quel est l'habitat préféré de l'aigle royal ?",
-                options: ["Forêts denses", "Montagnes et falaises", "Zones urbaines", "Déserts"],
+                options: ["Forêts denses de conifères et de feuillus, habitat de prédilection de l'autour des palombes ou de l'épervier d'Europe qui chassent à couvert", "Montagnes et falaises", "Zones urbaines et périurbaines riches en pigeons et petits mammifères, exploitées par la buse variable ou le faucon crécerelle en milieu anthropisé", "Déserts et steppes arides à végétation rase, milieux similaires à ceux occupés par l'aigle des steppes ou l'aigle impérial en Asie centrale"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Montagnes et falaises \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "L'aigle royal est avant tout un habitant des milieux ouverts montagnards : alpages, landes, falaises rocheuses et bordures de for\u00eats. Il a besoin de falaises ou de grands arbres pour nicher, d'espaces ouverts pour chasser et de reliefs favorisant les courants thermiques pour planer. En Europe, il colonise les Alpes, les Pyrénées, les Highlands \u00e9cossais et l'Atlas. Il s'adapte aussi aux plaines semi-arides de l'Asie centrale.",
                 source: "Institut d'Écologie - Préférence pour montagnes."
             },
             {
                 id: 11,
                 question: "Combien de serres possède un aigle royal ?",
-                options: ["2 serres", "4 serres", "8 serres", "Plus de 10"],
+                options: ["2 serres par patte, comme chez le balbuzard pêcheur dont les doigts en anneau sont adaptés à saisir des poissons glissants sans les lâcher en vol", "4 serres", "8 serres par patte, configuration qui rappelle les membres de certains reptiles à griffes multiples et permettrait en théorie une prise plus large sur de grosses proies", "Plus de 10 serres au total, comme chez certains mammifères fouisseurs tels le blaireau ou la taupe dont chaque patte porte 5 griffes robustes pour creuser"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab 4 serres \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "L'aigle royal poss\u00e8de 4 serres (griffes) sur chaque patte, comme tous les oiseaux de proie. L'halux (serre arri\u00e8re, la plus longue) est particulièrement d\u00e9velopp\u00e9 et joue le r\u00f4le principal dans la capture. La force de pression des serres est estim\u00e9e \u00e0 15-20 fois celle de l'humain. Cette puissance permet de transpercer la col\u00f4te vertébrale de proies comme les lièvres ou les renards en une fraction de seconde, causant une mort quasi instantan\u00e9e.",
                 source: "Institut d'Anatomie Aviaire - 4 serres par patte."
             },
             {
@@ -3997,7 +3997,7 @@ const quizzesData = {
                 question: "Quel est le cri caractéristique de l'aigle royal ?",
                 options: ["Un miaulement", "Un cri aigu et perçant", "Un ronronnement", "Un gazouillis"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Un cri aigu et per\u00e7ant \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "L'aigle royal n'est pas tr\u00e8s vocal compar\u00e9 \u00e0 d'autres oiseaux. Il \u00e9met un cri aigu et per\u00e7ant, souvent d\u00e9crit comme un 'kyew-kyew' ou un sifflement plaintif. Ce cri sert principalement \u00e0 la communication entre partenaires et avec les jeunes. Lors des parrades nuptiales, les deux aigles s'appellent en alternance. Les aiglons \u00e9mettent des cris stridents pour r\u00e9clamer la nourriture apport\u00e9e par leurs parents.",
                 source: "Centre d'Ornithologie - Vocalisations distinctives."
             },
             {
@@ -4005,7 +4005,7 @@ const quizzesData = {
                 question: "À quelle altitude maximale l'aigle royal a-t-il été observé ?",
                 options: ["3000 mètres", "5000 mètres", "8000 mètres", "10000+ mètres"],
                 correct: 2,
-                explanation: "La r\u00e9ponse correcte est \u00ab 8000 m\u00e8tres \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Des \u00e9tudes de balises GPS ont document\u00e9 des aigles royaux volant jusqu'\u00e0 4 500 \u00e0 5 000 m\u00e8tres d'altitude lors de traversées de cols alpins. Ils sont g\u00e9n\u00e9ralement observ\u00e9s entre 500 et 3 000 m\u00e8tres selon la saison et les proies disponibles. Leur syst\u00e8me respiratoire \u00e0 flux unidirectionnel (plus efficace que celui des mammif\u00e8res) leur permet d'extraire l'oxyg\u00e8ne m\u00eame en altitude o\u00f9 l'air est raréfié.",
                 source: "Institut d'Étude Altitudinale - Record remarquable."
             },
             {
@@ -4013,7 +4013,7 @@ const quizzesData = {
                 question: "Quel est le nombre de nids qu'une aigle royale peut construire ?",
                 options: ["1 seul nid", "2-3 nids alternatifs", "5+ nids", "Un nouveau chaque année"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab 2-3 nids alternatifs \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Un couple d'aigles royaux construit et entretient g\u00e9n\u00e9ralement 2 \u00e0 8 nids alternatifs (aires) dans son territoire, utilis\u00e9s en rotation selon les ann\u00e9es. Ces aires, plac\u00e9es sur des vires de falaises ou dans de grands arbres, sont agrandies chaque ann\u00e9e : certaines atteignent 2 m\u00e8tres de diam\u00e8tre et 1 m\u00e8tre de hauteur apr\u00e8s des d\u00e9cennies d'utilisation, pesant parfois plusieurs centaines de kilos.",
                 source: "Centre de Nidification - Réutilisation préférée."
             },
             {
@@ -4021,7 +4021,7 @@ const quizzesData = {
                 question: "Quel est l'aliment principal des aigles royaux jeunes ?",
                 options: ["Poisson", "Insectes", "Proies apportées par parents", "Plantes"],
                 correct: 2,
-                explanation: "La r\u00e9ponse correcte est \u00ab Proies apport\u00e9es par parents \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Les aiglons sont nid\u00e9icoles : ils naissent aveugles, couverts d'un duvet blanc, et totalement d\u00e9pendants de leurs parents. Le m\u00e2le chasse et rapporte les proies au nid. La femelle d\u00e9coupe la viande en petits morceaux et les distribue d\u00e9licatement aux aiglons. Au fur et \u00e0 mesure qu'ils grandissent, les parents rapportent des proies enti\u00e8res pour les inciter \u00e0 d\u00e9pouiller et \u00e0 d\u00e9chirer par eux-m\u00eames.",
                 source: "Institut d'Élevage - Régime parental."
             },
             {
@@ -4029,7 +4029,7 @@ const quizzesData = {
                 question: "À quelle distance les aigles royaux migrent-ils généralement ?",
                 options: ["Non-migrateurs", "Jusqu'à 1000 km", "Jusqu'à 5000 km", "Pas de migration"],
                 correct: 0,
-                explanation: "La r\u00e9ponse correcte est \u00ab Non-migrateurs \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "L'aigle royal est principalement s\u00e9dentaire et territorial. Les adultes \u00e9tablis restent toute l'ann\u00e9e dans leur territoire de 50 \u00e0 200 km\u00b2. Seuls les jeunes, sans territoire \u00e9tabli, se d\u00e9placent sur de longues distances. Les populations nordiques (Scandinavie, Canada) peuvent effectuer des d\u00e9placements saisonniers vers le sud en hiver, mais la majorit\u00e9 des aigles royaux europ\u00e9ens sont r\u00e9sidents permanents de leur massif montagneux.",
                 source: "Centre de Zoologie Migratoire - Résidents généralement."
             },
             {
@@ -4037,7 +4037,7 @@ const quizzesData = {
                 question: "Quel est le nombre de battements d'ailes par seconde d'un aigle royal ?",
                 options: ["1-2 battements", "3-4 battements", "5-6 battements", "7+ battements"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab 3-4 battements \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "L'aigle royal bat des ailes lentement et majestueusement : 2 \u00e0 3 battements par seconde en vol actif. Il alterne entre phases de batt\u00e9ements et de planés, exploitant les courants thermiques ascendants pour s'\u00e9lever sans effort. Un aigle peut passer plus de 80% de son temps de vol en planeur, dépensant très peu d'énergie. En piqué sur une proie, les ailes sont semi-fermées et les battements cessent complètement.",
                 source: "Institut de Biomécanique Aviaire - Vol économe."
             },
             {
@@ -4045,7 +4045,7 @@ const quizzesData = {
                 question: "À quel âge un aiglon a-t-il son premier plumage d'adulte ?",
                 options: ["À 1-2 ans", "À 2-3 ans", "À 4-5 ans", "À 5+ ans"],
                 correct: 2,
-                explanation: "La r\u00e9ponse correcte est \u00ab \u00c0 4-5 ans \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Les aiglons naissent avec un duvet blanc, qui laisse place \u00e0 un plumage brun fonc\u00e9 uniforme vers 3 mois. Les jeunes aigles montrent ensuite des taches blanches progressives aux ailes et \u00e0 la queue qui disparaissent mue apr\u00e8s mue. Le plumage adulte caract\u00e9ristique \u2014 brun fonc\u00e9 avec une nuque dor\u00e9e qui donne son nom \u00e0 l'esp\u00e8ce \u2014 n'appara\u00eet qu'\u00e0 4-5 ans, avec la maturit\u00e9 sexuelle.",
                 source: "Centre d'Identification - Maturation très progressive."
             },
             {
@@ -4053,7 +4053,7 @@ const quizzesData = {
                 question: "Quel est le son produit par les ailes d'un aigle royal en piqué ?",
                 options: ["Silence", "Sifflement", "Craquement", "Bourdonnement"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Sifflement \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Lors d'un piqué \u00e0 grande vitesse, les ailes semi-fermées de l'aigle royal produisent un sifflement caractéristique dû au passage de l'air entre les plumes. Ce son, audible de loin, est l'un des bruits les plus reconnaissables de la montagne. Les plumes primaires, de forme \u00e9mancip\u00e9e (avec des \u00e9chancrures), r\u00e9duisent les turbulences et le bruit en vol planeur, mais amplifient ce sifflement lors des accélérations.",
                 source: "Institut d'Acoustique Aviaire - Effets sonores."
             },
             {
@@ -4061,7 +4061,7 @@ const quizzesData = {
                 question: "Quel est le diamètre maximal d'un nid d'aigle royal ?",
                 options: ["1 mètre", "2 mètres", "3-4 mètres", "Plus de 5 mètres"],
                 correct: 2,
-                explanation: "La r\u00e9ponse correcte est \u00ab 3-4 m\u00e8tres \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Les aires (nids) d'aigle royal sont parmi les plus grandes structures construites par des oiseaux. Utilis\u00e9es et agrandies ann\u00e9e apr\u00e8s ann\u00e9e, certaines atteignent 3 \u00e0 4 m\u00e8tres de diam\u00e8tre pour 1 \u00e0 2 m\u00e8tres de hauteur, pesant plusieurs centaines de kilos. Le record mondial est une aire de 6 m\u00e8tres de hauteur pour 2,9 m\u00e8tres de large, utilis\u00e9e pendant des d\u00e9cennies. Ces structures sont construites avec des branches \u00e9paisses et tap\u00eess\u00e9es de brindilles, d'herbes et de v\u00e9g\u00e9tation fra\u00eeche.",
                 source: "Centre d'Ornithologie - Constructions massives."
             }
         ],
@@ -4071,7 +4071,7 @@ const quizzesData = {
                 question: "Quel est le territoire d'un couple d'aigles royaux ?",
                 options: ["5-10 km²", "20-40 km²", "50-100 km² selon habitat", "150+ km²"],
                 correct: 2,
-                explanation: "La r\u00e9ponse correcte est \u00ab 50-100 km\u00b2 selon habitat \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Le territoire d'un couple d'aigles royaux varie de 20 \u00e0 200 km\u00b2 selon la richesse du milieu en proies. Dans les zones montagneuses riches (Alpes, \u00c9cosse), les territoires sont plus petits. Dans les zones arides ou nordiques \u00e0 faible densit\u00e9 de proies (Scandinavie, Asie centrale), ils peuvent d\u00e9passer 100 km\u00b2. Le couple d\u00e9fend activement son territoire contre les autres aigles royaux, notamment en p\u00e9riode de reproduction.",
                 source: "Centre de Recherche Territoriale - Vaste domaine."
             },
             {
@@ -4079,7 +4079,7 @@ const quizzesData = {
                 question: "Quel est le mécanisme de la parade aérienne nuptiale ?",
                 options: ["Pas de parade", "Piqués et loopings spectaculaires pour séduction", "Appels uniquement", "Contact physique"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Piqu\u00e9s et loopings spectaculaires pour s\u00e9duction \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "La parade nuptiale de l'aigle royal est l'un des spectacles les plus impressionnants de la faune europ\u00e9enne. Les deux partenaires effectuent une s\u00e9rie de piqués vertigineux, loopings et remontées en chandelle au-dessus du territoire, parfois en se touchant les serres. Cette parade, appel\u00e9e 'sky dance' ou 'roller-coasting', peut durer plusieurs heures et se d\u00e9roule surtout de janvier \u00e0 mars, avant la ponte.",
                 source: "Institut d'Éthologie Reproductrice - Affichages élaborés."
             },
             {
@@ -4087,7 +4087,7 @@ const quizzesData = {
                 question: "À quel âge les aigles royaux deviennent-ils adultes en apparence ?",
                 options: ["À 3-4 ans", "À 4-5 ans selon l'espèce", "À 5-6 ans", "À 6+ ans"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab \u00c0 4-5 ans selon l'esp\u00e8ce \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "L'aigle royal acquiert progressivement son apparence adulte sur 4 \u00e0 5 mues successives. Chaque ann\u00e9e, le jeune perd ses plumes blanches et brune-clair pour les remplacer par des plumes brun fonc\u00e9. La nuque dor\u00e9e caract\u00e9ristique (d'o\u00f9 le nom scientifique Aquila chrysaetos \u2014 'aigle \u00e0 queue dor\u00e9e') appara\u00eet en dernier. Ce changement progressif rend l'\u00e2ge des jeunes aigles identifiable sur le terrain par les ornithologues.",
                 source: "Centre d'Identification - Maturation très progressive."
             },
             {
@@ -4095,7 +4095,7 @@ const quizzesData = {
                 question: "Quel est le temps moyen de vie d'un aigle royal ?",
                 options: ["10-15 ans", "20-30 ans", "30-50 ans selon conditions", "50+ ans"],
                 correct: 2,
-                explanation: "La r\u00e9ponse correcte est \u00ab 30-50 ans selon conditions \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "L'aigle royal est parmi les oiseaux les plus longévifs. En captivit\u00e9, des individus ont atteint 46 ans. En libert\u00e9, la longévit\u00e9 moyenne est de 20-30 ans. Le record en nature est de 32 ans. Cette longévité est li\u00e9e \u00e0 leur position de pr\u00e9dateur apex (peu de pr\u00e9dateurs), \u00e0 leur fidélit\u00e9 territoriale (connaissance approfondie de leur milieu) et \u00e0 la solidit\u00e9 du lien de couple qui optimise le succ\u00e8s reproducteur.",
                 source: "Institut de Longévité - Longévité remarquable."
             },
             {
@@ -4103,7 +4103,7 @@ const quizzesData = {
                 question: "Quel est le rôle du 'kleptoparasitism' chez l'aigle royal ?",
                 options: ["Aucun rôle", "Vol de proies à d'autres rapaces", "Communication", "Territorialité"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Vol de proies \u00e0 d'autres rapaces \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Le klepto-parasitisme (vol de nourriture) est un comportement observ\u00e9 chez l'aigle royal, bien que moins fr\u00e9quent que chez l'aigle de mer. Il peut harceler des buses, des corneilles ou des faucons p\u00e8lerins jusqu'\u00e0 ce qu'ils l\u00e2chent leur proie. Ironiquement, l'aigle royal est lui-m\u00eame victime de klepto-parasitisme de la part de l'aigle de mer en Scandinavie, qui est plus grand et plus agressif.",
                 source: "Institut d'Éthologie Alimentaire - Stratégie prédatrice."
             },
             {
@@ -4111,7 +4111,7 @@ const quizzesData = {
                 question: "À quelle altitudine l'aigle royal peut-il chasser ?",
                 options: ["Jusqu'à 1000m", "Jusqu'à 2000m", "Jusqu'à 5000m ou plus selon proie", "Jusqu'à 10000m"],
                 correct: 2,
-                explanation: "La r\u00e9ponse correcte est \u00ab Jusqu'\u00e0 5000m ou plus selon proie \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "L'aigle royal chasse \u00e0 des altitudes tr\u00e8s variables selon la saison et les proies. En \u00e9t\u00e9, il chasse en alpages jusqu'\u00e0 3 000-4 000 m\u00e8tres o\u00f9 les marmottes et chamois sont abondants. En hiver, il descend dans les vallées \u00e0 500-1 000 m\u00e8tres o\u00f9 les li\u00e8vres, renards et cha-rognes sont plus accessibles. Cette flexibilit\u00e9 altitudinale lui permet d'exploiter des ressources tr\u00e8s diverses tout au long de l'ann\u00e9e.",
                 source: "Centre de Recherche Altitudinale - Chasseur montagnard."
             },
             {
@@ -4119,7 +4119,7 @@ const quizzesData = {
                 question: "Quel est le processus de transmission des techniques de chasse ?",
                 options: ["Instinctif uniquement", "Instinct + apprentissage parental précoce", "Apprentissage tardif", "Pas d'apprentissage"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Instinct + apprentissage parental pr\u00e9coce \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Les techniques de chasse de l'aigle royal sont en partie inn\u00e9es (r\u00e9flexe de saisir des objets mobiles) mais surtout acquises par apprentissage. Les parents \u00e9duquent leurs jeunes en apportant d'abord des proies mortes, puis vivantes et \u00e9tourdies. Les jeunes observent la technique parentale et s'exercent \u00e0 attraper des proies faciles pendant la p\u00e9riode post-envol. La ma\u00eetrise compl\u00e8te de la chasse n\u00e9cessite 1 \u00e0 2 ans apr\u00e8s l'ind\u00e9pendance.",
                 source: "Institut d'Éthologie - Éducation parentale.",
                 source: "Institut d'Étude du Comportement - Apprentissage progressif."
             },
@@ -4128,7 +4128,7 @@ const quizzesData = {
                 question: "À quel âge un aiglon peut-il voler correctement ?",
                 options: ["À 8-10 semaines", "À 12-14 semaines", "À 14-16 semaines selon l'individu", "À 18+ semaines"],
                 correct: 2,
-                explanation: "La r\u00e9ponse correcte est \u00ab \u00c0 14-16 semaines selon l'individu \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Les aiglons effectuent leurs premiers vols \u00e0 10-13 semaines, mais ne volent vraiment bien qu'\u00e0 14-16 semaines. Les premi\u00e8res sorties sont courtes et maladroites, avec des atterrissages difficiles. La ma\u00eetrise des techniques de vol (thermiques, piqués, manœuvres) prend plusieurs mois. Pendant toute cette p\u00e9riode, les parents continuent de nourrir les jeunes et les 'encouragent' \u00e0 chasser en r\u00e9duisant progressivement leurs apports alimentaires.",
                 source: "Centre d'Ornithologie - Envol progressif et délicat."
             },
             {
@@ -4136,7 +4136,7 @@ const quizzesData = {
                 question: "Quel est le nombre moyen de jeunes élevés par couple annuellement ?",
                 options: ["0,5-1 jeune", "1-1,5 jeunes", "1,5-2 jeunes selon succès", "2+ jeunes"],
                 correct: 2,
-                explanation: "La r\u00e9ponse correcte est \u00ab 1,5-2 jeunes selon succ\u00e8s \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "En moyenne, un couple d'aigles royaux \u00e9l\u00e8ve 1 \u00e0 2 jeunes par an, mais le succ\u00e8s reproducteur varie beaucoup. Le taux de cainsme (fratricide) est \u00e9lev\u00e9 : l'a\u00een\u00e9, plus grand, monopolise souvent la nourriture et tue son cadet. Les ann\u00e9es de forte densit\u00e9 de lièvres ou de marmottes, deux aiglons survivent plus souvent. En France, la productivit\u00e9 moyenne est d'environ 0,7 jeune \u00e0 l'envol par territoire occup\u00e9.",
                 source: "Institut de Fécondité - Reproduction lente."
             },
             {
@@ -4144,7 +4144,7 @@ const quizzesData = {
                 question: "Quel est l'impact de la force d'un aigle royal ?",
                 options: ["Faible", "Peut soulever 4-5 kg de poids", "Peut soulever plus de 8kg", "Force sans limites"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Peut soulever 4-5 kg de poids \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "La force de l'aigle royal est impressionnante mais souvent exag\u00e9r\u00e9e dans les l\u00e9gendes. En r\u00e9alit\u00e9, il peut soulever et transporter des proies de 3 \u00e0 5 kg en vol (environ son propre poids). Pour les proies plus lourdes (renard, jeune chevreuil de 8-10 kg), il les d\u00e9coupe sur place ou les tra\u00eene sur le sol. La pression de ses serres peut atteindre 300-400 kg/cm\u00b2, suffisante pour briser la col\u00f4ne vert\u00e9brale d'un lièvre.",
                 source: "Centre de Biomécanique - Force relative."
             },
             {
@@ -4152,7 +4152,7 @@ const quizzesData = {
                 question: "Quel est le processus de l'imprinting chez les aigles royaux ?",
                 options: ["Pas d'imprinting", "Reconnaissance de la mère et du site par exposition précoce", "Apprentissage tardif", "Pas de lien"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Reconnaissance de la m\u00e8re et du site par exposition pr\u00e9coce \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "L'empreinte (imprinting) chez les aigles royaux se produit dans les premi\u00e8res semaines apr\u00e8s l'\u00e9closion. L'aiglon m\u00e9morise l'apparence de ses parents et les caract\u00e9ristiques de son site de nidification (paysage, odeurs, sons). Cette m\u00e9moire le guidera \u00e0 l'\u00e2ge adulte pour chercher un partenaire de la m\u00eame esp\u00e8ce et revenir se reproduire dans des habitats similaires. C'est pourquoi des aiglons \u00e9lev\u00e9s par l'humain ne peuvent g\u00e9n\u00e9ralement pas \u00eatre rel\u00e2ch\u00e9s.",
                 source: "Institut d'Éthologie Développementale - Lien précoce."
             },
             {
@@ -4160,7 +4160,7 @@ const quizzesData = {
                 question: "À quel âge un aiglon devient-il autonome en vol ?",
                 options: ["À 2-3 mois", "À 4-5 mois selon l'entraînement", "À 6 mois", "À 8+ mois"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab \u00c0 4-5 mois selon l'entra\u00eenement \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "L'ind\u00e9pendance compl\u00e8te en vol se d\u00e9veloppe progressivement apr\u00e8s l'envol (10-13 semaines). \u00c0 4-5 mois, le jeune aigle ma\u00eetrise les vols basiques mais manque encore d'efficacit\u00e9 en chasse. Les parents continuent \u00e0 subvenir \u00e0 ses besoins jusqu'\u00e0 6-10 mois apr\u00e8s l'envol. C'est seulement apr\u00e8s cette longue p\u00e9riode d'\u00e9mancipation que le jeune part d\u00e9finitivement \u00e0 la d\u00e9couverte de nouveaux territoires.",
                 source: "Centre d'Ornithologie - Autonomie progressive."
             },
             {
@@ -4168,7 +4168,7 @@ const quizzesData = {
                 question: "Quel est le rôle du 'wing morphology' dans l'efficacité du vol ?",
                 options: ["Pas de rôle", "Ailes longues et larges permettent vol thermique efficace", "Vol uniquement actif", "Pas d'impact"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Ailes longues et larges permettent vol thermique efficace \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Les ailes de l'aigle royal ont une forme sp\u00e9cifiquement adapt\u00e9e au vol plané en montagne : longues (2,3 m d'envergure), larges avec des r\u00e9miges \u00e9mancip\u00e9es (primaires s\u00e9par\u00e9es comme des doigts) qui r\u00e9duisent les tourbillons en bout d'aile. Cette morphologie permet un ratio planée/descente exceptionnel. Les \u00e9mancipes fonctionnent comme des spoilers individuels r\u00e9glables, contr\u00f4l\u00e9s mus par mus par l'aigle pour ajuster finement sa trajectoire.",
                 source: "Institut de Biomécanique Aviaire - Design aérodynamique."
             },
             {
@@ -4176,7 +4176,7 @@ const quizzesData = {
                 question: "Quel est le nombre moyen de chasses réussies par semaine ?",
                 options: ["1-2 chasses", "3-4 chasses", "5-7 chasses selon disponibilité", "10+ chasses"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab 3-4 chasses \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "L'aigle royal est un chasseur efficace mais pas quotidien. Il chasse en moyenne 3 \u00e0 4 fois par semaine, capturant des proies suffisamment grosses pour ne pas avoir \u00e0 chasser chaque jour. Un lièvre de 2 kg nourrit l'aigle pendant 2-3 jours. L'aigle compense sa faible fr\u00e9quence de chasse par une efficacit\u00e9 \u00e9lev\u00e9e (taux de succ\u00e8s de 20-30%) rendue possible par sa vision exceptionnelle et sa ma\u00eetrise des tactiques de chasse.",
                 source: "Centre d'Étude Prédatrice - Fréquence modérée."
             },
             {
@@ -4184,7 +4184,7 @@ const quizzesData = {
                 question: "À quel âge les jeunes aigles quittent définitivement le nid parental ?",
                 options: ["À 3-4 mois", "À 6-8 mois", "À 10-12 mois selon apprentissage", "À 18+ mois"],
                 correct: 2,
-                explanation: "La r\u00e9ponse correcte est \u00ab \u00c0 10-12 mois selon apprentissage \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Apr\u00e8s l'envol (10-13 semaines), les jeunes aigles restent d\u00e9pendants des parents pendant encore 6 \u00e0 10 mois. Ils quittent d\u00e9finitivement le territoire natal entre 10 et 14 mois pour partir explorer. Certains jeunes restent \u00e0 proximit\u00e9 du territoire parental si des ressources sont disponibles. La dispersion d\u00e9finitive est d\u00e9clench\u00e9e par l'agressivit\u00e9 croissante des parents qui pr\u00e9parent la prochaine saison de reproduction.",
                 source: "Institut d'Éthologie Familiale - Dépendance longue."
             },
             {
@@ -4192,7 +4192,7 @@ const quizzesData = {
                 question: "Quel est le rôle de la 'prey specialization' pour le tigre ?",
                 options: ["Pas de spécialisation", "Préférence pour certaines proies augmente efficacité", "Accepte tout proies", "Pas de choix"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Pr\u00e9f\u00e9rence pour certaines proies augmente efficacit\u00e9 \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "L'aigle royal est un g\u00e9n\u00e9raliste adaptable, mais d\u00e9veloppe des sp\u00e9cialisations locales selon les proies disponibles. Dans les Alpes, il se sp\u00e9cialise sur la marmotte (jusqu'\u00e0 80% du r\u00e9gime \u00e9t\u00e9). Dans les Highlands \u00e9cossais, il cible le lagop\u00e8de et le li\u00e8vre variable. Cette sp\u00e9cialisation locale, transmise par apprentissage parental, lui permet de ma\u00eetriser des techniques de chasse sp\u00e9cifiques et d'am\u00e9liorer consid\u00e9rablement son taux de succ\u00e8s.",
                 source: "Institut d'Écologie Prédatrice - Adaptation alimentaire."
             },
             {
@@ -4200,7 +4200,7 @@ const quizzesData = {
                 question: "À quel âge un aigle royal atteint-il pleine maturité reproductrice ?",
                 options: ["À 3 ans", "À 4-5 ans", "À 5-7 ans selon l'individu", "À 7+ ans"],
                 correct: 2,
-                explanation: "La r\u00e9ponse correcte est \u00ab \u00c0 5-7 ans selon l'individu \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "La maturit\u00e9 reproductrice de l'aigle royal co\u00efncide avec l'acquisition du plumage adulte, vers 5-7 ans. Mais \u00eatre sexuellement mature ne suffit pas : les jeunes doivent aussi \u00e9tablir un territoire et trouver un partenaire. Dans les populations denses, les bons territoires sont occup\u00e9s par des adultes \u00e9tablis, for\u00e7ant les jeunes \u00e0 errer comme 'flottants' pendant plusieurs ann\u00e9es suppl\u00e9mentaires en attendant qu'une place se lib\u00e8re.",
                 source: "Centre de Reproduction - Maturation tardive."
             },
             {
@@ -4208,7 +4208,7 @@ const quizzesData = {
                 question: "Quel est le nombre moyen de mues par année chez l'aigle royal ?",
                 options: ["1 mue complète", "2 mues", "Mue progressive tout l'année", "3 mues"],
                 correct: 2,
-                explanation: "La r\u00e9ponse correcte est \u00ab Mue progressive tout l'ann\u00e9e \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "L'aigle royal mue progressivement tout au long de l'ann\u00e9e, ne changeant que quelques plumes \u00e0 la fois pour maintenir toujours sa capacit\u00e9 de vol. La mue compl\u00e8te prend 2 \u00e0 3 ans chez les adultes. Ce processus lent est une adaptation aux exigences \u00e9nerg\u00e9tiques du vol : perdre trop de plumes simultan\u00e9ment d\u00e9graderait dangereusement les performances a\u00e9rodynamiques. Chez les jeunes, la mue est plus intense et visible car elle accompagne le passage au plumage adulte.",
                 source: "Institut d'Ornithologie - Renouvellement constant."
             },
             {
@@ -4216,7 +4216,7 @@ const quizzesData = {
                 question: "Quel est le rôle du 'siblicide' dans la structure sociale ?",
                 options: ["Pas de fratricide", "Aîné tue cadet pour monopoliser ressources maternelles", "Fratrie harmonieuse", "Partage équitable"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab A\u00een\u00e9 tue cadet pour monopoliser ressources maternelles \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Le ca\u00efnisme (fratricide) est un comportement fr\u00e9quent chez l'aigle royal, observ\u00e9 dans plus de 50% des nid\u00e9es comportant deux \u0153ufs. L'a\u00een\u00e9, qui \u00e9clot 3-4 jours avant son fr\u00e8re, le domine d\u00e8s le d\u00e9but : il monopolise la nourriture apport\u00e9e par les parents et peut attaquer physiquement le cadet. La mort du cadet survient g\u00e9n\u00e9ralement par inanition dans les 2 premi\u00e8res semaines. Les parents n'interviennent pas.",
                 source: "Institut d'Éthologie Familiale - Compétition intense."
             },
             {
@@ -4224,7 +4224,7 @@ const quizzesData = {
                 question: "À quel niveau d'intensité un aigle royal attaque-t-il sa proie ?",
                 options: ["Attaque faible", "Piqué à 200+ km/h avec serre en formation", "Approche lente", "Combat aérien"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Piqu\u00e9 \u00e0 200+ km/h avec serre en formation \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "La chasse de l'aigle royal combine vision hors pair et attaque explosive. Apr\u00e8s avoir rep\u00e9r\u00e9 une proie en vol plané, il effectue un piqué inclin\u00e9 \u00e0 150-200 km/h, les ailes semi-closes. \u00c0 quelques m\u00e8tres de la proie, il d\u00e9ploie les pattes en avant, serres ouvertes. L'impact est brutal : les serres transpercent les organes vitaux et la force du choc peut briser la col\u00f4ne vert\u00e9brale. Proie et oiseau roulent souvent sur plusieurs m\u00e8tres \u00e0 l'impact.",
                 source: "Centre de Biomécanique - Attaque spectaculaire."
             }
         ],
@@ -4234,7 +4234,7 @@ const quizzesData = {
                 question: "Quel est le mécanisme de la 'thermal soaring' utilisé par l'aigle royal ?",
                 options: ["Pas de thermals", "Utilisation de courants d'air chaud pour économiser énergie", "Vol actif seulement", "Pas de stratégie"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Utilisation de courants d'air chaud pour \u00e9conomiser \u00e9nergie \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Le 'thermal soaring' est la technique de locomotion signature de l'aigle royal. Il localise les colonnes d'air chaud ascendant (thermiques) cr\u00e9\u00e9es par le soleil chauffant les versants rocheux, puis y entre en cercles serr\u00e9s pour s'\u00e9lever sans battre des ailes. Une fois \u00e0 altitude, il planie vers un nouveau thermique ou fonçe sur une proie. Ce syst\u00e8me lui permet de parcourir 100 km/jour en d\u00e9pensant \u00e0 peine plus d'\u00e9nergie que d'habitude.",
                 source: "Institut d'Aérodynamique Aviaire - Efficacité énergétique."
             },
             {
@@ -4242,7 +4242,7 @@ const quizzesData = {
                 question: "Quel est le processus de la 'monogamie à vie' chez les aigles royaux ?",
                 options: ["Pas de monogamie", "Couples restent ensemble plusieurs années reproductives", "Changement annuel", "Polygamie"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Couples restent ensemble plusieurs ann\u00e9es reproductives \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "L'aigle royal est monogame et les couples restent en g\u00e9n\u00e9ral unis pour la vie, souvent 10 \u00e0 20 ans. Ils ne se s\u00e9parent qu'en cas de d\u00e9c\u00e8s d'un partenaire ou d'\u00e9checs reproducteurs r\u00e9p\u00e9t\u00e9s. Cette fid\u00e9lit\u00e9 est avant tout une strat\u00e9gie \u00e9volutive : les couples exp\u00e9riment\u00e9s qui connaissent leur territoire et se coordonnent parfaitement ont un succ\u00e8s reproducteur bien sup\u00e9rieur aux nouveaux couples. L'amour n'y est pour rien \u2014 c'est de l'efficacit\u00e9 darwinienne.",
                 source: "Université de Biologie Reproductive - Liens durables."
             },
             {
@@ -4250,7 +4250,7 @@ const quizzesData = {
                 question: "Quel est le rôle du 'Cainism' (fratricide) chez les aigles royaux ?",
                 options: ["Pas de fratricide", "Aîné tue cadet pour monopoliser nourriture", "Pas de compétition", "Partage équitable"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab A\u00een\u00e9 tue cadet pour monopoliser nourriture \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Le ca\u00efnisme est un ph\u00e9nom\u00e8ne adaptatif : les parents pondent deux \u0153ufs comme 'assurance' en cas de mort du premier \u0153uf ou de l'a\u00een\u00e9 en bas \u00e2ge. Une fois l'a\u00een\u00e9 bien \u00e9tabli, le cadet devient superflu. Les ressources alimentaires des Alpes ne permettent g\u00e9n\u00e9ralement pas d'\u00e9lever deux aiglons simultan\u00e9ment. Ce sacrifice programm\u00e9 du cadet est donc une strat\u00e9gie reproductrice efficace qui maximise le succ\u00e8s de l'a\u00een\u00e9.",
                 source: "Institut d'Éthologie Familiale - Compétition sibling."
             },
             {
@@ -4258,7 +4258,7 @@ const quizzesData = {
                 question: "Quel est le mécanisme de détection des proies chez l'aigle royal ?",
                 options: ["Vision uniquement", "Vision et capteurs thermiques limitées", "Odorat exacerbé", "Audition seulement"],
                 correct: 0,
-                explanation: "La r\u00e9ponse correcte est \u00ab Vision uniquement \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "La d\u00e9tection des proies par l'aigle royal repose principalement sur la vision, mais aussi sur d'autres sens. Sa vue ultraviolette lui permet de d\u00e9tecter les pistes urinaires des rongeurs (l'urine des campagnols r\u00e9fl\u00e9chit les UV). Son ou\u00efe, orient\u00e9e vers l'avant par la forme concave de son disque facial, amplifie les sons du sol. L'odorat joue un r\u00f4le mineur, mais l'aigle peut d\u00e9tecter des charognes \u00e0 courte distance par l'odeur de d\u00e9composition.",
                 source: "Institut d'Ophtalmologie - Principalement visuelle."
             },
             {
@@ -4266,7 +4266,7 @@ const quizzesData = {
                 question: "Quel est le processus de territorialité chez les aigles royaux ?",
                 options: ["Pas de territorialité", "Défense active du territoire par actes aériens", "Passive", "Pas de défense"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab D\u00e9fense active du territoire par actes a\u00e9riens \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "La territorialit\u00e9 de l'aigle royal est multimodale. La d\u00e9fense primaire est a\u00e9rienne : les r\u00e9sidents d\u00e9collent \u00e0 vue d'un intrus et le pourchassent en piqués mena\u00e7ants jusqu'\u00e0 la fronti\u00e8re du territoire. Les survols r\u00e9guliers ('boundary patrols') servent \u00e0 surveiller et afficher la possession. Les cris et les parrades au-dessus du nid signalent l'occupation. Les confrontations physiques sont rares mais peuvent causer des blessures graves.",
                 source: "Institut d'Éthologie Territoriale - Démonstration élaborée."
             },
             {
@@ -4274,7 +4274,7 @@ const quizzesData = {
                 question: "Quel est le rôle du 'nesting site fidelity' ?",
                 options: ["Pas de fidelité", "Réutilisation du même nid pendant plusieurs années", "Nouveau nid chaque année", "Pas de préférence"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab R\u00e9utilisation du m\u00eame nid pendant plusieurs ann\u00e9es \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "La fid\u00e9lit\u00e9 au site de nidification est quasi-absolue chez l'aigle royal. Des aires sont utilis\u00e9es depuis des d\u00e9cennies, voire des si\u00e8cles, par des g\u00e9n\u00e9rations successives. Le couple agrandit son aire \u00e0 chaque saison en apportant de nouvelles branches et verdure fra\u00eeche (qui a des propri\u00e9t\u00e9s antiparasitaires). Cette fid\u00e9lit\u00e9 r\u00e9duit le co\u00fbt \u00e9nerg\u00e9tique li\u00e9 \u00e0 la recherche d'un nouveau site et garantit l'utilisation des meilleurs emplacements.",
                 source: "Institut d'Écologie Reproductive - Nids traditionnels."
             },
             {
@@ -4282,7 +4282,7 @@ const quizzesData = {
                 question: "Quel est le mécanisme du 'inverse sexual size dimorphism' ?",
                 options: ["Pas de dimorphisme", "Femelles plus grandes pour rôle reproducteur", "Mâles plus grands", "Identiques"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Femelles plus grandes pour r\u00f4le reproducteur \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Le dimorphisme sexuel invers\u00e9 (femelle 25-30% plus grande) chez les rapaces est expliqu\u00e9 par plusieurs th\u00e9ories. La principale : les femelles plus grandes supportent mieux le je\u00fbne lors de l'incubation (3-6 semaines sur le nid). Une autre : la diff\u00e9rence de taille r\u00e9duit la comp\u00e9tition alimentaire entre partenaires, leur permettant de chasser des proies de tailles diff\u00e9rentes. La femelle \u00e9tant plus grande peut aussi mieux d\u00e9fendre le nid et les jeunes contre les pr\u00e9dateurs.",
                 source: "Université de Zoologie Comparative - Évolution adaptative."
             },
             {
@@ -4290,7 +4290,7 @@ const quizzesData = {
                 question: "Quel est le processus de la 'philopatry' chez les jeunes aigles ?",
                 options: ["Pas de philopatry", "Tendance à retourner au site natal pour reproduction", "Errance constante", "Absence de retour"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Tendance \u00e0 retourner au site natal pour reproduction \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "La philopatrie natale de l'aigle royal est tr\u00e8s prononc\u00e9e, surtout chez les femelles. Des \u00e9tudes de baguage ont montr\u00e9 que de nombreux jeunes \u00e9tablis leur territoire \u00e0 quelques kilom\u00e8tres seulement de leur lieu de naissance. Les m\u00e2les se dispersent un peu plus loin. Ce comportement favorise l'adaptation locale : les aigles \u00e9lev\u00e9s dans les Alpes connaissent instinctivement et par apprentissage les ressources sp\u00e9cifiques de cet environnement.",
                 source: "Institut d'Écologie Comportementale - Retour au bercail."
             },
             {
@@ -4298,7 +4298,7 @@ const quizzesData = {
                 question: "Quel est le rôle des 'cliff ledges' dans la nidification ?",
                 options: ["Aucun rôle", "Protection des nids contre prédateurs et intempéries", "Isolation thermique", "Signal visuel"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Protection des nids contre pr\u00e9dateurs et intemp\u00e9ries \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Les vires de falaises sont l'habitat de nidification id\u00e9al de l'aigle royal. Ces corniches naturelles offrent une protection contre les pr\u00e9dateurs terrestres (renard, martre, ours) qui ne peuvent pas les atteindre. La roche surplombante prot\u00e8ge du vent, de la pluie et de la neige. La hauteur (souvent 100-500 m\u00e8tres au-dessus du sol) facilite aussi le d\u00e9collage. Ces sites exceptionnels sont utilis\u00e9s pendant des g\u00e9n\u00e9rations car ils sont extr\u00eamement rares.",
                 source: "Institut d'Écologie Nidification - Choix de site critique."
             },
             {
@@ -4306,7 +4306,7 @@ const quizzesData = {
                 question: "Quel est le mécanisme de la 'adaptive foraging' face aux changements ?",
                 options: ["Pas d'adaptation", "Modification techniques chasse selon disponibilité proies", "Régime fixe", "Migration forcée"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Modification techniques chasse selon disponibilit\u00e9 proies \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "L'alimentation de l'aigle royal est opportuniste et s'adapte aux ressources disponibles selon les saisons. En \u00e9t\u00e9 alpin : marmottes, lagop\u00e8des, li\u00e8vres. En hiver : renards, charognes (chamois morts, ongul\u00e9s), ovins. Lors des ann\u00e9es \u00e0 fort d\u00e9clin de rongeurs, il se rabat sur les reptiles, petits oiseaux ou m\u00eame insectes (locust\u00e8s). Cette flexibilit\u00e9 alimentaire est cruciale pour survivre dans des environnements montagnards o\u00f9 les ressources sont variables.",
                 source: "Université d'Écologie Comportementale - Flexibilité adaptative."
             },
             {
@@ -4314,7 +4314,7 @@ const quizzesData = {
                 question: "Quel est le processus de l'établissement du territoire chez les jeunes ?",
                 options: ["Pas d'établissement", "Compétition pour sites de nidification disponibles", "Territoire donné par parents", "Pas de territorialité"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Comp\u00e9tition pour sites de nidification disponibles \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Les jeunes aigles royaux sans territoire errent sur de vastes zones, parfois 500 \u00e0 1 000 km de leur lieu de naissance. Ils recherchent des espaces libres o\u00f9 les adultes sont absents. L'\u00e9tablissement du territoire passe par des p\u00e9riodes de prospection intensive, de confrontations avec les r\u00e9sidents et parfois d'attente que des adultes meurent ou abandonnent. Dans les populations bien \u00e9tablies, il peut falloir plusieurs ann\u00e9es avant de trouver un territoire disponible.",
                 source: "Institut d'Éthologie Territoriale - Compétition intense."
             },
             {
@@ -4322,7 +4322,7 @@ const quizzesData = {
                 question: "Quel est le rôle du 'dynamic soaring' dans l'efficacité énergétique ?",
                 options: ["Pas de soaring", "Utilisation de gradients de vent pour vol sans effort", "Vol actif seulement", "Pas d'efficacité"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Utilisation de gradients de vent pour vol sans effort \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Le 'dynamic soaring' est une technique de vol utilis\u00e9e par l'aigle royal dans les environnements montagneux \u00e0 fort vent. Il exploite les gradients de vitesse du vent (plus fort en altitude, plus faible pr\u00e8s du sol) pour acc\u00e9l\u00e9rer sans battre des ailes : monter face au vent (qui le propulse vers le haut), se retourner avec le vent dans le dos (qui l'acc\u00e9l\u00e8re), puis redescendre. Les albatros sont les champions de cette technique mais l'aigle royal en ma\u00eetrise une version adapt\u00e9e aux reliefs.",
                 source: "Institut d'Aérodynamique - Technique de vol extrême."
             },
             {
@@ -4330,7 +4330,7 @@ const quizzesData = {
                 question: "À quel niveau d'océan énergétique un aigle royal opère-t-il ?",
                 options: ["Faible", "Intermédiaire", "Haut niveau trophique comme apex predator montagnard", "Producteur primaire"],
                 correct: 2,
-                explanation: "La r\u00e9ponse correcte est \u00ab Haut niveau trophique comme apex predator montagnard \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "L'aigle royal est le pr\u00e9dateur apex des \u00e9cosyst\u00e8mes montagnards. Il joue un r\u00f4le r\u00e9gulateur sur les populations de lièvres, marmottes, lagop\u00e8des et m\u00eame de renards. Sa pr\u00e9sence influence le comportement des proies (vigilance accrue, utilisation de l'habitat) cr\u00e9ant des 'cascades trophiques' similaires \u00e0 celles des loups. Quand l'aigle royal dispara\u00eet d'un secteur, les populations de rongeurs et lagomorphes peuvent exploser, modifiant la v\u00e9g\u00e9tation alpine.",
                 source: "Institut d'Écologie Trophique - Position écologique."
             },
             {
@@ -4338,7 +4338,7 @@ const quizzesData = {
                 question: "Quel est le mécanisme du 'mate guarding' chez les aigles royaux ?",
                 options: ["Pas de guarding", "Proximité constante du couple lors de reproduction", "Liberté complète", "Pas de vigilance"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Proximit\u00e9 constante du couple lors de reproduction \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Le 'mate guarding' chez l'aigle royal est subtil. Le m\u00e2le surveille sa partenaire surtout en p\u00e9riode f\u00e9conde (avant la ponte), restant \u00e0 proximit\u00e9 et pourchassant les m\u00e2les intrus. Mais la vraie protection est territoriale : en maintenant un territoire exclusif bien d\u00e9fendu, le couple s'assure qu'aucun m\u00e2le \u00e9tranger ne peut approcher la femelle. La fid\u00e9lit\u00e9 \u00e0 long terme du couple r\u00e9duit aussi le risque d'infid\u00e9lit\u00e9 extraconjugale.",
                 source: "Université de Biologie Reproductive - Stratégie paternelle."
             },
             {
@@ -4346,7 +4346,7 @@ const quizzesData = {
                 question: "À quel âge un aigle royal femelle commence-t-elle à pondre ?",
                 options: ["À 3 ans", "À 4-5 ans selon maturité", "À 5-6 ans", "À 6+ ans"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab \u00c0 4-5 ans selon maturit\u00e9 \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "La femelle aigle royal commence \u00e0 pondre entre 4 et 7 ans, quand elle a acquis son plumage adulte et \u00e9tabli un territoire stable avec un partenaire. L'\u00e2ge de la premi\u00e8re ponte est li\u00e9 \u00e0 la disponibilit\u00e9 des territoires : dans les zones satur\u00e9es, les femelles peuvent attendre jusqu'\u00e0 8-9 ans. La premi\u00e8re saison de reproduction est souvent un \u00e9chec \u2014 les nouveaux couples manquent d'exp\u00e9rience et les premiers \u0153ufs sont souvent fertiles mais les aiglons ne survivent pas.",
                 source: "Centre de Biologie Reproductive - Maturité tardive."
             },
             {
@@ -4354,7 +4354,7 @@ const quizzesData = {
                 question: "Quel est le processus de la 'sequential polyandry' absent chez les aigles ?",
                 options: ["Absent", "Femelles s'accouplent avec plusieurs mâles", "Monogamie stable", "Pas d'accouplements"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Femelles s'accouplent avec plusieurs m\u00e2les \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "L'aigle royal est strictement monogame et ne pratique pas la polyandrie s\u00e9quentielle. Le couple reste uni pour la vie dans la grande majorit\u00e9 des cas. Si un partenaire meurt, l'autre se retrouve seul et peut attirer un nouvel individu sur son territoire, parfois en quelques semaines. Des analyses g\u00e9n\u00e9tiques confirment un taux de fid\u00e9lit\u00e9 tr\u00e8s \u00e9lev\u00e9, avec tr\u00e8s peu de cas d'accouplement extra-couple. Cette monogamie stricte est li\u00e9e \u00e0 l'investissement parental massif que requi\u00e8re l'\u00e9levage des aiglons.",
                 source: "Université d'Écologie Comportementale - Monogamie exclusive."
             },
             {
@@ -4362,7 +4362,7 @@ const quizzesData = {
                 question: "À quel niveau de précision l'aigle royal peut-il évaluer la proie ?",
                 options: ["Vue générale", "Détails fins permettant sélection précise de proies", "Pas d'évaluation", "Hasard complet"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab D\u00e9tails fins permettant s\u00e9lection pr\u00e9cise de proies \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "La pr\u00e9cision visuelle de l'aigle royal lui permet d'\u00e9valuer la condition physique de ses proies potentielles \u00e0 grande distance. Il cible pr\u00e9f\u00e9rentiellement les animaux malades, bless\u00e9s ou juvéniles qui pr\u00e9sentent des signaux subtils (d\u00e9marche anormale, fourrure terne, comportement h\u00e9sitant). Cette s\u00e9lection des proies vuln\u00e9rables joue un r\u00f4le sanitaire dans les populations de proies et explique l'efficacit\u00e9 relative \u00e9lev\u00e9e de ses chasses.",
                 source: "Institut d'Ophtalmologie - Acuité visuelle exceptionnelle."
             },
             {
@@ -4370,7 +4370,7 @@ const quizzesData = {
                 question: "Quel est le rôle du 'reverse sexual dimorphism' dans la reproduction ?",
                 options: ["Aucun rôle", "Femelles plus grandes pour ponte et protection des jeunes", "Mâles plus grands", "Pas de dimorphisme"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Femelles plus grandes pour ponte et protection des jeunes \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "Le dimorphisme sexuel invers\u00e9 de l'aigle royal (femelle 25-33% plus lourde) divise encore les biologistes. Plusieurs facteurs y contribuent : la femelle passe de longues p\u00e9riodes sur le nid \u00e0 je\u00fbner (r\u00e9serves \u00e9nerg\u00e9tiques n\u00e9cessaires), elle d\u00e9fend les aiglons contre les intrus (taille intimidante), et la diff\u00e9rence de taille r\u00e9duit la comp\u00e9tition intrasexuelle pour les proies. Le m\u00e2le, plus petit et plus agile, est sp\u00e9cialis\u00e9 dans la capture de proies rapides.",
                 source: "Université d'Évolution - Sélection naturelle."
             },
             {
@@ -4378,7 +4378,7 @@ const quizzesData = {
                 question: "Quel est le mécanisme de l'acquisition des skills de chasse ?",
                 options: ["Complètement instinctif", "Instinct + apprentissage intensif avec parents", "Apprentissage tardif par imitation", "Pas d'apprentissage"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Instinct + apprentissage intensif avec parents \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "L'acquisition des comp\u00e9tences de chasse chez l'aigle royal est un processus long et structur\u00e9. Les comportements de base (agripper, frapper) sont inn\u00e9s. Mais la technique pr\u00e9cise (approche, calcul de la trajectoire, choix de l'angle d'attaque) s'apprend par observation et pratique sur plusieurs ann\u00e9es. Des \u00e9tudes ont montr\u00e9 que les aiglons pratiquent leurs attaques sur des objets inanim\u00e9s (c\u00f4nes, branches) bien avant de chasser de vraies proies. L'efficacit\u00e9 compl\u00e8te n'est atteinte qu'apr\u00e8s 2-3 ans d'ind\u00e9pendance.",
                 source: "Institut d'Éthologie - Éducation progressive."
             },
             {
@@ -4386,7 +4386,7 @@ const quizzesData = {
                 question: "À quel degré de complexité cognitive les aigles royaux opèrent-ils ?",
                 options: ["Bas niveau", "Moyen avec reconnaissance et mémoire spatiale avancée", "Hautement primitif", "Pas de cognition"],
                 correct: 1,
-                explanation: "La r\u00e9ponse correcte est \u00ab Moyen avec reconnaissance et m\u00e9moire spatiale avanc\u00e9e \u00bb car elle correspond \u00e0 l'information fiable cit\u00e9e par la source.",
+                explanation: "La cognition de l'aigle royal est plus d\u00e9velopp\u00e9e qu'on ne le pensait. Des \u00e9tudes r\u00e9v\u00e8lent une m\u00e9moire spatiale exceptionnelle (il m\u00e9morise les sites de chasse productifs et les comportements des proies), une capacit\u00e9 de planification (il anticipe les trajets migratoires de ses proies) et m\u00eame une certaine flexibilit\u00e9 comportementale. Au Kazakhstan, des aigles royaux dress\u00e9s par des fauconniers executent des t\u00e2ches complexes, d\u00e9montrant des capacit\u00e9s d'apprentissage comparables \u00e0 celles des corvid\u00e9s.",
                 source: "Université de Neuroscience Aviaire - Cerveau développé."
             }
         ]
@@ -4398,7 +4398,7 @@ const quizzesData = {
             {
                 id: 1,
                 question: "Quel est le poids moyen d'un tigre mâle ?",
-                options: ["100-150 kg", "150-200 kg", "200-260 kg selon la sous-espèce", "260+ kg"],
+                options: ["100-150 kg, poids typique d'un lion femelle adulte d'Afrique orientale, bien en dessous de la réalité pour un tigre mâle", "150-200 kg, poids comparable à un ours brun adulte d'Europe centrale, insuffisant pour le plus grand félidé du monde", "200-260 kg selon la sous-espèce", "260+ kg en toute circonstance, dépassant les 300 kg même pour les sous-espèces les plus petites comme le tigre de Sumatra"],
                 correct: 2,
                 explanation: "Le tigre est le plus grand f\u00e9lid\u00e9 du monde. Le tigre de Sibérie (Amour) est le plus lourd : les m\u00e2les atteignent 200 \u00e0 300 kg et peuvent mesurer 3,7 m\u00e8tres de la t\u00eate \u00e0 la queue. Le tigre du Bengale, le plus r\u00e9pandu, p\u00e8se 175 \u00e0 260 kg. Cette masse imposante en fait un pr\u00e9dateur capable de s'attaquer \u00e0 des proies bien plus grosses que lui, comme le buffle d'eau ou le gaur.",
                 source: "National Geographic - Le tigre est le plus gros félin."
@@ -4406,7 +4406,7 @@ const quizzesData = {
             {
                 id: 2,
                 question: "Quel est le rôle des rayures du tigre ?",
-                options: ["Uniquement décoration", "Camouflage dans la forêt et l'herbe haute", "Signal d'agressivité", "Thermorégulation"],
+                options: ["Uniquement décoration sans avantage adaptatif, comme chez certains animaux tropicaux dont les couleurs vives n'ont aucune fonction de survie documentée", "Camouflage dans la forêt et l'herbe haute", "Signal d'agressivité envers les congénères, fonctionnant comme un avertissement visuel pour repousser les rivaux avant tout combat physique", "Thermorégulation par absorption sélective de chaleur, les zones sombres absorbant plus d'énergie solaire pour maintenir la température corporelle"],
                 correct: 1,
                 explanation: "Les rayures verticales du tigre sont un chef-d'\u0153uvre d'adaptation. Elles brisent le contour de sa silhouette dans les for\u00eats dens\u00e9es et les hautes herbes, le rendant presque invisible \u00e0 quelques m\u00e8tres. Fait \u00e9tonnant : les rayures sont aussi dans la peau, pas seulement dans les poils. Chaque tigre a un motif de rayures unique, comme nos empreintes digitales.",
                 source: "Institut d'Écologie Camouflage - Pattern très efficace."
@@ -4414,7 +4414,7 @@ const quizzesData = {
             {
                 id: 3,
                 question: "Quel est le régime alimentaire principal du tigre ?",
-                options: ["Fruits et plantes", "Viande - cerfs, sangliers, buffles", "Poisson uniquement", "Omnivore"],
+                options: ["Fruits et plantes comme les pandas géants, complétés par des insectes et des racines selon les saisons et la disponibilité", "Viande - cerfs, sangliers, buffles", "Poisson uniquement, capturé à la manière des loutres en pataugeant dans les rivières peu profondes de la forêt tropicale", "Omnivore équilibré consommant autant de végétaux que de proies animales, selon la saison et la région géographique"],
                 correct: 1,
                 explanation: "Le tigre est un carnivore strict qui chasse seul par embuscade. Il pr\u00e9f\u00e8re les grands herbivores : cerf axis, sambar, chital, sanglier et buffle d'eau. Un tigre adulte a besoin de 5 \u00e0 7 kg de viande par jour mais peut consommer jusqu'\u00e0 40 kg en une seule fois apr\u00e8s une chasse. Il peut ensuite rester sans manger plusieurs jours, recouvrant sa carcasse de feuilles pour la conserver.",
                 source: "Centre de Recherche Africaine - Carnivore strict."
@@ -4422,7 +4422,7 @@ const quizzesData = {
             {
                 id: 4,
                 question: "À quel âge les jeunes tigres deviennent-ils indépendants ?",
-                options: ["À 6 mois", "À 1-2 ans", "À 2-3 ans selon l'apprentissage", "À 3-4 ans"],
+                options: ["À 6 mois, dès que les canines poussent et que le tigreaun commence à consommer de la viande apportée par la mère", "À 1-2 ans, lorsque les jeunes pèsent déjà plus de 80 kg et suivent leur mère à la chasse sans aide directe", "À 2-3 ans selon l'apprentissage", "À 3-4 ans, après avoir maîtrisé la mise à mort de grandes proies comme le buffle d'eau ou le gaur"],
                 correct: 2,
                 explanation: "Les jeunes tigres restent avec leur m\u00e8re 2 \u00e0 3 ans, p\u00e9riode pendant laquelle ils apprennent toutes les techniques de chasse. La tigresse leur enseigne d'abord en apportant des proies vivantes \u00e9tourdies, puis en les accompagnant \u00e0 la chasse. L'ind\u00e9pendance est progressive : les jeunes quittent le territoire maternel pour \u00e9tablir le leur, parfois \u00e0 des centaines de kilom\u00e8tres.",
                 source: "Institut d'Éthologie - Indépendance progressive."
@@ -4430,7 +4430,7 @@ const quizzesData = {
             {
                 id: 5,
                 question: "Quel est le nombre moyen de tigres dans une portée ?",
-                options: ["1-2 jeunes", "2-3 jeunes", "3-4 jeunes", "4+ jeunes"],
+                options: ["1-2 jeunes seulement, comme la plupart des grands félins solitaires limitant les portées pour maximiser les ressources allouées à chaque petit", "2-3 jeunes, nombre typique chez les léopards et pumas vivant dans des environnements à densité de proies modérée", "3-4 jeunes", "4+ jeunes systématiquement, chaque portée comptant cinq ou six tigreaux comme chez certains petits carnivores"],
                 correct: 2,
                 explanation: "Une port\u00e9e de tigre compte g\u00e9n\u00e9ralement 2 \u00e0 4 petits, parfois jusqu'\u00e0 6. Les tigreaux naissent aveugles et pesant 1 kg environ. Ils ouvrent les yeux vers 10 jours. La tigresse les \u00e9l\u00e8ve seule, sans aide du m\u00e2le. Le taux de survie est faible : en nature, seuls 30 \u00e0 50% atteignent l'\u00e2ge d'un an, victimes de la faim, des pr\u00e9dateurs ou des m\u00e2les \u00e9trangers.",
                 source: "Centre de Reproduction - Portées modérées."

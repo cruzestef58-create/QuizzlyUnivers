@@ -1,3 +1,4 @@
+
 // Quiz Controller
 class QuizManager {
     constructor(quizData, difficulty = 'moyen') {
@@ -155,19 +156,8 @@ class QuizManager {
     }
 
     updateNavigationButtons() {
-        const prevBtn = document.getElementById('prev-button');
         const nextBtn = document.getElementById('next-button');
 
-        if (prevBtn) {
-            if (this.currentQuestion === 0) {
-                prevBtn.style.display = 'none';
-                prevBtn.disabled = true;
-            } else {
-                prevBtn.style.display = 'inline-block';
-                prevBtn.disabled = false;
-            }
-        }
-        
         if (nextBtn) {
             if (this.answered) {
                 if (this.currentQuestion === this.quizData.questions.length - 1) {
@@ -196,12 +186,6 @@ class QuizManager {
         }
     }
 
-    prevQuestion() {
-        if (this.currentQuestion > 0) {
-            this.currentQuestion--;
-            this.renderQuestion();
-        }
-    }
 
     finishQuiz() {
         this.showResults();
@@ -270,7 +254,7 @@ class QuizManager {
                     <p><strong>${icon} Question ${index + 1}:</strong> ${question.question}</p>
                     <p>Votre réponse: <strong>${question.options[this.selectedAnswers[index]]}</strong></p>
                     ${!isCorrect ? `<p>Bonne réponse: <strong>${question.options[question.correct]}</strong></p>` : ''}
-                    <p style="font-size: 0.9rem; color: #666; margin-top: 0.5rem;"><strong>Source:</strong> ${question.source}</p>
+                    <p style="font-size: 0.75rem; color: #9ca3af; margin-top: 0.4rem; font-style: italic;">${question.source}</p>
                 </div>
             `;
         });
@@ -307,10 +291,8 @@ function startQuiz(difficulty) {
     quizManager.init();
 
     const nextBtn = document.getElementById('next-button') || document.getElementById('next-btn');
-    const prevBtn = document.getElementById('prev-button') || document.getElementById('prev-btn');
 
     if (nextBtn) nextBtn.onclick = () => quizManager.nextQuestion();
-    if (prevBtn) prevBtn.onclick = () => quizManager.prevQuestion();
 }
 
 // Function to start quiz with difficulty for education canine
@@ -323,10 +305,8 @@ function startQuizEducationCanine(difficulty) {
     quizManager.init();
 
     const nextBtn = document.getElementById('next-button');
-    const prevBtn = document.getElementById('prev-button');
 
     nextBtn.onclick = () => quizManager.nextQuestion();
-    prevBtn.onclick = () => quizManager.prevQuestion();
 }
 
 // Function to start quiz with difficulty for cats
@@ -339,10 +319,8 @@ function startQuizChats(difficulty) {
     quizManager.init();
 
     const nextBtn = document.getElementById('next-button');
-    const prevBtn = document.getElementById('prev-button');
 
     nextBtn.onclick = () => quizManager.nextQuestion();
-    prevBtn.onclick = () => quizManager.prevQuestion();
 }
 
 // Function to start quiz with difficulty for ornithology
@@ -355,10 +333,8 @@ function startQuizOrnithologie(difficulty) {
     quizManager.init();
 
     const nextBtn = document.getElementById('next-button');
-    const prevBtn = document.getElementById('prev-button');
 
     nextBtn.onclick = () => quizManager.nextQuestion();
-    prevBtn.onclick = () => quizManager.prevQuestion();
 }
 
 // Function to start quiz with difficulty for reptiles
@@ -371,10 +347,8 @@ function startQuizReptiles(difficulty) {
     quizManager.init();
 
     const nextBtn = document.getElementById('next-button');
-    const prevBtn = document.getElementById('prev-button');
 
     nextBtn.onclick = () => quizManager.nextQuestion();
-    prevBtn.onclick = () => quizManager.prevQuestion();
 }
 
 // Function to start quiz with difficulty for marine mammals
@@ -387,10 +361,8 @@ function startQuizMammiferesMarin(difficulty) {
     quizManager.init();
 
     const nextBtn = document.getElementById('next-button');
-    const prevBtn = document.getElementById('prev-button');
 
     nextBtn.onclick = () => quizManager.nextQuestion();
-    prevBtn.onclick = () => quizManager.prevQuestion();
 }
 
 // Function to start quiz with difficulty for lion
@@ -403,10 +375,8 @@ function startQuizLion(difficulty) {
     quizManager.init();
 
     const nextBtn = document.getElementById('next-button');
-    const prevBtn = document.getElementById('prev-button');
 
     nextBtn.onclick = () => quizManager.nextQuestion();
-    prevBtn.onclick = () => quizManager.prevQuestion();
 }
 
 // Function to start quiz with difficulty for aigle royal
@@ -419,10 +389,8 @@ function startQuizAigleRoyal(difficulty) {
     quizManager.init();
 
     const nextBtn = document.getElementById('next-button');
-    const prevBtn = document.getElementById('prev-button');
 
     nextBtn.onclick = () => quizManager.nextQuestion();
-    prevBtn.onclick = () => quizManager.prevQuestion();
 }
 
 // Function to start quiz with difficulty for tigre
@@ -435,135 +403,25 @@ function startQuizTigre(difficulty) {
     quizManager.init();
 
     const nextBtn = document.getElementById('next-button');
-    const prevBtn = document.getElementById('prev-button');
 
     nextBtn.onclick = () => quizManager.nextQuestion();
-    prevBtn.onclick = () => quizManager.prevQuestion();
 }
 
 // Initialize quiz when page loads
 let quizManager;
-const SUGGESTION_STORAGE_KEY = 'quizThemeSuggestions';
-const SUGGESTION_VOTES_KEY = 'quizThemeVotes';
 
-function normalizeSuggestion(name) {
-    return name.trim().toLowerCase().replace(/\s+/g, ' ');
-}
-
-function getSavedSuggestions() {
-    try {
-        return JSON.parse(localStorage.getItem(SUGGESTION_STORAGE_KEY)) || [];
-    } catch (error) {
-        return [];
-    }
-}
-
-function saveSuggestions(suggestions) {
-    localStorage.setItem(SUGGESTION_STORAGE_KEY, JSON.stringify(suggestions));
-}
-
-function getSavedVotes() {
-    try {
-        return JSON.parse(localStorage.getItem(SUGGESTION_VOTES_KEY)) || [];
-    } catch (error) {
-        return [];
-    }
-}
-
-function saveVote(id) {
-    const votes = getSavedVotes();
-    if (!votes.includes(id)) {
-        votes.push(id);
-        localStorage.setItem(SUGGESTION_VOTES_KEY, JSON.stringify(votes));
-    }
-}
-
-function canVote(id) {
-    return !getSavedVotes().includes(id);
-}
-
-function addThemeSuggestion(name) {
-    const trimmedName = name.trim();
-    if (!trimmedName) {
-        alert('Veuillez entrer un thème valide.');
-        return;
-    }
-
-    const suggestions = getSavedSuggestions();
-    const normalizedName = normalizeSuggestion(trimmedName);
-    const existing = suggestions.find(item => normalizeSuggestion(item.name) === normalizedName);
-
-    if (existing) {
-        existing.votes += 1;
-        saveVote(existing.id);
-        saveSuggestions(suggestions);
-        alert(`Merci ! Le thème "${existing.name}" existe déjà. Votre vote a été ajouté.`);
-    } else {
-        const newSuggestion = {
-            id: Date.now(),
-            name: trimmedName,
-            votes: 1,
-            suggestedAt: new Date().toISOString()
-        };
-        saveVote(newSuggestion.id);
-        suggestions.push(newSuggestion);
-        saveSuggestions(suggestions);
-        alert(`Merci pour votre suggestion : "${trimmedName}" ! Elle a bien été enregistrée.`);
-    }
-    renderSuggestionModal();
-}
-
-function voteForSuggestion(id) {
-    const suggestions = getSavedSuggestions();
-    const suggestion = suggestions.find(item => item.id === id);
-    if (!suggestion) {
-        return;
-    }
-    if (!canVote(id)) {
-        alert('Vous avez déjà voté pour ce thème.');
-        return;
-    }
-    suggestion.votes += 1;
-    saveVote(id);
-    saveSuggestions(suggestions);
-    renderSuggestionModal();
-}
+// ── Proposer un thème ──────────────────────────────────────────────────────
 
 function showSuggestionModal() {
-    try {
-        if (!document.getElementById('suggestion-modal')) {
-            createSuggestionModal();
-        }
-        renderSuggestionModal();
-        const modal = document.getElementById('suggestion-modal');
-        if (modal) {
-            // ensure appended and visible (small timeout to allow render)
-            if (!document.body.contains(modal)) document.body.appendChild(modal);
-            // prevent background scroll while modal is open
-            document.body.style.overflow = 'hidden';
-            setTimeout(() => modal.classList.remove('hidden'), 10);
-        } else {
-            throw new Error('Suggestion modal not available');
-        }
-    } catch (err) {
-        console.error('Failed to open suggestion modal:', err);
-        // Fallback: use simple prompt so users can still suggest
-        const suggestion = prompt('Quel thème souhaitez-vous proposer pour un nouveau quiz ?');
-        if (suggestion && suggestion.trim()) {
-            addThemeSuggestion(suggestion.trim());
-        } else {
-            alert('Aucune suggestion envoyée.');
-        }
-    }
+    if (!document.getElementById('suggestion-modal')) createSuggestionModal();
+    const modal = document.getElementById('suggestion-modal');
+    if (!document.body.contains(modal)) document.body.appendChild(modal);
+    setTimeout(() => modal.classList.remove('hidden'), 10);
 }
 
 function hideSuggestionModal() {
     const modal = document.getElementById('suggestion-modal');
-    if (modal) {
-        modal.classList.add('hidden');
-        // restore background scroll
-        document.body.style.overflow = '';
-    }
+    if (modal) modal.classList.add('hidden');
 }
 
 function createSuggestionModal() {
@@ -573,72 +431,58 @@ function createSuggestionModal() {
     modal.innerHTML = `
         <div class="modal-content suggestion-modal-content">
             <button class="modal-close" aria-label="Fermer">&times;</button>
-            <h2>Propose un nouveau thème</h2>
-            <p>Propose un thème de quiz et vote pour les suggestions déjà proposées. Le thème le plus populaire pourra être ajouté à la fin du mois.</p>
+            <h2>💡 Proposer un thème</h2>
+            <p>Tu as une idée de thème pour un nouveau quiz ? Propose-la, on lit tous les messages !</p>
             <div class="modal-form">
-                <input id="new-theme-input" type="text" placeholder="Ex : Les oiseaux marins" />
-                <button id="submit-theme-button" class="btn btn-primary">Envoyer la suggestion</button>
+                <input id="new-theme-input" type="text" placeholder="Ex : Les oiseaux marins, Les requins…" />
+                <button id="submit-theme-button" class="btn btn-primary">Envoyer</button>
             </div>
-            <div class="suggestion-list">
-                <h3>Suggestions en cours</h3>
-                <div id="suggestion-list"></div>
-            </div>
-            <p class="suggestion-note">Le thème avec le plus de votes est visible ici ; il pourra être ajouté au prochain ajout de quiz.</p>
         </div>
     `;
-
     document.body.appendChild(modal);
     modal.querySelector('.modal-close').addEventListener('click', hideSuggestionModal);
-    modal.addEventListener('click', (event) => {
-        if (event.target === modal) {
-            hideSuggestionModal();
-        }
-    });
-    modal.querySelector('#submit-theme-button').addEventListener('click', () => {
-        const input = document.getElementById('new-theme-input');
-        addThemeSuggestion(input.value);
-        input.value = '';
-    });
-    modal.querySelector('#new-theme-input').addEventListener('keydown', (event) => {
-        if (event.key === 'Enter') {
-            event.preventDefault();
-            modal.querySelector('#submit-theme-button').click();
-        }
+    modal.addEventListener('click', e => { if (e.target === modal) hideSuggestionModal(); });
+    modal.querySelector('#submit-theme-button').addEventListener('click', submitThemeSuggestion);
+    modal.querySelector('#new-theme-input').addEventListener('keydown', e => {
+        if (e.key === 'Enter') { e.preventDefault(); submitThemeSuggestion(); }
     });
 }
 
-function renderSuggestionModal() {
-    const suggestionList = document.getElementById('suggestion-list');
-    if (!suggestionList) {
-        return;
-    }
+async function submitThemeSuggestion() {
+    const input = document.getElementById('new-theme-input');
+    const theme = input.value.trim();
+    if (!theme) { alert('Écris un thème avant d\'envoyer !'); return; }
 
-    const suggestions = getSavedSuggestions().sort((a, b) => b.votes - a.votes);
-    if (suggestions.length === 0) {
-        suggestionList.innerHTML = '<p>Aucune suggestion pour le moment. Soyez le premier à proposer un thème !</p>';
-        return;
-    }
+    const btn = document.getElementById('submit-theme-button');
+    btn.disabled = true;
+    btn.textContent = 'Envoi…';
 
-    suggestionList.innerHTML = suggestions.map(item => {
-        const voteDisabled = !canVote(item.id);
-        return `
-            <div class="suggestion-card">
-                <div class="suggestion-details">
-                    <strong>${item.name}</strong>
-                    <span>${item.votes} vote${item.votes > 1 ? 's' : ''}</span>
-                </div>
-                <button class="btn btn-secondary suggestion-vote-button" data-id="${item.id}" ${voteDisabled ? 'disabled' : ''}>
-                    ${voteDisabled ? 'Déjà voté' : 'Voter'}
-                </button>
-            </div>
-        `;
-    }).join('');
-
-    suggestionList.querySelectorAll('.suggestion-vote-button').forEach(button => {
-        button.addEventListener('click', () => {
-            voteForSuggestion(Number(button.dataset.id));
+    try {
+        const res = await fetch(FORMSPREE_ENDPOINT, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+            body: JSON.stringify({
+                type: '💡 Proposition de thème',
+                message: theme,
+                date: new Date().toLocaleDateString('fr-FR')
+            })
         });
-    });
+        if (res.ok) {
+            input.value = '';
+            btn.textContent = '✅ Envoyé !';
+            setTimeout(() => {
+                btn.disabled = false;
+                btn.textContent = 'Envoyer';
+                hideSuggestionModal();
+            }, 1500);
+        } else {
+            throw new Error();
+        }
+    } catch {
+        alert('Erreur lors de l\'envoi. Réessaie plus tard.');
+        btn.disabled = false;
+        btn.textContent = 'Envoyer';
+    }
 }
 
 // ── Report / Suggestion modal ──────────────────────────────────────────────
@@ -698,17 +542,17 @@ function openReportModal() {
     if (!document.getElementById('report-modal')) createReportModal();
     renderReportHistory();
     const modal = document.getElementById('report-modal');
-    document.body.style.overflow = 'hidden';
     setTimeout(() => modal.classList.remove('hidden'), 10);
 }
 
 function closeReportModal() {
     const modal = document.getElementById('report-modal');
     if (modal) modal.classList.add('hidden');
-    document.body.style.overflow = '';
 }
 
-function submitReport() {
+const FORMSPREE_ENDPOINT = 'https://formspree.io/f/xvzngdvd';
+
+async function submitReport() {
     const typeBtn = document.querySelector('.report-type-btn.active');
     const type = typeBtn ? typeBtn.dataset.type : 'bug';
     const quiz = document.getElementById('report-quiz-select').value;
@@ -716,14 +560,39 @@ function submitReport() {
 
     if (!text) { alert('Merci d\'écrire une description avant d\'envoyer.'); return; }
 
-    const reports = JSON.parse(localStorage.getItem('quizReports') || '[]');
-    reports.push({ type, quiz: quiz || 'Général', text, date: new Date().toLocaleDateString('fr-FR') });
-    localStorage.setItem('quizReports', JSON.stringify(reports));
+    const submitBtn = document.getElementById('report-submit-btn');
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Envoi en cours…';
 
-    document.getElementById('report-quiz-select').value = '';
-    document.getElementById('report-text').value = '';
-    alert('Merci pour ton retour ! Il a bien été enregistré. 🙏');
-    renderReportHistory();
+    try {
+        const res = await fetch(FORMSPREE_ENDPOINT, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+            body: JSON.stringify({
+                type: type === 'bug' ? '🐛 Bug / Erreur' : '💡 Suggestion',
+                quiz: quiz || 'Général',
+                message: text,
+                date: new Date().toLocaleDateString('fr-FR')
+            })
+        });
+
+        if (res.ok) {
+            document.getElementById('report-quiz-select').value = '';
+            document.getElementById('report-text').value = '';
+            submitBtn.textContent = '✅ Envoyé !';
+            setTimeout(() => {
+                submitBtn.disabled = false;
+                submitBtn.textContent = 'Envoyer';
+                closeReportModal();
+            }, 1500);
+        } else {
+            throw new Error('Erreur serveur');
+        }
+    } catch (e) {
+        alert('Une erreur est survenue. Réessaie plus tard.');
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Envoyer';
+    }
 }
 
 function renderReportHistory() {
@@ -745,11 +614,6 @@ function renderReportHistory() {
 // ── End Report modal ───────────────────────────────────────────────────────
 
 function suggestNewTheme() {
-    try {
-        if (!document.getElementById('suggestion-modal')) createSuggestionModal();
-    } catch (e) {
-        console.warn('Could not pre-create suggestion modal:', e);
-    }
     showSuggestionModal();
 }
 
@@ -767,3 +631,18 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 });
+
+// Expose functions globally (requis pour type="module")
+window.suggestNewTheme = suggestNewTheme;
+window.openReportModal = openReportModal;
+window.closeReportModal = closeReportModal;
+window.hideSuggestionModal = hideSuggestionModal;
+window.startQuiz = startQuiz;
+window.startQuizEducationCanine = startQuizEducationCanine;
+window.startQuizChats = startQuizChats;
+window.startQuizOrnithologie = startQuizOrnithologie;
+window.startQuizReptiles = startQuizReptiles;
+window.startQuizMammiferesMarin = startQuizMammiferesMarin;
+window.startQuizLion = startQuizLion;
+window.startQuizAigleRoyal = startQuizAigleRoyal;
+window.startQuizTigre = startQuizTigre;

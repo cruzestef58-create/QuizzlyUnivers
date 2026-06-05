@@ -22,13 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Theme card hover effects - removed inline style manipulation to avoid conflicts with CSS transitions
 
-    // Add glow effect on scroll
-    window.addEventListener('scroll', () => {
-        const scrolled = window.pageYOffset;
-        const body = document.body;
-        const intensity = Math.min(scrolled / 1000, 1);
-        body.style.filter = `brightness(${1 - intensity * 0.1})`;
-    });
+    // Scroll glow effect removed — body.style.filter breaks position:fixed on modals
 
     // Animate counters
     const animateValue = (element, start, end, duration) => {
