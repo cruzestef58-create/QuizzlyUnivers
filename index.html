@@ -9,7 +9,7 @@
 <body>
     <nav class="navbar">
         <div class="navbar-container">
-            <div class="logo">⚡ QuizzlyUnivers</div>
+            <div class="logo" onclick="location.href='index.html'">⚡ QuizzlyUnivers</div>
             <ul class="nav-menu">
                 <li><a href="index.html" class="active">Accueil</a></li>
                 <li><a href="javascript:void(0)" class="suggestion-button" onclick="suggestNewTheme()">Proposer un thème</a></li>
@@ -23,6 +23,10 @@
             <h1>Bienvenue sur QuizzlyUnivers</h1>
             <p>Testez vos connaissances sur l'univers animal et bien plus encore</p>
             <p class="subtitle">Des questions vérifiées, des sources fiables, des défis infinis</p>
+            <a href="quiz-aleatoire.html" class="btn-random">
+                🎲 Mode Aléatoire
+                <span class="btn-random-sub">10 questions de tous les thèmes</span>
+            </a>
         </section>
 
         <section class="themes">
@@ -79,6 +83,13 @@
                     <div class="theme-icon">🌊</div>
                     <h3>Mammifères Marins</h3>
                     <p>Baleines, dauphins, phoques et autres merveilles des océans.</p>
+                    <div class="sub-count">1 quiz disponible</div>
+                    <div class="btn btn-primary">Explorer →</div>
+                </div>
+                <div class="theme-card category-card" onclick="openCategory('filmsseries')">
+                    <div class="theme-icon">🎬</div>
+                    <h3>Films & Séries</h3>
+                    <p>Plongez dans vos univers fictifs préférés — Harry Potter et bien d'autres à venir.</p>
                     <div class="sub-count">1 quiz disponible</div>
                     <div class="btn btn-primary">Explorer →</div>
                 </div>

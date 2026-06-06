@@ -6,12 +6,15 @@ class QuizManager {
         this.difficulty = difficulty;
         
         // Get all questions for the selected difficulty
-        const allQuestions = quizData[difficulty] || quizData.moyen;
-        
-        // Shuffle and select 10 random questions from the pool of 20+
+        // Si quizData.questions existe déjà (mode aléatoire), on l'utilise directement
+        const allQuestions = quizData.questions || quizData[difficulty] || quizData.moyen;
+
+        // Shuffle and select 10 random questions from the pool
         this.quizData = {
             ...quizData,
-            questions: this.getRandomQuestions(allQuestions, 10)
+            questions: quizData.questions
+                ? this.shuffle(quizData.questions)   // déjà sélectionnées, on ré-mélange juste l'ordre
+                : this.getRandomQuestions(allQuestions, 10)
         };
         
         this.currentQuestion = 0;
@@ -32,10 +35,21 @@ class QuizManager {
         return shuffled;
     }
 
-    // Get 10 random questions from the pool
+    // Get 10 random questions from the pool, guaranteeing at least 2 vrai/faux
     getRandomQuestions(allQuestions, count = 10) {
-        const shuffled = this.shuffle(allQuestions);
-        return shuffled.slice(0, Math.min(count, shuffled.length));
+        const vfQuestions = allQuestions.filter(q => q.type === 'vrai_faux');
+        const normalQuestions = allQuestions.filter(q => q.type !== 'vrai_faux');
+
+        const shuffledVF = this.shuffle(vfQuestions);
+        const shuffledNormal = this.shuffle(normalQuestions);
+
+        const minVF = Math.min(2, shuffledVF.length);
+        const selected = [
+            ...shuffledVF.slice(0, minVF),
+            ...shuffledNormal.slice(0, count - minVF)
+        ];
+
+        return this.shuffle(selected).slice(0, Math.min(count, selected.length));
     }
 
     init() {
@@ -58,27 +72,36 @@ class QuizManager {
         progressBar.style.width = progress + '%';
         progressText.textContent = `Question ${this.currentQuestion + 1}/${this.quizData.questions.length}`;
 
-        // Render question with randomized answer order
-        const optionsWithIndex = question.options.map((option, index) => ({ option, index }));
-        const shuffledOptions = this.shuffle(optionsWithIndex);
-
         let html = `
             <div class="question-number">Question ${this.currentQuestion + 1}</div>
             <div class="question-text">${question.question}</div>
-            <div class="options">
+            ${question.image ? `<div class="question-image"><img src="${question.image}" alt="Illustration de la question" loading="lazy"></div>` : ''}
         `;
 
-        shuffledOptions.forEach((item) => {
-            html += `
-                <label class="option" data-index="${item.index}">
-                    <input type="radio" name="answer" value="${item.index}">
-                    <span>${item.option}</span>
-                </label>
-            `;
-        });
+        if (question.type === 'vrai_faux') {
+            html += `<div class="vf-options">`;
+            question.options.forEach((option, index) => {
+                const icon = index === 0 ? '✅' : '❌';
+                html += `<button class="vf-btn" data-index="${index}">${icon} ${option}</button>`;
+            });
+            html += `</div>`;
+        } else {
+            // Render question with randomized answer order
+            const optionsWithIndex = question.options.map((option, index) => ({ option, index }));
+            const shuffledOptions = this.shuffle(optionsWithIndex);
+            html += `<div class="options">`;
+            shuffledOptions.forEach((item) => {
+                html += `
+                    <label class="option" data-index="${item.index}">
+                        <input type="radio" name="answer" value="${item.index}">
+                        <span>${item.option}</span>
+                    </label>
+                `;
+            });
+            html += `</div>`;
+        }
 
         html += `
-            </div>
             <div class="explanation" id="question-explanation">
                 <div class="explanation-title">💡 Explication :</div>
                 <div class="explanation-text">${question.explanation || 'Pas d\'explication disponible.'}</div>
@@ -91,10 +114,16 @@ class QuizManager {
 
         questionContainer.innerHTML = html;
 
-        // Add event listeners to radio buttons
-        document.querySelectorAll('input[name="answer"]').forEach(radio => {
-            radio.addEventListener('change', (e) => this.selectAnswer(parseInt(e.target.value)));
-        });
+        if (question.type === 'vrai_faux') {
+            document.querySelectorAll('.vf-btn').forEach(btn => {
+                btn.addEventListener('click', (e) => this.selectAnswer(parseInt(e.currentTarget.dataset.index)));
+            });
+        } else {
+            // Add event listeners to radio buttons
+            document.querySelectorAll('input[name="answer"]').forEach(radio => {
+                radio.addEventListener('change', (e) => this.selectAnswer(parseInt(e.target.value)));
+            });
+        }
 
         // Reset state
         this.answered = false;
@@ -129,8 +158,9 @@ class QuizManager {
     }
 
     showFeedback(isCorrect, question) {
-        const options = document.querySelectorAll('.option');
-        
+        const isVF = question.type === 'vrai_faux';
+        const options = document.querySelectorAll(isVF ? '.vf-btn' : '.option');
+
         options.forEach((option) => {
             const optionIndex = parseInt(option.dataset.index, 10);
             if (optionIndex === question.correct) {
@@ -140,6 +170,7 @@ class QuizManager {
                 option.classList.add('incorrect');
             }
             option.classList.add('disabled');
+            if (isVF) option.disabled = true;
         });
 
         // Show explanation
@@ -246,16 +277,32 @@ class QuizManager {
         }
 
         // Show detailed review
-        let detailsHtml = '<h3>Récapitulatif de vos réponses :</h3>';
+        let detailsHtml = '<h3 style="color: white; margin-bottom: 1.2rem; font-size: 1.2rem;">Récapitulatif de vos réponses :</h3>';
         this.quizData.questions.forEach((question, index) => {
             const isCorrect = this.selectedAnswers[index] === question.correct;
             const icon = isCorrect ? '✅' : '❌';
+            const bgColor   = isCorrect ? 'rgba(16, 185, 129, 0.08)'  : 'rgba(239, 68, 68, 0.08)';
+            const border    = isCorrect ? 'rgba(16, 185, 129, 0.35)'  : 'rgba(239, 68, 68, 0.35)';
+            const labelGood = isCorrect ? 'rgba(16, 185, 129, 1)'     : 'rgba(239, 68, 68, 1)';
             detailsHtml += `
-                <div style="margin-top: 1rem; padding: 1rem; background: ${isCorrect ? '#e8f5e9' : '#ffebee'}; border-radius: 5px;">
-                    <p><strong>${icon} Question ${index + 1}:</strong> ${question.question}</p>
-                    <p>Votre réponse: <strong>${question.options[this.selectedAnswers[index]]}</strong></p>
-                    ${!isCorrect ? `<p>Bonne réponse: <strong>${question.options[question.correct]}</strong></p>` : ''}
-                    <p style="font-size: 0.75rem; color: #9ca3af; margin-top: 0.4rem; font-style: italic;">${question.source}</p>
+                <div style="
+                    margin-bottom: 1rem;
+                    padding: 1.2rem 1.4rem;
+                    background: ${bgColor};
+                    border: 1px solid ${border};
+                    border-radius: 12px;
+                ">
+                    <p style="color: white; font-weight: 700; margin-bottom: 0.6rem; line-height: 1.5;">
+                        ${icon} <span style="color: ${labelGood};">Question ${index + 1}</span> — ${question.question}
+                    </p>
+                    <p style="color: #94a3b8; margin-bottom: 0.3rem; font-size: 0.95rem;">
+                        Votre réponse : <strong style="color: ${isCorrect ? 'rgba(16,185,129,0.9)' : 'rgba(239,68,68,0.9)'};">${question.options[this.selectedAnswers[index]] ?? '—'}</strong>
+                    </p>
+                    ${!isCorrect ? `
+                    <p style="color: #94a3b8; margin-bottom: 0.3rem; font-size: 0.95rem;">
+                        Bonne réponse : <strong style="color: rgba(16, 185, 129, 0.9);">${question.options[question.correct]}</strong>
+                    </p>` : ''}
+                    <p style="font-size: 0.75rem; color: #64748b; margin-top: 0.5rem; font-style: italic;">${question.source}</p>
                 </div>
             `;
         });
@@ -329,6 +376,18 @@ function startQuizChiens(difficulty) {
     document.getElementById('quiz-container').style.display = 'block';
 
     const quizData = quizzesData.lesChiens;
+    quizManager = new QuizManager(quizData, difficulty);
+    quizManager.init();
+
+    const nextBtn = document.getElementById('next-button');
+    nextBtn.onclick = () => quizManager.nextQuestion();
+}
+
+function startQuizHarryPotter(difficulty) {
+    document.getElementById('difficulty-selection').style.display = 'none';
+    document.getElementById('quiz-container').style.display = 'block';
+
+    const quizData = quizzesData.harryPotter;
     quizManager = new QuizManager(quizData, difficulty);
     quizManager.init();
 
@@ -682,6 +741,12 @@ const categories = {
             { icon: '🐋', title: 'Les Mammifères Marins', desc: 'Baleines, dauphins, phoques et merveilles des océans.', url: 'quiz-mammiferes-marins.html' },
         ]
     },
+    filmsseries: {
+        label: '🎬 Films & Séries',
+        quizzes: [
+            { icon: '⚡', title: 'Harry Potter', desc: 'Sorts, Horcruxes, Poudlard et tous les secrets de l\'univers de J.K. Rowling.', url: 'quiz-harry-potter.html' },
+        ]
+    },
 };
 
 function openCategory(key) {
@@ -845,9 +910,72 @@ function showCategoriesView() {
 }
 
 // Init au chargement de la page d'accueil
-document.addEventListener('DOMContentLoaded', initSearch);
+document.addEventListener('DOMContentLoaded', () => {
+    initSearch();
+    // Lance automatiquement le mode aléatoire si on est sur la bonne page
+    if (document.getElementById('quiz-container') && window.location.pathname.includes('quiz-aleatoire')) {
+        startRandomQuiz();
+    }
+});
 
 window.clearSearch = clearSearch;
+
+// ── Mode Aléatoire ────────────────────────────────────────────────────────────
+
+function getAllQuestions() {
+    const all = [];
+    const levels = ['facile', 'moyen', 'difficile'];
+    for (const [quizKey, quizData] of Object.entries(quizzesData)) {
+        for (const level of levels) {
+            if (!quizData[level]) continue;
+            for (const q of quizData[level]) {
+                all.push({
+                    ...q,
+                    _quizTitle: quizData.title,
+                    _level: level,
+                });
+            }
+        }
+    }
+    return all;
+}
+
+function shuffleArray(arr) {
+    const a = [...arr];
+    for (let i = a.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [a[i], a[j]] = [a[j], a[i]];
+    }
+    return a;
+}
+
+function startRandomQuiz() {
+    const all = getAllQuestions();
+    const picked = shuffleArray(all).slice(0, 10);
+
+    // On construit un objet quizData factice compatible avec QuizManager
+    const fakeQuizData = {
+        title: '🎲 Mode Aléatoire',
+        description: '10 questions piochées dans tous les thèmes',
+        questions: picked,
+    };
+
+    // Mise à jour du badge thème dans le header
+    const header = document.getElementById('quiz-header');
+    if (header) {
+        const themes = [...new Set(picked.map(q => q._quizTitle))];
+        header.querySelector('p').textContent =
+            `Thèmes : ${themes.join(' · ')}`;
+    }
+
+    quizManager = new QuizManager(fakeQuizData, 'random');
+    quizManager.init();
+
+    const nextBtn = document.getElementById('next-button');
+    if (nextBtn) nextBtn.onclick = () => quizManager.nextQuestion();
+}
+
+window.startRandomQuiz = startRandomQuiz;
 
 // Expose functions globally (requis pour type="module")
 window.suggestNewTheme = suggestNewTheme;
@@ -864,3 +992,4 @@ window.startQuizLion = startQuizLion;
 window.startQuizAigleRoyal = startQuizAigleRoyal;
 window.startQuizTigre = startQuizTigre;
 window.startQuizChiens = startQuizChiens;
+window.startQuizHarryPotter = startQuizHarryPotter;

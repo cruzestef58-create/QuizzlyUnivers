@@ -186,7 +186,8 @@ const quizzesData = {
                 options: ["Agressif", "Amical, loyal et énergique", "Craintif", "Dominateur"],
                 correct: 1,
                 explanation: "Le Labrador Retriever est l'une des races les plus populaires au monde, notamment grâce à son caractère : sociable, patient, facile à éduquer et bon avec les enfants. C'est pour ça qu'il est souvent choisi comme chien guide ou chien d'assistance. Il est très énergique et a besoin d'exercice quotidien, sinon il peut devenir destructeur.",
-                source: "American Kennel Club - Le Labrador est connu pour son tempérament doux et loyal."
+                source: "American Kennel Club - Le Labrador est connu pour son tempérament doux et loyal.",
+                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Labrador_on_Quantock_%282175262184%29.jpg/800px-Labrador_on_Quantock_%282175262184%29.jpg"
             },
             {
                 id: 24,
@@ -202,7 +203,8 @@ const quizzesData = {
                 options: ["15-25 kg", "25-35 kg", "35-50 kg", "50-70 kg"],
                 correct: 1,
                 explanation: "Un berger allemand adulte pèse en général entre 25 et 35 kg pour les mâles, un peu moins pour les femelles (22-30 kg). C'est une race de taille moyenne-grande, très musclée et athlétique. Sa morphologie et son intelligence en font la race la plus utilisée dans les forces de l'ordre, l'armée et les services de sauvetage.",
-                source: "American Kennel Club - Les bergers allemands pèsent généralement 25-35 kg."
+                source: "American Kennel Club - Les bergers allemands pèsent généralement 25-35 kg.",
+                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/German_Shepherd_-_DSC_0346_%2810096362833%29.jpg/800px-German_Shepherd_-_DSC_0346_%2810096362833%29.jpg"
             },
             {
                 id: 26,
@@ -243,6 +245,33 @@ const quizzesData = {
                 correct: 2,
                 explanation: "Un chiot chez un éleveur sérieux coûte entre 800 et 2000€ selon la race, parfois plus pour des races rares. Ce prix inclut les tests génétiques des parents, les vaccins, la puce électronique, le carnet de santé et l'accompagnement post-achat. Méfiez-vous des prix trop bas : ils cachent souvent des conditions d'élevage problématiques (chiots-usines).",
                 source: "Fédération Cynologique - Les prix varient selon la race et l'éleveur."
+            },
+            {
+                id: 101,
+                type: "vrai_faux",
+                question: "Les chiens peuvent ressentir de la jalousie lorsque leur maître accorde de l'attention à un autre animal.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Une étude publiée dans PLOS ONE a montré que les chiens adoptent des comportements jaloux (pousser, s'interposer, attirer l'attention) lorsque leur maître interagit avec un autre chien. C'est l'une des premières preuves scientifiques que les chiens ressentent une forme de jalousie similaire à celle des humains.",
+                source: "Harris & Prouvost (2014), PLOS ONE - Les chiens manifestent des comportements de jalousie mesurables."
+            },
+            {
+                id: 102,
+                type: "vrai_faux",
+                question: "Un chien mouillé sent mauvais à cause de bactéries présentes sur sa peau et ses poils.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! L'odeur caractéristique du chien mouillé vient de micro-organismes (bactéries et levures) qui vivent naturellement sur la peau et les poils. Lorsque l'eau les active, ces micro-organismes libèrent des composés organiques volatils à l'odeur caractéristique. Un chien propre et bien entretenu sentira moins fort mouillé.",
+                source: "American Chemical Society - L'odeur du chien mouillé est produite par des composés volatils d'origine bactérienne."
+            },
+            {
+                id: 103,
+                type: "vrai_faux",
+                question: "Les chiens font du rêve pendant leur sommeil, comme les humains.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Les chiens ont des phases de sommeil paradoxal (REM) similaires aux humains, pendant lesquelles ils rêvent. On peut observer leurs pattes bouger, leur museau frémir ou de petits aboiements étouffés. Des études sur l'activité cérébrale des chiens pendant le sommeil ont confirmé qu'ils revivent des expériences de la journée.",
+                source: "Stanley Coren - Do Dogs Dream? MIT Press : les chiens ont un sommeil REM avec activité onirique."
             }
         ],
         moyen: [
@@ -485,6 +514,33 @@ const quizzesData = {
                 correct: 1,
                 explanation: "Un chiot bien socialisé avant 16 semaines aborde les nouvelles situations avec curiosité plutôt qu'avec peur. Il a été exposé à des bruits variés, des gens différents, des textures, des véhicules, d'autres animaux... Ces expériences encodent 'le monde est normal et sans danger' dans son cerveau. Un adulte mal socialisé peut être réhabilité, mais c'est bien plus long et difficile qu'une bonne socialisation précoce.",
                 source: "Université de Développement Comportemental - La socialisation précoce est cruciale."
+            },
+            {
+                id: 201,
+                type: "vrai_faux",
+                question: "La race Border Collie est considérée comme la plus intelligente parmi les chiens domestiques.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Selon les travaux du psychologue Stanley Coren, le Border Collie est classé n°1 en termes d'intelligence obéissante — il comprend de nouvelles commandes en moins de 5 répétitions et obéit au premier ordre dans 95% des cas. Suivi par le Caniche et le Berger Allemand.",
+                source: "Stanley Coren - The Intelligence of Dogs (1994) : le Border Collie est n°1 en intelligence obéissante."
+            },
+            {
+                id: 202,
+                type: "vrai_faux",
+                question: "Les chiens voient dans le noir aussi bien que les chats.",
+                options: ["Vrai", "Faux"],
+                correct: 1,
+                explanation: "Faux ! Les chiens voient mieux dans le noir que les humains grâce au tapetum lucidum (couche réfléchissante derrière la rétine), mais moins bien que les chats. Les chats ont une pupille plus large et plus de bâtonnets rétiniens, leur donnant une vision nocturne nettement supérieure. C'est pourquoi les yeux des chats brillent plus fort la nuit.",
+                source: "Veterinary Ophthalmology - Les chats ont une vision nocturne supérieure à celle des chiens."
+            },
+            {
+                id: 203,
+                type: "vrai_faux",
+                question: "Un chien qui bâille est toujours en train de s'endormir ou d'être fatigué.",
+                options: ["Vrai", "Faux"],
+                correct: 1,
+                explanation: "Faux ! Chez le chien, le bâillement est souvent un signal d'apaisement — un moyen de désamorcer une tension ou d'exprimer un inconfort. Un chien qui bâille face à un étranger ou lors d'une situation stressante communique en réalité son malaise. Interpréter le bâillement uniquement comme de la fatigue est une erreur fréquente.",
+                source: "Turid Rugaas - On Talking Terms With Dogs (1997) : le bâillement comme signal d'apaisement chez le chien."
             }
         ],
         difficile: [
@@ -727,6 +783,33 @@ const quizzesData = {
                 correct: 1,
                 explanation: "Au début d'un apprentissage, un ratio élevé (récompense à chaque bonne réponse) crée l'association rapidement. Puis on passe progressivement à un renforcement variable (parfois la 2e fois, parfois la 5e...). Le renforcement variable est celui qui crée la plus grande résistance à l'extinction — c'est le même principe que les machines à sous. Un chien qui ne sait jamais exactement quand vient la récompense maintient son comportement beaucoup plus longtemps qu'un chien récompensé de façon prévisible.",
                 source: "B.F. Skinner - Schedules of Reinforcement : les horaires de renforcement variable sont les plus résistants à l'extinction."
+            },
+            {
+                id: 71,
+                type: "vrai_faux",
+                question: "Le chien peut comprendre jusqu'à 250 mots et gestes différents selon les études scientifiques.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Des recherches ont montré que les chiens les plus intelligents (comme les Border Collies) peuvent apprendre jusqu'à 250 mots et signaux. En moyenne, un chien adulte comprend environ 165 mots. C'est comparable au niveau de compréhension d'un enfant de 2 ans.",
+                source: "Stanley Coren - The Intelligence of Dogs (1994) : un chien moyen comprend ~165 mots."
+            },
+            {
+                id: 72,
+                type: "vrai_faux",
+                question: "Le renforcement positif est moins efficace que la punition pour corriger un comportement indésirable.",
+                options: ["Vrai", "Faux"],
+                correct: 1,
+                explanation: "C'est faux. De nombreuses études scientifiques démontrent que le renforcement positif est plus efficace et durable que la punition. La punition crée de l'anxiété et peut générer de l'agressivité ou inhiber d'autres comportements. Le renforcement positif renforce la relation humain-chien.",
+                source: "AVSAB - Position Statement on Punishment-Based Training (2007) : le renforcement positif est recommandé."
+            },
+            {
+                id: 73,
+                type: "vrai_faux",
+                question: "Un chien peut sentir une odeur enfouie à plus d'un mètre de profondeur sous terre.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Le nez du chien est si puissant qu'il peut détecter des odeurs à travers le sol. Les chiens cadavres sont entraînés à trouver des corps enterrés à plusieurs mètres de profondeur. Le système olfactif du chien contient 300 millions de récepteurs contre seulement 6 millions chez l'humain.",
+                source: "Institut National de Police Scientifique - Les chiens pisteurs peuvent sentir à plus d'un mètre de profondeur."
             }
         ]
     },
@@ -973,6 +1056,33 @@ const quizzesData = {
                 correct: 2,
                 explanation: "Chez le chien, le bâillement est l'un des 'calming signals' (signaux d'apaisement) décrits par Turid Rugaas. Dans un contexte social, bâiller signale à l'autre : 'je ne suis pas une menace' ou 'cette situation m'est inconfortable'. C'est différent du bâillement de fatigue, qui survient dans un contexte de repos. Les humains qui ne connaissent pas ce signal l'interprètent souvent à tort comme de l'ennui.",
                 source: "Turid Rugaas — Le bâillement est un signal d'apaisement que le chien utilise pour désamorcer les tensions sociales."
+            },
+            {
+                id: 101,
+                type: "vrai_faux",
+                question: "Le Dalmatien naît avec ses taches noires caractéristiques.",
+                options: ["Vrai", "Faux"],
+                correct: 1,
+                explanation: "Faux ! Les chiots Dalmatiens naissent entièrement blancs. Les taches noires (ou marron) apparaissent progressivement dans les premières semaines de vie. C'est une particularité génétique de la race : la pigmentation des taches se développe après la naissance, contrairement à la plupart des autres races.",
+                source: "FCI Standard N°153 — Les Dalmatiens naissent blancs, les taches apparaissent dans les semaines suivant la naissance."
+            },
+            {
+                id: 102,
+                type: "vrai_faux",
+                question: "Le Husky Sibérien est une race originaire de Sibérie utilisée pour tirer des traîneaux.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Le Husky Sibérien a été développé par le peuple Tchouktche en Sibérie comme chien de traîneau il y a plus de 3 000 ans. Doté d'une endurance exceptionnelle et d'une résistance au froid extrême, il peut parcourir des centaines de kilomètres. Son nom 'Husky' vient d'une déformation du mot 'Esky' (esquimau).",
+                source: "American Kennel Club - Le Husky Sibérien est originaire du nord-est de la Sibérie."
+            },
+            {
+                id: 103,
+                type: "vrai_faux",
+                question: "Le Bouledogue Français est originaire de France.",
+                options: ["Vrai", "Faux"],
+                correct: 1,
+                explanation: "Faux ! Malgré son nom, le Bouledogue Français a été développé en Angleterre au XIXe siècle, à partir de bouledogues anglais miniatures. Il a été importé et popularisé en France (notamment par les artistes de Montmartre), ce qui lui a valu son nom. Sa popularité mondiale actuelle en fait l'une des races les plus vendues.",
+                source: "FCI — Le Bouledogue Français a des origines anglaises malgré son appellation."
             }
         ],
         moyen: [
@@ -1215,6 +1325,33 @@ const quizzesData = {
                 correct: 1,
                 explanation: "Le coefficient de consanguinité (COI, Coefficient of Inbreeding) mesure la probabilité qu'un individu soit homozygote pour un allèle identique par descendance. Plus le COI est élevé, plus le risque d'exprimer des maladies récessives augmente. Des études montrent qu'au-delà de 6,25 % (équivalent d'un croisement arrière), les effets négatifs sur la santé et la fertilité deviennent significatifs dans de nombreuses races.",
                 source: "Animal Genetics — Le coefficient de consanguinité (COI) est l'outil standard pour mesurer et gérer la consanguinité dans les races canines."
+            },
+            {
+                id: 201,
+                type: "vrai_faux",
+                question: "Les chiens descendent directement du loup gris (Canis lupus).",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Des études génétiques ont confirmé que tous les chiens domestiques (Canis lupus familiaris) descendent du loup gris. La domestication aurait eu lieu il y a 15 000 à 40 000 ans, probablement en Asie de l'Est ou au Moyen-Orient. Les chiens sont la seule espèce domestiquée à partir d'un prédateur apex.",
+                source: "Vilà et al. (1997), Science : analyse ADN confirmant la descendance du loup gris pour tous les chiens."
+            },
+            {
+                id: 202,
+                type: "vrai_faux",
+                question: "Les chiens peuvent détecter certains cancers chez l'humain grâce à leur odorat.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Des études médicales ont montré que des chiens entraînés peuvent détecter avec une précision de 97% certains cancers (sein, poumon, colorectal) en reniflant des échantillons d'urine ou de souffle. Les tumeurs produisent des composés organiques volatils spécifiques que l'odorat exceptionnel du chien peut identifier.",
+                source: "Willis et al. (2004), BMJ : les chiens détectent le cancer de la vessie par l'odeur de l'urine."
+            },
+            {
+                id: 203,
+                type: "vrai_faux",
+                question: "Le Lévrier Irlandais est la race de chien la plus grande du monde en hauteur.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Le Lévrier Irlandais (Irish Wolfhound) est officiellement la plus grande race de chien du monde en hauteur, pouvant dépasser 90 cm au garrot. Le Dogue Allemand le dispute parfois en hauteur mais le Lévrier Irlandais est plus grand en moyenne. À ne pas confondre avec la race la plus lourde (Mastiff anglais).",
+                source: "FCI / Guinness World Records - L'Irish Wolfhound est la race la plus haute au garrot."
             }
         ],
         difficile: [
@@ -1457,6 +1594,33 @@ const quizzesData = {
                 correct: 0,
                 explanation: "L'épigénétique transgénérationnelle désigne des modifications de l'expression génique (méthylation de l'ADN, modifications des histones) qui peuvent être transmises sur plusieurs générations sans changement de séquence. En élevage canin, des études montrent que le stress ou les traumatismes des parents peuvent modifier la réactivité au stress des descendants via ces mécanismes. Cela souligne l'importance du bien-être des reproducteurs pour le tempérament des chiots.",
                 source: "Nature Reviews Genetics — L'épigénétique transgénérationnelle pourrait expliquer la transmission intergénérationnelle du tempérament chez le chien."
+            },
+            {
+                id: 51,
+                type: "vrai_faux",
+                question: "Le Chihuahua est la race de chien la plus petite reconnue officiellement par la FCI.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Le Chihuahua est officiellement reconnu comme la plus petite race de chien par la Fédération Cynologique Internationale. Il pèse entre 1,5 et 3 kg pour une hauteur de 15 à 23 cm au garrot. Malgré sa taille minuscule, c'est un chien courageux et très attaché à son maître.",
+                source: "FCI — Standard N°218 du Chihuahua : la plus petite race de chien officiellement reconnue."
+            },
+            {
+                id: 52,
+                type: "vrai_faux",
+                question: "Les chiens voient le monde en noir et blanc uniquement.",
+                options: ["Vrai", "Faux"],
+                correct: 1,
+                explanation: "C'est faux ! Les chiens voient en couleurs, mais de façon différente des humains. Ils distinguent le bleu et le jaune, mais pas le rouge ni le vert (daltonisme analogue à celui des personnes daltoniens rouge-vert). Leur vision des couleurs est moins riche que la nôtre, mais ils ne voient pas en noir et blanc.",
+                source: "Neitz J. et al. (1989) - Color vision in the dog : les chiens voient bleu et jaune mais pas rouge/vert."
+            },
+            {
+                id: 53,
+                type: "vrai_faux",
+                question: "Le Greyhound (lévrier anglais) peut atteindre 72 km/h, ce qui en fait le chien le plus rapide du monde.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Le Greyhound est le chien le plus rapide du monde avec une vitesse de pointe de 72 km/h sur de courtes distances. Il dépasse même le cheval au sprint sur 100 mètres. Cette vitesse exceptionnelle est rendue possible par sa morphologie unique : dos flexible, longues pattes et muscles puissants.",
+                source: "Fédération Cynologique Internationale - Record de vitesse du Greyhound : 72 km/h."
             }
         ]
     },
@@ -1470,7 +1634,8 @@ const quizzesData = {
                 options: ["4 à 6 heures seulement, car ce sont des animaux nocturnes très actifs", "8 à 10 heures, comme la plupart des mammifères domestiques", "12 à 16 heures", "18 à 20 heures uniquement pour les chats âgés ou convalescents"],
                 correct: 2,
                 explanation: "Les chats sont des animaux crépusculaires et crepusculaires. Ils dorment 12 à 16 heures par jour pour conserver leur énergie, ce qui leur permet d'être alerte pendant les heures d'activité.",
-                source: "Institut Félin International - Les chats dorment entre 12 et 16 heures par jour pour conserver leur énergie."
+                source: "Institut Félin International - Les chats dorment entre 12 et 16 heures par jour pour conserver leur énergie.",
+                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Cat_November_2010-1a.jpg/800px-Cat_November_2010-1a.jpg"
             },
             {
                 id: 2,
@@ -1703,6 +1868,33 @@ const quizzesData = {
                 correct: 1,
                 explanation: "8 à 12 semaines est la fenêtre idéale pour adopter un chaton. Avant 8 semaines, le chaton n'a pas encore terminé son apprentissage social avec sa mère et sa fratrie. Entre 8 et 12 semaines, il est suffisamment socialisé mais encore très réceptif aux nouvelles personnes, animaux et environnements. Un chaton adopté trop tôt (avant 7 semaines) développe souvent des comportements problématiques à l'âge adulte.",
                 source: "Association de Protection Féline - 8-12 semaines est optimal pour l'adoption."
+            },
+            {
+                id: 101,
+                type: "vrai_faux",
+                question: "Les chats ont 5 doigts à chaque patte.",
+                options: ["Vrai", "Faux"],
+                correct: 1,
+                explanation: "Faux ! Les chats ont normalement 5 doigts aux pattes avant et 4 aux pattes arrière, soit 18 doigts au total. Certains chats sont polydactyles (anomalie génétique) et peuvent avoir jusqu'à 7 doigts par patte. Ernest Hemingway avait une grande passion pour les chats polydactyles, surnommés 'chats Hemingway'.",
+                source: "Vétérinaire Felino International - Les chats ont 18 doigts en standard (5 devant, 4 derrière)."
+            },
+            {
+                id: 102,
+                type: "vrai_faux",
+                question: "Les chats peuvent sauter jusqu'à 6 fois leur propre hauteur.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Un chat en bonne santé peut sauter jusqu'à 6 fois sa hauteur au garrot, soit environ 1,5 à 2 mètres en hauteur. Cette capacité exceptionnelle vient de leurs puissantes pattes arrière, de leur colonne vertébrale très flexible et de leur faible poids. C'est l'une des meilleures performances de saut du règne animal par rapport à la taille.",
+                source: "Journal of Experimental Biology - Les chats peuvent sauter jusqu'à 6 fois leur hauteur."
+            },
+            {
+                id: 103,
+                type: "vrai_faux",
+                question: "Le chat est le seul mammifère qui ne peut pas goûter le sucré.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Les chats (et tous les félins) ont perdu au cours de l'évolution le gène codant pour les récepteurs du goût sucré. Ils ne ressentent donc pas la saveur sucrée. Cette mutation s'explique par leur régime carnivore strict — le sucre n'ayant aucun intérêt nutritionnel pour eux, ce sens a disparu au fil du temps.",
+                source: "Li et al. (2005), PLOS Genetics - Les chats ont perdu le récepteur du goût sucré (gène Tas1r2 non fonctionnel)."
             }
         ],
         moyen: [
@@ -1945,6 +2137,33 @@ const quizzesData = {
                 correct: 1,
                 explanation: "La vision nocturne exceptionnelle du chat repose sur deux adaptations : des pupilles en fente qui peuvent s'ouvrir très largement pour capturer un maximum de lumière, et le tapetum lucidum — une couche réfléchissante derrière la rétine qui renvoie la lumière sur les photorécepteurs une seconde fois, doublant l'utilisation de la lumière disponible. C'est ce qui fait briller les yeux des chats dans l'obscurité quand on les éclaire.",
                 source: "Institut d'Ophtalmologie - Les chats ont une vision nocturne supérieure."
+            },
+            {
+                id: 201,
+                type: "vrai_faux",
+                question: "Les chats ont une meilleure mémoire à long terme que les chiens.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Des études comparatives ont montré que la mémoire à long terme du chat peut être 200 fois supérieure à celle du chien. Un chat peut se souvenir d'événements pendant des années, alors que la mémoire du chien s'efface plus rapidement. Cela explique aussi pourquoi les chats peuvent tenir des rancunes ou se souvenir d'une mauvaise expérience longtemps après.",
+                source: "Animal Cognition Studies - La mémoire à long terme du chat est significativement plus durable que celle du chien."
+            },
+            {
+                id: 202,
+                type: "vrai_faux",
+                question: "Les chats voient les couleurs en noir et blanc.",
+                options: ["Vrai", "Faux"],
+                correct: 1,
+                explanation: "Faux ! Les chats voient bien les couleurs, mais différemment des humains. Ils distinguent principalement les bleus et les verts, mais ont du mal avec les rouges et les roses (qui apparaissent plus verdâtres). Leur vision des couleurs ressemble à celle d'un humain daltonien rouge-vert. En revanche, ils voient beaucoup mieux que nous dans l'obscurité.",
+                source: "Jacobs (1993), Journal of Comparative Physiology - Les chats ont une vision dichromatique (bleu-vert)."
+            },
+            {
+                id: 203,
+                type: "vrai_faux",
+                question: "Le Maine Coon est la plus grande race de chat domestique.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Le Maine Coon est officiellement la plus grande race de chat domestique. Les mâles pèsent entre 6 et 11 kg et peuvent mesurer jusqu'à 1,20 m de long. Originaire de l'État du Maine (USA), il est surnommé 'le chien des chats' pour son caractère joueur et sociable. Le record du monde de longueur appartient à un Maine Coon de 121 cm.",
+                source: "Guinness World Records - Le Maine Coon détient le record de la plus grande race de chat domestique."
             }
         ],
         difficile: [
@@ -2187,6 +2406,33 @@ const quizzesData = {
                 correct: 1,
                 explanation: "Le système rénine-angiotensine est un mécanisme hormonal essentiel de régulation de la pression artérielle. Quand la pression chute, les reins libèrent de la rénine qui déclenche une cascade produisant l'angiotensine II, un puissant vasoconstricteur. Chez le chat, l'hypertension artérielle est fréquente (souvent secondaire à une maladie rénale ou thyroïdienne) et peut causer des dommages oculaires sévères (décollement de rétine = cécité soudaine). Les inhibiteurs de l'ECA bloquent ce système pour traiter l'hypertension.",
                 source: "Institut de Physiologie Cardiovasculaire - Système homéostatique majeur."
+            },
+            {
+                id: 71,
+                type: "vrai_faux",
+                question: "Les chats sont les seuls animaux domestiques à ne pas avoir été domestiqués par l'homme, mais à s'être domestiqués eux-mêmes.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Contrairement aux chiens domestiqués activement par l'humain, les chats se sont rapprochés d'eux-mêmes des premières civilisations agricoles pour chasser les rongeurs attirés par les stocks de céréales. Ce processus de domestication 'mutuelle' explique pourquoi les chats ont conservé un fort instinct sauvage.",
+                source: "Nature Ecology & Evolution (2017) - Les chats se sont auto-domestiqués près des communautés agricoles il y a ~10 000 ans."
+            },
+            {
+                id: 72,
+                type: "vrai_faux",
+                question: "Un chat adulte miaule principalement pour communiquer avec d'autres chats.",
+                options: ["Vrai", "Faux"],
+                correct: 1,
+                explanation: "C'est faux ! Les chats adultes sauvages ne miaulent presque jamais entre eux — les miaulements sont réservés aux chatons pour appeler leur mère. Le chat domestique a développé le miaulement spécifiquement pour communiquer avec les humains. C'est une adaptation unique à la cohabitation avec l'homme.",
+                source: "Dr. Nicholas Nicastro - Acoustic Bases for Human Recognition of Cat Vocalizations (2003)."
+            },
+            {
+                id: 73,
+                type: "vrai_faux",
+                question: "Le ronronnement du chat peut accélérer la guérison des os fracturés grâce à ses vibrations.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Le ronronnement produit des vibrations entre 25 et 50 Hz, une fréquence connue pour stimuler la densité osseuse et favoriser la guérison. Des études suggèrent que ces vibrations ont des effets thérapeutiques sur les os et les muscles, ce qui pourrait expliquer pourquoi les chats récupèrent vite de leurs blessures.",
+                source: "Clinton T. Rubin - Low-Level Mechanical Signals and Bone (2001) : les vibrations à 25-50 Hz favorisent la réparation osseuse."
             }
         ]
     },
@@ -2433,6 +2679,33 @@ const quizzesData = {
                 correct: 2,
                 explanation: "Certaines espèces de canards comme le canard chipeau ou le garrot peuvent pondre jusqu'à 25-30 œufs en une seule couvée. Ce record s'explique par le fait que ces nids sont souvent la cible de prédateurs, donc pondre beaucoup augmente les chances de survie de certains œufs. En comparaison, les rapaces ne pondent que 1 à 3 œufs par couvée, mais y investissent beaucoup plus de temps parental.",
                 source: "Fédération Française d'Ornithologie - Certains canards pondent jusqu'à 30 œufs."
+            },
+            {
+                id: 101,
+                type: "vrai_faux",
+                question: "Les flamants roses sont naturellement roses dès la naissance.",
+                options: ["Vrai", "Faux"],
+                correct: 1,
+                explanation: "Faux ! Les flamants roses naissent avec un plumage blanc grisâtre. Leur couleur rose vient de pigments appelés caroténoïdes présents dans les algues et crustacés qu'ils consomment. Si on les nourrissait avec une alimentation sans caroténoïdes, ils resteraient blancs. C'est aussi vrai pour les flamants en zoo — ils doivent recevoir des suppléments alimentaires pour garder leur couleur.",
+                source: "Ornithologie Comparée - La couleur rose du flamant est entièrement due à son alimentation."
+            },
+            {
+                id: 102,
+                type: "vrai_faux",
+                question: "Les autruches enfouissent leur tête dans le sable lorsqu'elles ont peur.",
+                options: ["Vrai", "Faux"],
+                correct: 1,
+                explanation: "Faux ! C'est l'un des plus grands mythes sur les animaux. Les autruches ne cachent jamais leur tête dans le sable. Quand elles sont menacées, elles s'enfuient en courant (jusqu'à 70 km/h) ou frappent avec leurs pattes. Ce mythe vient du fait qu'elles se penchent pour avaler du sable (qui aide la digestion) ou retourner leurs œufs.",
+                source: "African Wildlife Foundation - L'autruche ne cache jamais sa tête dans le sable."
+            },
+            {
+                id: 103,
+                type: "vrai_faux",
+                question: "Le perroquet Ara peut vivre plus de 60 ans en captivité.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Les perroquets Ara (Ara ararauna, Ara macao) peuvent vivre de 60 à 80 ans en captivité, parfois même plus. Ce sont parmi les animaux de compagnie à la plus grande longévité. Il est donc important d'inclure son perroquet dans son testament ! En nature, leur espérance de vie est de 30 à 50 ans.",
+                source: "World Parrot Trust - Les Aras ont une espérance de vie de 60 à 80 ans en captivité."
             }
         ],
         moyen: [
@@ -2675,6 +2948,33 @@ const quizzesData = {
                 correct: 2,
                 explanation: "La survie des jeunes oiseaux entre l'envol et leur premier anniversaire est généralement de 30 à 50% selon les espèces — la première année est de loin la plus meurtrière. Les principales causes de mortalité sont la prédation, la famine (compétition avec les adultes pour la nourriture), les accidents (vitres, voitures) et les conditions météorologiques. Les espèces à faible taux de reproduction compensent par une meilleure survie adulte (jusqu'à 90% par an pour certains albatros).",
                 source: "Institut d'Écologie Ornithologique - La survie infantile est généralement faible."
+            },
+            {
+                id: 201,
+                type: "vrai_faux",
+                question: "Le coucou gris pond ses œufs dans les nids d'autres oiseaux pour les faire élever à sa place.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Le coucou gris est un parasite de couvée : la femelle pond un seul œuf dans le nid d'une autre espèce (fauvette, rouge-gorge...), puis abandonne. Le poussin coucou éclot avant les autres, pousse les vrais œufs hors du nid, et est élevé intégralement par les parents adoptifs qui ne reconnaissent pas la supercherie.",
+                source: "Davies N. (2000), Cuckoos, Cowbirds and Other Cheats : parasitisme de couvée documenté chez Cuculus canorus."
+            },
+            {
+                id: 202,
+                type: "vrai_faux",
+                question: "Le vautour fauve se nourrit exclusivement de cadavres et ne tue jamais ses proies.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Le vautour fauve est un charognard strict — il ne tue jamais. Il se nourrit exclusivement de carcasses d'animaux morts. Son système digestif est adapté pour décomposer des bactéries mortelles (anthrax, choléra) grâce à un pH gastrique extrêmement acide. Ce service d'assainissement écologique est essentiel pour l'écosystème.",
+                source: "Vulture Conservation Foundation - Le vautour fauve est un charognard obligatoire, jamais un prédateur."
+            },
+            {
+                id: 203,
+                type: "vrai_faux",
+                question: "Tous les oiseaux migrateurs naviguent grâce à leur vision des étoiles.",
+                options: ["Vrai", "Faux"],
+                correct: 1,
+                explanation: "Faux ! Les oiseaux migrateurs utilisent plusieurs systèmes de navigation : le champ magnétique terrestre (boussole interne), la position du soleil, les étoiles (pour certaines espèces), et des repères visuels. La navigation par les étoiles n'est qu'un outil parmi d'autres. Certaines espèces comme le rouge-gorge utilisent principalement la magnétoception.",
+                source: "Wiltschko & Wiltschko (2003), Journal of Experimental Biology : les oiseaux combinent plusieurs systèmes de navigation."
             }
         ],
         difficile: [
@@ -2917,6 +3217,33 @@ const quizzesData = {
                 correct: 1,
                 explanation: "Certains corvidés partagent l'information sur les sources de nourriture au sein de leur groupe social — parfois appelé 'réseau d'information'. Les corneilles noires se rassemblent en dortoirs communs où les individus qui ont trouvé de la nourriture sont 'suivis' le lendemain matin par les autres. Mais les corvidés savent aussi dissimuler leurs caches quand ils se sentent observés, démontrant une 'théorie de l'esprit' — la capacité de comprendre que les autres ont leur propre savoir.",
                 source: "Université de Cognition Sociale Aviaire - Corvidés communiquent ressources."
+            },
+            {
+                id: 71,
+                type: "vrai_faux",
+                question: "Certains oiseaux peuvent dormir en vol pendant des heures sans se poser.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Le martinet noir (Apus apus) peut rester en vol jusqu'à 10 mois consécutifs sans se poser. Il dort en vol grâce au sommeil unihémisphérique : une moitié de son cerveau dort pendant que l'autre reste éveillée. Des radars ont confirmé que ces oiseaux montent en altitude la nuit pour dormir en planant.",
+                source: "Liechti et al. (2016), Nature Communications - Le martinet noir reste en vol jusqu'à 10 mois consécutifs."
+            },
+            {
+                id: 72,
+                type: "vrai_faux",
+                question: "Les pingouins sont des oiseaux qui vivent exclusivement en Antarctique.",
+                options: ["Vrai", "Faux"],
+                correct: 1,
+                explanation: "C'est faux ! Si les manchots de l'Antarctique sont les plus connus, les 18 espèces de manchots vivent dans l'hémisphère sud mais pas uniquement en Antarctique. Le manchot des Galapagos vit à l'équateur, d'autres en Australie, Nouvelle-Zélande ou Afrique du Sud. De plus, on distingue le manchot (hémisphère sud, incapable de voler) du pingouin (hémisphère nord, capable de voler).",
+                source: "IUCN - Les 18 espèces de manchots vivent dans l'hémisphère sud, pas uniquement en Antarctique."
+            },
+            {
+                id: 73,
+                type: "vrai_faux",
+                question: "Le colibri est le seul oiseau capable de voler en marche arrière.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Le colibri est le seul oiseau capable de voler en marche arrière, de côté et même en stationnaire. Ses ailes battent jusqu'à 80 fois par seconde et décrivent un 8 horizontal, produisant une portance dans les deux sens. Son cœur bat jusqu'à 1 200 fois par minute en vol.",
+                source: "Warrick et al. (2005), Nature - Mécanisme de vol du colibri : le seul oiseau à maîtriser le vol en marche arrière."
             }
         ]
     },
@@ -2938,7 +3265,8 @@ const quizzesData = {
                 options: ["Le python réticulé d'Asie du Sud-Est, qui peut dépasser 7 mètres de longueur", "L'anaconda vert d'Amazonie, reconnu comme le plus lourd des serpents", "Le crocodile marin", "Le varan de Komodo, le plus grand lézard terrestre avec ses 3 mètres"],
                 correct: 2,
                 explanation: "Le crocodile marin d'Asie du Sud-Est est le plus grand reptile vivant. Les mâles peuvent atteindre 6 à 7 métres de longueur et peser plus d'une tonne. C'est un prédateur formidable et aité depuis des millénaires.",
-                source: "Société Herpétologique - Le crocodile marin peut atteindre 6-7 mètres de long."
+                source: "Société Herpétologique - Le crocodile marin peut atteindre 6-7 mètres de long.",
+                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Nilkrokodil_zoo_berlin_1.jpg/800px-Nilkrokodil_zoo_berlin_1.jpg"
             },
             {
                 id: 3,
@@ -2962,7 +3290,8 @@ const quizzesData = {
                 options: ["Le serpent, qui modifie la brillance de ses écailles selon son état émotionnel et la luminosité ambiante", "Le lézard anole, qui change du vert au brun en quelques secondes selon son humeur et la température", "Le caméléon", "La tortue, dont la peau peut s'assombrir ou s'éclaircir progressivement selon l'exposition au soleil"],
                 correct: 2,
                 explanation: "Le caméléon change de couleur grâce à des cellules spécialisées dans sa peau : les chromatophores (qui contiennent des pigments) et les iridophores (qui réfléchissent la lumière). Contrairement à l'idée reçue, ce changement n'est pas principalement pour le camouflage — c'est avant tout un moyen de communication : exprimer l'humeur, séduire un partenaire, ou intimider un rival. La température influence aussi la couleur.",
-                source: "Muséum d'Histoire Naturelle - Le caméléon change de couleur grâce à ses chromatophores."
+                source: "Muséum d'Histoire Naturelle - Le caméléon change de couleur grâce à ses chromatophores.",
+                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Chameleon_pardalis.jpg/800px-Chameleon_pardalis.jpg"
             },
             {
                 id: 6,
@@ -3163,6 +3492,33 @@ const quizzesData = {
                 correct: 2,
                 explanation: "Les grands pythons sont les champions de la ponte chez les serpents. Le python de Birmanie peut pondre jusqu'à 100 œufs, et le python réticulé jusqu'à 80. La femelle s'enroule autour de ses œufs et produit de la chaleur par frissons musculaires (thermogenèse) pour maintenir une température d'incubation stable — comportement exceptionnel chez les reptiles. Pendant les 2-3 mois d'incubation, elle ne mange pas et peut perdre 40% de son poids.",
                 source: "Fédération Herpétologique - Certains pythons pondent plus de 100 œufs."
+            },
+            {
+                id: 101,
+                type: "vrai_faux",
+                question: "Les tortues peuvent vivre plus de 100 ans.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Certaines espèces de tortues géantes sont parmi les animaux les plus longévifs. La tortue des Seychelles Jonathan a fêté ses 191 ans en 2023, devenant le plus vieux animal terrestre vivant jamais enregistré. Les tortues géantes des Galápagos vivent couramment jusqu'à 150 ans. Même les tortues domestiques peuvent dépasser 50 ans.",
+                source: "Guinness World Records 2023 - Jonathan la tortue des Seychelles : 191 ans, animal terrestre le plus vieux."
+            },
+            {
+                id: 102,
+                type: "vrai_faux",
+                question: "Les lézards peuvent se détacher volontairement la queue pour échapper à un prédateur.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! C'est l'autotomie caudale : de nombreux lézards (geckos, scinques, lézards verts) peuvent se séparer volontairement de leur queue lorsqu'ils sont attrapés. La queue continue de se tortiller pour distraire le prédateur pendant que le lézard s'échappe. La queue repousse progressivement, mais en cartilage et non en os.",
+                source: "Encyclopédie Herpétologique - L'autotomie caudale est un mécanisme de défense actif chez de nombreux lézards."
+            },
+            {
+                id: 103,
+                type: "vrai_faux",
+                question: "Les serpents entendent les sons par leurs oreilles comme les humains.",
+                options: ["Vrai", "Faux"],
+                correct: 1,
+                explanation: "Faux ! Les serpents n'ont pas d'oreilles externes ni de tympan. Ils ne captent pas les sons aériens comme nous. En revanche, ils perçoivent les vibrations du sol via leur mâchoire inférieure et leur os carré — une forme de 'hearing' par conduction osseuse. Les charmes de cobra au son de flûte fonctionnent surtout grâce au mouvement visuel, pas à la musique.",
+                source: "Encyclopédie des Reptiles - Les serpents 'entendent' par conduction osseuse, sans oreilles externes."
             }
         ],
         moyen: [
@@ -3405,6 +3761,33 @@ const quizzesData = {
                 correct: 1,
                 explanation: "L'autotomie caudale est un mécanisme de défense unique : le lézard contracte volontairement certains muscles qui fracturent une vertèbre caudaleprédéterminée (plan de fracture), permettant la queue de se détacher proprement. La queue détachée continue à se tortiller pendant plusieurs minutes grâce à des réserves nerveuses autonomes, détournant l'attention du prédateur. Le lézard, lui, s'échappe. La perte de queue a un coût : réserves de graisse perdues, risque d'infection, et énergie dépensée pour la régénération.",
                 source: "Institut d'Éthologie - Mécanisme de survie exceptionnel."
+            },
+            {
+                id: 201,
+                type: "vrai_faux",
+                question: "Le Komodo est le plus grand lézard vivant du monde.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Le dragon de Komodo (Varanus komodoensis) est le plus grand lézard vivant. Il peut atteindre 3 mètres de long et peser jusqu'à 70 kg. Endémique de quelques îles indonésiennes, il chasse des proies aussi grandes que des cerfs et des buffles. Sa salive contient des bactéries mortelles et il possède également du venin.",
+                source: "National Geographic - Le dragon de Komodo est le plus grand lézard vivant, pouvant dépasser 3 mètres."
+            },
+            {
+                id: 202,
+                type: "vrai_faux",
+                question: "Les crocodiles et les alligators sont la même espèce.",
+                options: ["Vrai", "Faux"],
+                correct: 1,
+                explanation: "Faux ! Ce sont deux familles différentes. La différence la plus visible : chez le crocodile, la 4e dent inférieure est visible quand la gueule est fermée (forme en V), pas chez l'alligator (forme en U). Les alligators vivent surtout en eau douce (USA, Chine), les crocodiles en eau douce et salée sur plusieurs continents. Il y a 23 espèces de crocodiliens au total.",
+                source: "Société Herpétologique - Crocodiles et alligators sont deux familles distinctes (Crocodylidae vs Alligatoridae)."
+            },
+            {
+                id: 203,
+                type: "vrai_faux",
+                question: "Certains reptiles peuvent changer de sexe en fonction de la température d'incubation des œufs.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Chez de nombreux reptiles (crocodiles, tortues, certains lézards), le sexe n'est pas déterminé génétiquement mais par la température à laquelle les œufs sont incubés. C'est la 'TSD' (Temperature-dependent Sex Determination). Le réchauffement climatique représente un danger réel : une augmentation de température pourrait déséquilibrer les ratios mâles/femelles.",
+                source: "Bull (1980), Science : la détermination du sexe par la température chez les reptiles (TSD)."
             }
         ],
         difficile: [
@@ -3470,7 +3853,8 @@ const quizzesData = {
                 options: ["Ventouses", "Crochets microscopiques (setae) avec forces de Van der Waals", "Adhésifs naturels", "Électricité statique"],
                 correct: 1,
                 explanation: "Les pattes des geckos sont couvertes de millions de poils microscopiques (setae), eux-mêmes subdivisés en centaines de spatules nanométriques. À cette échelle, les forces de Van der Waals (attractions électrostatiques entre molécules) deviennent suffisamment importantes pour coller la patte à n'importe quelle surface — même le verre ou le plafond. Remarquable : ce mécanisme est sec (pas de colle), autorétractable et laisse aucune trace. Il inspire des matériaux adhésifs réutilisables dans la recherche en robotique et médecine.",
-                source: "Université de Biomécanique - Les geckos utilisent les forces de Van der Waals."
+                source: "Université de Biomécanique - Les geckos utilisent les forces de Van der Waals.",
+                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Gekko_gecko.jpg/800px-Gekko_gecko.jpg"
             },
             {
                 id: 29,
@@ -3647,6 +4031,33 @@ const quizzesData = {
                 correct: 1,
                 explanation: "La mimétrie batésienne est une stratégie évolutive où une espèce inoffensive imite l'apparence d'une espèce dangereuse pour bénéficier de sa protection sans en avoir les coûts. Le serpent des laiteries (Lampropeltis triangulum) imite les couleurs rouge-jaune-noir du serpent corail venimeux. La règle mnémotechnique anglaise 'Red touch yellow, kill a fellow ; red touch black, friend of Jack' aide à distinguer les deux. Cette mimétrie ne fonctionne que parce que les prédateurs ont appris à éviter le modèle venimeux.",
                 source: "Institut d'Éthologie Défensive - Stratégie évolutive de bluff."
+            },
+            {
+                id: 71,
+                type: "vrai_faux",
+                question: "Le caméléon change de couleur principalement pour se camoufler contre les prédateurs.",
+                options: ["Vrai", "Faux"],
+                correct: 1,
+                explanation: "C'est faux ! Contrairement à la croyance populaire, le caméléon change surtout de couleur pour communiquer ses émotions (stress, agressivité, désir de reproduction) et réguler sa température corporelle. Le camouflage est secondaire. Les mâles affichent des couleurs vives pour impressionner les femelles ou intimider les rivaux.",
+                source: "Stuart-Fox & Moussalli (2008), PLOS Biology - Le changement de couleur du caméléon est surtout une communication sociale."
+            },
+            {
+                id: 72,
+                type: "vrai_faux",
+                question: "Les serpents ont des paupières mobiles et peuvent cligner des yeux.",
+                options: ["Vrai", "Faux"],
+                correct: 1,
+                explanation: "C'est faux ! Les serpents n'ont pas de paupières mobiles. Leurs yeux sont protégés par une écaille transparente fixe appelée 'lunette oculaire' ou spectacle. C'est pourquoi les serpents semblent fixer sans jamais cligner. Cette écaille est remplacée à chaque mue. Cela explique aussi pourquoi les yeux deviennent bleutés juste avant une mue.",
+                source: "Encyclopédie Herpétologique - Les serpents n'ont pas de paupières, mais une écaille transparente sur les yeux."
+            },
+            {
+                id: 73,
+                type: "vrai_faux",
+                question: "Le crocodile du Nil peut rester sous l'eau jusqu'à 2 heures en cas de besoin.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Le crocodile du Nil peut rester immergé jusqu'à 2 heures en ralentissant son métabolisme. En conditions normales, il remonte respirer toutes les 15 à 20 minutes. Cette capacité d'apnée est rendue possible par un système cardiovasculaire unique qui redirige le sang vers les organes vitaux.",
+                source: "Grigg & Kirshner (2015), Biology and Evolution of Crocodylians - Apnée jusqu'à 2h possible."
             }
         ]
     },
@@ -3684,7 +4095,8 @@ const quizzesData = {
                 options: ["Environ 5 espèces, dont le grand dauphin et le dauphin commun, les deux seules vraiment bien documentées", "Environ 20 espèces réparties entre océans tropicaux et tempérés", "Environ 40 espèces", "Environ 100 espèces, en comptant toutes les populations géographiquement isolées reconnues localement"],
                 correct: 2,
                 explanation: "Il existe environ 40 esp\u00e8ces de dauphins dans le monde, appartenant \u00e0 la famille des Delphinid\u00e9s. Parmi les plus connues : le grand dauphin (Tursiops truncatus), le dauphin commun et l'orque \u2014 techniquement le plus grand dauphin. Cette diversit\u00e9 couvre les mers tropicales, temp\u00e9r\u00e9es et polaires.",
-                source: "Société Cétologique - Il existe environ 40 espèces de dauphins."
+                source: "Société Cétologique - Il existe environ 40 espèces de dauphins.",
+                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Tursiops_truncatus_01.jpg/800px-Tursiops_truncatus_01.jpg"
             },
             {
                 id: 5,
@@ -3748,7 +4160,8 @@ const quizzesData = {
                 options: ["50-100 tonnes, poids comparable au rorqual commun souvent confondu avec la baleine bleue dans les récits historiques", "100-150 tonnes, fourchette estimée d'après les premières pesées lors de la chasse baleinière industrielle au XXe siècle", "150-200 tonnes", "200+ tonnes, masse que certains grands mâles dépasseraient selon les estimations basées sur leur longueur maximale enregistrée"],
                 correct: 2,
                 explanation: "La baleine bleue adulte p\u00e8se en moyenne 150 \u00e0 200 tonnes \u2014 l'\u00e9quivalent de 30 \u00e9l\u00e9phants. Son c\u0153ur seul p\u00e8se environ 600 kg et est gros comme une petite voiture. Ses art\u00e8res sont si larges qu'un enfant pourrait y ramper. Malgr\u00e9 cette taille colossale, elle peut nager \u00e0 30 km/h lors de sprints.",
-                source: "Muséum Océanographique - La baleine bleue pèse environ 150-200 tonnes."
+                source: "Muséum Océanographique - La baleine bleue pèse environ 150-200 tonnes.",
+                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Blue_Whale_001.jpg/800px-Blue_Whale_001.jpg"
             },
             {
                 id: 13,
@@ -3788,7 +4201,8 @@ const quizzesData = {
                 options: ["Le cachalot mâle, dont les spécimens de 20 mètres et 50 tonnes ont longtemps été considérés comme les plus grands mammifères connus", "La baleine bleue", "Le mégalodon, requin préhistorique de 15 à 18 mètres dont des fossiles datant de moins de 3 millions d'années ont été découverts", "L'éléphant de mer du sud, pinnipède pouvant peser jusqu'à 4 tonnes considéré le plus grand carnivore terrestre avant les redécouvertes marines"],
                 correct: 1,
                 explanation: "La baleine bleue (Balaenoptera musculus) est sans conteste le plus grand animal ayant jamais v\u00e9cu, surpassant m\u00eame les plus grands dinosaures. Les plus grandes femelles enregistr\u00e9es mesuraient jusqu'\u00e0 33 m\u00e8tres. Sa population a \u00e9t\u00e9 r\u00e9duite \u00e0 1% de son niveau originel par la chasse baleini\u00e8re au 20\u00e8me si\u00e8cle \u2014 elle reste une esp\u00e8ce en danger.",
-                source: "Muséum d'Histoire Naturelle - La baleine bleue est l'animal vivant le plus grand."
+                source: "Muséum d'Histoire Naturelle - La baleine bleue est l'animal vivant le plus grand.",
+                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Blue_Whale_001.jpg/800px-Blue_Whale_001.jpg"
             },
             {
                 id: 18,
@@ -3893,6 +4307,33 @@ const quizzesData = {
                 correct: 2,
                 explanation: "Les dauphins ont des capacit\u00e9s d'apn\u00e9e remarquables. Ces performances sont rendues possibles par une myoglobine musculaire tr\u00e8s concentr\u00e9e (qui donne une couleur sombre aux muscles), un r\u00e9flexe de bradycardie (ralentissement du c\u0153ur de 100 \u00e0 15 battements/min), et une tol\u00e9rance \u00e9lev\u00e9e au CO2. La plupart des plong\u00e9es courantes durent cependant 2 \u00e0 10 minutes.",
                 source: "Centre de Physiologie Plongée - Adaptations extrêmes."
+            },
+            {
+                id: 101,
+                type: "vrai_faux",
+                question: "Les baleines sont des poissons.",
+                options: ["Vrai", "Faux"],
+                correct: 1,
+                explanation: "Faux ! Les baleines sont des mammifères, pas des poissons. Elles respirent par des poumons (pas des branchies), allaitent leurs petits avec du lait maternel, sont à sang chaud et ont des poils (quelques vibrisses). Leurs ancêtres étaient des mammifères terrestres qui ont évolué vers la vie aquatique il y a environ 50 millions d'années.",
+                source: "Muséum d'Histoire Naturelle - Les cétacés (baleines, dauphins) sont des mammifères, descendants de mammifères terrestres."
+            },
+            {
+                id: 102,
+                type: "vrai_faux",
+                question: "Les dauphins utilisent l'écholocation pour se repérer et chasser.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Les dauphins émettent des clics ultrasoniques qui rebondissent sur les objets et les proies. L'écho retournant à grande vitesse leur permet de percevoir la taille, la forme, la distance et même la composition d'un objet avec une précision extraordinaire. C'est un sonar biologique si précis qu'il peut détecter un objet de la taille d'une pièce de monnaie à 100 mètres.",
+                source: "Woods Hole Oceanographic Institution - L'écholocation des dauphins atteint une résolution millimétrique."
+            },
+            {
+                id: 103,
+                type: "vrai_faux",
+                question: "La baleine bleue est l'animal le plus grand ayant jamais existé sur Terre.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! La baleine bleue est non seulement le plus grand animal vivant aujourd'hui, mais aussi le plus grand de toute l'histoire de la vie sur Terre — plus grande que n'importe quel dinosaure. Elle peut atteindre 33 mètres et 200 tonnes. Son cœur seul pèse environ 600 kg et est aussi grand qu'une petite voiture.",
+                source: "NOAA - La baleine bleue est l'être vivant le plus grand de toute l'histoire de la Terre."
             }
         ],
         moyen: [
@@ -4014,7 +4455,8 @@ const quizzesData = {
                 options: ["10-15 km/h", "25-35 km/h", "35-55 km/h selon conditions", "60+ km/h"],
                 correct: 2,
                 explanation: "L'orque (Orcinus orca) est l'un des nageurs les plus rapides parmi les grands mammif\u00e8res marins, capable d'atteindre 55 km/h en chasse. Cette vitesse, combin\u00e9e \u00e0 l'intelligence collective des groupes familiaux, fait de l'orque le pr\u00e9dateur le plus redoutable des oc\u00e9ans. Elle est capable de chasser des baleines bleues en groupe, des requins blancs en solitaire, et m\u00eame de s'\u00e9chouer volontairement pour attraper des lions de mer.",
-                source: "Centre d'Écologie Orque - Prédateurs très rapides."
+                source: "Centre d'Écologie Orque - Prédateurs très rapides.",
+                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Killerwhales_jumping.jpg/800px-Killerwhales_jumping.jpg"
             },
             {
                 id: 36,
@@ -4135,6 +4577,33 @@ const quizzesData = {
                 correct: 2,
                 explanation: "Les lamantins et dugongs ont un m\u00e9tabolisme environ 3 fois plus lent que pr\u00e9vu pour leur taille. Herbivores exclusifs, ils consomment 5 \u00e0 10% de leur poids en herbes marines chaque jour. Cette alimentation peu calorique les oblige \u00e0 brouter continuellement. Leur m\u00e9tabolisme lent et leur incapacit\u00e9 \u00e0 g\u00e9n\u00e9rer suffisamment de chaleur les rendent vuln\u00e9rables au 'cold stress syndrome' si l'eau descend sous 20\u00b0C.",
                 source: "Institut de Physiologie Comparée Marine - Herbivores lents."
+            },
+            {
+                id: 201,
+                type: "vrai_faux",
+                question: "Les dauphins dorment avec un seul hémisphère cérébral à la fois.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Les dauphins pratiquent le sommeil unihémisphérique : un côté du cerveau dort pendant que l'autre reste éveillé. Cela leur permet de rester à la surface pour respirer et de maintenir une vigilance minimale contre les prédateurs. L'œil correspondant à l'hémisphère éveillé reste ouvert. Après quelques heures, les hémisphères échangent leurs rôles.",
+                source: "Mukhametov et al. (1977), Nature : le sommeil unihémisphérique chez les dauphins confirmé par EEG."
+            },
+            {
+                id: 202,
+                type: "vrai_faux",
+                question: "Les loutres de mer se tiennent la main pendant leur sommeil pour ne pas dériver.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Les loutres de mer (Enhydra lutris) dorment flottant sur le dos. Pour ne pas être séparées par les courants, les couples ou groupes de loutres s'enroulent dans des algues et se tiennent souvent la main ou la patte. Ce comportement adorable n'est pas seulement affectif — c'est une nécessité de survie pour rester ensemble.",
+                source: "Monterey Bay Aquarium - Les loutres de mer se tiennent la patte pendant le sommeil pour ne pas dériver."
+            },
+            {
+                id: 203,
+                type: "vrai_faux",
+                question: "Les cachalots plongent plus profondément que toute autre baleine à dents.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Le cachalot (Physeter macrocephalus) est le champion de plongée parmi les baleines à dents. Il peut descendre à plus de 3 000 mètres de profondeur et rester immergé plus de 90 minutes, pour chasser des calmars géants dans les abysses. Son crâne particulier, rempli de spermaceti, joue un rôle dans sa plongée et sa communication.",
+                source: "Watkins et al. (2002), Marine Mammal Science - Les cachalots plongent à plus de 3 000 m de profondeur."
             }
         ],
         difficile: [
@@ -4377,6 +4846,33 @@ const quizzesData = {
                 correct: 1,
                 explanation: "Les axones nerveux des c\u00e9tac\u00e9s plongeurs pr\u00e9sentent une my\u00e9linisation accrue. \u00c0 grande profondeur, la pression extr\u00eame perturbe les canaux ioniques et peut d\u00e9naturer les prot\u00e9ines membranaires. L'\u00e9paisseur suppl\u00e9mentaire de la gaine de my\u00e9line prot\u00e8ge les fibres nerveuses de ces perturbations et maintient une vitesse de conduction normale m\u00eame \u00e0 3 000 m\u00e8tres o\u00f9 la pression est 300 fois celle de la surface.",
                 source: "Institut de Neurosciences Marine - Adaptations neurales plongée."
+            },
+            {
+                id: 71,
+                type: "vrai_faux",
+                question: "La baleine bleue est l'animal le plus bruyant du monde, avec des sons dépassant 180 décibels.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Les chants de la baleine bleue peuvent atteindre 188 décibels, ce qui en fait l'animal le plus bruyant de la planète. Ces sons basses fréquences (10-40 Hz) peuvent voyager sur des milliers de kilomètres dans l'océan. Malgré cette puissance, ils sont largement inaudibles pour l'oreille humaine car trop graves.",
+                source: "NOAA - Les vocalisations de la baleine bleue atteignent 188 dB, record animal."
+            },
+            {
+                id: 72,
+                type: "vrai_faux",
+                question: "Les dauphins utilisent le même nom toute leur vie pour s'identifier entre eux.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Des études ont montré que chaque dauphin développe un sifflement unique ('signature whistle') dès les premiers mois de vie, qui lui sert d'identifiant sonore toute sa vie. Les autres dauphins répondent à ce sifflement comme si c'était un prénom. C'est l'un des rares exemples d'identifiant individuel dans le règne animal.",
+                source: "Janik et al. (2006), PNAS - Les dauphins utilisent des sifflements uniques comme noms individuels."
+            },
+            {
+                id: 73,
+                type: "vrai_faux",
+                question: "Les orques (épaulards) sont des dauphins et non des baleines.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Malgré leur surnom de 'baleines tueuses', les orques appartiennent à la famille des Delphinidés — la même famille que les dauphins. Ce sont donc les plus grands dauphins du monde, pouvant atteindre 9 mètres et 6 tonnes. Leur classification comme 'baleine' est populaire mais scientifiquement incorrecte.",
+                source: "Musée d'Histoire Naturelle - L'orque (Orcinus orca) appartient à la famille des Delphinidés (dauphins)."
             }
         ]
     },
@@ -4390,7 +4886,8 @@ const quizzesData = {
                 options: ["100-150 kg, comparable à un grand léopard mâle en pleine forme", "150-200 kg, soit un poids proche de celui d'une tigresse adulte d'Asie", "200-250 kg", "250-300 kg, notamment chez les lions des savanes d'Afrique orientale"],
                 correct: 2,
                 explanation: "Un lion mâle adulte pèse en moyenne 200 à 250 kilogrammes, avec une longueur totale pouvant dépasser 2,5 mètres. Les femelles sont plus légères, pesant 130 à 180 kg. Cette taille massive leur permet de dominer leur environnement.",
-                source: "National Geographic - Le lion mâle pèse environ 200-250 kg."
+                source: "National Geographic - Le lion mâle pèse environ 200-250 kg.",
+                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Lion_waiting_in_Namibia.jpg/800px-Lion_waiting_in_Namibia.jpg"
             },
             {
                 id: 2,
@@ -4463,6 +4960,24 @@ const quizzesData = {
                 correct: 2,
                 explanation: "Les lionceaux deviennent progressivement ind\u00e9pendants \u00e0 18-24 mois. Les jeunes m\u00e2les sont g\u00e9n\u00e9ralement expuls\u00e9s de la fierté vers 2-3 ans et deviennent des 'lions nomades' pendant plusieurs ann\u00e9es, jusqu'\u00e0 ce qu'ils soient assez forts pour conqu\u00e9rir leur propre fierté. Les femelles restent souvent dans leur fierté natale toute leur vie.",
                 source: "Centre d'Étude du Développement - Indépendance progressive."
+            },
+            {
+                id: 101,
+                type: "vrai_faux",
+                question: "Le lion est le seul félin qui rugit.",
+                options: ["Vrai", "Faux"],
+                correct: 1,
+                explanation: "Faux ! Le lion rugit, mais les tigres, jaguars et léopards peuvent aussi rugir. Ce qu'ils ont en commun est un os hyoïde partiellement cartilagineux qui permet la production d'un rugissement puissant. En revanche, les félins qui ronronnent (couguars, guépards, chats) ne peuvent pas rugir — c'est soit l'un soit l'autre.",
+                source: "Weissengruber et al. (2002), Journal of Anatomy : anatomie du rugissement chez les grands félins."
+            },
+            {
+                id: 102,
+                type: "vrai_faux",
+                question: "Les lions africains sont une espèce en danger d'extinction.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Le lion africain est classé 'vulnérable' par l'UICN avec environ 20 000 à 25 000 individus sauvages restants. Leur population a diminué de 43% en 21 ans. Les principales menaces sont la perte d'habitat, les conflits avec les éleveurs, le braconnage et les maladies. Certaines sous-populations régionales sont classées 'en danger'.",
+                source: "IUCN Red List - Le lion africain est classé 'vulnérable', avec une population en déclin de 43%."
             }
         ],
         moyen: [
@@ -4472,7 +4987,8 @@ const quizzesData = {
                 options: ["Uniquement décoration", "Thermorégulation, protection et démonstration de statut", "Camouflage", "Attraction de proies"],
                 correct: 1,
                 explanation: "La crini\u00e8re du lion m\u00e2le est un signal multifonctionnel. Elle prot\u00e8ge le cou lors des combats entre m\u00e2les. Elle est aussi un indicateur de condition physique : les femelles pr\u00e9f\u00e8rent les m\u00e2les \u00e0 crini\u00e8re sombre et fournie (signe de taux de testost\u00e9rone \u00e9lev\u00e9). Des exp\u00e9riences au Kenya ont montr\u00e9 que des m\u00e2les \u00e0 crini\u00e8re color\u00e9e (artificielle) attiraient plus de femelles et intimidaient mieux les rivaux.",
-                source: "Institut d'Éthologie - La crinière remplit plusieurs fonctions."
+                source: "Institut d'Éthologie - La crinière remplit plusieurs fonctions.",
+                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Male_Lion_on_His_Throne.jpg/800px-Male_Lion_on_His_Throne.jpg"
             },
             {
                 id: 12,
@@ -4545,6 +5061,24 @@ const quizzesData = {
                 correct: 1,
                 explanation: "En libert\u00e9, les lions vivent en moyenne 10 \u00e0 14 ans. Les m\u00e2les vivent souvent moins longtemps que les femelles car les combats pour les fiertés sont fr\u00e9quents et mortels. En captivit\u00e9, ils peuvent atteindre 20 ans. La population sauvage a chut\u00e9 de 90% en un si\u00e8cle \u2014 de 200 000 individus au d\u00e9but du 20\u00e8me si\u00e8cle \u00e0 environ 20 000 \u00e0 25 000 aujourd'hui, class\u00e9 esp\u00e8ce vuln\u00e9rable par l'UICN.",
                 source: "Centre de Longévité - Durée de vie naturelle courte."
+            },
+            {
+                id: 201,
+                type: "vrai_faux",
+                question: "La crinière du lion le protège lors des combats.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! La crinière épaisse du lion mâle protège son cou — zone vitale lors des combats avec d'autres mâles. Elle amortit les morsures et griffures. Les études montrent que les mâles à crinière plus foncée et dense remportent plus souvent les combats et sont perçus comme plus dominants par les femelles. La crinière est un signal honnête de fitness physique.",
+                source: "West & Packer (2002), Science : la densité et couleur de la crinière reflètent la santé et le statut du mâle."
+            },
+            {
+                id: 202,
+                type: "vrai_faux",
+                question: "Un lion peut parcourir jusqu'à 50 km dans une nuit lors de rondes de territoire.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Les lions sont des animaux nocturnes et peuvent parcourir de très grandes distances la nuit, notamment les mâles qui patrouillent leur territoire. Des études GPS ont enregistré des déplacements allant jusqu'à 50 km en une seule nuit lors de rondes de territoire ou de recherche de femelles.",
+                source: "Stander (1992), Behavioral Ecology - Les lions parcourent de grandes distances la nuit pour patrouiller."
             }
         ],
         difficile: [
@@ -4627,6 +5161,33 @@ const quizzesData = {
                 correct: 1,
                 explanation: "Chez les lions, plusieurs m\u00e2les d'une coalition s'accouplent avec les m\u00eames femelles, cr\u00e9ant une comp\u00e9tition entre spermatozo\u00efdes. L'accouplement est tr\u00e8s fr\u00e9quent (jusqu'\u00e0 100 fois en 24h pendant l'\u0153strus) mais dure seulement 20-30 secondes. Cette fr\u00e9quence extr\u00eame maximise les chances de conception. Les m\u00e2les \u00e0 crini\u00e8re plus sombre produisent davantage de spermatozo\u00efdes de meilleure qualit\u00e9, renfor\u00e7ant l'avantage reproducteur des individus en bonne condition.",
                 source: "Université de Biologie Reproductive - Reproduction polyandre."
+            },
+            {
+                id: 31,
+                type: "vrai_faux",
+                question: "Le lion est le seul félin à vivre en groupe social.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Le lion est le seul félin véritablement social vivant en groupe permanent appelé 'fierté'. Tous les autres grands félins (tigre, léopard, jaguar, guépard) sont solitaires, sauf pour la reproduction. Cette vie en groupe procure au lion une force collective pour chasser de grandes proies et défendre son territoire.",
+                source: "Schaller G.B. - The Serengeti Lion (1972) : le lion est le seul félin social permanent."
+            },
+            {
+                id: 32,
+                type: "vrai_faux",
+                question: "Le lion est le deuxième plus grand félin du monde après le tigre.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Le tigre est le plus grand félin du monde (jusqu'à 300 kg pour le tigre de Sibérie), suivi du lion (200-250 kg). Cette hiérarchie est souvent ignorée car le lion est surnommé 'roi des animaux', mais en termes de masse corporelle, le tigre le surpasse nettement.",
+                source: "National Geographic - Le tigre est le plus grand félin, devant le lion."
+            },
+            {
+                id: 33,
+                type: "vrai_faux",
+                question: "Les lionnes chassent seules, sans coopération entre elles.",
+                options: ["Vrai", "Faux"],
+                correct: 1,
+                explanation: "C'est faux ! Les lionnes chassent en groupe de façon coordonnée, ce qui est rare chez les félins. Elles utilisent des stratégies d'encerclement et de rabattage pour capturer des proies bien plus grandes qu'elles, comme les buffles ou les zèbres. Certaines jouent le rôle de 'rabatteuses', d'autres celui de 'plongeuses' pour l'attaque finale.",
+                source: "Stander P.E. (1992) - Cooperative hunting in lions : stratégies de chasse collective documentées."
             }
         ]
     },
@@ -4640,7 +5201,8 @@ const quizzesData = {
                 options: ["1,5-2 mètres, soit une envergure proche du faucon pélerin ou de la bondrée apivore", "2-2,5 mètres, comparable à l'envergure du balbuzard pêcheur ou du milan royal", "2,3-2,8 mètres", "3+ mètres, une valeur que seuls les grands albatros et certains vautours des Andes atteignent"],
                 correct: 2,
                 explanation: "L'aigle royal possède une envergure remarquable de 2,3 à 2,8 mètres. Cela en fait l'un des plus grands aigles d'Europe. Cette grande envergure lui permet de planer sans effort pendant de longues périodes et de chercher des proies sur de vastes territoires.",
-                source: "National Geographic - L'envergure peut atteindre 2,8 mètres."
+                source: "National Geographic - L'envergure peut atteindre 2,8 mètres.",
+                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Aquila_chrysaetos_-_06.jpg/800px-Aquila_chrysaetos_-_06.jpg"
             },
             {
                 id: 2,
@@ -4793,6 +5355,24 @@ const quizzesData = {
                 correct: 2,
                 explanation: "Les aires (nids) d'aigle royal sont parmi les plus grandes structures construites par des oiseaux. Utilis\u00e9es et agrandies ann\u00e9e apr\u00e8s ann\u00e9e, certaines atteignent 3 \u00e0 4 m\u00e8tres de diam\u00e8tre pour 1 \u00e0 2 m\u00e8tres de hauteur, pesant plusieurs centaines de kilos. Le record mondial est une aire de 6 m\u00e8tres de hauteur pour 2,9 m\u00e8tres de large, utilis\u00e9e pendant des d\u00e9cennies. Ces structures sont construites avec des branches \u00e9paisses et tap\u00eess\u00e9es de brindilles, d'herbes et de v\u00e9g\u00e9tation fra\u00eeche.",
                 source: "Centre d'Ornithologie - Constructions massives."
+            },
+            {
+                id: 101,
+                type: "vrai_faux",
+                question: "L'aigle royal est le plus grand rapace du monde.",
+                options: ["Vrai", "Faux"],
+                correct: 1,
+                explanation: "Faux ! L'aigle royal est le plus grand rapace d'Europe, mais pas du monde. Les plus grands rapaces mondiaux sont le condor des Andes (jusqu'à 3,3 m d'envergure), le condor de Californie et le vautour fauve. En termes d'envergure, le condor des Andes domine avec jusqu'à 3,3 mètres contre 2,8 m pour l'aigle royal.",
+                source: "Handbook of the Birds of the World - Le condor des Andes dépasse l'aigle royal en envergure."
+            },
+            {
+                id: 102,
+                type: "vrai_faux",
+                question: "L'aigle royal construit le même nid pendant toute sa vie, l'agrandissant chaque année.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! L'aigle royal utilise et agrandit le même nid (l'aerie ou eyrie) pendant de nombreuses années. Un vieux nid peut peser plusieurs tonnes et mesurer plusieurs mètres de diamètre. Le record documenté est un nid de 2,5 m de profondeur et 1,8 m de large, pesant environ 1 tonne. Chaque année, le couple ajoute de nouvelles branches.",
+                source: "Watson J. (2010) - The Golden Eagle : les nids d'aigle royal peuvent atteindre plus d'une tonne."
             }
         ],
         moyen: [
@@ -4956,6 +5536,24 @@ const quizzesData = {
                 correct: 1,
                 explanation: "La chasse de l'aigle royal combine vision hors pair et attaque explosive. Apr\u00e8s avoir rep\u00e9r\u00e9 une proie en vol plané, il effectue un piqué inclin\u00e9 \u00e0 150-200 km/h, les ailes semi-closes. \u00c0 quelques m\u00e8tres de la proie, il d\u00e9ploie les pattes en avant, serres ouvertes. L'impact est brutal : les serres transpercent les organes vitaux et la force du choc peut briser la col\u00f4ne vert\u00e9brale. Proie et oiseau roulent souvent sur plusieurs m\u00e8tres \u00e0 l'impact.",
                 source: "Centre de Biomécanique - Attaque spectaculaire."
+            },
+            {
+                id: 201,
+                type: "vrai_faux",
+                question: "L'aigle royal est protégé par la loi dans tous les pays d'Europe.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! L'aigle royal (Aquila chrysaetos) est protégé dans toute l'Europe par la Directive Oiseaux de l'Union Européenne et diverses législations nationales. Sa destruction, capture, détention ou commerce sont strictement interdits. En France, il est protégé depuis 1972. Environ 1 500 couples nichent en Europe, principalement dans les Alpes et les Pyrénées.",
+                source: "Directive 2009/147/CE - L'aigle royal est une espèce strictement protégée dans toute l'UE."
+            },
+            {
+                id: 202,
+                type: "vrai_faux",
+                question: "Les jeunes aigles royaux ont le même plumage brun foncé que les adultes dès leur premier vol.",
+                options: ["Vrai", "Faux"],
+                correct: 1,
+                explanation: "Faux ! Les juvéniles se distinguent des adultes par des taches blanches à la base de la queue et aux ailes — visibles en vol. Ce plumage juvénile disparaît progressivement sur 4 à 5 ans pour laisser place au plumage adulte brun foncé avec la nuque dorée caractéristique. Cette différence permet aux observateurs d'estimer l'âge des individus.",
+                source: "Flint et al. - Aging Golden Eagles : la maturité du plumage prend 4 à 5 ans."
             }
         ],
         difficile: [
@@ -5118,6 +5716,33 @@ const quizzesData = {
                 correct: 1,
                 explanation: "La cognition de l'aigle royal est plus d\u00e9velopp\u00e9e qu'on ne le pensait. Des \u00e9tudes r\u00e9v\u00e8lent une m\u00e9moire spatiale exceptionnelle (il m\u00e9morise les sites de chasse productifs et les comportements des proies), une capacit\u00e9 de planification (il anticipe les trajets migratoires de ses proies) et m\u00eame une certaine flexibilit\u00e9 comportementale. Au Kazakhstan, des aigles royaux dress\u00e9s par des fauconniers executent des t\u00e2ches complexes, d\u00e9montrant des capacit\u00e9s d'apprentissage comparables \u00e0 celles des corvid\u00e9s.",
                 source: "Université de Neuroscience Aviaire - Cerveau développé."
+            },
+            {
+                id: 40,
+                type: "vrai_faux",
+                question: "L'aigle royal peut voir jusqu'à 8 fois mieux que l'être humain.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! L'acuité visuelle de l'aigle royal est estimée à 4 à 8 fois supérieure à celle de l'humain. Il peut repérer un lièvre à 3 km de distance. Ses yeux représentent 5% de son poids total (contre 0,02% chez l'humain). De plus, il perçoit les ultraviolets, lui permettant de voir les pistes urinaires des rongeurs.",
+                source: "Shlaer R. (1972) - An eagle's eye: quality of the retinal image : acuité visuelle 8× supérieure à l'humain."
+            },
+            {
+                id: 41,
+                type: "vrai_faux",
+                question: "Les aigles royaux s'accouplent à vie avec le même partenaire.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! L'aigle royal est monogame et s'accouple avec le même partenaire pour la vie, parfois plusieurs décennies. Le couple renforce ses liens chaque année en effectuant des vols nuptiaux spectaculaires et en ajoutant des branches à leur nid (eyrie) qui peut peser plusieurs tonnes après des années d'utilisation.",
+                source: "Watson J. (2010) - The Golden Eagle : monogamie confirmée sur plusieurs décennies."
+            },
+            {
+                id: 42,
+                type: "vrai_faux",
+                question: "Un aigle royal peut soulever une proie aussi lourde que lui-même.",
+                options: ["Vrai", "Faux"],
+                correct: 1,
+                explanation: "C'est faux ! Un aigle royal pèse 3 à 6 kg et peut soulever au maximum environ 5 à 6 kg — à peu près son propre poids dans les meilleures conditions. En pratique, il chasse surtout des proies de 1 à 3 kg (lièvres, lapins). Les cas de capture d'agneaux ou de faons sont rares et souvent exagérés.",
+                source: "Katzner T. et al. - Golden Eagle prey selection : capacité de transport limitée à ~5 kg."
             }
         ]
     },
@@ -5131,7 +5756,8 @@ const quizzesData = {
                 options: ["100-150 kg, poids typique d'un lion femelle adulte d'Afrique orientale, bien en dessous de la réalité pour un tigre mâle", "150-200 kg, poids comparable à un ours brun adulte d'Europe centrale, insuffisant pour le plus grand félidé du monde", "200-260 kg selon la sous-espèce", "260+ kg en toute circonstance, dépassant les 300 kg même pour les sous-espèces les plus petites comme le tigre de Sumatra"],
                 correct: 2,
                 explanation: "Le tigre est le plus grand f\u00e9lid\u00e9 du monde. Le tigre de Sibérie (Amour) est le plus lourd : les m\u00e2les atteignent 200 \u00e0 300 kg et peuvent mesurer 3,7 m\u00e8tres de la t\u00eate \u00e0 la queue. Le tigre du Bengale, le plus r\u00e9pandu, p\u00e8se 175 \u00e0 260 kg. Cette masse imposante en fait un pr\u00e9dateur capable de s'attaquer \u00e0 des proies bien plus grosses que lui, comme le buffle d'eau ou le gaur.",
-                source: "National Geographic - Le tigre est le plus gros félin."
+                source: "National Geographic - Le tigre est le plus gros félin.",
+                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Walking_tiger_female.jpg/800px-Walking_tiger_female.jpg"
             },
             {
                 id: 2,
@@ -5139,7 +5765,8 @@ const quizzesData = {
                 options: ["Uniquement décoration sans avantage adaptatif, comme chez certains animaux tropicaux dont les couleurs vives n'ont aucune fonction de survie documentée", "Camouflage dans la forêt et l'herbe haute", "Signal d'agressivité envers les congénères, fonctionnant comme un avertissement visuel pour repousser les rivaux avant tout combat physique", "Thermorégulation par absorption sélective de chaleur, les zones sombres absorbant plus d'énergie solaire pour maintenir la température corporelle"],
                 correct: 1,
                 explanation: "Les rayures verticales du tigre sont un chef-d'\u0153uvre d'adaptation. Elles brisent le contour de sa silhouette dans les for\u00eats dens\u00e9es et les hautes herbes, le rendant presque invisible \u00e0 quelques m\u00e8tres. Fait \u00e9tonnant : les rayures sont aussi dans la peau, pas seulement dans les poils. Chaque tigre a un motif de rayures unique, comme nos empreintes digitales.",
-                source: "Institut d'Écologie Camouflage - Pattern très efficace."
+                source: "Institut d'Écologie Camouflage - Pattern très efficace.",
+                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Tiger_in_Ranthambhore.jpg/800px-Tiger_in_Ranthambhore.jpg"
             },
             {
                 id: 3,
@@ -5284,6 +5911,24 @@ const quizzesData = {
                 correct: 1,
                 explanation: "Les femelles tigres atteignent leur maturit\u00e9 sexuelle vers 3-4 ans. Elles sont en chaleur (\u0153strus) pendant 3 \u00e0 7 jours, toutes les 3 \u00e0 9 semaines si elles ne sont pas f\u00e9cond\u00e9es. Pendant cette p\u00e9riode, elles marquent intensivement leur territoire de ph\u00e9romones et de vocalises pour attirer les m\u00e2les. Les femelles \u00e9l\u00e8vent leurs petits seules, sans aide du m\u00e2le.",
                 source: "Institut de Reproduction - Maturité féline."
+            },
+            {
+                id: 101,
+                type: "vrai_faux",
+                question: "Le tigre blanc est une sous-espèce à part entière du tigre.",
+                options: ["Vrai", "Faux"],
+                correct: 1,
+                explanation: "Faux ! Le tigre blanc n'est pas une sous-espèce — c'est un tigre du Bengale porteur d'une mutation génétique rare qui dépigmente le pelage. Tous les tigres blancs en captivité descendent d'un seul mâle capturé en Inde en 1951 et sont donc fortement consanguins. Cette consanguinité cause des problèmes de santé graves (strabisme, malformations).",
+                source: "WWF - Le tigre blanc n'est pas une sous-espèce mais une mutation pigmentaire du tigre du Bengale."
+            },
+            {
+                id: 102,
+                type: "vrai_faux",
+                question: "Le tigre est un animal solitaire qui vit seul la majeure partie de sa vie.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Le tigre est un félin solitaire et territorial. Chaque adulte possède un vaste territoire qu'il marque avec de l'urine et des griffures. Mâles et femelles ne se retrouvent que pour s'accoupler. La femelle élève seule ses petits. Cette solitude est une adaptation à la chasse en forêt dense où un seul prédateur est plus efficace qu'un groupe.",
+                source: "Sunquist M. & F. (2002) - Wild Cats of the World : le tigre est fondamentalement solitaire et territorial."
             }
         ],
         moyen: [
@@ -5446,6 +6091,24 @@ const quizzesData = {
                 correct: 2,
                 explanation: "La premi\u00e8re ann\u00e9e de vie est la plus dangereuse pour les tigreaux. Les principales causes de mortalit\u00e9 juvénile sont : l'infanticide par des m\u00e2les \u00e9trangers, les attaques de pr\u00e9dateurs (l\u00e9opards, ours, crocodiles), la famine si la m\u00e8re est tu\u00e9e ou bless\u00e9e, et les maladies. En libert\u00e9, moins de 50% des tigreaux atteignent l'\u00e2ge de 2 ans. La p\u00e9riode la plus critique est le sevrage, quand la m\u00e8re les laisse seuls pendant la chasse.",
                 source: "Institut d'Écologie Comportementale - Vulnérabilité juvénile."
+            },
+            {
+                id: 201,
+                type: "vrai_faux",
+                question: "Le tigre peut rugir pour communiquer sur plusieurs kilomètres.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Le rugissement du tigre peut s'entendre jusqu'à 3 kilomètres. Les tigres rugissent pour marquer leur territoire, appeler un partenaire ou avertir les rivaux. Ils produisent aussi un son unique appelé 'prusten' (ou 'chuffing') — un soufflement nasal doux utilisé pour les salutations amicales entre tigres ou entre tigres et soigneurs humains.",
+                source: "Wildlife Conservation Society - Le rugissement du tigre porte jusqu'à 3 km."
+            },
+            {
+                id: 202,
+                type: "vrai_faux",
+                question: "Le tigre de Sibérie est plus petit que le tigre du Bengale.",
+                options: ["Vrai", "Faux"],
+                correct: 1,
+                explanation: "Faux ! C'est l'inverse. Le tigre de Sibérie (aussi appelé tigre de l'Amour) est la plus grande sous-espèce de tigre. Les mâles peuvent peser jusqu'à 300 kg et mesurer 3,7 mètres. Le tigre du Bengale est plus commun (environ 2 500 individus) mais plus petit en moyenne. Le tigre de Sumatra est la plus petite sous-espèce vivante.",
+                source: "WWF Tiger Programme - Le tigre de Sibérie est la plus grande sous-espèce de tigre."
             }
         ],
         difficile: [
@@ -5608,6 +6271,827 @@ const quizzesData = {
                 correct: 1,
                 explanation: "La proprioception vibrossale du tigre est une capacit\u00e9 fascinante. Les vibrisses sont reli\u00e9es \u00e0 des m\u00e9canor\u00e9cepteurs tr\u00e8s sensibles qui d\u00e9tectent les moindres variations de pression d'air et les vibrations transmises par le sol ou les objets. Pendant la mise \u00e0 mort dans l'obscurit\u00e9, le tigre utilise ses vibrisses pour positionner pr\u00e9cis\u00e9ment ses crocs sur la trachée de la proie. Sans vibrisses, la pr\u00e9cision de la mise \u00e0 mort est significativement r\u00e9duite.",
                 source: "Institut de Neurobiologie Sensorielle - Mécanoréception avancée."
+            },
+            {
+                id: 40,
+                type: "vrai_faux",
+                question: "Le tigre est le seul grand félin qui aime l'eau et nage régulièrement.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Contrairement aux autres grands félins, le tigre est un excellent nageur qui apprécie l'eau. Il nage régulièrement pour chasser, se rafraîchir et traverser des rivières. Il peut parcourir plusieurs kilomètres à la nage et chasse parfois des crocodiles ou des poissons dans les zones humides.",
+                source: "Sunquist M. & F. (2002) - Wild Cats of the World : le tigre est le grand félin le plus aquatique."
+            },
+            {
+                id: 41,
+                type: "vrai_faux",
+                question: "Chaque tigre possède un motif de rayures unique, comme les empreintes digitales humaines.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Les rayures du tigre sont uniques à chaque individu, comme nos empreintes digitales. Les chercheurs utilisent d'ailleurs les motifs de rayures pour identifier et suivre les individus dans la nature. De plus, les rayures ne sont pas seulement dans les poils mais aussi imprimées sur la peau.",
+                source: "Save Tigers Now - WWF : identification des tigres par motifs de rayures uniques."
+            },
+            {
+                id: 42,
+                type: "vrai_faux",
+                question: "Il existe encore plus de 100 000 tigres sauvages dans le monde.",
+                options: ["Vrai", "Faux"],
+                correct: 1,
+                explanation: "C'est faux et alarmant ! En 1900, il y avait environ 100 000 tigres sauvages. Aujourd'hui, il n'en reste que 3 900 à 4 500, soit une réduction de plus de 95%. La déforestation, le braconnage et la réduction des proies ont conduit à cette situation critique. 6 des 9 sous-espèces historiques sont aujourd'hui éteintes ou en voie de l'être.",
+                source: "WWF Tiger Conservation Program (2023) : environ 3 900 tigres sauvages restants dans le monde."
+            }
+        ]
+    },
+    harryPotter: {
+        title: "Harry Potter",
+        description: "Testez vos connaissances sur l'univers magique de Harry Potter",
+        facile: [
+            {
+                id: 1,
+                question: "Dans quelle maison Harry Potter est-il trié à son arrivée à Poudlard ?",
+                options: ["Serpentard, car le Choixpeau lui reconnaît une vraie ambition et une ruse naturelle héritées de son lien avec Voldemort", "Poufsouffle, car le Choixpeau détecte chez lui une loyauté et une patience exceptionnelles que Dumbledore avait espéré voir développer", "Serdaigle, car ses aptitudes intellectuelles inhabituelles pour un enfant élevé sans magie auraient pu en faire un brillant studieux", "Gryffondor"],
+                correct: 3,
+                explanation: "Harry Potter est trié dans la maison Gryffondor, symbole du courage et de la bravoure. Le Choixpeau magique envisage brièvement de le placer à Serpentard (il perçoit un potentiel réel), mais Harry supplie intérieurement de ne pas y aller, et le Choixpeau respecte ce choix. Gryffondor est aussi la maison de ses parents, James et Lily Potter.",
+                source: "J.K. Rowling, Harry Potter à l'École des Sorciers (1997), Chapitre 7 — Le Choixpeau magique."
+            },
+            {
+                id: 2,
+                question: "Comment s'appelle le célèbre quai secret depuis lequel partent les trains pour Poudlard ?",
+                options: ["Le quai 9, un quai ordinaire de la gare de Paddington dont l'accès magique est dissimulé derrière un pilier en apparence identique aux autres", "Le quai 11¾, accessible depuis la gare de Victoria via un escalier dérobé visible uniquement pour les sorciers à l'approche du 1er septembre", "Le quai 10, situé dans la gare de Waterloo, dont le mur de brique central cache un passage activé en chuchotant 'Poudlard'", "Le quai 9¾"],
+                correct: 3,
+                explanation: "Le quai 9¾ est situé dans la gare de King's Cross à Londres. Pour y accéder, il faut traverser en courant le mur de brique entre les quais 9 et 10. C'est depuis ce quai que part l'Expresss de Poudlard chaque 1er septembre à 11h00 pile. Une vraie plaque commémorative et un chariot à demi-enfoncé dans le mur existent aujourd'hui à King's Cross pour les fans.",
+                source: "J.K. Rowling, Harry Potter à l'École des Sorciers (1997), Chapitre 6 — Le voyage depuis la gare King's Cross."
+            },
+            {
+                id: 3,
+                question: "Quel est le nom du grand méchant de la saga Harry Potter ?",
+                options: ["Grindelwald, le plus puissant mage noir de tous les temps, vaincu par Dumbledore en 1945 lors d'un duel légendaire qui dura trois jours", "Salazar Serpentard, fondateur maudit de Poudlard qui régna sur la magie noire pendant des siècles avant son bannissement définitif", "Bartemis Croupton Junior, cerveau véritable derrière la résurrection du seigneur des ténèbres et principal architecte de son retour au pouvoir", "Voldemort"],
+                correct: 3,
+                explanation: "Lord Voldemort, de son vrai nom Tom Elvis Jedusor (en français), est le grand antagoniste de la saga. Son nom est si terrifiant que la plupart des sorciers refusent de le prononcer, préférant 'Celui-Dont-On-Ne-Doit-Pas-Prononcer-Le-Nom'. Harry est l'un des rares à l'appeler par son nom, ce qui déconcerte souvent son entourage.",
+                source: "J.K. Rowling, saga Harry Potter (1997-2007) — personnage central des 7 tomes."
+            },
+            {
+                id: 4,
+                question: "Quel animal de compagnie Harry reçoit-il pour son anniversaire avant sa première année à Poudlard ?",
+                options: ["Un chat roux très paresseux nommé Croutard, qu'Hagrid choisit pour sa résistance aux maléfices courants des corridors de Poudlard", "Un crapaud nommé Trevor, offert par sa tante Pétunia pour compenser des années de mauvais traitements, qu'il perd aussitôt dans le train", "Un rat blanc nommé Têtard, traditionnel animal des jeunes sorciers de première génération issu d'une lignée de rats de laboratoire du ministère", "Une chouette blanche nommée Hedwige"],
+                correct: 3,
+                explanation: "Hagrid offre à Harry une magnifique chouette blanche des neiges pour son 11e anniversaire. Harry la nomme Hedwige, un nom qu'il trouve dans son manuel Histoire de la Magie. Hedwige devient son principal moyen de communication magique et une fidèle compagne tout au long de la saga.",
+                source: "J.K. Rowling, Harry Potter à l'École des Sorciers (1997), Chapitre 5 — Diagon Alley.",
+                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Bubo_scandiacus_2.jpg/800px-Bubo_scandiacus_2.jpg"
+            },
+            {
+                id: 5,
+                question: "Quelle est la formule du sortilège de désarmement, l'un des plus utilisés par Harry ?",
+                options: ["Stupefix, un sortilège d'étourdissement qui projette l'adversaire en arrière et l'immobilise temporairement sans lui retirer sa baguette", "Riddikulus, un sortilège anti-épouvantard qui transforme ce qui effraie en quelque chose de comique pour en dissiper le pouvoir", "Protego, le bouclier magique qui dévie les sortilèges offensifs en les renvoyant parfois contre leur lanceur avec une force accrue", "Expelliarmus"],
+                correct: 3,
+                explanation: "Expelliarmus est le sortilège de désarmement qui expulse la baguette (ou tout objet tenu) de la main de l'adversaire. C'est la 'signature' de Harry Potter — il préfère désarmer plutôt que blesser, ce qui révèle son caractère. C'est d'ailleurs ce sort qu'il utilise lors du duel final contre Voldemort.",
+                source: "J.K. Rowling, Harry Potter et la Chambre des Secrets (1998) — premier usage notable lors du Club de Duels."
+            },
+            {
+                id: 6,
+                question: "Comment s'appelle le meilleur ami de Harry qui vient d'une grande famille de sorciers ?",
+                options: ["Neville Londubat, issu d'une famille de sorciers respectée dont les parents ont été torturés jusqu'à la démence par les mangemorts de Bellatrix Lestrange", "Drago Malefoy, rival de Harry dont la famille aristocratique a soutenu Voldemort et qui finira par trahir les siens au moment décisif", "Seamus Finnigan, ami irlandais de Harry connu pour ses sorts qui partent souvent en fumée et son loyalisme à toute épreuve dans la D.A.", "Ron Weasley"],
+                correct: 3,
+                explanation: "Ron Weasley est le meilleur ami de Harry, rencontré dans le train pour Poudlard. Il vient d'une grande famille de sorciers pure-sang mais modeste (7 enfants, une maison en désordre appelée le Terrier). Sa loyauté, son humour et son sens des échecs magiques en font un personnage attachant tout au long de la saga.",
+                source: "J.K. Rowling, Harry Potter à l'École des Sorciers (1997), Chapitre 6 — premier contact dans l'Expresso de Poudlard."
+            },
+            {
+                id: 7,
+                question: "Quel sport magique se joue sur des balais volants à Poudlard ?",
+                options: ["Le Nimbus, une course de vitesse entre deux équipes de sept joueurs sur une piste ovale délimitée par des buts dorés à trois anneaux de hauteur différente", "Le Vifsinge, un jeu de stratégie à basse altitude où deux équipes de cinq s'affrontent pour récupérer des Souvenin dorés cachés dans les tribunes", "Le Sombreball, un sport nocturne pratiqué uniquement par les élèves de Serpentard dans les souterrains du château pendant les nuits de pleine lune", "Le Quidditch"],
+                correct: 3,
+                explanation: "Le Quidditch est LE sport de la société sorcière, pratiqué sur des balais volants. Chaque équipe de 7 joueurs comprend 3 Poursuiveurs, 2 Batteurs, 1 Gardien et 1 Attrapeur. Le but est de marquer des points avec le Souafle (150 points pour chaque anneau) et surtout d'attraper le Vif d'or doré (150 points) pour mettre fin à la partie.",
+                source: "J.K. Rowling, Harry Potter à l'École des Sorciers (1997), Chapitre 11 — Quidditch à travers les âges."
+            },
+            {
+                id: 8,
+                question: "Quel est le prénom du gardien de Poudlard qui devient l'ami de Harry dès sa première visite dans le monde des sorciers ?",
+                options: ["Alastor, le fameux Fol Œil dont la réputation de chasseur de mangemorts précède largement son arrivée comme professeur de Défense contre les forces du Mal", "Abelforth, le frère discret de Dumbledore, tavernier à Pré-au-Lard et secrètement lié à l'Ordre du Phénix depuis les premières guerres magiques", "Argus, le concierge revêche et sans magie du château dont le chat Mrs Norris surveille nuit et jour les couloirs pour le compte de Dumbledore", "Rubeus (Hagrid)"],
+                correct: 3,
+                explanation: "Rubeus Hagrid est le gardien des clés et lieux magiques de Poudlard. C'est lui qui révèle à Harry sa véritable identité de sorcier le soir de son 11e anniversaire, et qui l'accompagne pour ses premiers achats à Diagon Alley. Demi-géant expulsé de Poudlard à tort (accusé d'avoir ouvert la Chambre des Secrets), il voue une fidélité absolue à Dumbledore.",
+                source: "J.K. Rowling, Harry Potter à l'École des Sorciers (1997), Chapitre 4 — Le gardien des clés."
+            },
+            {
+                id: 9,
+                question: "Quelle est la cicatrice caractéristique de Harry Potter et comment l'a-t-il obtenue ?",
+                options: ["Une cicatrice en forme de serpent sur le dos de la main gauche, laissée par un contact prolongé avec un Horcruxe caché dans la cave familiale des Dursley", "Une marque en forme de triangle sur le front, signe de l'Élu prédit par la prophétie d'un ancien Divination de l'école de sorcellerie de Beauxbâtons", "Des brûlures en étoile sur les deux avant-bras, résultat de l'explosion de la maison de Godric's Hollow lors de l'attaque de Voldemort quand Harry était nourrisson", "Une cicatrice en forme d'éclair sur le front, résultant de la malédiction Avada Kedavra de Voldemort qui a rebondi sur lui quand il était bébé"],
+                correct: 3,
+                explanation: "La cicatrice en éclair de Harry sur le front est le résultat direct de la malédiction de la mort (Avada Kedavra) lancée par Voldemort sur lui alors qu'il n'avait qu'un an. La malédiction a rebondi grâce au sacrifice de sa mère Lily, dont l'amour a créé une protection magique ancienne. Cette cicatrice connecte Harry à Voldemort et lui permet parfois de ressentir ses émotions.",
+                source: "J.K. Rowling, Harry Potter à l'École des Sorciers (1997) et Harry Potter et les Reliques de la Mort (2007)."
+            },
+            {
+                id: 10,
+                question: "Comment s'appelle la deuxième meilleure amie de Harry, brillante élève première de sa promotion ?",
+                options: ["Luna Lovegood, élève excentrique de Serdaigle dont l'intelligence atypique et la vision du monde décalée lui permettent de voir ce que les autres ignorent", "Ginny Weasley, sœur cadette de Ron dont les talents magiques exceptionnels et le courage discret en feront l'une des meilleurs sorcières de sa génération", "Lavande Brown, élève de Gryffondor passionnée de Divination qui développera une relation romantique tumultueuse avec Ron en sixième année", "Hermione Granger"],
+                correct: 3,
+                explanation: "Hermione Granger est la troisième du trio principal. Issue d'une famille de Moldus (non-magiques), elle compense en travaillant deux fois plus que ses camarades et devient rapidement la meilleure élève de Poudlard. Son intelligence, sa mémoire encyclopédique et sa maîtrise des sorts sauvent Harry et Ron de nombreuses fois tout au long de la saga.",
+                source: "J.K. Rowling, Harry Potter à l'École des Sorciers (1997), Chapitre 6 — première apparition dans l'Expresso."
+            },
+            {
+                id: 11,
+                question: "Quelle est la baguette de Harry Potter ?",
+                options: ["Bois de frêne, 28 cm, avec un crin de Kelpie au cœur — une baguette rare conçue par Gregorovitch pour les sorciers à fort tempérament aquatique", "Bois de chêne, 25 cm, avec une plume de Phénix — jumelle de la baguette de Dumbledore selon les archives d'Ollivander sur les bois exceptionnellement solides", "Bois de saule, 33 cm, avec un poil de Licorne au cœur — une baguette de soin et de protection adaptée aux sorciers au grand cœur selon Ollivander", "Bois de houx, 28 cm, avec une plume de Phénix au cœur — jumelle de la baguette de Voldemort"],
+                correct: 3,
+                explanation: "La baguette de Harry est en bois de houx (28 cm) avec une plume de Phénix comme composant central — le même Phénix, Fumseck, a donné une seule autre plume qui se trouve dans la baguette de Voldemort. Ollivander explique que c'est pour cette raison qu'elles sont 'jumelles' et ne peuvent pas se battre normalement (effet Priori Incantatem).",
+                source: "J.K. Rowling, Harry Potter à l'École des Sorciers (1997), Chapitre 5 — la boutique d'Ollivander."
+            },
+            {
+                id: 12,
+                question: "Qui est le directeur de Poudlard durant la majeure partie de la scolarité de Harry ?",
+                options: ["Séverus Rogue, qui occupe brièvement ce poste lors de la prise de contrôle du ministère par Voldemort et dirige l'école sous la surveillance des mangemorts", "Minerva McGonagall, professeur de Métamorphose et directrice de Gryffondor, qui assume la direction par intérim à plusieurs reprises en l'absence de Dumbledore", "Cornelius Fudge, le Ministre de la Magie qui supervise Poudlard pendant une période de crise et tente d'en reprendre le contrôle politique direct", "Albus Dumbledore"],
+                correct: 3,
+                explanation: "Albus Perceval Wulfric Brian Dumbledore est le directeur de Poudlard pendant la quasi-totalité de la scolarité de Harry. Considéré comme le plus grand sorcier de son temps, il est le seul que Voldemort ait jamais craint. Il est aussi le maître de la Baguette de Sureau, l'une des Reliques de la Mort, et le guide spirituel de Harry.",
+                source: "J.K. Rowling, saga Harry Potter (1997-2007) — directeur de Poudlard jusqu'à sa mort dans Le Prince de Sang-Mêlé."
+            },
+            {
+                id: 13,
+                question: "Quelle est la formule du sortilège de lumière utilisé pour allumer le bout d'une baguette ?",
+                options: ["Lumos Maxima, version amplifiée qui projette un faisceau de lumière puissant couvrant une zone de plusieurs mètres de diamètre autour du lanceur", "Incendio Lumos, un hybride sortilège-feu qui produit une flamme bleue froide suspendue à la pointe de la baguette sans brûler l'environnement proche", "Fulgur, un sortilège de la famille des éclairs lumineux créé par les sorciers nordiques et enseigné exclusivement en cours de Défense Avancée", "Lumos"],
+                correct: 3,
+                explanation: "Lumos est l'un des sorts les plus simples et les plus utilisés dans la saga. Il allume le bout de la baguette magique comme une lampe de poche. Son contraire est Nox, qui éteint la lumière. C'est l'un des premiers sortilèges enseignés aux jeunes sorciers, emblème de la magie simple mais pratique du quotidien.",
+                source: "J.K. Rowling, saga Harry Potter — sortilège utilisé pour la première fois dans Harry Potter et la Chambre des Secrets (1998)."
+            },
+            {
+                id: 14,
+                question: "Quelle est la banque des sorciers où Harry possède un coffre rempli d'or ?",
+                options: ["La Bourse aux Gallions, fondée sous le règne de la reine Elizabeth Ire en 1580 par un consortium de sorciers marchands fuyant la persécution moldus", "La Caisse Magique d'Épargne, institution financière du Ministère de la Magie qui gère les fortunes héritées par les orphelins sorciers de pures familles", "Le Comptoir d'Or de Knockturn Alley, banque souterraine officieuse qui sert les deux camps et accepte les monnaies moldue et sorcière sans distinction", "Gringotts"],
+                correct: 3,
+                explanation: "Gringotts est la banque des sorciers, gérée par des gobelins et réputée inviolable. Elle est située à Diagon Alley. Les coffres sont protégés par de puissants sortilèges et gardés par des dragons dans les niveaux les plus profonds. Harry y hérite du coffre de ses parents (numéro 687). Dans Les Reliques de la Mort, le trio parvient pourtant à s'y introduire.",
+                source: "J.K. Rowling, Harry Potter à l'École des Sorciers (1997), Chapitre 5 — visite de Gringotts avec Hagrid."
+            },
+            {
+                id: 15,
+                question: "Comment appelle-t-on les gens sans pouvoirs magiques dans l'univers Harry Potter ?",
+                options: ["Les Squibs, terme désignant précisément les personnes nées dans des familles de sorciers mais dépourvues de tout pouvoir magique comme Rusard le gardien", "Les Ordinaires, terme officiel du Ministère de la Magie pour désigner les non-magiques dans les rapports administratifs et les lois de protection", "Les Profanes, terme traditionnel utilisé par les vieilles familles pure-sang pour désigner ceux qui ignorent tout de l'existence du monde magique", "Des Moldus"],
+                correct: 3,
+                explanation: "Le terme 'Moldu' (Muggle en version originale anglaise) désigne les personnes sans capacités magiques. Ce n'est pas un terme péjoratif en soi, bien que certains sorciers de familles pure-sang comme les Malefoy le prononcent avec mépris. Les Moldus ignorent l'existence du monde magique grâce aux sortilèges de dissimulation appliqués par le Ministère.",
+                source: "J.K. Rowling, Harry Potter à l'École des Sorciers (1997) — terme introduit dès le premier chapitre."
+            },
+            {
+                id: 16,
+                question: "Quel est le nom du train magique qui emmène les élèves à Poudlard ?",
+                options: ["Le Silverlink Express, un train à vapeur enchanté qui adapte sa vitesse en fonction du nombre d'élèves à bord et arrive toujours à l'heure exacte prévue", "Le Poudlard Special, nom officiel dans les documents du Ministère bien que les élèves aient depuis longtemps adopté le surnom populaire du train", "Le Grand Nord Magique, train express fondé en 1850 pour remplacer l'ancien système de portoloin collectif jugé dangereux pour les jeunes sorciers", "L'Expresso de Poudlard"],
+                correct: 3,
+                explanation: "L'Expresso de Poudlard est un train à vapeur cramoisi qui part chaque 1er septembre à 11h00 du quai 9¾ de la gare King's Cross. Il met environ une journée pour relier Londres à la Haute-Écosse où se trouve Poudlard. Les élèves y changent leurs habits moldus pour des robes de sorcier et achètent des friandises magiques au chariot.",
+                source: "J.K. Rowling, Harry Potter à l'École des Sorciers (1997), Chapitre 6 — The Journey from Platform Nine and Three-Quarters."
+            },
+            {
+                id: 17,
+                question: "Quel professeur enseigne la Défense contre les Forces du Mal lors de la première année de Harry ?",
+                options: ["Remus Lupin, le professeur le plus apprécié de tous les élèves, qui leur enseigne les contre-sorts pratiques dès la première année avant de révéler sa nature de loup-garou", "Gilderoy Lockhart, célébrité frauduleuse dont les mémoires inventés l'ont rendu célèbre dans tout le monde sorcier malgré une incompétence magique totale", "Bartemis Croupton Junior, mangemort déguisé grâce au Polynectar en Alastor Maugrey pour surveiller Harry et le diriger vers Voldemort tout au long de l'année", "Quirinus Quirinus (Quirrell)"],
+                correct: 3,
+                explanation: "Professeur Quirinus Quirrell enseigne la Défense contre les Forces du Mal en première année. Ce professeur nerveux et bégayant cache sous son turban le visage de Voldemort, dont il est le serviteur. C'est lui qui tente de dérober la Pierre philosophale pour son maître. Il meurt lorsque Harry le touche, car la protection magique de Lily brûle tout ce qui partage le corps de Voldemort.",
+                source: "J.K. Rowling, Harry Potter à l'École des Sorciers (1997), Chapitre 17 — révélation du double rôle de Quirrell."
+            },
+            {
+                id: 18,
+                question: "Quelle est la monnaie utilisée dans le monde des sorciers ?",
+                options: ["Les Doublons d'Or, monnaie ancienne créée par les fondateurs de Poudlard et acceptée uniquement dans les établissements certifiés par le Ministère de la Magie", "Les Merveilles, divisées en Éclairs d'argent et en Noisettes de bronze, nommées en hommage aux trois créateurs de la monnaie sorcière au Moyen Âge", "Les Dragots d'Or, divisés en Plumins d'argent et en Noises de bronze, système décimal simplifié adopté par le Ministère après la réforme monétaire de 1890", "Les Gallions, Mornilles et Noises"],
+                correct: 3,
+                explanation: "La monnaie sorcière comprend trois pièces : le Gallion d'or (la plus grande valeur), la Mornille d'argent (17 Mornilles = 1 Gallion) et la Noise de bronze (29 Noises = 1 Mornille). Cette monnaie est gérée par Gringotts. Elle n'a pas de valeur dans le monde moldu et ne peut être échangée qu'à la banque des gobelins.",
+                source: "J.K. Rowling, Harry Potter à l'École des Sorciers (1997) + Pottermore — système monétaire sorcier."
+                },
+            {
+                id: 19,
+                question: "Quel est le nom de la célèbre confiserie sous forme de cartes à collectionner représentant des sorciers célèbres ?",
+                options: ["Les Brioches des Sorcières, gâteaux magiques qui projettent une vision holographique du sorcier représenté pendant 10 secondes à l'ouverture", "Les Caramels Enchantés, confiserie ambulante vendue sur le chariot de l'Expresso dont les cartes se troquent depuis deux siècles entre élèves de Poudlard", "Les Pralines des Mages, chocolats noirs importés de la confiserie belge Vanderboom, dont la réputation de cartes à collectionner dépasse celle des chocolats eux-mêmes", "Les Chocogrenouilles"],
+                correct: 3,
+                explanation: "Les Chocogrenouilles (Chocolate Frogs en VO) sont des grenouilles en chocolat qui bondissent vraiment à l'ouverture. Chaque paquet contient une carte de sorcier célèbre. C'est grâce à une carte d'Albus Dumbledore dans le train que Ron apprend à Harry l'existence du Sorcier Nicolas Flamel — un détail crucial pour l'intrigue du tome 1.",
+                source: "J.K. Rowling, Harry Potter à l'École des Sorciers (1997), Chapitre 6 — l'Expresso de Poudlard."
+            },
+            {
+                id: 20,
+                question: "Sous quel nom Voldemort est-il né dans la version française ?",
+                options: ["Tom Riddle, nom anglais anglicisé conservé tel quel dans la traduction française pour souligner l'héritage anglophone de la famille Jedusor paternelle", "Thomas Elvire Jedusor, version longue incluant le prénom maternel hérité de sa mère Merope Gaunt, souvent abrégé en T.E. Jedusor dans les documents officiels", "Antoine Marcel Jedusor, prénom donné par l'orphelinat londonien en 1926 qui ignorait son nom de famille sorcier et lui attribua un nom moldu courant", "Tom Elvis Jedusor"],
+                correct: 3,
+                explanation: "Tom Elvis Jedusor est l'anagramme parfait de 'Je suis Voldemort', adaptée en français par Jean-François Ménard. En anglais, Tom Marvolo Riddle est l'anagramme de 'I am Lord Voldemort'. Le traducteur français a donc inventé 'Elvis' comme deuxième prénom pour préserver l'anagramme — un tour de force de traduction.",
+                source: "J.K. Rowling, Harry Potter et la Chambre des Secrets (1998), Chapitre 17 — révélation de l'identité de T.E. Jedusor."
+            },
+            {
+                id: 21,
+                question: "Quelle est la formule du sortilège de la mort instantanée ?",
+                options: ["Morsus Finalis, le sort interdit de destruction totale créé par un mage noir médiéval et banni par la Confédération Internationale des Sorciers en 1689", "Crucio Terminus, une version extrême du sort de torture qui, maintenu assez longtemps, finit par provoquer la mort par arrêt cardiaque de la victime", "Letalis Maxima, le plus redouté des sortilèges interdits, reconnaissable à son jet de lumière rouge sang qui laisse la victime intacte extérieurement", "Avada Kedavra"],
+                correct: 3,
+                explanation: "Avada Kedavra est l'un des trois Sortilèges Impardonnables, les plus noirs de la magie. Il projette un éclair de lumière verte et tue instantanément, sans laisser de trace sur le corps. Il n'existe aucun contre-sortilège direct — seul un sacrifice d'amour peut en neutraliser l'effet. Harry est le seul à y avoir survécu (deux fois), ce qui lui vaut son titre de 'L'Élu'.",
+                source: "J.K. Rowling, Harry Potter et la Coupe de Feu (2000), Chapitre 14 — cours de Défense avec Fol Œil Maugrey."
+            },
+            {
+                id: 22,
+                question: "Où Harry Potter a-t-il grandi avant de découvrir qu'il était sorcier ?",
+                options: ["Dans un orphelinat de Surrey tenu par des Moldus qui ignoraient tout de son passé magique et dont la directrice l'a protégé à son insu des mangemorts", "Dans la ferme de ses grands-parents maternels en Écosse, loin de Londres, où ses pouvoirs magiques incontrôlés avaient déjà provoqué plusieurs incidents remarqués", "Dans un appartement à Peckham partagé avec sa tante Marge, cousine germaine de Vernon Dursley, qui l'élevait contre rémunération du Ministère de la Magie", "Au 4 Privet Drive, chez sa tante Pétunia et son oncle Vernon Dursley"],
+                correct: 3,
+                explanation: "Harry a grandi au 4 Privet Drive, Little Whinging, Surrey, chez sa tante Pétunia (sœur de sa mère Lily), son oncle Vernon et leur fils Dudley. Ils le logeaient dans le placard sous l'escalier jusqu'à ce qu'il reçoive ses lettres de Poudlard. Dumbledore avait placé Harry chez les Dursley précisément parce que le sang de Lily coulait dans les veines de Pétunia, renforçant la protection magique.",
+                source: "J.K. Rowling, Harry Potter à l'École des Sorciers (1997), Chapitres 1-2 — L'Enfant qui a Survécu."
+            },
+            {
+                id: 23,
+                question: "Comment s'appelle le loup-garou professeur de Défense contre les Forces du Mal en troisième année ?",
+                options: ["Fenrir Greyback, le plus brutal des loups-garous du camp de Voldemort, qui infecte délibérément des enfants pour les recruter depuis leur plus jeune âge", "Sirius Black, le parrain de Harry sorti d'Azkaban que tous croient être le traître ayant livré ses parents, mais qui est en réalité innocent", "Pomfrey Lupin, frère aîné du directeur adjoint dont la transformation mensuelle est connue de tout le corps enseignant depuis ses propres études à Poudlard", "Remus Lupin"],
+                correct: 3,
+                explanation: "Remus Lupin est le professeur de Défense contre les Forces du Mal en troisième année. Ami d'enfance de James Potter et Sirius Black, c'est le meilleur professeur que les élèves aient eu dans cette matière. Sa lycanthropie est révélée accidentellement, ce qui le force à démissionner. Son surnominué 'Lunard' par les élèves est une allusion discrète à sa nature (Luna = lune).",
+                source: "J.K. Rowling, Harry Potter et le Prisonnier d'Azkaban (1999)."
+            },
+            {
+                id: 24,
+                question: "Qu'est-ce qu'un Horcruxe ?",
+                options: ["Un miroir magique capable de montrer les pensées les plus secrètes d'un sorcier, utilisé par Voldemort pour surveiller ses mangemorts à distance", "Un sort de possession permettant à un sorcier de contrôler l'esprit d'un animal ou d'une personne depuis n'importe quelle distance sans limite de durée", "Un portoloin à usage unique façonné à partir d'un objet maudit qui transporte le porteur directement dans le repaire de celui qui l'a créé", "Un objet dans lequel un sorcier a enfermé une partie de son âme pour atteindre l'immortalité"],
+                correct: 3,
+                explanation: "Un Horcruxe est l'objet le plus sombre de la magie noire : un réceptacle dans lequel un sorcier cache un fragment de son âme en commettant un meurtre, qui déchire l'âme en deux. Voldemort en a créé 7 (involontairement 8 en comptant Harry lui-même) pour devenir immortel. Les détruire tous est l'unique moyen de le tuer définitivement.",
+                source: "J.K. Rowling, Harry Potter et le Prince de Sang-Mêlé (2005), Chapitre 23 — Slughorn révèle son souvenir sur les Horcruxes."
+            },
+            {
+                id: 25,
+                question: "Quel animal Hermione Granger a-t-elle comme animal de compagnie ?",
+                options: ["Un hibou tacheté nommé Chouette qu'elle a acheté à Eeylops Owl Emporium lors de sa première visite à Diagon Alley avant sa première année à Poudlard", "Un lapin blanc nommé Angora qu'elle garde dans la Tour de Gryffondor et qui l'aide à mémoriser ses sorts grâce à un conditionnement associatif", "Un rat blanc nommé Pattenrond qu'elle a reçu à Noël et dont la ressemblance troublante avec un vieux rat de famille intrigue bizarrement Ron Weasley", "Un chat roux aplati nommé Pattenrond"],
+                correct: 3,
+                explanation: "Hermione possède un chat orange mi-crapaud nommé Pattenrond (Crookshanks en VO). Ce chat très intelligent reconnaît immédiatement que Croûtard (le rat de Ron) est en réalité un Animagus humain — Peter Pettigrow. Pattenrond est en fait un mi-Kneazle (créature magique), ce qui explique son intelligence supérieure à la normale.",
+                source: "J.K. Rowling, Harry Potter et le Prisonnier d'Azkaban (1999), Chapitre 4 — achat à la boutique de la Rue des Emprunteurs."
+            },
+            {
+                id: 26,
+                question: "Quel est le prénom du père de Harry Potter ?",
+                options: ["Albus James Potter, nom choisi en hommage posthume à Dumbledore bien que ce soit le prénom d'un des fils de Harry et non du père lui-même", "Charlus Potter, sorcier pur-sang de la famille Potter dont l'arbre généalogique remonte à la famille Peverell, créateurs des Reliques de la Mort", "Harold Potter, prénom moldu délibérément choisi pour mieux se fondre dans la société non-magique lors de la première guerre contre Voldemort", "James Potter"],
+                correct: 3,
+                explanation: "James Potter (né le 27 mars 1960, mort le 31 octobre 1981) est le père de Harry. Animagus capable de se transformer en cerf (d'où le patronus cerf de Harry), il faisait partie du groupe des Maraudeurs avec Sirius Black, Remus Lupin et Peter Pettigrow. Il est mort à 21 ans en tentant de protéger Lily et Harry de Voldemort.",
+                source: "J.K. Rowling, saga Harry Potter — personnage central de l'histoire familiale, révélé progressivement dans les tomes 3, 5 et 7."
+            },
+            {
+                id: 27,
+                question: "Quelle est la formule utilisée pour invoquer un Patronus ?",
+                options: ["Expecto Lumos, une version combinée des sortilèges de lumière et de protection créée par un mage gaulois au IVe siècle pour repousser les créatures de l'ombre", "Patronum Expelliarmus, un sort de désarmement spirituel qui projette la représentation animale de la lumière intérieure du lanceur vers la créature ciblée", "Lux Patroni, la forme abrégée utilisée en combat avancé par les Aurors qui ont maîtrisé le sortilège et peuvent le lancer sans prononcer les mots complets", "Expecto Patronum"],
+                correct: 3,
+                explanation: "Expecto Patronum est le sortilège anti-Détraqueur par excellence. Il invoque un Patronus — une projection lumineuse argent prenant la forme d'un animal représentant la lumière intérieure du lanceur. Le Patronus de Harry est un cerf (comme son père James). C'est l'un des sorts les plus difficiles de la magie, car il nécessite de se concentrer sur un souvenir heureux puissant.",
+                source: "J.K. Rowling, Harry Potter et le Prisonnier d'Azkaban (1999), Chapitres 12 et 22 — apprentissage avec Lupin."
+            },
+            {
+                id: 28,
+                question: "Comment s'appelle la prison des sorciers gardée par les Détraqueurs ?",
+                options: ["Nurmengard, la forteresse construite par Grindelwald pour y enfermer ses opposants et dans laquelle il finira lui-même captif après sa défaite face à Dumbledore", "Knockturn Prison, prison souterraine officieuse du Ministère située sous Knockturn Alley, réservée aux mangemorts de haut rang condamnés à mort", "La Tour des Regrets, vieux château écossais reconverti en prison après la première guerre contre Voldemort et fermé en 1990 pour manque de place", "Azkaban"],
+                correct: 3,
+                explanation: "Azkaban est une île-prison isolée dans la mer du Nord, gardée par des Détraqueurs qui sucent toute joie et tout souvenir heureux de leurs prisonniers. La plupart des détenus finissent par perdre la raison. Sirius Black est le seul à en être jamais évadé (en se transformant en chien, les Détraqueurs ne pouvant lire les émotions animales). Les Détraqueurs quittent Azkaban pour rejoindre Voldemort dans Le Tome 6.",
+                source: "J.K. Rowling, Harry Potter et le Prisonnier d'Azkaban (1999) — première description complète d'Azkaban."
+            },
+            {
+                id: 29,
+                question: "Quel objet Harry vole-t-il lors d'un cours de vol en première année, ce qui lui vaut d'intégrer l'équipe de Quidditch ?",
+                options: ["Le Vif d'or de réserve de Madame Bibine, qu'il attrape d'une main à 5 mètres du sol après l'avoir suivi pendant 200 mètres en plein vol horizontal", "Un Souafle oublié par un troisième année que Harry rattrape en piqué à deux mètres du sol pour le remettre à sa place avant l'arrivée de Madame Bibine", "La baguette de Neville Londubat, emportée par un vent magique et que Harry attrape au terme d'un vol de 30 secondes à 15 mètres de hauteur", "La Boufflette de Neville"],
+                correct: 3,
+                explanation: "Lors du premier cours de vol sur balai, Neville Londubat perd le contrôle de son balai et tombe. Drago Malefoy s'empare de sa Boufflette et la lance haut dans les airs. Harry s'élance instinctivement pour la rattraper — et la capture parfaitement après un piqué spectaculaire. Le professeur McGonagall, témoin de la scène, le recrute immédiatement dans l'équipe de Quidditch de Gryffondor.",
+                source: "J.K. Rowling, Harry Potter à l'École des Sorciers (1997), Chapitre 9 — Le duel de minuit."
+            },
+            {
+                id: 30,
+                question: "Quelle est la formule pour ouvrir la trappe à l'Arbre Cogneur ?",
+                options: ["Il faut taper trois fois sur le nœud avec sa baguette en prononçant 'Immobulus', mais cette méthode ne fonctionne que sous pleine lune selon Poudlard : Histoire", "Il suffit d'approcher doucement en rampant depuis l'est, car l'Arbre Cogneur ne détecte pas les mouvements lents en dessous de 0,3 m/s selon Hagrid", "Il n'y a pas de formule — il faut utiliser un Portoloin programmé par Dumbledore lui-même, le seul moyen sécurisé d'accéder au tunnel sans danger", "Appuyer sur le nœud de l'arbre"],
+                correct: 3,
+                explanation: "L'Arbre Cogneur est un arbre magique extrêmement violent qui attaque tout ce qui l'approche. Son seul point faible est un nœud à sa base : y appuyer (avec une branche longue ou la baguette) le paralyse instantanément. C'est grâce à cette méthode que Sirius Black entrait et sortait du tunnel menant à la Cabane Hurlante quand il était à Poudlard.",
+                source: "J.K. Rowling, Harry Potter et le Prisonnier d'Azkaban (1999), Chapitre 17 — L'Arbre Cogneur."
+            },
+            {
+                id: 101,
+                type: "vrai_faux",
+                question: "Poudlard est une école de sorcellerie située en Écosse.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! J.K. Rowling a précisé que Poudlard (Hogwarts) est située dans les Highlands d'Écosse, dans un château médiéval protégé par de puissants enchantements. Les Moldus ne peuvent pas la voir — à leur place, ils aperçoivent des ruines avec des panneaux 'DANGER : NE PAS ENTRER'. Les tournages ont utilisé les châteaux de Alnwick et Doune en Grande-Bretagne.",
+                source: "J.K. Rowling / Pottermore - Poudlard est située dans les Highlands d'Écosse."
+            },
+            {
+                id: 102,
+                type: "vrai_faux",
+                question: "Harry Potter a les yeux verts dans les livres.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Dans les livres, Harry hérite des yeux verts de sa mère Lily Potter — un détail important car Rogue reconnaît ce regard. En revanche, Daniel Radcliffe (qui joue Harry dans les films) a les yeux bleus. Les producteurs ont essayé des lentilles vertes mais elles causaient des irritations oculaires, donc ils ont gardé les yeux naturels de l'acteur.",
+                source: "J.K. Rowling - Harry Potter et la Pierre Philosophale : description des yeux verts d'Harry."
+            }
+        ],
+        moyen: [
+            {
+                id: 11,
+                question: "Quelle est l'identité secrète cachée derrière le pseudonyme 'Prongs' parmi les Maraudeurs ?",
+                options: ["Sirius Black, dont le nom 'Prongs' évoque les crocs d'un grand chien noir, sa forme animale d'Animagus adoptée pour accompagner Lupin les nuits de pleine lune", "Peter Pettigrow, dont le surnom 'Prongs' fait référence à la queue fourchue d'un rat, sa forme animale qui lui a permis de se cacher pendant douze ans", "Remus Lupin, pour qui ses amis ont inventé des surnoms liés à l'imagerie lunaire, 'Prongs' étant un terme ancien gaélique désignant le croissant de lune", "James Potter (le cerf)"],
+                correct: 3,
+                explanation: "Les Maraudeurs avaient chacun un surnom lié à leur forme animale d'Animagus : Prongs (James = cerf), Patmol (Sirius = chien), Queue de Rat (Peter = rat) et Lunard (Remus = loup-garou, seul à ne pas être Animagus). La Carte du Maraudeur porte leur signature collective. 'Prongs' fait référence aux bois ramifiés (pronged antlers) d'un cerf.",
+                source: "J.K. Rowling, Harry Potter et le Prisonnier d'Azkaban (1999), Chapitre 18 — la vérité sur les Maraudeurs."
+            },
+            {
+                id: 12,
+                question: "Quel est le vrai nom de famille de Voldemort, révélé dans la Chambre des Secrets ?",
+                options: ["Gaunt, le nom de sa mère Merope, descendants directs de Salazar Serpentard par la lignée féminine, dont la famille avait gardé le médaillon de Serpentard", "Slytherin, le nom du fondateur dont il est le descendant direct par la lignée paternelle, qu'il a délibérément effacé de tous les registres magiques", "Marvolo, le prénom de son grand-père maternel qu'il a adopté comme nom de famille après avoir découvert son héritage Serpentard lors de ses années à l'orphelinat", "Jedusor (Tom Elvis Jedusor)"],
+                correct: 3,
+                explanation: "Tom Elvis Jedusor est l'anagramme de 'Je suis Voldemort'. Tom est le prénom de son père moldu (Tom Jedusor Sr.) qu'il haïssait. Il a adopté le nom 'Lord Voldemort' pour effacer toute trace de ses origines moldu et réécrire son identité. C'est révélé quand Tom Jedusor écrit son nom dans l'air avec la baguette de Harry.",
+                source: "J.K. Rowling, Harry Potter et la Chambre des Secrets (1998), Chapitre 17 — la Chambre des Secrets."
+            },
+            {
+                id: 13,
+                question: "Quel objet permet de voir les pensées stockées dans une vasque ?",
+                options: ["Le Miroir du Risèd, miroir légendaire qui n'affiche pas le présent mais les désirs les plus profonds, parfois confondu avec un outil de visualisation mémorielle", "L'Omniaculaire, appareil de vision magique qui enregistre les événements en temps réel et peut les rejouer au ralenti, utilisé lors des événements sportifs", "La Boule de Cristal, utilisée en cours de Divination par la professeure Trelawney pour enseigner l'analyse des formes brumeuses et des visions prophétiques", "La Pensine"],
+                correct: 3,
+                explanation: "La Pensine (Pensieve en VO) est une vasque en pierre gravée de runes qui permet d'extraire des souvenirs de sa tête avec sa baguette et de les stocker sous forme liquide argentée. En plongeant sa tête dans le souvenir, on peut le revivre comme si on y était présent. Dumbledore utilise la sienne régulièrement, et Harry y plonge notamment pour découvrir les souvenirs de Tom Jedusor.",
+                source: "J.K. Rowling, Harry Potter et la Coupe de Feu (2000), Chapitre 30 — première utilisation de la Pensine de Dumbledore."
+            },
+            {
+                id: 14,
+                question: "De quoi est faite la Cape d'Invisibilité de Harry ?",
+                options: ["De plumes de Détraqueur tissées avec du fil d'argent pur — la seule étoffe capable de bloquer les sorts de détection magique de n'importe quelle puissance", "De peau de Demiguise séchée et traitée, matériau couramment utilisé pour les Capes ordinaires qui s'estompent avec le temps et perdent leurs propriétés", "De soie d'araignée géante enchantée par les gobelins de Gringotts, matériau rare dont la fabrique a été interdite par la Confédération Internationale en 1800", "De la peau de Demiguise, mais c'est une Relique de la Mort"],
+                correct: 3,
+                explanation: "La Cape d'Invisibilité de Harry est l'une des trois Reliques de la Mort créées selon la légende par la Mort elle-même. Contrairement aux autres capes ordinaires faites de peau de Demiguise (qui pâlissent avec le temps), celle-ci reste parfaite après des siècles car c'est une relique magique exceptionnelle. Elle appartient aux descendants de la famille Peverell, dont Harry est l'héritier.",
+                source: "J.K. Rowling, Harry Potter et les Reliques de la Mort (2007), Chapitre 21 — Le Conte des Trois Frères."
+            },
+            {
+                id: 15,
+                question: "Quel est le résultat du Tournoi des Trois Sorciers en termes de vainqueur officiel ?",
+                options: ["Fleur Delacour, représentante de Beauxbâtons, qui remporte la Coupe définitivement après la mort de Cedric, les règles interdisant de couronner un mort", "Viktor Krum, représentant de Durmstrang, qui cumule le plus de points sur les trois épreuves et est déclaré vainqueur au sens strict des règles du Tournoi", "Les juges décident d'annuler le Tournoi en raison des circonstances exceptionnelles et aucun vainqueur n'est officiellement déclaré pour la première fois de l'histoire", "Harry Potter et Cedric Diggory (ex-aequo), puis Cedric est tué"],
+                correct: 3,
+                explanation: "Harry Potter et Cedric Diggory touchent simultanément la Coupe de Feu (transformée en Portoloin) et arrivent ex-aequo. Immédiatement après, Voldemort ordonne à Pettigrow de tuer Cedric ('Tue le superflu'). Harry revient avec le corps de Cedric et la vérité sur le retour de Voldemort — que Fudge refuse de croire.",
+                source: "J.K. Rowling, Harry Potter et la Coupe de Feu (2000), Chapitres 31-33 — Le Tournoi des Trois Sorciers."
+            },
+            {
+                id: 16,
+                question: "Quel est le pouvoir particulier de Harry qui effraie les autres sorciers et l'a trahi comme Parseltongue ?",
+                options: ["La Légillimancie naturelle, capacité innée à lire dans les pensées qu'il n'a jamais appris à contrôler et qui lui permet d'accéder accidentellement aux esprits des autres", "La Magie Chronologique, pouvoir rarissime de percevoir des événements futurs probables sous forme de flash prémonitoires pendant son sommeil depuis l'âge de sept ans", "La Pyrokinésie incontrôlée, pouvoir de génération spontanée du feu qui s'est manifesté plusieurs fois chez les Dursley avant son entrée à Poudlard", "Parler aux serpents (Fourchelang)"],
+                correct: 3,
+                explanation: "Harry est Fourchelang (Parseltongue) — il peut parler et comprendre le langage des serpents. Ce pouvoir est extrêmement rare et associé à Salazar Serpentard et à ses descendants. Harry l'a acquis accidentellement quand Voldemort lui a transmis un fragment d'âme la nuit du meurtre. Ce pouvoir effraie les autres sorciers car il est traditionnellement associé aux mages noirs.",
+                source: "J.K. Rowling, Harry Potter et la Chambre des Secrets (1998), Chapitre 11 — Club de Duels, révélation du Fourchelang."
+            },
+            {
+                id: 17,
+                question: "Quel est le nom du groupe de résistance fondé secrètement par Harry en cinquième année ?",
+                options: ["Le Cercle de Gryffondor, groupe clandestin qui se réunit dans la Tour de Gryffondor les nuits sans surveillance de Umbridge pour réviser la Défense", "Les Frères du Phénix Junior, branche étudiante de l'Ordre du Phénix fondée avec l'accord tacite de Dumbledore pour former la relève des membres adultes", "La Brigade Anti-Umbridge, nom informel donné par Fred et George à toute action de résistance contre les décrets éducatifs de la Haute Inquisitrice", "L'Armée de Dumbledore (A.D.)"],
+                correct: 3,
+                explanation: "L'Armée de Dumbledore (A.D.) est un groupe secret fondé par Harry, Ron et Hermione en réponse à l'incompétence délibérée du professeur Ombrage, qui refuse d'enseigner la magie pratique. Ils se réunissent dans la Salle sur Demande. Le nom 'Armée de Dumbledore' était une blague — jusqu'à ce qu'Ombrage le découvre et que Dumbledore assume la responsabilité pour protéger Harry.",
+                source: "J.K. Rowling, Harry Potter et l'Ordre du Phénix (2003), Chapitre 18 — naissance de l'A.D."
+            },
+            {
+                id: 18,
+                question: "Quel est le contenu du Horcruxe présent dans le journal de Tom Jedusor ?",
+                options: ["La mémoire des premières années scolaires de Tom à Poudlard, encodée pour se transmettre dans l'esprit du lecteur et le contrôler progressivement", "Un fragment de l'âme de Voldemort datant de son premier meurtre à 16 ans, encodé pour posséder quiconque écrit suffisamment longtemps dans le journal", "Un sort de résurrection partiel permettant à une version fantomatique de Tom Jedusor de se matérialiser dans la Chambre des Secrets pour finir l'œuvre de Serpentard", "Un fragment d'âme qui possède Ginny Weasley et la force à rouvrir la Chambre des Secrets"],
+                correct: 3,
+                explanation: "Le journal de Tom Jedusor est le premier Horcruxe détruit dans la saga (par Harry avec un croc de Basilic). Il contient un fragment de l'âme de Voldemort à 16 ans qui peut se matérialiser physiquement, ce qu'il fait dans la Chambre des Secrets. Il contrôle Ginny Weasley via le journal, lui faisant lâcher le Basilic sur les élèves d'origine moldu.",
+                source: "J.K. Rowling, Harry Potter et la Chambre des Secrets (1998) + Le Prince de Sang-Mêlé (2005) — identification comme Horcruxe."
+            },
+            {
+                id: 19,
+                question: "Qu'est-ce que la Salle sur Demande ?",
+                options: ["La salle secrète des fondateurs de Poudlard dans laquelle ont été cachés les plans de construction du château et les secrets de la magie des Quatre", "Le bureau de Dumbledore accessible uniquement par un escalier à vis en prononçant le nom d'un bonbon de sa collection, situé derrière une gargouille du premier étage", "Une pièce accessible depuis n'importe quel couloir de Poudlard qui apparaît toujours vide et se révèle être un raccourci inter-étages activé par la pensée", "Une salle secrète de Poudlard qui apparaît et contient ce dont son visiteur a besoin"],
+                correct: 3,
+                explanation: "La Salle sur Demande (Room of Requirement) est une pièce magique de Poudlard qui apparaît uniquement quand quelqu'un en a vraiment besoin et passe devant sa porte (un mur en apparence) trois fois en pensant à ce dont il a besoin. Elle peut devenir une salle d'entraînement, une cachette, une salle de bains — tout. Dans Les Reliques de la Mort, Crabbe y déclenche le Fiendfeu qui détruit le Diadème de Serdaigle.",
+                source: "J.K. Rowling, Harry Potter et l'Ordre du Phénix (2003), Chapitre 18 — première utilisation par l'A.D."
+            },
+            {
+                id: 20,
+                question: "Quel est le vrai maître de la Baguette de Sureau au moment où Harry affronte Voldemort pour la dernière fois ?",
+                options: ["Dumbledore, car la mort ne suffit pas à transférer la maîtrise d'une Relique de la Mort, dont la loyauté persiste post-mortem selon les lois de la magie ancienne", "Voldemort, qui a arraché la baguette du tombeau de Dumbledore et dont la domination physique de l'objet a suffi à lui en transférer la maîtrise complète", "Séverus Rogue, qui a tué Dumbledore et aurait dû en hériter la maîtrise si ce dernier n'avait pas arrangé sa mort pour contourner le transfert de loyauté", "Harry Potter (il a désarmé Drago qui avait désarmé Dumbledore)"],
+                correct: 3,
+                explanation: "La logique de la Baguette de Sureau repose sur la maîtrise : la loyauté va au sorcier qui a vaincu (désarmé ou tué) le maître précédent. Drago a désarmé Dumbledore (depuis une tour de Poudlard) avant que Rogue ne le tue. Harry a ensuite désarmé Drago à Manoir Malefoy. Donc la maîtrise est passée : Dumbledore → Drago → Harry. Voldemort l'ignore complètement.",
+                source: "J.K. Rowling, Harry Potter et les Reliques de la Mort (2007), Chapitre 36 — la logique de la Baguette de Sureau."
+            },
+            {
+                id: 21,
+                question: "Pourquoi la malédiction Avada Kedavra a-t-elle rebondi sur Voldemort en tuant Harry bébé ?",
+                options: ["Parce que la baguette de Voldemort était en bois de houx, matériau qui répercute la mort vers son lanceur selon les lois de la magie ancienne établies à l'époque des fondateurs", "Parce que Harry portait sur lui une amulette de protection créée par Dumbledore à la naissance de Harry, anticipant une attaque de Voldemort depuis plusieurs mois", "Parce que Voldemort était affaibli par un contre-sortilège de James Potter qui s'était interposé en dernier et dont le sacrifice avait partiellement neutralisé la malédiction", "Parce que Lily Potter s'est sacrifiée volontairement, créant une protection magique par l'amour"],
+                correct: 3,
+                explanation: "Le sacrifice de Lily Potter est la clé de toute la saga. En mourant volontairement pour protéger Harry (alors que Voldemort lui offrait la vie si elle se rangeait), elle a invoqué une magie ancienne basée sur l'amour — une 'protection de la chair et du sang' que Voldemort, incapable d'aimer, ne pouvait ni prévoir ni contrer. Cette même protection est renforcée tant que Harry vit chez les Dursley (du sang de Lily).",
+                source: "J.K. Rowling, Harry Potter et la Coupe de Feu (2000), Chapitre 33 + Les Reliques de la Mort (2007), Chapitre 35."
+            },
+            {
+                id: 22,
+                question: "Quel est le nom de la créature gardienne du Coffre n°713 de Gringotts au début du tome 1 ?",
+                options: ["Un Niffleur géant enchainé, créature attirée par les objets brillants qui est utilisée comme système d'alarme vivant par les gobelins depuis le XIVe siècle", "Un Botruc de pierre, variante magique du Botruc ordinaire dont la peau de granit résiste à tous les sortilèges connus et qui est sourd aux injonctions verbales", "Un Dragon des Carpates enchaîné, dont le rugissement déclenche une alarme au Ministère de la Magie si l'enchaînement est rompu sans les codes gobelins", "Un troll / des sortilèges (pas de créature nommée dans ce coffre)"],
+                correct: 3,
+                explanation: "Le coffre n°713 de Gringotts (où est cachée la Pierre Philosophale, que Dumbledore demande à Hagrid de récupérer) est protégé par des sortilèges gobelins complexes, non par une créature nommée. En revanche, les coffres des niveaux supérieurs sont gardés par des dragons. Hagrid retire la pierre ce même jour — juste avant que Quirrell ne tente de la voler.",
+                source: "J.K. Rowling, Harry Potter à l'École des Sorciers (1997), Chapitre 5 — visite de Gringotts."
+            },
+            {
+                id: 23,
+                question: "Quel professeur est responsable du cours de Potions pendant la majeure partie de la scolarité de Harry ?",
+                options: ["Horace Slughorn, le professeur de Potions que Dumbledore sort de sa retraite dorée en sixième année et dont la collection de 'Slug Club' révèle ses vieilles relations", "Filius Flitwick, le minuscule professeur de Sortilèges dont la passion des potions complexes est un secret de Poudlard depuis son arrivée dans les années 1980", "Pomona Chourave, qui cumule l'enseignement des Botanique et des Potions jusqu'en troisième année avant qu'une réforme pédagogique ne sépare les deux matières", "Séverus Rogue"],
+                correct: 3,
+                explanation: "Séverus Rogue enseigne les Potions pendant les 6 premières années de Harry, même s'il convoite le poste de Défense contre les Forces du Mal (qu'il obtient finalement en tome 6). Sa relation avec Harry est complexe : il le harcèle, le déteste à cause de son père James, mais le protège en secret par amour éternel pour Lily. Son sacrifice final est l'un des plus poignants de la saga.",
+                source: "J.K. Rowling, saga Harry Potter (1997-2007) — Séverus Rogue, personnage central."
+            },
+            {
+                id: 24,
+                question: "Comment s'appelle la prophétie qui concerne Harry et Voldemort, et qui l'a prononcée ?",
+                options: ["La Prophétie des Sept, prononcée par le fantôme du Baron Sanglant en 1945 et qui prédit l'arrivée d'un sorcier aux sept marques qui vaincra le seigneur des ténèbres renaissant", "La Prophétie du Phénix, transmise par Fumseck lui-même à Dumbledore la nuit de la mort des Potter et conservée dans un œuf d'or sous le Ministère de la Magie", "L'Oracle de Serpentard, gravé sur les murs de la Chambre des Secrets par Salazar lui-même et déchiffré par Dumbledore lors de sa première visite souterraine", "La Prophétie de Trelawney, transmise à Dumbledore lors d'une audition"],
+                correct: 3,
+                explanation: "La prophétie a été prononcée par Sybille Trelawney lors d'une audition pour un poste à Poudlard avec Dumbledore. Elle annonce : 'Celui qui a le pouvoir de vaincre le Seigneur des ténèbres approche... né de ceux qui lui ont résisté trois fois... né comme meurt le septième mois... et le Seigneur des ténèbres le marquera comme son égal.' Voldemort a entendu la première moitié via un espion.",
+                source: "J.K. Rowling, Harry Potter et l'Ordre du Phénix (2003), Chapitre 37 — la prophétie complète révélée à Harry."
+            },
+            {
+                id: 25,
+                question: "Quel est l'ingrédient principal du Polynectar et quel est son effet ?",
+                options: ["Crin de Kelpie et cheveux de la personne cible — permet de voler ses pouvoirs magiques pendant une heure en absorbant son lien avec la magie", "Sang de Phoenix et larme de Créature Marine — transforme le buveur en une copie parfaite permanente de n'importe quel sorcier sans limite de durée", "Peau de Serpent et yeux de Crapaud — permet de lire les pensées de n'importe quel sorcier sans contact direct pendant exactement soixante minutes", "Cheveux de la personne imitée — prend l'apparence de quelqu'un d'autre pendant une heure"],
+                correct: 3,
+                explanation: "Le Polynectar (Polyjuice Potion) est une potion très complexe qui nécessite un mois de préparation et dont l'ingrédient clé est un fragment physique (cheveux, ongle, peau) de la personne à imiter. Il transforme le buveur en copie parfaite pendant environ une heure, mais ne fonctionne que sur les humains — Hermione le découvre douloureusement quand elle utilise par erreur un poil du chat de Millicent Bulstrode.",
+                source: "J.K. Rowling, Harry Potter et la Chambre des Secrets (1998), Chapitres 10-12 — fabrication secrète du Polynectar."
+            },
+            {
+                id: 26,
+                question: "Qu'est-ce que la Carte du Maraudeur et comment faut-il la consulter ?",
+                options: ["Une carte interactive de Poudlard qui affiche en temps réel chaque personne dans le château, créée par les Maraudeurs et activée par 'Je jure que je ne prépare rien de bon'", "Une carte de Poudlard standard enchantée par les Maraudeurs pour afficher les passages secrets, activée en la tenant contre la torche la plus proche d'un couloir pair", "Un grimoire de magie avancée déguisé en carte du château, dont les formules secrètes n'apparaissent qu'à celui qui a résolu les sept énigmes de couverture", "Carte interactive des passages secrets, activée par 'Je jure solennellement que mes intentions sont mauvaises'"],
+                correct: 3,
+                explanation: "La Carte du Maraudeur est une carte magique de Poudlard qui affiche en temps réel la position de chaque personne dans le château (même sous Cape d'Invisibilité ou sous Polynectar). Elle a été créée par Prongs (James), Patmol (Sirius), Lunard (Remus) et Queue-de-rat (Peter). Elle s'active avec 'Je jure solennellement que mes intentions sont mauvaises' et s'efface avec 'Méfait accompli'.",
+                source: "J.K. Rowling, Harry Potter et le Prisonnier d'Azkaban (1999), Chapitre 10 — Fred et George donnent la carte à Harry."
+            },
+            {
+                id: 27,
+                question: "Quelle est la matière enseignée par le professeur Binns ?",
+                options: ["Divination, cours enseigné depuis une tour inaccessible et dont le professeur Trelawney nie mordicus avoir jamais croisé un collègue fantôme dans l'escalier", "Astronomie, matière nocturne enseignée depuis la tour du même nom, et dont Binns est le fondateur historique avant de céder sa place à une version vivante de lui-même", "Botanique, que Binns a enseignée pendant deux siècles avant de mourir en cours un matin de mars et de continuer à enseigner sans s'apercevoir du changement", "Histoire de la Magie"],
+                correct: 3,
+                explanation: "Le professeur Cuthbert Binns enseigne l'Histoire de la Magie. C'est un fantôme — il est mort en s'endormant devant sa cheminée et a tout simplement continué à enseigner le lendemain matin sans remarquer son décès. Ses cours sont réputés pour être les plus ennuyeux de Poudlard : il dicte des notes monotones sur des guerres de gobelins sans jamais lever les yeux.",
+                source: "J.K. Rowling, Harry Potter à l'École des Sorciers (1997), Chapitre 8 — première mention du professeur Binns."
+            },
+            {
+                id: 28,
+                question: "Quel objet Sirius Black offre-t-il à Harry pour communiquer secrètement ?",
+                options: ["Un journal enchanté qui transcrit automatiquement les messages en écriture inversée pour tromper les éventuels censeurs du courrier de Poudlard", "Une Plume-Rapporteur qui recopie chaque conversation tenue dans un rayon de 10 mètres dans un carnet, permettant de reconstituer les échanges importants", "Un Pensine de poche contenant les souvenirs d'enfance communs des Maraudeurs, offert comme preuve de leur lien avant de quitter définitivement le monde des vivants", "Un miroir en deux parties pour communiquer à distance"],
+                correct: 3,
+                explanation: "Sirius offre à Harry en cinquième année deux miroirs à deux faces (Two-Way Mirror) : chacun peut voir le visage de l'autre dans son miroir en prononçant son nom. Tragiquement, Harry ne s'en sert jamais de peur de déranger Sirius, et refuse d'utiliser l'objet à la veille du piège du Département des Mystères — ignorant qu'il aurait pu contacter Sirius directement.",
+                source: "J.K. Rowling, Harry Potter et l'Ordre du Phénix (2003), Chapitre 24 — cadeau de Sirius non ouvert."
+            },
+            {
+                id: 29,
+                question: "Quel est le résultat de la bataille du Département des Mystères ?",
+                options: ["Voldemort parvient à récupérer la prophétie avant que Harry ne la détruise, et décide finalement de ne pas la détruire mais de la laisser au Ministère comme piège", "Le Ministère reconnaît officiellement le retour de Voldemort après que Fudge a vu en personne Voldemort dans l'Atrium et ne peut plus dénier son retour", "Harry et l'A.D. parviennent à capturer Lucius Malefoy et plusieurs mangemorts qui sont emprisonnés à Azkaban avant que Voldemort n'intervienne personnellement", "Sirius Black meurt, la prophétie est détruite, Voldemort est vu par Fudge"],
+                correct: 3,
+                explanation: "La bataille du Département des Mystères est un tournant de la saga. Sirius Black est tué par Bellatrix Lestrange (tombant à travers le voile). La prophétie est détruite (Harry la lâche). Voldemort lui-même apparaît dans l'Atrium de la MdM, forçant Fudge à admettre son retour. C'est la fin du déni politique. Plusieurs mangemorts sont capturés, mais Bellatrix s'échappe.",
+                source: "J.K. Rowling, Harry Potter et l'Ordre du Phénix (2003), Chapitres 35-36 — La bataille du Département des Mystères."
+            },
+            {
+                id: 30,
+                question: "Comment Harry détruit-il le Diadème de Serdaigle (Horcruxe) ?",
+                options: ["En le plongeant dans un chaudron d'eau de mer bouillie conjointement avec du venin de basilic, la seule combinaison capable de dissoudre l'artefact de Serdaigle", "En le lançant contre le miroir de Vérité dans la Salle sur Demande, car les deux artefacts de Serdaigle se neutralisent mutuellement selon la magie des fondateurs", "En prononçant la formule Horcruxeum Frangere que Hermione avait trouvée dans les archives de la bibliothèque interdite de Poudlard après des semaines de recherches", "Il est détruit par le Fiendfye de Crabbe dans la Salle sur Demande"],
+                correct: 3,
+                explanation: "Le Diadème de Serdaigle est détruit involontairement par le Fiendfye (feu diabolique) déclenché par Vincent Crabbe dans la Salle sur Demande lors de la bataille de Poudlard. Le Fiendfye est un feu magique incontrôlable qui détruit tout sur son passage, y compris les Horcruxes — Crabbe lui-même en mourra, piégé par le feu qu'il ne peut contrôler.",
+                source: "J.K. Rowling, Harry Potter et les Reliques de la Mort (2007), Chapitre 31 — La bataille de Poudlard."
+            },
+            {
+                id: 31,
+                question: "Quel est le prénom complet de Dumbledore et que révèle-t-il sur sa famille ?",
+                options: ["Aldous Bartholomée Dumbledore — les prénoms honorifiques choisis par sa mère en hommage aux deux frères fondateurs de l'école de sorcellerie de Castelobruxo qu'elle avait visitée", "Albert Bernard Dumbledore — prénoms donnés par son père Perceval, emprisonné à Azkaban pour avoir attaqué des Moldus ayant agressé Ariana sa fille", "Aldrich Bertram Dumbledore — prénoms traditionnels de la lignée Dumbledore depuis le XIIIe siècle, tracés dans le registre familial de la bibliothèque de Poudlard", "Albus Perceval Wulfric Brian Dumbledore — quatre prénoms typiques de vieilles familles sorcières"],
+                correct: 3,
+                explanation: "Le nom complet d'Albus Dumbledore est Albus Perceval Wulfric Brian Dumbledore. Perceval (prénom de son père), Wulfric (tradition sorcière ancienne) et Brian (prénom ordinaire qui amuse souvent les fans) composent une identité complète. Ce détail révèle l'attachement de J.K. Rowling aux noms porteurs de sens et d'histoire dans son univers.",
+                source: "J.K. Rowling, Pottermore et interviews — nom complet confirmé officiellement."
+            },
+            {
+                id: 32,
+                question: "Quelle est la matière préférée d'Hermione Granger, celle pour laquelle elle montre le plus de passion naturelle ?",
+                options: ["La Défense contre les Forces du Mal, matière dans laquelle elle obtient les meilleures notes de sa promotion et qui lui permet de mettre en pratique ses recherches théoriques", "Les Sortilèges, dont la maîtrise technique requiert exactement le type de rigueur méthodique et de mémoire encyclopédique dans laquelle elle excelle naturellement", "La Divination, qu'elle a brièvement adorée avant de se disputer avec Trelawney en trouvant la matière intellectuellement insuffisante et sans base logique vérifiable", "Toutes les matières — mais avec une tendresse particulière pour les Sortilèges et les Runes Anciennes"],
+                correct: 3,
+                explanation: "Hermione est exceptionnelle dans toutes les matières, mais elle montre une passion particulière pour les Sortilèges (où Flitwick la complimente régulièrement) et les Runes Anciennes — une matière optionnelle que ni Harry ni Ron n'ont choisie. Elle abandonne la Divination en troisième année, estimant que c'est une 'matière imprécise et vague'. Sa capacité à appliquer la théorie à la pratique la rend redoutable en Sortilèges.",
+                source: "J.K. Rowling, Harry Potter et le Prisonnier d'Azkaban (1999) — abandon de la Divination + saga complète."
+            },
+            {
+                id: 33,
+                question: "Comment s'appelle le pub de Pré-au-Lard tenu par Madame Rosmerta ?",
+                options: ["Les Trois Balais, taverne pittoresque de Pré-au-Lard connue pour sa Bièraubeurre chaude et qui sert de lieu de rendez-vous informel pour les habitants du village", "La Citrouille Ailée, pub concurrent des Trois Balais situé à l'entrée du village, réputé pour ses cocktails à base de Brandy de Dragon importé de Roumanie", "L'Éclair d'Argent, ancienne auberge sorcière reconvertie en pub dans les années 1950 et dont la décoration intérieure n'a jamais été modifiée depuis lors", "Les Trois Balais"],
+                correct: 0,
+                explanation: "Les Trois Balais est le pub principal de Pré-au-Lard, tenu par la belle Madame Rosmerta. C'est un lieu central de la vie sociale sorcière : Harry et ses amis s'y retrouvent lors des sorties à Pré-au-Lard, et c'est là qu'Harry entend pour la première fois la vérité sur la trahison de Sirius Black (tome 3). La Bièraubeurre y est réputée comme la meilleure du village.",
+                source: "J.K. Rowling, Harry Potter et le Prisonnier d'Azkaban (1999), Chapitre 10 — Les Trois Balais."
+            },
+            {
+                id: 34,
+                question: "Quel objet permet de voyager instantanément d'un endroit à un autre dans le monde sorcier ?",
+                options: ["Le Portoloin, un objet banal enchanté par le Ministère qui transporte son porteur vers une destination préprogrammée à une heure précise ou à la demande", "La Poudre de Cheminette, poudre magique argentée qui permet de voyager dans les cheminées connectées au Réseau des Cheminettes du Ministère de la Magie", "L'Attrape-Portoloin, dispositif d'urgence réservé aux Aurors et aux membres de l'Ordre du Phénix, fonctionnant uniquement de nuit et par temps couvert", "Le Portoloin (et aussi la Poudre de Cheminette et l'Appararition)"],
+                correct: 3,
+                explanation: "Il existe plusieurs moyens de transport magique dans l'univers Potter : le Portoloin (objet enchanté qui transporte à une heure précise), la Poudre de Cheminette (voyage par les cheminées connectées), l'Apparition (téléportation directe, réservée aux sorciers majeurs ayant passé leur permis), et les balais. Chaque méthode a ses avantages et contraintes selon la situation.",
+                source: "J.K. Rowling, saga Harry Potter — moyens de transport magique détaillés dans plusieurs tomes."
+            },
+            {
+                id: 35,
+                question: "Qui a écrit 'Le Conte des Trois Frères', l'histoire qui explique l'origine des Reliques de la Mort ?",
+                options: ["Salazar Serpentard, qui aurait créé les Reliques lui-même avant de les disperser volontairement pour que seul son héritier puisse les rassembler un jour", "Bathilda Tourdesac, historienne sorcière de renom qui a consigné dans son œuvre 'Histoire de la Magie' les légendes entourant les artefacts des familles fondatrices", "Albus Dumbledore, qui a inventé le conte pour enfants afin de préparer Harry psychologiquement à la notion de sacrifice sans lui révéler directement les Reliques", "Beedle le Barde, dans Les Contes de Beedle le Barde"],
+                correct: 3,
+                explanation: "Le Conte des Trois Frères est issu du recueil 'Les Contes de Beedle le Barde', un livre de contes pour enfants sorciers écrit par Beedle le Barde au XVe siècle. Dumbledore en a légué une copie à Hermione dans son testament. C'est en déchiffrant ce conte qu'Hermione, Harry et Ron comprennent l'existence et la nature des Reliques de la Mort.",
+                source: "J.K. Rowling, Harry Potter et les Reliques de la Mort (2007), Chapitre 21 + Les Contes de Beedle le Barde (2008)."
+            },
+            {
+                id: 36,
+                question: "Quel sort Harry utilise-t-il pour voir dans le noir lors de son épreuve du Labyrinthe dans la Coupe de Feu ?",
+                options: ["Nox Revelio, un sortilège de vision nocturne appris en cours de Défense Avancée et que Harry maîtrise grâce aux entraînements de l'A.D. en cinquième année", "Lumos Solem, version solaire du sortilège de lumière qui projette une lumière blanche d'une intensité suffisante pour éclairer un rayon de 20 mètres dans l'obscurité", "Caecus Aperio, un sort de vision magique enseigné uniquement aux élèves de niveau O.W.L. en Défense contre les Forces du Mal selon les programmes de Poudlard", "Il utilise Lumos ou affronte le labyrinthe sans sort particulier de vision"],
+                correct: 3,
+                explanation: "Harry affronte le labyrinthe avec les sorts qu'il a appris : principalement Lumos pour s'éclairer, Expelliarmus pour se défendre et Accio pour attirer des objets. J.K. Rowling ne lui attribue pas de sort spécifique de vision nocturne — Harry se débrouille avec ses compétences habituelles et son instinct, ce qui rend son parcours plus humain et tendu.",
+                source: "J.K. Rowling, Harry Potter et la Coupe de Feu (2000), Chapitre 31 — Le Labyrinthe."
+            },
+            {
+                id: 37,
+                question: "Qui est l'auteur du manuel 'Potions Magiques' utilisé par les élèves de Poudlard ?",
+                options: ["Nicolas Flamel, l'alchimiste légendaire dont les travaux ont fondé la potions-logique moderne et qui a co-rédigé le manuel avec Dumbledore dans les années 1940", "Libatius Borage, auteur fictif cité dans les manuels de Potions de Poudlard, notamment pour son ouvrage Potions avancées que les élèves utilisent en 6e année", "Héloïse Chauffeleau, potion-logiste française dont les travaux sur les philtres d'amour ont été intégrés dans le programme officiel des Ministères européens", "Arsenius Jigger (Manuel de Potions de Base) et Libatius Borage (Potions Avancées)"],
+                correct: 3,
+                explanation: "Le manuel de première année est 'Potions Magiques' d'Arsenius Jigger. À partir de la sixième année, les élèves utilisent 'Manuel de Potions Avancées' de Libatius Borage — le livre dans lequel l'exemplaire annoté appartenant au 'Prince de Sang-Mêlé' (Rogue) est trouvé par Harry, lui donnant un avantage considérable en cours de Potions avec Slughorn.",
+                source: "J.K. Rowling, Harry Potter à l'École des Sorciers (1997) + Le Prince de Sang-Mêlé (2005) — manuels de Potions."
+            },
+            {
+                id: 38,
+                question: "Comment s'appelle le village natal de Harry Potter où ses parents ont été tués ?",
+                options: ["Ottery-Saint-Catchpole, village fictif du Devon qui abrite aussi le Terrier familial des Weasley et plusieurs autres familles sorcières selon la carte de l'univers Potter", "Little Whinging, banlieue de Surrey où Harry a grandi chez les Dursley au 4 Privet Drive, souvent confondue avec son village natal de naissance", "Spinner's End, ruelle industrielle dans le nord de l'Angleterre où Séverus Rogue a grandi et où se situe la maison de Cokeworth héritée de sa mère Eileen Prince", "Godric's Hollow"],
+                correct: 3,
+                explanation: "Godric's Hollow est un village fictif d'Angleterre où Godric Gryffondor est né et où plusieurs sorciers célèbres ont vécu. C'est là que James et Lily Potter ont été tués par Voldemort le 31 octobre 1981. Harry et Hermione s'y rendent dans Les Reliques de la Mort pour visiter la tombe de ses parents et la maison en ruines, désormais monument commémoratif.",
+                source: "J.K. Rowling, Harry Potter et les Reliques de la Mort (2007), Chapitre 16 — Godric's Hollow."
+            },
+            {
+                id: 39,
+                question: "Quelle est la différence entre un Animagus et un loup-garou ?",
+                options: ["Un Animagus est enregistré au Ministère et peut contrôler sa transformation, tandis qu'un loup-garou est contraint par la pleine lune et perd toute conscience humaine", "Un Animagus garde ses pouvoirs magiques sous forme animale et peut utiliser sa baguette mentalement, tandis qu'un loup-garou perd tout pouvoir magique pendant sa transformation", "Un Animagus ne peut se transformer qu'en un seul animal prédéterminé par sa personnalité, tandis qu'un loup-garou peut choisir sa forme animale après maîtrise du Wolfsbane", "Animagus = transformation volontaire apprise, loup-garou = malédiction transmise par morsure"],
+                correct: 3,
+                explanation: "Un Animagus est un sorcier qui a appris à se transformer en animal de son choix (processus long et difficile), peut le faire à volonté, et doit s'enregistrer au Ministère. Un loup-garou est une personne atteinte d'une condition magique transmise par morsure : la transformation se fait de force à la pleine lune, le sujet perd toute conscience et devient dangereux. Le Polynectar Tue-Loup (Wolfsbane) permet à un loup-garou de garder sa conscience pendant la transformation.",
+                source: "J.K. Rowling, Harry Potter et le Prisonnier d'Azkaban (1999) — distinction Animagus/loup-garou clarifiée par Lupin."
+            },
+            {
+                id: 40,
+                question: "Quel est le surnom affectueux de la Mimbulus Mimbletonia, plante rare qu'apporte Neville en cinquième année ?",
+                options: ["Il l'appelle 'Spore', en référence à la substance brunâtre gélatineuse qu'elle éjecte quand on la touche et qui ressemble à des spores géantes de champignon", "Il l'appelle 'Bubulus', latinisation humoristique de son nom officiel que Neville utilise pour la distinguer des autres plantes rares de sa collection personnelle", "Il l'appelle 'Cactus de Grand-Mère', en hommage à la grand-mère Augusta qui lui a offert la plante comme cadeau d'anniversaire pour sa cinquième année à Poudlard", "Il l'appelle simplement 'plante rare' — Neville ne lui donne pas de surnom dans le texte"],
+                correct: 3,
+                explanation: "La Mimbulus Mimbletonia est une plante rare originaire de Mésopotamie que Neville montre fièrement à ses camarades dans le train. Quand Harry touche accidentellement sa tige, la plante éjecte un liquide vert nauséabond (Stinksap) qui trempe tout le compartiment. J.K. Rowling ne lui attribue pas de surnom officiel — c'est un détail comique parmi les nombreuses passions botaniques de Neville.",
+                source: "J.K. Rowling, Harry Potter et l'Ordre du Phénix (2003), Chapitre 10 — Le compartiment du train."
+            },
+            {
+                id: 201,
+                type: "vrai_faux",
+                question: "Hermione Granger est issue d'une famille de sorciers.",
+                options: ["Vrai", "Faux"],
+                correct: 1,
+                explanation: "Faux ! Hermione Granger est une 'Née-Moldu' (Muggle-born) — ses deux parents sont dentistes et n'ont aucun pouvoir magique. C'est l'une des premières informations données sur elle. Cela la rend méprisable aux yeux des familles pure-sangs comme les Malefoy qui l'appellent 'Sang-de-Bourbe'. Malgré ça, elle devient la meilleure élève de Poudlard.",
+                source: "J.K. Rowling - Harry Potter à l'École des Sorciers : Hermione est une Née-Moldu."
+            },
+            {
+                id: 202,
+                type: "vrai_faux",
+                question: "La baguette de Ron Weasley appartenait à son frère avant lui.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Dans le premier tome, Ron utilise la vieille baguette de son frère Charlie, ce qui explique pourquoi ses sorts partent souvent de travers. La baguette cassée dans l'accident de voiture volante (tome 2) est également celle héritée. Ce n'est qu'à partir du tome 3 qu'il reçoit une baguette qui lui est propre, achetée par ses parents.",
+                source: "J.K. Rowling - Harry Potter à l'École des Sorciers : Ron emprunte la vieille baguette de Charlie."
+            }
+        ],
+        difficile: [
+            {
+                id: 21,
+                question: "Quel est le numéro de téléphone du Ministère de la Magie (entrée secrète depuis la cabine téléphonique) ?",
+                options: ["625442, qui correspond à MAGIE sur un clavier téléphonique à correspondance lettre-chiffre, utilisé depuis l'installation des nouvelles cabines rouges en 1975", "726543, formant l'anagramme de SORCIER sur un clavier alphanumérique et sonnant une seule fois avant d'ouvrir directement le portail de la cabine", "100000, un code militaire attribué au Ministère lors de son enregistrement officiel auprès du gouvernement moldu en vertu du Traité Secret de 1908", "62442 (MAGIE)"],
+                correct: 3,
+                explanation: "Pour accéder au Ministère de la Magie depuis l'extérieur, il faut entrer dans une cabine téléphonique rouge et composer le 62442, qui correspond aux lettres M-A-G-I-E sur un clavier téléphonique. Ce détail est mentionné dans Harry Potter et l'Ordre du Phénix lorsque Harry et Arthur Weasley se rendent au Ministère pour l'audition de Harry.",
+                source: "J.K. Rowling, Harry Potter et l'Ordre du Phénix (2003), Chapitre 7 — Le Ministère de la Magie."
+            },
+            {
+                id: 22,
+                question: "Quelle est la date de naissance de Harry Potter, et quelle signification a-t-elle par rapport à la prophétie ?",
+                options: ["Le 1er novembre 1980 — né 'comme meurt le huitième mois' selon l'ancienne interprétation calendaire où novembre était le neuvième mois du calendrier romain originel", "Le 15 juillet 1980 — né au milieu du septième mois, ce qui correspond à une interprétation astrologique du 'né comme meurt le septième mois' de la prophétie", "Le 31 août 1980 — né le dernier jour du septième mois selon le calendrier sorcier qui décale de deux mois le calendrier moldu pour des raisons magiques historiques", "Le 31 juillet 1980 — né 'comme meurt le septième mois' (juillet = 7e mois)"],
+                correct: 3,
+                explanation: "Harry est né le 31 juillet 1980, le dernier jour de juillet (7e mois). La prophétie dit 'né comme meurt le septième mois' — ce qui correspond exactement. Neville Londubat, né le 30 juillet 1980, aurait aussi pu être 'l'Élu', mais Voldemort a choisi Harry en le marquant lui-même. J.K. Rowling partage son anniversaire avec son personnage.",
+                source: "J.K. Rowling, Harry Potter et l'Ordre du Phénix (2003), Chapitre 37 — La prophétie complète."
+            },
+            {
+                id: 23,
+                question: "Quelle est la signification latine de la formule 'Expecto Patronum' ?",
+                options: ["'Je convoque ma lumière intérieure' — une formulation médiévale liée aux rituels de purification spirituelle des moines irlandais du VIIe siècle", "'Je rappelle mes ancêtres' — un sort ancestral gaulois réinterprété par le Ministère de la Magie au XVIIIe siècle pour combattre les premières apparitions de Détraqueurs", "'Je cherche ma protection' — étymologie composite du latin 'expecto' (attendre) et 'patronum' (maître protecteur) qui évoque une invocation divine médiévale", "'J'attends (espère) un protecteur/gardien' — latin classique"],
+                correct: 3,
+                explanation: "'Expecto' vient du latin 'exspecto' signifiant 'j'attends, j'espère, je réclame'. 'Patronum' vient de 'patronus' (protecteur, patron, défenseur). La formule entière signifie donc 'j'attends un protecteur' ou 'je réclame la protection d'un gardien'. J.K. Rowling s'est beaucoup inspirée du latin et du grec pour créer les noms et formules de sa magie.",
+                source: "J.K. Rowling / étymologie latine classique — Rowling a confirmé ses sources latines dans plusieurs interviews."
+            },
+            {
+                id: 24,
+                question: "Quelle erreur cruciale Voldemort commet-il en utilisant le sang de Harry pour se régénérer dans la Coupe de Feu ?",
+                options: ["En prenant le sang de Harry avant que celui-ci ait atteint sa majorité magique à 17 ans, ce qui rend la résurrection instable et incomplète selon les lois de la chair", "En mélangeant le sang de Harry avec celui d'un traitre (Pettigrow), ce qui crée une contamination dans la potion de résurrection qui affaiblit définitivement sa magie", "En réalisant le rituel pendant une nuit sans lune, condition qui inverse selon les astrologues sorciers le sens de la protection absorbée et la retourne contre lui", "Il renforce sans le savoir la protection de Lily en Harry — tant que Voldemort vit, Harry ne peut mourir"],
+                correct: 3,
+                explanation: "En prenant le sang de Harry (qui contient la protection de Lily), Voldemort ancre involontairement cette protection dans sa propre chair. Tant que Voldemort vit, Harry ne peut mourir définitivement — ce qui explique pourquoi Harry survit au dernier Avada Kedavra dans la forêt. Dumbledore le comprend et n'en dit rien, laissant Harry faire le choix de se sacrifier.",
+                source: "J.K. Rowling, Harry Potter et les Reliques de la Mort (2007), Chapitre 35 — Dumbledore l'explique à Harry dans la Gare du Paradis."
+            },
+            {
+                id: 25,
+                question: "Combien d'Horcruxes Voldemort a-t-il créés intentionnellement, et qu'est-ce qui fait que Harry en est un accidentellement ?",
+                options: ["Voldemort a créé 6 Horcruxes intentionnels. Harry est devenu le 7e quand Voldemort, en état de fureur extrême, a lancé Avada Kedavra avec une haine si intense qu'elle a déchiré son âme sans meurtre", "Voldemort a créé 5 Horcruxes intentionnels. Harry est le 6e parce que la protection de Lily a dévié le sort vers Voldemort qui, mourant, a transféré un fragment d'âme dans le seul être vivant présent", "Voldemort a créé 8 Horcruxes intentionnels pour dépasser le chiffre 7 jugé insuffisant, mais le 8e (Harry) lui a échappé car la cible n'était pas du vivant mais une prophétie", "Voldemort a créé 6 Horcruxes intentionnels. Le 7e (Harry) est né quand Avada Kedavra a rebondi, déchirant l'âme de Voldemort qui a investi le seul être vivant présent"],
+                correct: 3,
+                explanation: "Voldemort a créé 6 Horcruxes intentionnels (le journal, la bague, le médaillon, la coupe, le diadème, Nagini). La nuit où Avada Kedavra a rebondi sur lui, son âme déjà si fragmentée s'est à nouveau déchirée involontairement, et le fragment a investi Harry, le seul être vivant présent — faisant de lui un Horcruxe accidentel. Dumbledore comprend cela après des années d'investigation.",
+                source: "J.K. Rowling, Harry Potter et les Reliques de la Mort (2007), Chapitre 35 — Dumbledore et les 7 Horcruxes."
+            },
+            {
+                id: 26,
+                question: "Quelle est la nature réelle du lien entre Dumbledore et Grindelwald, révélée dans Les Animaux Fantastiques ?",
+                options: ["Ils étaient demi-frères, partageant le même père — un sorcier errant qui eut des enfants dans plusieurs pays d'Europe, liaison que Dumbledore a toujours cachée par honte familiale", "Grindelwald était l'élève de Dumbledore à Poudlard, et leur relation professeur-élève a tourné à l'obsession pour le pouvoir après que Dumbledore lui a enseigné la théorie des Reliques", "Grindelwald était le mentor de Dumbledore, venu étudier les Reliques de la Mort chez son grand-père Kendra, et dont l'influence intellectuelle a failli perdre Dumbledore définitivement", "Ils ont été amis intimes (amoureux selon Rowling) à 17 ans, liés par un Pacte du Sang"],
+                correct: 3,
+                explanation: "J.K. Rowling a confirmé que Dumbledore et Grindelwald ont vécu une passion amoureuse lors de l'été 1899 où Grindelwald séjournait à Godric's Hollow. Ils ont scellé un Pacte du Sang (visible dans Les Animaux Fantastiques 2) qui empêchait Dumbledore de s'opposer directement à lui — d'où son refus apparemment inexplicable d'intervenir, révélé dans le film.",
+                source: "J.K. Rowling (interviews et Pottermore) + Les Animaux Fantastiques : Les Crimes de Grindelwald (2018)."
+            },
+            {
+                id: 27,
+                question: "Quelle est la signification du miroir 'Erised' et que voit Dumbledore dedans ?",
+                options: ["Erised signifie 'désir' à l'envers. Dumbledore voit sa famille réunie et vivante, et il a révélé cela à Harry comme exemple de désir impossible lié à ses regrets les plus profonds", "'Erised' est l'anagramme de 'Désire' inversé. Dumbledore voit les Reliques de la Mort réunies entre ses mains — son désir de toute-puissance qu'il n'a jamais totalement abandonné", "'Erised' signifie 'éternel' dans l'ancien sorcier. Dumbledore voit l'immortalité physique qu'il a cherchée dans sa jeunesse avec Grindelwald et à laquelle il a finalement renoncé", "'Erised' est 'desire' à l'envers. Dumbledore voit des chaussettes selon lui — en réalité sa famille et Ariana"],
+                correct: 3,
+                explanation: "'Erised' est 'desire' lu à l'envers (miroir). L'inscription 'Iasednu ruomsa ej tse erised ud rorrim el' est 'Le miroir du désir est je montre à nu rêves' à l'envers. Quand Harry demande à Dumbledore ce qu'il voit, il répond 'des chaussettes' — réponse évasive. Rowling a révélé plus tard qu'il voit sa famille réunie (dont sa sœur Ariana, morte dans un duel accidentel) et Grindelwald.",
+                source: "J.K. Rowling, Harry Potter à l'École des Sorciers (1997), Chapitre 12 + interviews ultérieures."
+            },
+            {
+                id: 28,
+                question: "Quel est le détail qui prouve que 'R.A.B.' (qui a volé le médaillon de Voldemort) est Regulus Arcturus Black ?",
+                options: ["Les initiales R.A.B. correspondent à Regulus Arcturus Black, et la note dans le faux médaillon est rédigée dans un style d'écriture reconnaissable comme celui de Regulus selon Sirius", "Un portrait de Regulus dans le manoir Black présente ses initiales en plein cadre, et la date de sa mort coïncide exactement avec la date d'écriture de la note cachée dans le médaillon", "Kreacher révèle qu'il a accompagné son maître dans la caverne, que Regulus a bu l'eau verte à sa place et lui a ordonné de détruire le médaillon, ce qu'il n'a jamais pu faire", "Hermione retrouve le vrai médaillon dans la maison des Black au 12 Grimmaurd Place dans un tiroir avec une lettre signée en entier par Regulus"],
+                correct: 3,
+                explanation: "Kreacher, l'elfe de maison des Black, révèle toute l'histoire : Regulus s'est volontairement porté volontaire pour aider Voldemort à cacher un Horcruxe, a découvert l'horreur de la caverne, et est retourné avec Kreacher pour voler le médaillon. Il a bu lui-même toute l'eau verte et a ordonné à Kreacher de rentrer et de détruire le médaillon avant de mourir noyé par les Inferi.",
+                source: "J.K. Rowling, Harry Potter et les Reliques de la Mort (2007), Chapitre 10 — le récit de Kreacher."
+            },
+            {
+                id: 29,
+                question: "Quel est l'effet précis du charme de Tabou placé sur le nom 'Voldemort' dans Les Reliques de la Mort ?",
+                options: ["Il déclenche une alarme au Ministère de la Magie qui permet de localiser l'utilisateur en moins de 3 secondes et d'y envoyer immédiatement un escadron d'Aurors", "Il brise instantanément tous les sortilèges de dissimulation et de protection actifs dans un rayon de 500 mètres autour de la personne qui a prononcé le nom", "Il projette un signal lumineux rouge visible à 10 kilomètres et permet aux mangemorts équipés de lunettes de Détection Magique de repérer l'émetteur", "Il brise les Sortilèges de Cachette environnants et signale l'emplacement du locuteur aux mangemorts"],
+                correct: 3,
+                explanation: "Après la prise de contrôle du Ministère par Voldemort, son nom est mis sous Tabou : quiconque le prononce rompt instantanément tout Sortilège de Cachette actif dans les environs ET déclenche une alerte qui signale l'emplacement aux escouades de mangemorts. C'est comme ça que le camp de Harry, Ron et Hermione dans la forêt de Dean est localisé et attaqué — Harry a prononcé le nom involontairement.",
+                source: "J.K. Rowling, Harry Potter et les Reliques de la Mort (2007), Chapitre 20 — Xenophilius Lovegood explique le Tabou."
+            },
+            {
+                id: 30,
+                question: "Pourquoi Rogue est-il capable d'entrer dans la tête de Harry lors des cours d'Occlumancie malgré ses tentatives de résistance ?",
+                options: ["Parce que Rogue est le meilleur Légilimancie de tout le monde sorcier, son niveau dépassant même celui de Voldemort pour la lecture des souvenirs récents sur de courtes distances", "Parce que Harry n'a aucun talent naturel pour l'Occlumancie et refuse de pratiquer entre les séances, ce qui maintient son esprit totalement ouvert malgré les rudiments enseignés", "Parce que le fragment d'âme de Voldemort en Harry crée un 'accès arrière' que Rogue exploite sans le savoir, accédant aux émotions de Voldemort relayées par Harry", "Parce que Harry laisse ses émotions dominer — l'Occlumancie requiert un esprit vide, et la haine de Harry pour Rogue facilite l'intrusion"],
+                correct: 3,
+                explanation: "L'Occlumancie requiert de vider son esprit de toute émotion — un exploit difficile pour Harry qui est par nature très émotif. Sa haine pour Rogue pendant les cours crée exactement les conditions inverses de ce qu'il faudrait. Dumbledore voulait que Harry apprenne l'Occlumancie pour bloquer le lien avec Voldemort, mais la tension entre Harry et Rogue sabote complètement l'apprentissage.",
+                source: "J.K. Rowling, Harry Potter et l'Ordre du Phénix (2003), Chapitres 24-26 — les cours d'Occlumancie."
+            },
+            {
+                id: 31,
+                question: "Quelle est la date exacte et le lieu de la mort de James et Lily Potter ?",
+                options: ["Le 30 octobre 1980 à Godric's Hollow — la veille de Samhain, date choisie par Voldemort pour maximiser la puissance de la malédiction lors d'une nuit de pouvoir sorcier", "Le 1er novembre 1981 à Spinner's End — le lendemain de la fête des sorciers, dans la maison que Voldemort avait réquisitionnée comme base d'opérations dans le nord", "Le 31 octobre 1980 à Pré-au-Lard — lors d'une fête d'Halloween que Voldemort a infiltrée sous Polynectar pour approcher la famille Potter sans éveiller les soupçons", "Le 31 octobre 1981 à Godric's Hollow — la nuit d'Halloween"],
+                correct: 3,
+                explanation: "James et Lily Potter ont été tués le 31 octobre 1981 (nuit d'Halloween) dans leur maison de Godric's Hollow. James est mort en premier, sans sa baguette, en tentant de retarder Voldemort pour permettre à Lily de fuir avec Harry. Lily a refusé de s'écarter, choisissant de mourir plutôt que d'abandonner son fils — déclenchant la protection magique par l'amour.",
+                source: "J.K. Rowling, Harry Potter à l'École des Sorciers (1997), Chapitre 1 + Les Reliques de la Mort (2007), Chapitre 17."
+            },
+            {
+                id: 32,
+                question: "Quelle est la signification de 'Mudblood', insulte raciste du monde sorcier ?",
+                options: ["Traduction littérale de 'sang de vase', terme créé par Salazar Serpentard pour désigner les sorciers nés dans des régions côtières et marécageuses réputées magiquement impures", "'Sang sale' — terme péjoratif extrêmement offensant désignant un sorcier né de parents moldus, considéré comme 'impur' par les suprémacistes pure-sang", "'Sang mêlé', terme neutre devenu offensant par l'usage, désignant tout sorcier dont un parent au moins est Moldu ou issu lui-même d'une famille mixte ancienne", "'Petit-sang', terme d'abord enfantin devenu une insulte raciale après son adoption par les partisans de Voldemort lors de la première guerre magique des années 1970"],
+                correct: 1,
+                explanation: "'Mudblood' (Sang-de-Bourbe en français) est l'insulte la plus offensive du monde sorcier. Elle désigne les sorciers nés de deux parents moldus, considérés comme 'sang impur' par les idéologues suprémacistes pure-sang. Drago l'utilise contre Hermione en deuxième année, provoquant une réaction viscérale de Ron (qui vomit des limaces après une tentative ratée de malédiction).",
+                source: "J.K. Rowling, Harry Potter et la Chambre des Secrets (1998), Chapitre 7 — premier usage devant Harry."
+            },
+            {
+                id: 33,
+                question: "Que révèle la Pensine de Dumbledore sur le passé de Tom Jedusor que Dumbledore a soigneusement collecté ?",
+                options: ["Que Tom a été adopté à l'âge de 3 ans par une famille de sorciers pure-sang et élevé dans la tradition de la magie noire avant d'être découvert et envoyé à Poudlard", "Que Tom savait qu'il était sorcier avant même de recevoir la lettre de Poudlard, ayant développé des pouvoirs involontaires qui terrorisaient les autres orphelins de son établissement", "Que Tom a été en contact avec Dumbledore dès l'âge de 7 ans via une correspondance secrète, dont les lettres ont été conservées par le directeur de l'orphelinat Mrs Cole", "Que Tom contrôlait déjà les autres orphelins, avait des pouvoirs précoces inquiétants, et cherchait délibérément à être 'différent' et 'spécial'"],
+                correct: 3,
+                explanation: "Les souvenirs collectés par Dumbledore (montrés dans la Pensine en tome 6) révèlent un Tom Jedusor précocement conscient de sa différence : il terrorisait les autres orphelins, parlait aux serpents, volait et cachait leurs affaires. Lors de la visite de Dumbledore à l'orphelinat, Tom montre déjà la froideur calculatrice et le désir de domination qui caractériseront Voldemort.",
+                source: "J.K. Rowling, Harry Potter et le Prince de Sang-Mêlé (2005), Chapitres 13 et 17 — les souvenirs de Tom Jedusor."
+            },
+            {
+                id: 34,
+                question: "Quel est le lien généalogique entre Harry Potter et les frères Peverell, créateurs des Reliques de la Mort ?",
+                options: ["Harry descend des trois frères simultanément, étant l'unique sorcier à posséder du sang Peverell triple hérité via les trois branches maternelle, paternelle et adoptive de sa famille", "Harry descend d'Ignotus Peverell (le plus jeune des trois frères, celui de la Cape d'Invisibilité) par la lignée directe de son père James Potter", "Harry descend d'Antioch Peverell (le frère aîné, créateur de la Baguette de Sureau) via la famille Dumbledore qui a ensuite hérité la baguette par maîtrise magique", "Harry descend d'Ignotus Peverell — la Cape lui a été transmise de génération en génération par la famille Potter"],
+                correct: 3,
+                explanation: "Harry est le descendant direct d'Ignotus Peverell, le plus jeune des trois frères qui a reçu la Cape d'Invisibilité de la Mort et est mort en paix à un grand âge après l'avoir transmise à son fils. La famille Potter est la lignée directe des descendants d'Ignotus. C'est pour cela que Dumbledore parle de la Cape comme d'un 'héritage familial' appartenant légitimement à Harry.",
+                source: "J.K. Rowling, Harry Potter et les Reliques de la Mort (2007), Chapitre 35 + Pottermore — l'arbre généalogique des Peverell."
+            },
+            {
+                id: 35,
+                question: "Quelle est la formule exacte utilisée dans le rituel de résurrection de Voldemort dans le tome 4 ?",
+                options: ["'Os du père, volontairement donné. Chair du serviteur, involontairement sacrifiée. Sang de l'ennemi, pris de force. Que le Seigneur des Ténèbres renaisse !'", "'Os ancestral arraché à la terre. Sang du traître versé librement. Chair du plus fidèle offerte sans retour. Reviens, ô Seigneur des Ténèbres !'", "'Os de la terre, sang de la chair, nés dans la douleur. Que celui qui fut déchu retrouve sa forme première et que sa puissance surpasse ce qu'elle fut !'", "'Os du père, chair du serviteur, sang de l'ennemi' — trois ingrédients versés dans un chaudron"],
+                correct: 3,
+                explanation: "Le rituel de résurrection prononcé par Wormtail nécessite trois ingrédients : l'os de Tom Jedusor Sr. (le père, déterré du cimetière de Little Hangleton), la chair de Pettigrow (son serviteur, qui ampute sa propre main), et le sang de Harry (l'ennemi, prélevé de force). Ce rituel donne à Voldemort un corps physique à nouveau, et l'erreur cruciale qu'il commis en utilisant le sang de Harry.",
+                source: "J.K. Rowling, Harry Potter et la Coupe de Feu (2000), Chapitre 32 — La Chair, les Os et le Sang."
+            },
+            {
+                id: 36,
+                question: "Qui est Grindelwald et pourquoi est-il important dans la saga ?",
+                options: ["Le fondateur de l'école de sorcellerie de Durmstrang, dont l'enseignement de la magie noire a formé indirectement Karkaroff et plusieurs mangemorts de la première génération", "Un sorcier moldu-né devenu mage noir par haine de sa propre famille non-magique, dont le parcours parallèle à celui de Voldemort intriguait Dumbledore depuis des décennies", "Le frère jumeau de Dumbledore, caché depuis leur enfance et dont l'existence a été effacée des registres familiaux par Abelforth pour protéger la réputation de la famille", "Le mage noir le plus puissant avant Voldemort, ami de jeunesse de Dumbledore, vaincu par lui en 1945"],
+                correct: 3,
+                explanation: "Gellert Grindelwald est le prédécesseur de Voldemort comme mage noir le plus redouté du monde. Ami de jeunesse de Dumbledore (été 1899), ils ont partagé une vision commune de la suprématie sorcière avant que la mort d'Ariana ne les sépare. Grindelwald a semé la terreur en Europe jusqu'en 1945, date de son duel légendaire contre Dumbledore. Il est emprisonné à Nurmengard jusqu'à ce que Voldemort le tue pour avoir refusé de révéler l'emplacement de la Baguette de Sureau.",
+                source: "J.K. Rowling, Harry Potter et les Reliques de la Mort (2007), Chapitres 18 et 23 + Les Animaux Fantastiques."
+            },
+            {
+                id: 37,
+                question: "Quelle est la signification symbolique du fait que la baguette de Harry soit en bois de houx ?",
+                options: ["Le houx est le bois traditionnel des sorciers du Pays de Galles, région d'origine supposée des Potter selon le registre des familles sorcières pures-sang d'Ollivander", "Le houx est associé à la protection contre le mal et les entités malignes dans la tradition folklorique celtique — une coïncidence symbolique avec le destin de Harry selon Rowling", "Le houx est le bois le moins compatible avec les sorts de malédiction noire, ce qui explique que Harry soit naturellement maladroit avec tous les Sortilèges Impardonnables", "Le houx symbolise la mort et le renouveau dans la tradition celtique — cohérent avec le destin de Harry"],
+                correct: 3,
+                explanation: "J.K. Rowling a confirmé dans des interviews que le houx a une signification symbolique liée à la mort et au renouveau dans la tradition celtique et nordique — particulièrement approprié pour un personnage dont la vie entière tourne autour de la mort (celle de ses parents, la sienne supposée, celle de Voldemort). Ollivander dit que 'le houx est utilisé pour repousser le mal' — protection naturelle pour l'Élu.",
+                source: "J.K. Rowling, interviews et notes sur Pottermore — symbolisme des bois de baguette."
+            },
+            {
+                id: 38,
+                question: "Que se passe-t-il exactement dans la Gare du Paradis (King's Cross) quand Harry 'meurt' dans la forêt ?",
+                options: ["Harry revit en accéléré toutes ses expériences de vie dans un espace hors du temps, et la chose gémissante sous le banc représente sa propre mort qu'il doit choisir d'accepter ou refuser", "Harry entre dans un espace liminal entre vie et mort où Dumbledore lui révèle la vérité sur les Horcruxes, Voldemort et son propre rôle — et lui laisse choisir de revenir ou de 'partir'", "Harry voyage dans le temps et observe le moment précis de la mort de ses parents pour comprendre le sacrifice de Lily avant de revenir dans son propre corps dans la forêt", "Harry entre dans un espace entre vie et mort où Dumbledore l'accueille — l'image de Voldemort bébé représente son âme blessée libérée de Harry"],
+                correct: 3,
+                explanation: "Quand Voldemort frappe Harry avec Avada Kedavra dans la forêt, ce n'est pas Harry qui meurt mais le Horcruxe en lui. Harry se retrouve dans un espace liminal (King's Cross) où Dumbledore l'attend. La créature pitoyable sous le banc est le fragment d'âme de Voldemort libéré de Harry. Dumbledore explique toute la vérité et lui dit qu'il peut choisir de 'prendre le train' (mourir vraiment) ou de revenir.",
+                source: "J.K. Rowling, Harry Potter et les Reliques de la Mort (2007), Chapitre 35 — Le Prince qui était l'Élu."
+            },
+            {
+                id: 39,
+                question: "Combien de temps exactement Harry a-t-il passé dans le placard sous l'escalier chez les Dursley ?",
+                options: ["Depuis l'âge de 2 ans jusqu'à ses 11 ans — soit 9 ans, Pétunia ayant décidé de l'y mettre suite au premier incident magique involontaire avec la nourriture du chat Tibbles", "Depuis la nuit de son arrivée le 2 novembre 1981 jusqu'à l'été de ses 10 ans — soit presque 9 ans, date à laquelle Vernon lui attribue la chambre de Dudley comme faveur", "Depuis l'âge de 4 ans jusqu'à ses 11 ans — soit 7 ans, ses premières années se passant dans le lit de Dudley avant que le placard devienne sa chambre permanente", "Depuis ses premières années jusqu'à ses 11 ans — il y vit jusqu'à la lettre de Poudlard (environ 10 ans)"],
+                correct: 3,
+                explanation: "Harry a grandi dans le placard sous l'escalier du 4 Privet Drive dès ses premières années — le récit implique qu'il y vit depuis son enfance jusqu'à l'arrivée des lettres de Poudlard à ses 11 ans. J.K. Rowling ne donne pas l'âge exact auquel il y a été placé, mais les Dursley le traitent comme un fardeau dès le début. Ce n'est qu'après la pression des lettres envahissantes qu'ils lui donnent la chambre de Dudley.",
+                source: "J.K. Rowling, Harry Potter à l'École des Sorciers (1997), Chapitres 2-4 — la vie chez les Dursley."
+            },
+            {
+                id: 40,
+                question: "Quelle preuve définitive Dumbledore a-t-il que Harry doit se laisser tuer par Voldemort pour détruire le Horcruxe en lui ?",
+                options: ["La Pensine de Rogue révèle un souvenir de Lily expliquant à Dumbledore que son sacrifice avait transféré un fragment d'âme dans Harry, anticipation que Lily avait eue dans ses derniers instants", "Les notes de recherche de Dumbledore sur les Horcruxes lui ont permis de calculer mathématiquement que le huitième fragment d'âme de Voldemort ne pouvait se trouver que dans Harry", "Un oracle de la Pensine de Nicolas Flamel consulté par Dumbledore en 1982 lui a révélé que Harry était porteur d'un fragment d'âme et qu'il devrait mourir pour le libérer", "Les souvenirs de Rogue (Toujours) révèlent que Harry est un Horcruxe et doit mourir — mais Dumbledore ne l'a pas dit à Harry directement"],
+                correct: 3,
+                explanation: "C'est dans les souvenirs que Rogue verse dans la Pensine juste avant de mourir que Harry découvre la vérité : Dumbledore avait dit à Rogue que Harry devait mourir, et qu'il ne fallait surtout pas le lui dire avant le bon moment. Le mot 'Toujours' ('Always') dans ces souvenirs révèle aussi l'amour éternel de Rogue pour Lily — l'une des scènes les plus marquantes de la saga.",
+                source: "J.K. Rowling, Harry Potter et les Reliques de la Mort (2007), Chapitre 33 — La Biche."
+            },
+            {
+                id: 41,
+                question: "Quel est l'anagramme exact de 'Tom Marvolo Riddle' en anglais, et comment la traduction française a-t-elle résolu ce défi ?",
+                options: ["En anglais, c'est l'anagramme de 'Lord Voldemort is real'. Le traducteur français a gardé la version anglaise en notant dans une astérisque la solution originale pour les lecteurs francophones", "En anglais, 'I am Tom Riddle Lord'. Le traducteur français Henri Noguière a changé le prénom en 'Elvis' pour conserver la structure de l'anagramme en français", "En anglais, 'Marvolo is Lord Tomed'. Jean-François Ménard a utilisé 'Tom Elvis Jedusor' car 'Jedusor' contient les bonnes lettres pour former 'Je suis Voldemort'", "En anglais : 'I am Lord Voldemort'. En français : 'Tom Elvis Jedusor' = anagramme de 'Je suis Voldemort'"],
+                correct: 3,
+                explanation: "En anglais, 'Tom Marvolo Riddle' est l'anagramme parfait de 'I am Lord Voldemort'. En français, Jean-François Ménard a brillamment adapté : 'Tom Elvis Jedusor' est l'anagramme parfait de 'Je suis Voldemort'. Il a choisi 'Elvis' comme deuxième prénom inventé et 'Jedusor' (avec toutes les bonnes lettres) pour préserver l'effet dramatique de la révélation dans la Chambre des Secrets.",
+                source: "J.K. Rowling, Harry Potter et la Chambre des Secrets (1998) + interview Jean-François Ménard sur la traduction."
+            },
+            {
+                id: 42,
+                question: "Qu'est-ce que le Sortilège de Contre-Malédiction (Counter-Curse) que Rogue improvise pour empêcher Quirrell de désarçonner Harry lors du match de Quidditch ?",
+                options: ["Rogue utilise Contego Stabilium, un sort de stabilisation qu'il apprend à Harry discrètement lors d'une rencontre fortuite dans un couloir avant le match", "Rogue utilise le sortilège de contre-malédiction standard Finite Incantatem qu'il prononce en latin à distance, annulant les effets du sort de Quirrell sur le balai", "Rogue marée le sortilège en murmurant une incantation personnelle non répertoriée qu'il a lui-même développée pendant ses recherches en magie noire avancée", "Rogue murmure un contre-sort en maintenant un contact visuel continu sur Quirrell pour briser le sortilège — Hermione interrompt cela en mettant le feu à sa robe"],
+                correct: 3,
+                explanation: "Hermione aperçoit Rogue en train de fixer Harry en murmurant sans interruption — ce qu'elle interprète comme un sort malveillant sur Harry. Elle met le feu à la robe de Rogue pour l'interrompre. En réalité, Rogue murmurait un contre-sort pour neutraliser le sort de Quirrell sur le Nimbus. C'est l'un des nombreux malentendus dramatiques construits par Rowling pour masquer la vérité sur Rogue jusqu'à la fin.",
+                source: "J.K. Rowling, Harry Potter à l'École des Sorciers (1997), Chapitre 11 + révélation finale Chapitre 17."
+            },
+            {
+                id: 43,
+                question: "Quelle est l'origine du nom 'Poudlard' (Hogwarts) selon J.K. Rowling ?",
+                options: ["Rowling a inventé 'Hogwarts' en combinant 'hog' (cochon) et 'wart' (verrue), une image délibérément peu glamour pour contraster avec la majesté du château", "'Hogwarts' vient du nom d'une variété de plante sauvage (Hogwort) que Rowling a aperçue dans un jardin botanique de Londres et trouvée suffisamment magique pour nommer son école", "Rowling s'est inspirée de 'Hog's Norton', village fictif anglais apparu dans plusieurs œuvres littéraires du XIXe siècle et symbolisant la rusticité provinciale britannique", "Rowling a dit l'avoir inventé 'out of nowhere' — la fleur Hogwort lui est revenue en mémoire plus tard"],
+                correct: 3,
+                explanation: "J.K. Rowling a déclaré dans des interviews qu'elle ne se souvient pas d'où vient 'Hogwarts' — le nom lui est venu spontanément. Elle a mentionné plus tard avoir peut-être inconsciemment retenu le nom de la plante 'Hogwort' (Croton capitatus) vue dans le jardin botanique de Kew Gardens à Londres. Elle a précisé que 'hog' (porc) et 'wart' (verrue) ne faisaient pas partie d'une intention délibérée.",
+                source: "J.K. Rowling, interviews diverses — origine du nom Hogwarts."
+            },
+            {
+                id: 44,
+                question: "Pourquoi Dumbledore n'a-t-il pas détruit l'Anneau de Marvolo (Horcruxe + Pierre de Résurrection) sans en porter les conséquences létales ?",
+                options: ["Car Dumbledore ignorait que l'anneau était un Horcruxe et a cru qu'il pouvait neutraliser la Pierre de Résurrection sans risque en utilisant l'Épée de Gryffondor sur l'anneau", "Car Dumbledore savait que l'anneau était un Horcruxe et piégé, mais a délibérément choisi de le détruire sans protection pour accepter les conséquences de sa curiosité et de son péché d'orgueil", "Car Dumbledore a utilisé l'Épée de Gryffondor imprégnée de venin de Basilic pour briser l'anneau, mais la malédiction résiduelle de Voldemort a tout de même pénétré dans sa main", "Dumbledore a mis l'anneau sans réfléchir, espérant voir Ariana — il savait le risque mais a cédé à la tentation"],
+                correct: 3,
+                explanation: "Rogue révèle la vérité dans les souvenirs : Dumbledore a mis l'Anneau au doigt sans précaution — un moment de faiblesse humaine où il a cédé à l'espoir de revoir Ariana et ses proches via la Pierre de Résurrection. La malédiction de Voldemort s'est déclenchée immédiatement. Rogue a réussi à la contenir dans sa main grâce à de puissants contre-sortilèges, mais Dumbledore était condamné à mourir dans l'année.",
+                source: "J.K. Rowling, Harry Potter et les Reliques de la Mort (2007), Chapitre 33 — souvenirs de Rogue."
+            },
+            {
+                id: 45,
+                question: "Quel est le destin de chacune des Reliques de la Mort à la fin du tome 7 ?",
+                options: ["La Baguette de Sureau est cassée et enterrée avec Dumbledore. La Pierre est posée dans la forêt. La Cape est conservée par Harry pour toujours comme héritage familial des Peverell.", "La Baguette est rendue à Ollivander pour être détruite. La Pierre est fondue par les gobelins de Gringotts. La Cape est donnée au Musée de la Magie à des fins éducatives.", "Les trois Reliques sont réunies puis scellées dans le coffre de Gringotts par le Ministère de la Magie pour éviter toute future tentative de les rassembler par un sorcier ambitieux.", "La Baguette est replacée dans le tombeau de Dumbledore. La Pierre est perdue dans la Forêt Interdite. La Cape reste à Harry."],
+                correct: 3,
+                explanation: "À la fin des Reliques de la Mort : Harry replace la Baguette de Sureau dans le tombeau de Dumbledore (pour qu'elle perde son pouvoir à sa mort naturelle), jette la Pierre de Résurrection dans la Forêt Interdite (ne voulant pas s'y attarder), et garde la Cape d'Invisibilité — son héritage familial légitime. Il refuse délibérément de réunir les Reliques pour devenir Maître de la Mort.",
+                source: "J.K. Rowling, Harry Potter et les Reliques de la Mort (2007), Chapitre 36 — Le Problème avec Dumbledore."
+            },
+            {
+                id: 46,
+                question: "Quel rôle exact joue Kreacher dans la destruction du médaillon de Voldemort ?",
+                options: ["Kreacher forge lui-même la réplique du médaillon vide que R.A.B. a laissé dans la grotte, ayant appris la technique auprès des gobelins pour honorer la mémoire de son maître Regulus", "Kreacher révèle à Harry l'emplacement du vrai médaillon après que Harry le traite enfin avec respect, et aide à préparer l'embuscade pour voler le médaillon au Ministère", "Kreacher retrouve le vrai médaillon dans les décombres du Manoir Black et le remet à Hermione qui avait percé le mystère de R.A.B. en consultant les archives de Poudlard", "Kreacher mène l'attaque des elfes dans la bataille de Poudlard — sa loyauté reconnue par Harry déclenche la participation des elfes à la bataille"],
+                correct: 1,
+                explanation: "Après que Harry traite Kreacher avec respect (lui offrant le médaillon de Regulus comme cadeau) et écoute l'histoire de Regulus avec compassion, Kreacher révèle que le vrai médaillon a été volé par Mundungus Fletcher. Il aide ensuite à retrouver Mundungus et à planifier le vol du médaillon au Ministère de la Magie. Ce traitement de Kreacher par Harry est un exemple central du thème du respect des créatures magiques.",
+                source: "J.K. Rowling, Harry Potter et les Reliques de la Mort (2007), Chapitres 10 et 13."
+            },
+            {
+                id: 47,
+                question: "Quelle est la différence entre Légillimancie et Occlumancie dans la saga ?",
+                options: ["La Légillimancie lit les pensées conscientes actives, l'Occlumancie lit les souvenirs inconscients enfouis — deux faces d'une même discipline selon le manuel de référence de Poudlard", "La Légillimancie nécessite une baguette et un contact visuel, l'Occlumancie se pratique les yeux fermés en état de méditation active sans instrument magique requis", "La Légillimancie est offensive (lire les esprits) et nécessite Legilimens, l'Occlumancie est défensive (bloquer) et requiert un esprit vide", "La Légillimancie permet de projeter de faux souvenirs dans l'esprit d'autrui, l'Occlumancie permet de lire les souvenirs des autres à distance sans contact visuel direct"],
+                correct: 2,
+                explanation: "La Légillimancie (avec le sortilège 'Legilimens') est l'art de pénétrer l'esprit d'une autre personne pour en lire les pensées, émotions et souvenirs. L'Occlumancie est l'art défensif de fermer et sceller son esprit contre cette intrusion, nécessitant de vider son esprit de toute émotion. Voldemort est le meilleur Légilimaniste, Rogue maîtrise les deux. C'est pourquoi Dumbledore confie l'enseignement de l'Occlumancie à Rogue pour Harry.",
+                source: "J.K. Rowling, Harry Potter et l'Ordre du Phénix (2003), Chapitre 24 — Occlumency."
+            },
+            {
+                id: 48,
+                question: "Quel est le texte exact gravé sur la pierre tombale des parents de Harry à Godric's Hollow ?",
+                options: ["'James Potter, né le 27 mars 1960, mort le 31 octobre 1981. Lily Potter, née le 30 janvier 1960, morte le 31 octobre 1981. Victimes de la haine, gardiens de l'amour.'", "'Ici reposent James Potter et Lily Evans Potter, morts pour leur fils. L'amour ne meurt pas.'", "'The last enemy that shall be destroyed is death' — La dernière ennemie qui sera détruite, c'est la mort (1 Corinthiens 15:26)'", "'James Potter 1960–1981, Lily Potter 1960–1981 — La dernière ennemie qui sera détruite, c'est la mort'"],
+                correct: 3,
+                explanation: "La citation sur la tombe de James et Lily Potter est tirée de 1 Corinthiens 15:26 : 'The last enemy that shall be destroyed is death' ('La dernière ennemie qui sera détruite, c'est la mort'). Hermione précise à Harry que cela ne signifie pas accepter la mort comme un ami (comme Voldemort) mais la surmonter de l'intérieur. C'est l'un des passages les plus chrétiens de la saga selon les analyses littéraires.",
+                source: "J.K. Rowling, Harry Potter et les Reliques de la Mort (2007), Chapitre 16 + 1 Corinthiens 15:26."
+            },
+            {
+                id: 49,
+                question: "Pourquoi Ron abandonne-t-il Harry et Hermione pendant leur quête des Horcruxes et comment revient-il ?",
+                options: ["Ron part car Hermione lui révèle accidentellement via Legillimancie qu'elle aime secrètement Harry depuis la troisième année — Ron rentre chez lui pour réfléchir avant de revenir trois semaines plus tard", "Ron est temporairement possédé par le médaillon-Horcruxe qui amplifie ses peurs et jalousies, et part après une dispute. Il revient grâce à la radio Potterwatch qui lui donne l'emplacement de Harry", "Ron est rappelé de force par le Ministère via une Convocation Magique Obligatoire qui lui ordonne de se présenter immédiatement, menaçant sa famille de représailles s'il n'obtempère pas", "Le médaillon-Horcruxe amplifie sa jalousie et ses peurs — il revient grâce à la radio 'Potterwatch' et à sa Déluminatrice qui lui indique le chemin"],
+                correct: 3,
+                explanation: "Le médaillon de Voldemort (Horcruxe) doit être porté à tour de rôle, et il amplifie les peurs et ressentiments les plus profonds du porteur. Pour Ron : la jalousie d'Harry, la peur d'être moins important, la honte sur sa famille. Il part après une dispute violente. La Déluminatrice que Dumbledore lui a léguée capte le son de voix de Harry et Hermione et le guide pour les retrouver dans la forêt.",
+                source: "J.K. Rowling, Harry Potter et les Reliques de la Mort (2007), Chapitres 15 et 19."
+            },
+            {
+                id: 50,
+                question: "Quel est le mot de passe de la Salle Commune de Gryffondor qui change régulièrement, et qui en est le gardien ?",
+                options: ["Le mot de passe est choisi par Dumbledore et transmis par hibou aux Prefets chaque lundi matin — le gardien est Sir Cadogan, portrait itinérant remplaçant souvent la Dame de Gros Gorge", "Le mot de passe est défini par le capitaine de Quidditch de Gryffondor au début de chaque mois — la Dame de Gros Gorge refuse d'ouvrir à quiconque ne le prononce pas correctement", "Le mot de passe est choisi par Percy Weasley pendant les 3 premières années de Harry car il est Prefet — la Dame de Gros Gorge est une portrait de femme qui refuse les mots étrangers", "Le mot de passe change régulièrement (ex : 'Caput Draconis', 'Piertotum Locomotor') — la gardienne est la Dame de Gros Gorge, un portrait"],
+                correct: 3,
+                explanation: "La Salle Commune de Gryffondor est gardée par le portrait de la Dame de Gros Gorge (Fat Lady), une femme enjouée qui exige le bon mot de passe pour s'ouvrir. Le mot change régulièrement : 'Caput Draconis' en première année, 'Fortuna Major' en troisième, etc. En tome 3, Sirius Black griffe son portrait (la remplaçant par Sir Cadogan) quand elle refuse de lui ouvrir sans le mot de passe.",
+                source: "J.K. Rowling, saga Harry Potter — la Dame de Gros Gorge apparaît dès l'École des Sorciers, Chapitre 7."
+            },
+            {
+                id: 50,
+                type: "vrai_faux",
+                question: "Hermione Granger est née le 19 septembre, ce qui en fait une Vierge.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! J.K. Rowling a confirmé qu'Hermione Granger est née le 19 septembre. Cela en fait une Vierge selon l'astrologie occidentale. Son anniversaire tombe pendant les premières semaines de l'année scolaire à Poudlard.",
+                source: "J.K. Rowling via Twitter (2004) et Pottermore - Hermione née le 19 septembre."
+            },
+            {
+                id: 51,
+                type: "vrai_faux",
+                question: "Voldemort n'a jamais utilisé lui-même le sortilège Avada Kedavra contre Harry dans les livres.",
+                options: ["Vrai", "Faux"],
+                correct: 1,
+                explanation: "C'est faux ! Voldemort utilise le sortilège Avada Kedavra contre Harry à plusieurs reprises. Il le lance notamment sur Harry bébé (ce qui crée la cicatrice), et de façon décisive dans Harry Potter et les Reliques de la Mort dans la Forêt Interdite, où Harry 'meurt' temporairement avant de revenir à la vie grâce aux Horcruxes.",
+                source: "J.K. Rowling - Harry Potter et les Reliques de la Mort (2007) : Avada Kedavra utilisé sur Harry dans la forêt."
+            },
+            {
+                id: 52,
+                type: "vrai_faux",
+                question: "Le Choixpeau Magique a hésité pendant plusieurs minutes avant de placer Harry en Gryffondor.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Le Choixpeau Magique met presque quatre minutes à décider pour Harry (ce sont les fameux 'nearly hatted' ou 'hat stall' dans la version anglaise). Il envisage sérieusement Serpentard, considérant que Harry a le courage, la ruse et la volonté d'y réussir. C'est Harry lui-même qui insiste mentalement pour ne pas aller en Serpentard.",
+                source: "J.K. Rowling - Harry Potter à l'École des Sorciers, Chapitre 7 : le Choixpeau hésite longuement pour Harry."
             }
         ]
     }
