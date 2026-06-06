@@ -8277,7 +8277,7 @@ const quizzesData = {
             {
                 id: 11,
                 question: "Quelle est la technique innée de Ryomen Sukuna révélée dans la saga ?",
-                options: ["Dismantle & Cleave (Découper", "Malevolent Shrine (Sanctuaire", "Les deux sont ses", "Fire Arrow"],
+                options: ["Dismantle & Cleave (Découper & Trancher)", "Malevolent Shrine (Sanctuaire Maléfique)", "Les deux sont ses techniques", "Fire Arrow"],
                 correct: 2,
                 explanation: "Sukuna possède deux techniques tranchantes : Dismantle (Kaiho — découpe non ciblée) et Cleave (Saisoku — découpe adaptée à la durabilité de la cible). Son Expansion de Domaine est le Malevolent Shrine (Juku Shinzen — Sanctuaire Maléfique), unique en son genre car il ne crée pas de barrière close — il amplifie ses techniques sur une zone extérieure.",
                 source: "Gege Akutami — Jujutsu Kaisen, techniques de Sukuna révélées progressivement."
@@ -8559,6 +8559,538 @@ const quizzesData = {
                 correct: 0,
                 explanation: "Vrai ! Le passé de Gojo et Geto est exploré dans le manga (arc Hidden Inventory) et dans JJK 0. Ils étaient les deux élèves les plus forts de leur génération et meilleurs amis pendant leurs années de lycée. La rupture idéologique de Geto — qui décide que les 'moldus' sont inutiles — est l'une des déchirures les plus tragiques de la série.",
                 source: "Gege Akutami — Jujutsu Kaisen, arc Hidden Inventory / Premature Death, passé de Gojo et Geto."
+            }
+        ]
+    },
+
+    corpsHumain: {
+        title: "Le Corps Humain",
+        description: "Anatomie, physiologie et secrets du corps humain",
+        facile: [
+            {
+                id: 1,
+                question: "Combien d'os possède le corps humain adulte ?",
+                options: ["186", "196", "206", "226"],
+                correct: 2,
+                explanation: "Le squelette adulte compte 206 os. À la naissance, un nourrisson possède environ 270 à 300 os, qui fusionnent progressivement durant l'enfance et l'adolescence. Les os du crâne, par exemple, fusionnent au cours des premières années de vie.",
+                source: "Gray's Anatomy — The Anatomical Basis of Clinical Practice, 41e édition."
+            },
+            {
+                id: 2,
+                question: "Quel est l'organe le plus grand du corps humain ?",
+                options: ["Le foie", "Le cerveau", "La peau", "Les poumons"],
+                correct: 2,
+                explanation: "La peau est l'organe le plus grand du corps humain. Elle couvre en moyenne 1,5 à 2 m² chez un adulte et pèse environ 4 à 5 kg. Elle assure des fonctions de protection, de régulation thermique, de sensation et de synthèse de la vitamine D.",
+                source: "Marieb E.N. — Anatomie et physiologie humaines, 9e édition (2014)."
+            },
+            {
+                id: 3,
+                question: "Combien de dents possède un adulte avec toutes ses dents de sagesse ?",
+                options: ["28", "30", "32", "34"],
+                correct: 2,
+                explanation: "Un adulte possède 32 dents permanentes : 8 incisives, 4 canines, 8 prémolaires et 12 molaires (dont 4 dents de sagesse). En l'absence des dents de sagesse (souvent extraites ou absentes), le nombre est de 28.",
+                source: "Manuel de stomatologie — Anatomie dentaire, Société Française de Stomatologie."
+            },
+            {
+                id: 4,
+                question: "Quel organe pompe le sang dans tout le corps ?",
+                options: ["Le foie", "Les poumons", "Le cœur", "Les reins"],
+                correct: 2,
+                explanation: "Le cœur est la pompe musculaire qui propulse le sang dans tout le corps. Il bat en moyenne 60 à 100 fois par minute au repos, soit environ 100 000 battements par jour. Il propulse environ 5 litres de sang par minute au repos.",
+                source: "Guyton A.C., Hall J.E. — Traité de physiologie médicale, 13e édition."
+            },
+            {
+                id: 5,
+                question: "Quel est le rôle principal des globules rouges ?",
+                options: ["Défendre l'organisme contre les infections", "Transporter l'oxygène dans le sang", "Coaguler le sang", "Produire des anticorps"],
+                correct: 1,
+                explanation: "Les globules rouges (érythrocytes) transportent l'oxygène des poumons vers les tissus grâce à l'hémoglobine, une protéine contenant du fer qui fixe l'O₂. Ils transportent également le CO₂ des tissus vers les poumons pour l'expirer.",
+                source: "Marieb E.N. — Anatomie et physiologie humaines, 9e édition."
+            },
+            {
+                id: 6,
+                question: "De quelle couleur sont les globules rouges ?",
+                options: ["Blancs", "Transparents", "Rouges", "Jaunes"],
+                correct: 2,
+                explanation: "Les globules rouges doivent leur couleur rouge à l'hémoglobine, une protéine contenant du fer. Le fer de l'hémoglobine réagit avec l'oxygène pour former l'oxyhémoglobine, qui est rouge vif. Sans oxygène, elle devient rouge sombre.",
+                source: "Biochimie médicale — Hémoglobine et transport de l'oxygène."
+            },
+            {
+                id: 7,
+                question: "Combien de litres de sang contient environ un adulte ?",
+                options: ["2 à 3 litres", "4 à 6 litres", "7 à 9 litres", "10 à 12 litres"],
+                correct: 1,
+                explanation: "Un adulte moyen contient environ 4,5 à 6 litres de sang, soit 7 à 8% de son poids corporel. Le volume sanguin varie selon le poids, la taille et le sexe. Un homme de 70 kg a environ 5,5 litres de sang.",
+                source: "Guyton A.C., Hall J.E. — Traité de physiologie médicale, 13e édition."
+            },
+            {
+                id: 8,
+                question: "Quel os est le plus long du corps humain ?",
+                options: ["Le radius", "L'humérus", "Le tibia", "Le fémur"],
+                correct: 3,
+                explanation: "Le fémur (os de la cuisse) est le plus long et le plus solide os du corps humain. Il mesure en moyenne 48 cm chez un adulte. Il relie la hanche au genou et supporte tout le poids du corps lors de la marche et de la course.",
+                source: "Gray's Anatomy — The Anatomical Basis of Clinical Practice, 41e édition."
+            },
+            {
+                id: 9,
+                question: "Quel organe filtre le sang et produit l'urine ?",
+                options: ["Le foie", "La rate", "Les reins", "Le pancréas"],
+                correct: 2,
+                explanation: "Les reins filtrent environ 180 litres de sang par jour et produisent 1 à 2 litres d'urine. Chaque rein contient environ un million de néphrons, les unités fonctionnelles de filtration. Ils régulent aussi la pression artérielle et l'équilibre acido-basique.",
+                source: "Brenner B.M. — The Kidney, 10e édition (2016)."
+            },
+            {
+                id: 10,
+                question: "Combien de muscles y a-t-il environ dans le corps humain ?",
+                options: ["Plus de 100", "Plus de 300", "Plus de 600", "Plus de 1000"],
+                correct: 2,
+                explanation: "Le corps humain possède environ 640 à 650 muscles squelettiques, en plus des muscles lisses (viscères) et du muscle cardiaque. Les muscles représentent 40 à 45% du poids corporel chez un adulte en bonne santé.",
+                source: "Moore K.L. — Clinically Oriented Anatomy, 8e édition."
+            },
+            {
+                id: 11,
+                question: "Quelle est la partie du cerveau responsable de la mémoire à long terme ?",
+                options: ["Le cervelet", "L'hippocampe", "Le thalamus", "Le cortex moteur"],
+                correct: 1,
+                explanation: "L'hippocampe, situé dans le lobe temporal, joue un rôle central dans la formation et la consolidation de la mémoire à long terme. Les lésions de l'hippocampe provoquent une amnésie antérograde — l'impossibilité de former de nouveaux souvenirs.",
+                source: "Kandel E.R. — Principles of Neural Science, 6e édition (2021)."
+            },
+            {
+                id: 12,
+                question: "Combien de vertèbres compte la colonne vertébrale humaine ?",
+                options: ["24", "29", "33", "36"],
+                correct: 2,
+                explanation: "La colonne vertébrale compte 33 vertèbres : 7 cervicales, 12 thoraciques, 5 lombaires, 5 sacrées (fusionnées en sacrum) et 4 coccygiennes (fusionnées en coccyx). Chez l'adulte, les 9 vertèbres inférieures sont soudées, laissant 24 vertèbres mobiles.",
+                source: "Gray's Anatomy — Colonne vertébrale et rachis."
+            },
+            {
+                id: 13,
+                question: "Quel organe produit la bile ?",
+                options: ["Le pancréas", "La vésicule biliaire", "Le foie", "L'intestin grêle"],
+                correct: 2,
+                explanation: "Le foie produit la bile (environ 600 à 1000 ml par jour), qui est stockée dans la vésicule biliaire et libérée dans le duodénum pour digérer les graisses. Le foie est aussi le principal organe de détoxification et de métabolisme.",
+                source: "Guyton A.C., Hall J.E. — Traité de physiologie médicale."
+            },
+            {
+                id: 14,
+                question: "À quelle température est régulée la chaleur du corps humain en bonne santé ?",
+                options: ["35,5°C", "36°C", "37°C", "38°C"],
+                correct: 2,
+                explanation: "La température corporelle normale est d'environ 37°C (98,6°F), maintenue par la thermorégulation hypothalamique. Elle varie légèrement selon l'heure du jour, l'activité et le site de mesure. Une température > 38°C est considérée comme de la fièvre.",
+                source: "Harrison's Principles of Internal Medicine, 21e édition."
+            },
+            {
+                id: 15,
+                question: "Quel organe du corps humain régénère ses cellules le plus rapidement ?",
+                options: ["Le cerveau", "Les muscles", "L'intestin grêle", "Les os"],
+                correct: 2,
+                explanation: "Les cellules de la muqueuse intestinale (entérocytes) se renouvellent toutes les 2 à 5 jours, ce qui en fait les cellules qui se régénèrent le plus vite. Cette régénération rapide protège l'intestin des dommages causés par les acides digestifs et les bactéries.",
+                source: "Lehninger A.L. — Principles of Biochemistry, 7e édition."
+            },
+            {
+                id: 16,
+                question: "Combien de lobes possèdent les poumons humains au total ?",
+                options: ["3", "4", "5", "6"],
+                correct: 2,
+                explanation: "Le poumon droit possède 3 lobes (supérieur, moyen, inférieur) et le poumon gauche 2 lobes (supérieur et inférieur) — laissant de la place au cœur. Cela fait un total de 5 lobes pulmonaires.",
+                source: "Gray's Anatomy — Anatomie pulmonaire et thoracique."
+            },
+            {
+                id: 17,
+                question: "Quel est le nom du plus petit os du corps humain ?",
+                options: ["L'étrier", "Le marteau", "L'enclume", "Le scaphoïde"],
+                correct: 0,
+                explanation: "L'étrier (stapes) est le plus petit os du corps humain, mesurant environ 3 mm. Il est situé dans l'oreille moyenne avec le marteau (malleus) et l'enclume (incus). Ces trois osselets transmettent les vibrations sonores du tympan à l'oreille interne.",
+                source: "Gray's Anatomy — Anatomie de l'oreille moyenne et ossiculaire."
+            },
+            {
+                id: 18,
+                question: "Quel est le nom du liquide qui lubrifie les articulations ?",
+                options: ["Lymphe", "Sérum", "Liquide synovial", "Plasma"],
+                correct: 2,
+                explanation: "Le liquide synovial est un fluide visqueux produit par la membrane synoviale qui tapisse les articulations mobiles. Il lubrifie le cartilage, réduit la friction, nourrit le cartilage articulaire et absorbe les chocs lors des mouvements.",
+                source: "Marieb E.N. — Anatomie et physiologie humaines."
+            },
+            {
+                id: 19,
+                question: "Quel organe est responsable de la production de l'insuline ?",
+                options: ["Le foie", "Les surrénales", "Le pancréas", "La thyroïde"],
+                correct: 2,
+                explanation: "Le pancréas produit l'insuline dans ses cellules bêta des îlots de Langerhans. L'insuline est l'hormone qui permet au glucose de pénétrer dans les cellules pour produire de l'énergie. Son absence ou son inefficacité provoque le diabète.",
+                source: "Harrison's Principles of Internal Medicine — Diabète et insuline."
+            },
+            {
+                id: 20,
+                question: "Combien de paires de côtes possède l'être humain ?",
+                options: ["10", "11", "12", "14"],
+                correct: 2,
+                explanation: "L'être humain possède 12 paires de côtes (24 côtes au total), attachées à la colonne thoracique. Les 7 premières paires (vraies côtes) s'articulent directement au sternum. Les 3 suivantes (fausses côtes) s'attachent indirectement. Les 2 dernières (côtes flottantes) ne s'attachent pas au sternum.",
+                source: "Gray's Anatomy — Cage thoracique et côtes."
+            },
+            {
+                id: 21,
+                question: "Quel est le muscle le plus puissant du corps humain par rapport à sa taille ?",
+                options: ["Le quadriceps", "Le masséter (muscle de la mâchoire)", "Le grand dorsal", "Le biceps"],
+                correct: 1,
+                explanation: "Le masséter, le muscle principal de la mâchoire, est le muscle le plus puissant proportionnellement à sa taille. Il peut exercer une force de morsure de 70 à 100 kg sur les molaires. Le grand fessier (gluteus maximus) est le plus grand muscle du corps.",
+                source: "Moore K.L. — Clinically Oriented Anatomy — Muscles masticateurs."
+            },
+            {
+                id: 22,
+                question: "Par quel organe entre l'air dans le corps ?",
+                options: ["L'œsophage", "La trachée", "Les bronches", "Le larynx"],
+                correct: 1,
+                explanation: "L'air entre dans le corps par le nez ou la bouche, descend par le pharynx et le larynx, puis emprunte la trachée avant de se diviser en deux bronches (une par poumon). La trachée mesure environ 10 à 12 cm de long.",
+                source: "Gray's Anatomy — Voies aériennes supérieures et inférieures."
+            },
+            {
+                id: 23,
+                question: "De quoi est composé le sang ?",
+                options: ["Uniquement de globules rouges et blancs", "D'eau uniquement", "De plasma, globules rouges, blancs et plaquettes", "De sérum et d'os dissous"],
+                correct: 2,
+                explanation: "Le sang est composé à 55% de plasma (eau, protéines, hormones, nutriments) et à 45% d'éléments figurés : globules rouges (érythrocytes), globules blancs (leucocytes) et plaquettes (thrombocytes). Les globules rouges représentent 99% des cellules sanguines.",
+                source: "Marieb E.N. — Anatomie et physiologie humaines, chapitre Sang."
+            },
+            {
+                id: 24,
+                question: "Quelle est la durée de vie approximative d'un globule rouge ?",
+                options: ["1 semaine", "1 mois", "4 mois", "1 an"],
+                correct: 2,
+                explanation: "Un globule rouge vit environ 120 jours (4 mois). Après ce délai, il est détruit par la rate et le foie. L'hémoglobine est recyclée : le fer est réutilisé pour fabriquer de nouveaux globules, et la bilirubine (déchet) est éliminée par la bile.",
+                source: "Guyton A.C., Hall J.E. — Traité de physiologie médicale — Érythropoïèse."
+            },
+            {
+                id: 25,
+                question: "Quel est le rôle principal du cervelet ?",
+                options: ["La mémoire", "La vision", "La coordination des mouvements et l'équilibre", "La régulation des émotions"],
+                correct: 2,
+                explanation: "Le cervelet, situé à la base du crâne, coordonne les mouvements volontaires, maintient l'équilibre et le tonus musculaire. Il reçoit des informations des muscles, de l'oreille interne et du cortex cérébral pour affiner chaque mouvement.",
+                source: "Kandel E.R. — Principles of Neural Science — Cervelet."
+            },
+            {
+                id: 26,
+                question: "Quelle partie de l'œil est responsable de la mise au point ?",
+                options: ["La rétine", "La cornée", "Le cristallin", "L'iris"],
+                correct: 2,
+                explanation: "Le cristallin est une lentille transparente et flexible qui ajuste sa courbure pour faire la mise au point sur les objets proches ou éloignés — c'est l'accommodation. Avec l'âge, il perd sa flexibilité, causant la presbytie.",
+                source: "Marieb E.N. — Anatomie et physiologie humaines — Œil et vision."
+            },
+            {
+                id: 27,
+                question: "Quel organe est situé dans la cavité abdominale et stocke la bile ?",
+                options: ["La rate", "Le pancréas", "La vésicule biliaire", "L'appendice"],
+                correct: 2,
+                explanation: "La vésicule biliaire est un petit sac membraneux situé sous le foie qui stocke et concentre la bile produite par le foie. Elle libère la bile dans le duodénum lors des repas pour aider à la digestion des lipides.",
+                source: "Gray's Anatomy — Anatomie abdominale et digestive."
+            },
+            {
+                id: 28,
+                question: "Quel est le plus grand os plat du corps humain ?",
+                options: ["L'omoplate", "Le sternum", "L'os iliaque", "L'os occipital"],
+                correct: 2,
+                explanation: "L'os iliaque (ou os coxal) est le plus grand os plat du corps. Il forme, avec le sacrum et le coccyx, le bassin. Il constitue l'attache du membre inférieur au tronc et protège les organes pelviens.",
+                source: "Gray's Anatomy — Os du bassin et membre inférieur."
+            },
+            {
+                id: 29,
+                question: "Combien de dents de lait possède un enfant en denture complète ?",
+                options: ["16", "18", "20", "24"],
+                correct: 2,
+                explanation: "La denture lactéale complète comprend 20 dents de lait : 8 incisives, 4 canines et 8 molaires. Elles commencent à apparaître vers 6 mois et sont toutes présentes vers 2-3 ans. Elles sont remplacées par les dents permanentes entre 6 et 12 ans.",
+                source: "Stomatologie pédiatrique — Denture lactéale et permanente."
+            },
+            {
+                id: 30,
+                question: "Quel sens est associé aux papilles gustatives ?",
+                options: ["L'odorat", "Le toucher", "Le goût", "L'ouïe"],
+                correct: 2,
+                explanation: "Les papilles gustatives, situées sur la langue, les joues et le palais mou, sont les récepteurs du goût. Elles détectent 5 saveurs de base : le sucré, le salé, l'acide, l'amer et l'umami. On en compte environ 10 000 chez un adulte.",
+                source: "Marieb E.N. — Anatomie et physiologie humaines — Sens chimiques."
+            },
+            {
+                id: 101,
+                type: "vrai_faux",
+                question: "Le cœur humain bat environ 100 000 fois par jour.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! À un rythme moyen de 70 battements par minute, le cœur bat environ 100 800 fois par jour, soit plus de 36 millions de fois par an. Au cours d'une vie de 80 ans, il effectue environ 3 milliards de battements sans jamais vraiment s'arrêter.",
+                source: "Guyton A.C., Hall J.E. — Traité de physiologie médicale — Physiologie cardiaque."
+            },
+            {
+                id: 102,
+                type: "vrai_faux",
+                question: "Les ongles et les cheveux continuent de pousser après la mort.",
+                options: ["Vrai", "Faux"],
+                correct: 1,
+                explanation: "Faux ! C'est un mythe populaire. Après la mort, les ongles et cheveux ne poussent plus. Ce qui donne cette impression, c'est la déshydratation des tissus : la peau se rétracte, faisant paraître les ongles et les poils légèrement plus longs.",
+                source: "Forensic pathology — Myths about postmortem changes, BMJ 2003."
+            },
+            {
+                id: 103,
+                type: "vrai_faux",
+                question: "Le foie est le seul organe interne capable de se régénérer complètement.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Le foie possède une capacité de régénération exceptionnelle. Après ablation chirurgicale de 70% de sa masse (hépatectomie partielle), il peut se régénérer à sa taille initiale en quelques semaines grâce à la prolifération des hépatocytes restants.",
+                source: "Michalopoulos G.K. — Liver Regeneration. Science, 2007."
+            }
+        ],
+        moyen: [
+            {
+                id: 11,
+                question: "Quel est le nom de l'hormone produite par la glande thyroïde qui régule le métabolisme ?",
+                options: ["La testostérone", "La thyroxine (T4)", "La mélatonine", "L'adrénaline"],
+                correct: 1,
+                explanation: "La glande thyroïde produit deux hormones principales : la thyroxine (T4) et la triiodothyronine (T3), qui régulent le métabolisme de base, la croissance et le développement. Une thyroïde sous-active (hypothyroïdie) ralentit le métabolisme, une thyroïde hyperactive l'accélère.",
+                source: "Harrison's Principles of Internal Medicine — Thyroïde et métabolisme."
+            },
+            {
+                id: 12,
+                question: "Combien de neurones le cerveau humain contient-il environ ?",
+                options: ["86 millions", "860 millions", "86 milliards", "860 milliards"],
+                correct: 2,
+                explanation: "Le cerveau humain contient environ 86 milliards de neurones (selon les études de Azevedo et al., 2009). Chaque neurone peut former jusqu'à 10 000 synapses, créant un réseau de connexions incroyablement complexe. Les cellules gliales sont encore plus nombreuses.",
+                source: "Azevedo F.A.C. et al. — Equal numbers of neuronal and nonneuronal cells make the human brain. Journal of Comparative Neurology, 2009."
+            },
+            {
+                id: 13,
+                question: "Quel est le rôle du système lymphatique ?",
+                options: ["Pomper le sang", "Produire les hormones", "Drainer les liquides tissulaires et défendre contre les infections", "Digérer les aliments"],
+                correct: 2,
+                explanation: "Le système lymphatique draine l'excès de liquide interstitiel vers le sang, transporte les graisses absorbées par l'intestin et joue un rôle central dans l'immunité via les lymphocytes produits dans les ganglions lymphatiques, la rate et le thymus.",
+                source: "Marieb E.N. — Anatomie et physiologie humaines — Système lymphatique."
+            },
+            {
+                id: 14,
+                question: "Quelle est la différence entre un neurone moteur et un neurone sensoriel ?",
+                options: ["Le moteur transmet les sensations, le sensoriel commande les muscles", "Le moteur commande les muscles, le sensoriel transmet les informations des organes des sens", "Ils ont la même fonction", "Le sensoriel est plus grand que le moteur"],
+                correct: 1,
+                explanation: "Les neurones moteurs (efférents) transmettent les influx du système nerveux central vers les muscles et les glandes pour déclencher une action. Les neurones sensoriels (afférents) transmettent les informations des récepteurs sensoriels (peau, yeux, oreilles…) vers le SNC.",
+                source: "Kandel E.R. — Principles of Neural Science — Classification des neurones."
+            },
+            {
+                id: 15,
+                question: "Quel est le nom de la membrane qui entoure le cœur ?",
+                options: ["La plèvre", "Le péritoine", "Le péricarde", "Le myocarde"],
+                correct: 2,
+                explanation: "Le péricarde est la membrane double qui entoure et protège le cœur. Sa couche externe fibreuse maintient le cœur en place, tandis que la couche interne séreuse produit un liquide lubrifiant réduisant la friction lors des battements.",
+                source: "Gray's Anatomy — Anatomie cardiaque et péricarde."
+            },
+            {
+                id: 16,
+                question: "Quelle est la fonction principale de la rate ?",
+                options: ["Produire l'insuline", "Filtrer le sang et recycler les vieux globules rouges", "Produire la bile", "Réguler la pression artérielle"],
+                correct: 1,
+                explanation: "La rate est le plus grand organe lymphoïde. Elle filtre le sang, détruit les globules rouges vieillis ou défectueux, stocke les plaquettes et les globules blancs, et participe à la réponse immunitaire. Elle peut être ablative sans que cela soit fatal.",
+                source: "Marieb E.N. — Anatomie et physiologie humaines — Rate et immunité."
+            },
+            {
+                id: 17,
+                question: "Qu'est-ce que le cartilage et en quoi diffère-t-il de l'os ?",
+                options: ["Le cartilage est un type d'os mou", "Le cartilage est un tissu conjonctif souple sans vaisseaux sanguins, l'os en a", "Le cartilage est plus dur que l'os", "Ils sont identiques"],
+                correct: 1,
+                explanation: "Le cartilage est un tissu conjonctif souple et élastique, avasculaire (sans vaisseaux sanguins), qui se nourrit par diffusion. L'os est minéralisé (calcium et phosphore) et richement vascularisé. Le cartilage recouvre les surfaces articulaires et compose notamment le nez, les oreilles et les disques intervertébraux.",
+                source: "Marieb E.N. — Anatomie et physiologie humaines — Tissu conjonctif."
+            },
+            {
+                id: 18,
+                question: "Quel est le nom du muscle qui permet la respiration ?",
+                options: ["Le diaphragme", "Le grand pectoral", "Le transverse abdominal", "L'intercostal"],
+                correct: 0,
+                explanation: "Le diaphragme est le principal muscle de la respiration, séparant la cavité thoracique de la cavité abdominale. Sa contraction l'aplatit, augmentant le volume thoracique et créant une pression négative qui aspire l'air dans les poumons (inspiration).",
+                source: "Gray's Anatomy — Muscles respiratoires et diaphragme."
+            },
+            {
+                id: 19,
+                question: "Quelle est la vitesse de conduction d'un influx nerveux dans les fibres myélinisées ?",
+                options: ["1 à 2 m/s", "10 à 20 m/s", "70 à 120 m/s", "300 m/s"],
+                correct: 2,
+                explanation: "Dans les fibres nerveuses myélinisées (entourées d'une gaine de myéline), l'influx nerveux se propage par conduction saltatoire à 70-120 m/s. Sans myéline, la conduction est bien plus lente (0,5-2 m/s). La sclérose en plaques détruit la myéline, ralentissant la conduction.",
+                source: "Kandel E.R. — Principles of Neural Science — Conduction nerveuse."
+            },
+            {
+                id: 20,
+                question: "Combien de phases comprend le cycle cardiaque (battement complet) ?",
+                options: ["1 phase", "2 phases", "3 phases", "4 phases"],
+                correct: 1,
+                explanation: "Le cycle cardiaque comprend 2 phases principales : la systole (contraction des ventricules qui expulsent le sang) et la diastole (relaxation et remplissage des ventricules). La systole dure environ 0,3s et la diastole environ 0,5s pour un rythme de 70 bpm.",
+                source: "Guyton A.C., Hall J.E. — Traité de physiologie médicale — Cycle cardiaque."
+            },
+            {
+                id: 21,
+                question: "Quelle structure relie un muscle à un os ?",
+                options: ["Un ligament", "Un tendon", "Un cartilage", "Une aponévrose"],
+                correct: 1,
+                explanation: "Les tendons sont des cordons fibreux de tissu conjonctif dense qui relient les muscles aux os, transmettant la force de contraction musculaire pour produire le mouvement. Les ligaments, eux, relient les os entre eux au niveau des articulations.",
+                source: "Moore K.L. — Clinically Oriented Anatomy — Tendons et ligaments."
+            },
+            {
+                id: 22,
+                question: "Quelle partie du système nerveux contrôle les fonctions involontaires comme la digestion et la fréquence cardiaque ?",
+                options: ["Le système nerveux somatique", "Le système nerveux autonome", "Le cortex moteur", "Le cervelet"],
+                correct: 1,
+                explanation: "Le système nerveux autonome (SNA) contrôle les fonctions viscérales involontaires : rythme cardiaque, digestion, respiration, sécrétion des glandes, tension artérielle. Il comprend le système sympathique (réponse stress) et parasympathique (repos et digestion).",
+                source: "Guyton A.C., Hall J.E. — Traité de physiologie médicale — SNA."
+            },
+            {
+                id: 23,
+                question: "Où se produit principalement l'absorption des nutriments dans le tube digestif ?",
+                options: ["Dans l'estomac", "Dans le côlon", "Dans l'intestin grêle", "Dans le rectum"],
+                correct: 2,
+                explanation: "L'intestin grêle (duodénum, jéjunum, iléon) est le principal site d'absorption des nutriments. Sa muqueuse est tapissée de villosités et microvillosités formant la 'bordure en brosse', augmentant la surface d'absorption à environ 200-250 m² — la taille d'un terrain de tennis.",
+                source: "Guyton A.C., Hall J.E. — Traité de physiologie médicale — Digestion et absorption."
+            },
+            {
+                id: 24,
+                question: "Quel est le nom de la valve cardiaque qui sépare le ventricule gauche de l'aorte ?",
+                options: ["La valve mitrale", "La valve tricuspide", "La valve pulmonaire", "La valve aortique"],
+                correct: 3,
+                explanation: "La valve aortique (ou sigmoïde aortique) est située entre le ventricule gauche et l'aorte. Elle s'ouvre lors de la systole pour laisser passer le sang vers l'aorte et se ferme lors de la diastole pour éviter le reflux. Elle possède 3 feuillets en forme de croissant.",
+                source: "Gray's Anatomy — Valves cardiaques et circulation."
+            },
+            {
+                id: 25,
+                question: "Quel est le rôle du thymus dans le système immunitaire ?",
+                options: ["Produire les globules rouges", "Former et maturifier les lymphocytes T", "Filtrer le sang", "Produire les anticorps"],
+                correct: 1,
+                explanation: "Le thymus est une glande lymphoïde située derrière le sternum. Il est essentiel à la maturation des lymphocytes T (thymocytes), qui apprennent à distinguer le soi du non-soi. Le thymus est très actif durant l'enfance et involu progressivement à l'âge adulte.",
+                source: "Janeway C.A. — Immunobiology, 9e édition — Thymus."
+            },
+            {
+                id: 201,
+                type: "vrai_faux",
+                question: "Les humains utilisent seulement 10% de leur cerveau.",
+                options: ["Vrai", "Faux"],
+                correct: 1,
+                explanation: "Faux ! C'est l'un des mythes les plus répandus. Les techniques d'imagerie cérébrale (IRM fonctionnelle) montrent que pratiquement toutes les zones du cerveau sont actives à un moment ou un autre. Sur une journée, presque 100% des régions cérébrales sont utilisées.",
+                source: "Radford B. — The Ten-Percent Myth. Skeptical Inquirer, 1999 / confirmé par IRM."
+            },
+            {
+                id: 202,
+                type: "vrai_faux",
+                question: "Le corps humain contient plus de bactéries que de cellules humaines.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Le microbiome humain contient environ 38 000 milliards de bactéries, tandis que le corps compte environ 30 000 milliards de cellules humaines — un ratio d'environ 1,3:1. Ces bactéries (surtout intestinales) jouent des rôles essentiels dans la digestion et l'immunité.",
+                source: "Sender R. et al. — Revised Estimates for the Number of Human and Bacteria Cells in the Body. Cell, 2016."
+            },
+            {
+                id: 203,
+                type: "vrai_faux",
+                question: "Le côté gauche du cerveau contrôle le côté droit du corps.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Le cerveau est croisé : l'hémisphère gauche contrôle le côté droit du corps et vice versa. Cette décussation (croisement) se produit dans le tronc cérébral pour les voies motrices (faisceau pyramidal) et dans la moelle épinière pour certaines voies sensitives.",
+                source: "Kandel E.R. — Principles of Neural Science — Latéralisation cérébrale."
+            }
+        ],
+        difficile: [
+            {
+                id: 31,
+                question: "Quel mécanisme cellulaire permet la production d'énergie (ATP) à partir du glucose ?",
+                options: ["La photosynthèse", "La glycolyse puis la phosphorylation oxydative mitochondriale", "La transcription", "La phagocytose"],
+                correct: 1,
+                explanation: "La production d'ATP à partir du glucose suit deux grandes étapes : la glycolyse (dans le cytoplasme, 2 ATP nets) suivie du cycle de Krebs et de la phosphorylation oxydative (dans les mitochondries, ~34 ATP). La combustion complète d'une molécule de glucose produit 36-38 ATP.",
+                source: "Lehninger A.L. — Principles of Biochemistry — Métabolisme énergétique."
+            },
+            {
+                id: 32,
+                question: "Qu'est-ce que l'hématopoïèse ?",
+                options: ["La formation des os", "La digestion des lipides", "La formation des cellules sanguines dans la moelle osseuse", "La production de kératine"],
+                correct: 2,
+                explanation: "L'hématopoïèse est le processus de formation et de renouvellement des cellules sanguines (globules rouges, blancs et plaquettes) à partir de cellules souches hématopoïétiques dans la moelle osseuse rouge. Environ 200 milliards de globules rouges et 10 milliards de globules blancs sont produits chaque jour.",
+                source: "Hoffbrand A.V. — Essential Haematology, 7e édition."
+            },
+            {
+                id: 33,
+                question: "Quel est le mécanisme d'action des cellules NK (Natural Killer) du système immunitaire ?",
+                options: ["Produire des anticorps", "Détruire directement les cellules infectées par des virus ou les cellules tumorales sans sensibilisation préalable", "Phagocyter les bactéries", "Présenter les antigènes aux lymphocytes T"],
+                correct: 1,
+                explanation: "Les cellules NK (Natural Killer) sont des lymphocytes cytotoxiques innés capables de détruire les cellules infectées ou cancéreuses sans nécessiter de sensibilisation préalable. Elles reconnaissent l'absence de CMH-I (que les cellules tumorales camouflent souvent) et libèrent des perforines et granzymes pour induire l'apoptose.",
+                source: "Janeway C.A. — Immunobiology — Cellules Natural Killer."
+            },
+            {
+                id: 34,
+                question: "Quel est le nom du phénomène où l'ADN est copié en ARN messager ?",
+                options: ["La réplication", "La traduction", "La transcription", "La transduction"],
+                correct: 2,
+                explanation: "La transcription est le processus par lequel l'ARN polymérase copie l'information génétique d'un gène de l'ADN en ARN messager (ARNm). Cet ARNm est ensuite exporté vers les ribosomes pour la traduction en protéines.",
+                source: "Alberts B. — Molecular Biology of the Cell, 6e édition — Transcription."
+            },
+            {
+                id: 35,
+                question: "Quelle hormone est responsable de la régulation du rythme circadien ?",
+                options: ["La sérotonine", "La dopamine", "La mélatonine", "Le cortisol"],
+                correct: 2,
+                explanation: "La mélatonine, sécrétée par la glande pinéale (épiphyse) en réponse à l'obscurité, régule le rythme circadien (cycle veille-sommeil). Sa sécrétion augmente la nuit et est inhibée par la lumière bleue. Elle synchronise l'horloge biologique interne.",
+                source: "Arendt J. — Melatonin and the Mammalian Pineal Gland. Chapman & Hall (1995)."
+            },
+            {
+                id: 36,
+                question: "Qu'est-ce que le réflexe myotatique (ou réflexe ostéotendineux) ?",
+                options: ["La contraction volontaire d'un muscle", "La contraction réflexe involontaire d'un muscle suite à son étirement", "La relaxation musculaire lors du sommeil", "La contraction cardiaque"],
+                correct: 1,
+                explanation: "Le réflexe myotatique est un arc réflexe monosynaptique : l'étirement d'un muscle active ses fuseaux neuromusculaires, qui envoient un signal à la moelle épinière via un neurone afférent Ia, déclenchant immédiatement la contraction du même muscle. Le réflexe rotulien est un exemple classique.",
+                source: "Kandel E.R. — Principles of Neural Science — Réflexes spinaux."
+            },
+            {
+                id: 37,
+                question: "Quel est le nom de la barrière qui protège le cerveau des substances toxiques présentes dans le sang ?",
+                options: ["La membrane arachnoïde", "La dure-mère", "La barrière hémato-encéphalique", "Le plexus choroïde"],
+                correct: 2,
+                explanation: "La barrière hémato-encéphalique (BHE) est formée par les cellules endothéliales des capillaires cérébraux, reliées par des jonctions serrées, et soutenues par les pieds astrocytaires. Elle filtre sélectivement les molécules entrant dans le cerveau, protégeant les neurones des toxines, pathogènes et fluctuations biochimiques.",
+                source: "Abbott N.J. — Structure and function of the blood-brain barrier. Neurobiology of Disease, 2010."
+            },
+            {
+                id: 38,
+                question: "Qu'est-ce que l'apoptose ?",
+                options: ["La multiplication cellulaire", "La mort cellulaire programmée", "La réparation de l'ADN", "La fusion de deux cellules"],
+                correct: 1,
+                explanation: "L'apoptose est la mort cellulaire programmée, un processus actif et ordonné. Elle est essentielle au développement embryonnaire (formation des doigts), à l'élimination des cellules endommagées et à la régulation du système immunitaire. Elle diffère de la nécrose qui est une mort cellulaire accidentelle et inflammatoire.",
+                source: "Alberts B. — Molecular Biology of the Cell — Apoptose."
+            },
+            {
+                id: 39,
+                question: "Quel est le rôle du facteur de Von Willebrand dans la coagulation sanguine ?",
+                options: ["Dissoudre les caillots", "Activer la cascade de coagulation", "Aider les plaquettes à adhérer à la paroi vasculaire lésée", "Produire la thrombine"],
+                correct: 2,
+                explanation: "Le facteur de Von Willebrand (vWF) est une glycoprotéine plasmatique qui médie l'adhésion des plaquettes au sous-endothélium exposé lors d'une lésion vasculaire. Il sert aussi de protéine porteuse pour le facteur VIII. Son déficit cause la maladie de Von Willebrand, la coagulopathie héréditaire la plus fréquente.",
+                source: "Lowe G.D.O. — Von Willebrand Factor. Blood Reviews, 2004."
+            },
+            {
+                id: 40,
+                question: "Quelle est la différence entre immunité humorale et immunité cellulaire ?",
+                options: ["L'immunité humorale implique les lymphocytes T, la cellulaire implique les anticorps", "L'immunité humorale implique les anticorps produits par les lymphocytes B, la cellulaire implique les lymphocytes T cytotoxiques", "Ce sont des synonymes", "L'immunité humorale est innée et la cellulaire est acquise"],
+                correct: 1,
+                explanation: "L'immunité humorale repose sur les lymphocytes B qui produisent des anticorps (immunoglobulines) circulant dans le sang et les fluides — efficace contre les bactéries extracellulaires et virus. L'immunité cellulaire repose sur les lymphocytes T cytotoxiques (CD8+) qui détruisent directement les cellules infectées.",
+                source: "Janeway C.A. — Immunobiology — Immunité humorale vs cellulaire."
+            },
+            {
+                id: 301,
+                type: "vrai_faux",
+                question: "L'ADN humain, s'il était déroulé et étiré, mesurerait environ 2 mètres de long par cellule.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! L'ADN contenu dans le noyau d'une cellule humaine mesure environ 1,8 à 2 mètres si on l'étire complètement. Avec les 37 000 milliards de cellules du corps, cela représente environ 70 milliards de kilomètres d'ADN — soit des aller-retours Terre-Soleil environ 236 fois.",
+                source: "Alberts B. — Molecular Biology of the Cell — Compaction de l'ADN."
+            },
+            {
+                id: 302,
+                type: "vrai_faux",
+                question: "Le cerveau humain consomme environ 20% de l'énergie totale du corps malgré son poids de seulement ~1,5 kg.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Le cerveau représente environ 2% du poids corporel mais consomme 20% de l'oxygène et du glucose totaux. Les neurones sont extrêmement énergivores car ils maintiennent en permanence des gradients ioniques via des pompes Na⁺/K⁺-ATPase. Le cerveau ne stocke quasiment pas d'énergie.",
+                source: "Clarke D.D., Sokoloff L. — Circulation and energy metabolism of the brain. Basic Neurochemistry, 1999."
+            },
+            {
+                id: 303,
+                type: "vrai_faux",
+                question: "Les empreintes digitales se forment définitivement avant la naissance et restent identiques toute la vie.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Les empreintes digitales se développent entre la 10e et la 24e semaine de grossesse, formées par les mouvements du fœtus dans le liquide amniotique combinés à la croissance de la peau. Elles sont uniques à chaque individu (même les jumeaux identiques ont des empreintes différentes) et restent stables toute la vie.",
+                source: "Babler W.J. — Embryologic development of epidermal ridges. Birth Defects, 1991."
             }
         ]
     }

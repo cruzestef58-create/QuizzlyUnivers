@@ -741,6 +741,12 @@ const categories = {
             { icon: '🐋', title: 'Les Mammifères Marins', desc: 'Baleines, dauphins, phoques et merveilles des océans.', url: 'quiz-mammiferes-marins.html' },
         ]
     },
+    sciences: {
+        label: '🔬 Sciences',
+        quizzes: [
+            { icon: '🫀', title: 'Le Corps Humain', desc: 'Anatomie, physiologie et biologie — des organes aux cellules.', url: 'quiz-corps-humain.html' },
+        ]
+    },
     filmsseries: {
         label: '🎬 Films & Séries',
         quizzes: [
@@ -1021,3 +1027,16 @@ function startQuizJujutsuKaisen(difficulty) {
     nextBtn.onclick = () => quizManager.nextQuestion();
 }
 window.startQuizJujutsuKaisen = startQuizJujutsuKaisen;
+
+function startQuizCorpsHumain(difficulty) {
+    document.getElementById('difficulty-selection').style.display = 'none';
+    document.getElementById('quiz-container').style.display = 'block';
+
+    const quizData = quizzesData.corpsHumain;
+    quizManager = new QuizManager(quizData, difficulty);
+    quizManager.init();
+
+    const nextBtn = document.getElementById('next-button');
+    nextBtn.onclick = () => quizManager.nextQuestion();
+}
+window.startQuizCorpsHumain = startQuizCorpsHumain;
