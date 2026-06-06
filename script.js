@@ -633,6 +633,81 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
+// ── Catégories & sous-thèmes ───────────────────────────────────────────────
+
+const categories = {
+    felins: {
+        label: '🐾 Félins',
+        quizzes: [
+            { icon: '🐱', title: 'Les Chats', desc: 'Comportement, biologie et secrets du monde félin domestique.', url: 'quiz-les-chats.html' },
+            { icon: '🦁', title: 'Le Lion', desc: 'Le roi de la savane, sa vie sociale et ses stratégies de chasse.', url: 'quiz-le-lion.html' },
+            { icon: '🐅', title: 'Le Tigre', desc: 'Le plus grand félin sauvage et ses mystères en forêt profonde.', url: 'quiz-le-tigre.html' },
+        ]
+    },
+    oiseaux: {
+        label: '🦅 Oiseaux',
+        quizzes: [
+            { icon: '🐦', title: 'L\'Ornithologie', desc: 'Biologie, migration et comportements du monde des oiseaux.', url: 'quiz-ornithologie.html' },
+            { icon: '🦅', title: 'L\'Aigle Royal', desc: 'Le roi des rapaces et ses capacités de vol exceptionnelles.', url: 'quiz-aigle-royal.html' },
+        ]
+    },
+    canides: {
+        label: '🐕 Canidés',
+        quizzes: [
+            { icon: '🐕', title: 'L\'Éducation Canine', desc: 'Secrets pour éduquer votre chien et comprendre son comportement.', url: 'quiz-education-canine.html' },
+        ]
+    },
+    reptiles: {
+        label: '🐍 Reptiles',
+        quizzes: [
+            { icon: '🐍', title: 'Les Reptiles', desc: 'Serpents, lézards, tortues, crocodiliens et leurs adaptations.', url: 'quiz-reptiles.html' },
+        ]
+    },
+    marins: {
+        label: '🌊 Mammifères Marins',
+        quizzes: [
+            { icon: '🐋', title: 'Les Mammifères Marins', desc: 'Baleines, dauphins, phoques et merveilles des océans.', url: 'quiz-mammiferes-marins.html' },
+        ]
+    },
+};
+
+function openCategory(key) {
+    const cat = categories[key];
+    if (!cat) return;
+
+    // Si un seul quiz, aller directement
+    if (cat.quizzes.length === 1) {
+        window.location.href = cat.quizzes[0].url;
+        return;
+    }
+
+    // Afficher les sous-thèmes
+    const grid = document.getElementById('subthemes-grid');
+    grid.innerHTML = cat.quizzes.map(q => `
+        <div class="theme-card" style="animation: fadeInUp 0.4s ease both;">
+            <div class="theme-icon">${q.icon}</div>
+            <h3>${q.title}</h3>
+            <p>${q.desc}</p>
+            <a href="${q.url}" class="btn btn-primary">Commencer le Quiz</a>
+        </div>
+    `).join('');
+
+    document.getElementById('themes-title').textContent = cat.label;
+    document.getElementById('categories-view').classList.add('hidden');
+    document.getElementById('subthemes-view').classList.remove('hidden');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function closeCategory() {
+    document.getElementById('themes-title').textContent = 'Thèmes de Quiz';
+    document.getElementById('subthemes-view').classList.add('hidden');
+    document.getElementById('categories-view').classList.remove('hidden');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+window.openCategory = openCategory;
+window.closeCategory = closeCategory;
+
 // Expose functions globally (requis pour type="module")
 window.suggestNewTheme = suggestNewTheme;
 window.openReportModal = openReportModal;

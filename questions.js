@@ -570,19 +570,19 @@ const quizzesData = {
             },
             {
                 id: 51,
-                question: "Quel est le mécanisme de la 'protéine C réactive' en tant que marqueur inflammatoire chez le chien ?",
-                options: ["Protéine de transport spécialisée dans l'acheminement du fer vers les tissus musculaires", "Marqueur d'inflammation et d'infection", "Enzyme hépatique catalysant la dégradation des glucides complexes en glucose assimilable", "Facteur de coagulation activé par les lésions vasculaires lors de blessures traumatiques"],
+                question: "Qu'est-ce que la technique 'LAT' (Look At That) utilisée en rééducation des chiens réactifs ?",
+                options: ["Une technique consistant à détourner le regard du chien en tirant sur la laisse dès qu'il aperçoit un congénère", "Un exercice où le chien est récompensé pour regarder calmement le stimulus qui le stresse, remplaçant progressivement la réaction par une anticipation positive", "Un protocole de désensibilisation basé sur l'exposition prolongée au stimulus sans interruption jusqu'à épuisement de la réaction", "Une méthode d'apprentissage par imitation où le chien calme sert de modèle pour le chien réactif en présence du stimulus"],
                 correct: 1,
-                explanation: "La protéine C réactive (CRP) est produite par le foie en réponse à une inflammation ou infection. Chez le chien, un taux élevé de CRP indique qu'il se passe quelque chose d'anormal : infection bactérienne, cancer, trauma tissulaire ou maladie auto-immune. C'est un outil de diagnostic utile en médecine vétérinaire car il permet de détecter une inflammation même avant que les symptômes visibles apparaissent.",
-                source: "Université Vétérinaire d'Immunologie - La PCR est un marqueur important chez le chien."
+                explanation: "Le LAT (Look At That), développé par la comportementaliste Leslie McDevitt, repose sur un principe simple : récompenser le chien chaque fois qu'il regarde calmement le stimulus anxiogène (autre chien, personne, vélo). Le chien apprend que 'voir le trigger = regarder le maître = friandise'. Progressivement, la vue du stimulus déclenche non plus l'alarme mais l'anticipation d'une récompense. C'est une des techniques les plus efficaces pour les chiens réactifs en laisse.",
+                source: "Leslie McDevitt - Control Unleashed : The Reactive Dog Companion (2012)."
             },
             {
                 id: 52,
-                question: "Quel est le rôle du thalamus dans le traitement sensoriel du chien ?",
-                options: ["Synthèse et stockage de la dopamine libérée lors des expériences de récompense chez le chien", "Relai et filtrage des informations sensorielles", "Production de neurotransmetteurs uniquement, sans implication dans le traitement de l'information", "Contrôle moteur des membres antérieurs via des projections directes vers la moelle épinière"],
+                question: "Quelle est la différence entre un 'signal conditionné' et un 'signal poisonné' en éducation canine ?",
+                options: ["Un signal conditionné est enseigné en renforcement positif, tandis qu'un signal poisonné n'a été enseigné qu'en renforcement négatif dès le départ", "Un signal conditionné est correctement associé à un comportement et prédit une conséquence positive, tandis qu'un signal poisonné a été associé à des conséquences mixtes ou aversives, réduisant sa fiabilité", "Un signal conditionné fonctionne dans tous les contextes tandis qu'un signal poisonné ne fonctionne qu'en l'absence de distractions", "Un signal conditionné utilise des mots tandis qu'un signal poisonné utilise des gestes corporels ambigus"],
                 correct: 1,
-                explanation: "Le thalamus est comme un central téléphonique du cerveau : il reçoit presque toutes les informations sensorielles (vue, ouïe, toucher, goût) et les redirige vers les zones du cortex appropriées. Il filtre aussi ces informations pour que le cerveau ne soit pas submergé. Chez le chien, cette structure joue un rôle crucial dans la vigilance et la réaction aux stimuli de l'environnement.",
-                source: "Institut de Neurosciences Comparées - Le thalamus est crucial pour la perception sensorielle."
+                explanation: "Un 'cue poisonné' (poisoned cue) est un signal que le chien a appris à associer à des conséquences négatives en plus des positives : par exemple 'assis' dit avec une voix agacée, suivi parfois d'une punition. Le chien obéit mais lentement, avec hésitation ou queue basse. La solution est souvent de changer complètement le signal et de le reconstruire proprement depuis zéro en association uniquement positive.",
+                source: "Jean Donaldson - The Culture Clash : le signal poisonné nuit à la relation et à la fiabilité."
             },
             {
                 id: 53,
@@ -634,19 +634,19 @@ const quizzesData = {
             },
             {
                 id: 59,
-                question: "Quel est le processus d'équilibre entre inhibition et excitation neuronale ?",
-                options: ["Pas d'équilibre", "Balance entre GABA (inhibition) et glutamate (excitation)", "Surdominance de l'excitation", "Inhibition complète"],
+                question: "Qu'est-ce que le protocole BAT (Behavior Adjustment Training) de Grisha Stewart ?",
+                options: ["Un protocole basé sur la punition négative où l'on retire la récompense dès que le chien réagit, pour lui apprendre à contrôler ses émotions", "Un protocole de rééducation où le chien est exposé à distance sécurisante de son trigger, puis récompensé par la possibilité de s'éloigner librement, renforçant les comportements d'apaisement naturels", "Un protocole d'immersion totale où le chien est exposé directement à la source de stress jusqu'à ce que sa réaction cesse d'elle-même", "Un protocole de renforcement par friandises à haute valeur données immédiatement après chaque réaction intense pour créer une association positive rapide"],
                 correct: 1,
-                explanation: "Le cerveau du chien maintient un équilibre délicat entre excitation (portée par le glutamate) et inhibition (portée par le GABA). Cet équilibre régule le niveau d'éveil, la réactivité et la capacité à apprendre. Certains médicaments anti-anxiété agissent en renforçant le GABA pour calmer un chien trop réactif. Un déséquilibre chronique peut causer épilepsie, hyperactivité pathologique ou troubles anxieux.",
-                source: "Institut de Neurochimie - L'équilibre excitateur-inhibiteur est crucial."
+                explanation: "Le BAT (Behavior Adjustment Training) utilise l'éloignement fonctionnel comme récompense : quand le chien reste calme face à son trigger à distance sécurisante, il est récompensé par le droit de s'éloigner. On exploite ainsi le renforcement naturel que représente la possibilité de fuir le stimulus stressant. Le chien apprend des comportements de communication calme (renifler, détourner la tête) plutôt que de réagir. L'environnement lui-même devient la récompense.",
+                source: "Grisha Stewart - Behavior Adjustment Training 2.0 (2016)."
             },
             {
                 id: 60,
-                question: "Quel est le rôle du cervelet dans la coordination motrice du chien ?",
-                options: ["Traitement des émotions liées à la récompense et intégration des signaux de renforcement positif", "Coordination et équilibre des mouvements", "Synthèse exclusive des neurotransmetteurs inhibiteurs comme le GABA et la glycine", "Stockage des souvenirs procéduraux liés aux séquences motrices apprises par entraînement"],
+                question: "Quelle est la 'règle des 3-3-3' recommandée pour l'adoption d'un chien ?",
+                options: ["3 jours sans sortie, 3 semaines sans contact avec d'autres animaux, 3 mois sans entraînement pour laisser le chien s'habituer sans pression", "3 jours pour décompresser et observer, 3 semaines pour apprendre la routine et les règles, 3 mois pour se sentir vraiment chez lui et exprimer sa vraie personnalité", "3 heures de solitude progressive par jour les 3 premières semaines, puis 3 mois de présence constante avant de reprendre une vie normale", "3 reprises courtes par jour les 3 premières semaines, puis 3 sessions d'apprentissage hebdomadaires pendant 3 mois"],
                 correct: 1,
-                explanation: "Le cervelet est responsable de la coordination motrice fine, de l'équilibre et de la précision des mouvements chez le chien. C'est lui qui permet au chien de courir, sauter et attraper des objets avec précision. Une atteinte du cervelet (hypoplasie cérébelleuse, traumatisme) provoque une démarche 'ébrieuse', des tremblements et une mauvaise coordination — sans douleur, mais de façon visible dès les premiers pas.",
-                source: "Université de Neurosciences Motrices - Le cervelet coordonne les mouvements complexes."
+                explanation: "La règle des 3-3-3 aide les adoptants à avoir des attentes réalistes : les 3 premiers jours, le chien est souvent figé, ne mange pas bien et observe. Les 3 premières semaines, il commence à comprendre la routine et les règles mais peut tester les limites. Après 3 mois, il se sent en sécurité, sa vraie personnalité émerge et l'attachement est solidement établi. Beaucoup de gens abandonnent pendant la phase de test (semaines 2-3), sans savoir que c'est normal.",
+                source: "Shelter Behavior Alliance - La règle des 3-3-3 est un outil standard en adoption animale."
             },
             {
                 id: 61,
@@ -658,11 +658,11 @@ const quizzesData = {
             },
             {
                 id: 62,
-                question: "Quel est le rôle du noyau accumbens dans la récompense ?",
-                options: ["Régulation du cycle veille-sommeil et modulation de l'humeur via la sérotonine", "Centre du plaisir et de la récompense", "Synthèse et libération de cortisol lors des situations de stress aigu ou chronique", "Contrôle des mouvements volontaires précis via des connexions directes au cervelet"],
+                question: "Qu'est-ce que le 'differential reinforcement of incompatible behavior' (DRI) dans l'éducation canine ?",
+                options: ["Une technique consistant à récompenser alternativement deux comportements opposés pour créer un chien plus flexible et polyvalent", "Une technique consistant à renforcer un comportement physiquement incompatible avec le comportement indésirable, de sorte que les deux ne peuvent pas coexister simultanément", "Une méthode punissant le comportement indésirable tout en récompensant immédiatement un comportement neutre non lié", "Un protocole d'extinction accélérée où l'on ignore le comportement problème tout en enrichissant l'environnement de stimulations alternatives"],
                 correct: 1,
-                explanation: "Le noyau accumbens est le centre de la récompense dans le cerveau. Quand le chien reçoit une friandise, un câlin ou réussit une tâche, cette zone libère de la dopamine, créant une sensation de plaisir. C'est ce mécanisme que le renforcement positif exploite. Des études d'IRM fonctionnelle sur des chiens réveillés ont montré que l'odeur de leur maître active plus fortement cette zone que n'importe quelle autre odeur.",
-                source: "Institut de Neurobiologie de la Récompense - L'accumbens libère de la dopamine."
+                explanation: "Le DRI (Differential Reinforcement of Incompatible behavior) est une des techniques les plus élégantes de l'éducation positive : au lieu de punir ce qu'on ne veut pas, on renforce ce qui est physiquement impossible à faire en même temps. Exemple classique : le chien saute sur les gens. Au lieu de punir le saut, on entraîne intensivement '4 pattes au sol' ou 'assis à l'arrivée'. Le chien ne peut pas sauter et être assis simultanément. Les comportements incompatibles remplacent naturellement les problématiques.",
+                source: "Applied Behavior Analysis - Le DRI est un outil standard de modification comportementale."
             },
             {
                 id: 63,
@@ -674,11 +674,11 @@ const quizzesData = {
             },
             {
                 id: 64,
-                question: "Quel est le rôle de l'insula dans l'intéroception du chien ?",
-                options: ["Traitement des signaux proprioceptifs permettant la coordination des membres en terrain irrégulier", "Conscience interne de l'état corporel", "Traitement des informations visuelles à haute résolution via la voie tectale accessoire", "Intégration des sons complexes comme la voix humaine dans une carte acoustique tridimensionnelle"],
+                question: "Comment détecter qu'un chien est 'au-dessus de son seuil' lors d'une séance de désensibilisation ?",
+                options: ["Uniquement par l'aboiement ou la morsure, les autres signaux étant trop subjectifs pour être fiables en séance", "Par des signaux de stress visibles : halètement excessif, incapacité à prendre des friandises, regard fixe, léchage de babines, corps tendu ou impossibilité de se concentrer sur le maître", "Par la durée de la séance : tout chien dépasse son seuil après 15 minutes quelle que soit l'intensité du stimulus", "Par l'absence de réponse aux ordres de base comme 'assis' ou 'couché', qui indique toujours un état de stress excessif"],
                 correct: 1,
-                explanation: "L'insula est une région cérébrale qui traite les signaux venant de l'intérieur du corps : faim, soif, douleur, chaleur, rythme cardiaque. Chez le chien, cette zone lui permet de 'sentir' son état interne et d'adapter son comportement en conséquence (chercher à boire quand soif, se reposer quand fatigué). C'est aussi impliqué dans les émotions viscérales comme le dégoût ou le malaise.",
-                source: "Institut de Neurosciences Intéroceptives - L'insula traite les sensations internes."
+                explanation: "Un chien 'au-dessus de son seuil' ne peut plus apprendre : son cerveau limbique prend le dessus sur le cortex. Les signes clés sont : refus des friandises (même préférées), incapacité de regarder le maître, corps rigide, museau plissé, halètement intense, ou au contraire hypervigilance/fixation. Le signe le plus fiable reste le refus des friandises — si le chien ne mange pas, le stress est trop élevé et la séance doit être immédiatement interrompue.",
+                source: "Patricia McConnell - The Other End of the Leash : lire les signaux de stress canins."
             },
             {
                 id: 65,
@@ -690,27 +690,27 @@ const quizzesData = {
             },
             {
                 id: 66,
-                question: "Quel est le rôle du système nerveux autonome dans la réaction au stress ?",
-                options: ["Transmission des signaux douloureux depuis les récepteurs périphériques jusqu'au thalamus somatosensoriel", "Activation du sympathique et régulation du parasympathique", "Traitement des informations sensorielles proprioceptives issues des fuseaux neuromusculaires", "Coordination des mouvements automatiques des membres via des boucles réflexes spinales"],
+                question: "Qu'est-ce que le 'shaping' par approximations successives en éducation canine ?",
+                options: ["Une technique où l'on guide physiquement le chien dans la position souhaitée en répétant le geste jusqu'à automatisation complète", "Une technique consistant à récompenser progressivement chaque étape se rapprochant du comportement final souhaité, sans jamais guider physiquement le chien", "Un protocole d'entraînement intensif concentré sur une seule journée pour obtenir un comportement complexe en un minimum de temps", "Une méthode basée sur la démonstration du comportement par le maître, que le chien reproduit par imitation directe et récompensée"],
                 correct: 1,
-                explanation: "Face au stress, le système nerveux sympathique s'active : rythme cardiaque accéléré, pupilles dilatées, muscles tendus, digestion ralentie — c'est la réaction 'combat ou fuite'. Le parasympathique fait l'inverse : il calme et régule le retour au repos. Un chien chroniquement stressé reste bloqué en mode sympathique, ce qui épuise son organisme. Les exercices de relaxation et la cohérence cardiaque aident à rééquilibrer ces deux systèmes.",
-                source: "Institut de Physiologie du Stress - L'autonome règle les réactions de stress."
+                explanation: "Le shaping (ou façonnage) est l'art de sculpter un comportement complexe en récompensant des approximations de plus en plus proches du but final. Exemple : pour apprendre 'ramasse ton jouet', on récompense d'abord tout regard vers le jouet, puis le fait de s'en approcher, puis le toucher, puis le prendre en gueule, etc. Le chien joue activement à 'chaud-froid' et résout le problème lui-même. Cette méthode développe considérablement la capacité d'initiative et la tolérance à la frustration.",
+                source: "Karen Pryor - Don't Shoot the Dog : le shaping est la technique de base du clicker training."
             },
             {
                 id: 67,
-                question: "Quel est le processus de 'neural adaptation' ?",
-                options: ["Pas d'adaptation", "Réduction de la réactivité neuronale à un stimulus constant", "Augmentation de la réactivité", "Changement d'emplacement"],
+                question: "Qu'est-ce que le 'management' en éducation canine et pourquoi est-il indispensable ?",
+                options: ["L'ensemble des punitions utilisées pour gérer les comportements indésirables pendant la période d'apprentissage de nouvelles règles", "La prévention des situations où le chien peut pratiquer le comportement indésirable, permettant d'éviter le renforcement du problème pendant que l'apprentissage alternatif se met en place", "La gestion de l'alimentation et de l'exercice physique comme fondation indispensable avant tout travail comportemental", "L'organisation des sessions d'entraînement dans un ordre précis pour maximiser la progression sans créer de confusion chez le chien"],
                 correct: 1,
-                explanation: "L'adaptation neuronale est le mécanisme cellulaire derrière l'habituation : les neurones qui répondent à un stimulus répété sans conséquence réduisent progressivement leur taux de décharge. Le cerveau économise ainsi ses ressources en ne réagissant plus à ce qui est jugé sans importance. Cette adaptation est réversible : si le stimulus redevient associé à une conséquence, les neurones recommencent à réagir fortement.",
-                source: "Université de Neuroplasticité - L'adaptation neuronale crée l'habituation."
+                explanation: "Le management consiste à modifier l'environnement pour que le chien ne puisse pas pratiquer le comportement problème pendant qu'on l'éduque. Exemples : laisse longue pour le chien qui s'échappe, barrière pour celui qui fouille les poubelles, muselière pour le chien agressif en attente de thérapie. Chaque répétition du comportement indésirable le renforce. Sans management, l'éducation combat un problème qui se renforce en parallèle — c'est une bataille perdue d'avance.",
+                source: "Ian Dunbar - Before and After Getting Your Puppy : le management précède toujours l'éducation."
             },
             {
                 id: 68,
-                question: "Quel est le rôle du cortex cingulaire antérieur dans la détection d'erreur ?",
-                options: ["Intégration des signaux olfactifs pour identifier les émotions des congénères à distance", "Détection des erreurs et conflit cognitif", "Régulation de la sécrétion salivaire lors des préparations à l'ingestion d'aliments", "Maintien de l'équilibre postural via l'intégration des informations vestibulaires et proprioceptives"],
+                question: "Comment gérer efficacement l'anxiété de séparation sévère chez le chien ?",
+                options: ["Ignorer complètement le chien pendant 30 minutes avant le départ et à l'arrivée pour lui apprendre que les allées et venues sont sans importance émotionnelle", "Combiner un protocole de désensibilisation aux départs très progressif, un enrichissement de l'environnement en absence, et si nécessaire un traitement médicamenteux prescrit par un vétérinaire comportementaliste", "Augmenter progressivement la durée d'absence quotidienne de 5 minutes par jour jusqu'à tolérance complète, sans autres interventions parallèles", "Adopter un second chien pour que le premier ne soit plus seul, ce qui résout dans la grande majorité des cas l'anxiété de séparation"],
                 correct: 1,
-                explanation: "Le cortex cingulaire antérieur (CCA) est impliqué dans la détection des conflits et des erreurs. Quand un chien fait un mouvement incorrect et ne reçoit pas la récompense attendue, c'est cette zone qui signale 'quelque chose ne va pas'. Ce signal est crucial pour l'ajustement du comportement. Des études montrent que les chiens bien entraînés ont une activité plus efficace de cette zone, ce qui les rend plus rapides à corriger leurs erreurs.",
-                source: "Institut de Neurosciences de l'Erreur - Le CCA détecte les divergences attentionnelles."
+                explanation: "L'anxiété de séparation réelle est un trouble panique, pas un manque de discipline. Le protocole inclut : apprendre au chien à rester seul dans une pièce (départ absences de quelques secondes), désensibiliser les rituels de départ (clés, manteau), enrichir les absences (Kong congelé, musique), et souvent un traitement médicamenteux temporaire (fluoxétine, clomipramine) pour rendre le cerveau réceptif à l'apprentissage. Ajouter un second chien fonctionne rarement car l'anxiété est liée à des humains spécifiques.",
+                source: "Malena DeMartini - Treating Separation Anxiety in Dogs (2014)."
             },
             {
                 id: 69,
@@ -722,11 +722,11 @@ const quizzesData = {
             },
             {
                 id: 70,
-                question: "Quel est le rôle de la substance grise dans le traitement cognitif ?",
-                options: ["Apport métabolique exclusif aux neurones via la production de lactate par les astrocytes", "Traitement de l'information (neurones et synapses)", "Transmission des signaux électriques sur longue distance uniquement via les axones myélinisés", "Stockage permanent des souvenirs déclaratifs dans les réseaux synaptiques corticaux stabilisés"],
+                question: "Qu'est-ce que le 'ratio de renforcement' et comment doit-il évoluer dans l'apprentissage canin ?",
+                options: ["Le nombre de friandises données par session, qui doit rester constant tout au long de l'apprentissage pour éviter de créer une dépendance à la récompense alimentaire", "La fréquence de récompense par rapport aux essais, qui doit être très élevée au début (récompense quasi-systématique) puis diminuer progressivement vers un renforcement variable pour renforcer la résistance à l'extinction", "Le rapport entre récompenses alimentaires et récompenses sociales, qui doit être équilibré à 50/50 pour ne pas créer de hiérarchie entre les types de renforçateurs", "La durée entre deux récompenses consécutives, qui doit être maintenue à un intervalle fixe de 10 secondes pour permettre la consolidation mémorielle optimale"],
                 correct: 1,
-                explanation: "La substance grise contient les corps cellulaires des neurones et leurs connexions locales (synapses) — c'est là que le traitement de l'information se fait réellement. Par opposition, la substance blanche est constituée d'axones myélinisés qui transmettent les signaux à longue distance entre régions cérébrales. Chez le chien, les régions olfactives de la substance grise sont proportionnellement beaucoup plus grandes que chez l'humain, reflétant leur capacité olfactive exceptionnelle.",
-                source: "Institut d'Anatomie Cérébrale - La substance grise effectue les calculs neuronaux."
+                explanation: "Au début d'un apprentissage, un ratio élevé (récompense à chaque bonne réponse) crée l'association rapidement. Puis on passe progressivement à un renforcement variable (parfois la 2e fois, parfois la 5e...). Le renforcement variable est celui qui crée la plus grande résistance à l'extinction — c'est le même principe que les machines à sous. Un chien qui ne sait jamais exactement quand vient la récompense maintient son comportement beaucoup plus longtemps qu'un chien récompensé de façon prévisible.",
+                source: "B.F. Skinner - Schedules of Reinforcement : les horaires de renforcement variable sont les plus résistants à l'extinction."
             }
         ]
     },
@@ -3384,7 +3384,7 @@ const quizzesData = {
             },
             {
                 id: 48,
-                question: "Quel est le rôle de l'enzyme 'catalase' chez les plongeurs marins ?",
+                question: "Quel est le rôle de l'enzyme catalase chez les mammifères marins lors des plongées profondes ?",
                 options: ["Catalyse de la dégradation des peroxydes lipidiques dans les tissus profonds lors des plongées prolongées", "Protection contre radicaux libres de l'oxygène", "Accélération du transit intestinal permettant une extraction maximale des nutriments des proies ingérées", "Régulation de la fréquence respiratoire en modifiant la sensibilité des chémorécepteurs au CO2"],
                 correct: 1,
                 explanation: "Lors de plong\u00e9es profondes suivies de remont\u00e9es rapides, les mammif\u00e8res plongeurs sont expos\u00e9s \u00e0 des cycles d'isch\u00e9mie-reperfusion qui g\u00e9n\u00e8rent des radicaux libres potentiellement dangereux. Les c\u00e9tac\u00e9s et pinniped\u00e8s ont d\u00e9velopp\u00e9 des d\u00e9fenses antioxydantes tr\u00e8s efficaces, incluant des niveaux \u00e9lev\u00e9s de catalase, superoxyde dismutase et glutathion peroxydase dans leurs tissus.",
@@ -3418,11 +3418,11 @@ const quizzesData = {
             },
             {
                 id: 22,
-                question: "Quel est le processus d'embolie gazeuse évité par les plongeurs ?",
-                options: ["Accumulation de dioxyde de carbone", "Accumulation d'azote aux changements de pression", "Suroxygénation", "Dépressurisation brusque"],
+                question: "Comment les cétacés évitent-ils la maladie des caissons lors de plongées profondes ?",
+                options: ["Leur sang contient des enzymes spécifiques neutralisant l\'azote dissous avant qu\'il ne forme des bulles", "Leurs poumons s\'effondrent presque complètement en profondeur, concentrant les gaz dans les voies non vascularisées et empêchant l\'azote de passer dans le sang", "Leur cœur s\'arrête brièvement à chaque changement de pression, évitant toute circulation des gaz dissous", "Leur organisme convertit l\'azote en substances inoffensives grâce à des bactéries symbiotiques intestinales"],
                 correct: 1,
-                explanation: "L'embolie gazeuse est un risque pour les plongeurs humains lors de remont\u00e9es trop rapides : l'azote dissous sous pression forme des bulles. Les mammif\u00e8res plongeurs l'\u00e9vitent car leurs poumons s'effondrent presque compl\u00e8tement en profondeur, concentrant les gaz dans les zones non absorbantes (trach\u00e9e, bronches). De plus, ils commencent leurs plong\u00e9es avec moins d'air qu'un humain.",
-                source: "Institut de Médecine Plongée - Les mammifères marins évitent cette condition."
+                explanation: "Les cétacés évitent la maladie des caissons grâce à une adaptation remarquable : leurs poumons s\'affaissent quasi totalement à partir de 70-100 mètres de profondeur. Les gaz se concentrent alors dans la trachée et les bronches — des zones non vascularisées — ce qui empêche l\'azote de se dissoudre dans le sang. À la remontée, il n\'y a donc aucune bulle d\'azote à libérer.",
+                source: "Institut de Biologie Marine - Adaptations des cétacés aux plongées profondes."
             },
             {
                 id: 23,
@@ -3442,7 +3442,7 @@ const quizzesData = {
             },
             {
                 id: 25,
-                question: "Quel type de hémoglobine ont les plongeurs profonds ?",
+                question: "Quel type d'hémoglobine possèdent les cétacés plongeurs profonds ?",
                 options: ["Hémoglobine standard", "Hémoglobine avec affinité augmentée pour l'oxygène", "Hémoglobine sans fer", "Chlorophylle"],
                 correct: 1,
                 explanation: "La myoglobine des muscles des c\u00e9tac\u00e9s plongeurs est pr\u00e9sente en quantit\u00e9s 10 \u00e0 30 fois sup\u00e9rieures \u00e0 celle des mammif\u00e8res terrestres, donnant aux muscles une couleur presque noire. Cette myoglobine stocke l'oxyg\u00e8ne localement. Leur h\u00e9moglobine sanguine a aussi une affinit\u00e9 accrue pour l'oxyg\u00e8ne \u00e0 basse pression, et leur concentration en globules rouges est 2 fois sup\u00e9rieure \u00e0 celle de l'humain.",
@@ -3498,8 +3498,8 @@ const quizzesData = {
             },
             {
                 id: 52,
-                question: "Quel est le processus d'embolie gazeuse évité par les mammifères marins plongeurs ?",
-                options: ["Accumulation de dioxyde de carbone", "Accumulation d'azote aux changements de pression", "Suroxygénation", "Dépressurisation brusque"],
+                question: "Comment les mammifères marins évitent-ils la formation de bulles d'azote lors des remontées rapides ?",
+                options: ["Leur rate libère une réserve d'érythrocytes supplémentaires neutralisant l'azote avant la remontée", "Leurs poumons s'affaissent totalement à partir de 70-100 m, forçant les gaz vers les voies non vascularisées", "Leur métabolisme anaérobie convertit l'azote en azote organique inoffensif pendant la plongée", "Leurs alvéoles pulmonaires sont imperméables à l'azote grâce à un surfactant chimiquement différent"],
                 correct: 1,
                 explanation: "Lors des plong\u00e9es profondes, les c\u00e9tac\u00e9s \u00e9vitent la maladie des caissons car leurs poumons s'affaissent totalement \u00e0 partir de 70-100 m\u00e8tres de profondeur, for\u00e7ant les gaz vers les voies respiratoires non vascularisées. Ils commencent aussi les plong\u00e9es avec une quantit\u00e9 d'air r\u00e9duite, et leur tol\u00e9rance \u00e0 l'hypoxie est bien sup\u00e9rieure \u00e0 celle des humains.",
                 source: "Institut de Médecine Plongée - Les mammifères marins évitent cette condition."
@@ -3522,7 +3522,7 @@ const quizzesData = {
             },
             {
                 id: 55,
-                question: "Quel type d'hémoglobine ont les plongeurs profonds marins ?",
+                question: "Pourquoi les muscles des cétacés plongeurs ont-ils une couleur presque noire ?",
                 options: ["Hémoglobine standard", "Hémoglobine avec affinité augmentée pour l'oxygène", "Hémoglobine sans fer", "Chlorophylle"],
                 correct: 1,
                 explanation: "La myoglobine des muscles de plong\u00e9e des c\u00e9tac\u00e9s est si concentr\u00e9e qu'elle est quasi-cristalline, une adaptation unique d\u00e9couverte r\u00e9cemment. Cette forme cristalline lui permet d'\u00eatre stock\u00e9e en tr\u00e8s grande quantit\u00e9. Lors d'une plong\u00e9e du cachalot de 90 minutes, 80% de l'oxyg\u00e8ne consomm\u00e9 provient de la myoglobine et de l'h\u00e9moglobine \u2014 pas des poumons.",

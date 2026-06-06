@@ -26,56 +26,51 @@
         </section>
 
         <section class="themes">
-            <h2>Thèmes de Quiz</h2>
-            <div class="theme-grid">
-                <div class="theme-card">
-                    <div class="theme-icon">🐕</div>
-                    <h3>L'Éducation Canine</h3>
-                    <p>Découvrez les secrets pour bien éduquer votre chien et comprendre le comportement canin.</p>
-                    <a href="quiz-education-canine.html" class="btn btn-primary">Commencer le Quiz</a>
+            <h2 id="themes-title">Thèmes de Quiz</h2>
+
+            <!-- Vue catégories -->
+            <div class="theme-grid" id="categories-view">
+                <div class="theme-card category-card" onclick="openCategory('felins')">
+                    <div class="theme-icon">🐾</div>
+                    <h3>Félins</h3>
+                    <p>Chats, lions, tigres — explorez le monde des grands et petits félins.</p>
+                    <div class="sub-count">3 quiz disponibles</div>
+                    <div class="btn btn-primary">Explorer →</div>
                 </div>
-                <div class="theme-card">
-                    <div class="theme-icon">🐱</div>
-                    <h3>Les Félins (Chats)</h3>
-                    <p>Découvrez les secrets du monde des chats et comprenez leur comportement fascinant.</p>
-                    <a href="quiz-les-chats.html" class="btn btn-primary">Commencer le Quiz</a>
-                </div>
-                <div class="theme-card">
-                    <div class="theme-icon">🐦</div>
-                    <h3>L'Ornithologie</h3>
-                    <p>Plongez dans l'univers des oiseaux et de leur biologie fascinante.</p>
-                    <a href="quiz-ornithologie.html" class="btn btn-primary">Commencer le Quiz</a>
-                </div>
-                <div class="theme-card">
-                    <div class="theme-icon">🐍</div>
-                    <h3>Les Reptiles</h3>
-                    <p>Explorez les secrets des serpents, lézards, tortues et autres reptiles.</p>
-                    <a href="quiz-reptiles.html" class="btn btn-primary">Commencer le Quiz</a>
-                </div>
-                <div class="theme-card">
-                    <div class="theme-icon">🐋</div>
-                    <h3>Les Mammifères Marins</h3>
-                    <p>Découvrez les merveilles des océans : baleines, dauphins et autres créatures marines.</p>
-                    <a href="quiz-mammiferes-marins.html" class="btn btn-primary">Commencer le Quiz</a>
-                </div>
-                <div class="theme-card">
-                    <div class="theme-icon">🦁</div>
-                    <h3>Le Lion</h3>
-                    <p>Explorez la vie du roi de la savane, ses comportements et ses stratégies de chasse.</p>
-                    <a href="quiz-le-lion.html" class="btn btn-primary">Commencer le Quiz</a>
-                </div>
-                <div class="theme-card">
+                <div class="theme-card category-card" onclick="openCategory('oiseaux')">
                     <div class="theme-icon">🦅</div>
-                    <h3>L'Aigle Royal</h3>
-                    <p>Découvrez le roi des rapaces et ses capacités exceptionnelles de vol et de chasse.</p>
-                    <a href="quiz-aigle-royal.html" class="btn btn-primary">Commencer le Quiz</a>
+                    <h3>Oiseaux</h3>
+                    <p>Ornithologie générale et le roi des rapaces, l'aigle royal.</p>
+                    <div class="sub-count">2 quiz disponibles</div>
+                    <div class="btn btn-primary">Explorer →</div>
                 </div>
-                <div class="theme-card">
-                    <div class="theme-icon">🐅</div>
-                    <h3>Le Tigre</h3>
-                    <p>Plongez dans la vie du félin le plus majestueux et découvrez ses secrets.</p>
-                    <a href="quiz-le-tigre.html" class="btn btn-primary">Commencer le Quiz</a>
+                <div class="theme-card category-card" onclick="openCategory('canides')">
+                    <div class="theme-icon">🐕</div>
+                    <h3>Canidés</h3>
+                    <p>Tout sur l'éducation et le comportement du chien.</p>
+                    <div class="sub-count">1 quiz disponible</div>
+                    <div class="btn btn-primary">Explorer →</div>
                 </div>
+                <div class="theme-card category-card" onclick="openCategory('reptiles')">
+                    <div class="theme-icon">🐍</div>
+                    <h3>Reptiles</h3>
+                    <p>Serpents, lézards, tortues et crocodiliens.</p>
+                    <div class="sub-count">1 quiz disponible</div>
+                    <div class="btn btn-primary">Explorer →</div>
+                </div>
+                <div class="theme-card category-card" onclick="openCategory('marins')">
+                    <div class="theme-icon">🌊</div>
+                    <h3>Mammifères Marins</h3>
+                    <p>Baleines, dauphins, phoques et autres merveilles des océans.</p>
+                    <div class="sub-count">1 quiz disponible</div>
+                    <div class="btn btn-primary">Explorer →</div>
+                </div>
+            </div>
+
+            <!-- Vue sous-thèmes (masquée par défaut) -->
+            <div id="subthemes-view" class="subthemes-view hidden">
+                <button class="back-btn" onclick="closeCategory()">← Retour aux catégories</button>
+                <div class="theme-grid" id="subthemes-grid"></div>
             </div>
         </section>
 
