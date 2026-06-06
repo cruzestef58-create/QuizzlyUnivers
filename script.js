@@ -75,7 +75,7 @@ class QuizManager {
         let html = `
             <div class="question-number">Question ${this.currentQuestion + 1}</div>
             <div class="question-text">${question.question}</div>
-            ${question.image ? `<div class="question-image"><img src="${question.image}" alt="Illustration de la question" loading="lazy"></div>` : ''}
+            ${question.image ? `<div class="question-image"><img src="${question.image}" alt="Illustration de la question" loading="lazy" onerror="this.parentElement.style.display='none'"></div>` : ''}
         `;
 
         if (question.type === 'vrai_faux') {

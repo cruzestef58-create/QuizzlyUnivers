@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuizzlySpeed — Culture G chrono</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* ══════════════════════════════════════
+           QUIZZLY SPEED — Styles dédiés
+        ══════════════════════════════════════ */
+
+        .speed-hero {
+            text-align: center;
+            padding: 3rem 2rem 2.5rem;
+            background: rgba(255,255,255,0.03);
+            border-radius: 24px;
+            margin-bottom: 2.5rem;
+            border: 1px solid rgba(255, 140, 0, 0.2);
+            box-shadow: 0 0 40px rgba(255, 140, 0, 0.07), inset 0 1px 0 rgba(255,255,255,0.06);
+            animation: fadeInUp 0.7s ease-out;
+            position: relative;
+            overflow: hidden;
+        }
+        .speed-hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(ellipse at 50% 0%, rgba(255,140,0,0.1) 0%, transparent 65%);
+            pointer-events: none;
+        }
+        .speed-hero h1 {
+            font-size: clamp(2rem, 5vw, 3rem);
+            font-weight: 900;
+            background: linear-gradient(135deg, #ff8c00, #ff4500, #ffd700);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 0.5rem;
+        }
+        .speed-hero p {
+            color: #94a3b8;
+            font-size: 1rem;
+            margin-bottom: 0.25rem;
+        }
+
+        /* ── Carte principale du quiz speed ── */
+        .speed-card {
+            background: rgba(255,255,255,0.04);
+            border: 1px solid rgba(255, 140, 0, 0.18);
+            border-radius: 24px;
+            padding: 2rem;
+            max-width: 720px;
+            margin: 0 auto;
+            box-shadow: 0 0 0 1px rgba(255,140,0,0.08), 0 20px 60px rgba(0,0,0,0.4);
+            animation: fadeInUp 0.6s ease-out;
+        }
+
+        /* ── Header in-game : score + question number ── */
+        .speed-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+        .speed-question-num {
+            font-size: 0.9rem;
+            color: #94a3b8;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
+        .speed-score-display {
+            font-size: 1.1rem;
+            font-weight: 800;
+            color: #ffd700;
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        /* ── Timer ── */
+        .timer-wrap {
+            margin-bottom: 1.8rem;
+        }
+        .timer-bar-bg {
+            width: 100%;
+            height: 10px;
+            background: rgba(255,255,255,0.07);
+            border-radius: 99px;
+            overflow: hidden;
+            margin-bottom: 0.5rem;
+        }
+        .timer-bar-fill {
+            height: 100%;
+            border-radius: 99px;
+            transition: width 0.1s linear, background-color 0.5s;
+            background: linear-gradient(90deg, #ff8c00, #ffd700);
+        }
+        .timer-bar-fill.warning {
+            background: linear-gradient(90deg, #ef4444, #ff8c00);
+        }
+        .timer-bar-fill.danger {
+            background: #ef4444;
+            animation: timerPulse 0.5s ease infinite alternate;
+        }
+        @keyframes timerPulse {
+            from { opacity: 1; }
+            to   { opacity: 0.5; }
+        }
+        .timer-number {
+            text-align: center;
+            font-size: 2.2rem;
+            font-weight: 900;
+            color: #ffd700;
+            transition: color 0.3s;
+            line-height: 1;
+        }
+        .timer-number.warning { color: #ff8c00; }
+        .timer-number.danger  { color: #ef4444; }
+
+        /* ── Question text ── */
+        .speed-question-text {
+            font-size: clamp(1rem, 2.5vw, 1.25rem);
+            font-weight: 700;
+            color: #f1f5f9;
+            text-align: center;
+            margin-bottom: 1.8rem;
+            line-height: 1.5;
+            min-height: 3em;
+        }
+
+        /* ── Options ── */
+        .speed-options {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.85rem;
+        }
+        .speed-opt {
+            padding: 1rem 1.2rem;
+            background: rgba(255,255,255,0.05);
+            border: 2px solid rgba(255,255,255,0.1);
+            border-radius: 14px;
+            color: #f1f5f9;
+            font-size: 0.95rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+            text-align: center;
+            line-height: 1.4;
+            position: relative;
+            overflow: hidden;
+        }
+        .speed-opt:hover:not(.answered) {
+            background: rgba(255, 140, 0, 0.12);
+            border-color: rgba(255, 140, 0, 0.5);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 16px rgba(255,140,0,0.15);
+        }
+        .speed-opt.correct {
+            background: rgba(16,185,129,0.2);
+            border-color: rgba(16,185,129,0.7);
+            color: #6ee7b7;
+            transform: scale(1.02);
+        }
+        .speed-opt.wrong {
+            background: rgba(239,68,68,0.15);
+            border-color: rgba(239,68,68,0.5);
+            color: #fca5a5;
+        }
+        .speed-opt.answered {
+            cursor: not-allowed;
+            pointer-events: none;
+        }
+        .speed-opt.reveal-correct {
+            background: rgba(16,185,129,0.12);
+            border-color: rgba(16,185,129,0.4);
+            color: #6ee7b7;
+        }
+
+        /* ── Points earned popup ── */
+        .points-popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0.5);
+            opacity: 0;
+            font-size: 3rem;
+            font-weight: 900;
+            color: #ffd700;
+            text-shadow: 0 0 30px rgba(255,215,0,0.8);
+            pointer-events: none;
+            z-index: 999;
+            transition: none;
+        }
+        .points-popup.show {
+            animation: pointsBurst 0.9s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+        }
+        .points-popup.zero {
+            color: #ef4444;
+            text-shadow: 0 0 20px rgba(239,68,68,0.6);
+        }
+        @keyframes pointsBurst {
+            0%   { transform: translate(-50%, -50%) scale(0.5); opacity: 1; }
+            50%  { transform: translate(-50%, -70%) scale(1.2); opacity: 1; }
+            100% { transform: translate(-50%, -100%) scale(1); opacity: 0; }
+        }
+
+        /* ── Time's up message ── */
+        .timeout-msg {
+            text-align: center;
+            color: #ef4444;
+            font-size: 1rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            animation: fadeInUp 0.3s ease;
+        }
+
+        /* ── Écran de résultats ── */
+        .speed-results {
+            text-align: center;
+            animation: fadeInUp 0.6s ease;
+        }
+        .speed-results h2 {
+            font-size: 2rem;
+            font-weight: 900;
+            margin-bottom: 0.5rem;
+        }
+        .final-score-circle {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            background: conic-gradient(#ffd700 var(--pct), rgba(255,255,255,0.06) 0%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 2rem auto;
+            position: relative;
+        }
+        .final-score-circle::before {
+            content: '';
+            position: absolute;
+            inset: 12px;
+            background: #0d1120;
+            border-radius: 50%;
+        }
+        .final-score-inner {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+        }
+        .final-score-pts {
+            font-size: 2rem;
+            font-weight: 900;
+            color: #ffd700;
+            line-height: 1;
+        }
+        .final-score-label {
+            font-size: 0.75rem;
+            color: #94a3b8;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        .speed-rank {
+            font-size: 1.4rem;
+            font-weight: 800;
+            margin: 0.5rem 0 1.5rem;
+        }
+        .speed-stats {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+        .speed-stat {
+            text-align: center;
+        }
+        .speed-stat-val {
+            font-size: 1.6rem;
+            font-weight: 900;
+            color: #f1f5f9;
+        }
+        .speed-stat-lbl {
+            font-size: 0.75rem;
+            color: #94a3b8;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        /* ── Bouton hero Speed ── */
+        .btn-speed {
+            display: inline-flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.25rem;
+            margin-top: 1rem;
+            padding: 1rem 2.5rem;
+            background: linear-gradient(135deg, rgba(255,140,0,0.15), rgba(255,69,0,0.15));
+            border: 2px solid transparent;
+            border-radius: 50px;
+            text-decoration: none;
+            color: white;
+            font-size: 1.2rem;
+            font-weight: 800;
+            letter-spacing: 0.02em;
+            position: relative;
+            transition: all 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            cursor: pointer;
+            overflow: hidden;
+        }
+        .btn-speed::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            border-radius: 50px;
+            padding: 2px;
+            background: linear-gradient(135deg, #ff8c00, #ff4500, #ffd700);
+            -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            -webkit-mask-composite: xor;
+            mask-composite: exclude;
+            pointer-events: none;
+        }
+        .btn-speed:hover {
+            transform: translateY(-4px) scale(1.04);
+            box-shadow: 0 12px 35px rgba(255,140,0,0.4), 0 0 30px rgba(255,69,0,0.2);
+        }
+        .btn-speed-sub {
+            font-size: 0.8rem;
+            font-weight: 500;
+            opacity: 0.7;
+        }
+
+        /* ── Écran de départ ── */
+        .speed-start {
+            text-align: center;
+            animation: fadeInUp 0.6s ease;
+        }
+        .speed-rules {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            gap: 1rem;
+            margin: 1.5rem 0 2rem;
+        }
+        .speed-rule {
+            background: rgba(255,255,255,0.04);
+            border: 1px solid rgba(255,140,0,0.15);
+            border-radius: 16px;
+            padding: 1.2rem 1rem;
+            text-align: center;
+        }
+        .speed-rule-icon { font-size: 1.8rem; margin-bottom: 0.4rem; }
+        .speed-rule-title { font-size: 0.85rem; font-weight: 700; color: #ffd700; margin-bottom: 0.2rem; }
+        .speed-rule-desc { font-size: 0.8rem; color: #94a3b8; }
+
+        @media (max-width: 520px) {
+            .speed-options { grid-template-columns: 1fr; }
+            .speed-stats { gap: 1.2rem; }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo" onclick="location.href='index.html'">⚡ QuizzlyUnivers</div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="javascript:void(0)" class="suggestion-button" onclick="suggestNewTheme()">Proposer un thème</a></li>
+                <li><a href="javascript:void(0)" class="report-button" onclick="openReportModal()">🐛 Signaler / Suggérer</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container" style="max-width: 800px;">
+
+        <!-- Hero -->
+        <div class="speed-hero">
+            <h1>⚡ QuizzlySpeed</h1>
+            <p>10 questions de Culture Générale · Chronomètre 10 secondes</p>
+            <p>Plus tu réponds vite, plus tu gagnes de points !</p>
+        </div>
+
+        <div class="speed-card" id="speed-card">
+
+            <!-- ─────── Écran de départ ─────── -->
+            <div id="start-screen" class="speed-start">
+                <div class="speed-rules">
+                    <div class="speed-rule">
+                        <div class="speed-rule-icon">⏱️</div>
+                        <div class="speed-rule-title">10 secondes</div>
+                        <div class="speed-rule-desc">Par question</div>
+                    </div>
+                    <div class="speed-rule">
+                        <div class="speed-rule-icon">⚡</div>
+                        <div class="speed-rule-title">Jusqu'à 100 pts</div>
+                        <div class="speed-rule-desc">Plus vite = plus de points</div>
+                    </div>
+                    <div class="speed-rule">
+                        <div class="speed-rule-icon">🎯</div>
+                        <div class="speed-rule-title">10 questions</div>
+                        <div class="speed-rule-desc">Culture générale aléatoire</div>
+                    </div>
+                    <div class="speed-rule">
+                        <div class="speed-rule-icon">🏆</div>
+                        <div class="speed-rule-title">Max 1000 pts</div>
+                        <div class="speed-rule-desc">Score parfait = répondre vite et bien</div>
+                    </div>
+                </div>
+                <button class="btn-speed" onclick="SpeedQuiz.start()" style="font-size: 1.3rem; padding: 1.2rem 3rem;">
+                    ⚡ Lancer le Chrono !
+                    <span class="btn-speed-sub">Prêt(e) ? C'est parti !</span>
+                </button>
+            </div>
+
+            <!-- ─────── Écran de jeu ─────── -->
+            <div id="game-screen" style="display:none;">
+                <!-- Top bar -->
+                <div class="speed-top">
+                    <div class="speed-question-num" id="q-num">Question 1 / 10</div>
+                    <div class="speed-score-display">🏆 <span id="live-score">0</span> pts</div>
+                </div>
+
+                <!-- Timer -->
+                <div class="timer-wrap">
+                    <div class="timer-bar-bg">
+                        <div class="timer-bar-fill" id="timer-bar"></div>
+                    </div>
+                    <div class="timer-number" id="timer-num">10</div>
+                </div>
+
+                <!-- Question -->
+                <div class="speed-question-text" id="question-text"></div>
+
+                <!-- Timeout notice -->
+                <div id="timeout-notice" class="timeout-msg" style="display:none;">⏰ Temps écoulé ! La bonne réponse était…</div>
+
+                <!-- Options -->
+                <div class="speed-options" id="speed-options"></div>
+            </div>
+
+            <!-- ─────── Écran de résultats ─────── -->
+            <div id="results-screen" style="display:none;" class="speed-results">
+                <h2>⚡ Résultats</h2>
+                <div class="final-score-circle" id="score-circle">
+                    <div class="final-score-inner">
+                        <div class="final-score-pts" id="final-pts">0</div>
+                        <div class="final-score-label">/ 1000 pts</div>
+                    </div>
+                </div>
+                <div class="speed-rank" id="speed-rank"></div>
+                <div class="speed-stats">
+                    <div class="speed-stat">
+                        <div class="speed-stat-val" id="stat-correct">0</div>
+                        <div class="speed-stat-lbl">✅ Bonnes réponses</div>
+                    </div>
+                    <div class="speed-stat">
+                        <div class="speed-stat-val" id="stat-wrong">0</div>
+                        <div class="speed-stat-lbl">❌ Mauvaises / Timeout</div>
+                    </div>
+                    <div class="speed-stat">
+                        <div class="speed-stat-val" id="stat-avg">0s</div>
+                        <div class="speed-stat-lbl">⏱️ Temps moyen</div>
+                    </div>
+                </div>
+                <div style="display:flex; gap:1rem; justify-content:center; flex-wrap:wrap;">
+                    <button class="btn btn-primary" onclick="SpeedQuiz.start()" style="font-size:1rem; padding: 0.8rem 2rem;">🔄 Rejouer</button>
+                    <button class="btn btn-secondary" onclick="location.href='index.html'" style="font-size:1rem; padding: 0.8rem 2rem;">🏠 Accueil</button>
+                </div>
+            </div>
+
+        </div><!-- /speed-card -->
+    </div><!-- /container -->
+
+    <!-- Points popup (hors card pour être centré sur écran) -->
+    <div class="points-popup" id="points-popup"></div>
+
+    <footer>
+        <p>&copy; 2026 QuizzlyUnivers — L'Univers du Quizz</p>
+    </footer>
+
+    <script src="questions-speed.js"></script>
+    <script src="script.js"></script>
+    <script>
+    const SpeedQuiz = (() => {
+        const TOTAL_Q = 10;
+        const TIME_LIMIT = 10;
+
+        let questions = [];
+        let currentIdx = 0;
+        let totalScore = 0;
+        let correctCount = 0;
+        let timeTaken = [];
+        let timerInterval = null;
+        let timeLeft = TIME_LIMIT;
+        let answered = false;
+        let startTime = null;
+
+        // ── Helpers ──────────────────────────────
+        function shuffle(arr) {
+            const a = [...arr];
+            for (let i = a.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [a[i], a[j]] = [a[j], a[i]];
+            }
+            return a;
+        }
+
+        function calcPoints(elapsed) {
+            // 0s → 100pts, 10s → 10pts, linéaire
+            const pts = Math.round(100 - (elapsed / TIME_LIMIT) * 90);
+            return Math.max(10, Math.min(100, pts));
+        }
+
+        // ── Screens ──────────────────────────────
+        function showScreen(id) {
+            ['start-screen', 'game-screen', 'results-screen'].forEach(s => {
+                document.getElementById(s).style.display = s === id ? 'block' : 'none';
+            });
+        }
+
+        // ── Start ─────────────────────────────────
+        function start() {
+            questions = shuffle(speedQuestions).slice(0, TOTAL_Q);
+            currentIdx = 0;
+            totalScore = 0;
+            correctCount = 0;
+            timeTaken = [];
+            showScreen('game-screen');
+            renderQuestion();
+        }
+
+        // ── Render Question ───────────────────────
+        function renderQuestion() {
+            const q = questions[currentIdx];
+            answered = false;
+
+            // Header
+            document.getElementById('q-num').textContent = `Question ${currentIdx + 1} / ${TOTAL_Q}`;
+            document.getElementById('live-score').textContent = totalScore;
+            document.getElementById('question-text').textContent = q.question;
+            document.getElementById('timeout-notice').style.display = 'none';
+
+            // Shuffle options (keep track of correct)
+            const opts = q.options.map((text, i) => ({ text, i }));
+            const shuffled = shuffle(opts);
+            const correctShuffledIdx = shuffled.findIndex(o => o.i === q.correct);
+
+            const container = document.getElementById('speed-options');
+            container.innerHTML = '';
+            shuffled.forEach((opt, idx) => {
+                const btn = document.createElement('button');
+                btn.className = 'speed-opt';
+                btn.textContent = opt.text;
+                btn.dataset.originalIdx = opt.i;
+                btn.dataset.shuffledIdx = idx;
+                btn.onclick = () => selectAnswer(btn, idx === correctShuffledIdx, opt.i);
+                container.appendChild(btn);
+            });
+
+            // Timer
+            startTimer(correctShuffledIdx);
+        }
+
+        // ── Timer ─────────────────────────────────
+        function startTimer(correctShuffledIdx) {
+            clearInterval(timerInterval);
+            timeLeft = TIME_LIMIT;
+            startTime = Date.now();
+            updateTimerUI(timeLeft);
+
+            timerInterval = setInterval(() => {
+                timeLeft = Math.max(0, TIME_LIMIT - (Date.now() - startTime) / 1000);
+                updateTimerUI(timeLeft);
+
+                if (timeLeft <= 0) {
+                    clearInterval(timerInterval);
+                    if (!answered) {
+                        onTimeout(correctShuffledIdx);
+                    }
+                }
+            }, 50);
+        }
+
+        function updateTimerUI(t) {
+            const pct = (t / TIME_LIMIT) * 100;
+            const bar = document.getElementById('timer-bar');
+            const num = document.getElementById('timer-num');
+
+            bar.style.width = pct + '%';
+            num.textContent = Math.ceil(t);
+
+            // Classes de danger
+            const isWarning = t <= 5 && t > 3;
+            const isDanger = t <= 3;
+            bar.classList.toggle('warning', isWarning);
+            bar.classList.toggle('danger', isDanger);
+            num.classList.toggle('warning', isWarning);
+            num.classList.toggle('danger', isDanger);
+        }
+
+        // ── Select Answer ─────────────────────────
+        function selectAnswer(btn, isCorrect, originalIdx) {
+            if (answered) return;
+            answered = true;
+            clearInterval(timerInterval);
+
+            const elapsed = (Date.now() - startTime) / 1000;
+            timeTaken.push(elapsed);
+
+            // Désactiver tous les boutons
+            const allBtns = document.querySelectorAll('.speed-opt');
+            allBtns.forEach(b => b.classList.add('answered'));
+
+            if (isCorrect) {
+                correctCount++;
+                const pts = calcPoints(elapsed);
+                totalScore += pts;
+
+                btn.classList.add('correct');
+                document.getElementById('live-score').textContent = totalScore;
+                showPointsPopup(pts, false);
+            } else {
+                btn.classList.add('wrong');
+                // Révéler la bonne réponse
+                allBtns.forEach(b => {
+                    if (parseInt(b.dataset.originalIdx) === questions[currentIdx].correct) {
+                        b.classList.add('reveal-correct');
+                    }
+                });
+                showPointsPopup(0, true);
+            }
+
+            setTimeout(nextQuestion, 1400);
+        }
+
+        // ── Timeout ───────────────────────────────
+        function onTimeout(correctShuffledIdx) {
+            answered = true;
+            timeTaken.push(TIME_LIMIT);
+
+            const allBtns = document.querySelectorAll('.speed-opt');
+            allBtns.forEach(b => b.classList.add('answered'));
+            allBtns.forEach(b => {
+                if (parseInt(b.dataset.originalIdx) === questions[currentIdx].correct) {
+                    b.classList.add('reveal-correct');
+                }
+            });
+
+            document.getElementById('timeout-notice').style.display = 'block';
+            showPointsPopup(0, true);
+
+            setTimeout(nextQuestion, 1800);
+        }
+
+        // ── Next ──────────────────────────────────
+        function nextQuestion() {
+            currentIdx++;
+            if (currentIdx < TOTAL_Q) {
+                renderQuestion();
+            } else {
+                showResults();
+            }
+        }
+
+        // ── Points Popup ──────────────────────────
+        function showPointsPopup(pts, isZero) {
+            const popup = document.getElementById('points-popup');
+            popup.textContent = isZero ? '✗ 0 pt' : `+${pts} pts`;
+            popup.className = 'points-popup' + (isZero ? ' zero' : '');
+            void popup.offsetWidth; // force reflow
+            popup.classList.add('show');
+            setTimeout(() => { popup.className = 'points-popup'; }, 950);
+        }
+
+        // ── Results ───────────────────────────────
+        function showResults() {
+            showScreen('results-screen');
+            clearInterval(timerInterval);
+
+            // Score
+            document.getElementById('final-pts').textContent = totalScore;
+            const pct = (totalScore / 1000) * 100;
+            document.getElementById('score-circle').style.setProperty('--pct', pct + '%');
+
+            // Stats
+            const wrong = TOTAL_Q - correctCount;
+            document.getElementById('stat-correct').textContent = correctCount;
+            document.getElementById('stat-wrong').textContent = wrong;
+            const avgTime = timeTaken.length ? (timeTaken.reduce((a,b) => a+b, 0) / timeTaken.length).toFixed(1) : '–';
+            document.getElementById('stat-avg').textContent = avgTime + 's';
+
+            // Rang
+            let rank = '';
+            if (totalScore >= 900) rank = '🏆 Légende de la Culture G !';
+            else if (totalScore >= 750) rank = '🥇 Expert — Tu assures !';
+            else if (totalScore >= 550) rank = '🥈 Bon joueur — Continue comme ça !';
+            else if (totalScore >= 350) rank = '🥉 Pas mal — Un peu plus de vitesse !';
+            else if (totalScore >= 150) rank = '💪 Il faut s\'entraîner !';
+            else rank = '😅 Allez, la prochaine sera meilleure !';
+            document.getElementById('speed-rank').textContent = rank;
+        }
+
+        return { start };
+    })();
+    </script>
+    <script src="animations.js"></script>
+</body>
+</html>

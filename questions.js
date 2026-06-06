@@ -7,7 +7,7 @@ const quizzesData = {
             {
                 id: 1,
                 question: "À quel âge peut-on commencer l'éducation d'un chiot ?",
-                options: ["À partir de 3 mois", "À partir de 6 mois, une fois que le chiot a terminé son protocole vaccinal complet et que son système immunitaire est suffisamment développé pour fréquenter d'autres animaux en toute sécurité", "À partir de 8 mois, quand il a dépassé la phase de dentition et peut mieux se concentrer sur les exercices sans être distrait par l'inconfort des gencives et la poussée des dents définitives", "À partir de 1 an, car le cerveau n'est pas suffisamment mature avant et les commandes apprises trop tôt créent de mauvaises habitudes qu'il faut ensuite déconstruire entièrement"],
+                options: ["À partir de 3 mois", "À partir de 6 mois", "À partir de 8 mois", "À partir de 1 an"],
                 correct: 0,
                 explanation: "Les chiots commencent à comprendre les commandes autour de 8 semaines. Cependant, l'éducation formelle en classe est recommandée à partir de 3 mois, quand ils ont reçu leurs premiers vaccins et peuvent socialiser en sécurité avec d'autres chiots.",
                 source: "Association Française de Comportement Animal (AFCA) - L'éducation formelle commence généralement vers 3 mois."
@@ -15,7 +15,7 @@ const quizzesData = {
             {
                 id: 2,
                 question: "Quel renforcement est le plus efficace pour l'apprentissage du chien ?",
-                options: ["Les punitions sévères appliquées immédiatement après le comportement indésirable, afin que le chien associe clairement l'acte à la conséquence", "Les récompenses positives", "L'ignorance systématique du comportement, qui permet au chien de trouver lui-même le comportement approprié par essais-erreurs", "La répétition intensive des exercices sur de longues sessions, ce qui ancre les automatismes par la fréquence"],
+                options: ["Les punitions sévères appliquées immédiatement après le", "Les récompenses positives", "L'ignorance systématique du comportement", "La répétition intensive des exercices sur de longues sessions"],
                 correct: 1,
                 explanation: "Les récompenses positives (friandises, jeux, caresses) stimulent les zones du plaisir du cerveau du chien et renforcent les comportements désirés. Les punitions créent de l'anxiété et peuvent causer des problèmes comportementaux à long terme.",
                 source: "Université du Québec - Le renforcement positif crée des apprentissages durables et renforce la relation humain-chien."
@@ -23,7 +23,12 @@ const quizzesData = {
             {
                 id: 3,
                 question: "Quel geste montre un chien qui a peur ?",
-                options: ["Queue haute", "Oreilles dressées", "Queue entre les jambes et posture basse", "Aboiement joyeux"],
+                options: [
+                "Queue haute",
+                "Oreilles dressées",
+                "Queue entre les jambes",
+                "Aboiement joyeux"
+            ],
                 correct: 2,
                 explanation: "Un chien qui a peur adopte une posture soumise : queue repliée entre les jambes, corps aplati, oreilles baissées et regard évitant. Ces signes indiquent une peur légitime et le chien a besoin d'espace et de réassurance.",
                 source: "Association Française de Comportement Animal - Il est important de donner de l'espace au chien qui a peur."
@@ -39,7 +44,12 @@ const quizzesData = {
             {
                 id: 5,
                 question: "Que signifie quand un chien a la queue qui bouge ?",
-                options: ["Toujours heureux", "Cela peut indiquer plusieurs émotions selon le contexte", "Toujours agressif", "Rien d'important"],
+                options: [
+                "Toujours heureux",
+                "Cela peut indiquer plu",
+                "Toujours agressif",
+                "Rien d'important"
+            ],
                 correct: 1,
                 explanation: "Contrairement à ce qu'on croit, une queue qui remue ne veut pas toujours dire que le chien est content. Une queue haute et rapide indique l'excitation ou la joie, une queue basse et lente peut signaler la nervosité, et une queue rigide et droite peut être un signe d'alerte ou de tension. Le contexte global (posture, oreilles, regard) est essentiel pour bien interpréter.",
                 source: "Institut de Comportement Animal - Le mouvement de la queue indique l'état émotionnel du chien (joie, stress)."
@@ -63,7 +73,7 @@ const quizzesData = {
             {
                 id: 8,
                 question: "Quel est le poids moyen d'un chiot à la naissance ?",
-                options: ["50g à 500g selon la race", "1kg minimum", "2kg", "5kg"],
+                options: ["50g à", "1kg minimum", "2kg", "5kg"],
                 correct: 0,
                 explanation: "Le poids d'un chiot à la naissance dépend entièrement de la race. Un chiot Chihuahua peut peser seulement 50g, tandis qu'un chiot Saint-Bernard peut dépasser 500g. En général, un chiot pèse environ 1% du poids adulte de sa race. Un chiot qui ne grossit pas dans les premiers jours doit être surveillé par un vétérinaire.",
                 source: "Association Française des Vétérinaires - Le poids varie énormément selon la race."
@@ -79,7 +89,7 @@ const quizzesData = {
             {
                 id: 10,
                 question: "Combien de temps peut durer une séance d'entraînement pour un jeune chiot ?",
-                options: ["30 à 45 minutes", "5 à 10 minutes", "1 à 2 heures", "Aussi longtemps que possible"],
+                options: ["30 à 45 minutes", "5 à 10 minutes", "1 à 2 heures", "Aussi longtemps que le chiot"],
                 correct: 1,
                 explanation: "Le cerveau d'un chiot se fatigue vite. Des séances de 5 à 10 minutes, plusieurs fois par jour, sont bien plus efficaces qu'une longue session. Au-delà, le chiot se disperse, fait des erreurs et peut même développer une aversion pour l'entraînement. Mieux vaut toujours terminer sur un succès pour que l'expérience reste positive.",
                 source: "American Kennel Club (AKC) - Les chiots ont une capacité de concentration limitée. Les séances courtes et fréquentes sont plus efficaces."
@@ -111,7 +121,7 @@ const quizzesData = {
             {
                 id: 14,
                 question: "Quelle est la vision des couleurs chez le chien ?",
-                options: ["Vision trichromatique identique à l'humain avec perception du rouge, vert et bleu via 3 types de cônes", "Vision entièrement achromatique percevant uniquement des nuances de gris comme les chauves-souris nocturnes", "Pas de distinction rouge-vert", "Vision nocturne supérieure à l'humain mais identique aux chats avec une résolution diurne très réduite"],
+                options: ["Vision trichromatique identique à l'humain avec perception du rouge", "Vision entièrement achromatique percevant uniquement des nuances de", "Pas de distinction rouge-vert", "Vision nocturne supérieure à l'humain mais identique aux chats avec"],
                 correct: 2,
                 explanation: "Les chiens ne voient pas le monde en noir et blanc comme on le croyait autrefois. Ils distinguent les couleurs, mais leur spectre est limité : ils voient bien le bleu et le jaune, mais confondent le rouge et le vert (qui leur apparaissent tous les deux jaunâtres). C'est similaire à une forme de daltonisme rouge-vert chez l'humain.",
                 source: "Université de Biologie Canine - Les chiens voient principalement en bleu et jaune."
@@ -119,7 +129,12 @@ const quizzesData = {
             {
                 id: 15,
                 question: "Quel comportement indique que le chien veut jouer ?",
-                options: ["Oreilles aplaties", "Position arquée avec antérieurs baissés et postérieurs élevés", "Queue basse", "Regard fixe"],
+                options: [
+                "Oreilles aplaties",
+                "Position arquée avec a",
+                "Queue basse",
+                "Regard fixe"
+            ],
                 correct: 1,
                 explanation: "Cette posture s'appelle la 'révérence de jeu' (play bow). Le chien abaisse ses pattes avant au sol, garde l'arrière-train levé, et souvent remue la queue. C'est un signal universel chez le chien : il signifie clairement 'je veux jouer et tout ce qui va suivre est amical, pas agressif'. Même les loups utilisent ce signal.",
                 source: "Association Française de Comportement Animal - C'est l'invitation au jeu typique."
@@ -183,11 +198,11 @@ const quizzesData = {
             {
                 id: 23,
                 question: "Quel est le tempérament typique du Labrador Retriever ?",
-                options: ["Agressif", "Amical, loyal et énergique", "Craintif", "Dominateur"],
+                options: ["Agressif", "Amical", "Craintif", "Dominateur"],
                 correct: 1,
                 explanation: "Le Labrador Retriever est l'une des races les plus populaires au monde, notamment grâce à son caractère : sociable, patient, facile à éduquer et bon avec les enfants. C'est pour ça qu'il est souvent choisi comme chien guide ou chien d'assistance. Il est très énergique et a besoin d'exercice quotidien, sinon il peut devenir destructeur.",
                 source: "American Kennel Club - Le Labrador est connu pour son tempérament doux et loyal.",
-                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Labrador_on_Quantock_%282175262184%29.jpg/800px-Labrador_on_Quantock_%282175262184%29.jpg"
+                image: "https://upload.wikimedia.org/wikipedia/commons/2/26/YellowLabradorLooking_new.jpg"
             },
             {
                 id: 24,
@@ -204,7 +219,7 @@ const quizzesData = {
                 correct: 1,
                 explanation: "Un berger allemand adulte pèse en général entre 25 et 35 kg pour les mâles, un peu moins pour les femelles (22-30 kg). C'est une race de taille moyenne-grande, très musclée et athlétique. Sa morphologie et son intelligence en font la race la plus utilisée dans les forces de l'ordre, l'armée et les services de sauvetage.",
                 source: "American Kennel Club - Les bergers allemands pèsent généralement 25-35 kg.",
-                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/German_Shepherd_-_DSC_0346_%2810096362833%29.jpg/800px-German_Shepherd_-_DSC_0346_%2810096362833%29.jpg"
+                image: "https://upload.wikimedia.org/wikipedia/commons/d/d0/German_Shepherd_-_DSC_0346_%2810096362833%29.jpg"
             },
             {
                 id: 26,
@@ -217,7 +232,7 @@ const quizzesData = {
             {
                 id: 27,
                 question: "Quel est le rôle des jeux d'enrichissement pour le chien ?",
-                options: ["Uniquement divertissement", "Stimulation mentale et prévention de l'ennui", "Épuisement physique", "Socialisation"],
+                options: ["Uniquement divertissement", "Stimulation mentale et physique", "Épuisement physique", "Socialisation"],
                 correct: 1,
                 explanation: "Les jeux d'enrichissement (puzzles à nourriture, jouets à remplir, jeux de flair) font travailler le cerveau du chien. Un chien mentalement stimulé est bien moins susceptible de développer des comportements destructeurs comme mâcher les meubles ou aboyer sans raison. 15 minutes de stimulation mentale peuvent fatiguer un chien autant qu'une heure de marche.",
                 source: "Institut de Comportement Canin - L'enrichissement mental est crucial pour le bien-être."
@@ -233,7 +248,7 @@ const quizzesData = {
             {
                 id: 29,
                 question: "Quel est le meilleur moment de la journée pour entraîner un chien ?",
-                options: ["Tôt le matin", "En milieu d'après-midi", "Selon le chien et la saison", "En fin d'après-midi"],
+                options: ["Tôt le matin", "En milieu d'après-midi", "Selon le chien et la race", "En fin d'après-midi"],
                 correct: 2,
                 explanation: "Il n'existe pas un horaire universel idéal. Certains chiens sont plus vifs le matin, d'autres en fin d'après-midi. En été, éviter les heures chaudes est important pour les races sensibles à la chaleur. L'essentiel est que le chien ne soit ni affamé ni trop repu, et qu'il soit bien reposé. Observer son chien permet de trouver ses moments de meilleure réceptivité.",
                 source: "American Kennel Club - Les chiens ont des rythmes individuels d'apprentissage."
@@ -278,7 +293,12 @@ const quizzesData = {
             {
                 id: 11,
                 question: "Quel est le meilleur moment pour socialiser un chiot ?",
-                options: ["Après 1 an", "Entre 3 et 16 semaines (période critique)", "Entre 6 et 12 mois", "À partir de 2 ans"],
+                options: [
+                "Après 1 an",
+                "Entre 3 et 16 semaines",
+                "Entre 6 et 12 mois",
+                "À partir de 2 ans"
+            ],
                 correct: 1,
                 explanation: "Entre 3 et 16 semaines, le cerveau du chiot est comme une éponge : il enregistre tout ce qu'il vit comme 'normal'. Exposer le chiot à des humains, des enfants, d'autres animaux, des bruits, des voitures et des environnements variés durant cette fenêtre le rend bien plus équilibré à l'âge adulte. Passé 16 semaines, les nouvelles expériences génèrent plus de méfiance que de curiosité.",
                 source: "Association Française de Comportement Animal - La période critique est entre 3 et 16 semaines."
@@ -286,7 +306,7 @@ const quizzesData = {
             {
                 id: 12,
                 question: "Comment réagir quand votre chien tire sur la laisse ?",
-                options: ["Tirer fortement en retour", "S'arrêter et attendre qu'il se calme", "Utiliser une laisse électrique", "Le punir"],
+                options: ["Tirer fortement en", "S'arrêter et attendre", "Utiliser une laisse", "Le punir"],
                 correct: 1,
                 explanation: "Quand vous tirez en retour sur la laisse, le chien tire encore plus fort (c'est le réflexe d'opposition). La bonne technique : dès que la laisse se tend, on s'arrête complètement et on attend que le chien revienne vers vous. Puis on repart. Le chien comprend rapidement que tirer ralentit la balade, alors que marcher sans tirer la fait avancer.",
                 source: "International Association of Animal Behavior Consultants (IAABC) - Vous enseignez que tirer n'obtient pas ce qu'il veut."
@@ -310,7 +330,7 @@ const quizzesData = {
             {
                 id: 15,
                 question: "Qu'indique un aboiement prolongé chez le chien ?",
-                options: ["Toujours un problème", "Communication normale pouvant indiquer l'ennui, l'anxiété ou l'alerte", "Une maladie", "Rien"],
+                options: ["Toujours un problème", "Communicati", "Une maladie", "Rien"],
                 correct: 1,
                 explanation: "Un aboiement prolongé peut signaler plein de choses différentes : l'ennui (manque de stimulation), l'anxiété de séparation, une alerte (bruit, inconnu), ou une tentative d'attirer l'attention. Pour y remédier, il faut d'abord identifier la cause. Un chien qui aboie par ennui a besoin de plus d'exercice et de stimulation mentale, pas de punitions.",
                 source: "Institut de Comportement Animal - L'aboiement est un moyen naturel de communication du chien."
@@ -342,7 +362,12 @@ const quizzesData = {
             {
                 id: 19,
                 question: "Quel est le langage corporel d'un chien stressé ?",
-                options: ["Relaxé et joueur", "Corps tendu, queue basse, léchage des babines", "Queue haute rigide", "Sautant partout"],
+                options: [
+                "Relaxé et joueur",
+                "Corps tendu",
+                "Queue haute rigide",
+                "Sautant partout"
+            ],
                 correct: 1,
                 explanation: "Un chien stressé montre plusieurs signaux d'apaisement : léchage des babines, bâillements fréquents, corps tendu, queue basse, oreilles plaquées et regard fuyant. Ces signaux sont souvent subtils et mal reconnus par les propriétaires. Apprendre à les repérer permet d'intervenir avant que le chien passe à un comportement plus extrême comme la fuite ou la morsure.",
                 source: "International Society of Canine Behaviorists - Le stress se manifeste par la tension corporelle et les léchages nerveux."
@@ -350,7 +375,7 @@ const quizzesData = {
             {
                 id: 20,
                 question: "À quel âge la croissance du chien ralentit-elle généralement ?",
-                options: ["À 3 mois", "À 6-9 mois selon la race", "À 1 an", "À 2 ans"],
+                options: ["À 3 mois", "À 6-9 mois", "À 1 an", "À 2 ans"],
                 correct: 1,
                 explanation: "Les petites races finissent leur croissance vers 6-8 mois, les races moyennes vers 12 mois, et les grandes races comme le Dogue de Bordeaux ou le Leonberg peuvent continuer à grandir jusqu'à 18-24 mois. Pendant la croissance, les articulations sont fragiles : il faut éviter les sauts répétitifs et les montées d'escaliers excessives pour ne pas endommager les cartilages en formation.",
                 source: "American Veterinary Medical Association - La croissance ralentit généralement entre 6 et 9 mois selon la taille de la race."
@@ -358,7 +383,7 @@ const quizzesData = {
             {
                 id: 31,
                 question: "Quel est l'impact du sevrage précoce sur le développement comportemental ?",
-                options: ["Aucun impact", "Problèmes de socialisation et d'anxiété possibles", "Amélioration de l'indépendance", "Renforce le lien avec la mère"],
+                options: ["Aucun impact", "Problèmes de socialisation et", "Amélioration de l'autonomie", "Renforce le lien avec la"],
                 correct: 1,
                 explanation: "Un chiot séparé de sa mère et de sa portée avant 7 semaines rate une phase clé d'apprentissage social. C'est entre 5 et 7 semaines que les chiots apprennent les bases de la communication canine : comment jouer sans blesser, comment gérer la frustration, comment se soumettre. Sans ça, ils peuvent devenir anxieux, agressifs ou incapables de s'entendre avec d'autres chiens.",
                 source: "International Association of Animal Behavior Consultants - Le sevrage précoce peut causer du stress."
@@ -366,7 +391,12 @@ const quizzesData = {
             {
                 id: 32,
                 question: "Quel est le mécanisme de la 'morsure inhibée' chez les chiots ?",
-                options: ["Morsure sans danger", "Capacité à moduler la pression des morsures apprises du jeu", "Absence de morsure", "Réaction génétique"],
+                options: [
+                "Morsure sans danger",
+                "Capacité à moduler la pr",
+                "Absence de morsure",
+                "Réaction génétique"
+            ],
                 correct: 1,
                 explanation: "La morsure inhibée, c'est la capacité du chien à doser la pression de sa morsure pour ne pas blesser. Elle s'apprend entre chiots lors des jeux : quand un chiot mord trop fort, l'autre crie et arrête de jouer. Le chiot comprend alors qu'une morsure trop forte met fin au plaisir. C'est pourquoi les chiots isolés trop tôt de leur fratrie ont souvent du mal à contrôler leurs morsures.",
                 source: "Université de Comportement Canin - Les chiots apprennent à contrôler leur morsure par le jeu."
@@ -374,7 +404,7 @@ const quizzesData = {
             {
                 id: 33,
                 question: "Quel est le seuil de douleur généralement accepté chez les chiens ?",
-                options: ["Très bas", "Similaire aux humains", "Plus élevé que les humains", "Inexistant"],
+                options: ["Très bas", "Similaire aux", "Plus élevé que chez", "Inexistant"],
                 correct: 2,
                 explanation: "Les chiens ont un seuil de douleur généralement plus élevé que les humains, ce qui est un héritage évolutif : un animal qui montre sa douleur en milieu naturel devient une cible. C'est pourquoi les chiens cachent souvent leurs blessures ou maladies jusqu'à un stade avancé. Il faut donc surveiller des signes subtils : boiterie légère, manque d'appétit, comportement plus calme qu'habituellement.",
                 source: "Centre Vétérinaire d'Anesthésiologie - Les chiens ont généralement un seuil de douleur plus élevé."
@@ -382,7 +412,7 @@ const quizzesData = {
             {
                 id: 34,
                 question: "Quel comportement indique l'attachement sécurisé d'un chiot ?",
-                options: ["Détachement constant", "Exploration confiante avec retours au maître", "Anxiété séparation totale", "Agressivité défensive"],
+                options: ["Détachement constant", "Exploration confiante avec retours au propriétaire", "Anxiété séparation totale", "Agressivité défensive"],
                 correct: 1,
                 explanation: "Un chiot sécurisé explore son environnement avec curiosité, mais revient régulièrement vers son maître comme à une 'base de sécurité'. Ce comportement est similaire à celui des enfants en bas âge avec leurs parents. Un chiot trop collant ou au contraire complètement indifférent à son maître peut signaler un problème d'attachement qui nécessite un travail comportemental.",
                 source: "Institut d'Étude de l'Attachement - L'attachement sécurisé permet l'exploration équilibrée."
@@ -398,7 +428,7 @@ const quizzesData = {
             {
                 id: 36,
                 question: "Quel est le processus de 'counter-surfing' et comment le corriger ?",
-                options: ["Sauter sur les tables", "Sauter sur les meubles - corrigé par l'ignorance et redirection", "Comportement normal", "Maladie"],
+                options: ["Sauter sur les", "Sauter sur les", "Comportement normal", "Maladie"],
                 correct: 1,
                 explanation: "Le counter-surfing, c'est quand le chien pose les pattes sur les plans de travail ou les tables pour voler de la nourriture. Ce comportement est renforcé par la réussite : dès qu'il a réussi une fois, il recommence. La solution : ne jamais laisser de nourriture à portée, rediriger vers un comportement incompatible (s'asseoir), et ne jamais laisser le chien seul dans une cuisine avec de la nourriture accessible pendant l'apprentissage.",
                 source: "Association Française de Comportement - L'ignorance décourage ce comportement."
@@ -414,7 +444,12 @@ const quizzesData = {
             {
                 id: 38,
                 question: "Quel est l'effet du clicker training sur le cerveau du chien ?",
-                options: ["Pas d'effet", "Libération de dopamine et renforcement du comportement", "Stress accru", "Oubli rapide"],
+                options: [
+                "Pas d'effet",
+                "Libération de dopam",
+                "Stress accru",
+                "Oubli rapide"
+            ],
                 correct: 1,
                 explanation: "Le clicker training repose sur le conditionnement classique : le son du clicker est associé à une récompense jusqu'à ce que le cerveau du chien libère automatiquement de la dopamine (hormone du plaisir) au son du click. Ce son précis et instantané permet de 'marquer' exactement le bon comportement à la microseconde où il se produit, ce qui le rend bien plus efficace qu'une récompense verbale ou manuelle.",
                 source: "Institut de Neurosciences du Comportement - Le son du clicker crée une association positive."
@@ -430,7 +465,7 @@ const quizzesData = {
             {
                 id: 40,
                 question: "Quel est le processus appelé 'habituation' dans le contexte des bruits ?",
-                options: ["Peur accrue", "Réduction progressive de la réaction à un bruit répétitif", "Ignorance du bruit", "Sensibilité augmentée"],
+                options: ["Peur accrue", "Réduction progressive de", "Ignorance du bruit", "Sensibilité augmentée"],
                 correct: 1,
                 explanation: "L'habituation, c'est le processus par lequel le cerveau apprend à ignorer un stimulus répété sans conséquences. Par exemple, un chien qui sursaute aux feux d'artifice peut être désensibilisé en l'exposant progressivement à des enregistrements sonores à faible volume, puis en augmentant graduellement l'intensité sur plusieurs semaines. Forcer l'exposition brutale (flooding) peut aggraver la peur.",
                 source: "International Association of Animal Behavior Consultants - L'habituation réduit l'anxiété aux bruits."
@@ -446,7 +481,12 @@ const quizzesData = {
             {
                 id: 42,
                 question: "Quel est l'impact de la castration/stérilisation sur le comportement ?",
-                options: ["Aucun changement", "Réduction de l'agressivité et du marquage territorial", "Augmentation d'agressivité", "Hyperactivité accrue"],
+                options: [
+                "Aucun changement",
+                "Réduction de l'agressivité et du marquage",
+                "Augmentation d'agressivité",
+                "Hyperactivité accrue"
+            ],
                 correct: 1,
                 explanation: "La castration chez le mâle réduit les comportements liés à la testostérone : fugues pour trouver une femelle, marquages urinaires fréquents, agressivité entre mâles, et monte. Chez la femelle, la stérilisation supprime les chaleurs et réduit le risque de pyomètre (infection utérine) et de tumeurs mammaires. Ces effets comportementaux ne sont pas garantis à 100% : les habitudes déjà bien ancrées peuvent persister.",
                 source: "Université Vétérinaire - La stérilisation réduit certains comportements hormono-dépendants."
@@ -454,7 +494,7 @@ const quizzesData = {
             {
                 id: 43,
                 question: "Quel est le rôle de l'exercice physique dans la gestion de l'anxiété ?",
-                options: ["Augmentation de la vigilance par activation du système nerveux sympathique lors du contact", "Libération d'endorphines et réduction du stress", "Renforcement conditionné uniquement s'il est associé systématiquement à une récompense alimentaire", "Stimulation de l'ocytocine chez le chien uniquement, sans effet mesurable sur le cortisol humain"],
+                options: ["Augmentation de la vigilance par activation du système nerveux sympathique lors du contact", "Libération d'endorphines et réduction du stress", "Renforcement conditionné uniquement s'il est associé systématiquement à une récompense", "Stimulation de l'ocytocine chez le chien uniquement"],
                 correct: 1,
                 explanation: "Comme chez l'humain, l'exercice physique déclenche chez le chien la libération d'endorphines (hormones du bien-être) et réduit le taux de cortisol (hormone du stress). Un chien anxieux qui manque d'exercice va accumuler de l'énergie nerveuse et devenir encore plus agité. Une marche dynamique ou une session de jeu intense avant une situation stressante (orage, visite vétérinaire) peut réduire significativement l'anxiété.",
                 source: "Institut d'Étude de l'Anxiété - L'exercice régulier améliore la santé mentale du chien."
@@ -462,7 +502,12 @@ const quizzesData = {
             {
                 id: 44,
                 question: "Quel est le processus de 'leurre' en entraînement canin ?",
-                options: ["Tromper le chien", "Utiliser un objet pour guider le chien vers le comportement désiré", "Punition positive", "Jeu du leurre"],
+                options: [
+                "Tromper le chien",
+                "Utiliser un objet pour guider le chien",
+                "Punition positive",
+                "Jeu du leurre"
+            ],
                 correct: 1,
                 explanation: "Le leurre consiste à tenir une friandise devant le nez du chien et à guider son corps vers la position souhaitée (ex : friandise levée vers l'arrière = le chien lève la tête et s'assoit naturellement). C'est une méthode intuitive et efficace pour apprendre rapidement de nouvelles positions. Important : il faut ensuite enlever progressivement le leurre et passer à un signal gestuel seul, sinon le chien n'obéit qu'avec une récompense visible.",
                 source: "Association Française d'Éducation Canine - Le leurre est une technique classique de renforcement positif."
@@ -486,7 +531,7 @@ const quizzesData = {
             {
                 id: 47,
                 question: "Quel est l'impact de la musique sur le stress du chien ?",
-                options: ["Aucun impact", "Réduction du stress et de l'anxiété selon le type de musique", "Augmentation du stress", "Hyperactivité"],
+                options: ["Aucun impact", "Réduction du stress et de l'anxiété", "Augmentation du stress", "Hyperactivité"],
                 correct: 1,
                 explanation: "Des études ont montré que la musique classique calme les chiens en chenil : leur rythme cardiaque baisse et ils aboient moins. La musique reggae et le soft rock auraient aussi des effets positifs. En revanche, le heavy metal augmente l'agitation. Laisser de la musique douce quand le chien est seul à la maison peut réduire l'anxiété de séparation.",
                 source: "Université de Zoopsychologie - La musique apaisante réduit le cortisol chez le chien."
@@ -494,7 +539,7 @@ const quizzesData = {
             {
                 id: 48,
                 question: "Quel est le processus de 'redirection' de comportement ?",
-                options: ["Punition", "Guider le chien vers un comportement alternatif acceptable", "Ignorance du comportement", "Récompense immédiate"],
+                options: ["Punition", "Guider le chien vers", "Ignorance du comportement", "Récompense immédiate"],
                 correct: 1,
                 explanation: "La redirection consiste à interrompre un comportement indésirable et à proposer immédiatement une alternative acceptable. Par exemple, si le chien mâche le canapé, on lui tend un jouet à mâcher à la place. On ne punit pas, on redirige l'énergie. C'est plus efficace que la punition seule, car ça enseigne ce qu'il faut faire plutôt que juste ce qu'il ne faut pas faire.",
                 source: "Association Française de Comportement Animal - La redirection canalise l'énergie positivement."
@@ -502,7 +547,7 @@ const quizzesData = {
             {
                 id: 49,
                 question: "Quel est le taux d'apprentissage optimal pour les chiens ?",
-                options: ["Une seule session intensive de 45 à 60 minutes par jour pour maximiser la consolidation mémorielle", "Plusieurs courtes sessions quotidiennes", "Une session longue de 30 minutes tous les deux jours en alternant stimulation physique et mentale", "Une longue session hebdomadaire intensive suivie de renforcements verbaux quotidiens informels"],
+                options: ["Une seule session intensive de 45 à 60 minutes par jour pour maximiser la consolidation", "Plusieurs courtes sessions quotidiennes", "Une session longue de 30 minutes tous les deux jours en alternant stimulation physique et", "Une longue session hebdomadaire intensive suivie de renforcements verbaux quotidiens"],
                 correct: 1,
                 explanation: "Plusieurs courtes sessions quotidiennes de 5 à 10 minutes sont bien plus efficaces qu'une longue session hebdomadaire. Le cerveau consolide les apprentissages entre les sessions, notamment pendant le sommeil. Cette régularité crée aussi une routine que le chien anticipe avec plaisir. L'idéal est d'intégrer des micro-sessions dans la vie quotidienne : avant les repas, lors des balades, au moment du jeu.",
                 source: "Institut de Psychologie Canine - L'apprentissage distribué est plus efficace."
@@ -510,7 +555,7 @@ const quizzesData = {
             {
                 id: 50,
                 question: "Quel est l'impact de la socialisation précoce sur l'adaptation future ?",
-                options: ["Aucun impact", "Meilleure adaptation à l'environnement et réduction de la peur", "Augmentation des peurs", "Indépendance exacerbée"],
+                options: ["Aucun impact", "Meilleure adaptation aux", "Augmentation des peurs", "Indépendance exacerbée"],
                 correct: 1,
                 explanation: "Un chiot bien socialisé avant 16 semaines aborde les nouvelles situations avec curiosité plutôt qu'avec peur. Il a été exposé à des bruits variés, des gens différents, des textures, des véhicules, d'autres animaux... Ces expériences encodent 'le monde est normal et sans danger' dans son cerveau. Un adulte mal socialisé peut être réhabilité, mais c'est bien plus long et difficile qu'une bonne socialisation précoce.",
                 source: "Université de Développement Comportemental - La socialisation précoce est cruciale."
@@ -547,7 +592,12 @@ const quizzesData = {
             {
                 id: 21,
                 question: "Qu'est-ce que la fenêtre de socialisation critique chez le chiot ?",
-                options: ["5-8 semaines", "8-12 semaines", "3-16 semaines (période de réceptivité maximale aux expériences)", "16-20 semaines"],
+                options: [
+                "5-8 semaines",
+                "8-12 semaines",
+                "3-16 semaines",
+                "16-20 semaines"
+            ],
                 correct: 2,
                 explanation: "La fenêtre de socialisation (3 à 16 semaines) est la période où le cerveau du chiot est le plus plastique et réceptif. Avant 3 semaines, il ne peut pas encore vraiment traiter les stimuli extérieurs. Après 16 semaines, le cerveau entre dans une phase de consolidation : les nouvelles choses génèrent davantage de méfiance que de curiosité. Manquer cette fenêtre est l'une des principales causes de chiens craintifs ou agressifs à l'âge adulte.",
                 source: "Dr. John Paul Scott - Études approfondies sur le développement comportemental du chiot."
@@ -563,7 +613,7 @@ const quizzesData = {
             {
                 id: 23,
                 question: "Quelle est la théorie de la dominance du loup versus celle du chien domestique ?",
-                options: ["Identiques", "La théorie de la dominance du loup est inapplicable au chien domestique", "Le chien suit exactement la hiérarchie du loup", "Elles ne sont pas en relation"],
+                options: ["Identiques", "La théorie de la", "Le chien suit la hiérarchie", "Elles ne sont pas en accord"],
                 correct: 1,
                 explanation: "La théorie de la dominance chez le chien (être le 'chef de meute') vient d'études sur des loups en captivité dans les années 1940, qui ne se comportent pas comme des loups sauvages. L. David Mech, l'auteur original de cette théorie, a lui-même déclaré s'être trompé. Les chiens domestiques ne forment pas de hiérarchies fixes : leur comportement dépend du contexte, de la ressource et de la relation avec l'humain.",
                 source: "L. David Mech - Recherches corrigées montrant que les chiens domestiques n'ont pas de hiérarchie de dominance stricte."
@@ -571,7 +621,7 @@ const quizzesData = {
             {
                 id: 24,
                 question: "Comment l'apprentissage par habituation fonctionne-t-il dans la modification comportementale ?",
-                options: ["Augmenter l'exposition progressive", "Réduire la réaction à un stimulus répété", "Augmenter la peur", "Éliminer complètement la réaction"],
+                options: ["Augmenter l'exposition progressive", "Réduire la réaction à un stimulus", "Augmenter la peur", "Éliminer complètement la réaction"],
                 correct: 1,
                 explanation: "L'habituation est le processus le plus simple d'apprentissage : le cerveau apprend à 'filtrer' un stimulus répété sans conséquence. Un chien qui vivait à la campagne peut sursauter aux voitures en ville, mais après quelques jours d'exposition sans incident, il les ignore. L'habituation ne fonctionne que si le stimulus ne génère aucune conséquence négative — sinon le cerveau reste en alerte.",
                 source: "International Association of Animal Behavior Consultants - L'habituation réduit graduellement la réaction aux stimuli."
@@ -587,7 +637,12 @@ const quizzesData = {
             {
                 id: 26,
                 question: "Qu'est-ce que la contre-conditionnement dans l'éducation canine ?",
-                options: ["Ignorer le comportement", "Apprendre au chien une nouvelle réaction positive à un stimulus qui cause du stress", "Punir le comportement", "Récompenser simplement"],
+                options: [
+                "Ignorer le comportement",
+                "Apprendre au chien une nouvel",
+                "Punir le comportement",
+                "Récompenser simplement"
+            ],
                 correct: 1,
                 explanation: "Le contre-conditionnement change l'émotion associée à un stimulus. Exemple : un chien qui a peur du vétérinaire. Au lieu de le forcer, on lui donne ses friandises préférées uniquement en présence du vétérinaire ou dans la salle d'attente. Progressivement, le cerveau remplace l'association 'vétérinaire = danger' par 'vétérinaire = bonnes choses'. Ça prend du temps mais les résultats sont durables.",
                 source: "Certified Applied Animal Behaviorist - Technique clé pour modifier les comportements indésirables."
@@ -595,7 +650,7 @@ const quizzesData = {
             {
                 id: 27,
                 question: "Quels sont les signes de désensibilisation systématique efficace chez un chien ?",
-                options: ["Plus de peur", "Réaction réduite à chaque exposition", "Peur accrue", "Comportement inchangé"],
+                options: ["Plus de peur", "Réaction réduite à chaque", "Peur accrue", "Comportement inchangé"],
                 correct: 1,
                 explanation: "La désensibilisation systématique expose le chien au stimulus anxiogène de façon très progressive, en commençant bien en dessous de son seuil de tolérance. On avance d'un cran seulement quand le chien reste calme. Un signe d'efficacité : le chien qui réagissait fortement à 50 mètres commence à tolérer l'approche à 40 mètres, puis 30, etc. Aller trop vite relance la peur et efface les progrès.",
                 source: "International Society of Feline Medicine et Canine - Progression visible de la tolérance du chien."
@@ -603,7 +658,7 @@ const quizzesData = {
             {
                 id: 28,
                 question: "Quel est l'impact du stress chronique sur le système nerveux du chien ?",
-                options: ["Aucun impact", "Augmentation du cortisol, immunosuppression et comportements problématiques", "Uniquement comportemental", "Amélioration de l'immunité"],
+                options: ["Aucun impact", "Augmentation du cortisol", "Uniquement comportemental", "Amélioration de l'autonomie"],
                 correct: 1,
                 explanation: "Un chien soumis à un stress chronique (maltraitance, isolement, environnement imprévisible) présente un taux de cortisol constamment élevé. Cela affaiblit le système immunitaire, accélère le vieillissement, perturbe le sommeil et déclenche des comportements compulsifs (léchage excessif, tourne en rond, automutilation). Certains de ces comportements peuvent persister longtemps même après l'amélioration des conditions de vie.",
                 source: "Université de Tufts - Études sur les effets du stress chronique sur la physiologie canine."
@@ -643,7 +698,7 @@ const quizzesData = {
             {
                 id: 53,
                 question: "Quel est le processus de 'long-term potentiation' dans l'apprentissage canin ?",
-                options: ["Oubli rapide", "Renforcement durable des connexions synaptiques", "Perte de mémoire", "Apprentissage immédiat"],
+                options: ["Oubli rapide", "Renforcement durable des", "Perte de mémoire", "Apprentissage immédiat"],
                 correct: 1,
                 explanation: "La potentialisation à long terme (LTP) est le mécanisme neurologique de la mémoire : quand deux neurones s'activent ensemble de façon répétée, leur connexion synaptique se renforce durablement. En éducation canine, chaque répétition réussie d'un exercice renforce littéralement les connexions cérébrales associées. C'est pourquoi la répétition régulière est indispensable pour que les apprentissages deviennent automatiques.",
                 source: "Université de Neurosciences de l'Apprentissage - La LTP est la base de la mémoire."
@@ -659,7 +714,7 @@ const quizzesData = {
             {
                 id: 55,
                 question: "Quel est le processus d'extinction d'une réaction apprise ?",
-                options: ["Renforcement du comportement", "Exposition répétée au stimulus sans renforcement", "Punition accrue", "Oubli automatique"],
+                options: ["Renforcement du comportement", "Exposition répétée au stimulus", "Punition accrue", "Oubli automatique"],
                 correct: 1,
                 explanation: "L'extinction comportementale se produit quand un comportement appris n'est plus jamais récompensé : le cerveau finit par le désapprendre. Mais attention au 'burst d'extinction' : avant de disparaître, le comportement s'intensifie souvent (le chien essaie plus fort avant d'abandonner). Beaucoup de propriétaires cèdent à ce moment, ce qui renforce justement le comportement qu'ils voulaient éliminer.",
                 source: "Association Française de Modification Comportementale - L'extinction réduit les associations apprises."
@@ -675,7 +730,7 @@ const quizzesData = {
             {
                 id: 57,
                 question: "Quel est le mécanisme de la 'sensitization' face aux stimuli menaçants ?",
-                options: ["Réduction de la réaction", "Augmentation progressive de la réaction au stimulus", "Habituation", "Indifférence"],
+                options: ["Réduction de la", "Augmentation progressive", "Habituation", "Indifférence"],
                 correct: 1,
                 explanation: "La sensitisation est l'opposé de l'habituation : au lieu de s'adapter à un stimulus, le cerveau devient de plus en plus réactif à chaque exposition. Cela arrive quand le stimulus est associé à une expérience négative. Un chien mordu par un autre chien peut devenir de plus en plus réactif aux chiens en général, même ceux qu'il connaissait avant. Sans intervention, cette sensibilisation peut s'aggraver progressivement.",
                 source: "Institut de Psychologie Comportementale - La sensibilisation augmente l'anxiété."
@@ -723,7 +778,7 @@ const quizzesData = {
             {
                 id: 63,
                 question: "Quel est le processus de 'state-dependent learning' ?",
-                options: ["Pas d'effet d'état", "L'apprentissage dépend de l'état émotionnel et physiologique", "Apprentissage indépendant de l'état", "Oubli rapide"],
+                options: ["Pas d'effet d'état", "L'apprentissage dépend", "Apprentissage indépendant du", "Oubli rapide"],
                 correct: 1,
                 explanation: "L'apprentissage dépendant de l'état signifie que la mémoire est mieux rappelée dans le même état qu'au moment de l'apprentissage. Un chien entraîné uniquement à la maison peut échouer en balade car l'état émotionnel est différent (plus excité, plus de distractions). C'est pourquoi il est crucial de généraliser les apprentissages dans des contextes variés : différents endroits, différents niveaux de distraction.",
                 source: "Université de Psychologie de l'Apprentissage - L'état affecte la rétention."
@@ -771,7 +826,7 @@ const quizzesData = {
             {
                 id: 69,
                 question: "Quel est le mécanisme du 'fear extinction' à niveau neuronal ?",
-                options: ["Effacement de la mémoire", "Formation d'une nouvelle mémoire inhibitrice via le cortex préfrontal", "Désactivation de l'amygdale", "Oubli complet"],
+                options: ["Effacement de la mémoire", "Formation d'une nouvelle", "Désactivation de la réponse apprise", "Oubli complet"],
                 correct: 1,
                 explanation: "Contrairement à ce qu'on croyait, l'extinction de la peur n'efface pas la mémoire originale de peur — elle crée une nouvelle mémoire inhibitrice dans le cortex préfrontal qui supprime la réaction de l'amygdale. C'est pourquoi la peur peut revenir dans de nouveaux contextes ou sous stress (c'est le 'retour de la peur'). Le traitement doit donc se faire dans de nombreux contextes différents pour être durable.",
                 source: "Université de Modification de la Peur - L'extinction crée de nouvelles associations."
@@ -820,7 +875,7 @@ const quizzesData = {
             {
                 id: 1,
                 question: "Combien de races de chiens reconnaît la Fédération Cynologique Internationale (FCI) ?",
-                options: ["Environ 100 races officielles, réparties en 5 grands groupes selon leur morphologie", "Environ 200 races officielles, classées principalement par taille (petite, moyenne, grande)", "Plus de 350 races officielles", "Plus de 600 races, dont la moitié sont issues de croisements récents reconnus ces vingt dernières années"],
+                options: ["Environ 100 races officielles", "Environ 200 races officielles", "Plus de 350 races officielles", "Plus de 600 races"],
                 correct: 2,
                 explanation: "La FCI reconnaît plus de 350 races de chiens, réparties en 10 groupes selon leur utilisation et leur morphologie (chiens de berger, terriers, chiens courants, chiens d'arrêt, etc.). Le nombre exact évolue au fil des années avec les nouvelles demandes de reconnaissance.",
                 source: "Fédération Cynologique Internationale — Plus de 350 races reconnues, classées en 10 groupes."
@@ -828,7 +883,7 @@ const quizzesData = {
             {
                 id: 2,
                 question: "Quel animal est l'ancêtre direct du chien domestique ?",
-                options: ["Le renard roux, dont certaines populations ont été domestiquées il y a environ 15 000 ans en Asie centrale", "Le chacal doré, qui vivait aux côtés des premiers villages humains et s'est progressivement apprivoisé", "Le loup gris", "Le dhole, un canidé sauvage d'Asie qui partage 98 % de l'ADN du chien domestique moderne"],
+                options: ["Le renard roux", "Le chacal doré", "Le loup gris", "Le dhole"],
                 correct: 2,
                 explanation: "Le chien domestique (Canis lupus familiaris) descend directement du loup gris (Canis lupus). La domestication a commencé il y a entre 15 000 et 40 000 ans, probablement en Eurasie. Des analyses ADN ont confirmé ce lien génétique direct avec le loup gris, et non avec d'autres canidés.",
                 source: "National Geographic — Le chien descend du loup gris, domestiqué il y a au moins 15 000 ans."
@@ -836,7 +891,7 @@ const quizzesData = {
             {
                 id: 3,
                 question: "Combien de fois l'odorat d'un chien est-il plus développé que celui de l'humain ?",
-                options: ["Environ 5 à 10 fois, ce qui leur permet de détecter des odeurs légèrement plus faibles que nous", "Environ 50 fois, soit suffisamment pour repérer une source odorante à une centaine de mètres", "10 000 à 100 000 fois plus puissant", "Environ 1 000 fois, une performance comparable à celle du porc, autre animal reconnu pour son flair"],
+                options: ["Environ 5 à 10 fois", "Environ 50 fois", "10 000 à 100 000 fois plus puissant", "Environ 1 000 fois"],
                 correct: 2,
                 explanation: "Le chien possède environ 300 millions de récepteurs olfactifs contre 6 millions chez l'humain, et la zone cérébrale dédiée à l'analyse des odeurs est 40 fois plus grande proportionnellement. Selon les estimations, son odorat est 10 000 à 100 000 fois plus puissant que le nôtre, ce qui lui permet de détecter des maladies, des explosifs ou des personnes disparues.",
                 source: "Alexandra Horowitz, Barnard College — L'odorat du chien est estimé entre 10 000 et 100 000 fois supérieur à celui de l'humain."
@@ -844,7 +899,7 @@ const quizzesData = {
             {
                 id: 4,
                 question: "Quelle est la durée de gestation d'une chienne ?",
-                options: ["Environ 45 jours, soit une gestation très courte liée à la petite taille des chiots à la naissance", "Entre 75 et 85 jours, comparable à celle du renard et du loup", "Environ 63 jours", "Environ 90 jours, soit proche de celle du chat et des petits félins"],
+                options: ["Environ 45 jours", "Entre 75 et 85 jours", "Environ 63 jours", "Environ 90 jours"],
                 correct: 2,
                 explanation: "La gestation de la chienne dure en moyenne 63 jours (entre 58 et 68 jours selon les individus), comptés à partir de l'ovulation. C'est une durée similaire à celle du loup, leur ancêtre direct. La portée varie généralement de 1 à 12 chiots selon la race.",
                 source: "American Kennel Club — La gestation dure en moyenne 63 jours chez la chienne."
@@ -852,7 +907,7 @@ const quizzesData = {
             {
                 id: 5,
                 question: "Quel est le chien officiellement le plus rapide au monde ?",
-                options: ["Le Saluki, un lévrier du Moyen-Orient capable d'atteindre 68 km/h sur longue distance grâce à son endurance exceptionnelle", "Le Whippet, un lévrier anglais qui dépasse régulièrement les 60 km/h lors des compétitions de coursing", "Le Lévrier Afghan, dont le pelage long cache une morphologie aérodynamique permettant des pointes à 65 km/h", "Le Greyhound (lévrier anglais)"],
+                options: ["Le Saluki", "Le Whippet", "Le Lévrier Afghan", "Le Greyhound"],
                 correct: 3,
                 explanation: "Le Greyhound est officiellement le chien le plus rapide du monde, capable d'atteindre 72 km/h en pointe. Sa morphologie est entièrement adaptée à la vitesse : corps allongé, cage thoracique profonde, pattes longues et muscles puissants. Il est utilisé dans les courses depuis des siècles.",
                 source: "Guinness World Records — Le Greyhound est le chien le plus rapide, avec des pointes à 72 km/h."
@@ -860,7 +915,7 @@ const quizzesData = {
             {
                 id: 6,
                 question: "Comment s'appelle le chien le plus petit du monde selon les standards de race ?",
-                options: ["Le Toy Poodle, dont la version miniature peut peser moins de 2 kg et mesurer moins de 25 cm au garrot", "Le Pomeranian nain, issu de la sélection des spitz allemands pour leur taille toujours plus réduite", "Le Yorkshire Terrier miniature, dont certains individus sélectionnés pèsent moins de 1,5 kg", "Le Chihuahua"],
+                options: ["Le Toy Poodle", "Le Pomeranian nain", "Le Yorkshire Terrier miniature", "Le Chihuahua"],
                 correct: 3,
                 explanation: "Le Chihuahua est la plus petite race de chien au monde selon les standards de la FCI. Il pèse généralement entre 1,5 et 3 kg et mesure 15 à 23 cm au garrot. Malgré sa taille minuscule, il est réputé pour son caractère vif, courageux et très attaché à son maître.",
                 source: "FCI — Le Chihuahua est la race de chien la plus petite du monde."
@@ -868,7 +923,7 @@ const quizzesData = {
             {
                 id: 7,
                 question: "À quelle température corporelle le chien commence-t-il à souffrir de coup de chaleur ?",
-                options: ["À partir de 38,5 °C, soit dès que la température dépasse légèrement la normale, car ils régulent mal la chaleur", "À partir de 40 °C, une température que le chien peut tolérer brièvement lors d'efforts intenses", "Au-delà de 41-42 °C", "À partir de 43 °C uniquement, car les chiens ont une tolérance naturelle élevée liée à leur métabolisme"],
+                options: ["À partir de 38", "À partir de 40 °C", "Au-delà de 41-42 °C", "À partir de 43 °C uniquement"],
                 correct: 2,
                 explanation: "La température normale d'un chien est de 38 à 39,2 °C. Au-delà de 41-42 °C, le chien entre en hyperthermie dangereuse pouvant endommager les organes. Le chien se refroidit principalement par le halètement (évaporation par la langue et les voies respiratoires), ce qui est moins efficace que la transpiration humaine.",
                 source: "American Veterinary Medical Association — Au-delà de 41 °C, le chien risque un coup de chaleur grave."
@@ -876,7 +931,7 @@ const quizzesData = {
             {
                 id: 8,
                 question: "Quelle est la race de chien la plus grande du monde ?",
-                options: ["Le Leonberg, un chien de montagne allemand qui peut dépasser 80 cm au garrot et peser jusqu'à 75 kg", "Le Saint-Bernard, réputé pour ses missions de sauvetage dans les Alpes et son gabarit imposant", "Le Mastiff Anglais, dont certains individus ont dépassé 100 kg, ce qui en fait le plus lourd", "Le Dogue Allemand (Grand Danois)"],
+                options: ["Le Leonberg", "Le Saint-Bernard", "Le Mastiff Anglais", "Le Dogue Allemand (Grand Danois)"],
                 correct: 3,
                 explanation: "Le Dogue Allemand (Grand Danois) est officiellement la race de chien la plus grande du monde. Il peut mesurer plus de 80 cm au garrot et peser entre 50 et 90 kg. Le record du monde de hauteur est détenu par un Grand Danois nommé Zeus, qui mesurait 111,8 cm au garrot.",
                 source: "Guinness World Records — Le Grand Danois est la race de chien la plus grande du monde."
@@ -884,7 +939,7 @@ const quizzesData = {
             {
                 id: 9,
                 question: "Comment les chiens perçoivent-ils principalement le monde ?",
-                options: ["Par la vue, car leur vision des mouvements est exceptionnellement précise même dans l'obscurité totale", "Par l'ouïe, car ils peuvent entendre des fréquences trois fois plus larges que les humains à des distances bien supérieures", "Par l'odorat en priorité", "Par les vibrations du sol grâce à des mécanorécepteurs dans leurs coussinets particulièrement développés"],
+                options: ["Par la vue", "Par l'ouïe", "Par l'odorat en", "Par les vibrations du sol"],
                 correct: 2,
                 explanation: "L'odorat est le sens dominant du chien. Ils explorent leur environnement avant tout par le nez : identifier des individus, lire les marquages urinaires, détecter des émotions ou des états de santé. Le cerveau du chien consacre une proportion bien plus grande à l'analyse olfactive que le cerveau humain.",
                 source: "Alexandra Horowitz — L'odorat est le sens premier du chien pour percevoir et comprendre le monde."
@@ -900,7 +955,7 @@ const quizzesData = {
             {
                 id: 11,
                 question: "Quel est le chien officiel de la ville de Paris ?",
-                options: ["Le Bouledogue Français, symbole de la capitale depuis une décision du conseil municipal de 1987", "Le Caniche, dont l'histoire est intimement liée à la culture et aux arts français depuis le XVIIe siècle", "Le Berger de Beauce (Beauceron), race nationale française utilisée par la gendarmerie parisienne", "Il n'existe pas de chien officiel de Paris"],
+                options: ["Le Bouledogue", "Le Caniche", "Le Berger de Beauce", "Il n'existe pas de"],
                 correct: 3,
                 explanation: "Paris n'a pas de chien officiel. En revanche, le Bouledogue Français est souvent associé à la culture parisienne moderne et connaît un succès mondial depuis les années 2000. Le Caniche est lui aussi une race emblématique de la France, mais aucune ville française n'a officiellement adopté une race.",
                 source: "Mairie de Paris — Aucune race de chien n'est officiellement désignée comme symbole de Paris."
@@ -908,7 +963,7 @@ const quizzesData = {
             {
                 id: 12,
                 question: "Combien de temps dure la phase de socialisation du chiot, considérée comme critique pour son développement ?",
-                options: ["De 1 à 3 semaines, une fenêtre très courte pendant laquelle toutes les empreintes sensorielles sont gravées définitivement", "De 3 à 12 semaines environ", "De 6 mois à 1 an, quand le chiot commence à explorer son environnement de façon autonome et indépendante", "De la naissance à 6 mois, une période continue sans fenêtre critique particulière selon les dernières recherches"],
+                options: ["De 1 à 3 semaines", "De 3 à 12 semaines environ", "De 6 mois à 1 an", "De la naissance à 6 mois"],
                 correct: 1,
                 explanation: "La fenêtre de socialisation primaire du chiot se situe entre 3 et 12 semaines environ. Durant cette période, le chiot est naturellement ouvert à de nouvelles expériences et forme ses références sociales et émotionnelles. Des expositions positives à divers humains, animaux, sons et environnements à ce stade réduisent les risques de peurs et d'agressivité à l'âge adulte.",
                 source: "American Veterinary Society of Animal Behavior — La socialisation primaire entre 3 et 12 semaines est déterminante."
@@ -916,7 +971,7 @@ const quizzesData = {
             {
                 id: 13,
                 question: "Quel est le sens le plus faible chez le chien comparé à l'humain ?",
-                options: ["L'ouïe, car les humains perçoivent une gamme de fréquences plus large dans les sons graves en dessous de 40 Hz", "L'odorat, car bien que puissant en absolu, il reste moins précis que celui de certains insectes comme les papillons", "La vue, notamment pour les détails fins et les couleurs", "Le toucher, car les coussinets et le pelage dense amortissent les sensations tactiles fines"],
+                options: ["L'ouïe", "L'odorat", "La vue", "Le toucher"],
                 correct: 2,
                 explanation: "La vue est le sens où le chien est généralement en retrait par rapport à l'humain pour certains aspects : moins bonne résolution des détails, vision des couleurs plus limitée (dichromate), et moins bonne acuité à courte distance. En revanche, il voit mieux de nuit et détecte les mouvements beaucoup plus rapidement que nous.",
                 source: "Applied Animal Behaviour Science — La vision du chien est moins précise que celle de l'humain pour les détails et les couleurs."
@@ -932,7 +987,7 @@ const quizzesData = {
             {
                 id: 15,
                 question: "Quelle fréquence d'ultrasons le chien peut-il entendre, contrairement à l'humain ?",
-                options: ["Jusqu'à 30 000 Hz, une capacité légèrement supérieure à l'humain qui perçoit jusqu'à 20 000 Hz", "Jusqu'à 45 000 Hz, ce qui lui permet d'entendre les sifflets à ultrasons conçus spécifiquement pour le dressage", "Jusqu'à 65 000 Hz", "Jusqu'à 100 000 Hz, une capacité proche de celle du dauphin utilisée pour la communication à longue distance"],
+                options: ["Jusqu'à 30 000 Hz", "Jusqu'à 45 000 Hz", "Jusqu'à 65 000 Hz", "Jusqu'à 100 000 Hz"],
                 correct: 2,
                 explanation: "Le chien peut percevoir des sons jusqu'à 65 000 Hz, contre seulement 20 000 Hz pour l'humain. Cette capacité à entendre les ultrasons lui permet de détecter des sons imperceptibles pour nous : certains appareils électroniques, des mouvements de rongeurs dans les murs, ou encore les sifflets à ultrasons utilisés en dressage.",
                 source: "Journal of the Acoustical Society of America — Le chien perçoit des fréquences jusqu'à 65 000 Hz contre 20 000 Hz chez l'humain."
@@ -940,7 +995,7 @@ const quizzesData = {
             {
                 id: 16,
                 question: "Quel est l'espérance de vie moyenne d'un chien ?",
-                options: ["5 à 8 ans pour toutes les races, une durée limitée par leur métabolisme rapide et leur susceptibilité aux maladies infectieuses", "8 à 10 ans, une durée stable qui n'a pas évolué malgré les progrès de la médecine vétérinaire moderne", "10 à 15 ans selon la race et la taille", "18 à 20 ans pour les races robustes comme le Jack Russell, qui dépasse régulièrement ce seuil en bonne santé"],
+                options: ["5 à 8 ans pour toutes les", "8 à 10 ans", "10 à 15 ans selon la race", "18 à 20 ans pour les races"],
                 correct: 2,
                 explanation: "L'espérance de vie d'un chien est en moyenne de 10 à 15 ans, mais varie considérablement selon la race. Les petites races vivent généralement plus longtemps (15 ans et plus pour le Chihuahua ou le Jack Russell) que les grandes races (7-9 ans pour le Dogue Allemand ou le Saint-Bernard). La qualité de vie, l'alimentation et les soins vétérinaires jouent également un rôle important.",
                 source: "Veterinary Record — L'espérance de vie canine varie de 7 à 15 ans selon la taille et la race."
@@ -948,7 +1003,7 @@ const quizzesData = {
             {
                 id: 17,
                 question: "Quelle race de chien est connue pour ne presque pas aboyer ?",
-                options: ["Le Shar Pei, dont la morphologie particulière de la gorge rend l'aboiement difficile et douloureux", "Le Chow-Chow, une race ancienne dont la communication repose principalement sur les postures corporelles silencieuses", "Le Basenji", "Le Shiba Inu, qui préfère un cri aigu caractéristique appelé 'Shiba scream' à l'aboiement classique"],
+                options: ["Le Shar Pei", "Le Chow-Chow", "Le Basenji", "Le Shiba Inu"],
                 correct: 2,
                 explanation: "Le Basenji, originaire d'Afrique centrale, est souvent appelé 'le chien qui n'aboie pas'. Sa morphologie laryngée particulière l'empêche de produire un aboiement classique. Il émet à la place un son unique appelé 'yodel' ou 'barroo', ainsi que des grognements, gémissements et couinements. C'est l'une des races les plus anciennes du monde.",
                 source: "AKC — Le Basenji est connu comme 'le chien qui n'aboie pas', en raison de sa morphologie laryngée particulière."
@@ -956,7 +1011,7 @@ const quizzesData = {
             {
                 id: 18,
                 question: "Comment s'appelle la troisième paupière du chien ?",
-                options: ["La paupière clignotante, un tissu transparent qui se ferme horizontalement pour protéger l'œil sans bloquer la vision", "La membrane cornéenne, une protection fine qui s'active uniquement lors de contacts physiques directs avec l'œil", "La membrane nictitante", "La paupière choroïdale, une structure pigmentée qui régule la quantité de lumière entrant dans la pupille"],
+                options: ["La paupière clignotante", "La membrane cornéenne", "La membrane nictitante", "La paupière choroïdale"],
                 correct: 2,
                 explanation: "La membrane nictitante (ou troisième paupière) est un repli conjonctival situé dans le coin interne de l'œil. Elle glisse horizontalement sur la surface de l'œil pour le protéger des frottements, des corps étrangers et pour répartir les larmes. Quand elle est visible en permanence, cela peut signaler une infection, un stress ou un problème de santé.",
                 source: "Veterinary Ophthalmology — La membrane nictitante est la troisième paupière du chien, visible dans le coin interne de l'œil."
@@ -980,7 +1035,7 @@ const quizzesData = {
             {
                 id: 21,
                 question: "Quelle race est considérée comme la plus intelligente selon les études de Stanley Coren ?",
-                options: ["Le Golden Retriever, dont les capacités d'apprentissage rapide et la docilité naturelle en font le chien de thérapie le plus utilisé au monde", "Le Berger Allemand, sélectionné pour son obéissance et son adaptabilité dans des situations complexes depuis plus d'un siècle", "Le Border Collie", "Le Labrador Retriever, dont la polyvalence (guide, détection, thérapie, chasse) témoigne d'une intelligence pratique exceptionnelle"],
+                options: ["Le Golden Retriever", "Le Berger Allemand", "Le Border Collie", "Le Labrador Retriever"],
                 correct: 2,
                 explanation: "Dans son ouvrage 'The Intelligence of Dogs' (1994), le psychologue Stanley Coren classe le Border Collie en première position pour l'obéissance et l'apprentissage. Il peut apprendre une nouvelle commande en moins de 5 répétitions et l'exécuter correctement dans 95 % des cas. Certains Border Collies ont mémorisé plus de 1 000 mots distincts.",
                 source: "Stanley Coren, 'The Intelligence of Dogs' — Le Border Collie est classé premier pour l'obéissance et la capacité d'apprentissage."
@@ -988,7 +1043,7 @@ const quizzesData = {
             {
                 id: 22,
                 question: "Quel pays a le plus grand nombre de chiens domestiques dans le monde ?",
-                options: ["Les États-Unis, avec environ 90 millions de chiens domestiques selon les dernières enquêtes nationales sur les animaux de compagnie", "La Chine, dont l'essor économique a entraîné une explosion de la possession d'animaux de compagnie depuis les années 2000", "Le Brésil", "La France, premier pays d'Europe pour le nombre de chiens et troisième mondial toutes espèces confondues"],
+                options: ["Les États-Unis", "La Chine", "Le Brésil", "La France"],
                 correct: 2,
                 explanation: "Le Brésil est le pays comptant le plus grand nombre de chiens domestiques au monde, avec plus de 54 millions de chiens. Les États-Unis arrivent en deuxième position avec environ 90 millions selon certaines estimations, mais le Brésil se distingue par sa densité canine et sa culture très attachée aux animaux de compagnie.",
                 source: "World Animal Protection — Le Brésil possède la plus grande population de chiens domestiques au monde."
@@ -996,7 +1051,7 @@ const quizzesData = {
             {
                 id: 23,
                 question: "Comment s'appelle le mouvement de la patte que fait un chien quand on lui gratte le ventre ?",
-                options: ["Le réflexe lombaire, une contraction musculaire involontaire des muscles spinaux qui se propage vers les membres postérieurs", "Le réflexe de Babinski canin, identique au réflexe neurologique humain qui indique l'état de maturation du système nerveux", "Le réflexe de grattage", "Le réflexe périnéal, une réponse autonome du système nerveux sympathique activée par le toucher de la zone inguinale"],
+                options: ["Le réflexe lombaire", "Le réflexe de Babinski canin", "Le réflexe de grattage", "Le réflexe périnéal"],
                 correct: 2,
                 explanation: "Le réflexe de grattage est une réponse involontaire du système nerveux : quand une zone sensible du ventre ou du flanc est stimulée, le cerveau envoie un signal automatique pour 'gratter' l'irritation supposée. C'est un réflexe de défense contre les parasites (puces, tiques). Le chien ne contrôle pas ce mouvement — d'où le côté comique et incontrôlable de la patte qui s'agite.",
                 source: "Neuroscience Letters — Le réflexe de grattage est une réponse automatique du système nerveux à la stimulation des zones sensibles du ventre."
@@ -1012,7 +1067,7 @@ const quizzesData = {
             {
                 id: 25,
                 question: "Quel chien célèbre a inspiré la marque RCA Victor ?",
-                options: ["Rex, un fox-terrier britannique dressé à écouter des phonographes lors de démonstrations commerciales à Londres dès 1895", "Pal, un Collie Rough qui devint célèbre sous le nom de Lassie et fut le porte-parole non officiel de plusieurs marques américaines", "Nipper", "Fido, un chien errant florentin dont la fidélité légendaire inspira le nom générique anglais pour désigner tous les chiens domestiques"],
+                options: ["Rex, un fox-terrier", "Pal, un Collie Rough célèbre", "Nipper", "Fido, un chien errant"],
                 correct: 2,
                 explanation: "Nipper est le célèbre fox-terrier blanc peint en 1898 par Francis Barraud, la tête penchée vers un phonographe, intrigué par la voix de son maître. Ce tableau, intitulé 'His Master's Voice', devint le logo de la Gramophone Company, puis de HMV et de RCA Victor. Nipper est l'un des animaux les plus célèbres de l'histoire de la publicité.",
                 source: "RCA Victor / HMV — Nipper le fox-terrier est la mascotte historique de 'His Master's Voice', logo de RCA Victor."
@@ -1044,7 +1099,7 @@ const quizzesData = {
             {
                 id: 29,
                 question: "Quelle race est à l'origine de la plupart des chiens de traîneau modernes ?",
-                options: ["Le Malamute d'Alaska, la race de traîneau la plus ancienne d'Amérique du Nord, utilisée depuis 4 000 ans par le peuple Mahlemiut", "Le Samoyède, race sibérienne également utilisée comme chien de berger et chien de garde par les nomades Nenets", "Le Husky Sibérien", "Le Groenlandais, la race la plus résistante au froid extrême, capable de travailler à -50°C sans protection supplémentaire"],
+                options: ["Le Malamute d'Alaska", "Le Samoyède", "Le Husky Sibérien", "Le Groenlandais"],
                 correct: 2,
                 explanation: "Le Husky Sibérien, originaire de Sibérie orientale où il était élevé par le peuple Tchouktche, est la race emblématique du traîneau. Léger, endurant et résistant au froid, il a été importé en Alaska au début du XXe siècle pour les courses de traîneaux. Il est à la base de nombreuses lignées de chiens de sport nordiques modernes.",
                 source: "AKC — Le Husky Sibérien est la race emblématique du traîneau, issue du peuple Tchouktche de Sibérie orientale."
@@ -1089,7 +1144,7 @@ const quizzesData = {
             {
                 id: 11,
                 question: "Quel organe sensoriel particulier permet au chien de 'goûter' les odeurs ?",
-                options: ["Les papilles gustatives olfactives situées à la base de la langue, qui analysent simultanément goût et odeur en un seul signal combiné", "Les cellules ciliées de l'épithélium nasal, capables de distinguer 500 types d'odeurs différentes simultanément", "L'organe voméronasal (organe de Jacobson)", "Les récepteurs sensoriels du palais mou, qui traitent les molécules aromatiques dissoutes dans la salive"],
+                options: ["Les papilles gustatives olfactives situées à la base de la langue", "Les cellules ciliées de l'épithélium nasal", "L'organe voméronasal (organe de Jacobson)", "Les récepteurs sensoriels du palais mou"],
                 correct: 2,
                 explanation: "L'organe voméronasal (ou de Jacobson) est situé dans le palais. Il détecte les phéromones et les signaux chimiques complexes que l'odorat classique ne capte pas. Le chien l'utilise surtout pour lire les informations sociales et reproductives — c'est notamment pour cela qu'un chien reniflera longuement les marquages urinaires d'autres congénères.",
                 source: "Journal of Veterinary Science — L'organe voméronasal traite les phéromones et signaux chimiques sociaux chez le chien."
@@ -1097,7 +1152,7 @@ const quizzesData = {
             {
                 id: 12,
                 question: "Quelle est la fréquence cardiaque normale d'un chien adulte au repos ?",
-                options: ["30 à 50 bpm, proche de celle des grands mammifères comme le cheval, en raison de leur gabarit similaire", "50 à 70 bpm, comparable à la fréquence cardiaque d'un humain sportif de haut niveau", "60 à 140 bpm selon la taille", "180 à 220 bpm, une fréquence élevée liée à leur métabolisme rapide et à leur nature prédatrice"],
+                options: ["30 à 50 bpm", "50 à 70 bpm", "60 à 140 bpm selon la taille", "180 à 220 bpm"],
                 correct: 2,
                 explanation: "La fréquence cardiaque d'un chien varie selon sa taille : 60-80 bpm pour les grandes races, jusqu'à 120-140 bpm pour les petites races. C'est une règle générale chez les mammifères : plus l'animal est petit, plus son cœur bat vite. Au-delà ou en dessous de ces valeurs au repos, une consultation vétérinaire est conseillée.",
                 source: "American Veterinary Medical Association — Fréquence cardiaque normale : 60-80 bpm (grandes races), 100-140 bpm (petites races)."
@@ -1113,7 +1168,7 @@ const quizzesData = {
             {
                 id: 14,
                 question: "Comment s'appelle le processus par lequel le chien crée un lien fort avec ses propriétaires dès ses premières semaines ?",
-                options: ["L'attachement néonatal, une phase critique des 10 premiers jours pendant lesquels tout stimulus devient une empreinte permanente", "Le conditionnement opérant, par lequel le chiot associe les humains à des récompenses positives répétées", "La socialisation primaire", "L'imprégnation maternelle, qui transfère le référentiel social de la mère au groupe humain en présence"],
+                options: ["L'attachement néonatal", "Le conditionnement opérant", "La socialisation primaire", "L'imprégnation maternelle"],
                 correct: 2,
                 explanation: "La socialisation primaire est la période critique entre 3 et 12 semaines pendant laquelle le chiot forge ses références sociales et émotionnelles. Un chiot exposé positivement à de nombreux humains, animaux, sons et environnements pendant cette fenêtre sera plus équilibré toute sa vie. Un manque de socialisation à cette période entraîne souvent de l'anxiété ou de l'agressivité.",
                 source: "American Veterinary Society of Animal Behavior — La période de socialisation primaire (3-12 semaines) est déterminante."
@@ -1121,7 +1176,7 @@ const quizzesData = {
             {
                 id: 15,
                 question: "Quel groupe sanguin est le plus fréquent chez le chien ?",
-                options: ["Le groupe DEA 3, présent chez plus de 80 % des chiens toutes races confondues, ce qui en fait le groupe universel receveur", "Le groupe DEA 7, un groupe récemment identifié qui est désormais dominant dans les populations canines mondiales", "Le groupe DEA 1 (anciennement DEA 1.1)", "Le groupe DEA 4, considéré comme le groupe universel donneur en médecine vétérinaire d'urgence"],
+                options: ["Le groupe DEA 3", "Le groupe DEA 7", "Le groupe DEA 1 (anciennement DEA 1.1)", "Le groupe DEA 4"],
                 correct: 2,
                 explanation: "Le système sanguin canin (DEA, Dog Erythrocyte Antigen) compte plusieurs groupes. DEA 1 (anciennement DEA 1.1) est le plus fréquent et le plus important cliniquement, car une incompatibilité peut provoquer des réactions transfusionnelles graves. En médecine vétérinaire, le typage sanguin avant une transfusion est fortement recommandé.",
                 source: "Journal of Veterinary Internal Medicine — DEA 1 est le groupe sanguin canin le plus fréquent et le plus cliniquement significatif."
@@ -1129,7 +1184,7 @@ const quizzesData = {
             {
                 id: 16,
                 question: "Quelle est la particularité du Dalmatien par rapport aux autres races ?",
-                options: ["Il naît avec ses taches noires visibles dès la naissance, contrairement à une idée reçue qui prétend qu'elles apparaissent avec l'âge", "Il est la seule race à ne pas posséder de sous-poil, ce qui explique sa thermorégulation différente des autres chiens à poil court", "Il naît entièrement blanc, les taches apparaissent ensuite", "Il possède une colonne vertébrale légèrement plus longue que la moyenne des chiens de sa taille, ce qui lui confère son allure"],
+                options: ["Il naît avec ses taches noires visibles dès la naissance", "Il est la seule race à ne pas posséder de sous-poil", "Il naît entièrement blanc, les taches apparaissent ensuite", "Il possède une colonne vertébrale légèrement plus longue que la moyenne des chiens de sa taille"],
                 correct: 2,
                 explanation: "Les chiots Dalmatiens naissent entièrement blancs. Les taches caractéristiques (noires ou foie) apparaissent progressivement au cours des premières semaines de vie, à mesure que la mélanine se dépose dans les poils. Ce phénomène est lié à la migration des mélanocytes après la naissance.",
                 source: "AKC — Les Dalmatiens naissent blancs, leurs taches apparaissant dans les premières semaines de vie."
@@ -1137,7 +1192,7 @@ const quizzesData = {
             {
                 id: 17,
                 question: "Quel chien a officiellement été le premier à aller dans l'espace ?",
-                options: ["Belka, une chienne soviétique lancée à bord de Spoutnik 5 en 1960 et revenue vivante sur Terre après 17 orbites", "Strelka, la compagne de Belka lors de la mission Spoutnik 5, qui est devenue le symbole des missions spatiales animales soviétiques", "Laïka", "Dezik, le premier chien soviétique à dépasser l'atmosphère lors d'un vol suborbital en 1951, souvent oublié de l'histoire officielle"],
+                options: ["Belka", "Strelka", "Laïka", "Dezik"],
                 correct: 2,
                 explanation: "Laïka, une chienne croisée de rue soviétique, est le premier être vivant à avoir orbité autour de la Terre, le 3 novembre 1957 à bord de Spoutnik 2. Elle n'a pas survécu à la mission (les conditions de survie n'étaient pas prévues), mais son voyage a ouvert la voie à la conquête spatiale habitée.",
                 source: "NASA — Laïka est le premier être vivant à avoir orbité la Terre, le 3 novembre 1957."
@@ -1145,7 +1200,7 @@ const quizzesData = {
             {
                 id: 18,
                 question: "Combien de muscles les chiens utilisent-ils pour bouger chaque oreille ?",
-                options: ["3 muscles, soit le même nombre que chez l'humain, bien que les chiens les contrôlent de façon beaucoup plus précise", "7 muscles, permettant des mouvements suffisamment fins pour distinguer la source d'un son à quelques degrés près", "Plus de 18 muscles indépendants", "12 muscles par oreille, un nombre légèrement supérieur à celui des chats qui en possèdent 9 par oreille"],
+                options: ["3 muscles", "7 muscles", "Plus de 18 muscles", "12 muscles par"],
                 correct: 2,
                 explanation: "Le chien possède plus de 18 muscles dans chaque oreille, ce qui lui permet de les orienter indépendamment avec une grande précision. Cette mobilité auriculaire lui sert à localiser les sons avec précision et à communiquer ses émotions (oreilles dressées, en arrière, aplaties). L'humain, en comparaison, possède seulement 3 muscles auriculaires atrophiés.",
                 source: "Comparative Anatomy Journal — Le chien possède plus de 18 muscles par oreille, contre 3 chez l'humain."
@@ -1185,7 +1240,7 @@ const quizzesData = {
             {
                 id: 23,
                 question: "Comment s'appelle la technique de pistage où le chien suit une odeur de contact laissée sur le sol ?",
-                options: ["Le tracking aérien, une technique où le chien lève la tête pour capter les molécules odorantes en suspension dans l'air", "Le tracking au sol (pistage de contact)", "Le mantrailing actif, où le chien alterne entre piste au sol et cônes d'odeur aériens", "La recherche thermique, exploitant la chaleur corporelle résiduelle laissée par les empreintes"],
+                options: ["Le tracking aérien", "Le tracking au sol (pistage de contact)", "Le mantrailing actif", "La recherche thermique"],
                 correct: 1,
                 explanation: "Le tracking (ou pistage au sol) est la technique où le chien suit, nez bas, l'odeur de contact déposée par les pieds d'une personne — herbes écrasées, terre retournée, sueur et cellules épidermiques. C'est une des méthodes utilisées en compétition canine (IGP) et en recherche de personnes disparues.",
                 source: "IGP Regulations — Le tracking au sol est l'une des disciplines canoniques du travail olfactif canin."
@@ -1217,7 +1272,7 @@ const quizzesData = {
             {
                 id: 27,
                 question: "Quelle race de chien est la plus utilisée dans les unités cynophiles de police et gendarmerie en France ?",
-                options: ["Le Rottweiler, dont la puissance physique et la résistance à la douleur en font le chien d'intervention préféré des unités de maintien de l'ordre", "Le Malinois (Berger Belge)", "Le Berger Allemand, race historiquement dominante dans les forces de l'ordre depuis la Seconde Guerre mondiale", "Le Dobermann, sélectionné spécifiquement au XIXe siècle pour les patrouilles nocturnes par le percepteur Karl Friedrich Louis Dobermann"],
+                options: ["Le Rottweiler", "Le Malinois (Berger Belge)", "Le Berger Allemand", "Le Dobermann"],
                 correct: 1,
                 explanation: "Le Malinois (Berger Belge Malinois) a largement supplanté le Berger Allemand dans les forces de l'ordre et l'armée. Plus léger, plus rapide et plus résistant, il présente une drive de travail élevée et une meilleure endurance. Il est aujourd'hui la race dominante dans la plupart des unités cynophiles européennes, dans les forces spéciales et même dans les opérations militaires américaines.",
                 source: "Gendarmerie Nationale — Le Malinois est aujourd'hui la race dominante dans les unités cynophiles françaises."
@@ -1358,7 +1413,7 @@ const quizzesData = {
             {
                 id: 21,
                 question: "Quel mécanisme génétique explique la grande diversité morphologique des races de chien malgré leur proximité génétique ?",
-                options: ["Des mutations ponctuelles accumulées sur des millions d'années dans des gènes non codants, activées lors de la domestication par pression de sélection artificielle intense", "La duplication génomique complète survenue lors de la domestication, qui a multiplié le nombre de gènes disponibles pour la sélection phenotypique", "Des variations dans un petit nombre de gènes à effet majeur (IGF1, HMGA2, BMP3…)", "L'épigénétique transgénérationnelle, par laquelle les choix de sélection humains modifient l'expression génétique sur plusieurs générations sans modifier la séquence ADN"],
+                options: ["Des mutations ponctuelles accumulées sur des millions d'années dans des gènes non", "La duplication génomique complète survenue lors de la domestication", "Des variations dans un petit nombre de gènes à effet majeur (IGF1", "L'épigénétique transgénérationnelle"],
                 correct: 2,
                 explanation: "Malgré leur diversité morphologique spectaculaire, les races de chiens diffèrent génétiquement peu. Des études ont montré que la plupart des différences de taille, de morphologie cranio-faciale ou de structure corporelle s'expliquent par des variations dans un petit nombre de gènes à fort effet phénotypique, comme IGF1 (taille), HMGA2, BMP3 ou RSPO2. C'est un exemple remarquable de comment peu de changements génétiques peuvent produire une grande diversité visible.",
                 source: "Science (Boyko et al.) — La diversité morphologique canine est due à des variants dans un petit nombre de gènes à effet majeur."
@@ -1631,16 +1686,16 @@ const quizzesData = {
             {
                 id: 1,
                 question: "Combien d'heures par jour un chat dort-il en moyenne ?",
-                options: ["4 à 6 heures seulement, car ce sont des animaux nocturnes très actifs", "8 à 10 heures, comme la plupart des mammifères domestiques", "12 à 16 heures", "18 à 20 heures uniquement pour les chats âgés ou convalescents"],
+                options: ["4 à 6 heures seulement", "8 à 10 heures", "12 à 16 heures", "18 à 20 heures"],
                 correct: 2,
                 explanation: "Les chats sont des animaux crépusculaires et crepusculaires. Ils dorment 12 à 16 heures par jour pour conserver leur énergie, ce qui leur permet d'être alerte pendant les heures d'activité.",
                 source: "Institut Félin International - Les chats dorment entre 12 et 16 heures par jour pour conserver leur énergie.",
-                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Cat_November_2010-1a.jpg/800px-Cat_November_2010-1a.jpg"
+                image: "https://upload.wikimedia.org/wikipedia/commons/c/cc/Domestic_short-haired_cat.jpg"
             },
             {
                 id: 2,
                 question: "Combien de dents permanentes un chat adulte possède-t-il ?",
-                options: ["30 dents, soit autant que chez le chien adulte de taille comparable", "28 dents", "32 dents, comme c'est le cas pour la majorité des carnivores domestiques", "26 dents, les canines incluses mais sans les prémolaires supplémentaires"],
+                options: ["30 dents", "28 dents", "32 dents", "26 dents"],
                 correct: 1,
                 explanation: "Les chats adultes ont 28 dents permanentes : 16 à la mâchoire supérieure et 12 à la mâchoire inférieure. Cela diffère légèrement des chiens qui en ont 42. Ces dents incluent des crocs pointus pour chasser.",
                 source: "Association Française de Vétérinaires - Un chat adulte possède 28 dents permanentes (16 en haut, 12 en bas)."
@@ -1648,7 +1703,7 @@ const quizzesData = {
             {
                 id: 3,
                 question: "Que signifie quand un chat ronronne ?",
-                options: ["Exclusivement un signe de bien-être et de satisfaction profonde envers son environnement", "Contentement, mais aussi stress ou douleur", "Un signal d'avertissement précédant généralement une morsure ou une attaque", "Un réflexe respiratoire involontaire sans lien avec l'état émotionnel de l'animal"],
+                options: ["Exclusivement un signe de bien-être et de satisfaction profonde envers son", "Contentement, mais aussi stress ou douleur", "Un signal d'avertissement précédant généralement une morsure ou une attaque", "Un réflexe respiratoire involontaire sans lien avec l'état émotionnel de l'animal"],
                 correct: 1,
                 explanation: "Le ronronnement est une vibration produite par les cordes vocales d'un chat. Bien qu'il indique généralement le contentement, les chats ronronnent aussi pour s'auto-apaiser en cas de douleur ou de stress. C'est un mécanisme complexe de communication.",
                 source: "Université de Cambridge - Le ronronnement peut indiquer le bien-être mais aussi la douleur ou l'anxiété."
@@ -1656,7 +1711,7 @@ const quizzesData = {
             {
                 id: 4,
                 question: "Que signifie quand un chat bande sa queue en forme de brosse ?",
-                options: ["Le chat est en état d'excitation intense et cherche à attirer l'attention pour jouer", "Le chat a peur ou se sent menacé", "Le chat prépare une posture de chasse et s'apprête à bondir sur une proie", "Le chat ressent de l'affection et sollicite des caresses ou une interaction sociale"],
+                options: ["Le chat est en état d'excitation intense et cherche à attirer l'attention", "Le chat a peur ou se sent menacé", "Le chat prépare une posture de chasse et s'apprête à bondir sur une", "Le chat ressent de l'affection et sollicite des caresses ou une interaction"],
                 correct: 1,
                 explanation: "Quand un chat a peur ou se sent menacé, ses muscles érecteurs des poils se contractent et font gonfler sa queue comme une brosse. Combiné à une posture de côté (pour paraître plus grand), c'est un signal d'avertissement clair : 'je suis effrayé, ne m'approche pas'. Si l'intrus continue, le chat peut passer à l'attaque défensive.",
                 source: "Association Française de Vétérinaires - Une queue gonflée en brosse est un signe de peur ou de stress."
@@ -1664,7 +1719,7 @@ const quizzesData = {
             {
                 id: 5,
                 question: "À quel âge les chatons ouvrent-ils leurs yeux ?",
-                options: ["Dès la naissance, bien que leur vision reste très limitée pendant les premières semaines", "À 5-10 jours", "À 3 semaines, une fois que leur système nerveux central est pleinement développé", "À 6 semaines, en même temps que les premières dents définitives commencent à percer"],
+                options: ["Dès la naissance", "À 5-10 jours", "À 3 semaines", "À 6 semaines"],
                 correct: 1,
                 explanation: "Les chatons naissent les yeux fermés car leur système nerveux n'est pas encore mature. Leurs yeux s'ouvrent entre 5 et 10 jours, mais leur vision reste floue encore 2-3 semaines. Ils sont totalement dépendants de leur mère pendant cette période pour se nourrir, se réchauffer et être stimulés pour uriner et déféquer.",
                 source: "Fédération Internationale Féline - Les chatons ouvrent généralement leurs yeux entre 5 et 10 jours."
@@ -1672,7 +1727,7 @@ const quizzesData = {
             {
                 id: 6,
                 question: "Combien de vibrisses (moustaches) possède un chat ?",
-                options: ["4 moustaches principales, réparties en deux rangées de chaque côté du museau", "8 moustaches regroupées symétriquement pour détecter les mouvements d'air latéraux", "Environ 24 moustaches", "Plus de 50 moustaches fines réparties sur l'ensemble de la face et des joues"],
+                options: ["4 moustaches principales", "8 moustaches par rangée", "Environ 24 moustaches", "Plus de 50 moustaches fines"],
                 correct: 2,
                 explanation: "Le chat possède environ 24 vibrisses principales, disposées en 4 rangées de chaque côté du museau. Ces moustaches sont des organes sensoriels ultra-précis reliés à des nerfs : elles détectent les variations de pression d'air, permettant au chat de naviguer dans l'obscurité totale et d'évaluer si un espace est suffisamment large pour son corps. Les couper est donc très néfaste.",
                 source: "Institut de Recherche Féline - Les chats possèdent environ 24 vibrisses principales."
@@ -1680,7 +1735,7 @@ const quizzesData = {
             {
                 id: 7,
                 question: "Quel est le cri d'accouplement des chattes en chaleur ?",
-                options: ["Un miaulement grave et prolongé similaire à celui produit lors d'une douleur physique intense", "Un cri très bruyant et répété", "Une vocalisation discrète et basse destinée uniquement aux mâles situés à proximité immédiate", "Un ronronnement intense et modulé dont la fréquence évolue tout au long du cycle hormonal"],
+                options: ["Un miaulement grave et prolongé similaire à celui produit lors d'une", "Un cri très bruyant et répété", "Une vocalisation discrète et basse destinée uniquement aux mâles", "Un ronronnement intense et modulé dont la fréquence évolue tout au"],
                 correct: 1,
                 explanation: "Les chattes en chaleur émettent des vocalisations intenses et répétées, souvent décrites comme un 'gémissement' ou un 'hurlement'. Ce comportement peut durer plusieurs jours et est destiné à attirer les mâles à distance. Il s'accompagne de roulades, de postures particulières et de marquages urinaires. La stérilisation est la seule solution durable pour l'éviter.",
                 source: "Association Française de Comportement Félin - Les chattes en chaleur produisent des miaulements très particuliers."
@@ -1688,7 +1743,7 @@ const quizzesData = {
             {
                 id: 8,
                 question: "À quel âge un chaton est-il complètement sevré ?",
-                options: ["À 4 semaines, dès que les premières dents de lait ont percé et que le chaton commence à mastiquer", "À 6-8 semaines", "À 3 mois, une fois que le système digestif est pleinement mature pour les aliments solides", "À 6 mois, en parallèle du développement hormonal et du changement des dents définitives"],
+                options: ["À 4 semaines", "À 6-8 semaines", "À 3 mois", "À 6 mois"],
                 correct: 1,
                 explanation: "Vers 6-8 semaines, le chaton est capable de manger des aliments solides de façon autonome et n'a plus besoin du lait maternel. C'est aussi la période où il apprend les comportements sociaux essentiels avec ses frères et sœurs. Séparer un chaton de sa mère avant 8 semaines peut provoquer des troubles comportementaux comme l'anxiété, la succion de tissu ou des difficultés à socialiser.",
                 source: "American Veterinary Medical Association - Le sevrage complet du chaton se fait vers 6-8 semaines."
@@ -1704,7 +1759,7 @@ const quizzesData = {
             {
                 id: 10,
                 question: "Que signifie quand un chat frotte sa tête contre vous ?",
-                options: ["Il ressent des démangeaisons faciales persistantes", "Il marque son territoire avec ses phéromones", "Il exprime une irritation territoriale et vous avertit discrètement d'un risque d'agression imminente", "Il réclame de la nourriture via ce signal spécifique, distinct du miaulement, pour attirer votre attention vers sa gamelle"],
+                options: ["Il ressent des démangeaisons faciales persistantes", "Il marque son territoire avec ses phéromones", "Il exprime une irritation territoriale et vous avertit discrètement d'un risque d'agression", "Il réclame de la nourriture via ce signal spécifique"],
                 correct: 1,
                 explanation: "Quand un chat frotte sa tête contre vous (comportement appelé 'bunting'), il dépose ses phéromones faciales produites par des glandes situées au niveau des joues, du menton et du front. C'est un signal d'appartenance et d'affection : il vous 'marque' comme faisant partie de son groupe social. C'est un des comportements les plus positifs qu'un chat puisse avoir envers vous.",
                 source: "Institut de Comportement Animal - Les glandes faciales du chat produisent des phéromones pour marquage territorial."
@@ -1712,7 +1767,7 @@ const quizzesData = {
             {
                 id: 11,
                 question: "Quel est le record de saut vertical pour un chat ?",
-                options: ["50 cm, soit environ deux fois la hauteur au garrot d'un chat adulte moyen", "1 mètre, soit déjà trois fois sa hauteur au garrot grâce à ses pattes arrière musclées", "1,5 mètre", "2 mètres, comparable aux capacités de certains félins sauvages comme le serval ou le caracal"],
+                options: ["50 cm", "1 mètre", "1,5 mètre", "2 mètres"],
                 correct: 2,
                 explanation: "Un chat peut sauter jusqu'à 1,5 mètre verticalement, soit environ 5 fois sa propre hauteur. Cela équivaut pour un humain moyen à sauter par-dessus une maison de 3 étages. Cette performance est rendue possible par leurs pattes arrière très musclées et leur colonne vertébrale extrêmement flexible qui agit comme un ressort.",
                 source: "Institut de Zoologie - Les chats peuvent sauter 1,5 mètre de haut."
@@ -1720,7 +1775,7 @@ const quizzesData = {
             {
                 id: 12,
                 question: "Combien d'années vivent généralement les chats domestiques ?",
-                options: ["5 à 7 ans, ce qui correspond à l'espérance de vie des chats harets vivant en milieu naturel sauvage", "10 à 12 ans, durée typique pour un chat avec accès extérieur et suivi vétérinaire régulier", "15-18 ans", "20 ans et plus, ce qui constitue un record exceptionnel réservé à quelques individus très rares"],
+                options: ["5 à 7 ans", "10 à 12 ans", "15-18 ans", "20 ans et plus"],
                 correct: 2,
                 explanation: "Les chats domestiques vivent en moyenne 15 à 18 ans, soit bien plus que leurs ancêtres sauvages (5-7 ans en nature). Des chats de 20 ans ou plus existent. Le record enregistré est Creme Puff, morte à 38 ans au Texas. Les chats vivant exclusivement en intérieur vivent généralement 2 à 5 ans de plus que ceux ayant accès à l'extérieur.",
                 source: "Association Féline Française - L'espérance de vie moyenne est 15-18 ans."
@@ -1728,7 +1783,7 @@ const quizzesData = {
             {
                 id: 13,
                 question: "Quel est le temps moyen d'un chat pour faire ses besoins ?",
-                options: ["10 secondes à peine, le chat étant particulièrement rapide pour cette fonction physiologique essentielle", "30 secondes", "1 minute en moyenne, car le chat prend le temps de choisir l'endroit précis avant et après l'élimination", "5 minutes au minimum, le comportement de grattage et de recouvrement étant très développé chez le chat"],
+                options: ["10 secondes à peine", "30 secondes", "1 minute en moyenne", "5 minutes au minimum"],
                 correct: 1,
                 explanation: "Un chat passe en moyenne 30 à 40 secondes à faire ses besoins. Il accordera généralement plusieurs minutes à creuser et à recouvrir — c'est un comportement instinctif pour cacher son odeur des prédateurs. Un chat qui passe un temps anormalement long dans sa litière, ou qui crie en urinant, peut souffrir d'une obstruction ou d'une infection urinaire — à consulter en urgence.",
                 source: "Institut d'Éthologie Féline - Un chat passe généralement 30-40 secondes."
@@ -1736,7 +1791,7 @@ const quizzesData = {
             {
                 id: 14,
                 question: "À quel âge les chatons commencent-ils à chasser ?",
-                options: ["À 2 mois, dès que leurs sens sont suffisamment développés pour repérer et suivre une proie en mouvement", "À 3-4 mois", "À 6 mois, une fois la dentition définitive en place permettant de tuer et consommer des proies réelles", "À 1 an, lorsque le chat a atteint sa pleine maturité physique et que ses réflexes sont pleinement opérationnels"],
+                options: ["À 2 mois", "À 3-4 mois", "À 6 mois", "À 1 an"],
                 correct: 1,
                 explanation: "Vers 3-4 mois, les chatons commencent à affiner leurs instincts de prédateur : ils guettent, se tapissent, bondissent et 'tuent' leurs jouets. La mère enseigne la chasse en apportant d'abord des proies mortes, puis vivantes. Les chatons élevés seuls sans stimulation de chasse peuvent développer des frustrations ou des comportements d'agression par jeu envers leurs propriétaires.",
                 source: "Fédération Féline Française - Les instincts de chasse émergent vers 3-4 mois."
@@ -1744,7 +1799,7 @@ const quizzesData = {
             {
                 id: 15,
                 question: "Quel est le bruit que produit un chat satisfait ?",
-                options: ["Miaulement doux et répété réservé aux interactions positives avec les humains", "Ronronnement", "Claquement rapide des dents produit en observant une proie depuis la fenêtre", "Feulement grave et sourd émis dans la gorge comme expression de confiance et de bien-être profond"],
+                options: ["Miaulement doux et répété", "Ronronnement", "Claquement rapide des dents", "Feulement grave et sourd émis"],
                 correct: 1,
                 explanation: "Le ronronnement est produit par les vibrations rapides des muscles du larynx (25 à 150 Hz). Un chat satisfait ronronne souvent lors des caresses ou quand il s'installe confortablement. Fait intéressant : certaines fréquences du ronronnement (25-50 Hz) correspondent à celles utilisées en médecine pour accélérer la guérison osseuse — ce qui pourrait expliquer pourquoi les chats récupèrent vite de leurs blessures.",
                 source: "Institut de Comportement Animal - Le ronronnement est signe de contentement."
@@ -1752,7 +1807,7 @@ const quizzesData = {
             {
                 id: 16,
                 question: "À quelle distance un chat peut-il entendre ?",
-                options: ["Jusqu'à 1 mètre seulement leur sensibilité étant axée sur les très hautes fréquences ultrasoniques", "Jusqu'à 10 mètres permettant de localiser des rongeurs dans un périmètre rapproché de leur terrier", "Jusqu'à 100 mètres", "Sans limite définie"],
+                options: ["Jusqu'à 1 mètre seulement leur sensibilité", "Jusqu'à 10 mètres permettant de localiser", "Jusqu'à 100 mètres", "Sans limite définie"],
                 correct: 2,
                 explanation: "Les chats entendent des sons jusqu'à des fréquences de 79 000 Hz (contre 20 000 Hz chez l'humain), ce qui leur permet de détecter les ultrasons émis par les rongeurs. Ils peuvent percevoir des sons jusqu'à 100 mètres. Chacune de leurs oreilles peut pivoter indépendamment jusqu'à 180° pour localiser précisément une source sonore — comme une antenne satellite.",
                 source: "Institut de Sensorimotricité Féline - L'audition du chat est excellente jusqu'à 100m."
@@ -1800,7 +1855,7 @@ const quizzesData = {
             {
                 id: 22,
                 question: "Quel est l'instinct naturel d'un chaton orphelin ?",
-                options: ["Chercher de la nourriture", "Chercher sa mère", "Chercher un territoire", "Dormir"],
+                options: ["Chercher de la", "Chercher sa mère", "Chercher un territoire", "Dormir"],
                 correct: 1,
                 explanation: "Un chaton orphelin va instinctivement miauler pour appeler sa mère. Sans elle, il risque l'hypothermie car il ne peut pas réguler sa propre température avant 4 semaines. Il doit être nourri toutes les 2 heures avec du lait de substitution spécial chatons (jamais du lait de vache), et stimulé avec un tissu humide pour l'aider à uriner et déféquer (rôle normalement joué par la langue de la mère).",
                 source: "Institut de Développement Félin - Les chatons orphelins miaulent pour leur mère."
@@ -1848,7 +1903,7 @@ const quizzesData = {
             {
                 id: 28,
                 question: "Quel est le comportement du chat quand sa queue se gonfle ?",
-                options: ["Joie", "Peur ou agression défensive", "Faim", "Sommeil"],
+                options: ["Joie", "Peur ou", "Faim", "Sommeil"],
                 correct: 1,
                 explanation: "La queue gonflée (piloérection) est un réflexe involontaire déclenché par l'adrénaline lors d'un stress ou d'une peur intense. Le chat gonfle aussi tout son pelage pour paraître plus imposant face à un adversaire. Ce signal combiné à une posture latérale, des oreilles aplaties et des feulements est un avertissement fort — un chat dans cet état peut mordre ou griffer si l'on insiste à l'approcher.",
                 source: "Institut de Comportement Animal - Une queue gonflée indique la peur."
@@ -1901,7 +1956,7 @@ const quizzesData = {
             {
                 id: 11,
                 question: "Quel est le rôle principal des moustaches du chat (vibrisses) ?",
-                options: ["Uniquement pour l'apparence", "Détecter les obstacles et percevoir les mouvements de l'air", "Maintenir l'équilibre uniquement", "Communiquer avec les autres chats"],
+                options: ["Uniquement pour l'apparence", "Détecter les obstacles et les mouvements proches", "Maintenir l'équilibre uniquement", "Communiquer avec les autres chats"],
                 correct: 1,
                 explanation: "Les vibrisses sont beaucoup plus que des moustaches décoratives : ce sont des organes sensoriels reliés directement au système nerveux. Chaque vibrisse est implantée 3 fois plus profondément qu'un poil ordinaire et connectée à des récepteurs tactiles ultra-sensibles. Le chat s'en sert pour évaluer les courants d'air, détecter des mouvements infimes et mesurer s'il peut passer dans un espace sans mettre sa tête dedans.",
                 source: "Association Française de Vétérinaires Félinistes - Les vibrisses sont des capteurs tactiles essentiels."
@@ -1933,7 +1988,7 @@ const quizzesData = {
             {
                 id: 15,
                 question: "Pourquoi les chats font-ils 'les biscuits' (malaxent) ?",
-                options: ["Agressivité", "Comportement hérité du temps d'allaitement et signe de contentement", "Problème neurologique", "Préparer un endroit confortable"],
+                options: ["Agressivité", "Comportement hérité du temps", "Problème neurologique", "Préparer un endroit"],
                 correct: 1,
                 explanation: "Les chatons malaxent le ventre de leur mère pour stimuler la montée du lait. Ce comportement reste chez beaucoup de chats adultes comme une réaction instinctive au bien-être et à la sécurité. Un chat qui 'fait ses biscuits' sur vos genoux ou sur une couverture douce vous signifie qu'il est dans un état de confort profond. C'est l'équivalent félin du sourire.",
                 source: "International Society of Feline Medicine - Ce comportement persiste chez l'adulte comme signe de bien-être."
@@ -1949,7 +2004,7 @@ const quizzesData = {
             {
                 id: 17,
                 question: "Quel est le cycle reproducteur chez la femelle chat ?",
-                options: ["Annuel comme les chiens", "Polyoestral (plusieurs cycles par an)", "Seul pendant l'été", "Une seule fois dans la vie"],
+                options: ["Annuel comme les chiens", "Polyoestral", "Seul pendant l'été", "Une seule fois dans la vie"],
                 correct: 1,
                 explanation: "Les chattes sont polyœstrales saisonnières : elles ont plusieurs cycles de chaleur par an, principalement au printemps et en été quand les jours sont longs. Chaque cycle dure environ 14-21 jours. Si elles ne sont pas fécondées, elles repassent rapidement en chaleur. Elles sont ovulatrices induites : l'ovulation est déclenchée par l'accouplement lui-même, ce qui maximise les chances de conception.",
                 source: "Fédération Internationale Féline - Les chattes sont polyoestrales en dehors des périodes d'anoestrus."
@@ -1965,7 +2020,7 @@ const quizzesData = {
             {
                 id: 19,
                 question: "Que signifie les yeux qui se plissent chez un chat ?",
-                options: ["Il a peur", "Il est affectueux ou content", "Il va mordre", "Il a mal"],
+                options: ["Il a peur", "Il est affectueux ou", "Il va mordre", "Il a mal"],
                 correct: 1,
                 explanation: "Quand un chat plisse lentement les yeux en vous regardant, c'est l'équivalent d'un sourire ou d'un câlin en langage félin — parfois appelé 'slow blink' ou 'bisou du chat'. Des études ont confirmé que les humains qui imitent ce clignement lent obtiennent une réponse similaire de la part du chat, établissant une communication de confiance. C'est l'une des façons les plus simples de créer un lien avec un chat inconnu.",
                 source: "Institut de Comportement Animal - Les chats plissent les yeux comme marque d'affection."
@@ -1989,7 +2044,7 @@ const quizzesData = {
             {
                 id: 32,
                 question: "Quel est l'impact de la stérilisation sur le comportement d'une chatte ?",
-                options: ["Aucun impact", "Réduction de l'agressivité et comportement d'accouplement", "Augmentation d'agressivité", "Changement de personnalité complet"],
+                options: ["Aucun impact", "Réduction de l'agressivité", "Augmentation d'agressivité", "Changement de personnalité"],
                 correct: 1,
                 explanation: "La stérilisation d'une chatte supprime les chaleurs (et leurs vocalisations intenses), réduit le risque de pyomètre (infection utérine grave) et diminue fortement le risque de tumeurs mammaires si elle est faite avant le premier cycle. Chez le mâle, la castration réduit les marquages urinaires, les fugues pour chercher des femelles, les bagarres avec d'autres mâles et donc le risque d'infections transmises par morsures (FIV, leucose).",
                 source: "Association Vétérinaire Féline - La stérilisation réduit les comportements hormonaux."
@@ -1997,7 +2052,12 @@ const quizzesData = {
             {
                 id: 33,
                 question: "Quel est le processus appelé 'Flehmen' chez le chat ?",
-                options: ["Bâillement", "Réaction olfactive pour détection de phéromones", "Léchage", "Étirement"],
+                options: [
+                "Bâillement",
+                "Réaction olfactive",
+                "Léchage",
+                "Étirement"
+            ],
                 correct: 1,
                 explanation: "La réaction de Flehmen (ou 'grimace de Flehmen') se manifeste quand le chat retrousse les lèvres supérieures et maintient la bouche entrouverte pendant quelques secondes. Ce n'est pas un sourire ou une agression : le chat fait entrer des molécules odorantes en contact avec son organe de Jacobson (organe voméronasal) situé au palais. Cela lui permet d'analyser des phéromones chimiques invisibles pour l'humain.",
                 source: "Institut de Comportement Félin - C'est la réponse au sac vomeronasal."
@@ -2005,7 +2065,7 @@ const quizzesData = {
             {
                 id: 34,
                 question: "Quel est le rôle des pattes postérieures dans l'équilibre du chat ?",
-                options: ["Génération de la puissance de propulsion lors des sauts, sans contribution à l'équilibre statique", "Stabilisation et ajustement fin de la posture", "Détection des vibrations du sol via des récepteurs spécialisés dans les coussinets plantaires", "Protection du ventre par un repli défensif réflexe lors d'attaques provenant du sol"],
+                options: ["Génération de la puissance de propulsion lors des sauts", "Stabilisation et ajustement fin de la posture", "Détection des vibrations du sol via des récepteurs spécialisés dans les coussinets", "Protection du ventre par un repli défensif réflexe lors d'attaques provenant du sol"],
                 correct: 1,
                 explanation: "Les pattes postérieures du chat jouent un rôle clé dans la stabilité et les ajustements posturaux fins. Très musclées, elles sont le moteur principal des sauts et de la course. Lors d'une chute, ce sont elles qui s'étendent en premier pour amortir l'impact. Le chat est digitigrade (il marche sur les doigts), ce qui lui donne une grande précision dans ses mouvements et une foulée naturellement silencieuse.",
                 source: "Institut de Biomécanique - Les pattes postérieures assurent la stabilité."
@@ -2021,7 +2081,7 @@ const quizzesData = {
             {
                 id: 36,
                 question: "Quel est le rôle de la troisième paupière (nictitante) chez le chat ?",
-                options: ["Filtration des longueurs d'onde UV pour protéger la rétine lors de l'exposition au soleil intense", "Protection et lubrification de l'œil", "Focalisation de la lumière sur la fovéa centrale pour maximiser la résolution visuelle centrale", "Amplification des sons haute fréquence grâce à une membrane tympanique accessible depuis l'extérieur"],
+                options: ["Filtration des longueurs d'onde UV pour protéger la rétine lors de l'exposition au", "Protection et lubrification de l'œil", "Focalisation de la lumière sur la fovéa centrale pour maximiser la résolution", "Amplification des sons haute fréquence grâce à une membrane tympanique accessible"],
                 correct: 1,
                 explanation: "La troisième paupière (membrane nictitante) est un tissu semi-transparent qui glisse horizontalement sur l'œil. Elle protège la cornée des égratignures et débris, et contribue à la lubrification oculaire en étalant les larmes. Quand cette membrane est visible sur un chat éveillé et en bonne santé, c'est souvent un signe de fatigue extrême, de maladie (parasites, infection, déshydratation) ou de stress — à surveiller.",
                 source: "Institut d'Ophtalmologie Féline - Elle protège l'œil des débris."
@@ -2029,7 +2089,7 @@ const quizzesData = {
             {
                 id: 37,
                 question: "Quel est le processus de 'kneading' ou 'malaxage' chez l'adulte ?",
-                options: ["Préparation du lit", "Comportement hérité d'allaitement, signe de bien-être", "Agressivité", "Ennui"],
+                options: ["Préparation du lit", "Comportement", "Agressivité", "Ennui"],
                 correct: 1,
                 explanation: "Le 'kneading' ou malaxage est un comportement néonatal : les chatons pétrissent le ventre de leur mère pour stimuler la lactation. Chez l'adulte, ce geste réapparaît dans des contextes de confort et de sécurité. Les chats qui font les biscuits sur une surface douce (couverture, vos genoux) sont dans un état de relaxation et de bonheur profond. C'est un compliment de la part de votre chat.",
                 source: "Institut de Comportement Animal - C'est un comportement de contentement."
@@ -2053,7 +2113,7 @@ const quizzesData = {
             {
                 id: 40,
                 question: "Quel est le rôle du caecum digestif chez le chat ?",
-                options: ["Dégradation des fibres végétales par des enzymes pancréatiques sécrétées en continu", "Absorption de l'eau et fermentation mineure", "Synthèse des vitamines B12 et K directement assimilables par la muqueuse intestinale adjacente", "Régulation du transit via des contractions péristaltiques coordonnées par le système nerveux entérique"],
+                options: ["Dégradation des fibres végétales par des enzymes pancréatiques sécrétées en continu", "Absorption de l'eau et fermentation mineure", "Synthèse des vitamines B12 et K directement assimilables par la muqueuse intestinale", "Régulation du transit via des contractions péristaltiques coordonnées par le système nerveux"],
                 correct: 1,
                 explanation: "Le caecum est une petite poche à la jonction du petit et du gros intestin. Chez le chat, carnivore strict, il est très réduit et joue un rôle minimal dans la digestion, contrairement aux herbivores chez qui il est massif (ex : le lapin). Le tube digestif du chat est globalement plus court que celui du chien ou de l'humain, car la viande se digère plus rapidement que les végétaux.",
                 source: "Centre de Nutrition Féline - Le caecum est rudimentaire chez le chat."
@@ -2069,7 +2129,12 @@ const quizzesData = {
             {
                 id: 42,
                 question: "Quel est le rôle des griffes chez le chat ?",
-                options: ["Uniquement attaque", "Chasse, grimpe, marquage territorial et communication", "Équilibre uniquement", "Toilettage"],
+                options: [
+                "Uniquement attaque",
+                "Chasse",
+                "Équilibre uniquement",
+                "Toilettage"
+            ],
                 correct: 1,
                 explanation: "Les griffes du chat sont des outils multifonctions : elles servent à capturer et tenir les proies, à grimper aux arbres et surfaces verticales, à marquer le territoire (les glandes entre les doigts déposent des phéromones quand le chat griffe), et à communiquer (griffer en votre présence peut être une invitation au jeu). Elles sont rétractiles pour rester affûtées — c'est pourquoi elles ne cliquètent pas sur le sol comme celles du chien.",
                 source: "Institut d'Éthologie Féline - Les griffes ont de multiples usages."
@@ -2085,7 +2150,7 @@ const quizzesData = {
             {
                 id: 44,
                 question: "Quel est le processus d'élimination des toxines chez le chat ?",
-                options: ["Foie uniquement", "Foie, reins et système lymphatique", "Peau uniquement", "Pas d'élimination"],
+                options: ["Foie uniquement", "Foie, reins et système", "Peau uniquement", "Pas d'élimination"],
                 correct: 1,
                 explanation: "L'élimination des toxines chez le chat implique principalement le foie (métabolisation et neutralisation des substances toxiques), les reins (filtration du sang et excrétion urinaire) et dans une moindre mesure le système lymphatique. Le problème chez le chat est que son foie manque de certaines enzymes (notamment l'UDP-glucuronyltransférase), le rendant incapable de métaboliser correctement de nombreuses substances sûres pour d'autres animaux : paracétamol, aspirine, huiles essentielles...",
                 source: "Institut de Toxicologie Féline - Plusieurs organes participent."
@@ -2101,7 +2166,7 @@ const quizzesData = {
             {
                 id: 46,
                 question: "Quel est le rôle de la prostrate chez le chat mâle ?",
-                options: ["Synthèse des androgènes régulant les comportements territoriaux et le marquage urinaire", "Production de fluide séminal", "Sécrétion d'enzymes protéolytiques dégradant les protéines de la proie ingérée", "Régulation de la fréquence respiratoire via des chémorécepteurs sensibles au CO2 sanguin"],
+                options: ["Synthèse des androgènes régulant les comportements territoriaux et", "Production de fluide séminal", "Sécrétion d'enzymes protéolytiques dégradant les protéines de la", "Régulation de la fréquence respiratoire via des chémorécepteurs"],
                 correct: 1,
                 explanation: "La prostate du chat mâle produit une partie du liquide séminal qui nourrit et transporte les spermatozoïdes lors de l'éjaculation. Contrairement au chien et à l'humain, les maladies de la prostate sont rares chez le chat. La castration réduit considérablement la taille de la prostate et les risques associés. Les mâles castrés présentent rarement des problèmes prostatiques au cours de leur vie.",
                 source: "Institut d'Anatomie Reproductive - La prostrate soutient la reproduction."
@@ -2109,7 +2174,7 @@ const quizzesData = {
             {
                 id: 47,
                 question: "Quel est le processus de la 'hiérarchie linéaire' chez les chats de groupe ?",
-                options: ["Territoire divisé en secteurs exclusifs sans interaction directe entre individus adultes", "Ordre dominance établi mais flexibilité possible", "Hiérarchie stricte et permanente avec un mâle alpha contrôlant toutes les ressources du groupe", "Organisation matricielle où chaque femelle reproduite gère indépendamment un sous-groupe familial"],
+                options: ["Territoire divisé en secteurs exclusifs sans interaction directe entre individus adultes", "Ordre dominance établi mais flexibilité possible", "Hiérarchie stricte et permanente avec un mâle alpha contrôlant toutes les ressources du groupe", "Organisation matricielle où chaque femelle reproduite gère indépendamment un sous-groupe"],
                 correct: 1,
                 explanation: "Contrairement aux chiens, les chats sont des animaux plutôt solitaires qui n'ont pas besoin de hiérarchie sociale stricte. Dans les groupes de chats (colonies félines), des préférences existent mais elles sont flexibles et dépendent du contexte : un chat dominant pour l'accès à la nourriture peut être subordiné pour les zones de couchage. Les conflits se résolvent souvent par l'évitement plutôt que par la confrontation directe.",
                 source: "Institut d'Éthologie Féline - Les chats ont des rapports moins hiérarchiques."
@@ -2125,7 +2190,7 @@ const quizzesData = {
             {
                 id: 49,
                 question: "Quel est le rôle du temps de jeu structuré pour un chat ?",
-                options: ["Développement de la musculature abdominale et dorsale grâce aux mouvements de chasse simulée", "Enrichissement mental et dépense énergétique", "Renforcement des comportements prédateurs pouvant devenir problématiques envers les petits animaux", "Stimulation des glandes sébacées favorisant un pelage plus dense pendant les mois froids"],
+                options: ["Développement de la musculature abdominale et dorsale grâce aux mouvements de chasse", "Enrichissement mental et dépense énergétique", "Renforcement des comportements prédateurs pouvant devenir problématiques envers les petits", "Stimulation des glandes sébacées favorisant un pelage plus dense pendant les mois froids"],
                 correct: 1,
                 explanation: "Le jeu structuré n'est pas un luxe pour les chats : c'est une nécessité. Il simule les étapes de la chasse (repérage, approche, attaque, capture), ce qui satisfait les instincts prédateurs du chat. Sans jeu quotidien, les chats peuvent développer de l'anxiété, de l'ennui et des comportements destructeurs. 2 sessions de 10-15 minutes par jour avec une canne à plumes ou un jouet interactif suffisent pour la plupart des chats.",
                 source: "Institut de Comportement Animal - Le jeu est essentiel pour le bien-être."
@@ -2133,7 +2198,12 @@ const quizzesData = {
             {
                 id: 50,
                 question: "Quel est le mécanisme d'adaptation du chat à l'obscurité ?",
-                options: ["Pas d'adaptation", "Pupilles dilatables et tapetum lucidum réflecteur", "Changement de couleur", "Utilisation du sonar"],
+                options: [
+                "Pas d'adaptation",
+                "Pupilles dilatables et tape",
+                "Changement de couleur",
+                "Utilisation du sonar"
+            ],
                 correct: 1,
                 explanation: "La vision nocturne exceptionnelle du chat repose sur deux adaptations : des pupilles en fente qui peuvent s'ouvrir très largement pour capturer un maximum de lumière, et le tapetum lucidum — une couche réfléchissante derrière la rétine qui renvoie la lumière sur les photorécepteurs une seconde fois, doublant l'utilisation de la lumière disponible. C'est ce qui fait briller les yeux des chats dans l'obscurité quand on les éclaire.",
                 source: "Institut d'Ophtalmologie - Les chats ont une vision nocturne supérieure."
@@ -2170,7 +2240,7 @@ const quizzesData = {
             {
                 id: 21,
                 question: "Quelle enzyme du foie manque chez le chat le rendant sensible à certaines toxines ?",
-                options: ["Glucuronidase", "UDP-glucuronyltransférase", "Catalase", "Lipase"],
+                options: ["Glucuronidase", "UDP-glucuronyltr", "Catalase", "Lipase"],
                 correct: 1,
                 explanation: "Le chat manque presque totalement de l'enzyme UDP-glucuronyltransférase dans son foie, qui sert normalement à conjuguer et éliminer de nombreuses substances toxiques. Concrètement, cela rend le chat extrêmement sensible à des produits courants : le paracétamol (une seule pilule peut être mortelle), l'aspirine, de nombreuses huiles essentielles, certains antiparasitaires pour chiens... Toujours vérifier qu'un produit est spécifiquement homologué pour les chats.",
                 source: "Journal of Feline Medicine and Surgery - Déficience importante en métabolisation."
@@ -2178,7 +2248,12 @@ const quizzesData = {
             {
                 id: 22,
                 question: "Quel est le nombre de photorecepteurs rétiniens chez le chat comparé à l'humain ?",
-                options: ["Identique", "Plus de bâtonnets (vision nocturne supérieure)", "Moins de cônes", "Deux et trois"],
+                options: [
+                "Identique",
+                "Plus de bâtonnets",
+                "Moins de cônes",
+                "Deux et trois"
+            ],
                 correct: 1,
                 explanation: "Les chats ont 6 à 8 fois plus de bâtonnets (photorécepteurs sensibles à la lumière faible) que les humains dans leur rétine. En revanche, ils ont moins de cônes (photorécepteurs de couleur), ce qui explique qu'ils voient le monde avec moins de couleurs saturées. Cette spécialisation est parfaite pour un prédateur crépusculaire et nocturne : ils peuvent voir fonctionnellement avec seulement 1/6e de la lumière nécessaire à un humain.",
                 source: "University of California - Les chats ont 6-8 fois plus de bâtonnets rétiniens."
@@ -2186,7 +2261,12 @@ const quizzesData = {
             {
                 id: 23,
                 question: "Qu'est-ce que le Flehmen Response chez le chat ?",
-                options: ["Ronronnement", "Réaction olfactive élevée des phéromones", "Attaque défensive", "Grooming"],
+                options: [
+                "Ronronnement",
+                "Réaction olfactive éle",
+                "Attaque défensive",
+                "Grooming"
+            ],
                 correct: 1,
                 explanation: "La réponse de Flehmen est cette 'grimace' caractéristique où le chat retrousse la lèvre supérieure et maintient la bouche entrouverte quelques secondes. Ce comportement permet aux molécules odorantes d'atteindre l'organe voméronasal (organe de Jacobson) situé au palais. Cet organe est dédié à la détection des phéromones — des signaux chimiques complexes que le nez normal ne peut pas pleinement analyser.",
                 source: "Feline Behavior Solutions - Réponse vomeronasal aux phéromones."
@@ -2194,7 +2274,7 @@ const quizzesData = {
             {
                 id: 24,
                 question: "Quel est le rôle du tapetum lucidum chez le chat ?",
-                options: ["Filtre UV", "Réflexion lumineuse pour améliorer la vision nocturne", "Production de larmes", "Protection de la cornée"],
+                options: ["Filtre UV", "Réflexion lumineuse", "Production de larmes", "Protection de la"],
                 correct: 1,
                 explanation: "Le tapetum lucidum est une couche de cellules réfléchissantes située derrière la rétine du chat. Quand la lumière traverse la rétine sans être absorbée par un photorécepteur, le tapetum la réfléchit une seconde fois, donnant une seconde chance aux photorécepteurs de la capter. Cela améliore la sensibilité lumineuse d'environ 40%. C'est aussi ce qui provoque l'effet 'yeux brillants' quand on éclaire un chat dans l'obscurité.",
                 source: "Journal of Veterinary Ophthalmology - Structure réfléchissante améliorant la sensibilité lumineuse."
@@ -2202,7 +2282,7 @@ const quizzesData = {
             {
                 id: 25,
                 question: "Quel est le phénomène appelé 'righting reflex' chez le chat ?",
-                options: ["Agressivité accrue", "Capacité à se redresser en chute libre", "Attraction au jeu", "Comportement social"],
+                options: ["Agressivité accrue", "Capacité à se redresser en chute", "Attraction au jeu", "Comportement social"],
                 correct: 1,
                 explanation: "Le réflexe de redressement est une capacité innée du chat à se retourner en chute libre pour atterrir sur ses pattes. En 0,1 seconde, le chat détecte sa position grâce à l'oreille interne, tourne la tête, fait pivoter son corps et arque le dos pour absorber l'impact. Paradoxalement, les chutes de grande hauteur (4e étage et plus) ont parfois de meilleurs pronostics car le chat a le temps de se stabiliser et d'étaler son corps comme un parachute.",
                 source: "American Journal of Veterinary Research - Réflexe innée préservant l'équilibre."
@@ -2210,7 +2290,7 @@ const quizzesData = {
             {
                 id: 26,
                 question: "Quels sont les organes vomérona sals responsables de la détection des phéromones ?",
-                options: ["Poumons", "Foie", "Organe vomeronasal (Jacobson)", "Reins"],
+                options: ["Poumons", "Foie", "Organe", "Reins"],
                 correct: 2,
                 explanation: "L'organe voméronasal de Jacobson est situé sur le palais du chat, juste derrière les incisives supérieures. Il est connecté directement au bulbe olfactif et traite spécifiquement les phéromones — ces signaux chimiques qui transmettent des informations sur l'identité, le statut sexuel et l'état émotionnel d'un autre individu. C'est un système sensoriel distinct de l'odorat classique, dédié à la communication intraspécifique.",
                 source: "Feline Behavior Science - Organes dédiés à la détection chimiosensorielle."
@@ -2218,7 +2298,7 @@ const quizzesData = {
             {
                 id: 27,
                 question: "Quel est le secret de la flexibilité vertébrale exceptionnelle du chat ?",
-                options: ["Muscles rétracteurs des griffes exceptionnellement puissants permettant des sauts de précision extrême", "Vertèbres disques lombaires flexibles", "Absence de clavicule rigide et colonne vertébrale hyper-flexible", "Tendons de la cheville élastiques stockant l'énergie comme des ressorts biologiques"],
+                options: ["Muscles rétracteurs des griffes exceptionnellement puissants permettant des sauts de", "Vertèbres disques lombaires flexibles", "Absence de clavicule rigide et colonne vertébrale hyper-flexible", "Tendons de la cheville élastiques stockant l'énergie comme des ressorts"],
                 correct: 2,
                 explanation: "La flexibilité exceptionnelle du chat vient de deux adaptations anatomiques clés : une clavicule vestigiale non fusionnée (ce qui permet l'épaule de s'effacer pour passer dans des espaces étroits) et des vertèbres lombaires avec des disques intervertébraux très élastiques. Cette colonne 'ressort' est à la base du galop en foulées bondissantes typique du chat et de sa capacité à se faufiler dans des espaces incroyablement étroits.",
                 source: "American Veterinary Medical Association - Absence de fusion claviculaire permettant la rotation."
@@ -2234,7 +2314,12 @@ const quizzesData = {
             {
                 id: 29,
                 question: "Quel est le mécanisme de défense chimique chez les chats face au stress ?",
-                options: ["Fuite uniquement", "Production de féromones apaisantes", "Attaque directe", "Mimétisme"],
+                options: [
+                "Fuite uniquement",
+                "Production de féromo",
+                "Attaque directe",
+                "Mimétisme"
+            ],
                 correct: 1,
                 explanation: "Face au stress, les chats produisent des phéromones faciales apaisantes via leurs glandes joufflues. C'est pourquoi ils frottent compulsivement leur visage contre des objets familiers en territoire inconnu ou stressant — ils 'marquent' l'environnement comme sûr pour eux-mêmes. Ce principe a été reproduit commercialement sous forme de diffuseurs de phéromones synthétiques (Feliway) pour calmer les chats anxieux.",
                 source: "Institut de Comportement Animal Félin - Communication chimique anti-stress."
@@ -2242,7 +2327,12 @@ const quizzesData = {
             {
                 id: 30,
                 question: "Quel est l'impact de la neuroplasticité sur l'éducation des chats adultes ?",
-                options: ["Impossible d'éduquer", "Capacité à développer de nouvelles connexions nerveuses tout au long de la vie", "Diminue avec l'âge", "Identique aux chiots"],
+                options: [
+                "Impossible d'éduquer",
+                "Capacité à développer de n",
+                "Diminue avec l'âge",
+                "Identique aux chiots"
+            ],
                 correct: 1,
                 explanation: "Contrairement à ce que l'on croyait ('on n'apprend pas à un vieux chat de nouveaux tours'), le cerveau félin conserve une certaine plasticité toute la vie. Les chats adultes peuvent apprendre de nouveaux comportements, des tours et des habitudes grâce à la formation de nouvelles connexions synaptiques. La méthode la plus efficace reste le renforcement positif avec friandises — les chats répondent très bien quand l'apprentissage est à leur initiative et récompensé.",
                 source: "Journal of Feline Medicine and Surgery - Plasticité continue du cerveau félin."
@@ -2266,7 +2356,7 @@ const quizzesData = {
             {
                 id: 53,
                 question: "Quel est le processus de la 'cardiomyopathie hypertrophique féline' ?",
-                options: ["Dégénérescence progressive des valves auriculo-ventriculaires due à des dépôts de collagène anormal", "Épaississement du myocarde cardiaque", "Dilatation des ventricules avec amincissement de la paroi causant une insuffisance systolique", "Inflammation chronique du péricarde provoquant une constriction progressive du sac péricardique"],
+                options: ["Dégénérescence progressive des valves auriculo-ventriculaires due à des dépôts de", "Épaississement du myocarde cardiaque", "Dilatation des ventricules avec amincissement de la paroi causant une insuffisance", "Inflammation chronique du péricarde provoquant une constriction progressive du sac"],
                 correct: 1,
                 explanation: "La cardiomyopathie hypertrophique féline (HCM) est la maladie cardiaque la plus fréquente chez le chat : le muscle du ventricule gauche s'épaissit anormalement, réduisant le volume de sang éjecté à chaque battement. Elle touche environ 15% des chats adultes, avec une prédisposition génétique dans les races Maine Coon, Ragdoll et Persan. Souvent silencieuse, elle peut provoquer soudainement une thrombose aortique (paralysie des pattes arrière) ou une insuffisance cardiaque.",
                 source: "Journal de Cardiologie Vétérinaire - Maladie commune chez les chats."
@@ -2282,7 +2372,7 @@ const quizzesData = {
             {
                 id: 55,
                 question: "Quel est le mécanisme de la 'diabète sucré féline' ?",
-                options: ["Hyperglycémie transitoire liée au stress sans atteinte pancréatique durable, réversible en quelques jours", "Résistance à l'insuline et dysfonction pancréatique", "Infection virale chronique par coronavirus félin modifiant le métabolisme glucidique hépatique", "Carence en chrome et en vanadium perturbant les récepteurs cellulaires à l'insuline chez le chat âgé"],
+                options: ["Hyperglycémie transitoire liée au stress sans atteinte pancréatique durable", "Résistance à l'insuline et dysfonction pancréatique", "Infection virale chronique par coronavirus félin modifiant le métabolisme glucidique hépatique", "Carence en chrome et en vanadium perturbant les récepteurs cellulaires à l'insuline chez le chat âgé"],
                 correct: 1,
                 explanation: "Le diabète félin ressemble au diabète de type 2 humain : le pancréas produit de l'insuline mais les cellules y résistent, ou la production devient insuffisante. Il touche souvent les chats en surpoids, âgés, stérilisés ou nourris principalement aux croquettes riches en glucides. Bonne nouvelle : avec un régime alimentaire pauvre en glucides et une perte de poids, de nombreux chats diabétiques entrent en rémission et n'ont plus besoin d'insuline.",
                 source: "Université de Pathologie Féline - Condition fréquente et souvent réversible."
@@ -2290,7 +2380,7 @@ const quizzesData = {
             {
                 id: 56,
                 question: "Quel est le rôle du complexe B dans le métabolisme félin ?",
-                options: ["Régulation de la coagulation sanguine et de la densité minérale osseuse via la vitamine K2", "Essentiels pour l'énergie et la neurologie", "Renforcement exclusif de la matrice osseuse en association avec le calcium et le phosphore", "Maintien de l'acuité visuelle nocturne grâce aux phospholipides des membranes photoréceptrices"],
+                options: ["Régulation de la coagulation sanguine et de la densité minérale osseuse via la vitamine", "Essentiels pour l'énergie et la neurologie", "Renforcement exclusif de la matrice osseuse en association avec le calcium et le", "Maintien de l'acuité visuelle nocturne grâce aux phospholipides des membranes"],
                 correct: 1,
                 explanation: "Les vitamines du complexe B (B1/thiamine, B2/riboflavine, B3/niacine, B12...) sont des cofacteurs essentiels au métabolisme énergétique et au bon fonctionnement du système nerveux. Le chat a des besoins particulièrement élevés en niacine (B3) car il ne peut pas la synthétiser à partir du tryptophane comme les autres mammifères. Une alimentation exclusivement à base de viande crue non équilibrée peut provoquer des carences en vitamine B1 causant des troubles neurologiques graves.",
                 source: "Institut de Nutrition Vétérinaire - Cofacteurs métaboliques critiques."
@@ -2306,7 +2396,7 @@ const quizzesData = {
             {
                 id: 58,
                 question: "Quel est le rôle de la vitamine A dans la santé féline ?",
-                options: ["Synthèse hormonale des glucocorticoïdes surrénaliens régulant la réponse au stress chronique", "Vision, immunité et santé épithéliale", "Minéralisation osseuse exclusive en synergie avec la vitamine D3 et le phosphore alimentaire", "Activation des facteurs de coagulation dépendants de la carboxylation par la vitamine K"],
+                options: ["Synthèse hormonale des glucocorticoïdes surrénaliens régulant la réponse au stress", "Vision, immunité et santé épithéliale", "Minéralisation osseuse exclusive en synergie avec la vitamine D3 et le phosphore", "Activation des facteurs de coagulation dépendants de la carboxylation par la vitamine"],
                 correct: 1,
                 explanation: "La vitamine A est indispensable au chat pour la vision (composant de la rhodopsine, le pigment rétinien), le système immunitaire et le renouvellement des tissus épithéliaux (peau, muqueuses). Point crucial : le chat ne peut pas convertir le bêta-carotène (précurseur végétal de la vitamine A) en vitamine A active, contrairement aux humains. Il doit donc en obtenir directement via les tissus animaux (foie notamment). Une alimentation végétarienne peut causer une cécité.",
                 source: "Institut de Nutrition Féline - Nutriment essentiel chez les carnivores."
@@ -2314,7 +2404,7 @@ const quizzesData = {
             {
                 id: 59,
                 question: "Quel est le processus de la 'iléite lymphoplasmacytaire' chez le chat ?",
-                options: ["Malabsorption secondaire à une atrophie villositaire causée par une entéropathie exsudative chronique", "Inflammation chronique de l'intestin grêle", "Prolifération bactérienne anaérobie dans l'iléon terminal due à un ralentissement du transit", "Réaction d'hypersensibilité alimentaire de type IV aux protéines bovines ou aviaires de l'alimentation"],
+                options: ["Malabsorption secondaire à une atrophie villositaire causée par une entéropathie exsudative", "Inflammation chronique de l'intestin grêle", "Prolifération bactérienne anaérobie dans l'iléon terminal due à un ralentissement du", "Réaction d'hypersensibilité alimentaire de type IV aux protéines bovines ou aviaires de"],
                 correct: 1,
                 explanation: "L'iléite lymphoplasmacytaire est la forme la plus courante de maladie inflammatoire de l'intestin (IBD) chez le chat. Des cellules immunitaires (lymphocytes et plasmocytes) infiltrent la paroi de l'intestin grêle, perturbant l'absorption des nutriments. Symptômes : vomissements chroniques, diarrhée, perte de poids malgré un bon appétit. Le diagnostic nécessite une biopsie. Le traitement repose sur des corticostéroïdes et souvent un régime hypoallergénique.",
                 source: "Journal de Gastroentérologie Féline - Inflammatory bowel disease féline."
@@ -2322,7 +2412,7 @@ const quizzesData = {
             {
                 id: 60,
                 question: "Quel est le rôle de la fibrinogène dans la coagulation féline ?",
-                options: ["Transport des hormones liposolubles et des vitamines A, D, E dans le courant circulatoire", "Formation du caillot sanguin et fibrines", "Acheminement de l'oxygène depuis les poumons vers les tissus via les érythrocytes", "Production d'anticorps spécifiques lors de la première exposition à un agent pathogène"],
+                options: ["Transport des hormones liposolubles et des vitamines A", "Formation du caillot sanguin et fibrines", "Acheminement de l'oxygène depuis les poumons vers les tissus via les", "Production d'anticorps spécifiques lors de la première exposition à un agent"],
                 correct: 1,
                 explanation: "Le fibrinogène est une protéine plasmatique produite par le foie qui joue un rôle central dans la coagulation. Lors d'une lésion vasculaire, la thrombine convertit le fibrinogène en fibrine, qui forme un réseau fibreux constituant la structure du caillot sanguin. Chez le chat, un taux bas de fibrinogène peut indiquer une coagulopathie sévère (CIVD) ou une insuffisance hépatique grave. C'est un des marqueurs mesurés lors de bilans de coagulation vétérinaires.",
                 source: "Institut d'Hématologie - Facteur critique de coagulation."
@@ -2354,7 +2444,7 @@ const quizzesData = {
             {
                 id: 64,
                 question: "Quel est le rôle de l'interféron dans la réponse immunitaire féline ?",
-                options: ["Enzyme de restriction dégradant l'ARN viral double brin dans les cellules infectées par un virus ARN", "Protéine antivirale et modulation immunitaire", "Accélérateur de la digestion des protéines virales capturées par phagocytose dans les macrophages", "Neurotransmetteur inhibiteur activé lors des réponses inflammatoires au niveau du système nerveux central"],
+                options: ["Enzyme de restriction dégradant l'ARN viral double brin dans les cellules infectées par un virus", "Protéine antivirale et modulation immunitaire", "Accélérateur de la digestion des protéines virales capturées par phagocytose dans les", "Neurotransmetteur inhibiteur activé lors des réponses inflammatoires au niveau du système nerveux"],
                 correct: 1,
                 explanation: "Les interférons sont des protéines de signalisation (cytokines) produites par les cellules infectées pour alerter les cellules voisines et activer les défenses immunitaires. L'interféron félin oméga est utilisé en médecine vétérinaire comme traitement immunomodulateur pour des maladies chroniques comme le FIV (virus de l'immunodéficience féline) ou la panleucopénie. Il stimule le système immunitaire et possède une activité antivirale directe.",
                 source: "Institut d'Immunologie Vétérinaire - Cytokine défensive importante."
@@ -2362,7 +2452,7 @@ const quizzesData = {
             {
                 id: 65,
                 question: "Quel est le mécanisme de la 'néphrite tubulointerstitielle' féline ?",
-                options: ["Nécrose des cellules épithéliales glomérulaires par dépôt de complexes immuns IgA néphropathiques", "Inflammation des tubules et interstitium rénaux", "Formation de calculs oxalocalciques dans le bassinet rénal obstruant progressivement le flux urinaire", "Prolifération bactérienne ascendante depuis la vessie colonisant les voies collectrices excrétrices"],
+                options: ["Nécrose des cellules épithéliales glomérulaires par dépôt de complexes immuns IgA", "Inflammation des tubules et interstitium rénaux", "Formation de calculs oxalocalciques dans le bassinet rénal obstruant progressivement le flux", "Prolifération bactérienne ascendante depuis la vessie colonisant les voies collectrices"],
                 correct: 1,
                 explanation: "La néphrite tubulointerstitielle est une inflammation des tubules rénaux et du tissu conjonctif environnant (interstitium). C'est une cause majeure d'insuffisance rénale chronique chez le chat âgé. Elle peut être causée par des infections (bactériennes, virales), des toxines, des médicaments néphrotoxiques ou des maladies auto-immunes. La maladie rénale chronique est la première cause de mort chez les chats de plus de 10 ans.",
                 source: "Journal de Néphropathologie Féline - Cause courante d'insuffisance rénale."
@@ -2386,7 +2476,7 @@ const quizzesData = {
             {
                 id: 68,
                 question: "Quel est le rôle des prostaglandines dans la protection gastrique féline ?",
-                options: ["Stimulation des contractions musculaires lisses de la paroi gastrique améliorant le brassage du bol alimentaire", "Protection muqueuse et régulation acide", "Activation des enzymes protéolytiques gastriques nécessaires à la dégradation des protéines carnées", "Régulation du rythme péristaltique duodénal via les cellules entérochromaffines du plexus de Meissner"],
+                options: ["Stimulation des contractions musculaires lisses de la paroi gastrique améliorant le brassage", "Protection muqueuse et régulation acide", "Activation des enzymes protéolytiques gastriques nécessaires à la dégradation des protéines", "Régulation du rythme péristaltique duodénal via les cellules entérochromaffines du plexus de"],
                 correct: 1,
                 explanation: "Les prostaglandines sont des médiateurs lipidiques produits localement dans les tissus gastriques. Dans l'estomac, elles stimulent la production de mucus protecteur et de bicarbonate, et réduisent la sécrétion d'acide gastrique. C'est pourquoi les anti-inflammatoires non stéroïdiens (AINS) comme l'aspirine ou l'ibuprofène, qui bloquent la production de prostaglandines, peuvent causer des ulcères gastriques sévères chez le chat — et sont particulièrement dangereux pour eux.",
                 source: "Institut de Gastroentérologie - Messagers chimiques protecteurs."
@@ -2394,7 +2484,7 @@ const quizzesData = {
             {
                 id: 69,
                 question: "Quel est le mécanisme de la 'feline primary secretory otitis media' ?",
-                options: ["Dégénérescence progressive des cellules ciliées cochléaires liée à l'exposition aux sons forts répétés", "Accumulation de mucus dans l'oreille moyenne", "Colonisation bactérienne par Pseudomonas aeruginosa de l'oreille externe et du canal auditif", "Rupture traumatique de la membrane tympanique par barotraumatisme lors d'une chute de hauteur"],
+                options: ["Dégénérescence progressive des cellules ciliées cochléaires liée à l'exposition aux sons forts", "Accumulation de mucus dans l'oreille moyenne", "Colonisation bactérienne par Pseudomonas aeruginosa de l'oreille externe et du canal", "Rupture traumatique de la membrane tympanique par barotraumatisme lors d'une chute de"],
                 correct: 1,
                 explanation: "La PSOM (Primary Secretory Otitis Media) est une accumulation de mucus épais dans l'oreille moyenne, particulièrement décrite chez le Cavalier King Charles Spaniel mais aussi rapportée chez le chat. Elle peut entraîner des douleurs chroniques, des démangeaisons, des otites récurrentes et dans les cas sévères, des signes neurologiques (perte d'équilibre, penchement de tête). Le traitement nécessite souvent une myringotomie pour drainer le mucus accumulé.",
                 source: "Journal d'Otologie Féline - Condition chronique progressive."
@@ -2483,7 +2573,7 @@ const quizzesData = {
             {
                 id: 6,
                 question: "Quel oiseau migre sur la plus longue distance ?",
-                options: ["Le coucou", "L'hirondelle", "La sterne arctique", "L'oie"],
+                options: ["Le coucou", "L'hirondelle", "La sterne", "L'oie"],
                 correct: 2,
                 explanation: "La sterne arctique effectue la plus longue migration de tout le règne animal : elle vole de l'Arctique à l'Antarctique et retour chaque année, soit environ 71 000 km aller-retour. En profitant des vents favorables, elle parcourt jusqu'à 80 000 km selon les trajectoires. Sur une vie de 30 ans, une sterne arctique aura parcouru l'équivalent de 3 allers-retours vers la Lune.",
                 source: "Ligue pour la Protection des Oiseaux - La sterne arctique parcourt environ 71000 km par an."
@@ -2491,7 +2581,7 @@ const quizzesData = {
             {
                 id: 7,
                 question: "Les plumes d'un oiseau servent principalement à quoi ?",
-                options: ["Uniquement au vol", "Au vol, à l'isolation thermique et à l'imperméabilité", "Uniquement à la beauté", "À la nage"],
+                options: ["Uniquement au vol", "Au vol", "Uniquement à la", "À la nage"],
                 correct: 1,
                 explanation: "Les plumes sont des structures remarquablement polyvalentes. Les plumes de vol (rémiges et rectrices) assurent la portance et la direction. Les plumes de contour donnent la forme aérodynamique. Le duvet, situé près de la peau, piège l'air chaud et assure l'isolation thermique. Enfin, les oiseaux aquatiques imperméabilisent leurs plumes avec une huile produite par la glande uropygienne, étalée lors du toilettage.",
                 source: "Université de Strasbourg - Les plumes ont de multiples fonctions essentielles."
@@ -2619,7 +2709,7 @@ const quizzesData = {
             {
                 id: 23,
                 question: "À quel âge un jeune oiseau prend-il son premier vol ?",
-                options: ["1-2 semaines", "3-4 semaines", "8-12 semaines selon l'espèce", "6 mois"],
+                options: ["1-2 semaines", "3-4 semaines", "8-12 semaines", "6 mois"],
                 correct: 2,
                 explanation: "L'âge du premier vol varie considérablement : de 13 jours pour certains passereaux à 9 mois pour le grand albatros hurleur. Pour les espèces communes de jardin (merle, mésange, rouge-gorge), c'est généralement entre 13 et 21 jours après l'éclosion. Les jeunes qui quittent le nid s'appellent des 'juvéniles' et restent souvent dépendants de leurs parents encore plusieurs semaines après l'envol.",
                 source: "Institut d'Ornithologie Appliquée - L'envol varie énormément selon l'espèce."
@@ -2712,7 +2802,7 @@ const quizzesData = {
             {
                 id: 11,
                 question: "Quel est le rôle des plumes coverts chez les oiseaux ?",
-                options: ["Isolation thermique uniquement", "Recouvrement et lissage des plumes de contour", "Protection des œufs", "Attraction sexuelle"],
+                options: ["Isolation thermique uniquement", "Recouvrement et lissage des plumes de base", "Protection des œufs", "Attraction sexuelle"],
                 correct: 1,
                 explanation: "Les plumes tectrices (coverts) sont des plumes courtes qui recouvrent la base des grandes plumes de vol (rémiges et rectrices). Elles assurent une surface lisse et aérodynamique en comblant les espaces entre les grandes plumes. Sans elles, les turbulences augmenteraient considérablement la résistance à l'air. Certaines tectrices ont aussi une fonction de signal visuel lors des parades nuptiales.",
                 source: "Société d'Ornithologie - Les plumes coverts recouvraient les plumes de vol pour améliorer l'aérodynamisme."
@@ -2736,7 +2826,7 @@ const quizzesData = {
             {
                 id: 14,
                 question: "Comment les oiseaux s'orientent-ils lors de la migration ?",
-                options: ["Uniquement par le soleil", "Par le champ magnétique terrestre et le soleil", "Par l'odorat", "Par le toucher"],
+                options: ["Uniquement par le soleil", "Par le champ magnétique", "Par l'odorat", "Par le toucher"],
                 correct: 1,
                 explanation: "Les oiseaux migrateurs utilisent un système de navigation multi-sensoriel : le champ magnétique terrestre (détecté via des cristaux de magnétite dans leur bec et une protéine dans l'œil appelée cryptochrôme), la position du soleil le jour, les étoiles la nuit, les repères visuels, les infrasons et même les odeurs. Cette redondance les rend très fiables. Des expériences ont montré qu'un seul sens altéré ne suffit pas à les désorienter complètement.",
                 source: "Institut de Recherche Ornithologique - Les oiseaux utilisent plusieurs systèmes de navigation."
@@ -2744,7 +2834,7 @@ const quizzesData = {
             {
                 id: 15,
                 question: "Quel est le rôle du jabot chez les oiseaux ?",
-                options: ["Respiration", "Stockage temporaire de nourriture avant digestion", "Production de sons", "Reproduction"],
+                options: ["Respiration", "Stockage temporaire de", "Production de sons", "Reproduction"],
                 correct: 1,
                 explanation: "Le jabot est une poche dilatée de l'œsophage qui sert de réservoir alimentaire temporaire. Il permet à l'oiseau d'ingérer rapidement une grande quantité de nourriture (utile pour les espèces qui mangent dans des endroits exposés aux prédateurs) et de digérer ensuite en sécurité. Certains pigeons produisent dans leur jabot un 'lait de jabot' — une sécrétion riche en protéines — pour nourrir leurs poussins.",
                 source: "Centre d'Éducation Ornithologique - Le jabot stocke la nourriture avant sa descente à l'estomac."
@@ -2760,7 +2850,7 @@ const quizzesData = {
             {
                 id: 17,
                 question: "Quel oiseau produit le plus fort cri en rapport à sa taille ?",
-                options: ["Le perroquet", "La mésange charbonnière", "L'aigle", "Le pic"],
+                options: ["Le perroquet", "La mésange", "L'aigle", "Le pic"],
                 correct: 1,
                 explanation: "La mésange charbonnière est l'un des oiseaux produisant le son le plus fort proportionnellement à sa taille. Son chant peut atteindre 70-80 décibels à courte distance — l'équivalent d'une voiture à 10 mètres. Les chercheurs ont aussi découvert que les mésanges charbonnières ont un 'langage' structuré avec différentes alarmes spécifiques selon le type de prédateur (rapace, chat, serpent), reconnu par d'autres espèces.",
                 source: "Institut d'Acoustique Ornithologique - La mésange charbonnière produit des sons très forts."
@@ -2784,7 +2874,7 @@ const quizzesData = {
             {
                 id: 20,
                 question: "Quel est le temps d'incubation moyen pour les œufs d'oiseau ?",
-                options: ["5-7 jours", "10-14 jours", "21-28 jours selon l'espèce", "60 jours"],
+                options: ["5-7 jours", "10-14 jours", "21-28 jours selon", "60 jours"],
                 correct: 2,
                 explanation: "La durée d'incubation varie selon la taille de l'espèce : environ 11-14 jours pour les petits passereaux, 21 jours pour la poule, 35-40 jours pour les aigles et 80 jours pour le kiwi. L'incubation doit maintenir les œufs à environ 37-38°C. Les deux parents se relaient souvent. Si un œuf n'est pas retourné régulièrement, l'embryon adhère à la membrane et meurt — les parents retournent leurs œufs plusieurs fois par heure.",
                 source: "Centre d'Ornithologie - Le temps d'incubation varie considérablement selon les espèces."
@@ -2792,7 +2882,12 @@ const quizzesData = {
             {
                 id: 31,
                 question: "Quel est le métabolisme basal d'un petit oiseau par rapport à un grand ?",
-                options: ["Identique", "Plus élevé par rapport à la masse corporelle", "Plus bas", "Sans différence"],
+                options: [
+                "Identique",
+                "Plus élevé par rapp",
+                "Plus bas",
+                "Sans différence"
+            ],
                 correct: 1,
                 explanation: "La règle de Kleiber établit que le métabolisme basal par unité de masse est inversement proportionnel à la taille de l'animal. Concrètement : un colibri de 3g consomme proportionnellement 30 fois plus d'énergie par gramme de corps qu'une autruche de 100 kg. C'est pourquoi les petits oiseaux doivent manger presque en continu et ne peuvent survivre que quelques heures sans nourriture en hiver.",
                 source: "Institut de Physiologie Comparée - Les petits oiseaux ont un métabolisme très rapide."
@@ -2808,7 +2903,7 @@ const quizzesData = {
             {
                 id: 33,
                 question: "À quel âge les jeunes rapaces deviennent-ils indépendants ?",
-                options: ["1-2 mois", "3-4 mois", "6-8 mois selon l'espèce", "1 an"],
+                options: ["1-2 mois", "3-4 mois", "6-8 mois", "1 an"],
                 correct: 2,
                 explanation: "Les jeunes rapaces ont besoin d'un long apprentissage car chasser est une compétence complexe qui ne s'improvise pas. Un jeune faucon pèlerin s'envole à 5-6 semaines mais reste dépendant de ses parents 4-6 semaines de plus pour perfectionner ses techniques de chasse. Pour les grandes espèces comme l'aigle royal, cette période peut durer 6 à 8 mois. Durant ce temps, les parents leur apportent des proies vivantes pour qu'ils s'entraînent.",
                 source: "Institut d'Étude des Rapaces - Les jeunes rapaces nécessitent un long apprentissage."
@@ -2816,7 +2911,7 @@ const quizzesData = {
             {
                 id: 34,
                 question: "Quel est le mode d'alimentation du pélican ?",
-                options: ["Picotage", "Filtrage de l'eau avec le bec", "Chasse en piqué", "Charognard"],
+                options: ["Picotage", "Filtrage de l'eau", "Chasse en piqué", "Charognard"],
                 correct: 1,
                 explanation: "Le pélican chasse en plongeant son bec dans l'eau et en fermant sa grande poche gulaire (jusqu'à 13 litres) autour des poissons. Il remonte ensuite la tête, laisse l'eau s'écouler en comprimant la poche avec son bec, et avale les poissons restants. Certaines espèces chassent en groupe de façon coordonnée, formant un demi-cercle pour rabattre les poissons vers les eaux peu profondes avant de plonger ensemble.",
                 source: "Centre d'Ornithologie - Le pélican a une poche pour filtrer l'eau."
@@ -2824,7 +2919,7 @@ const quizzesData = {
             {
                 id: 35,
                 question: "Quel est le système de communication principal chez les oiseaux aquatiques ?",
-                options: ["Vision uniquement", "Vocalisations et postures corporelles", "Tactile", "Chimique"],
+                options: ["Vision uniquement", "Vocalisations et", "Tactile", "Chimique"],
                 correct: 1,
                 explanation: "Les oiseaux aquatiques communiquent principalement par des vocalisations (cris d'alarme, chants de parade, appels de contact) et des postures corporelles élaborées. Lors des parades nuptiales, de nombreuses espèces combinent les deux : le grèbe huppé exécute une danse symétrique spectaculaire avec son partenaire, se dressant hors de l'eau en miroir. Ces rituels garantissent que les partenaires appartiennent à la même espèce et évaluent leur qualité génétique.",
                 source: "Institut d'Éthologie Aviaire - La communication est multisensorielle."
@@ -2848,7 +2943,7 @@ const quizzesData = {
             {
                 id: 38,
                 question: "Quel est le rôle du plumage secondaire chez les oiseaux ?",
-                options: ["Propulsion aérodynamique grâce à leur surface portante large", "Vol et isolation thermique", "Détection des variations de pression atmosphérique pour naviguer", "Régulation de la température par convection cutanée"],
+                options: ["Propulsion aérodynamique grâce à leur surface portante", "Vol et isolation thermique", "Détection des variations de pression", "Régulation de la température par convection cutanée"],
                 correct: 1,
                 explanation: "Les plumes secondaires (rémiges secondaires) sont situées sur la partie interne de l'aile. Elles génèrent principalement la portance (sustentation) lors du vol plané, tandis que les primaires (en bout d'aile) assurent surtout la propulsion. Le dessous des plumes secondaires est recouvert de duvet qui assure aussi l'isolation thermique. Perdre plusieurs rémiges secondaires simultanément compromet sérieusement la capacité de vol.",
                 source: "Institut de Morphologie Aviaire - Les plumes secondaires sont essentielles au vol."
@@ -2880,7 +2975,7 @@ const quizzesData = {
             {
                 id: 42,
                 question: "À quel âge un caneton peut-il voler ?",
-                options: ["À 2-3 semaines", "À 4-6 semaines", "À 8-12 semaines selon l'espèce", "À 4-6 mois"],
+                options: ["À 2-3 semaines", "À 4-6 semaines", "À 8-12 semaines selon", "À 4-6 mois"],
                 correct: 2,
                 explanation: "Les canetons de canard colvert prennent leur envol entre 50 et 60 jours (7-8 semaines). D'autres espèces de canards varient entre 8 et 12 semaines. Contrairement à beaucoup d'oiseaux, les canetons sont des nidicoles précoces : ils quittent le nid dès le premier jour de vie et nagent immédiatement, mais leurs plumes de vol ne seront prêtes que bien plus tard. Pendant cette période, ils sont particulièrement vulnérables aux prédateurs.",
                 source: "Centre d'Aviculture - Les canards volent généralement vers 10-12 semaines."
@@ -2896,7 +2991,7 @@ const quizzesData = {
             {
                 id: 44,
                 question: "Quel est le mécanisme de la thermorégulation chez les oiseaux hibernants ?",
-                options: ["Migration vers des zones équatoriales où la température reste stable toute l'année", "Métabolisme élevé et tremblements musculaires continus pour maintenir 40°C", "Réduction du métabolisme et torpeur", "Accumulation de réserves lipidiques sous-cutanées servant d'isolation thermique"],
+                options: ["Migration vers des zones équatoriales où la température reste stable toute", "Métabolisme élevé et tremblements musculaires continus pour maintenir", "Réduction du métabolisme et torpeur", "Accumulation de réserves lipidiques sous-cutanées servant d'isolation"],
                 correct: 2,
                 explanation: "Contrairement aux mammifères, peu d'oiseaux hibernent vraiment. Mais certains entrent en torpeur — un ralentissement métabolique temporaire. L'engoulevent d'Amérique est le seul oiseau connu faisant une hibernation prolongée de plusieurs semaines. Les colibris entrent en torpeur chaque nuit pour économiser l'énergie. Le martinet noir, lui, ne dort pratiquement jamais — il peut rester en vol continu pendant 10 mois, dormant en planant.",
                 source: "Institut de Physiologie - Certains oiseaux entrent en torpeur."
@@ -2920,7 +3015,7 @@ const quizzesData = {
             {
                 id: 47,
                 question: "Quel est le processus de nidification chez les oiseaux cavicoles ?",
-                options: ["Construction d'une plateforme végétale suspendue entre deux branches par des fils de soie", "Utilisation ou creusement de cavités", "Assemblage d'un nid en coupe fixé à la fourche d'un arbuste par de la boue séchée", "Creusement d'un terrier souterrain tapissé de plumes et de mousses pour isoler les œufs"],
+                options: ["Construction d'une plateforme végétale suspendue entre deux branches par des fils de", "Utilisation ou creusement de cavités", "Assemblage d'un nid en coupe fixé à la fourche d'un arbuste par de la boue", "Creusement d'un terrier souterrain tapissé de plumes et de mousses pour isoler les"],
                 correct: 1,
                 explanation: "Les oiseaux cavicoles nichent dans des creux naturels ou creusés — trous d'arbres, falaises, terriers. Le pic est l'exemple parfait : il creuse lui-même ses cavités avec son bec puissant, qui peut frapper 20 fois par seconde grâce à un crâne épaissi et un cerveau protégé par des muscles et une structure osseuse amortissante. Ces cavités sont ensuite souvent réutilisées par d'autres espèces (mésanges, chouettes, étourneaux) qui ne peuvent pas creuser elles-mêmes.",
                 source: "Centre d'Ornithologie - Les cavicoles creusent ou utilisent des cavités."
@@ -2928,7 +3023,7 @@ const quizzesData = {
             {
                 id: 48,
                 question: "À quel âge un jeune perroquet développe-t-il son plumage adulte ?",
-                options: ["À quelques semaines", "À 2-3 mois", "À 6-18 mois selon l'espèce", "À 2+ ans"],
+                options: ["À quelques semaines", "À 2-3 mois", "À 6-18 mois selon", "À 2+ ans"],
                 correct: 2,
                 explanation: "Les perroquets développent leur plumage adulte progressivement au fil des mues successives. Les petites espèces comme la perruche ondulée atteignent leur couleur définitive vers 6-8 mois. Les grandes espèces comme l'Ara ararauna (ara bleu et jaune) mettent 18 mois à 2 ans. Certains grands cacatoès n'arborent leur plumage adulte complet qu'à 4-5 ans, ce qui coïncide avec leur maturité sexuelle.",
                 source: "Institut de Zoologie Aviaire - Le plumage adulte arrive progressivement."
@@ -2936,7 +3031,7 @@ const quizzesData = {
             {
                 id: 49,
                 question: "Quel est le système d'orientation utilisé par les oiseaux migrateurs ?",
-                options: ["Soleil uniquement", "Champ magnétique et repères visuels", "Odorat", "Sons"],
+                options: ["Soleil uniquement", "Champ", "Odorat", "Sons"],
                 correct: 1,
                 explanation: "La navigation migratoire des oiseaux est l'une des prouesses les plus étudiées en biologie. Ils utilisent simultanément plusieurs systèmes : la boussole magnétique (via le cryptochrome dans l'œil et la magnétite dans le bec), une 'carte solaire' basée sur la position du soleil, les étoiles la nuit, les infra-sons générés par les reliefs et les vents, les odeurs et les repères visuels mémorisés. Ce système redondant leur permet de corriger leur trajectoire même si un sens est perturbé.",
                 source: "Centre de Migration - Navigation multimodale très sophistiquée."
@@ -2989,7 +3084,12 @@ const quizzesData = {
             {
                 id: 22,
                 question: "Quel mécanisme permet aux oiseaux de dormir en vol ?",
-                options: ["Arrêt complet du cerveau", "Sommeil unihémisphérique avec altération des hémisphères", "Lévitation magnétique", "Hibernation rapide"],
+                options: [
+                "Arrêt complet du cerveau",
+                "Sommeil unihémisphérique avec a",
+                "Lévitation magnétique",
+                "Hibernation rapide"
+            ],
                 correct: 1,
                 explanation: "Le sommeil unihémisphérique est une capacité fascinante : un hémisphère du cerveau dort pendant que l'autre reste éveillé et maintient l'œil correspondant ouvert pour surveiller les prédateurs. Les oiseaux peuvent alterner les deux côtés. Des études sur les frégates magnifiques ont confirmé qu'elles utilisent ce mécanisme en vol, dormant de cette façon pendant des semaines au-dessus de l'océan. Les dauphins utilisent le même système.",
                 source: "Institut de Neurosciences Aviaires - Les oiseaux utilisent le sommeil unihémisphérique."
@@ -2997,7 +3097,12 @@ const quizzesData = {
             {
                 id: 23,
                 question: "Quel est le rôle de l'organe called syrinx chez les oiseaux ?",
-                options: ["Respiration", "Production de sons vocalisations", "Digestion", "Vision"],
+                options: [
+                "Respiration",
+                "Production de sons",
+                "Digestion",
+                "Vision"
+            ],
                 correct: 1,
                 explanation: "La syrinx est l'organe vocal unique des oiseaux, situé à la bifurcation de la trachée en bronches. Contrairement au larynx humain (dans la gorge), la syrinx peut produire deux sons indépendants simultanément — c'est pourquoi certains oiseaux chanteurs semblent produire des harmonies à deux voix seuls. Le rossignol utilise cette capacité pour créer des mélodies d'une complexité extraordinaire. Les oiseaux sans syrinx (comme certains vautours) sont presque silencieux.",
                 source: "Laboratoire d'Acoustique Ornithologique - La syrinx est l'équivalent du larynx chez les oiseaux."
@@ -3005,7 +3110,7 @@ const quizzesData = {
             {
                 id: 24,
                 question: "Comment s'appelle le système respiratoire unique des oiseaux ?",
-                options: ["Respiration pulmonaire simple", "Respiration unidirectionnelle avec sacs aériens", "Respiration branchiale", "Respiration cutanée"],
+                options: ["Respiration pulmonaire simple", "Respiration unidirectionnelle avec sacs", "Respiration branchiale", "Respiration cutanée"],
                 correct: 1,
                 explanation: "Le système respiratoire des oiseaux est le plus efficace du règne animal. Grâce à 9 sacs aériens, l'air circule en flux unidirectionnel à travers les poumons — l'air frais passe toujours dans le même sens, quelle que soit la phase respiratoire (inspiration ou expiration). Chez les mammifères, l'air entre et sort par le même chemin, créant un mélange avec l'air résiduel. Ce système permet aux oiseaux d'extraire jusqu'à 25% de l'oxygène inhalé, contre 5% chez l'humain.",
                 source: "Université de Physiologie Aviaire - Les oiseaux ont un système respiratoire en flux unidirectionnel."
@@ -3013,7 +3118,12 @@ const quizzesData = {
             {
                 id: 25,
                 question: "Quel est le gène responsable de la détermination du sexe chez les oiseaux ?",
-                options: ["Gène SRY comme chez les mammifères", "Gène DMRT1", "Gène FEM", "Gène ZW inversé"],
+                options: [
+                "Gène SRY comme chez",
+                "Gène DMRT1",
+                "Gène FEM",
+                "Gène ZW inversé"
+            ],
                 correct: 1,
                 explanation: "Chez les oiseaux, la détermination du sexe est inversée par rapport aux mammifères. Les femelles sont ZW et les mâles ZZ (chez l'humain, les femmes sont XX et les hommes XY). Le gène DMRT1, porté par le chromosome Z en double dose chez les mâles, est le déterminant sexuel principal. Cette différence de mécanisme entre oiseaux et mammifères est un exemple fascinant de l'évolution convergente de systèmes de détermination du sexe.",
                 source: "Institut de Génétique Aviaire - Le gène DMRT1 contrôle la détermination du sexe."
@@ -3029,7 +3139,7 @@ const quizzesData = {
             {
                 id: 27,
                 question: "Quel est le rôle du foramen magnum agrandie chez certains oiseaux piqueurs ?",
-                options: ["Augmentation de la vision", "Absorption des chocs et amortissement des impacts", "Augmentation de la force musculaire", "Réduction de la masse"],
+                options: ["Augmentation de la vision", "Absorption des chocs et amortissement des vibrations", "Augmentation de la force musculaire", "Réduction de la masse"],
                 correct: 1,
                 explanation: "Les pics (Picidae) frappent les arbres 20 fois par seconde avec une décélération de 1 000 g à chaque impact — soit 250 fois plus que le seuil de commotion cérébrale humain. Leur crâne a développé plusieurs adaptations anti-choc : un os hyoïde (os de la langue) qui s'enroule autour du crâne comme un casque, un cerveau serré dans la boîte crânienne sans liquide céphalorachidien en excès, et un bec dont la partie supérieure est légèrement plus longue que l'inférieure pour dévier les forces.",
                 source: "Journal d'Ornithologie Appliquée - Le foramen magnum s'est adapté pour absorber les chocs."
@@ -3037,7 +3147,7 @@ const quizzesData = {
             {
                 id: 28,
                 question: "Quel est le mécanisme physiologique de l'hypothermie torpeur chez les colibris ?",
-                options: ["Arrêt cardiaque total", "Ralentissement du métabolisme jusqu'à 15% du normal", "Sommeil prolongé", "Déplacement vers des altitudes plus basses"],
+                options: ["Arrêt cardiaque total", "Ralentissement du métabolisme jusqu'à", "Sommeil prolongé", "Déplacement vers des altitudes plus"],
                 correct: 1,
                 explanation: "Chaque nuit, les colibris entrent en torpeur pour survivre à leur métabolisme extraordinaire. Leur température corporelle chute de 40°C à environ 18°C, leur rythme cardiaque passe de 1 200 à 50 battements/minute, et leur consommation d'oxygène tombe à 5-15% du niveau normal. Sans ce mécanisme, ils mourraient d'hypoglycémie avant l'aube. Le réveil le matin prend 20 à 60 minutes et nécessite des frissons musculaires intenses pour réchauffer le corps.",
                 source: "Institut de Physiologie Comparée - Les colibris peuvent entrer en torpeur pour économiser l'énergie."
@@ -3045,7 +3155,7 @@ const quizzesData = {
             {
                 id: 29,
                 question: "Quel est le rôle de la glande uropygienne chez les oiseaux aquatiques ?",
-                options: ["Digestion", "Production d'une sécrétion oléeuse pour l'imperméabilité", "Reproduction", "Régulation thermique"],
+                options: ["Digestion", "Production d'une", "Reproduction", "Régulation thermique"],
                 correct: 1,
                 explanation: "La glande uropygienne produit une sécrétion cireuse riche en acides gras et en vitamine D précurseur. Lors du toilettage, l'oiseau prélève cette huile avec son bec et la distribue soigneusement sur chaque plume. Chez les oiseaux aquatiques (canards, pingouins, pélicans), cette glande est particulièrement développée et produit une imperméabilisation si efficace que l'eau perle littéralement sur leurs plumes sans les mouiller. Cette expression 'entrer comme l'eau sur les plumes d'un canard' illustre parfaitement ce phénomène.",
                 source: "Université de Zoologie Aquatique - La glande uropygienne produit l'huile de toilettage."
@@ -3053,7 +3163,12 @@ const quizzesData = {
             {
                 id: 30,
                 question: "Quel est le processus appelé \"bolus expulsion\" chez les rapaces nocturnes ?",
-                options: ["Reproduction", "Expulsion des pelotes de régurgitation contenant os et fourrure", "Migration", "Hibernation"],
+                options: [
+                "Reproduction",
+                "Expulsion des pelot",
+                "Migration",
+                "Hibernation"
+            ],
                 correct: 1,
                 explanation: "Les rapaces (hiboux, chouettes, buses...) ne peuvent pas digérer les os, poils, plumes et chitine des insectes. Ces matières sont compactées dans le gésier en une pelote compacte et régurgitées par la bouche 6 à 10 heures après le repas. Analyser ces pelotes est une technique clé en ornithologie et écologie : on peut reconstituer exactement ce que l'oiseau a mangé en identifiant les os et crânes des proies. C'est aussi utilisé comme activité pédagogique dans les écoles.",
                 source: "Centre d'Étude des Rapaces - Les chouettes régurgitent les parties non digestibles."
@@ -3085,7 +3200,7 @@ const quizzesData = {
             {
                 id: 54,
                 question: "Quel est le rôle des marques génétiques sur les plumes ?",
-                options: ["Résistance mécanique renforcée par des liaisons croisées de kératine bêta denses", "Identification et communication", "Isolation thermique supplémentaire par emprisonnement d'air entre les barbules", "Réduction de la friction lors des plongeons à grande vitesse dans l'eau"],
+                options: ["Résistance mécanique renforcée par des liaisons croisées de kératine bêta", "Identification et communication", "Isolation thermique supplémentaire par emprisonnement d'air entre les", "Réduction de la friction lors des plongeons à grande vitesse dans"],
                 correct: 1,
                 explanation: "Les motifs et couleurs des plumes transmettent de nombreuses informations : l'identité spécifique (pour éviter les hybridations), le sexe, l'âge (juvénile vs adulte), et surtout la qualité génétique. Des études ont montré que la vivacité des couleurs (souvent liée à l'alimentation en caroténoïdes) indique la santé et la résistance parasitaire du porteur. Les femelles choisissent préférentiellement les mâles aux couleurs les plus vives — ce que Darwin appelait la sélection sexuelle.",
                 source: "Institut d'Éthologie Ornithologique - Les marques communiquent le statut."
@@ -3117,7 +3232,7 @@ const quizzesData = {
             {
                 id: 58,
                 question: "Quel est le processus du 'parasitisme de couvée' chez certains oiseaux ?",
-                options: ["Destruction des nids concurrents pour forcer la cohabitation et le partage des soins parentaux", "Ponte des œufs dans nids d'autres espèces", "Coopération entre espèces partageant volontairement le même nid pour diluer le risque de prédation", "Adoption active des poussins abandonnés par d'autres espèces après détection de leurs cris de détresse"],
+                options: ["Destruction des nids concurrents pour forcer la cohabitation et le partage des soins", "Ponte des œufs dans nids d'autres espèces", "Coopération entre espèces partageant volontairement le même nid pour diluer le risque de", "Adoption active des poussins abandonnés par d'autres espèces après détection de leurs cris de"],
                 correct: 1,
                 explanation: "Le parasitisme de couvée est une stratégie reproductive où l'oiseau pond ses œufs dans le nid d'une autre espèce, qui élèvera le jeune parasite à sa place. Le coucou gris d'Europe en est l'exemple le plus connu : la femelle observe les nids d'oiseaux hôtes (rousserolle, rouge-gorge...) et pond un œuf mimétique quand l'hôte s'absente. Le jeune coucou expulse ensuite tous les œufs ou poussins du nid pour monopoliser les soins des parents adoptifs.",
                 source: "Institut d'Éthologie Aviaire - Stratégie reproductive du coucou."
@@ -3133,7 +3248,7 @@ const quizzesData = {
             {
                 id: 60,
                 question: "Quel est le rôle du 'lissage des plumes' chez les oiseaux de groupe ?",
-                options: ["Hygiène uniquement, les plumes étant trop fragiles pour supporter d'autres manipulations", "Hygiène, renforcement social et hiérarchie", "Stimulation de la production de mélatonine favorisant la synchronisation des cycles de mue", "Transmission de micro-organismes bénéfiques renforçant le microbiome cutané des plumes"],
+                options: ["Hygiène uniquement", "Hygiène, renforcement social et hiérarchie", "Stimulation de la production de mélatonine favorisant la synchronisation des cycles de", "Transmission de micro-organismes bénéfiques renforçant le microbiome cutané des"],
                 correct: 1,
                 explanation: "L'allopreening (lissage mutuel des plumes) est un comportement observé chez de nombreuses espèces sociales (perroquets, corbeaux, cigognes, manchots). Il sert d'abord à l'hygiène en atteignant les zones inaccessibles seul (tête, cou). Mais c'est aussi un puissant outil de cohésion sociale : il renforce les liens entre partenaires, consolide les alliances et apaise les tensions. Les individus dominants reçoivent généralement plus de lissage qu'ils n'en donnent.",
                 source: "Centre d'Ornithologie Comportementale - L'allopreening a fonction sociale."
@@ -3149,7 +3264,12 @@ const quizzesData = {
             {
                 id: 62,
                 question: "Quel est le mécanisme de l'apprentissage du chant chez les oiseaux chanteurs ?",
-                options: ["Instinctif seulement", "Combinaison d'instinct et d'apprentissage auditif", "Appris entièrement", "Pas d'apprentissage"],
+                options: [
+                "Instinctif seulement",
+                "Combinaison d'instinct et d'apprentissage",
+                "Appris entièrement",
+                "Pas d'apprentissage"
+            ],
                 correct: 1,
                 explanation: "L'apprentissage du chant chez les oiseaux chanteurs est un modèle d'étude des neurosciences. Le poussin naît avec un 'modèle interne' du chant typique de son espèce (instinct), mais doit l'affiner en écoutant un adulte chanteur pendant une période critique. Des expériences ont montré que des pinsons élevés en isolement produisent un chant appauvri et anormal. Chez l'humain, l'acquisition du langage suit un mécanisme similaire : fenêtre critique + modèle inné + apprentissage par imitation.",
                 source: "Université de Neurosciences Aviaires - Imprinting auditif crucial."
@@ -3157,7 +3277,7 @@ const quizzesData = {
             {
                 id: 63,
                 question: "Quel est le rôle des 'couleurs structurales' chez les oiseaux ?",
-                options: ["Renforcement de la kératine alaire pour résister aux contraintes mécaniques pendant le vol", "Communication, thermorégulation et camouflage", "Indicateur de statut reproducteur visible uniquement sous lumière ultraviolette par les congénères", "Absorption sélective des longueurs d'onde nocives pour protéger la rétine lors du vol"],
+                options: ["Renforcement de la kératine alaire pour résister aux contraintes mécaniques pendant le vol", "Communication, thermorégulation et camouflage", "Indicateur de statut reproducteur visible uniquement sous lumière ultraviolette par les", "Absorption sélective des longueurs d'onde nocives pour protéger la rétine lors du vol"],
                 correct: 1,
                 explanation: "Les couleurs structurales des plumes (comme le bleu du geai ou le vert métallique du colibri) ne proviennent pas de pigments mais de nanostructures qui diffractent la lumière par interférence — comme un film de savon. Ces couleurs changent selon l'angle d'observation et sont souvent invisibles aux UV. Fonctionnellement, les couleurs vives servent à la communication sexuelle et à la reconnaissance spécifique, les couleurs cryptiques au camouflage, et les couleurs sombres à l'absorption de chaleur solaire.",
                 source: "Institut de Biophysique Aviaire - Interférence lumineuse crée couleurs."
@@ -3165,7 +3285,7 @@ const quizzesData = {
             {
                 id: 64,
                 question: "Quel est le processus de l'imprinting territorial chez les oiseaux ?",
-                options: ["Mémorisation des coordonnées géomagnétiques du territoire via des dépôts de magnétite nasale", "Apprentissage précoce du habitat natal", "Reconnaissance des partenaires potentiels basée sur les signaux olfactifs du groupe d'origine", "Encodage de la carte migratoire via les constellations stellaires observées pendant les premières nuits"],
+                options: ["Mémorisation des coordonnées géomagnétiques du territoire via des dépôts de magnétite", "Apprentissage précoce du habitat natal", "Reconnaissance des partenaires potentiels basée sur les signaux olfactifs du groupe", "Encodage de la carte migratoire via les constellations stellaires observées pendant les"],
                 correct: 1,
                 explanation: "L'empreinte territoriale se produit quand le jeune oiseau mémorise les caractéristiques de son habitat natal (odeurs, sons, paysages, latitude) pendant une période critique après l'envol. Cette mémoire le guidera pour revenir nicher exactement au même endroit à l'âge adulte — parfois à quelques mètres du nid d'origine. Ce phénomène, appelé philopatrie natale, est particulièrement fort chez les saumons mais aussi très documenté chez les oiseaux marins et migrateurs.",
                 source: "Institut d'Éthologie Spatiale - Imprinting détermine retour site."
@@ -3173,7 +3293,7 @@ const quizzesData = {
             {
                 id: 65,
                 question: "Quel est le mécanisme de la 'philopatrie' chez les oiseaux ?",
-                options: ["Migration obligatoire", "Tendance à retourner au site natal", "Errance constante", "Sédentarité"],
+                options: ["Migration obligatoire", "Tendance à retourner au site", "Errance constante", "Sédentarité"],
                 correct: 1,
                 explanation: "La philopatrie est la tendance d'un animal à retourner à l'endroit où il est né pour se reproduire. Chez les oiseaux, elle est très répandue mais variable : certaines espèces nichent à 95% dans un rayon de 5 km de leur lieu de naissance, d'autres sont plus dispersives. La philopatrie maintient des populations localement adaptées mais peut aussi ralentir la colonisation de nouveaux habitats. Elle représente un facteur majeur dans la structuration génétique des populations d'oiseaux.",
                 source: "Centre d'Écologie Aviaire - Philopatrie affecte génétique populations."
@@ -3181,7 +3301,7 @@ const quizzesData = {
             {
                 id: 66,
                 question: "Quel est le rôle de la 'parole gestuelle' chez les corvidés ?",
-                options: ["Régulation de la distance sociale par des postures standardisées évitant les conflits directs", "Communication complexe par gestes et postures", "Transmission culturelle d'techniques d'utilisation d'outils via démonstration gestuelle aux juvéniles", "Signalisation de la qualité génétique aux femelles par des parades ritualisées à composante gestuelle"],
+                options: ["Régulation de la distance sociale par des postures standardisées évitant les conflits", "Communication complexe par gestes et postures", "Transmission culturelle d'techniques d'utilisation d'outils via démonstration gestuelle aux", "Signalisation de la qualité génétique aux femelles par des parades ritualisées à composante"],
                 correct: 1,
                 explanation: "Les corvidés (corbeaux, corneilles, geais, pies) ont développé une communication gestuelle remarquablement sophistiquée. Des études ont montré que les corbeaux utilisent des gestes de pointage et de présentation d'objets pour attirer l'attention de leurs partenaires — une capacité longtemps crue exclusive aux grands singes et aux humains. Ils peuvent aussi montrer des objets, 'inviter' au jeu par des postures codées, et même 'mentir' en cachant de la nourriture quand ils se croient observés.",
                 source: "Institut de Cognition Aviaire - Les corvidés communiquent sophistiquement."
@@ -3189,7 +3309,7 @@ const quizzesData = {
             {
                 id: 67,
                 question: "Quel est le processus de la 'compétition spermique' chez les oiseaux ?",
-                options: ["Sélection des spermatozoïdes par la femelle via des cryptes utérines qui filtrent selon les antigènes", "Compétition des spermes entre mâles", "Fécondation exclusive du premier mâle s'étant accouplé grâce à un mécanisme de verrouillage chimique", "Choix différé de la femelle qui stocke les spermes plusieurs semaines avant de décider de la fécondation"],
+                options: ["Sélection des spermatozoïdes par la femelle via des cryptes utérines qui filtrent", "Compétition des spermes entre mâles", "Fécondation exclusive du premier mâle s'étant accouplé grâce à un mécanisme de", "Choix différé de la femelle qui stocke les spermes plusieurs semaines avant de"],
                 correct: 1,
                 explanation: "La compétition spermatique se produit quand une femelle s'accouple avec plusieurs mâles et que leurs spermatozoïdes rivalisent pour féconder les ovules. Chez les oiseaux, même les espèces apparemment monogames pratiquent souvent des accouplements extra-conjugaux. En réponse, les mâles ont évolué des testicules proportionnellement plus grands, des spermatozoïdes plus rapides, et des comportements de 'garde rapprochée' de la femelle pendant sa période fertile pour limiter les accouplements rivaux.",
                 source: "Université de Biologie Reproductive - Sperm competition est intense."
@@ -3197,7 +3317,7 @@ const quizzesData = {
             {
                 id: 68,
                 question: "Quel est le mécanisme de la 'mémoire spatiale' chez les gélinottes ?",
-                options: ["Recours aux marques visuelles laissées intentionnellement près des sites de stockage", "Mémorisation précise des caches de nourriture", "Guidage olfactif via les traces de phéromones déposées lors du stockage initial", "Récupération aléatoire compensée par un taux de stockage si élevé que les pertes restent négligeables"],
+                options: ["Recours aux marques visuelles laissées intentionnellement près des sites de stockage", "Mémorisation précise des caches de nourriture", "Guidage olfactif via les traces de phéromones déposées lors du stockage initial", "Récupération aléatoire compensée par un taux de stockage si élevé que les pertes restent"],
                 correct: 1,
                 explanation: "Les geais et mésanges huppées (Poecile atricapillus) cachent des dizaines de milliers de graines chaque automne et les retrouvent mois plus tard sous la neige avec une précision stupéfiante — jusqu'à 30 000 caches pour un seul oiseau. L'hippocampe de ces espèces est proportionnellement plus grand que celui des espèces non stockeuses, et grossit en automne (période de stockage) pour rétrécir en été. C'est un exemple remarquable de plasticité cérébrale saisonnière.",
                 source: "Institut de Cognition Aviaire - Mémoire spatiale exceptionnelle."
@@ -3213,7 +3333,7 @@ const quizzesData = {
             {
                 id: 70,
                 question: "Quel est le processus de la 'divulgation de réseau' chez les corvidés ?",
-                options: ["Dissimulation systématique des ressources alimentaires pour éviter toute concurrence intra-groupe", "Partage d'information sur sources de nourriture", "Transmission des connaissances migratoires via des vocalisations codées émises en vol", "Marquage olfactif des zones riches pour guider uniquement les membres apparentés de la famille"],
+                options: ["Dissimulation systématique des ressources alimentaires pour éviter toute concurrence", "Partage d'information sur sources de nourriture", "Transmission des connaissances migratoires via des vocalisations codées émises en vol", "Marquage olfactif des zones riches pour guider uniquement les membres apparentés de la famille"],
                 correct: 1,
                 explanation: "Certains corvidés partagent l'information sur les sources de nourriture au sein de leur groupe social — parfois appelé 'réseau d'information'. Les corneilles noires se rassemblent en dortoirs communs où les individus qui ont trouvé de la nourriture sont 'suivis' le lendemain matin par les autres. Mais les corvidés savent aussi dissimuler leurs caches quand ils se sentent observés, démontrant une 'théorie de l'esprit' — la capacité de comprendre que les autres ont leur propre savoir.",
                 source: "Université de Cognition Sociale Aviaire - Corvidés communiquent ressources."
@@ -3254,7 +3374,7 @@ const quizzesData = {
             {
                 id: 1,
                 question: "Combien d'espèces de reptiles existent environ sur Terre ?",
-                options: ["Environ 6000 espèces, principalement des lézards et des serpents tropicaux", "Environ 11000 espèces", "Environ 25000 espèces, un chiffre proche de celui des oiseaux actuellement connus", "Environ 40000 espèces, soit autant que les poissons osseux de nos océans"],
+                options: ["Environ 6000 espèces", "Environ 11000 espèces", "Environ 25000 espèces", "Environ 40000 espèces"],
                 correct: 1,
                 explanation: "Les herpetologues ont identifié plus de 11000 espèces de reptiles, ce qui inclut les lezards, serpents, crocodiliens, tortues et tuataras. Cette diversité montre l'adaptabilité remarquable des reptiles.",
                 source: "Musée de Zoologie - Il existe environ 11000 espèces de reptiles identifiées."
@@ -3262,16 +3382,16 @@ const quizzesData = {
             {
                 id: 2,
                 question: "Quel est le plus grand reptile du monde ?",
-                options: ["Le python réticulé d'Asie du Sud-Est, qui peut dépasser 7 mètres de longueur", "L'anaconda vert d'Amazonie, reconnu comme le plus lourd des serpents", "Le crocodile marin", "Le varan de Komodo, le plus grand lézard terrestre avec ses 3 mètres"],
+                options: ["Le python réticulé d'Asie du Sud-Est", "L'anaconda vert d'Amazonie", "Le crocodile marin", "Le varan de Komodo"],
                 correct: 2,
                 explanation: "Le crocodile marin d'Asie du Sud-Est est le plus grand reptile vivant. Les mâles peuvent atteindre 6 à 7 métres de longueur et peser plus d'une tonne. C'est un prédateur formidable et aité depuis des millénaires.",
                 source: "Société Herpétologique - Le crocodile marin peut atteindre 6-7 mètres de long.",
-                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Nilkrokodil_zoo_berlin_1.jpg/800px-Nilkrokodil_zoo_berlin_1.jpg"
+                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/NileCrocodile.jpg/960px-NileCrocodile.jpg"
             },
             {
                 id: 3,
                 question: "Les reptiles sont-ils à sang chaud ou à sang froid ?",
-                options: ["À sang chaud, car leur activité musculaire intense génère suffisamment de chaleur interne", "À sang froid (ectothermes)", "Les deux selon l'espèce : les grandes espèces tropicales maintiennent une température stable grâce à leur masse corporelle", "Ni l'un ni l'autre : ils régulent leur température via des processus chimiques internes indépendants de l'environnement"],
+                options: ["À sang chaud", "À sang froid (ectothermes)", "Les deux selon l'espèce", "Ni l'un ni l'autre"],
                 correct: 1,
                 explanation: "Les reptiles sont ectothermes, ce qui signifie qu'ils régulent leur température en utilisant l'environnement externe. Ils doivent se chauffer au soleil ou chercher l'ombre pour maintenir une température optimale. C'est très différent des mammifères.",
                 source: "Institut de Biologie Comparée - Les reptiles sont ectothermes et dépendent de l'environnement."
@@ -3279,7 +3399,7 @@ const quizzesData = {
             {
                 id: 4,
                 question: "Combien de pattes les reptiles typiques ont-ils ?",
-                options: ["Deux pattes, comme certains lézards bipèdes qui courent dressés sur les pattes arrière", "Quatre pattes", "Six pattes, comme les insectes auxquels les lézards sont parfois comparés", "Aucune, car tous les reptiles ont perdu leurs membres au cours de l'évolution, comme les serpents"],
+                options: ["Deux pattes", "Quatre pattes", "Six pattes", "Aucune"],
                 correct: 1,
                 explanation: "La grande majorité des reptiles ont quatre pattes : lézards, tortues, crocodiliens... Mais les serpents sont des reptiles qui ont perdu leurs membres au cours de l'évolution (il y a environ 150 millions d'années). On trouve encore chez certains boas et pythons des vestiges de membres pelviens — de petits ergots visibles près du cloaque, preuve de cette évolution.",
                 source: "Encyclopédie Herpétologique - La plupart des reptiles ont quatre pattes, sauf les serpents."
@@ -3287,16 +3407,16 @@ const quizzesData = {
             {
                 id: 5,
                 question: "Quel reptile peut changer de couleur rapidement ?",
-                options: ["Le serpent, qui modifie la brillance de ses écailles selon son état émotionnel et la luminosité ambiante", "Le lézard anole, qui change du vert au brun en quelques secondes selon son humeur et la température", "Le caméléon", "La tortue, dont la peau peut s'assombrir ou s'éclaircir progressivement selon l'exposition au soleil"],
+                options: ["Le serpent", "Le lézard anole", "Le caméléon", "La tortue"],
                 correct: 2,
                 explanation: "Le caméléon change de couleur grâce à des cellules spécialisées dans sa peau : les chromatophores (qui contiennent des pigments) et les iridophores (qui réfléchissent la lumière). Contrairement à l'idée reçue, ce changement n'est pas principalement pour le camouflage — c'est avant tout un moyen de communication : exprimer l'humeur, séduire un partenaire, ou intimider un rival. La température influence aussi la couleur.",
                 source: "Muséum d'Histoire Naturelle - Le caméléon change de couleur grâce à ses chromatophores.",
-                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Chameleon_pardalis.jpg/800px-Chameleon_pardalis.jpg"
+                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Panther_Chameleon_738367_%28cropped%29.jpg/960px-Panther_Chameleon_738367_%28cropped%29.jpg"
             },
             {
                 id: 6,
                 question: "Quel serpent est le plus venimeux du monde ?",
-                options: ["Le cobra royal, dont le venin est suffisamment puissant pour tuer un éléphant adulte en quelques heures", "Le mamba noir d'Afrique, réputé pour sa vitesse et la rapidité foudroyante de son venin neurotoxique", "Le taipan terrestre", "La vipère de Russell, responsable du plus grand nombre de morsures mortelles en Asie du Sud"],
+                options: ["Le cobra royal", "Le mamba noir d'Afrique", "Le taipan terrestre", "La vipère de Russell"],
                 correct: 2,
                 explanation: "Le taipan terrestre d'Australie (Oxyuranus microlepidotus) possède le venin le plus toxique de tous les serpents : une seule morsure contient assez de venin pour tuer 100 hommes adultes. Son venin est 400 fois plus puissant que celui du cobra. Heureusement, c'est un serpent très discret qui fuit les humains — les morsures mortelles sont rarissimes, et un antivenin efficace existe.",
                 source: "Institut Toxinologique - Le taipan terrestre possède le venin le plus puissant."
@@ -3304,7 +3424,7 @@ const quizzesData = {
             {
                 id: 7,
                 question: "À quel âge une tortue devient-elle adulte généralement ?",
-                options: ["À 2-3 ans, comme la plupart des reptiles à croissance rapide des régions tropicales", "À 5-10 ans, un délai comparable à celui des varans et des crocodiles juvéniles", "À 20-50 ans selon l'espèce", "À 100 ans, une fois que leur carapace a atteint sa taille et sa dureté définitives"],
+                options: ["À 2-3 ans", "À 5-10 ans", "À 20-50 ans selon l'espèce", "À 100 ans"],
                 correct: 2,
                 explanation: "Les tortues ont une des maturités sexuelles les plus tardives du règne animal. La tortue verte marine n'est mature qu'entre 20 et 50 ans. La tortue terrestre géante des Galápagos attend 20 à 25 ans. Cette lenteur s'explique par leur métabolisme extrêmement lent et leur longévité exceptionnelle — investir longtemps dans la croissance avant de se reproduire est une stratégie viable quand on vit plus de 100 ans.",
                 source: "Centre de Soins des Tortues - L'âge de maturité varie beaucoup selon l'espèce."
@@ -3312,7 +3432,7 @@ const quizzesData = {
             {
                 id: 8,
                 question: "Combien d'années une tortue peut-elle vivre ?",
-                options: ["10-20 ans, une longévité comparable à celle des chiens et des chats domestiques", "30-50 ans, soit un peu plus que les grands singes comme les chimpanzés en captivité", "100+ ans", "200+ ans, une durée de vie qui en ferait l'animal vertébré le plus longévif connu à ce jour"],
+                options: ["10-20 ans", "30-50 ans", "100+ ans", "200+ ans"],
                 correct: 2,
                 explanation: "Les tortues sont parmi les animaux les plus longévifs sur Terre. Les grandes tortues terrestres vivent régulièrement plus de 100 ans. Jonathan, une tortue des Seychelles résidant à Sainte-Hélène, est née vers 1832 et est toujours vivante en 2024 — soit plus de 190 ans ! Ce record s'explique en partie par leur métabolisme très lent qui génère peu de radicaux libres et ralentit le vieillissement cellulaire.",
                 source: "Société Herpétologique Française - Les tortues peuvent vivre plus de 100 ans."
@@ -3320,7 +3440,7 @@ const quizzesData = {
             {
                 id: 9,
                 question: "Quel reptile pond des œufs ?",
-                options: ["Aucun reptile, car ils ont tous évolué vers la viviparité au cours de l'évolution", "Tous les reptiles", "Certains reptiles seulement, les autres donnant naissance directement à des petits vivants", "Uniquement les crocodiliens et les tortues marines, les serpents et lézards étant tous vivipares"],
+                options: ["Aucun reptile", "Tous les reptiles", "Certains reptiles", "Uniquement les crocodiliens et les"],
                 correct: 1,
                 explanation: "Attention : cette affirmation est en réalité incorrecte ! Certains reptiles sont vivipares (ils donnent naissance à des petits vivants). Par exemple, de nombreuses vipères d'Europe, le boa constrictor et certains lézards gardent les œufs à l'intérieur jusqu'à l'éclosion (ovoviviparité) ou nourrissent directement l'embryon via un placenta (viviparité vraie). La majorité des reptiles pondent des œufs, mais pas tous.",
                 source: "Institut de Reproduction des Reptiles - Tous les reptiles pondent des œufs."
@@ -3328,7 +3448,7 @@ const quizzesData = {
             {
                 id: 10,
                 question: "Quel est l'organe de détection de la chaleur chez les serpents venimeux ?",
-                options: ["L'odorat, grâce à l'organe de Jacobson qui analyse les molécules volatiles libérées par la chaleur des proies", "Les fossettes thermosensibles", "La vision, leurs yeux contenant des photorécepteurs capables de percevoir le rayonnement infrarouge émis par les corps chauds", "Le toucher, via des terminaisons nerveuses cutanées extrêmement sensibles aux variations thermiques de l'air"],
+                options: ["L'odorat", "Les fossettes", "La vision", "Le toucher"],
                 correct: 1,
                 explanation: "Certains serpents (pythons, boas, crotales, vipères à fossettes) possèdent des organes thermosensibles capables de détecter des variations de température infrarouges infimes (0,003°C). Situés entre l'œil et la narine, ces 'organes à fosse' forment une image thermique de l'environnement, permettant de localiser et de frapper une proie à sang chaud dans l'obscurité totale avec une précision remarquable.",
                 source: "Université de Sensorimotricité - Les serpents venimeux possèdent des fossettes thermosensibles."
@@ -3336,7 +3456,7 @@ const quizzesData = {
             {
                 id: 11,
                 question: "Quel est le record de vitesse d'un lézard sur terre ?",
-                options: ["10 km/h, soit la vitesse d'un humain marchant d'un pas soutenu sur terrain plat", "25 km/h, une performance comparable à celle d'un chien de taille moyenne au trot", "40+ km/h", "60 km/h, ce qui leur permettrait de dépasser un cheval au galop sur courte distance"],
+                options: ["10 km/h", "25 km/h", "40+ km/h", "60 km/h"],
                 correct: 2,
                 explanation: "Le basilic plumet et certains varans peuvent courir à plus de 40 km/h sur de courtes distances. Le recordman est le lézard à queue fouet (Cnemidophorus), qui peut atteindre 29 km/h. Pour l'anecdote, le basilic est si rapide qu'il peut courir sur l'eau sur ses pattes arrière sur plusieurs mètres grâce à la fréquence de ses foulées et des pieds palmés qui emprisonnent de l'air sous l'eau.",
                 source: "Institut de Zoologie Comparée - Certains lézards courent très vite."
@@ -3344,7 +3464,7 @@ const quizzesData = {
             {
                 id: 12,
                 question: "À quel âge une tortue terrestre devient-elle adulte ?",
-                options: ["À 5-10 ans, maturité comparable à celle des varans et des petits crocodiliens", "À 15-20 ans, délai similaire à celui des tortues marines des zones tempérées", "À 20-30 ans selon l'espèce", "À 50+ ans, réservé aux grandes tortues géantes des îles isolées"],
+                options: ["À 5-10 ans", "À 15-20 ans", "À 20-30 ans selon l'espèce", "À 50+ ans"],
                 correct: 2,
                 explanation: "La tortue terrestre d'Hermann, commune en Europe du Sud, atteint sa maturité sexuelle entre 10 et 20 ans. Les grandes espèces méditerranéennes ou des Galápagos mettent 20 à 30 ans. Pendant toute cette période, la tortue grandit très lentement — on peut d'ailleurs estimer son âge en comptant les anneaux de croissance sur ses écailles (scutes), un peu comme les cernes d'un arbre.",
                 source: "Centre de Soins des Tortues - Les tortues maturent lentement."
@@ -3352,7 +3472,7 @@ const quizzesData = {
             {
                 id: 13,
                 question: "Quel serpent est le plus venimeux du monde par volume de venin ?",
-                options: ["Le cobra royal, dont une seule morsure peut injecter suffisamment de venin pour tuer un éléphant adulte", "Le taipan intérieur", "La vipère des sables, responsable de la majorité des morsures mortelles en Afrique et au Moyen-Orient", "Le bungare rayé, dont le venin neurotoxique agit sans douleur initiale, retardant dangereusement la prise en charge médicale"],
+                options: ["Le cobra royal", "Le taipan intérieur", "La vipère des sables", "Le bungare rayé"],
                 correct: 1,
                 explanation: "Le taipan intérieur (ou taipan terrestre) d'Australie détient le record absolu de toxicité du venin de serpent. Sa DL50 (dose létale pour 50% des souris testées) est de 0,025 mg/kg — 10 fois plus toxique que le cobra royal et 50 fois plus que le cobra commun. Son venin attaque le système nerveux et la coagulation simultanément. Heureusement, il vit dans des zones très reculées et n'attaque pratiquement jamais l'humain.",
                 source: "Institut Toxinologique - Le taipan intérieur a le venin le plus toxique."
@@ -3360,7 +3480,7 @@ const quizzesData = {
             {
                 id: 14,
                 question: "Combien de temps une tortue peut-elle survivre sans nourriture ?",
-                options: ["1-2 mois, soit la durée maximale tolérée grâce aux réserves de glycogène hépatique", "6 mois, durée correspondant à l'hibernation des tortues en régions tempérées", "1-2 ans selon l'espèce", "5+ ans, leur métabolisme pouvant s'arrêter presque totalement en période de sécheresse extrême"],
+                options: ["1-2 mois", "6 mois", "1-2 ans selon", "5+ ans"],
                 correct: 2,
                 explanation: "Les tortues peuvent survivre sans manger pendant des durées extraordinaires grâce à leur métabolisme ultra-lent. Pendant l'hibernation (ou estivation en été), elles réduisent toutes leurs fonctions vitales au minimum et puisent dans leurs réserves de graisse. Des tortues de Galápagos ont survécu plus d'un an sans eau ni nourriture à bord de navires. C'est d'ailleurs pourquoi les marins les emportaient comme provisions vivantes.",
                 source: "Centre de Physiologie Reptilienne - Les tortues peuvent jeûner longtemps."
@@ -3368,7 +3488,7 @@ const quizzesData = {
             {
                 id: 15,
                 question: "Quel est le plus grand crocodile jamais enregistré ?",
-                options: ["Environ 4-5 mètres, une taille déjà impressionnante correspondant aux grands mâles du crocodile du Nil", "Environ 6-7 mètres, taille des plus grands crocodiles du Nil jamais mesurés dans les deltas africains", "Plus de 7 mètres", "Plus de 10 mètres, une longueur théoriquement possible chez les espèces préhistoriques comme le Sarcosuchus"],
+                options: ["Environ 4-5 mètres", "Environ 6-7 mètres", "Plus de 7 mètres", "Plus de 10 mètres"],
                 correct: 2,
                 explanation: "Le plus grand crocodile marin (Crocodylus porosus) jamais mesuré officiellement atteignait 6,17 m, mais des témoignages et mesures historiques évoquent des individus dépassant 7 mètres. Le crocodile 'Lolong', capturé aux Philippines en 2011, mesurait 6,17 m et pesait 1 075 kg — record officiel Guinness. Ces géants peuvent vivre plus de 70 ans et continuent de grandir toute leur vie.",
                 source: "Société Herpétologique - Le crocodile marin peut excéder 7 mètres."
@@ -3376,7 +3496,7 @@ const quizzesData = {
             {
                 id: 16,
                 question: "À quel âge un crocodile devient-il reproducteur ?",
-                options: ["À 2-3 ans, soit une maturité précoce favorisée par l'abondance de nourriture dans les milieux tropicaux", "À 5-10 ans, délai comparable à celui des varans géants et des gros lézards tropicaux", "À 10-15 ans selon l'espèce", "À 20+ ans, seuil atteint uniquement chez les crocodiles marins vivant dans des eaux à faible température"],
+                options: ["À 2-3 ans", "À 5-10 ans", "À 10-15 ans selon l'espèce", "À 20+ ans"],
                 correct: 2,
                 explanation: "Les crocodiliens atteignent leur maturité sexuelle tardivement : entre 10 et 15 ans selon l'espèce et les conditions. Le crocodile du Nil est mature vers 12-15 ans, le crocodile marin vers 10-12 ans. La femelle pond entre 20 et 80 œufs dans un nid qu'elle surveille jalousement pendant 3 mois. Elle aide ensuite les jeunes à éclore et les transporte dans sa gueule jusqu'à l'eau — comportement parental très développé pour un reptile.",
                 source: "Centre d'Étude des Crocodiliens - La maturité arrive tardivement."
@@ -3384,7 +3504,7 @@ const quizzesData = {
             {
                 id: 17,
                 question: "Quel lézard peut courir sur l'eau ?",
-                options: ["Le dragon de Komodo, qui peut traverser des bras de mer entre îles en nageant sur de longues distances", "Le basilic", "L'iguane marin des Galápagos, qui plonge dans l'océan et nage entre les rochers pour brouter les algues", "Le varan du Nil, capable de traverser des rivières à la surface en agitant vigoureusement sa queue aplatie"],
+                options: ["Le dragon de Komodo", "Le basilic", "L'iguane marin des Galápagos", "Le varan du Nil"],
                 correct: 1,
                 explanation: "Le basilic vert (Basiliscus plumifrons) d'Amérique centrale peut courir sur l'eau grâce à ses grandes pattes arrière munies de franges et à sa vitesse (environ 1,5 m/s). La fréquence élevée de ses foulées crée des poches d'air sous ses pieds qui l'empêchent de s'enfoncer sur de courtes distances (jusqu'à 4-5 mètres). Cette capacité lui vaut le surnom de 'lézard Jésus-Christ'. Il ne peut le faire qu'à grande vitesse.",
                 source: "Institut d'Éthologie Reptilienne - Le basilic court sur l'eau sur ses pattes postérieures."
@@ -3392,7 +3512,7 @@ const quizzesData = {
             {
                 id: 18,
                 question: "À quel âge une tortue peut-elle pondre des œufs ?",
-                options: ["À 3-5 ans, une maturité précoce observée chez certaines tortues d'eau douce des régions tropicales", "À 10-15 ans selon l'espèce", "À 20-30 ans, délai typique des tortues marines qui doivent atteindre une grande taille avant de pondre", "À 50+ ans, une maturité extrêmement tardive que l'on observe uniquement chez les tortues géantes des îles isolées"],
+                options: ["À 3-5 ans", "À 10-15 ans selon l'espèce", "À 20-30 ans", "À 50+ ans"],
                 correct: 1,
                 explanation: "L'âge de la première ponte varie énormément selon les espèces de tortues. La tortue de Floride peut pondre dès 5-8 ans, mais les tortues marines comme la tortue verte n'atteignent la maturité reproductive qu'entre 20 et 50 ans. Les grandes tortues terrestres des Galápagos pondent pour la première fois vers 20-25 ans. Cette maturité tardive les rend très vulnérables à la surpêche et la prédation avant même qu'elles aient pu se reproduire.",
                 source: "Centre de Reproduction Reptilienne - L'âge varie énormément selon l'espèce."
@@ -3400,7 +3520,7 @@ const quizzesData = {
             {
                 id: 19,
                 question: "Quel est le plus petit reptile du monde ?",
-                options: ["Le caméléon pygmée Brookesia micra, qui tient sur la tête d'une allumette", "Le gecko nain Sphaerodactylus ariasae des Caraïbes, mesurant à peine 16 mm", "Le lézard de Burton", "La couleuvre des blés juvénile, mesurant moins de 20 cm à l'éclosion"],
+                options: ["Le caméléon pygmée Brookesia micra", "Le gecko nain Sphaerodactylus ariasae des Caraïbes", "Le lézard de Burton", "La couleuvre des blés juvénile"],
                 correct: 2,
                 explanation: "Le plus petit reptile du monde est en réalité le gecko nano (Sphaerodactylus ariasae) de République Dominicaine, qui mesure environ 16 mm. Le caméléon pygmée Brookesia micra de Madagascar est lui aussi candidat au titre avec ses 29 mm. Le 'lézard de Burton' n'est pas la référence la plus précise — les records de miniaturisation chez les reptiles sont disputés et régulièrement mis à jour par de nouvelles découvertes en zones tropicales.",
                 source: "Musée de Zoologie - Le lézard de Burton mesure environ 10 cm."
@@ -3408,7 +3528,7 @@ const quizzesData = {
             {
                 id: 20,
                 question: "Quel est le temps moyen de l'éclosion des œufs de tortue ?",
-                options: ["1-2 mois, durée typique des crocodiliens incubant dans des amas de végétation en décomposition", "3-4 mois, durée observée chez les pythons qui couvent activement leurs œufs en frissonnant", "5-6 mois selon l'espèce", "8-12 mois, durée prolongée documentée chez certaines tortues des régions froides qui diapausent en développement"],
+                options: ["1-2 mois", "3-4 mois", "5-6 mois selon l'espèce", "8-12 mois"],
                 correct: 2,
                 explanation: "L'incubation des œufs de tortues marines dure entre 45 et 70 jours selon la température du sable — plus il fait chaud, plus l'éclosion est rapide. Les tortues terrestres ont des durées plus longues : 90 à 120 jours pour la tortue d'Hermann. La température d'incubation détermine aussi le sexe des tortorues (TSD) : des températures plus chaudes produisent généralement plus de femelles, ce qui rend le changement climatique particulièrement préoccupant pour ces espèces.",
                 source: "Centre de Reproduction des Tortues - L'incubation varie selon conditions."
@@ -3416,7 +3536,7 @@ const quizzesData = {
             {
                 id: 21,
                 question: "Quel serpent est le plus long du monde ?",
-                options: ["L'anaconda vert d'Amazonie, qui dépasse les 5 mètres et constitue le serpent le plus lourd du monde", "Le python de Birmanie, une espèce invasive en Floride pouvant dépasser 6 mètres et 90 kilogrammes", "Le python réticulé", "Le boa constricteur, dont les plus grands spécimens d'Amérique centrale atteignent régulièrement 5 à 6 mètres"],
+                options: ["L'anaconda vert d'Amazonie", "Le python de Birmanie", "Le python réticulé", "Le boa constricteur"],
                 correct: 2,
                 explanation: "Le python réticulé (Malayopython reticulatus) d'Asie du Sud-Est est le plus long serpent du monde. Il peut dépasser 7 mètres et peser plus de 100 kg. Le spécimen le plus long officiellement mesuré (Medusa) atteignait 7,67 m. Il se distingue de l'anaconda (le plus lourd) par sa longueur. Chasseur par constriction, il peut avaler des proies allant jusqu'à la taille d'un petit cochon ou d'un chevreuil.",
                 source: "Institut Herpétologique - Le python réticulé peut dépasser 7 mètres."
@@ -3424,7 +3544,7 @@ const quizzesData = {
             {
                 id: 22,
                 question: "À quelle température un reptile doit-il être maintenu ?",
-                options: ["15-20°C, une plage de températures adaptée aux reptiles des régions méditerranéennes comme la tortue d'Hermann", "20-25°C, une température ambiante suffisante pour maintenir l'activité des espèces comme le boa constrictor", "25-35°C selon l'espèce", "40°C+, une température que certains reptiles désertiques comme l'agame de Bibron peuvent tolérer brièvement au basking"],
+                options: ["15-20°C", "20-25°C", "25-35°C selon", "40°C+"],
                 correct: 2,
                 explanation: "Les reptiles en captivité ont des besoins thermiques précis qu'il faut respecter. Un pogona (dragon barbu) d'Australie a besoin d'une zone chaude à 40-45°C et d'une zone fraîche à 25-28°C. Un gecko léopard préfère 28-32°C. En dessous de leur température minimale, leur digestion s'arrête et leur système immunitaire s'effondre. C'est pourquoi un terrarium mal chauffé est l'une des premières causes de maladie chez les reptiles en captivité.",
                 source: "Centre de Soins Reptiliens - Les températures varient selon les espèces."
@@ -3432,7 +3552,7 @@ const quizzesData = {
             {
                 id: 23,
                 question: "Quel est le processus de la mue chez les serpents ?",
-                options: ["Perte progressive de la peau en fragments irréguliers, comme chez les lézards en période de croissance", "Perte complète de la peau en une seule pelure", "Aucun renouvellement cutané, la peau des serpents grandissant avec eux tout au long de leur vie", "Mue très lente sur plusieurs semaines, le serpent restant partiellement couvert de son ancienne peau"],
+                options: ["Perte progressive de la peau en fragments irréguliers", "Perte complète de la peau en une seule pelure", "Aucun renouvellement cutané", "Mue très lente sur plusieurs semaines"],
                 correct: 1,
                 explanation: "Les serpents muent d'un seul tenant (ecdysis) en retournant leur peau de l'intérieur, comme on retournerait une chaussette. Avant la mue, leurs yeux deviennent bleutés et opaques car la vieille peau se décolle sur le globe oculaire (le 'spectacle'). Ils se frottent contre des surfaces rugueuses pour amorcer la mue par le museau. La fréquence varie selon la croissance : un jeune serpent en pleine croissance mue toutes les 4-6 semaines, un adulte 2-4 fois par an.",
                 source: "Institut d'Éthologie Reptilienne - La mue ectysiale se fait en une fois."
@@ -3440,7 +3560,7 @@ const quizzesData = {
             {
                 id: 24,
                 question: "Quel caméléon a les capacités de changement de couleur les plus marquées ?",
-                options: ["Le caméléon panthère", "Le caméléon de Namaqua, qui alterne noir et blanc pour thermoréguler dans son habitat désertique d'Afrique australe", "Le caméléon casqué, qui affiche des teintes vives lors des parades nuptiales et adapte sa couleur à la saison dans son habitat montagneux", "Le caméléon pygmée Rhampholeon, dont la gamme chromatique précise lui permet un camouflage quasi parfait parmi les feuilles mortes"],
+                options: ["Le caméléon panthère", "Le caméléon de Namaqua", "Le caméléon casqué", "Le caméléon pygmée Rhampholeon"],
                 correct: 0,
                 explanation: "Le caméléon panthère (Furcifer pardalis) de Madagascar est considéré comme le champion du changement de couleur. Les mâles peuvent afficher des rouges, oranges, verts, bleus et turquoises intenses en quelques secondes. Chaque région de l'île a sa propre coloration locale. Des études ont montré que le caméléon contrôle ses iridophores (cristaux de guanine) comme un réseau de nanostructures, modifiant la façon dont la lumière est réfléchie pour changer de couleur.",
                 source: "Institut de Biophysique Reptilienne - Le panthère est connu pour ses changements."
@@ -3456,7 +3576,7 @@ const quizzesData = {
             {
                 id: 26,
                 question: "Quel est le rôle de la fosse thermosensible chez le python ?",
-                options: ["Analyse des gradients chimiques olfactifs pour localiser les proies par concentration moléculaire", "Détection infrarouge des proies", "Perception visuelle haute résolution de la chaleur corporelle des proies à sang chaud", "Transmission des vibrations basse fréquence du sol via les écailles ventrales jusqu'à l'oreille interne"],
+                options: ["Analyse des gradients chimiques olfactifs pour localiser les proies par", "Détection infrarouge des proies", "Perception visuelle haute résolution de la chaleur corporelle des proies", "Transmission des vibrations basse fréquence du sol via les écailles"],
                 correct: 1,
                 explanation: "Les fossettes labiales des pythons (situées sur les écailles des lèvres) sont des organes thermosensibles capables de détecter des variations de température de 0,003°C. Elles créent une 'image thermique' de l'environnement, complétant la vision ordinaire. En lumière nulle, un python peut ainsi repérer et frapper une proie à sang chaud avec une précision redoutable. Ces mêmes organes existent chez les boas et les crotales, mais dans des positions anatomiques différentes.",
                 source: "Institut de Sensorimotricité Reptilienne - Les fossettes détectent la chaleur."
@@ -3464,7 +3584,7 @@ const quizzesData = {
             {
                 id: 27,
                 question: "À quelle profondeur peuvent plonger les tortues marines ?",
-                options: ["Jusqu'à 10 mètres", "Jusqu'à 50 mètres", "Jusqu'à 100-200 mètres selon l'espèce", "Plus de 500 mètres"],
+                options: ["Jusqu'à 10 mètres", "Jusqu'à 50 mètres", "Jusqu'à 100-200 mètres selon", "Plus de 500 mètres"],
                 correct: 2,
                 explanation: "Les tortues marines sont d'excellentes plongeuses. La tortue verte plonge généralement à 10-50 mètres, mais la tortue luth (la plus grande) détient le record avec des plongées documentées à plus de 1 200 mètres ! Elle suit les méduses (sa proie préférée) dans les profondeurs. Pour résister à de telles pressions, la tortue luth a une carapace flexible (pas d'os rigide) et des poumons qui se compriment sans dommage.",
                 source: "Institut de Biologie Marine - Les tortues luth plongent très profond."
@@ -3472,7 +3592,7 @@ const quizzesData = {
             {
                 id: 28,
                 question: "Quel est le temps moyen de digestion chez un serpent ?",
-                options: ["Quelques jours", "1-2 semaines", "2-4 semaines selon la proie", "1-2 mois"],
+                options: ["Quelques jours", "1-2 semaines", "2-4 semaines selon la", "1-2 mois"],
                 correct: 2,
                 explanation: "La digestion d'un serpent est un processus fascinant et lent. Après avoir avalé une proie entière, le serpent la digère pendant 2 à 4 semaines selon sa taille. Son métabolisme s'emballe — le foie double de volume, les intestins se développent et la production d'acide gastrique augmente massivement. Un python python peut digérer un cochon entier. Pendant ce temps, il reste immobile et vulnérable, c'est pourquoi il choisit un endroit caché pour digérer.",
                 source: "Centre de Physiologie Reptilienne - La digestion est lente mais complète."
@@ -3488,7 +3608,7 @@ const quizzesData = {
             {
                 id: 30,
                 question: "Quel serpent pond le plus d'œufs en une ponte ?",
-                options: ["10-20 œufs", "30-50 œufs", "80-100 œufs selon l'espèce", "150+ œufs"],
+                options: ["10-20 œufs", "30-50 œufs", "80-100 œufs selon", "150+ œufs"],
                 correct: 2,
                 explanation: "Les grands pythons sont les champions de la ponte chez les serpents. Le python de Birmanie peut pondre jusqu'à 100 œufs, et le python réticulé jusqu'à 80. La femelle s'enroule autour de ses œufs et produit de la chaleur par frissons musculaires (thermogenèse) pour maintenir une température d'incubation stable — comportement exceptionnel chez les reptiles. Pendant les 2-3 mois d'incubation, elle ne mange pas et peut perdre 40% de son poids.",
                 source: "Fédération Herpétologique - Certains pythons pondent plus de 100 œufs."
@@ -3541,7 +3661,7 @@ const quizzesData = {
             {
                 id: 13,
                 question: "Quel type de écailles ont les reptiles ?",
-                options: ["Écailles molles comme les poissons", "Écailles dures faites de kératine", "Pas d'écailles", "Écailles en gel"],
+                options: ["Écailles molles et souples", "Écailles dures faites de kératine", "Pas d'écailles", "Écailles en gel"],
                 correct: 1,
                 explanation: "Les écailles des reptiles sont des extensions de l'épiderme faites de kératine — la même protéine que nos ongles et cheveux. Elles forment une armure imperméable qui protège contre la déshydratation (crucial pour les animaux terrestres), les abrasions et les prédateurs. Contrairement aux poissons, les écailles des reptiles ne sont pas des plaques séparées posées sur la peau : elles sont liées entre elles et font partie intégrante de la peau.",
                 source: "Université de Morphologie - Les écailles des reptiles sont faites de kératine."
@@ -3549,7 +3669,7 @@ const quizzesData = {
             {
                 id: 14,
                 question: "Quel type de respiration les reptiles utilisent-ils ?",
-                options: ["Branchies", "Poumons uniquement", "Peaux", "Poumons et peaux partiellement"],
+                options: ["Branchies", "Poumons", "Peaux", "Poumons et peaux"],
                 correct: 1,
                 explanation: "Les reptiles respirent exclusivement par des poumons (contrairement aux amphibiens qui respirent aussi par la peau). Leurs poumons sont moins efficaces que ceux des oiseaux ou des mammifères — certains reptiles n'ont qu'un seul poumon fonctionnel (les serpents ont le poumon gauche très réduit). Les tortues ont une particularité : leur carapace empêche l'expansion thoracique, donc elles utilisent des muscles spéciaux qui tirent les poumons pour les dilater.",
                 source: "Institut de Physiologie Respiratoire - Les reptiles respirent principalement par les poumons."
@@ -3557,7 +3677,7 @@ const quizzesData = {
             {
                 id: 15,
                 question: "Quel est le mécanisme de déplacement du serpent ?",
-                options: ["Reptation uniforme", "Mouvement ondulatoire latéral", "Saut vertical", "Roulement"],
+                options: ["Reptation uniforme", "Mouvement ondulatoire", "Saut vertical", "Roulement"],
                 correct: 1,
                 explanation: "Les serpents utilisent plusieurs modes de locomotion selon le terrain. Le plus courant est le mouvement ondulant latéral : des vagues musculaires parcourent le corps d'avant en arrière en prenant appui sur les irrégularités du sol. Sur terrain lisse, ils utilisent la progression en accordéon ou la locomotion rectiligne (contractions des grandes écailles ventrales). Sur sable, certains utilisent le déplacement latéral (sidewinding), très efficace sur terrain instable.",
                 source: "Centre de Biodynamique - Les serpents utilisent des vagues musculaires."
@@ -3573,7 +3693,7 @@ const quizzesData = {
             {
                 id: 17,
                 question: "Quel est le territoire typique d'un crocodile ?",
-                options: ["Plusieurs kilomètres", "Moins de 500 mètres", "Plusieurs hectares à quelques kilomètres", "Sans territoire fixe"],
+                options: ["Plusieurs kilomètres", "Moins de 500 mètres", "Plusieurs hectares à quelques", "Sans territoire fixe"],
                 correct: 2,
                 explanation: "Les grands crocodiles mâles défendent des territoires de plusieurs hectares à quelques kilomètres de berge, qu'ils marquent par des vocalisations (grondements graves), des sécrétions odorantes et des démonstrations physiques. Les mâles dominants contrôlent les meilleurs sites de ponte et d'alimentation. Les femelles sont moins territoriales mais défendent farouchement leurs nids. Ces territoires sont transmis de génération en génération — certains sites de nidification sont utilisés depuis des décennies.",
                 source: "Centre d'Étude des Crocodiliens - Les crocodiles défendent des territoires vastes."
@@ -3589,7 +3709,12 @@ const quizzesData = {
             {
                 id: 19,
                 question: "Quel est le rôle du cloaque chez les reptiles ?",
-                options: ["Respiration uniquement", "Cavité commune pour l'excrétion, reproduction et digestion", "Digestion uniquement", "Stockage de graisse"],
+                options: [
+                "Respiration uniquement",
+                "Cavité commune pour l'excrétion",
+                "Digestion uniquement",
+                "Stockage de graisse"
+            ],
                 correct: 1,
                 explanation: "Le cloaque est une cavité commune à l'extrémité du tube digestif des reptiles, oiseaux et amphibiens. Il reçoit les matières fécales, les urines et les sécrétions génitales, et se termine par une ouverture unique vers l'extérieur (le vent). Chez les tortues, le cloaque sert aussi à absorber de l'oxygène et de l'eau depuis l'environnement aquatique — permettant une longue survie sous l'eau en hiver ou pendant l'hibernation subaquatique.",
                 source: "Institut d'Anatomie Comparée - Le cloaque est une cavité multifonctionnelle."
@@ -3613,7 +3738,7 @@ const quizzesData = {
             {
                 id: 32,
                 question: "Quel est le processus de défense du caméléon face au prédateur ?",
-                options: ["Fuite", "Changement de couleur, posture menaçante et sifflement", "Attaque directe", "Camouflage"],
+                options: ["Fuite", "Changement de", "Attaque directe", "Camouflage"],
                 correct: 1,
                 explanation: "Le caméléon face à un prédateur déploie plusieurs stratégies de défense. Il change d'abord de couleur pour se fondre dans son environnement (camouflage). Si découvert, il se gonfle latéralement pour paraître plus grand, ouvre grand la gueule, se balance pour imiter une feuille agitée par le vent, et siffle ou crache. En dernier recours, il peut mordre. Il se déplace aussi en balancement saccadé pour imiter le mouvement d'une feuille et dérouter les prédateurs à vision adaptée au mouvement.",
                 source: "Institut d'Éthologie Défensive - Multi-stratégies de défense."
@@ -3629,7 +3754,7 @@ const quizzesData = {
             {
                 id: 34,
                 question: "Quel est le rôle de la membrane nictitante chez les reptiles aquatiques ?",
-                options: ["Filtration des longueurs d'onde UV permettant la vision dans les profondeurs aquatiques turbides", "Protection des yeux sous l'eau", "Amplification de la sensibilité aux mouvements latéraux par augmentation du champ visuel périphérique", "Détection des changements d'intensité lumineuse signalant les prédateurs approchant par le dessus"],
+                options: ["Filtration des longueurs d'onde UV permettant la vision dans les", "Protection des yeux sous l'eau", "Amplification de la sensibilité aux mouvements latéraux par", "Détection des changements d'intensité lumineuse signalant les"],
                 correct: 1,
                 explanation: "La membrane nictitante (troisième paupière) des reptiles aquatiques se ferme horizontalement sur l'œil lors de la plongée, comme des lunettes de natation transparentes. Elle protège l'œil des débris, de l'eau salée et des chocs, tout en maintenant une vision fonctionnelle sous l'eau. Les crocodiles, tortues marines et certains lézards aquatiques en sont équipés. Chez les crocodiles, elle peut aussi se fermer lors des combats ou des prises de proies.",
                 source: "Institut d'Ophtalmologie Reptilienne - Protection adaptée à l'aquatique."
@@ -3645,7 +3770,7 @@ const quizzesData = {
             {
                 id: 36,
                 question: "Quel est le processus de thermorégulation d'un reptile diurne ?",
-                options: ["Régulation biochimique autonome via des réactions exothermiques mitochondriales contrôlées", "Basking au soleil pour augmenter température", "Génération de chaleur métabolique interne via l'oxydation des lipides comme les mammifères", "Absorption calorique depuis l'eau tempérée des milieux aquatiques chauds tropicaux"],
+                options: ["Régulation biochimique autonome via des réactions exothermiques mitochondriales", "Basking au soleil pour augmenter température", "Génération de chaleur métabolique interne via l'oxydation des lipides comme les", "Absorption calorique depuis l'eau tempérée des milieux aquatiques chauds tropicaux"],
                 correct: 1,
                 explanation: "Le basking (bain de soleil) est le principal outil de thermorégulation des reptiles diurnes. Le matin, ils s'orientent perpendiculairement aux rayons du soleil pour maximiser la surface exposée et réchauffer rapidement leur corps. Une fois à température optimale (souvent 30-38°C selon l'espèce), ils cherchent l'ombre pour éviter la surchauffe. Certains lézards peuvent ainsi contrôler leur température à 1°C près en alternant exposition et ombre tout au long de la journée.",
                 source: "Institut de Thermorégulation Ectotherme - Comportemental et physique."
@@ -3669,7 +3794,7 @@ const quizzesData = {
             {
                 id: 39,
                 question: "Quel est le rôle du cloaque chez les reptiles ?",
-                options: ["Respiration uniquement", "Cavité commune pour l'excrétion, reproduction et digestion", "Digestion uniquement", "Stockage"],
+                options: ["Respiration uniquement", "Cavité commune pour", "Digestion uniquement", "Stockage"],
                 correct: 1,
                 explanation: "Le cloaque est une innovation évolutive des tétrapodes (vertébrés terrestres). Il regroupe en une seule ouverture toutes les fonctions d'évacuation : digestive (matières fécales), urinaire (urates chez les reptiles, qui excrètent de l'acide urique plutôt que de l'urée pour économiser l'eau) et reproductive (sperme, œufs). Cette économie anatomique est particulièrement adaptée aux animaux à peau imperméable qui doivent conserver l'eau précieusement.",
                 source: "Institut d'Anatomie Comparée - Multifonctionne structure reptilienne."
@@ -3685,7 +3810,7 @@ const quizzesData = {
             {
                 id: 41,
                 question: "Quel est le processus de la 'parthénogenèse' chez certains lézards ?",
-                options: ["Reproduction par hermaphrodisme séquentiel où les femelles deviennent mâles selon les besoins du groupe", "Reproduction asexuée par clonage", "Fécondation croisée par des individus bisexuels changeant de rôle selon les signaux hormonaux", "Reproduction par bourgeonnement parthenogénétique produisant des clones imparfaits à viabilité réduite"],
+                options: ["Reproduction par hermaphrodisme séquentiel où les femelles deviennent mâles", "Reproduction asexuée par clonage", "Fécondation croisée par des individus bisexuels changeant de rôle selon les", "Reproduction par bourgeonnement parthenogénétique produisant des clones"],
                 correct: 1,
                 explanation: "La parthénogenèse permet à certaines femelles de se reproduire sans mâle. Les œufs se développent sans être fécondés, produisant des individus génétiquement identiques à la mère (clones). Ce phénomène est bien documenté chez certains varans (dragon de Komodo), certains geckos et lézards fouette-queue. Il survient parfois en captivité chez des espèces normalement sexuées, probablement comme réponse au manque de mâle. Les descendants sont souvent exclusivement de sexe femelle ou mâle selon l'espèce.",
                 source: "Institut de Génétique Reptilienne - Reproduction sans mâle possible."
@@ -3693,7 +3818,7 @@ const quizzesData = {
             {
                 id: 42,
                 question: "Quel est le temps moyen de vie d'un serpent venimeux en captivité ?",
-                options: ["2-5 ans", "5-10 ans", "10-20 ans selon l'espèce", "30+ ans"],
+                options: ["2-5 ans", "5-10 ans", "10-20 ans selon", "30+ ans"],
                 correct: 2,
                 explanation: "Les serpents venimeux vivent généralement plus longtemps en captivité qu'à l'état sauvage, où la prédation et la concurrence alimentaire réduisent leur survie. Un cobra royal peut vivre 20 à 25 ans en captivité. Un crotale à sonnette, 25 à 30 ans. Un python royal (non venimeux mais proche en taille) détient le record de longévité documenté pour un serpent en captivité avec 48 ans. Les soins vétérinaires, la nourriture régulière et l'absence de prédateurs expliquent cette longévité accrue.",
                 source: "Centre de Zoologie Ophidienne - Longévité variable selon espèce."
@@ -3701,7 +3826,7 @@ const quizzesData = {
             {
                 id: 43,
                 question: "À quel âge une tortue marine atteint-elle la maturité sexuelle ?",
-                options: ["À 5-10 ans", "À 20-40 ans selon l'espèce", "À 50+ ans", "Jamais vraiment"],
+                options: ["À 5-10 ans", "À 20-40 ans selon", "À 50+ ans", "Jamais vraiment"],
                 correct: 1,
                 explanation: "La maturité sexuelle extrêmement tardive des tortues marines (20 à 50 ans selon l'espèce) est l'une des raisons principales de leur vulnérabilité. La tortue caouanne mûrit vers 20-30 ans, la tortue verte entre 25 et 50 ans. Une tortue doit donc survivre des décennies entières avant de contribuer à la reproduction de son espèce. La capture accidentelle dans les filets de pêche et la destruction des plages de ponte avant la maturité sont catastrophiques pour les populations.",
                 source: "Institut de Biologie Marine - Maturation extrêmement lente."
@@ -3709,7 +3834,7 @@ const quizzesData = {
             {
                 id: 44,
                 question: "Quel est le record d'apnée enregistré chez une tortue marine ?",
-                options: ["30 minutes", "1 heure", "5-7 heures selon l'espèce", "Plus de 10 heures"],
+                options: ["30 minutes", "1 heure", "5-7 heures selon", "Plus de 10 heures"],
                 correct: 2,
                 explanation: "Le record d'apnée chez les tortues marines est détenu par la tortue luth qui peut rester immergée jusqu'à 7 heures en dormance. Leur secret : un métabolisme extrêmement lent au repos, une hémoglobine très efficace pour transporter l'oxygène, et la capacité à tolérer des niveaux de CO2 élevés dans le sang. En cas de prise accidentelle dans un filet (une des premières causes de mortalité), une tortue déjà à bout de ressources se noie en quelques minutes.",
                 source: "Centre de Physiologie Marine - Adaptation remarquable."
@@ -3725,7 +3850,7 @@ const quizzesData = {
             {
                 id: 46,
                 question: "À quel âge un lézard perd-il sa queue de façon définitive ?",
-                options: ["Une fois par an uniquement pendant la saison sèche pour renouveler toutes les écailles simultanément", "Une ou deux fois dans sa vie lors des étapes clés de la croissance juvénile uniquement", "Plusieurs fois selon les besoins", "À chaque fois que l'animal subit une agression sérieuse endommageant plus de 10% de la surface cutanée"],
+                options: ["Une fois par an uniquement pendant la saison sèche pour renouveler toutes", "Une ou deux fois dans sa vie lors des étapes clés de la croissance juvénile", "Plusieurs fois selon les besoins", "À chaque fois que l'animal subit une agression sérieuse endommageant plus"],
                 correct: 2,
                 explanation: "L'autotomie caudale (perte volontaire de la queue) peut se répéter plusieurs fois chez un même lézard, mais jamais exactement au même endroit. La queue repousse, mais ce régénérat est composé de cartilage et non d'os, et sa forme et ses couleurs sont souvent différentes de l'originale. Certaines espèces ont des queues particulièrement voyantes qui continuent à se tortiller après la séparation, attirant l'attention du prédateur pendant que le lézard s'échappe.",
                 source: "Institut d'Éthologie Défensive - L'autotomie se répète."
@@ -3733,7 +3858,7 @@ const quizzesData = {
             {
                 id: 47,
                 question: "Quel est le temps d'hibernation typique pour un reptile tempéré ?",
-                options: ["1 mois", "2-3 mois", "4-6 mois selon l'espèce", "7-8 mois"],
+                options: ["1 mois", "2-3 mois", "4-6 mois selon", "7-8 mois"],
                 correct: 2,
                 explanation: "Les reptiles des régions tempérées entrent en hibernation (torpeur hivernale) quand les températures descendent sous 10°C. La vipère aspic, par exemple, hiberne de novembre à mars dans des abris rocheux ou des terriers. Leur métabolisme ralentit à 5-10% du niveau normal, leur cœur peut ne battre que quelques fois par minute. Ils ne dorment pas vraiment — ils restent conscients mais incapables de bouger. Se réveiller trop tôt avant le printemps peut être fatal par manque de nourriture disponible.",
                 source: "Centre de Physiologie Saisonnière - Hibernation adaptée au climat."
@@ -3741,7 +3866,12 @@ const quizzesData = {
             {
                 id: 48,
                 question: "Quel est le rôle de la 'gape' chez le python ?",
-                options: ["Respiration", "Préparation à l'ingestion d'une grosse proie", "Communication", "Bâillement"],
+                options: [
+                "Respiration",
+                "Préparation à l'ing",
+                "Communication",
+                "Bâillement"
+            ],
                 correct: 1,
                 explanation: "Le 'bâillement' ou gape du python avant d'avaler une grosse proie sert à désolidariser les deux mâchoires et à réaligner les os pour créer la plus grande ouverture possible. Les mâchoires du python ne sont pas fusionnées mais reliées par des ligaments très élastiques, permettant une ouverture de 150°. Cette flexibilité lui permet d'avaler des proies bien plus larges que sa propre tête. Après ingestion, les os se repositionnent et les ligaments reprennent leur place naturellement.",
                 source: "Institut d'Éthologie Prédatrice - Adaptation pour proies volumineuses."
@@ -3749,7 +3879,7 @@ const quizzesData = {
             {
                 id: 49,
                 question: "À quel âge un crocodile peut-il dépasser 4 mètres de long ?",
-                options: ["À 10-15 ans", "À 20-30 ans", "À 30-40 ans selon l'espèce", "À 50+ ans"],
+                options: ["À 10-15 ans", "À 20-30 ans", "À 30-40 ans selon", "À 50+ ans"],
                 correct: 2,
                 explanation: "Les crocodiles grandissent toute leur vie, mais la croissance ralentit considérablement avec l'âge. Un crocodile du Nil grandit d'environ 30 cm par an les premières années, puis de quelques centimètres seulement à l'âge adulte. Dépasser 4 mètres de longueur prend généralement 30 à 40 ans. Les très grands spécimens (5-6 m) sont donc des individus très âgés — potentiellement centenaires. C'est pourquoi les crocodiles géants, protégés par leur taille, sont aussi les plus fertiles et importants pour la reproduction.",
                 source: "Centre d'Écologie Crocodilienne - Croissance très lente."
@@ -3757,7 +3887,12 @@ const quizzesData = {
             {
                 id: 50,
                 question: "Quel est le processus de la 'autotomie caudale' chez les lézards ?",
-                options: ["Perte accidentelle", "Perte volontaire de la queue pour échapper aux prédateurs", "Rejet d'un segment", "Mutilation"],
+                options: [
+                "Perte accidentelle",
+                "Perte volontaire de la queue",
+                "Rejet d'un segment",
+                "Mutilation"
+            ],
                 correct: 1,
                 explanation: "L'autotomie caudale est un mécanisme de défense unique : le lézard contracte volontairement certains muscles qui fracturent une vertèbre caudaleprédéterminée (plan de fracture), permettant la queue de se détacher proprement. La queue détachée continue à se tortiller pendant plusieurs minutes grâce à des réserves nerveuses autonomes, détournant l'attention du prédateur. Le lézard, lui, s'échappe. La perte de queue a un coût : réserves de graisse perdues, risque d'infection, et énergie dépensée pour la régénération.",
                 source: "Institut d'Éthologie - Mécanisme de survie exceptionnel."
@@ -3794,7 +3929,7 @@ const quizzesData = {
             {
                 id: 21,
                 question: "Quel est le processus appelé \"viparity\" chez certains reptiles ?",
-                options: ["Ponte d'œufs", "Développement interne avec viviparie", "Hibernation prolongée", "Reproduction asexuée"],
+                options: ["Ponte d'œufs", "Développement interne", "Hibernation prolongée", "Reproduction asexuée"],
                 correct: 1,
                 explanation: "La viviparité chez les reptiles est apparue indépendamment plus de 100 fois au cours de l'évolution — c'est un des exemples les plus frappants d'évolution convergente. La vipère aspic européenne est vivipare : elle garde ses œufs à l'intérieur jusqu'à l'éclosion (ovoviviparité). Certains scinques ont développé un vrai placenta pour nourrir les embryons. Avantage principal : la mère peut thermoréguler activement pendant la gestation, assurant un développement optimal même dans des environnements froids.",
                 source: "Institut de Reproduction des Reptiles - Certains reptiles sont vivipares."
@@ -3810,7 +3945,7 @@ const quizzesData = {
             {
                 id: 23,
                 question: "Quel est le rôle de l'organe de Jacobson chez les reptiles ?",
-                options: ["Vision", "Détection chimiosensorielle des phéromones", "Respiration", "Audition"],
+                options: ["Vision", "Détection", "Respiration", "Audition"],
                 correct: 1,
                 explanation: "L'organe de Jacobson (organe voméronasal) des serpents et lézards est un organe olfactif secondaire situé au palais. Le serpent capte les molécules odorantes avec sa langue fourchue (qui échantillonne l'air des deux côtés simultanément pour détecter la direction des odeurs), puis les transfère à l'organe de Jacobson. Ce système permet de 'goûter l'air' — détecter les phéromones, pister une proie, identifier des congénères et repérer des partenaires à grande distance.",
                 source: "Institut Sensoriel - L'organe de Jacobson détecte les phéromones."
@@ -3818,7 +3953,12 @@ const quizzesData = {
             {
                 id: 24,
                 question: "Quel est le processus d'adaptation chromatique du caméléon ?",
-                options: ["Changement chimique simple", "Action combinée de chromatophores, iridophores et leuocphores", "Pigmentation génétique", "Réflexion optique uniquement"],
+                options: [
+                "Changement chimique simple",
+                "Action combinée de chromatophores",
+                "Pigmentation génétique",
+                "Réflexion optique uniquement"
+            ],
                 correct: 1,
                 explanation: "Le changement de couleur du caméléon implique trois couches de cellules spécialisées. Les chromatophores contiennent des pigments colorés (mélanine, caroténoïdes). Les iridophores contiennent des nanocristaux de guanine qui réfléchissent la lumière différemment selon leur espacement — modifiable par le système nerveux. Les leucophores réfléchissent toutes les longueurs d'onde pour produire du blanc. En jouant sur ces trois couches, le caméléon génère une palette de couleurs presque illimitée en quelques secondes.",
                 source: "Université de Biophysique - Le changement de couleur combine plusieurs types de cellules."
@@ -3826,7 +3966,7 @@ const quizzesData = {
             {
                 id: 25,
                 question: "Quel type d'antivenin est utilisé pour traiter les morsures de serpents ?",
-                options: ["Antivenin synthétique simple", "Sérum polyvalent ou spécifique selon l'espèce", "Antibiotiques simples", "Antihistaminiques uniquement"],
+                options: ["Antivenin synthétique simple", "Sérum polyvalent ou spécifique selon", "Antibiotiques simples", "Antihistaminiques uniquement"],
                 correct: 1,
                 explanation: "Les antivenins sont produits en injectant de petites doses de venin à des chevaux ou moutons, dont le système immunitaire fabrique des anticorps. Le sérum est ensuite extrait et purifié. Les antivenins spécifiques (monovalents) sont très efficaces contre une espèce précise, mais inutiles contre d'autres. Les antivenins polyvalents couvrent plusieurs espèces d'une même région mais sont moins efficaces individuellement. L'administration doit être faite rapidement — idéalement dans l'heure suivant la morsure.",
                 source: "Institut Toxinologique International - Les antivenins peuvent être polyvalents ou spécifiques."
@@ -3842,7 +3982,7 @@ const quizzesData = {
             {
                 id: 27,
                 question: "Quel est le rôle des glandes de sel chez les crocodiliens d'eau salée ?",
-                options: ["Digestion", "Excrétion du sel excédentaire", "Reproduction", "Détoxification"],
+                options: ["Digestion", "Excrétion du sel", "Reproduction", "Détoxification"],
                 correct: 1,
                 explanation: "Le crocodile marin vit dans des eaux salées mais ne peut pas filtrer le sel dans ses reins comme les poissons marins. Il possède des glandes à sel sur sa langue qui excrètent l'excès de sel directement depuis le sang. On peut d'ailleurs voir des cristaux de sel sur la langue des crocodiles marins. Sans ce mécanisme, l'eau sortirait de leurs cellules par osmose et ils se déshydrateraient malgré l'eau qui les entoure. Les tortues marines ont un système similaire via des glandes lacrymales — les 'larmes' des tortues marine servent à éliminer le sel.",
                 source: "Institut d'Écologie Marine - Les glandes de sel excrètent l'excès de sel."
@@ -3850,11 +3990,16 @@ const quizzesData = {
             {
                 id: 28,
                 question: "Quel mécanisme de locomotion utilise le gecko pour grimper aux murs ?",
-                options: ["Ventouses", "Crochets microscopiques (setae) avec forces de Van der Waals", "Adhésifs naturels", "Électricité statique"],
+                options: [
+                "Ventouses",
+                "Crochets microscopiques",
+                "Adhésifs naturels",
+                "Électricité statique"
+            ],
                 correct: 1,
                 explanation: "Les pattes des geckos sont couvertes de millions de poils microscopiques (setae), eux-mêmes subdivisés en centaines de spatules nanométriques. À cette échelle, les forces de Van der Waals (attractions électrostatiques entre molécules) deviennent suffisamment importantes pour coller la patte à n'importe quelle surface — même le verre ou le plafond. Remarquable : ce mécanisme est sec (pas de colle), autorétractable et laisse aucune trace. Il inspire des matériaux adhésifs réutilisables dans la recherche en robotique et médecine.",
                 source: "Université de Biomécanique - Les geckos utilisent les forces de Van der Waals.",
-                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Gekko_gecko.jpg/800px-Gekko_gecko.jpg"
+                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Gekko_gecko_192144834.jpg/960px-Gekko_gecko_192144834.jpg"
             },
             {
                 id: 29,
@@ -3867,7 +4012,7 @@ const quizzesData = {
             {
                 id: 30,
                 question: "Quel est le rôle du sulfate de calcium dans la résine utilisée par certains serpents ?",
-                options: ["Lubrification", "Formation et renforcement des crocs venimeux", "Digestion", "Communication chimique"],
+                options: ["Lubrification", "Formation et", "Digestion", "Communication"],
                 correct: 1,
                 explanation: "Les crocs des serpents venimeux sont des dents fortement minéralisées — leur extrémité contient des concentrations élevées de calcium et de zinc qui les rendent particulièrement durs et résistants à la flexion. Cette dureté est essentielle car les crocs doivent percer peaux, écailles ou plumes tout en conduisant le venin avec précision. Les crocs se cassent et se remplacent régulièrement (polyphyodontie), et plusieurs crocs de remplacement sont toujours en réserve dans la gencive, prêts à prendre la place.",
                 source: "Journal de Toxinologie - Le sulfate de calcium renforce les structures des crocs."
@@ -3875,7 +4020,7 @@ const quizzesData = {
             {
                 id: 51,
                 question: "Quel est le mécanisme de la 'glande de venin' chez les serpents ?",
-                options: ["Vésicule spécialisée située dans la cavité abdominale qui stocke le venin sous pression osmotique", "Glande modifiée des glandes salivaires", "Organe vénimeux néoformé sans homologie avec d'autres structures glandulaires connues", "Synthèse hépatique des toxines peptidiques transportées via le sang jusqu'aux crocs tubulaires"],
+                options: ["Vésicule spécialisée située dans la cavité abdominale qui stocke le venin sous pression", "Glande modifiée des glandes salivaires", "Organe vénimeux néoformé sans homologie avec d'autres structures glandulaires", "Synthèse hépatique des toxines peptidiques transportées via le sang jusqu'aux crocs"],
                 correct: 1,
                 explanation: "Les glandes à venin des serpents sont évolutivement des glandes salivaires modifiées (glandes parotides). Au fil de l'évolution, ces glandes ont développé la capacité de produire des protéines complexes (enzymes, neurotoxines, hémotoxines) au lieu de la simple salive. Le venin est d'abord stocké dans la glande, puis lors de la morsure, un muscle compresseur presse la glande et injecte le venin dans le canal du croc. La composition du venin varie énormément entre espèces et même entre individus d'une même espèce.",
                 source: "Institut d'Herpétologie Comparative - Évolution des glandes salivaires."
@@ -3891,7 +4036,12 @@ const quizzesData = {
             {
                 id: 53,
                 question: "Quel est le mécanisme du 'système cardiopulmonaire' unique chez les crocodiliens ?",
-                options: ["Identique aux reptiles", "Shunt sanguin permettant respiration aquatique prolongée", "Respiration cutanée", "Pas d'adaptations"],
+                options: [
+                "Identique aux reptiles",
+                "Shunt sanguin permettant res",
+                "Respiration cutanée",
+                "Pas d'adaptations"
+            ],
                 correct: 1,
                 explanation: "Les crocodiliens sont les seuls reptiles à avoir un cœur à 4 chambres (comme les mammifères), mais avec une particularité unique : une valve spéciale (foramen de Panizza) permet de 'shunter' la circulation pulmonaire lors des plongées. Le sang est alors réorienté vers les organes vitaux au lieu des poumons, permettant une apnée prolongée sans gaspiller les réserves d'oxygène. Lors de la digestion, ce shunt inverse le flux pour acidifier le sang et dissoudre plus efficacement les os des proies.",
                 source: "Institut de Physiologie Crocodilienne - Adaptations pour plongée."
@@ -3899,7 +4049,7 @@ const quizzesData = {
             {
                 id: 54,
                 question: "Quel est le rôle de la 'nécrose thermale' chez les vipères à fossettes ?",
-                options: ["Paralyse neuromusculaire rapide bloquant la libération d'acétylcholine aux jonctions présynaptiques", "Destruction sélective de tissus par venin", "Génération de chaleur biochimique par réaction exothermique lors de l'enroulement musculaire intense", "Sécrétion cutanée de toxines refroidissantes répulsives dissuadant les prédateurs à sang chaud"],
+                options: ["Paralyse neuromusculaire rapide bloquant la libération d'acétylcholine aux jonctions", "Destruction sélective de tissus par venin", "Génération de chaleur biochimique par réaction exothermique lors de l'enroulement musculaire", "Sécrétion cutanée de toxines refroidissantes répulsives dissuadant les prédateurs à sang"],
                 correct: 1,
                 explanation: "Le venin nécrotique des vipères à fossettes (comme le crotale ou le fer-de-lance) contient des phospholipases et des protéases qui détruisent les cellules, les vaisseaux sanguins et le tissu musculaire autour du site de morsure. Cette nécrose localisée peut être dévastatrice : des amputations sont parfois nécessaires après des morsures de serpent. Biologiquement, cette destruction prédigère la proie depuis l'intérieur, facilitant la digestion pour le serpent — le venin est à la fois une arme de chasse et un outil digestif.",
                 source: "Journal de Toxinologie - Le venin crée nécrose localisée."
@@ -3907,7 +4057,7 @@ const quizzesData = {
             {
                 id: 55,
                 question: "Quel est le processus de l'osmorégulation chez les tortues marines ?",
-                options: ["Absorption cutanée directe de l'eau douce des pluies via des aquaporines dermiques spécialisées", "Glandes à sel pour excrétion d'eau salée", "Concentration maximale de l'urine via des tubes collecteurs rénaux à gradient osmotique extrême", "Recyclage métabolique de l'eau contenue dans les proies marines digérées sans perte urinaire"],
+                options: ["Absorption cutanée directe de l'eau douce des pluies via des aquaporines dermiques", "Glandes à sel pour excrétion d'eau salée", "Concentration maximale de l'urine via des tubes collecteurs rénaux à gradient osmotique", "Recyclage métabolique de l'eau contenue dans les proies marines digérées sans perte"],
                 correct: 1,
                 explanation: "Les tortues marines boivent inévitablement de l'eau de mer en mangeant. Pour éliminer l'excès de sel, elles possèdent des glandes lacrymales surdimensionnées derrière les yeux qui sécrètent une solution très concentrée en sel — beaucoup plus salée que l'eau de mer. Ces 'larmes' sont l'explication du mythe selon lequel les tortues pleurent. En réalité, elles éliminent simplement du sel. Ce mécanisme d'osmorégulation est crucial : sans lui, la déshydratation osmotique serait fatale.",
                 source: "Institut d'Écologie Marine - Adaptation critique pour survie en mer."
@@ -3915,7 +4065,7 @@ const quizzesData = {
             {
                 id: 56,
                 question: "Quel est le mécanisme de la 'autolésion' chez les serpents défensifs ?",
-                options: ["Libération d'une sécrétion cloacale nauséabonde décourageant les prédateurs sans combat physique", "Enroulement et auto-morsure pour épuiser agresseur", "Injection d'un venin de défense distinct du venin de chasse via des glandes cutanées dorsales", "Production de chaleur corporelle intense par contractions musculaires repoussant les prédateurs frigoriphiles"],
+                options: ["Libération d'une sécrétion cloacale nauséabonde décourageant les prédateurs sans combat physique", "Enroulement et auto-morsure pour épuiser agresseur", "Injection d'un venin de défense distinct du venin de chasse via des glandes cutanées dorsales", "Production de chaleur corporelle intense par contractions musculaires repoussant les prédateurs"],
                 correct: 1,
                 explanation: "Certains serpents défensifs comme le serpent roi d'Amérique ou le couleuvre à collier utilisent des stratégies d'épuisement de leurs prédateurs : ils se tordent, s'enroulent frénétiquement, peuvent feindre la mort (thanatose), libèrent des sécrétions nauséabondes par le cloaque, ou dans certains cas rares s'automordent pour libérer des substances défensives. Ces comportements visent à rendre la capture si désagréable ou difficile que le prédateur abandonne.",
                 source: "Institut d'Éthologie Défensive - Stratégie d'épuisement de l'attaquant."
@@ -3931,7 +4081,7 @@ const quizzesData = {
             {
                 id: 58,
                 question: "Quel est le processus de la 'gonadogenèse dépendante de température' chez certains reptiles ?",
-                options: ["Sexe déterminé par l'humidité du substrat d'incubation via des récepteurs hygrométriques embryonnaires", "Sexe déterminé par température d'incubation", "Sexe déterminé par les chromosomes sexuels Z et W comme chez les oiseaux et certains mammifères", "Sexe déterminé par le ratio hormonal maternel transmis aux œufs lors de la ponte en saison chaude"],
+                options: ["Sexe déterminé par l'humidité du substrat d'incubation via des récepteurs hygrométriques", "Sexe déterminé par température d'incubation", "Sexe déterminé par les chromosomes sexuels Z et W comme chez les oiseaux et certains", "Sexe déterminé par le ratio hormonal maternel transmis aux œufs lors de la ponte en saison"],
                 correct: 1,
                 explanation: "La TSD (Temperature-dependent Sex Determination) est le mécanisme par lequel la température d'incubation, plutôt que les chromosomes, détermine le sexe de l'animal. Elle est présente chez la plupart des crocodiliens, de nombreuses tortues et certains lézards. Les températures chaudes favorisent généralement les femelles chez les tortues marines. Face au réchauffement climatique, des plages comme celles de la Grande Barrière de Corail produisent désormais jusqu'à 99% de femelles chez la tortue verte — menaçant la viabilité de ces populations.",
                 source: "Université de Génétique Reptilienne - TSD = Temperature-dependent sex determination."
@@ -3939,7 +4089,7 @@ const quizzesData = {
             {
                 id: 59,
                 question: "Quel est le mécanisme de l'absorption de l'eau par la tortue du désert ?",
-                options: ["Uniquement par ingestion d'eau libre lors des épisodes de pluie et des rosées matinales abondantes", "Par les yeux et cloaque depuis l'humidité du sol", "Synthèse métabolique de l'eau par oxydation des lipides de réserve comme certains mammifères désertiques", "Absorption cutanée passive sur toute la surface du corps grâce à une peau très fine et perméable"],
+                options: ["Uniquement par ingestion d'eau libre lors des épisodes de pluie et des rosées matinales", "Par les yeux et cloaque depuis l'humidité du sol", "Synthèse métabolique de l'eau par oxydation des lipides de réserve comme certains mammifères", "Absorption cutanée passive sur toute la surface du corps grâce à une peau très fine et perméable"],
                 correct: 1,
                 explanation: "La tortue du désert de Mojave a développé des adaptations extraordinaires pour survivre sans eau liquide. Elle peut absorber l'humidité du sol humide à travers la peau autour de son cloaque. Après les rares pluies, elle stocke jusqu'à 40% de son poids en eau dans sa vessie — une réserve stratégique utilisée en période de sécheresse. Sa vessie sert littéralement de citerne portable. Elle peut aussi collecter la rosée du matin sur sa carapace et la diriger vers sa bouche par des canaux formés par ses écailles.",
                 source: "Institut d'Écologie Désertique - Adaptations extrêmes à l'aridité."
@@ -3963,7 +4113,7 @@ const quizzesData = {
             {
                 id: 62,
                 question: "Quel est le mécanisme de la 'coagulation sanguine' accélérée chez les serpents ?",
-                options: ["Coagulation identique aux mammifères via la voie extrinsèque mais avec des facteurs protéiques distincts", "Coagulation plus rapide pour arrêter saignements", "Coagulation significativement ralentie en raison d'une concentration réduite en facteur VIII plasmatique", "Coagulation inexistante compensée par une cicatrisation épidermique ultra-rapide par kératinisation"],
+                options: ["Coagulation identique aux mammifères via la voie extrinsèque mais avec des facteurs protéiques", "Coagulation plus rapide pour arrêter saignements", "Coagulation significativement ralentie en raison d'une concentration réduite en facteur VIII", "Coagulation inexistante compensée par une cicatrisation épidermique ultra-rapide par"],
                 correct: 1,
                 explanation: "Les serpents ont effectivement des mécanismes de coagulation sanguine adaptés, mais l'ironie est que leur venin est souvent anticoagulant (hémotoxique). Les vipères injectent des enzymes qui consomment le fibrinogène de la proie, empêchant la coagulation et provoquant des hémorragies internes. Le serpent lui-même est immunisé contre son propre venin par des inhibiteurs spécifiques dans son sang. Certaines espèces produisent même des facteurs pro-coagulants — le venin du taipan cause paradoxalement un caillotage massif et fatal.",
                 source: "Institut d'Hématologie Reptilienne - Adaptation à l'hémostase."
@@ -3971,7 +4121,12 @@ const quizzesData = {
             {
                 id: 63,
                 question: "Quel est le rôle du 'neocortex' manquant chez les reptiles ?",
-                options: ["Essentiel", "Pas d'importance - traitement sensoriel via autres structures", "Cause déficiences", "Non observé"],
+                options: [
+                "Essentiel",
+                "Pas d'importance - tra",
+                "Cause déficiences",
+                "Non observé"
+            ],
                 correct: 1,
                 explanation: "Les reptiles n'ont pas de néocortex — la structure cérébrale responsable des fonctions cognitives supérieures chez les mammifères. Pourtant, ils montrent des comportements complexes : apprentissage, reconnaissance individuelle, jeu (certains crocodiles jouent avec des balles), et même utilisation d'outils rudimentaires. Ces capacités passent par d'autres structures comme le pallium dorsal. Les reptiles nous rappellent que l'intelligence peut évoluer par des voies neurologiques très différentes de la nôtre.",
                 source: "Université de Neurobiologie Comparative - Evolution neurologique."
@@ -3987,7 +4142,7 @@ const quizzesData = {
             {
                 id: 65,
                 question: "Quel est le mécanisme de la 'pupille sténopéique' chez les serpents venimeux ?",
-                options: ["Densité exceptionnelle de bâtonnets rétiniens permettant la détection de mouvements imperceptibles", "Fente pupillaire pour vision en faible lumière", "Présence d'un tapetum lucidum derrière la rétine amplifiant les photons disponibles la nuit", "Cornée bombée à rayon de courbure variable compensant la mise au point dans l'obscurité"],
+                options: ["Densité exceptionnelle de bâtonnets rétiniens permettant la détection de mouvements", "Fente pupillaire pour vision en faible lumière", "Présence d'un tapetum lucidum derrière la rétine amplifiant les photons disponibles la nuit", "Cornée bombée à rayon de courbure variable compensant la mise au point dans l'obscurité"],
                 correct: 1,
                 explanation: "La pupille en fente verticale des serpents nocturnes et crépusculaires (vipères, pythons, boas) peut se réduire à une ligne ultra-fine en pleine lumière, protégeant la rétine sensible. Dans l'obscurité, elle s'ouvre largement pour capter le maximum de lumière. Cette forme de fente permet aussi une plus grande profondeur de champ que la pupille ronde. Les serpents diurnes ont généralement des pupilles rondes. La pupille en fente est aussi présente chez les chats et les requins — des prédateurs qui chassent dans des conditions lumineuses variables.",
                 source: "Institut d'Ophtalmologie Ophidienne - Adaptation crépusculaire."
@@ -4011,7 +4166,12 @@ const quizzesData = {
             {
                 id: 68,
                 question: "Quel est le mécanisme de l'échange de chaleur chez le python mère pendant incubation ?",
-                options: ["Pas d'échange", "Frissons musculaires produisent chaleur pour œufs", "Soleil externe", "Pas d'incubation"],
+                options: [
+                "Pas d'échange",
+                "Frissons musculaires",
+                "Soleil externe",
+                "Pas d'incubation"
+            ],
                 correct: 1,
                 explanation: "Le python femelle est l'un des rares reptiles à exercer un soin parental actif. Elle s'enroule autour de sa ponte et produit de la chaleur par des contractions musculaires rapides (frissons thermogènes) — comportement exceptionnel chez un ectotherme. Elle peut maintenir la température de ses œufs à 30-33°C même si l'air ambiant tombe à 20°C, au prix d'une dépense énergétique considérable : elle peut perdre 40% de son poids pendant les 2-3 mois d'incubation sans manger.",
                 source: "Institut de Thermorégulation Reproductive - Thermorégulation maternelle."
@@ -4019,7 +4179,7 @@ const quizzesData = {
             {
                 id: 69,
                 question: "Quel est le rôle du 'spectacle' (écaille oculaire) chez les serpents ?",
-                options: ["Filtre optique permanent réduisant l'éblouissement lors de la chasse dans des milieux très éclairés", "Protection de l'œil durant la mue", "Lentille de focalisation variable permettant d'ajuster la mise au point comme un objectif photographique", "Signalisation sexuelle par iridescence réfléchissant les UV visibles uniquement par les congénères"],
+                options: ["Filtre optique permanent réduisant l'éblouissement lors de la chasse dans des", "Protection de l'œil durant la mue", "Lentille de focalisation variable permettant d'ajuster la mise au point comme", "Signalisation sexuelle par iridescence réfléchissant les UV visibles"],
                 correct: 1,
                 explanation: "Le 'spectacle' est une écaille transparente et fusionnée qui recouvre l'œil des serpents en permanence (ils n'ont pas de paupières mobiles). Lors de la mue, cette écaille se soulève avec le reste de la peau — c'est pourquoi les yeux des serpents deviennent bleutés et opaques quelques jours avant la mue : le liquide de décollement s'accumule sous le spectacle. Après une mue réussie, le spectacle est parfaitement transparent à nouveau. Un spectacle retenu (mue incomplète) peut causer des infections oculaires graves.",
                 source: "Institut d'Anatomie Ophidienne - Adaptation à la mue."
@@ -4068,7 +4228,7 @@ const quizzesData = {
             {
                 id: 1,
                 question: "Quel est le plus grand animal marin jamais existant ?",
-                options: ["Le grand requin blanc, prédateur de 6 mètres et 2 tonnes", "La baleine bleue", "Le mégalodon, requin préhistorique pouvant atteindre 18 mètres", "Le diplodocus, dinosaure de 27 mètres considéré longtemps comme le plus grand vertébré"],
+                options: ["Le grand requin blanc", "La baleine bleue", "Le mégalodon", "Le diplodocus"],
                 correct: 1,
                 explanation: "La baleine bleue est l'animal le plus grand ayant jamais existé sur Terre. Elle peut mesurer jusqu'à 30 mètres de long et peser 190 tonnes. Malgré sa taille massice, elle se nourrit de minuscules krill.",
                 source: "Muséum d'Histoire Naturelle - La baleine bleue est l'animal le plus grand connu."
@@ -4076,7 +4236,7 @@ const quizzesData = {
             {
                 id: 2,
                 question: "Les mammifères marins respirent par quoi ?",
-                options: ["Des branchies très développées, similaires à celles des gros poissons marins", "Des poumons", "La peau, richement vascularisée, qui absorbe l'oxygène dissous dans l'eau", "Un organe hybride appelé pneumobranchie, entre poumon et branchie"],
+                options: ["Des branchies très", "Des poumons", "La peau", "Un organe hybride"],
                 correct: 1,
                 explanation: "Tous les mammifères respirent de l'air avec des poumons, y compris les mammifères marins. C'est pourquoi les cétacés (baleines et dauphins) doivent régulièrement remonter à la surface. Ce n'est pas comme les poissons qui ont des branchies.",
                 source: "Institut de Biologie Marine - Les mammifères marins respirent de l'air avec des poumons."
@@ -4084,7 +4244,7 @@ const quizzesData = {
             {
                 id: 3,
                 question: "Quel mammifère marin est connu pour ses chants complexes ?",
-                options: ["Le dauphin, dont les cliquetis et sifflements forment un langage élaboré utilisé pour coordonner la chasse", "La baleine", "L'otarie, capable d'imiter des sons humains et de produire des séquences vocales apprises", "Le phoque de Weddell, dont les trilles résonnent sous la banquise sur plusieurs kilomètres"],
+                options: ["Le dauphin", "La baleine", "L'otarie", "Le phoque de Weddell"],
                 correct: 1,
                 explanation: "Les baleines, notamment la baleine à bosse, produisent des chants complexes et merveilleusement structurés. Ces chants peuvent durer 30 minutes et se transmettre entre populations. Ils servent probablement à la communication et à l'accouplement.",
                 source: "Centre de Recherche Marine - Les baleines produisent des chants élaborés et structurés."
@@ -4092,16 +4252,16 @@ const quizzesData = {
             {
                 id: 4,
                 question: "Combien d'espèces de dauphins existent environ ?",
-                options: ["Environ 5 espèces, dont le grand dauphin et le dauphin commun, les deux seules vraiment bien documentées", "Environ 20 espèces réparties entre océans tropicaux et tempérés", "Environ 40 espèces", "Environ 100 espèces, en comptant toutes les populations géographiquement isolées reconnues localement"],
+                options: ["Environ 5 espèces", "Environ 20 espèces réparties entre océans", "Environ 40 espèces", "Environ 100 espèces"],
                 correct: 2,
                 explanation: "Il existe environ 40 esp\u00e8ces de dauphins dans le monde, appartenant \u00e0 la famille des Delphinid\u00e9s. Parmi les plus connues : le grand dauphin (Tursiops truncatus), le dauphin commun et l'orque \u2014 techniquement le plus grand dauphin. Cette diversit\u00e9 couvre les mers tropicales, temp\u00e9r\u00e9es et polaires.",
                 source: "Société Cétologique - Il existe environ 40 espèces de dauphins.",
-                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Tursiops_truncatus_01.jpg/800px-Tursiops_truncatus_01.jpg"
+                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Tursiops_truncatus_01-cropped.jpg/960px-Tursiops_truncatus_01-cropped.jpg"
             },
             {
                 id: 5,
                 question: "Quel est le plus petit cétacé du monde ?",
-                options: ["Le dauphin de Maui, espèce endémique de Nouvelle-Zélande, mesurant environ 1,2 mètre à maturité", "La baleine béluga, dont la taille adulte dépasse rarement 4 à 5 mètres pour les femelles", "Le marsouin", "L'orque naine, sous-espèce tropicale atteignant au maximum 2,5 mètres selon certaines classifications"],
+                options: ["Le dauphin de Maui", "La baleine béluga", "Le marsouin", "L'orque naine"],
                 correct: 2,
                 explanation: "Le marsouin commun (Phocoena phocoena) mesure en moyenne 1,4 \u00e0 1,7 m\u00e8tre pour 50 \u00e0 70 kg \u2014 bien loin des grandes baleines. Il se distingue du dauphin par son museau arrondi sans bec allong\u00e9. C'est l'un des c\u00e9tac\u00e9s les plus fr\u00e9quents en mer du Nord, malheureusement menac\u00e9 par les filets de p\u00eache.",
                 source: "Musée Océanographique - Le marsouin est l'un des plus petits cétacés."
@@ -4109,7 +4269,7 @@ const quizzesData = {
             {
                 id: 6,
                 question: "Les mammifères marins allaitent-ils leurs petits ?",
-                options: ["Non, ils nourrissent leurs petits par régurgitation d'aliments semi-digérés, comme certains oiseaux marins", "Oui, comme tous les mammifères", "Seulement les espèces côtières, car les cétacés du large ont perdu cette capacité lors de leur adaptation aquatique", "Seulement les cétacés à fanons, qui produisent du lait ; les dauphins et phoques transmettent les nutriments autrement"],
+                options: ["Non, ils nourrissent leurs petits par régurgitation d'aliments", "Oui, comme tous les mammifères", "Seulement les espèces côtières", "Seulement les cétacés à fanons"],
                 correct: 1,
                 explanation: "Comme tous les mammif\u00e8res, les mammif\u00e8res marins allaitent leurs petits \u2014 c'est d'ailleurs ce qui les d\u00e9finit. Le lait des baleines est extraordinairement riche en graisses (40 \u00e0 50% de mati\u00e8res grasses, contre 4% dans le lait de vache), ce qui permet aux baleineaux de grossir de 80 \u00e0 90 kg par jour.",
                 source: "Institut d'Océanologie - Les mammifères marins allaitent leurs jeunes."
@@ -4117,7 +4277,7 @@ const quizzesData = {
             {
                 id: 7,
                 question: "À quelle profondeur maximale les baleines peuvent-elles plonger ?",
-                options: ["100 mètres environ, profondeur au-delà de laquelle la pression serait trop élevée pour les poumons des cétacés", "500 mètres pour les espèces les plus adaptées, selon les mesures enregistrées par biologistes marins", "2000+ mètres selon l'espèce", "3000+ mètres, profondeur réservée aux seuls céphalopodes et poissons des abysses, inaccessible aux mammifères"],
+                options: ["100 mètres environ", "500 mètres pour les espèces les", "2000+ mètres selon", "3000+ mètres"],
                 correct: 2,
                 explanation: "Les capacit\u00e9s de plong\u00e9e varient selon les esp\u00e8ces. La baleine \u00e0 bec de Cuvier d\u00e9tient le record avec plus de 3 000 m\u00e8tres et plus de 3 heures d'apn\u00e9e. Ces exploits sont rendus possibles par des adaptations extraordinaires : effondrement des poumons, redistribution du sang vers les organes vitaux, et stockage d'oxyg\u00e8ne dans les muscles gr\u00e2ce \u00e0 la myoglobine.",
                 source: "Centre d'Étude des Cétacés - Certaines baleines plongent très profond."
@@ -4125,7 +4285,7 @@ const quizzesData = {
             {
                 id: 8,
                 question: "Quel type d'alimentation ont les baleines à fanons ?",
-                options: ["Carnivores prédateurs actifs, chassant des poissons et calmars comme les baleines à dents", "Herbivores consommant des algues et herbiers marins grâce à leurs fanons en forme de peignes végétaux", "Filtreurs de plancton", "Opportunistes omnivores, variant leur régime selon la saison entre proies animales et matière organique"],
+                options: ["Carnivores prédateurs actifs", "Herbivores consommant des algues et herbiers", "Filtreurs de plancton", "Opportunistes omnivores"],
                 correct: 2,
                 explanation: "Les baleines \u00e0 fanons (mystic\u00e8tes) \u2014 baleine bleue, rorqual, baleine \u00e0 bosse \u2014 n'ont pas de dents mais des fanons, des lames corn\u00e9es qui filtrent l'eau comme un tamis g\u00e9ant. En une seule gorg\u00e9e, une baleine bleue peut ingurgiter jusqu'\u00e0 500 kg de krill. Paradoxe fascinant : le plus grand animal vivant se nourrit d'un des plus petits crustac\u00e9s de l'oc\u00e9an.",
                 source: "Université Marine - Les baleines à fanons filtrent le krill et le plancton."
@@ -4133,7 +4293,7 @@ const quizzesData = {
             {
                 id: 9,
                 question: "Combien d'années une baleine peut-elle vivre ?",
-                options: ["10-20 ans, durée de vie comparable à celle des grands dauphins étudiés en captivité sur plusieurs générations", "30-50 ans, longévité maximale observée chez la majorité des grandes espèces de rorquals et mysticètes", "50-90+ ans selon l'espèce", "200 ans, chiffre invérifiable car aucun individu n'a pu être suivi sur une telle durée avec certitude scientifique"],
+                options: ["10-20 ans", "30-50 ans", "50-90+ ans selon", "200 ans"],
                 correct: 2,
                 explanation: "La long\u00e9vit\u00e9 des baleines est remarquable. La baleine de Bowhead est le mammif\u00e8re le plus long\u00e9vif : certains individus d\u00e9passent 200 ans, d\u00e9termin\u00e9 par l'analyse des acides amin\u00e9s dans les yeux. La baleine \u00e0 bosse vit 80 \u00e0 90 ans, et la baleine bleue environ 80 ans. Cette long\u00e9vit\u00e9 tient \u00e0 un m\u00e9tabolisme lent et des m\u00e9canismes de r\u00e9paration de l'ADN tr\u00e8s efficaces.",
                 source: "Institut de Longévité Marine - Les baleines peuvent vivre très longtemps."
@@ -4141,7 +4301,7 @@ const quizzesData = {
             {
                 id: 10,
                 question: "Quel mammifère marin passe l'ensemble de sa vie dans l'eau ?",
-                options: ["Les otaries, qui ne quittent l'eau que quelques jours par an lors de périodes de ponte sur les rochers côtiers", "Les phoques, qui mettent bas en mer et n'ont pas besoin de sortir de l'eau pour se reproduire", "Les cétacés (baleines et dauphins)", "Les loutres de mer, qui dorment, se nourrissent et se reproduisent exclusivement en flottant à la surface"],
+                options: ["Les otaries", "Les phoques", "Les cétacés", "Les loutres de mer"],
                 correct: 2,
                 explanation: "Les c\u00e9tac\u00e9s (baleines, dauphins, marsouins) sont les seuls mammif\u00e8res marins \u00e0 passer enti\u00e8rement leur vie dans l'eau \u2014 naissance, alimentation, reproduction et mort incluses. Les phoques et otaries sortent r\u00e9guli\u00e8rement sur les c\u00f4tes pour se reproduire et muer. Les loutres de mer restent tr\u00e8s proches de l'eau mais peuvent s'\u00e9chouer. Seuls les c\u00e9tac\u00e9s sont totalement aquatiques.",
                 source: "Société Océanographique - Les cétacés sont entièrement aquatiques."
@@ -4149,7 +4309,7 @@ const quizzesData = {
             {
                 id: 11,
                 question: "À quelle profondeur peut plonger un cachalot ?",
-                options: ["500 mètres, profondeur atteinte lors des plongées alimentaires ordinaires pour capturer des poissons de fond", "1000-2000 mètres, limite physiologique estimée par les chercheurs avant les premières balises d'enregistrement", "3000-4000 mètres", "Plus de 5000 mètres, profondeur que seuls les robots sous-marins télécommandés peuvent atteindre actuellement"],
+                options: ["500 mètres", "1000-2000 mètres", "3000-4000 mètres", "Plus de 5000 mètres"],
                 correct: 2,
                 explanation: "Le cachalot (Physeter macrocephalus) est le champion des plong\u00e9es parmi les baleines \u00e0 dents. Il peut descendre \u00e0 plus de 3 000 m\u00e8tres et tenir en apn\u00e9e pendant 90 minutes pour chasser les calmars g\u00e9ants dans les abysses. Son cr\u00e2ne massif abrite le 'spermacoeti', un organe huileux qui r\u00e9gule sa flottabilit\u00e9 et aide \u00e0 focaliser ses clics d'\u00e9cholocalisation.",
                 source: "Institut de Biologie Marine - Le cachalot peut plonger très profond."
@@ -4157,16 +4317,16 @@ const quizzesData = {
             {
                 id: 12,
                 question: "Quel est le poids d'une baleine bleue adulte ?",
-                options: ["50-100 tonnes, poids comparable au rorqual commun souvent confondu avec la baleine bleue dans les récits historiques", "100-150 tonnes, fourchette estimée d'après les premières pesées lors de la chasse baleinière industrielle au XXe siècle", "150-200 tonnes", "200+ tonnes, masse que certains grands mâles dépasseraient selon les estimations basées sur leur longueur maximale enregistrée"],
+                options: ["50-100 tonnes", "100-150 tonnes", "150-200 tonnes", "200+ tonnes"],
                 correct: 2,
                 explanation: "La baleine bleue adulte p\u00e8se en moyenne 150 \u00e0 200 tonnes \u2014 l'\u00e9quivalent de 30 \u00e9l\u00e9phants. Son c\u0153ur seul p\u00e8se environ 600 kg et est gros comme une petite voiture. Ses art\u00e8res sont si larges qu'un enfant pourrait y ramper. Malgr\u00e9 cette taille colossale, elle peut nager \u00e0 30 km/h lors de sprints.",
                 source: "Muséum Océanographique - La baleine bleue pèse environ 150-200 tonnes.",
-                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Blue_Whale_001.jpg/800px-Blue_Whale_001.jpg"
+                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Anim1754_-_Flickr_-_NOAA_Photo_Library.jpg/960px-Anim1754_-_Flickr_-_NOAA_Photo_Library.jpg"
             },
             {
                 id: 13,
                 question: "À quel âge un dauphin devient-il sexuellement mature ?",
-                options: ["À 2-3 ans, période où les jeunes dauphins atteignent leur taille adulte et commencent à s'éloigner du groupe maternel", "À 5-7 ans selon l'espèce", "À 10-15 ans, comme chez la plupart des grands mammifères à longue durée de vie tels que les éléphants ou les grands singes", "À 20+ ans, au terme d'une longue phase juvénile comparable à celle des grands cétacés comme les baleines à bosse"],
+                options: ["À 2-3 ans", "À 5-7 ans selon l'espèce", "À 10-15 ans", "À 20+ ans"],
                 correct: 1,
                 explanation: "Les dauphins atteignent leur maturit\u00e9 sexuelle relativement t\u00f4t pour des mammif\u00e8res si intelligents et long\u00e9vifs. Le grand dauphin (Tursiops truncatus) devient sexuellement mature entre 5 et 12 ans selon le sexe \u2014 les femelles un peu plus t\u00f4t que les m\u00e2les. Ils peuvent vivre jusqu'\u00e0 40-50 ans, laissant une longue p\u00e9riode de vie adulte reproductive.",
                 source: "Centre de Recherche Cétologique - La maturité arrive relativement tôt."
@@ -4174,7 +4334,7 @@ const quizzesData = {
             {
                 id: 14,
                 question: "Quel est le temps moyen de gestation d'une baleine ?",
-                options: ["6 mois, durée comparable à celle des dauphins de petite taille dont le développement fœtal est plus rapide", "10-12 mois, gestation similaire à celle de nombreux grands mammifères terrestres comme le cheval ou la girafe", "12-16 mois selon l'espèce", "18-24 mois, période observée chez les éléphants qui partagent avec les baleines une taille et une longévité comparables"],
+                options: ["6 mois", "10-12 mois", "12-16 mois", "18-24 mois"],
                 correct: 2,
                 explanation: "Les baleines ont une gestation parmi les plus longues du r\u00e8gne animal. La baleine bleue porte son petit environ 12 mois, l'orque jusqu'\u00e0 17 mois. Le baleineau de baleine bleue na\u00eet en mesurant d\u00e9j\u00e0 7 \u00e0 8 m\u00e8tres et pesant 2 \u00e0 3 tonnes. Il t\u00e8te 600 litres de lait par jour et grossit de 90 kg quotidiennement.",
                 source: "Institut de Reproduction Marine - Gestation très longue."
@@ -4182,7 +4342,7 @@ const quizzesData = {
             {
                 id: 15,
                 question: "Quel phoque peut plonger plus profond que les autres ?",
-                options: ["Le phoque moine de Méditerranée, dont les plongées répétées jusqu'à 500 mètres pour chasser les mérous l'ont rendu champion chez les espèces tempérées", "Le phoque du Groenland, qui effectue des plongées de plus de 400 mètres lors de ses migrations sous la banquise arctique", "Le phoque de Weddell", "Le léopard des mers, prédateur antarctique capable de plongées profondes pour chasser pingouins et phoques crabiers"],
+                options: ["Le phoque moine de Méditerranée", "Le phoque du Groenland", "Le phoque de Weddell", "Le léopard des mers"],
                 correct: 2,
                 explanation: "Le phoque de Weddell (Leptonychotes weddellii) vit en Antarctique et est un plong\u00e9e exceptionnel : il peut descendre \u00e0 plus de 700 m\u00e8tres et rester en apn\u00e9e pendant 80 minutes. Pour respirer sous la glace, il maintient des trous en rongeant la glace avec ses dents. C'est l'un des mammif\u00e8res vivant le plus au sud de la plan\u00e8te, capable de supporter des temp\u00e9ratures de -60\u00b0C.",
                 source: "Institut de Plongée Marine - Le phoque de Weddell plonge très profond."
@@ -4190,7 +4350,7 @@ const quizzesData = {
             {
                 id: 16,
                 question: "À quelle température le lait de baleine peut-il être produit ?",
-                options: ["À la température de l'eau environnante, les glandes mammaires fonctionnant en équilibre thermique avec le milieu marin pour préserver l'énergie", "Température interne chaude 37-40°C", "À une température abaissée d'environ 20-25°C, permettant un refroidissement partiel qui épaissit naturellement le lait avant injection", "À une température variable selon la profondeur de l'individu et la saison, régulée par des mécanismes hormonaux spécifiques"],
+                options: ["À la température de l'eau environnante", "Température interne chaude 37-40°C", "À une température abaissée d'environ 20-25°C", "À une température variable selon la profondeur de l'individu et la saison"],
                 correct: 1,
                 explanation: "Comme tous les mammif\u00e8res, les baleines sont homm\u00e9othermes et maintiennent une temp\u00e9rature interne d'environ 36-38\u00b0C, m\u00eame dans des eaux proches de 0\u00b0C. Leur lait est produit \u00e0 cette m\u00eame temp\u00e9rature. Pour conserver cette chaleur, leur \u00e9paisse couche de lard (blubber) peut atteindre 50 cm d'\u00e9paisseur chez les esp\u00e8ces polaires.",
                 source: "Institut de Biologie Reproductive Marine - Mammalien thermique."
@@ -4198,16 +4358,16 @@ const quizzesData = {
             {
                 id: 17,
                 question: "Quel est le plus grand animal marin jamais découvert ?",
-                options: ["Le cachalot mâle, dont les spécimens de 20 mètres et 50 tonnes ont longtemps été considérés comme les plus grands mammifères connus", "La baleine bleue", "Le mégalodon, requin préhistorique de 15 à 18 mètres dont des fossiles datant de moins de 3 millions d'années ont été découverts", "L'éléphant de mer du sud, pinnipède pouvant peser jusqu'à 4 tonnes considéré le plus grand carnivore terrestre avant les redécouvertes marines"],
+                options: ["Le cachalot mâle", "La baleine bleue", "Le mégalodon", "L'éléphant de mer du sud"],
                 correct: 1,
                 explanation: "La baleine bleue (Balaenoptera musculus) est sans conteste le plus grand animal ayant jamais v\u00e9cu, surpassant m\u00eame les plus grands dinosaures. Les plus grandes femelles enregistr\u00e9es mesuraient jusqu'\u00e0 33 m\u00e8tres. Sa population a \u00e9t\u00e9 r\u00e9duite \u00e0 1% de son niveau originel par la chasse baleini\u00e8re au 20\u00e8me si\u00e8cle \u2014 elle reste une esp\u00e8ce en danger.",
                 source: "Muséum d'Histoire Naturelle - La baleine bleue est l'animal vivant le plus grand.",
-                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Blue_Whale_001.jpg/800px-Blue_Whale_001.jpg"
+                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Anim1754_-_Flickr_-_NOAA_Photo_Library.jpg/960px-Anim1754_-_Flickr_-_NOAA_Photo_Library.jpg"
             },
             {
                 id: 18,
                 question: "À quel âge une otarie devient-elle adulte reproductrice ?",
-                options: ["À 2-3 ans, période où les jeunes ont déjà acquis leur taille adulte et maîtrisent suffisamment la nage pour se reproduire", "À 4-5 ans selon l'espèce", "À 6-8 ans, âge auquel la plupart des pinnipèdes atteignent leur plein développement musculaire et osseux nécessaire à la reproduction", "À 10+ ans, maturité tardive comparable à celle des grands cétacés qui dédient leur première décennie à l'apprentissage social"],
+                options: ["À 2-3 ans", "À 4-5 ans selon l'espèce", "À 6-8 ans", "À 10+ ans"],
                 correct: 1,
                 explanation: "Les otaries atteignent leur maturit\u00e9 sexuelle entre 3 et 6 ans selon l'esp\u00e8ce et le sexe. Les m\u00e2les, bien que matures biologiquement plus t\u00f4t, n'acc\u00e8dent g\u00e9n\u00e9ralement \u00e0 la reproduction qu'autour de 8-10 ans \u2014 ils doivent \u00eatre assez grands et forts pour \u00e9tablir un territoire sur les rookeries et d\u00e9fendre un harem de femelles.",
                 source: "Centre de Zoologie Marine - Maturité relativement rapide."
@@ -4215,7 +4375,7 @@ const quizzesData = {
             {
                 id: 19,
                 question: "Quel est le record de migration chez une baleine grise ?",
-                options: ["Quelques centaines de km, la baleine grise étant une espèce plutôt côtière qui suit les cordons littoraux sans grands déplacements océaniques", "5000-10000 km par an, distance comparable à celle des rorquals qui migrent entre l'Atlantique Nord et les Açores", "15000-20000 km par an", "Plus de 30000 km, distance qui correspondrait à un tour complet du globe, enregistrée grâce aux balises satellite modernes"],
+                options: ["Quelques centaines de km", "5000-10000 km par an", "15000-20000 km par an", "Plus de 30000 km"],
                 correct: 2,
                 explanation: "La baleine grise effectue l'une des migrations les plus longues de tous les mammif\u00e8res : 15 000 \u00e0 20 000 km aller-retour chaque ann\u00e9e entre ses aires d'alimentation en Arctique et ses zones de reproduction en Basse-Californie (Mexique). Ce voyage de plusieurs mois presque sans se nourrir est rendu possible gr\u00e2ce aux r\u00e9serves de graisse accumul\u00e9es pendant l'\u00e9t\u00e9.",
                 source: "Centre de Recherche Migratoire Marine - Migration très longue."
@@ -4223,7 +4383,7 @@ const quizzesData = {
             {
                 id: 20,
                 question: "Combien de temps peut survivre un phoque sans nourriture ?",
-                options: ["Quelques jours car leur métabolisme élevé exige un apport quasi-continu pour maintenir la chaleur corporelle constante", "2-4 semaines pour les jeunes phoques apprenant à chasser après le sevrage brutal de leur mère", "1-2 mois selon l'espèce", "3-4 mois comme les éléphants de mer mâles lors des longues saisons de reproduction où l'alimentation est quasiment abandonnée"],
+                options: ["Quelques jours seulement", "2-4 semaines pour les jeunes phoques", "1-2 mois selon l'espèce", "3-4 mois lors de la saison de reproduction"],
                 correct: 2,
                 explanation: "Les phoques accumulent d'importantes r\u00e9serves de graisse pendant les p\u00e9riodes d'abondance. Cette \u00e9nergie leur permet de je\u00fbner pendant la reproduction \u00e0 terre ou lors des mues. Le phoque gris m\u00e2le peut je\u00fbner 6 \u00e0 8 semaines pendant la saison de reproduction, vivant uniquement sur ses r\u00e9serves de lard accunul\u00e9es.",
                 source: "Institut de Physiologie Marine - Métabolisme très économe."
@@ -4231,7 +4391,7 @@ const quizzesData = {
             {
                 id: 21,
                 question: "À quel âge une jeune baleine devient-elle indépendante ?",
-                options: ["À quelques semaines dès que le baleineau nage et accompagne sa mère lors des plongées", "À quelques mois quand la mère abandonne progressivement son petit comme chez les phoques", "À 6-12 mois selon l'espèce", "À 1-2 ans durée observée chez les cachalots dont les jeunes restent liés au groupe"],
+                options: ["À quelques semaines dès que le baleineau nage et accompagne", "À quelques mois quand la mère abandonne progressivement son", "À 6-12 mois selon l'espèce", "À 1-2 ans durée observée chez les cachalots dont les jeunes"],
                 correct: 2,
                 explanation: "Les baleineaux sont allait\u00e9s entre 6 et 12 mois selon l'esp\u00e8ce. Pendant toute cette p\u00e9riode, le baleineau reste constamment pr\u00e8s de sa m\u00e8re, qui lui enseigne les routes migratoires et les zones d'alimentation. Ces connaissances transmises culturellement \u2014 routes migratoires, sources de nourriture \u2014 sont essentielles \u00e0 la survie de l'esp\u00e8ce.",
                 source: "Centre de Développement Juvénile - Allaitement prolongé."
@@ -4239,7 +4399,7 @@ const quizzesData = {
             {
                 id: 22,
                 question: "Quel est le diamètre de l'évent (spiracle) d'une baleine ?",
-                options: ["Quelques centimètres comparable à la narine d'un mammifère terrestre de grande taille", "10-15 cm de diamètre mesure enregistrée chez plusieurs rorquals étudiés en détail", "30-50 cm selon l'espèce", "Plus de 50 cm chez la baleine bleue adulte selon les mesures sur spécimens échoués"],
+                options: ["Quelques centimètres comparable à la narine d'un", "10-15 cm de diamètre mesure enregistrée chez plusieurs", "30-50 cm selon l'espèce", "Plus de 50 cm chez l'adulte"],
                 correct: 2,
                 explanation: "L'\u00e9vent \u2014 l'\u00e9quivalent de nos narines, situ\u00e9 sur le sommet du cr\u00e2ne \u2014 peut mesurer 30 \u00e0 50 cm de diam\u00e8tre chez les grandes baleines. Il permet de ventiler des poumons de plusieurs centaines de litres. Le souffle caract\u00e9ristique peut s'\u00e9lever \u00e0 9-12 m\u00e8tres de hauteur et s'entendre \u00e0 plusieurs kilom\u00e8tres de distance.",
                 source: "Institut d'Anatomie Cétologique - Ouverture respiratoire large."
@@ -4247,7 +4407,7 @@ const quizzesData = {
             {
                 id: 23,
                 question: "À quelle profondeur peut plonger un phoque de Weddell ?",
-                options: ["200 mètres lors des plongées ordinaires sous la banquise pour chasser les poissons", "500-600 mètres selon premières études avec émetteurs acoustiques dans les années 1970", "600-700 mètres selon les mesures modernes", "Plus de 800 mètres profondeur atteinte par les éléphants de mer souvent cités comme pinnipèdes les plus profonds"],
+                options: ["200 mètres lors des plongées ordinaires sous la banquise pour chasser les poissons", "500-600 mètres selon premières études avec émetteurs acoustiques dans les années", "600-700 mètres selon les mesures modernes", "Plus de 800 mètres profondeur atteinte par les éléphants de mer souvent cités comme pinnipèdes"],
                 correct: 2,
                 explanation: "Le phoque de Weddell peut plonger \u00e0 plus de 600 m\u00e8tres de profondeur, record parmi les phoques. Sous la banquise antarctique, il navigue dans l'obscurit\u00e9 totale gr\u00e2ce \u00e0 son ou\u00efe fine et ses vibrisses ultrasensibles. Il maintient jusqu'\u00e0 une vingtaine de trous de respiration qu'il agrandit r\u00e9guli\u00e8rement avec ses incisives robustes.",
                 source: "Centre de Plongée Marine - Adaptations extrêmes à la profondeur."
@@ -4255,7 +4415,7 @@ const quizzesData = {
             {
                 id: 24,
                 question: "Quel est le poids moyen d'un nouveau-né baleine bleue ?",
-                options: ["1-2 tonnes poids comparable à un nouveau-né de cachalot dont la gestation est pourtant plus courte", "3-4 tonnes estimation longtemps retenue dans la littérature scientifique avant les premières pesées directes", "4-5 tonnes", "Plus de 5 tonnes ce que certains auteurs avancent pour les femelles de très grande taille ayant porté plusieurs gestations"],
+                options: ["1 à 2 tonnes", "3-4 tonnes estimation", "4-5 tonnes", "Plus de 5 tonnes"],
                 correct: 2,
                 explanation: "Le baleineau de baleine bleue est l'un des plus grands nouveau-n\u00e9s du r\u00e8gne animal. \u00c0 la naissance, il mesure d\u00e9j\u00e0 7 \u00e0 8 m\u00e8tres de long et p\u00e8se plusieurs tonnes. Il grossit \u00e0 une vitesse ph\u00e9nom\u00e9nale gr\u00e2ce au lait de sa m\u00e8re, qui contient 40 \u00e0 50% de mati\u00e8res grasses. En quelques mois, son poids peut tripler.",
                 source: "Institut de Reproduction Marine - Bébé baleine géant."
@@ -4287,7 +4447,7 @@ const quizzesData = {
             {
                 id: 28,
                 question: "Quel est le taux d'allaitement chez une baleine mère ?",
-                options: ["Continu", "Plusieurs fois par jour", "Une fois par jour", "Tous les 2-3 jours"],
+                options: ["Continu", "Plusieurs fois par", "Une fois par jour", "Tous les 2-3 jours"],
                 correct: 1,
                 explanation: "L'allaitement chez les baleines est une prouesse logistique sous-marine. La m\u00e8re injecte litt\u00e9ralement son lait dans la bouche du baleineau sous pression \u2014 le baleineau ne t\u00e8te pas activement. Le lait est si \u00e9pais qu'il ne se diffuse pas dans l'eau. Une baleine bleue peut produire 300 \u00e0 600 litres de lait par jour, permettant au baleineau de grossir de 80 \u00e0 90 kg quotidiennement.",
                 source: "Institut de Reproduction Marine - Lait très nutritif allaitement fréquent."
@@ -4295,7 +4455,7 @@ const quizzesData = {
             {
                 id: 29,
                 question: "À quelle distance un cachalot peut-il émettre un clic ?",
-                options: ["Quelques km", "5-10 km", "15-20 km selon conditions", "Plus de 30 km"],
+                options: ["Quelques km", "5-10 km", "15-20 km selon", "Plus de 30 km"],
                 correct: 2,
                 explanation: "Les clics d'\u00e9cholocalisation du cachalot sont les sons les plus puissants produits par un animal \u2014 jusqu'\u00e0 230 d\u00e9cibels. Produits dans le spermaceti (l'organe graisseux de son cr\u00e2ne massif), ils servent \u00e0 d\u00e9tecter les calmars g\u00e9ants dans l'obscurit\u00e9 des abysses. Ces sons peuvent potentiellement paralyser ou \u00e9tourdir des proies \u00e0 courte distance.",
                 source: "Institut d'Acoustique Marine - Sons très porteurs."
@@ -4303,7 +4463,7 @@ const quizzesData = {
             {
                 id: 30,
                 question: "Quel est le record de durée d'apnée chez un dauphin ?",
-                options: ["5-10 minutes", "15-20 minutes", "30+ minutes selon l'espèce", "Plus de 45 minutes"],
+                options: ["5-10 minutes", "15-20 minutes", "30+ minutes selon", "Plus de 45 minutes"],
                 correct: 2,
                 explanation: "Les dauphins ont des capacit\u00e9s d'apn\u00e9e remarquables. Ces performances sont rendues possibles par une myoglobine musculaire tr\u00e8s concentr\u00e9e (qui donne une couleur sombre aux muscles), un r\u00e9flexe de bradycardie (ralentissement du c\u0153ur de 100 \u00e0 15 battements/min), et une tol\u00e9rance \u00e9lev\u00e9e au CO2. La plupart des plong\u00e9es courantes durent cependant 2 \u00e0 10 minutes.",
                 source: "Centre de Physiologie Plongée - Adaptations extrêmes."
@@ -4340,7 +4500,7 @@ const quizzesData = {
             {
                 id: 11,
                 question: "Quel est le rôle de l'évent chez les cétacés ?",
-                options: ["Respiration uniquement", "Respiration et expulsion d'eau", "Audition", "Régulation thermique"],
+                options: ["Respiration uniquement", "Respiration et expulsion", "Audition", "Régulation thermique"],
                 correct: 1,
                 explanation: "L'\u00e9vent des c\u00e9tac\u00e9s est bien plus qu'une narine. Lors de la remont\u00e9e, la baleine expire avec force, projetant de l'air chaud et humide qui forme le 'souffle' caract\u00e9ristique. Chaque esp\u00e8ce a un souffle reconnaissable : en forme de V chez les baleines franches, colonnaire jusqu'\u00e0 9 m\u00e8tres chez la baleine bleue, inclin\u00e9 \u00e0 45\u00b0 \u00e0 gauche chez le cachalot.",
                 source: "Centre de Recherche Cétologique - L'évent permet la respiration et l'expulsion d'eau."
@@ -4364,7 +4524,7 @@ const quizzesData = {
             {
                 id: 14,
                 question: "Quel est le principal predateur d'une baleine adulte ?",
-                options: ["Le grand requin blanc", "L'orque", "Aucun prédateur naturel", "L'humain"],
+                options: ["Le grand requin", "L'orque", "Aucun prédateur", "L'humain"],
                 correct: 2,
                 explanation: "Une fois adulte, la baleine bleue n'a pratiquement aucun pr\u00e9dateur naturel. Seules les orques attaquent parfois les baleineaux ou les individus affaiblis, en groupes organis\u00e9s. Aujourd'hui, les collisions avec les navires et les filets de p\u00eache sont les principales causes de mort, apr\u00e8s la chasse industrielle qui avait failli mener plusieurs esp\u00e8ces \u00e0 l'extinction au 20\u00e8me si\u00e8cle.",
                 source: "Société de Conservation Marine - Les adultes n'ont pratiquement pas de prédateurs naturels."
@@ -4380,7 +4540,7 @@ const quizzesData = {
             {
                 id: 16,
                 question: "Combien de dents une baleine à dents peut-elle avoir ?",
-                options: ["0 dent", "10-20 dents", "50+ dents", "Jusqu'à 200+ selon l'espèce"],
+                options: ["0 dent", "10-20 dents", "50+ dents", "Jusqu'à 200+ selon"],
                 correct: 3,
                 explanation: "Les baleines \u00e0 dents pr\u00e9sentent une grande variabilit\u00e9 dentaire. Le dauphin commun poss\u00e8de 80 \u00e0 100 dents coniques. L'orque en a 40 \u00e0 56, robustes et coniques, pouvant mesurer 10 cm. Le cachalot n'a des dents fonctionnelles qu'\u00e0 la m\u00e2choire inf\u00e9rieure. Le narval n'a g\u00e9n\u00e9ralement qu'une seule dent, transform\u00e9e en d\u00e9fense spirale pouvant atteindre 3 m\u00e8tres.",
                 source: "Musée Odontologique - Les baleines à dents peuvent avoir de nombreuses dents."
@@ -4388,7 +4548,7 @@ const quizzesData = {
             {
                 id: 17,
                 question: "Quel est le rôle de la couche de graisse chez les cétacés ?",
-                options: ["Réserve énergétique uniquement", "Isolation thermique et flottabilité", "Protection contre les prédateurs", "Réserve d'oxygène"],
+                options: ["Réserve énergétique uniquement", "Isolation thermique et réserve d'énergie", "Protection contre les prédateurs", "Réserve d'oxygène"],
                 correct: 1,
                 explanation: "Le lard (blubber) des c\u00e9tac\u00e9s est une couche de tissu adipeux sous-cutan\u00e9 pouvant atteindre 50 cm chez les grandes baleines polaires. Il assure l'isolation thermique contre les eaux froides, r\u00e9duit la densit\u00e9 corporelle (aide \u00e0 la flottabilit\u00e9), stocke l'\u00e9nergie pour les longues migrations, et sa composition varie selon les saisons pour absorber les p\u00e9riodes de je\u00fbne.",
                 source: "Centre d'Étude Thermique Marine - Le lard isole thermiquement."
@@ -4396,7 +4556,7 @@ const quizzesData = {
             {
                 id: 18,
                 question: "Quel type de migration les baleines effectuent-elles ?",
-                options: ["Sédentaires sans migration", "Régionale courte distance", "Longue distance entre zones d'alimentation et reproduction", "Aléatoire"],
+                options: ["Sédentaires et sans", "Régionale courte", "Longue distance entre", "Aléatoire"],
                 correct: 2,
                 explanation: "La migration des baleines est l'une des plus spectaculaires du r\u00e8gne animal. Elles passent l'\u00e9t\u00e9 dans les eaux polaires riches en krill pour s'alimenter, puis migrent vers les zones tropicales pour se reproduire en hiver. La baleine \u00e0 bosse parcourt jusqu'\u00e0 25 000 km par an \u2014 le record chez les mammif\u00e8res. Ces zones chaudes offrent moins de nourriture mais moins de pr\u00e9dateurs pour les baleineaux.",
                 source: "Université de Migration - Les baleines migrent sur des milliers de kilomètres."
@@ -4404,7 +4564,7 @@ const quizzesData = {
             {
                 id: 19,
                 question: "Quel est le système de thermorégulation chez les mammifères marins ?",
-                options: ["Ectothermes régulant leur température en se déplaçant entre eaux superficielles chaudes et profondes froides", "Métabolisme élevé et isolation thermique", "Refroidissement actif par évaporation buccale lors des sorties à l'air libre sur les plages", "Changement de couleur cutanée permettant d'absorber plus ou moins de rayonnement solaire infrarouge"],
+                options: ["Ectothermes régulant leur température en se déplaçant entre eaux superficielles chaudes et", "Métabolisme élevé et isolation thermique", "Refroidissement actif par évaporation buccale lors des sorties à l'air libre sur les", "Changement de couleur cutanée permettant d'absorber plus ou moins de rayonnement solaire"],
                 correct: 1,
                 explanation: "Contrairement aux reptiles (ectothermes), les mammif\u00e8res marins sont endothermes : ils produisent leur propre chaleur. Pour maintenir ~37\u00b0C dans des eaux proches de 0\u00b0C, ils combinent un m\u00e9tabolisme \u00e9lev\u00e9, une \u00e9paisse couche de lard (jusqu'\u00e0 50 cm), un pelage dense (phoques), et un syst\u00e8me d'\u00e9changeurs de chaleur \u00e0 contre-courant dans leurs nageoires pour r\u00e9cup\u00e9rer la chaleur du sang qui revient des extr\u00e9mit\u00e9s.",
                 source: "Institut de Thermoécologie - Les mammifères marins maintiennent une température interne."
@@ -4412,7 +4572,7 @@ const quizzesData = {
             {
                 id: 20,
                 question: "Quel est le taux de reproduction des baleines ?",
-                options: ["Très rapide, plusieurs jeunes par an", "Modéré, plusieurs jeunes tous les 2-3 ans", "Très lent, un jeune tous les 2-5 ans", "Reproduction asexuée"],
+                options: ["Très rapide", "Modéré", "Très lent", "Reproduction asexuée"],
                 correct: 2,
                 explanation: "Le faible taux de reproduction des grandes baleines les rend tr\u00e8s vuln\u00e9rables aux menaces humaines. Une baleine bleue femelle ne donne naissance qu'\u00e0 un seul baleineau tous les 2 \u00e0 3 ans apr\u00e8s une gestation d'un an et un allaitement de 6 \u00e0 7 mois. Leur maturit\u00e9 sexuelle tardive (5-15 ans) signifie que la population met des d\u00e9cennies \u00e0 se r\u00e9tablir apr\u00e8s une surexploitation.",
                 source: "Centre de Reproduction Marine - Les baleines se reproduisent lentement."
@@ -4428,7 +4588,7 @@ const quizzesData = {
             {
                 id: 32,
                 question: "Quel est le processus de communication entre baleines à longue distance ?",
-                options: ["Percussion de la surface de l'eau via les nageoires pectorales pour créer des ondes basse fréquence", "Chants complexes portant sur plusieurs km", "Échanges visuels par synchronisation des sauts et acrobaties perceptibles à plusieurs km de distance", "Marquage chimique de zones de rencontre via des sécrétions cutanées persistant plusieurs jours dans l'eau"],
+                options: ["Percussion de la surface de l'eau via les nageoires pectorales pour créer des ondes basse", "Chants complexes portant sur plusieurs km", "Échanges visuels par synchronisation des sauts et acrobaties perceptibles à plusieurs km de", "Marquage chimique de zones de rencontre via des sécrétions cutanées persistant plusieurs jours"],
                 correct: 1,
                 explanation: "Les chants des baleines \u00e0 bosse peuvent porter jusqu'\u00e0 10 000 km sous l'eau. En 2000, des chercheurs ont observ\u00e9 qu'un nouveau type de chant apparu dans le Pacifique Ouest s'est r\u00e9pandu d'ouest en est en 2 ans, copi\u00e9 par des milliers de baleines. C'est l'un des exemples les plus clairs de transmission culturelle horizontale chez un animal non-humain.",
                 source: "Institut d'Acoustique Cétacée - Chants sophistiqués de navigation."
@@ -4436,7 +4596,7 @@ const quizzesData = {
             {
                 id: 33,
                 question: "À quel âge un phoque peut-il être complètement indépendant ?",
-                options: ["À quelques semaines", "À 4-6 semaines selon l'espèce", "À 2-3 mois", "À 6+ mois"],
+                options: ["À quelques semaines", "À 4-6 semaines selon", "À 2-3 mois", "À 6+ mois"],
                 correct: 1,
                 explanation: "Le sevrage ultra-rapide du phoque gris est l'un des plus courts chez les mammif\u00e8res. La m\u00e8re allaite son petit seulement 3 semaines avec un lait contenant 60% de mati\u00e8res grasses, permettant au blanchon de passer de 14 kg \u00e0 40 kg. Puis elle l'abandonne brusquement. Le jeune phoque doit alors apprendre seul \u00e0 nager et chasser, je\u00fbnant plusieurs semaines le temps de ma\u00eetriser ces comp\u00e9tences.",
                 source: "Centre d'Élevage Pinipède - Sevrage très précoce."
@@ -4444,7 +4604,7 @@ const quizzesData = {
             {
                 id: 34,
                 question: "Quel est le rôle du 'blubber' (lard) chez les mammifères marins ?",
-                options: ["Stockage des contaminants lipophiles comme les PCB protégeant ainsi les organes vitaux", "Isolation thermique et réserve énergétique", "Flottabilité passive uniquement permettant l'économie d'énergie lors des pauses en surface", "Neutralisation des toxines marines ingérées avec les proies par séquestration dans les adipocytes"],
+                options: ["Stockage des contaminants lipophiles comme les PCB protégeant ainsi les organes", "Isolation thermique et réserve énergétique", "Flottabilité passive uniquement permettant l'économie d'énergie lors des pauses en", "Neutralisation des toxines marines ingérées avec les proies par séquestration dans les"],
                 correct: 1,
                 explanation: "Le blubber remplit plusieurs fonctions vitales simultan\u00e9ment. Il isole thermiquement \u2014 une baleine polaire avec 50 cm de lard survit \u00e0 des eaux \u00e0 -2\u00b0C. Il stocke une \u00e9nergie consid\u00e9rable \u2014 une baleine \u00e0 bosse br\u00fcle son lard pendant sa migration de 8 000 km o\u00f9 elle ne mange presque pas. Il contribue aussi \u00e0 la flottabilit\u00e9 et \u00e0 la forme hydrodynamique du corps.",
                 source: "Institut de Physiologie Thermique Marine - Essentiel pour survie."
@@ -4452,11 +4612,11 @@ const quizzesData = {
             {
                 id: 35,
                 question: "À quelle vitesse peut nager une orque ?",
-                options: ["10-15 km/h", "25-35 km/h", "35-55 km/h selon conditions", "60+ km/h"],
+                options: ["10-15 km/h", "25-35 km/h", "35-55 km/h selon", "60+ km/h"],
                 correct: 2,
                 explanation: "L'orque (Orcinus orca) est l'un des nageurs les plus rapides parmi les grands mammif\u00e8res marins, capable d'atteindre 55 km/h en chasse. Cette vitesse, combin\u00e9e \u00e0 l'intelligence collective des groupes familiaux, fait de l'orque le pr\u00e9dateur le plus redoutable des oc\u00e9ans. Elle est capable de chasser des baleines bleues en groupe, des requins blancs en solitaire, et m\u00eame de s'\u00e9chouer volontairement pour attraper des lions de mer.",
                 source: "Centre d'Écologie Orque - Prédateurs très rapides.",
-                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Killerwhales_jumping.jpg/800px-Killerwhales_jumping.jpg"
+                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Killerwhales_jumping.jpg/960px-Killerwhales_jumping.jpg"
             },
             {
                 id: 36,
@@ -4469,7 +4629,7 @@ const quizzesData = {
             {
                 id: 37,
                 question: "À quel âge un jeune otarie commence-t-il à se nourrir seul ?",
-                options: ["À quelques semaines", "À 2-3 mois selon l'espèce", "À 4-6 mois", "À 1 an"],
+                options: ["À quelques semaines", "À 2-3 mois", "À 4-6 mois", "À 1 an"],
                 correct: 1,
                 explanation: "Les jeunes otaries sont sevr\u00e9es entre 4 mois (otarie \u00e0 fourrure du Cap) et 12 mois (lion de mer de Steller). Apr\u00e8s le sevrage, elles doivent rapidement apprendre \u00e0 chasser. Les premi\u00e8res tentatives sont souvent maladroites, avec un faible taux de succ\u00e8s. Avec l'exp\u00e9rience, elles deviennent des chasseuses tr\u00e8s efficaces, capables de plonger \u00e0 200 m\u00e8tres et capturer des poissons rapides.",
                 source: "Centre de Développement Pinipède - Indépendance rapide."
@@ -4477,7 +4637,7 @@ const quizzesData = {
             {
                 id: 38,
                 question: "Quel est le rôle des 'barbillons' chez le phoque ?",
-                options: ["Génération de micro-turbulences hydrodynamiques améliorant la portance natatoire à faible vitesse", "Détection tactile des proies et obstacles", "Absorption de l'oxygène dissous dans l'eau lors des plongées profondes en complément des poumons", "Signalisation d'état émotionnel lors des interactions sociales par mouvements vibratoires codifiés"],
+                options: ["Génération de micro-turbulences hydrodynamiques améliorant la portance natatoire à faible", "Détection tactile des proies et obstacles", "Absorption de l'oxygène dissous dans l'eau lors des plongées profondes en complément des", "Signalisation d'état émotionnel lors des interactions sociales par mouvements vibratoires"],
                 correct: 1,
                 explanation: "Les vibrisses (moustaches) des phoques sont des organes sensoriels extraordinaires. Elles peuvent d\u00e9tecter les turbulences cr\u00e9\u00e9es par un poisson pass\u00e9 30 secondes auparavant, permettant au phoque de suivre le sillage d'une proie dans l'obscurit\u00e9. Chaque vibrisse est reli\u00e9e \u00e0 une zone d\u00e9di\u00e9e du cerveau \u2014 leur repr\u00e9sentation c\u00e9r\u00e9brale est aussi \u00e9labor\u00e9e que le syst\u00e8me visuel humain.",
                 source: "Institut de Sensorimotricité Marine - Organes tactiles sensoriels."
@@ -4485,7 +4645,7 @@ const quizzesData = {
             {
                 id: 39,
                 question: "À quel âge une baleine femelle devient-elle ménopausée ?",
-                options: ["À 20-30 ans pour toutes les baleines à fanons selon les marqueurs isotopiques des os de l'oreille", "À 40-50 ans selon l'espèce", "À 50 ans et au-delà, certaines espèces ne vieillissant biologiquement presque pas après 80 ans", "La longévité ne peut jamais être estimée avec précision car les cétacés ne montrent aucun signe externe de vieillissement"],
+                options: ["À 20-30 ans pour toutes les baleines à fanons selon", "À 40-50 ans selon l'espèce", "À 50 ans et au-delà", "La longévité ne peut jamais être estimée avec"],
                 correct: 1,
                 explanation: "La m\u00e9nopause est un ph\u00e9nom\u00e8ne rarissime dans le r\u00e8gne animal, observ\u00e9 chez seulement 5 esp\u00e8ces : l'humain, l'orque, le cachalot, le b\u00e9luga et le narval. Chez les orques, les femelles cessent de se reproduire vers 40-50 ans mais vivent encore plusieurs d\u00e9cennies. Ces 'grand-m\u00e8res' jouent un r\u00f4le crucial : les pods avec des grand-m\u00e8res survivent mieux gr\u00e2ce \u00e0 leur connaissance des zones de p\u00eache.",
                 source: "Institut de Biologie Reproductive - Ménopause chez les cétacés."
@@ -4493,7 +4653,7 @@ const quizzesData = {
             {
                 id: 40,
                 question: "Quel est le processus de la 'dive reflex' chez les pinnipèdes ?",
-                options: ["Arrêt volontaire de la respiration déclenché par la fermeture réflexe de l'épiglotte lors de l'immersion", "Ralentissement cardiaque drastique lors de plongée", "Accélération cardiaque pour maximiser le débit sanguin vers les muscles actifs pendant la plongée", "Redistribution du volume sanguin vers les organes abdominaux pour réduire la consommation d'O2 musculaire"],
+                options: ["Arrêt volontaire de la respiration déclenché par la fermeture réflexe de l'épiglotte lors de", "Ralentissement cardiaque drastique lors de plongée", "Accélération cardiaque pour maximiser le débit sanguin vers les muscles actifs pendant la plongée", "Redistribution du volume sanguin vers les organes abdominaux pour réduire la consommation d'O2"],
                 correct: 1,
                 explanation: "Le r\u00e9flexe de plong\u00e9e (dive reflex) est d\u00e9clench\u00e9 automatiquement d\u00e8s l'immersion. Chez les pinniped\u00e8s, il est extr\u00eamement d\u00e9velopp\u00e9 : la fr\u00e9quence cardiaque passe de 150 \u00e0 seulement 4 battements par minute en quelques secondes. La circulation sanguine se concentre sur le cerveau et le c\u0153ur. La rate se contracte pour lib\u00e9rer jusqu'\u00e0 50% d'h\u00e9maties suppl\u00e9mentaires dans le sang.",
                 source: "Institut de Physiologie Plongée - Adaptations cardiovasculaires."
@@ -4517,7 +4677,12 @@ const quizzesData = {
             {
                 id: 43,
                 question: "À quelle distance un dauphin peut-il entendre un autre dauphin ?",
-                options: ["Quelques mètres", "50-100 mètres", "500-1000 mètres selon conditions", "Plus de 2 km"],
+                options: [
+                "Quelques mètres",
+                "50-100 mètres",
+                "500-1000 mètres sel",
+                "Plus de 2 km"
+            ],
                 correct: 2,
                 explanation: "Les dauphins communiquent gr\u00e2ce \u00e0 des sifflements individuels uniques \u2014 chaque dauphin poss\u00e8de un 'sifflement signature' reconnaissable \u00e0 des centaines de m\u00e8tres. Ils peuvent imiter ces sifflements pour appeler un individu sp\u00e9cifique. Leurs capacit\u00e9s auditives s'\u00e9tendent de 200 Hz \u00e0 150 kHz (l'humain entend jusqu'\u00e0 20 kHz), leur permettant de percevoir l'\u00e9cholocalisation \u00e0 grande distance.",
                 source: "Institut de Bioacoustique Marine - Communication longue distance."
@@ -4541,7 +4706,7 @@ const quizzesData = {
             {
                 id: 46,
                 question: "Quel est le processus de la 'pontination' chez les cétacés ?",
-                options: ["Augmentation progressive du temps de plongée liée à la maturation des réserves en myoglobine musculaire", "Isolation comportementale préparant reproduction", "Migration vers les zones d'alimentation estivales pour constituer des réserves lipidiques avant l'accouplement", "Jeûne volontaire permettant de concentrer les phéromones excrétées dans les sécrétions cutanées"],
+                options: ["Augmentation progressive du temps de plongée liée à la maturation des réserves en myoglobine", "Isolation comportementale préparant reproduction", "Migration vers les zones d'alimentation estivales pour constituer des réserves lipidiques avant", "Jeûne volontaire permettant de concentrer les phéromones excrétées dans les sécrétions cutanées"],
                 correct: 1,
                 explanation: "La pr\u00e9paration \u00e0 la reproduction chez les c\u00e9tac\u00e9s implique des changements comportementaux marqu\u00e9s. Les m\u00e2les de baleine \u00e0 bosse cessent de s'alimenter pendant la saison de reproduction pour se consacrer enti\u00e8rement \u00e0 la comp\u00e9tition et \u00e0 la cour. Ils chantent des chants complexes, se battent avec d'autres m\u00e2les, et suivent les femelles sur des milliers de kilom\u00e8tres pendant les migrations.",
                 source: "Institut d'Éthologie Reproductive Marine - Phase préreproductive."
@@ -4557,7 +4722,7 @@ const quizzesData = {
             {
                 id: 48,
                 question: "Quel est le rôle de l'enzyme catalase chez les mammifères marins lors des plongées profondes ?",
-                options: ["Catalyse de la dégradation des peroxydes lipidiques dans les tissus profonds lors des plongées prolongées", "Protection contre radicaux libres de l'oxygène", "Accélération du transit intestinal permettant une extraction maximale des nutriments des proies ingérées", "Régulation de la fréquence respiratoire en modifiant la sensibilité des chémorécepteurs au CO2"],
+                options: ["Catalyse de la dégradation des peroxydes lipidiques dans les tissus profonds lors des plongées", "Protection contre radicaux libres de l'oxygène", "Accélération du transit intestinal permettant une extraction maximale des nutriments des proies", "Régulation de la fréquence respiratoire en modifiant la sensibilité des chémorécepteurs au"],
                 correct: 1,
                 explanation: "Lors de plong\u00e9es profondes suivies de remont\u00e9es rapides, les mammif\u00e8res plongeurs sont expos\u00e9s \u00e0 des cycles d'isch\u00e9mie-reperfusion qui g\u00e9n\u00e8rent des radicaux libres potentiellement dangereux. Les c\u00e9tac\u00e9s et pinniped\u00e8s ont d\u00e9velopp\u00e9 des d\u00e9fenses antioxydantes tr\u00e8s efficaces, incluant des niveaux \u00e9lev\u00e9s de catalase, superoxyde dismutase et glutathion peroxydase dans leurs tissus.",
                 source: "Institut de Biochimie Marine - Adaptations antioxydantes."
@@ -4565,7 +4730,7 @@ const quizzesData = {
             {
                 id: 49,
                 question: "À quel âge une baleine franche peut-elle atteindre sa taille maximale ?",
-                options: ["À 20-30 ans", "À 30-40 ans selon l'espèce", "À 40-50 ans", "À 50+ ans"],
+                options: ["À 20-30 ans", "À 30-40 ans selon", "À 40-50 ans", "À 50+ ans"],
                 correct: 1,
                 explanation: "Les grandes baleines grandissent lentement tout au long de leur vie. La baleine franche (right whale) est l'une des plus menac\u00e9es au monde (moins de 400 individus dans l'Atlantique Nord). Sa croissance tr\u00e8s lente et son faible taux de reproduction (un baleineau tous les 3 \u00e0 5 ans) la rendent extr\u00eamement vuln\u00e9rable aux impacts humains : collisions avec des navires et enchev\u00eatrement dans les filets.",
                 source: "Institut de Croissance Cétacée - Croissance très lente."
@@ -4573,7 +4738,7 @@ const quizzesData = {
             {
                 id: 50,
                 question: "Quel est le taux métabolique des siréniens (lamantins) ?",
-                options: ["Très élevé", "Modéré", "Très bas - métabolisme lent adapté à consommation herbe", "Sans métabolisme"],
+                options: ["Très élevé", "Modéré", "Très bas", "Sans métabolisme"],
                 correct: 2,
                 explanation: "Les lamantins et dugongs ont un m\u00e9tabolisme environ 3 fois plus lent que pr\u00e9vu pour leur taille. Herbivores exclusifs, ils consomment 5 \u00e0 10% de leur poids en herbes marines chaque jour. Cette alimentation peu calorique les oblige \u00e0 brouter continuellement. Leur m\u00e9tabolisme lent et leur incapacit\u00e9 \u00e0 g\u00e9n\u00e9rer suffisamment de chaleur les rendent vuln\u00e9rables au 'cold stress syndrome' si l'eau descend sous 20\u00b0C.",
                 source: "Institut de Physiologie Comparée Marine - Herbivores lents."
@@ -4626,7 +4791,12 @@ const quizzesData = {
             {
                 id: 23,
                 question: "Quel est le processus d'adaptation visuelle aux profondeurs ?",
-                options: ["Augmentation du cristallin", "Rétines sensibles au spectre bleu et amélioration de la sensibilité", "Pas d'adaptation visuelle", "Disparition des yeux"],
+                options: [
+                "Augmentation du cristallin",
+                "Rétines sensibles au spectre bleu",
+                "Pas d'adaptation visuelle",
+                "Disparition des yeux"
+            ],
                 correct: 1,
                 explanation: "En pleine mer, seule la lumi\u00e8re bleue/verte p\u00e9n\u00e8tre en profondeur. Les c\u00e9tac\u00e9s plongeurs ont des r\u00e9tines adapt\u00e9es, tr\u00e8s sensibles aux longueurs d'onde bleues (460-480 nm). Leurs yeux peuvent aussi s'accommoder des variations extr\u00eames de luminosit\u00e9 \u2014 de la surface brillante \u00e0 l'obscurit\u00e9 quasi-totale des abysses. La densit\u00e9 en b\u00e2tonnets (photor\u00e9cepteurs cr\u00e9pusculaires) est tr\u00e8s \u00e9lev\u00e9e.",
                 source: "Université d'Ophthalmologie Marine - Les rétines s'adaptent aux longueurs d'onde profondes."
@@ -4634,7 +4804,7 @@ const quizzesData = {
             {
                 id: 24,
                 question: "Quel est le rôle des cavités nasales compliquées des cétacés ?",
-                options: ["Respiration uniquement", "Écholocalisation et production de clics", "Olfaction exacerbée", "Thermorégulation"],
+                options: ["Respiration uniquement", "Écholocalisation et production de sons", "Olfaction exacerbée", "Thermorégulation"],
                 correct: 1,
                 explanation: "Les c\u00e9tac\u00e9s \u00e0 dents ont migr\u00e9 leurs narines sur le dessus du cr\u00e2ne et les ont transform\u00e9es en organe d'\u00e9cholocalisation complexe. Le dauphin produit ses clics dans les sacs nasaux, les fait rebondir sur l'os frontal (le 'melon'), puis les \u00e9met en faisceau dirig\u00e9 vers l'avant. L'\u00e9cho revu est transmis via la m\u00e2choire inf\u00e9rieure \u00e0 l'oreille interne, permettant une 'vision sonore' 3D en temps r\u00e9el.",
                 source: "Institut d'Anatomie Cétologique - Les cavités nasales produisent l'écholocalisation."
@@ -4642,7 +4812,12 @@ const quizzesData = {
             {
                 id: 25,
                 question: "Quel type d'hémoglobine possèdent les cétacés plongeurs profonds ?",
-                options: ["Hémoglobine standard", "Hémoglobine avec affinité augmentée pour l'oxygène", "Hémoglobine sans fer", "Chlorophylle"],
+                options: [
+                "Hémoglobine standard",
+                "Hémoglobine avec affinité",
+                "Hémoglobine sans fer",
+                "Chlorophylle"
+            ],
                 correct: 1,
                 explanation: "La myoglobine des muscles des c\u00e9tac\u00e9s plongeurs est pr\u00e9sente en quantit\u00e9s 10 \u00e0 30 fois sup\u00e9rieures \u00e0 celle des mammif\u00e8res terrestres, donnant aux muscles une couleur presque noire. Cette myoglobine stocke l'oxyg\u00e8ne localement. Leur h\u00e9moglobine sanguine a aussi une affinit\u00e9 accrue pour l'oxyg\u00e8ne \u00e0 basse pression, et leur concentration en globules rouges est 2 fois sup\u00e9rieure \u00e0 celle de l'humain.",
                 source: "Université de Biochimie Marine - L'hémoglobine est optimisée pour l'oxygène."
@@ -4650,7 +4825,12 @@ const quizzesData = {
             {
                 id: 26,
                 question: "Quel est le mécanisme de réduction du métabolisme lors de la plongée ?",
-                options: ["Arrêt cardiaque", "Ralentissement sélectif du cœur et redistribution du flux sanguin", "Hibernation brusque", "Apoptose cellulaire"],
+                options: [
+                "Arrêt cardiaque",
+                "Ralentissement sélectif",
+                "Hibernation brusque",
+                "Apoptose cellulaire"
+            ],
                 correct: 1,
                 explanation: "Lors d'une plong\u00e9e, les mammif\u00e8res marins activent une cascade d'adaptations cardiovasculaires. Le c\u0153ur ralentit drastiquement (de 150 \u00e0 4-10 bpm). Les vaisseaux p\u00e9riph\u00e9riques se contractent, concentrant le sang sur le cerveau et le c\u0153ur. La rate lib\u00e8re jusqu'\u00e0 50% d'h\u00e9maties suppl\u00e9mentaires. Ces m\u00e9canismes permettent de tripler la dur\u00e9e de plong\u00e9e effective.",
                 source: "Centre de Physiologie Plongée - Le flux sanguin se concentre sur les organes vitaux."
@@ -4658,7 +4838,7 @@ const quizzesData = {
             {
                 id: 27,
                 question: "Quel est le rôle de la monocouche pulmonaire chez les cétacés ?",
-                options: ["Captage efficace de l'oxygène", "Extraction d'oxygène maximale avec échange contre-courant", "Stockage du dioxyde de carbone", "Régulation de la pression"],
+                options: ["Captage efficace de l'oxygène", "Extraction d'oxygène maximale avec échange", "Stockage du dioxyde de carbone", "Régulation de la pression"],
                 correct: 1,
                 explanation: "Les poumons des c\u00e9tac\u00e9s s'effondrent totalement \u00e0 grande profondeur (emp\u00eachant l'embolie \u00e0 l'azote) puis se r\u00e9ouvrent parfaitement \u00e0 la remont\u00e9e. Des sphincters bronchiques contr\u00f4lent pr\u00e9cis\u00e9ment les \u00e9changes gazeux. La vascularisation pulmonaire est organis\u00e9e pour maximiser l'extraction d'oxyg\u00e8ne en un temps minimal, car les c\u00e9tac\u00e9s ne respirent que quelques secondes en surface entre deux plong\u00e9es.",
                 source: "Institut de Physiologie Respiratoire - L'échange contre-courant maximise l'oxygène."
@@ -4674,7 +4854,7 @@ const quizzesData = {
             {
                 id: 29,
                 question: "Quel est le rôle des moustaches (vibrisses) chez les pinnipèdes ?",
-                options: ["Décoration", "Détection sensorielle du champ électrique et vibrations", "Régulation thermique", "Reproduction"],
+                options: ["Décoration", "Détection sensorielle", "Régulation thermique", "Reproduction"],
                 correct: 1,
                 explanation: "Les vibrisses des phoques ont une forme ondul\u00e9e qui r\u00e9duit les vibrations dues \u00e0 leur propre mouvement tout en amplifiant les turbulences hydrodynamiques des proies. Elles peuvent suivre le sillage de poissons plusieurs minutes apr\u00e8s leur passage. Certaines esp\u00e8ces peuvent m\u00eame d\u00e9tecter de faibles champs \u00e9lectriques g\u00e9n\u00e9r\u00e9s par les muscles des proies.",
                 source: "Institut de Sensorimotricité Marine - Les vibrisses détectent les vibrations."
@@ -4706,7 +4886,12 @@ const quizzesData = {
             {
                 id: 53,
                 question: "Quel est le processus d'adaptation visuelle aux profondeurs chez les cétacés ?",
-                options: ["Augmentation du cristallin", "Rétines sensibles au spectre bleu et amélioration de la sensibilité", "Pas d'adaptation visuelle", "Disparition des yeux"],
+                options: [
+                "Augmentation du cristallin",
+                "Rétines sensibles au spectre bleu",
+                "Pas d'adaptation visuelle",
+                "Disparition des yeux"
+            ],
                 correct: 1,
                 explanation: "Les yeux des c\u00e9tac\u00e9s sont des organes complexes adapt\u00e9s \u00e0 deux milieux diff\u00e9rents. Sous l'eau en profondeur, leur r\u00e9tine riche en b\u00e2tonnets capte les rares photons bleus disponibles. Certaines esp\u00e8ces ont aussi une 'tapetum lucidum' (miroir derri\u00e8re la r\u00e9tine) qui amplifie la lumi\u00e8re disponible, comme chez les chats \u2014 donnant un reflet caract\u00e9ristique dans l'obscurit\u00e9.",
                 source: "Université d'Ophtalmologie Marine - Les rétines s'adaptent aux longueurs d'onde profondes."
@@ -4714,7 +4899,7 @@ const quizzesData = {
             {
                 id: 54,
                 question: "Quel est le rôle des cavités nasales compliquées des cétacés ?",
-                options: ["Respiration uniquement", "Écholocalisation et production de clics", "Olfaction exacerbée", "Thermorégulation"],
+                options: ["Respiration uniquement", "Écholocalisation et production de sons", "Olfaction exacerbée", "Thermorégulation"],
                 correct: 1,
                 explanation: "Chez le dauphin, les l\u00e8vres phoniques (phonic lips) vibrent pour cr\u00e9er des clics ultra-rapides (jusqu'\u00e0 700 clics par seconde). Ces sons sont focalis\u00e9s par le melon frontal vers l'avant. L'oreille interne est anatomiquement isol\u00e9e du cr\u00e2ne par des coussins de graisse pour \u00e9viter la confusion entre sons \u00e9mis et re\u00e7us \u2014 une conception quasi-st\u00e9r\u00e9ophonique unique.",
                 source: "Institut d'Anatomie Cétologique - Les cavités nasales produisent l'écholocalisation."
@@ -4722,7 +4907,12 @@ const quizzesData = {
             {
                 id: 55,
                 question: "Pourquoi les muscles des cétacés plongeurs ont-ils une couleur presque noire ?",
-                options: ["Hémoglobine standard", "Hémoglobine avec affinité augmentée pour l'oxygène", "Hémoglobine sans fer", "Chlorophylle"],
+                options: [
+                "Hémoglobine standard",
+                "Hémoglobine avec affinité",
+                "Hémoglobine sans fer",
+                "Chlorophylle"
+            ],
                 correct: 1,
                 explanation: "La myoglobine des muscles de plong\u00e9e des c\u00e9tac\u00e9s est si concentr\u00e9e qu'elle est quasi-cristalline, une adaptation unique d\u00e9couverte r\u00e9cemment. Cette forme cristalline lui permet d'\u00eatre stock\u00e9e en tr\u00e8s grande quantit\u00e9. Lors d'une plong\u00e9e du cachalot de 90 minutes, 80% de l'oxyg\u00e8ne consomm\u00e9 provient de la myoglobine et de l'h\u00e9moglobine \u2014 pas des poumons.",
                 source: "Université de Biochimie Marine - L'hémoglobine est optimisée pour l'oxygène."
@@ -4730,7 +4920,12 @@ const quizzesData = {
             {
                 id: 56,
                 question: "Quel est le mécanisme de réduction du métabolisme lors de la plongée marine ?",
-                options: ["Arrêt cardiaque", "Ralentissement sélectif du cœur et redistribution du flux sanguin", "Hibernation brusque", "Apoptose cellulaire"],
+                options: [
+                "Arrêt cardiaque",
+                "Ralentissement sélectif",
+                "Hibernation brusque",
+                "Apoptose cellulaire"
+            ],
                 correct: 1,
                 explanation: "La bradycardie de plong\u00e9e des mammif\u00e8res marins est l'une des plus extr\u00eames du r\u00e8gne animal. Chez le phoque de Weddell, le c\u0153ur peut passer de 150 \u00e0 seulement 4 battements par minute \u2014 une r\u00e9duction de 97%. La vasoconstriction est si intense que le lard et les membres fonctionnent en ana\u00e9robie, accumulant de l'acide lactique \u00e9limin\u00e9 progressivement apr\u00e8s la remont\u00e9e.",
                 source: "Centre de Physiologie Plongée Marine - Le flux sanguin se concentre sur les organes vitaux."
@@ -4738,7 +4933,7 @@ const quizzesData = {
             {
                 id: 57,
                 question: "Quel est le rôle de la monocouche pulmonaire chez les cétacés plongeurs ?",
-                options: ["Captage efficace de l'oxygène", "Extraction d'oxygène maximale avec échange contre-courant", "Stockage du dioxyde de carbone", "Régulation de la pression"],
+                options: ["Captage efficace de l'oxygène", "Extraction d'oxygène maximale avec échange", "Stockage du dioxyde de carbone", "Régulation de la pression"],
                 correct: 1,
                 explanation: "Le 'rete mirabile' \u2014 un r\u00e9seau de capillaires \u00e0 contre-courant dans les nageoires et la queue \u2014 permet aux c\u00e9tac\u00e9s de r\u00e9cup\u00e9rer la chaleur du sang veineux froid revenant des extr\u00e9mit\u00e9s. Dans les poumons, un syst\u00e8me similaire optimise les \u00e9changes gazeux. Cette architecture vasculaire en contre-courant est un chef-d'\u0153uvre d'ing\u00e9nierie biologique convergent avec les syst\u00e8mes des oiseaux migrateurs.",
                 source: "Institut de Physiologie Respiratoire Marine - L'échange contre-courant maximise l'oxygène."
@@ -4754,7 +4949,7 @@ const quizzesData = {
             {
                 id: 59,
                 question: "Quel est le rôle des moustaches (vibrisses) chez les pinnipèdes marins ?",
-                options: ["Décoration", "Détection sensorielle du champ électrique et vibrations", "Régulation thermique", "Reproduction"],
+                options: ["Décoration", "Détection sensorielle", "Régulation thermique", "Reproduction"],
                 correct: 1,
                 explanation: "Des exp\u00e9riences ont montr\u00e9 que des phoques les yeux band\u00e9s et les oreilles bouch\u00e9es pouvaient suivre le sillage hydrodynamique d'un poisson-mod\u00e8le tir\u00e9 par un bateau 30 secondes plus t\u00f4t, uniquement gr\u00e2ce \u00e0 leurs vibrisses. Chaque vibrisse est reli\u00e9e \u00e0 un champ r\u00e9cepteur d\u00e9di\u00e9 dans le cortex somesth\u00e9sique \u2014 la repr\u00e9sentation c\u00e9r\u00e9brale des vibrisses est aussi \u00e9labor\u00e9e que celle de la main humaine.",
                 source: "Institut de Sensorimotricité Marine - Les vibrisses détectent les vibrations."
@@ -4762,7 +4957,7 @@ const quizzesData = {
             {
                 id: 60,
                 question: "Quel est le mécanisme du stockage d'oxygène chez les cachalots ?",
-                options: ["Poumons à très grande capacité totale représentant 12% du volume corporel contre 7% chez l'humain", "Myoglobine musculaire et oxyhémoglobine concentrées", "Rate hypertrophiée libérant un bolus d'érythrocytes supplémentaires lors du début de la plongée", "Respiration cutanée partielle via une peau très vascularisée absorbant l'oxygène dissous dans l'eau froide"],
+                options: ["Poumons à très grande capacité totale représentant 12% du volume corporel contre 7% chez l'humain", "Myoglobine musculaire et oxyhémoglobine concentrées", "Rate hypertrophiée libérant un bolus d'érythrocytes supplémentaires lors du début de la plongée", "Respiration cutanée partielle via une peau très vascularisée absorbant l'oxygène dissous dans l'eau"],
                 correct: 1,
                 explanation: "Le cachalot est le champion du stockage d'oxyg\u00e8ne. Sa concentration en myoglobine est 10-30 fois sup\u00e9rieure \u00e0 celle des mammif\u00e8res terrestres. Sa rate peut stocker jusqu'\u00e0 24 litres de sang oxyg\u00e9n\u00e9 (contre 1 litre chez l'humain) et le lib\u00e9rer au d\u00e9but d'une plong\u00e9e. Son volume sanguin total de 2 500 litres lui permet de plonger \u00e0 3 000 m\u00e8tres pendant 90 minutes.",
                 source: "Institut d'Adaptation Plongée - Stockage massif d'oxygène."
@@ -4770,7 +4965,7 @@ const quizzesData = {
             {
                 id: 61,
                 question: "Quel est le processus de la 'thermorégulation comportementale' chez les pinnipèdes ?",
-                options: ["Maintien d'une température constante grâce à une couche de graisse sous-cutanée de plus de 30 cm", "Hauling out (sortie de l'eau) pour se réchauffer", "Immersion totale permanente dans les eaux profondes et froides pour optimiser la conductivité thermique", "Absence de besoin thermorégulateur grâce à un métabolisme de base 4 fois supérieur aux mammifères terrestres"],
+                options: ["Maintien d'une température constante grâce à une couche de graisse sous-cutanée de plus de 30 cm", "Hauling out (sortie de l'eau) pour se réchauffer", "Immersion totale permanente dans les eaux profondes et froides pour optimiser la conductivité", "Absence de besoin thermorégulateur grâce à un métabolisme de base 4 fois supérieur aux mammifères"],
                 correct: 1,
                 explanation: "Le 'hauling out' \u2014 sortie de l'eau pour se reposer sur rochers, plages ou glaces \u2014 est un comportement thermoR\u00e9gulateur cl\u00e9 chez les pinniped\u00e8s. L'eau conduit la chaleur 25 fois mieux que l'air, donc sortir de l'eau est bien plus efficace pour r\u00e9chauffer le corps. Les \u00e9l\u00e9phants de mer forment des piles compactes pour se r\u00e9chauffer mutuellement lors des mues annuelles.",
                 source: "Institut d'Écologie Comportementale Marine - Thermorégulation adaptée."
@@ -4794,7 +4989,12 @@ const quizzesData = {
             {
                 id: 64,
                 question: "Quel est le processus de l'apprentissage culturel chez les orques ?",
-                options: ["Pas d'apprentissage", "Transmission intergénérationnelle de techniques de chasse", "Instinctif seulement", "Apprentissage individuel"],
+                options: [
+                "Pas d'apprentissage",
+                "Transmission intergénérationnel",
+                "Instinctif seulement",
+                "Apprentissage individuel"
+            ],
                 correct: 1,
                 explanation: "Les orques pratiquent un vrai apprentissage culturel. Les techniques de 'wave washing' (cr\u00e9er des vagues pour faire tomber des phoques de banquises) ou d'\u00e9chouage intentionnel pour capturer des lions de mer ne sont pas inn\u00e9es \u2014 elles sont enseign\u00e9es par les m\u00e8res \u00e0 leurs petits. Ces techniques varient d'une population \u00e0 l'autre, prouvant leur transmission culturelle et non g\u00e9n\u00e9tique.",
                 source: "Université d'Ethnologie Cétacée - Cultures sociales transmises."
@@ -4883,16 +5083,16 @@ const quizzesData = {
             {
                 id: 1,
                 question: "Quel est le poids moyen d'un lion mâle ?",
-                options: ["100-150 kg, comparable à un grand léopard mâle en pleine forme", "150-200 kg, soit un poids proche de celui d'une tigresse adulte d'Asie", "200-250 kg", "250-300 kg, notamment chez les lions des savanes d'Afrique orientale"],
+                options: ["100-150 kg", "150-200 kg", "200-250 kg", "250-300 kg"],
                 correct: 2,
                 explanation: "Un lion mâle adulte pèse en moyenne 200 à 250 kilogrammes, avec une longueur totale pouvant dépasser 2,5 mètres. Les femelles sont plus légères, pesant 130 à 180 kg. Cette taille massive leur permet de dominer leur environnement.",
                 source: "National Geographic - Le lion mâle pèse environ 200-250 kg.",
-                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Lion_waiting_in_Namibia.jpg/800px-Lion_waiting_in_Namibia.jpg"
+                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/020_The_lion_king_Snyggve_in_the_Serengeti_National_Park_Photo_by_Giles_Laurent.jpg/960px-020_The_lion_king_Snyggve_in_the_Serengeti_National_Park_Photo_by_Giles_Laurent.jpg"
             },
             {
                 id: 2,
                 question: "Quel est le rugissement du lion utilisé pour ?",
-                options: ["Attirer les femelles en période de reproduction et signaler sa disponibilité aux lionnes proches", "Marquer le territoire et communiquer", "Coordonner les attaques de chasse et déstabiliser les proies par la peur avant l'assaut", "Avertir les membres de la fierté d'un danger imminent comme l'approche d'hyènes rivales"],
+                options: ["Attirer les femelles en période de reproduction et signaler sa disponibilité aux", "Marquer le territoire et communiquer", "Coordonner les attaques de chasse et déstabiliser les proies par la peur avant", "Avertir les membres de la fierté d'un danger imminent comme l'approche d'hyènes"],
                 correct: 1,
                 explanation: "Le rugissement du lion est une forme de communication puissante. Il peut porter jusqu'à 10 kilomètres et sert à marquer le territoire, appeler les autres lions et déclarer sa force. Les lions rugissent surtout au crépuscule et à l'aube.",
                 source: "Institut d'Éthologie Féline - Le rugissement porte jusqu'à 10 km."
@@ -4900,7 +5100,7 @@ const quizzesData = {
             {
                 id: 3,
                 question: "Quelle est la principale nourriture du lion ?",
-                options: ["Les fruits et tubercules, complétés occasionnellement par des charognes dans la savane", "La viande - gnus, zèbres, antilopes", "Les poissons des rivières et lacs africains, chassés à l'affût comme certains félins d'Asie", "Les petits mammifères et reptiles, capturés lors de chasses nocturnes solitaires"],
+                options: ["Les fruits et tubercules", "La viande - gnus, zèbres, antilopes", "Les poissons des rivières et lacs africains", "Les petits mammifères et reptiles"],
                 correct: 1,
                 explanation: "Le lion est un carnivore strict et un prédateur féroce. Il chasse principalement les gnus, zèbres, antilopes et buffles. Un lion peut consommer jusqu'à 40 kilos de viande en un seul repas et peut rester des semaines sans manger.",
                 source: "Centre de Recherche Africaine - Le lion est carnivore strict."
@@ -4908,7 +5108,7 @@ const quizzesData = {
             {
                 id: 4,
                 question: "À quel âge un lion mâle développe-t-il sa crinière ?",
-                options: ["Dès 1 an, la crinière est déjà bien visible et commence à couvrir les épaules du jeune mâle", "Entre 2 et 3 ans, lorsque les premières hormones sexuelles stimulent la croissance des poils", "À 3-5 ans", "Seulement après 6 ou 7 ans, une fois le mâle établi dans sa propre fierté"],
+                options: ["Dès 1 an", "Entre 2 et 3 ans", "À 3-5 ans", "Seulement après 6 ou 7"],
                 correct: 2,
                 explanation: "La crini\u00e8re du lion m\u00e2le commence \u00e0 appara\u00eetre vers 1 an, mais atteint son d\u00e9veloppement complet entre 3 et 5 ans. Sa couleur et sa densit\u00e9 sont des indicateurs d'\u00e2ge et de sant\u00e9 : une crini\u00e8re sombre et fournie signale un m\u00e2le en bonne condition physique et aux taux de testost\u00e9rone \u00e9lev\u00e9s, ce qui le rend plus attractif aux femelles.",
                 source: "Société de Zoologie - La crinière se développe progressivement."
@@ -4916,7 +5116,7 @@ const quizzesData = {
             {
                 id: 5,
                 question: "Combien d'heures par jour un lion dort-il ?",
-                options: ["4 à 6 heures par jour, car il reste actif et en alerte la majeure partie du temps pour surveiller son territoire", "8 à 10 heures par jour, alternant courtes siestes et longues périodes de surveillance active de la fierté", "15-20 heures", "Environ 22 heures sur 24, ne se réveillant que pour boire et se nourrir lors des chasses"],
+                options: ["4 à 6 heures par jour", "8 à 10 heures par jour", "15-20 heures", "Environ 22 heures sur 24"],
                 correct: 2,
                 explanation: "Le lion est l'un des mammif\u00e8res les plus s\u00e9dentaires : il dort et se repose 15 \u00e0 20 heures par jour pour conserver son \u00e9nergie dans la chaleur africaine. Cette inactivit\u00e9 apparente cache une strat\u00e9gie de survie efficace \u2014 la chasse demande des pointes d'effort intense, et \u00e9conomiser l'\u00e9nergie le reste du temps est essentiel dans un environnement o\u00f9 les proies se font parfois rares.",
                 source: "Institut d'Étude du Comportement - Le lion dort très longtemps."
@@ -4924,7 +5124,7 @@ const quizzesData = {
             {
                 id: 6,
                 question: "Quel est le rôle principal de la lionne dans la chasse ?",
-                options: ["Elle reste au camp pour surveiller et protéger les lionceaux pendant que le mâle chasse seul", "Elle chasse activement en groupe", "Elle traque ses proies seule en utilisant la végétation comme couvert, à la manière d'un léopard", "Elle se charge uniquement de rabattre les proies, laissant le mâle effectuer la mise à mort finale"],
+                options: ["Elle reste au camp pour surveiller et protéger les lionceaux pendant que le", "Elle chasse activement en groupe", "Elle traque ses proies seule en utilisant la végétation comme couvert", "Elle se charge uniquement de rabattre les proies"],
                 correct: 1,
                 explanation: "Les lionnes effectuent pr\u00e8s de 90% des chasses de la fierté, g\u00e9n\u00e9ralement en groupe de 2 \u00e0 8 individus. Elles coordonnent leurs attaques avec des r\u00f4les d\u00e9finis : certaines rabattent les proies tandis que d'autres encerclent. Les m\u00e2les profitent souvent du r\u00e9sultat de la chasse sans y participer, bien que leur pr\u00e9sence puisse aussi intimider d'autres pr\u00e9dateurs pour prot\u00e9ger la carcasse.",
                 source: "Centre de Recherche Africain - Les lionnes font 90% des chasses."
@@ -4984,16 +5184,21 @@ const quizzesData = {
             {
                 id: 11,
                 question: "Quel est le rôle de la crinière chez le lion mâle ?",
-                options: ["Uniquement décoration", "Thermorégulation, protection et démonstration de statut", "Camouflage", "Attraction de proies"],
+                options: [
+                "Uniquement décoration",
+                "Thermorégulation",
+                "Camouflage",
+                "Attraction de proies"
+            ],
                 correct: 1,
                 explanation: "La crini\u00e8re du lion m\u00e2le est un signal multifonctionnel. Elle prot\u00e8ge le cou lors des combats entre m\u00e2les. Elle est aussi un indicateur de condition physique : les femelles pr\u00e9f\u00e8rent les m\u00e2les \u00e0 crini\u00e8re sombre et fournie (signe de taux de testost\u00e9rone \u00e9lev\u00e9). Des exp\u00e9riences au Kenya ont montr\u00e9 que des m\u00e2les \u00e0 crini\u00e8re color\u00e9e (artificielle) attiraient plus de femelles et intimidaient mieux les rivaux.",
                 source: "Institut d'Éthologie - La crinière remplit plusieurs fonctions.",
-                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Male_Lion_on_His_Throne.jpg/800px-Male_Lion_on_His_Throne.jpg"
+                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/020_The_lion_king_Snyggve_in_the_Serengeti_National_Park_Photo_by_Giles_Laurent.jpg/960px-020_The_lion_king_Snyggve_in_the_Serengeti_National_Park_Photo_by_Giles_Laurent.jpg"
             },
             {
                 id: 12,
                 question: "Quelle est la taille du territoire d'une fierté de lions ?",
-                options: ["Quelques km²", "10-20 km²", "50-100 km² selon l'habitat", "150+ km²"],
+                options: ["Quelques km²", "10-20 km²", "50-100 km² selon", "150+ km²"],
                 correct: 2,
                 explanation: "Le territoire d'une fierté varie de 20 \u00e0 400 km\u00b2 selon la disponibilit\u00e9 des proies et la qualit\u00e9 de l'habitat. Dans le Serengeti riche en proies, les territoires sont plus petits. Les lions d\u00e9limitent leur domaine par des rugissements port\u00e9s \u00e0 10 km, des marquages urinaires et des griffures sur les arbres. Les fronti\u00e8res sont d\u00e9fendues activement, parfois jusqu'\u00e0 la mort, contre les fiertés rivales.",
                 source: "Centre de Recherche Territoriale - Territoire très vaste."
@@ -5009,7 +5214,7 @@ const quizzesData = {
             {
                 id: 14,
                 question: "Quel est le nombre moyen de lions dans une fierté ?",
-                options: ["3-5 lions", "5-15 lions selon conditions", "15-20 lions", "20+ lions"],
+                options: ["3-5 lions", "5-15 lions selon", "15-20 lions", "20+ lions"],
                 correct: 1,
                 explanation: "Une fierté de lions comprend typiquement 10 \u00e0 15 individus : une majorit\u00e9 de femelles li\u00e9es g\u00e9n\u00e9tiquement, leurs lionceaux, et 1 \u00e0 3 m\u00e2les (souvent des fr\u00e8res ou coalitions). C'est la seule esp\u00e8ce de f\u00e9lid\u00e9s \u00e0 vivre en groupe social stable. Certaines fiertés atteignent 30 individus dans des zones tr\u00e8s riches en proies comme le Serengeti.",
                 source: "Centre d'Écologie - Taille variable de la fierté."
@@ -5017,7 +5222,7 @@ const quizzesData = {
             {
                 id: 15,
                 question: "Quel est le processus de prise de pouvoir chez les mâles lions ?",
-                options: ["Succédant automatique", "Combats violents entre mâles pour domination", "Succession générationnelle", "Lotterie"],
+                options: ["Succédant automatique", "Combats violents", "Succession générationnelle", "Lotterie"],
                 correct: 1,
                 explanation: "Les m\u00e2les prennent le contr\u00f4le d'une fierté apr\u00e8s avoir chass\u00e9 les m\u00e2les r\u00e9sidents lors de combats qui peuvent \u00eatre fatals. La premi\u00e8re action des nouveaux dominants est souvent d'\u00e9liminer tous les lionceaux (infanticide), ce qui acc\u00e9l\u00e8re le retour en chaleur des femelles. Un m\u00e2le dominant garde le contr\u00f4le en moyenne 2 \u00e0 3 ans avant d'\u00eatre \u00e0 son tour renvers\u00e9.",
                 source: "Institut d'Éthologie Sociale - Compétition intense."
@@ -5041,7 +5246,12 @@ const quizzesData = {
             {
                 id: 18,
                 question: "À quel âge un lionceau commence-t-il à chasser ?",
-                options: ["À 3-4 mois", "À 6-8 mois", "À 12-18 mois selon l'apprentissage", "À 2+ ans"],
+                options: [
+                "À 3-4 mois",
+                "À 6-8 mois",
+                "À 12-18 mois selon",
+                "À 2+ ans"
+            ],
                 correct: 2,
                 explanation: "Les lionceaux commencent \u00e0 accompagner les adultes \u00e0 la chasse vers 6-8 mois, d'abord en observateurs. Ils font leurs premi\u00e8res tentatives maladroites vers 12-18 mois. La ma\u00eetrise compl\u00e8te de la chasse prend 3 \u00e0 4 ans. Cet apprentissage long est crucial : les lions sans comp\u00e9tences de chasse ont du mal \u00e0 survivre \u00e0 l'\u00e2ge adulte, surtout lors de la p\u00e9riode nomade.",
                 source: "Centre d'Apprentissage - Éducation progressive."
@@ -5049,7 +5259,7 @@ const quizzesData = {
             {
                 id: 19,
                 question: "Quel est le record de distance parcourue par un lion en migration ?",
-                options: ["Quelques km", "50-100 km", "200-300 km selon saisons", "500+ km"],
+                options: ["Quelques km", "50-100 km", "200-300 km selon", "500+ km"],
                 correct: 2,
                 explanation: "Les lions ont g\u00e9n\u00e9ralement un mode de vie s\u00e9dentaire li\u00e9 \u00e0 un territoire fixe. Cependant, ils peuvent parcourir 20 \u00e0 30 km par nuit en cherchant des proies. Dans certains \u00e9cosyst\u00e8mes comme le Serengeti, ils suivent partiellement les migrations de gnu sur des centaines de kilom\u00e8tres. Des individus expuls\u00e9s ont \u00e9t\u00e9 suivis sur 300 km \u00e0 la recherche d'une fierté \u00e0 conqu\u00e9rir.",
                 source: "Institut d'Écologie Migratoire - Déplacements saisonniers."
@@ -5057,7 +5267,7 @@ const quizzesData = {
             {
                 id: 20,
                 question: "Quel est l'âge moyen de vie d'un lion en nature ?",
-                options: ["8-10 ans", "10-14 ans", "14-20 ans selon conditions", "20+ ans"],
+                options: ["8-10 ans", "10-14 ans", "14-20 ans selon", "20+ ans"],
                 correct: 1,
                 explanation: "En libert\u00e9, les lions vivent en moyenne 10 \u00e0 14 ans. Les m\u00e2les vivent souvent moins longtemps que les femelles car les combats pour les fiertés sont fr\u00e9quents et mortels. En captivit\u00e9, ils peuvent atteindre 20 ans. La population sauvage a chut\u00e9 de 90% en un si\u00e8cle \u2014 de 200 000 individus au d\u00e9but du 20\u00e8me si\u00e8cle \u00e0 environ 20 000 \u00e0 25 000 aujourd'hui, class\u00e9 esp\u00e8ce vuln\u00e9rable par l'UICN.",
                 source: "Centre de Longévité - Durée de vie naturelle courte."
@@ -5085,7 +5295,7 @@ const quizzesData = {
             {
                 id: 21,
                 question: "Quel est le mécanisme du 'coalitional male' chez les lions ?",
-                options: ["Compétition exclusive entre frères issus de la même portée sans alliance possible avec des étrangers", "Mâles s'unissent pour renverser les dominants", "Maintien de la dominance solitaire par un seul mâle pendant toute sa vie reproductive de 10 à 15 ans", "Hiérarchie déterminée uniquement par le combat singulier sans possibilité d'entraide entre rivaux"],
+                options: ["Compétition exclusive entre frères issus de la même portée sans alliance possible avec des", "Mâles s'unissent pour renverser les dominants", "Maintien de la dominance solitaire par un seul mâle pendant toute sa vie reproductive de 10 à 15", "Hiérarchie déterminée uniquement par le combat singulier sans possibilité d'entraide entre"],
                 correct: 1,
                 explanation: "Les coalitions de m\u00e2les lions (g\u00e9n\u00e9ralement des fr\u00e8res ou demi-fr\u00e8res) sont bien plus efficaces que les m\u00e2les solitaires pour conqu\u00e9rir et maintenir le contr\u00f4le d'une fierté. Les coalitions de 3-4 m\u00e2les r\u00e8gnent en moyenne 4 ans contre 2 ans pour un m\u00e2le seul. Cette coop\u00e9ration entre apparent\u00e9s est un exemple de s\u00e9lection de parent\u00e8le : aider ses fr\u00e8res \u00e0 se reproduire propage indirectement ses propres g\u00e8nes.",
                 source: "Institut d'Éthologie Sociale - Stratégie complexe de coalition."
@@ -5101,7 +5311,7 @@ const quizzesData = {
             {
                 id: 23,
                 question: "Quel est le processus de la 'synchronisation des chaleurs' chez les lionnes ?",
-                options: ["Ovulation individuelle déclenchée par le comportement de cour du mâle dominant du groupe", "Femelles en groupe synchronisent cycles reproductifs", "Cycles reproductifs déterminés uniquement par la disponibilité des ressources alimentaires du territoire", "Reproduction individuelle désynchronisée pour étaler les naissances et réduire la compétition entre mères"],
+                options: ["Ovulation individuelle déclenchée par le comportement de cour du mâle dominant du groupe", "Femelles en groupe synchronisent cycles reproductifs", "Cycles reproductifs déterminés uniquement par la disponibilité des ressources alimentaires du territoire", "Reproduction individuelle désynchronisée pour étaler les naissances et réduire la compétition entre"],
                 correct: 1,
                 explanation: "La synchronisation des chaleurs est un ph\u00e9nom\u00e8ne remarquable dans les fiertés. Les femelles du m\u00eame groupe se retrouvent fr\u00e9quemment en chaleur en m\u00eame temps, ce qui m\u00e8ne \u00e0 des naissances quasi-simultan\u00e9es. Cela permet l'allaitement collectif (une femelle peut allaiter les lionceaux d'une autre), augmente la survie des petits, et cr\u00e9e une coh\u00e9sion sociale plus forte dans la fierté.",
                 source: "Institut de Biologie Reproductive - Phéromones sociales."
@@ -5117,7 +5327,7 @@ const quizzesData = {
             {
                 id: 25,
                 question: "Quel est le rôle du 'infantile behaviour' prolongé chez les lionceaux ?",
-                options: ["Immaturité physiologique prolongée liée à une gestation courte comparée aux autres grands félins", "Apprentissage et lien social avec la mère", "Retard de développement des glandes lacrymales rendant l'ouverture des yeux impossible avant 6 semaines", "Absence de musculature développée dans les membres postérieurs empêchant la marche avant 3 mois"],
+                options: ["Immaturité physiologique prolongée liée à une gestation courte comparée aux autres grands", "Apprentissage et lien social avec la mère", "Retard de développement des glandes lacrymales rendant l'ouverture des yeux impossible avant 6", "Absence de musculature développée dans les membres postérieurs empêchant la marche avant 3"],
                 correct: 1,
                 explanation: "Le comportement infantile prolong\u00e9 chez les lionceaux leur permet d'apprendre les comp\u00e9tences de chasse, les dynamiques sociales de la fierté et les techniques de survie. La p\u00e9riode de d\u00e9pendance longue (jusqu'\u00e0 18-24 mois) est une strat\u00e9gie \u00e9volutive efficace : les grandes esp\u00e8ces intelligentes b\u00e9n\u00e9ficient d'une p\u00e9riode d'apprentissage prolong\u00e9e pour ma\u00eetriser des comportements complexes comme la chasse coop\u00e9rative.",
                 source: "Université d'Étude du Développement - Apprentissage prolongé."
@@ -5149,7 +5359,7 @@ const quizzesData = {
             {
                 id: 29,
                 question: "Quel est le mécanisme de la 'leonine density' dans les écosystèmes ?",
-                options: ["Présence des lions neutralisée par les comportements anti-prédateur des ongulés qui s'y adaptent rapidement", "Densité lions affecte structure écosystème proie", "Impact écologique limité aux proies directement chassées sans effet en cascade sur la végétation", "Équilibre prédateur-proie autorégulé par la disponibilité alimentaire sans effet sur la structure végétale"],
+                options: ["Présence des lions neutralisée par les comportements anti-prédateur des ongulés qui s'y adaptent", "Densité lions affecte structure écosystème proie", "Impact écologique limité aux proies directement chassées sans effet en cascade sur la végétation", "Équilibre prédateur-proie autorégulé par la disponibilité alimentaire sans effet sur la structure"],
                 correct: 1,
                 explanation: "Les lions sont des pr\u00e9dateurs apex qui structurent leurs \u00e9cosyst\u00e8mes via des 'cascades trophiques'. En r\u00e9gulant les populations de grands herbivores (gnu, z\u00e8bre, buffle), ils maintiennent l'\u00e9quilibre de la v\u00e9g\u00e9tation. L\u00e0 o\u00f9 les lions ont \u00e9t\u00e9 \u00e9limin\u00e9s, les populations de proies explosent et sur-p\u00e2turent les plaines, modifiant profond\u00e9ment le paysage. Ce ph\u00e9nom\u00e8ne de 'peur du pr\u00e9dateur' influence m\u00eame les comportements alimentaires des proies.",
                 source: "Institut d'Écologie Trophique - Keystone predator."
@@ -5157,7 +5367,7 @@ const quizzesData = {
             {
                 id: 30,
                 question: "Quel est le processus du 'sperm competition' chez les lions ?",
-                options: ["Monopole de fécondation assuré par le mâle dominant empêchant physiquement les autres mâles d'approcher", "Compétition du sperme lors d'accouplements multiples", "Fécondation garantie dès le premier accouplement sans nécessité de copulations répétées avec le même mâle", "Rivalité limitée aux combats de territoire sans composante biochimique dans la compétition reproductrice"],
+                options: ["Monopole de fécondation assuré par le mâle dominant empêchant physiquement les autres mâles d'approcher", "Compétition du sperme lors d'accouplements multiples", "Fécondation garantie dès le premier accouplement sans nécessité de copulations répétées avec le même", "Rivalité limitée aux combats de territoire sans composante biochimique dans la compétition reproductrice"],
                 correct: 1,
                 explanation: "Chez les lions, plusieurs m\u00e2les d'une coalition s'accouplent avec les m\u00eames femelles, cr\u00e9ant une comp\u00e9tition entre spermatozo\u00efdes. L'accouplement est tr\u00e8s fr\u00e9quent (jusqu'\u00e0 100 fois en 24h pendant l'\u0153strus) mais dure seulement 20-30 secondes. Cette fr\u00e9quence extr\u00eame maximise les chances de conception. Les m\u00e2les \u00e0 crini\u00e8re plus sombre produisent davantage de spermatozo\u00efdes de meilleure qualit\u00e9, renfor\u00e7ant l'avantage reproducteur des individus en bonne condition.",
                 source: "Université de Biologie Reproductive - Reproduction polyandre."
@@ -5198,16 +5408,16 @@ const quizzesData = {
             {
                 id: 1,
                 question: "Quel est l'envergure d'un aigle royal ?",
-                options: ["1,5-2 mètres, soit une envergure proche du faucon pélerin ou de la bondrée apivore", "2-2,5 mètres, comparable à l'envergure du balbuzard pêcheur ou du milan royal", "2,3-2,8 mètres", "3+ mètres, une valeur que seuls les grands albatros et certains vautours des Andes atteignent"],
+                options: ["1,5-2 mètres, soit une envergure", "2 à 2,5 mètres de longueur", "2,3-2,8 mètres", "3+ mètres"],
                 correct: 2,
                 explanation: "L'aigle royal possède une envergure remarquable de 2,3 à 2,8 mètres. Cela en fait l'un des plus grands aigles d'Europe. Cette grande envergure lui permet de planer sans effort pendant de longues périodes et de chercher des proies sur de vastes territoires.",
                 source: "National Geographic - L'envergure peut atteindre 2,8 mètres.",
-                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Aquila_chrysaetos_-_06.jpg/800px-Aquila_chrysaetos_-_06.jpg"
+                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/015_Wild_Golden_Eagle_in_flight_at_Pfyn-Finges_%28Switzerland%29_Photo_by_Giles_Laurent.jpg/960px-015_Wild_Golden_Eagle_in_flight_at_Pfyn-Finges_%28Switzerland%29_Photo_by_Giles_Laurent.jpg"
             },
             {
                 id: 2,
                 question: "À quelle vitesse un aigle royal peut-il voler en piqué ?",
-                options: ["100 km/h, vitesse maximale en vol horizontal soutenu lors des longues patrouilles territoriales", "150 km/h, performance enregistrée lors des poursuites rasantes au-dessus des alpages en été", "200 km/h, valeur documentée pour l'aigle de Bonelli lors d'attaques en piqué incliné sur ses proies", "240+ km/h"],
+                options: ["100 km/h", "150 km/h", "200 km/h", "240+ km/h"],
                 correct: 3,
                 explanation: "L'aigle royal peut atteindre une vitesse de 240 km/h ou plus en piqé (plongeon vertical), ce qui le rend extrêmement rapide. Cette vitesse foudroyante lui permet d'attraper des préda-teurs en fuite. C'est bien moins rapide que le faucon pélerin mais impressionnant néanmoins.",
                 source: "Institut d'Ornithologie - Piqués extrêmement rapides."
@@ -5215,7 +5425,7 @@ const quizzesData = {
             {
                 id: 3,
                 question: "Quel est l'animal préféré de chasse de l'aigle royal ?",
-                options: ["Les lapins uniquement, en particulier le lapin de garenne dont les effectifs fluctuent fortement selon les années", "Les lièvres et lapins", "Les oiseaux de taille moyenne comme les lagopèdes, perdrix et gélinottes qui abondent en zone alpine", "Les poissons, capturés en piqué à la surface des lacs de montagne et des torrents glaciaires"],
+                options: ["Les lapins uniquement", "Les lièvres et lapins", "Les oiseaux de taille moyenne", "Les poissons"],
                 correct: 1,
                 explanation: "L'aigle royal chasse principalement les lièvres et les lapins. Ces petits mammifères constituent plus de 95% de son régime alimentaire. L'aigle royal est un chasseur spécialisé et passe des heures à planer pour détecter sa proie.",
                 source: "Centre de Recherche Cynégétique - Prédateur de rongeurs."
@@ -5223,7 +5433,7 @@ const quizzesData = {
             {
                 id: 4,
                 question: "À quelle distance un aigle royal peut-il voir une proie ?",
-                options: ["1 km, soit une acuité similaire à celle de la buse variable qui chasse également en milieu ouvert", "3 km", "5 km, distance documentée pour le faucon pèlerin grâce à sa fovéa centrale particulièrement dense", "10+ km, une capacité réservée aux vautours planant à très haute altitude sur les colonnes thermiques"],
+                options: ["1 km", "3 km", "5 km", "10+ km"],
                 correct: 2,
                 explanation: "La vision de l'aigle royal est l'une des plus per\u00e7antes du r\u00e8gne animal. Il peut rep\u00e9rer un lapin \u00e0 plus de 3 km de distance gr\u00e2ce \u00e0 une densit\u00e9 de c\u00f4nes r\u00e9tiniens 5 fois sup\u00e9rieure \u00e0 celle de l'humain. Ses deux fov\u00e9as (zones de vision maximale, contre une seule chez l'humain) lui permettent \u00e0 la fois une vision frontale pr\u00e9cise et une vision lat\u00e9rale large. Ses yeux, proportionnellement aussi grands que les n\u00f4tres, sont fix\u00e9s dans leurs orbites \u2014 il tourne la t\u00eate pour regarder.",
                 source: "Institut d'Ophtalmologie Aviaire - Vision exceptionnel."
@@ -5231,7 +5441,7 @@ const quizzesData = {
             {
                 id: 5,
                 question: "À quel âge les aigles royaux se reproduisent-ils pour la première fois ?",
-                options: ["À 2-3 ans, dès que le jeune a acquis son premier plumage de vol et maîtrisé les techniques de base", "À 4-5 ans, quand le plumage intermédiaire montre les premières plumes brun doré caractéristiques de l'adulte", "À 5-7 ans", "À 7+ ans, une fois que la fidélité territoriale est pleinement établie et le partenaire définitivement choisi"],
+                options: ["À 2-3 ans", "À 4-5 ans", "À 5-7 ans", "À 7+ ans"],
                 correct: 2,
                 explanation: "L'aigle royal est un oiseau \u00e0 maturit\u00e9 tardive. Les jeunes passent plusieurs ann\u00e9es \u00e0 errer et explorer avant de s'\u00e9tablir. La reproduction d\u00e9bute entre 5 et 7 ans, quand le couple a trouv\u00e9 un territoire et construit son nid. Cette longue p\u00e9riode de jeunesse est n\u00e9cessaire pour acqu\u00e9rir les techniques de chasse complexes et la connaissance du territoire indispensables \u00e0 un \u00e9levage r\u00e9ussi.",
                 source: "Centre d'Études Reproductrices - Maturation tardive."
@@ -5239,7 +5449,7 @@ const quizzesData = {
             {
                 id: 6,
                 question: "Combien de temps dure l'incubation des œufs d'aigle royal ?",
-                options: ["15 jours, durée correspondant à certains petits passereaux comme le moineau domestique dont le cycle d'incubation est très court", "25-30 jours, durée proche de celle de la buse variable ou de la crécerelle, deux rapaces de taille nettement inférieure à l'aigle royal", "40-45 jours", "60+ jours, durée qu'on observe chez certains grands albatros dont les œufs nécessitent une incubation exceptionnellement prolongée en milieu pélagique"],
+                options: ["15 jours", "25-30 jours", "40-45 jours", "60+ jours"],
                 correct: 2,
                 explanation: "L'incubation des \u0153ufs d'aigle royal dure 40 \u00e0 45 jours, assur\u00e9e principalement par la femelle mais aussi par le m\u00e2le. Pendant cette p\u00e9riode, la femelle quitte rarement le nid. Le m\u00e2le apporte de la nourriture et prend le relais pour l'incubation quelques heures par jour. La temp\u00e9rature des \u0153ufs est maintenue \u00e0 37-38\u00b0C gr\u00e2ce \u00e0 la plaque incubatrice, une zone d\u00e9plum\u00e9e sur l'abdomen de l'oiseau riche en vaisseaux sanguins.",
                 source: "Institut d'Ornithologie - Incubation longue."
@@ -5247,7 +5457,7 @@ const quizzesData = {
             {
                 id: 7,
                 question: "Combien d'œufs pond généralement une aigle royale ?",
-                options: ["1-2 œufs, comme chez les grands rapaces solitaires tel le condor des Andes qui ne pond qu'un seul œuf par cycle en raison de l'investissement parental très lourd", "2-3 œufs", "3-4 œufs, une ponte proche de celle des buses variables ou des éperviers d'Europe qui élèvent plusieurs poussins simultanément", "4+ œufs, couvée comparable à celle des rapaces diurnes de taille moyenne comme la crécerelle dans les bonnes années"],
+                options: ["1-2 œufs", "2-3 œufs", "3-4 œufs", "4+ œufs"],
                 correct: 1,
                 explanation: "L'aigle royale pond g\u00e9n\u00e9ralement 1 \u00e0 3 \u0153ufs (2 en moyenne), \u00e0 intervalle de 3 \u00e0 4 jours. Les \u0153ufs mesurent environ 7 cm et p\u00e8sent 130 g. Fait crucial : l'incubation commence d\u00e8s le premier \u0153uf, ce qui cr\u00e9e un d\u00e9calage d'\u00e2ge entre les aiglons. L'a\u00een\u00e9 \u00e9clot 3 \u00e0 4 jours avant le cadet, lui donnant un avantage de taille qui m\u00e8nera souvent au cainsme (fratricide).",
                 source: "Centre d'Étude Reproductive - Petit nombre de jeunes."
@@ -5255,7 +5465,7 @@ const quizzesData = {
             {
                 id: 8,
                 question: "À quel âge un aiglon quitte le nid ?",
-                options: ["6-8 semaines, délai observé chez les buses et milans qui s'envolent plus tôt grâce à un développement musculaire rapide et un poids corporel nettement inférieur", "8-12 semaines, durée caractéristique du faucon pèlerin dont les poussins quittent le nid après 35 à 42 jours de croissance intensive sur leurs falaises", "12-16 semaines", "16+ semaines, période valable pour le vautour fauve ou le condor de Californie dont les poussins restent au nid près de 4 à 5 mois"],
+                options: ["6-8 semaines", "8-12 semaines", "12-16 semaines", "16+ semaines"],
                 correct: 2,
                 explanation: "Les aiglons quittent le nid (envol ou 'fledging') \u00e0 10 \u00e0 13 semaines apr\u00e8s l'\u00e9closion. Mais le d\u00e9part du nid ne signifie pas l'ind\u00e9pendance : pendant encore 3 \u00e0 6 mois, les jeunes restent dans le territoire parental, nourris par leurs parents le temps de ma\u00eetriser le vol et la chasse. La chasse ind\u00e9pendante n'est efficace qu'apr\u00e8s 6 \u00e0 12 mois d'apprentissage.",
                 source: "Institut d'Ornithologie Appliquée - Envol tardif."
@@ -5263,7 +5473,7 @@ const quizzesData = {
             {
                 id: 9,
                 question: "Quel est le poids moyen d'une aigle royale femelle ?",
-                options: ["2-3 kg, masse comparable à celle d'une buse variable adulte ou d'un faucon pèlerin femelle, deux rapaces de taille nettement plus modeste", "3-4 kg, gabarit proche de l'aigle de Bonelli femelle ou du circaète Jean-le-Blanc, qui sont des aigles de taille intermédiaire", "4-6 kg", "6+ kg, poids que l'on rencontre chez les grands vautours comme le gypaète barbu ou chez l'aigle de mer eurasien, nettement plus massif"],
+                options: ["2-3 kg", "3-4 kg", "4-6 kg", "6+ kg"],
                 correct: 2,
                 explanation: "La femelle aigle royal est nettement plus grande que le m\u00e2le : elle p\u00e8se 3,6 \u00e0 6,7 kg contre 2,8 \u00e0 4,6 kg pour le m\u00e2le. Ce dimorphisme sexuel invers\u00e9 (la femelle plus grande) est typique des rapaces. Les th\u00e9ories l'expliquent par la n\u00e9cessit\u00e9 pour la femelle de jeûner sur le nid pendant l'incubation (r\u00e9serves \u00e9nerg\u00e9tiques plus importantes) et de d\u00e9fendre le nid contre les pr\u00e9dateurs.",
                 source: "Centre de Zoologie - Les femelles sont plus lourdes."
@@ -5271,7 +5481,7 @@ const quizzesData = {
             {
                 id: 10,
                 question: "Quel est l'habitat préféré de l'aigle royal ?",
-                options: ["Forêts denses de conifères et de feuillus, habitat de prédilection de l'autour des palombes ou de l'épervier d'Europe qui chassent à couvert", "Montagnes et falaises", "Zones urbaines et périurbaines riches en pigeons et petits mammifères, exploitées par la buse variable ou le faucon crécerelle en milieu anthropisé", "Déserts et steppes arides à végétation rase, milieux similaires à ceux occupés par l'aigle des steppes ou l'aigle impérial en Asie centrale"],
+                options: ["Forêts denses de conifères et de feuillus", "Montagnes et falaises", "Zones urbaines et périurbaines riches en pigeons", "Déserts et steppes arides à végétation rase"],
                 correct: 1,
                 explanation: "L'aigle royal est avant tout un habitant des milieux ouverts montagnards : alpages, landes, falaises rocheuses et bordures de for\u00eats. Il a besoin de falaises ou de grands arbres pour nicher, d'espaces ouverts pour chasser et de reliefs favorisant les courants thermiques pour planer. En Europe, il colonise les Alpes, les Pyrénées, les Highlands \u00e9cossais et l'Atlas. Il s'adapte aussi aux plaines semi-arides de l'Asie centrale.",
                 source: "Institut d'Écologie - Préférence pour montagnes."
@@ -5279,7 +5489,7 @@ const quizzesData = {
             {
                 id: 11,
                 question: "Combien de serres possède un aigle royal ?",
-                options: ["2 serres par patte, comme chez le balbuzard pêcheur dont les doigts en anneau sont adaptés à saisir des poissons glissants sans les lâcher en vol", "4 serres", "8 serres par patte, configuration qui rappelle les membres de certains reptiles à griffes multiples et permettrait en théorie une prise plus large sur de grosses proies", "Plus de 10 serres au total, comme chez certains mammifères fouisseurs tels le blaireau ou la taupe dont chaque patte porte 5 griffes robustes pour creuser"],
+                options: ["2 serres par patte", "4 serres", "8 serres par patte", "Plus de 10 serres au"],
                 correct: 1,
                 explanation: "L'aigle royal poss\u00e8de 4 serres (griffes) sur chaque patte, comme tous les oiseaux de proie. L'halux (serre arri\u00e8re, la plus longue) est particulièrement d\u00e9velopp\u00e9 et joue le r\u00f4le principal dans la capture. La force de pression des serres est estim\u00e9e \u00e0 15-20 fois celle de l'humain. Cette puissance permet de transpercer la col\u00f4te vertébrale de proies comme les lièvres ou les renards en une fraction de seconde, causant une mort quasi instantan\u00e9e.",
                 source: "Institut d'Anatomie Aviaire - 4 serres par patte."
@@ -5303,7 +5513,7 @@ const quizzesData = {
             {
                 id: 14,
                 question: "Quel est le nombre de nids qu'une aigle royale peut construire ?",
-                options: ["1 seul nid", "2-3 nids alternatifs", "5+ nids", "Un nouveau chaque année"],
+                options: ["1 seul nid", "2-3 nids alternatifs", "5+ nids", "Un nouveau chaque"],
                 correct: 1,
                 explanation: "Un couple d'aigles royaux construit et entretient g\u00e9n\u00e9ralement 2 \u00e0 8 nids alternatifs (aires) dans son territoire, utilis\u00e9s en rotation selon les ann\u00e9es. Ces aires, plac\u00e9es sur des vires de falaises ou dans de grands arbres, sont agrandies chaque ann\u00e9e : certaines atteignent 2 m\u00e8tres de diam\u00e8tre et 1 m\u00e8tre de hauteur apr\u00e8s des d\u00e9cennies d'utilisation, pesant parfois plusieurs centaines de kilos.",
                 source: "Centre de Nidification - Réutilisation préférée."
@@ -5311,7 +5521,7 @@ const quizzesData = {
             {
                 id: 15,
                 question: "Quel est l'aliment principal des aigles royaux jeunes ?",
-                options: ["Poisson", "Insectes", "Proies apportées par parents", "Plantes"],
+                options: ["Poisson", "Insectes", "Proies apportées", "Plantes"],
                 correct: 2,
                 explanation: "Les aiglons sont nid\u00e9icoles : ils naissent aveugles, couverts d'un duvet blanc, et totalement d\u00e9pendants de leurs parents. Le m\u00e2le chasse et rapporte les proies au nid. La femelle d\u00e9coupe la viande en petits morceaux et les distribue d\u00e9licatement aux aiglons. Au fur et \u00e0 mesure qu'ils grandissent, les parents rapportent des proies enti\u00e8res pour les inciter \u00e0 d\u00e9pouiller et \u00e0 d\u00e9chirer par eux-m\u00eames.",
                 source: "Institut d'Élevage - Régime parental."
@@ -5387,7 +5597,7 @@ const quizzesData = {
             {
                 id: 12,
                 question: "Quel est le mécanisme de la parade aérienne nuptiale ?",
-                options: ["Offrandes alimentaires répétées permettant à la femelle d'évaluer les capacités de chasse du mâle", "Piqués et loopings spectaculaires pour séduction", "Démonstration de territoire par des survols prolongés à très basse altitude au-dessus du futur site de nid", "Chants mélodieux complexes émis depuis les points culminants du territoire pour attirer la femelle"],
+                options: ["Offrandes alimentaires répétées permettant à la femelle d'évaluer les capacités de chasse du", "Piqués et loopings spectaculaires pour séduction", "Démonstration de territoire par des survols prolongés à très basse altitude au-dessus du futur site de", "Chants mélodieux complexes émis depuis les points culminants du territoire pour attirer la"],
                 correct: 1,
                 explanation: "La parade nuptiale de l'aigle royal est l'un des spectacles les plus impressionnants de la faune europ\u00e9enne. Les deux partenaires effectuent une s\u00e9rie de piqués vertigineux, loopings et remontées en chandelle au-dessus du territoire, parfois en se touchant les serres. Cette parade, appel\u00e9e 'sky dance' ou 'roller-coasting', peut durer plusieurs heures et se d\u00e9roule surtout de janvier \u00e0 mars, avant la ponte.",
                 source: "Institut d'Éthologie Reproductrice - Affichages élaborés."
@@ -5403,7 +5613,7 @@ const quizzesData = {
             {
                 id: 14,
                 question: "Quel est le temps moyen de vie d'un aigle royal ?",
-                options: ["10-15 ans", "20-30 ans", "30-50 ans selon conditions", "50+ ans"],
+                options: ["10-15 ans", "20-30 ans", "30-50 ans selon", "50+ ans"],
                 correct: 2,
                 explanation: "L'aigle royal est parmi les oiseaux les plus longévifs. En captivit\u00e9, des individus ont atteint 46 ans. En libert\u00e9, la longévit\u00e9 moyenne est de 20-30 ans. Le record en nature est de 32 ans. Cette longévité est li\u00e9e \u00e0 leur position de pr\u00e9dateur apex (peu de pr\u00e9dateurs), \u00e0 leur fidélit\u00e9 territoriale (connaissance approfondie de leur milieu) et \u00e0 la solidit\u00e9 du lien de couple qui optimise le succ\u00e8s reproducteur.",
                 source: "Institut de Longévité - Longévité remarquable."
@@ -5411,7 +5621,7 @@ const quizzesData = {
             {
                 id: 15,
                 question: "Quel est le rôle du 'kleptoparasitism' chez l'aigle royal ?",
-                options: ["Technique de chasse coopérative où les deux partenaires rabattent les proies vers une zone commune", "Vol de proies à d'autres rapaces", "Signal de communication inter-individuel permettant la coordination des patrouilles territoriales", "Défense du territoire contre les grands rapaces concurrents par des démonstrations aériennes ostentatoires"],
+                options: ["Technique de chasse coopérative où les deux partenaires rabattent les", "Vol de proies à d'autres rapaces", "Signal de communication inter-individuel permettant la coordination des", "Défense du territoire contre les grands rapaces concurrents par des"],
                 correct: 1,
                 explanation: "Le klepto-parasitisme (vol de nourriture) est un comportement observ\u00e9 chez l'aigle royal, bien que moins fr\u00e9quent que chez l'aigle de mer. Il peut harceler des buses, des corneilles ou des faucons p\u00e8lerins jusqu'\u00e0 ce qu'ils l\u00e2chent leur proie. Ironiquement, l'aigle royal est lui-m\u00eame victime de klepto-parasitisme de la part de l'aigle de mer en Scandinavie, qui est plus grand et plus agressif.",
                 source: "Institut d'Éthologie Alimentaire - Stratégie prédatrice."
@@ -5419,7 +5629,12 @@ const quizzesData = {
             {
                 id: 16,
                 question: "À quelle altitudine l'aigle royal peut-il chasser ?",
-                options: ["Jusqu'à 1000m", "Jusqu'à 2000m", "Jusqu'à 5000m ou plus selon proie", "Jusqu'à 10000m"],
+                options: [
+                "Jusqu'à 1000m",
+                "Jusqu'à 2000m",
+                "Jusqu'à 5000m ou pl",
+                "Jusqu'à 10000m"
+            ],
                 correct: 2,
                 explanation: "L'aigle royal chasse \u00e0 des altitudes tr\u00e8s variables selon la saison et les proies. En \u00e9t\u00e9, il chasse en alpages jusqu'\u00e0 3 000-4 000 m\u00e8tres o\u00f9 les marmottes et chamois sont abondants. En hiver, il descend dans les vallées \u00e0 500-1 000 m\u00e8tres o\u00f9 les li\u00e8vres, renards et cha-rognes sont plus accessibles. Cette flexibilit\u00e9 altitudinale lui permet d'exploiter des ressources tr\u00e8s diverses tout au long de l'ann\u00e9e.",
                 source: "Centre de Recherche Altitudinale - Chasseur montagnard."
@@ -5427,7 +5642,7 @@ const quizzesData = {
             {
                 id: 17,
                 question: "Quel est le processus de transmission des techniques de chasse ?",
-                options: ["Instinctif uniquement", "Instinct + apprentissage parental précoce", "Apprentissage tardif", "Pas d'apprentissage"],
+                options: ["Instinctif uniquement", "Instinct + apprentissage parental", "Apprentissage tardif", "Pas d'apprentissage"],
                 correct: 1,
                 explanation: "Les techniques de chasse de l'aigle royal sont en partie inn\u00e9es (r\u00e9flexe de saisir des objets mobiles) mais surtout acquises par apprentissage. Les parents \u00e9duquent leurs jeunes en apportant d'abord des proies mortes, puis vivantes et \u00e9tourdies. Les jeunes observent la technique parentale et s'exercent \u00e0 attraper des proies faciles pendant la p\u00e9riode post-envol. La ma\u00eetrise compl\u00e8te de la chasse n\u00e9cessite 1 \u00e0 2 ans apr\u00e8s l'ind\u00e9pendance.",
                 source: "Institut d'Éthologie - Éducation parentale.",
@@ -5436,7 +5651,12 @@ const quizzesData = {
             {
                 id: 18,
                 question: "À quel âge un aiglon peut-il voler correctement ?",
-                options: ["À 8-10 semaines", "À 12-14 semaines", "À 14-16 semaines selon l'individu", "À 18+ semaines"],
+                options: [
+                "À 8-10 semaines",
+                "À 12-14 semaines",
+                "À 14-16 semaines sel",
+                "À 18+ semaines"
+            ],
                 correct: 2,
                 explanation: "Les aiglons effectuent leurs premiers vols \u00e0 10-13 semaines, mais ne volent vraiment bien qu'\u00e0 14-16 semaines. Les premi\u00e8res sorties sont courtes et maladroites, avec des atterrissages difficiles. La ma\u00eetrise des techniques de vol (thermiques, piqués, manœuvres) prend plusieurs mois. Pendant toute cette p\u00e9riode, les parents continuent de nourrir les jeunes et les 'encouragent' \u00e0 chasser en r\u00e9duisant progressivement leurs apports alimentaires.",
                 source: "Centre d'Ornithologie - Envol progressif et délicat."
@@ -5452,7 +5672,7 @@ const quizzesData = {
             {
                 id: 20,
                 question: "Quel est l'impact de la force d'un aigle royal ?",
-                options: ["Faible", "Peut soulever 4-5 kg de poids", "Peut soulever plus de 8kg", "Force sans limites"],
+                options: ["Faible", "Peut soulever", "Peut soulever plus de", "Force sans limites"],
                 correct: 1,
                 explanation: "La force de l'aigle royal est impressionnante mais souvent exag\u00e9r\u00e9e dans les l\u00e9gendes. En r\u00e9alit\u00e9, il peut soulever et transporter des proies de 3 \u00e0 5 kg en vol (environ son propre poids). Pour les proies plus lourdes (renard, jeune chevreuil de 8-10 kg), il les d\u00e9coupe sur place ou les tra\u00eene sur le sol. La pression de ses serres peut atteindre 300-400 kg/cm\u00b2, suffisante pour briser la col\u00f4ne vert\u00e9brale d'un lièvre.",
                 source: "Centre de Biomécanique - Force relative."
@@ -5468,7 +5688,12 @@ const quizzesData = {
             {
                 id: 22,
                 question: "À quel âge un aiglon devient-il autonome en vol ?",
-                options: ["À 2-3 mois", "À 4-5 mois selon l'entraînement", "À 6 mois", "À 8+ mois"],
+                options: [
+                "À 2-3 mois",
+                "À 4-5 mois selon l'",
+                "À 6 mois",
+                "À 8+ mois"
+            ],
                 correct: 1,
                 explanation: "L'ind\u00e9pendance compl\u00e8te en vol se d\u00e9veloppe progressivement apr\u00e8s l'envol (10-13 semaines). \u00c0 4-5 mois, le jeune aigle ma\u00eetrise les vols basiques mais manque encore d'efficacit\u00e9 en chasse. Les parents continuent \u00e0 subvenir \u00e0 ses besoins jusqu'\u00e0 6-10 mois apr\u00e8s l'envol. C'est seulement apr\u00e8s cette longue p\u00e9riode d'\u00e9mancipation que le jeune part d\u00e9finitivement \u00e0 la d\u00e9couverte de nouveaux territoires.",
                 source: "Centre d'Ornithologie - Autonomie progressive."
@@ -5484,7 +5709,12 @@ const quizzesData = {
             {
                 id: 24,
                 question: "Quel est le nombre moyen de chasses réussies par semaine ?",
-                options: ["1-2 chasses", "3-4 chasses", "5-7 chasses selon disponibilité", "10+ chasses"],
+                options: [
+                "1-2 chasses",
+                "3-4 chasses",
+                "5-7 chasses selon d",
+                "10+ chasses"
+            ],
                 correct: 1,
                 explanation: "L'aigle royal est un chasseur efficace mais pas quotidien. Il chasse en moyenne 3 \u00e0 4 fois par semaine, capturant des proies suffisamment grosses pour ne pas avoir \u00e0 chasser chaque jour. Un lièvre de 2 kg nourrit l'aigle pendant 2-3 jours. L'aigle compense sa faible fr\u00e9quence de chasse par une efficacit\u00e9 \u00e9lev\u00e9e (taux de succ\u00e8s de 20-30%) rendue possible par sa vision exceptionnelle et sa ma\u00eetrise des tactiques de chasse.",
                 source: "Centre d'Étude Prédatrice - Fréquence modérée."
@@ -5492,7 +5722,12 @@ const quizzesData = {
             {
                 id: 25,
                 question: "À quel âge les jeunes aigles quittent définitivement le nid parental ?",
-                options: ["À 3-4 mois", "À 6-8 mois", "À 10-12 mois selon apprentissage", "À 18+ mois"],
+                options: [
+                "À 3-4 mois",
+                "À 6-8 mois",
+                "À 10-12 mois selon",
+                "À 18+ mois"
+            ],
                 correct: 2,
                 explanation: "Apr\u00e8s l'envol (10-13 semaines), les jeunes aigles restent d\u00e9pendants des parents pendant encore 6 \u00e0 10 mois. Ils quittent d\u00e9finitivement le territoire natal entre 10 et 14 mois pour partir explorer. Certains jeunes restent \u00e0 proximit\u00e9 du territoire parental si des ressources sont disponibles. La dispersion d\u00e9finitive est d\u00e9clench\u00e9e par l'agressivit\u00e9 croissante des parents qui pr\u00e9parent la prochaine saison de reproduction.",
                 source: "Institut d'Éthologie Familiale - Dépendance longue."
@@ -5508,7 +5743,7 @@ const quizzesData = {
             {
                 id: 27,
                 question: "À quel âge un aigle royal atteint-il pleine maturité reproductrice ?",
-                options: ["À 3 ans", "À 4-5 ans", "À 5-7 ans selon l'individu", "À 7+ ans"],
+                options: ["À 3 ans", "À 4-5 ans", "À 5-7 ans selon", "À 7+ ans"],
                 correct: 2,
                 explanation: "La maturit\u00e9 reproductrice de l'aigle royal co\u00efncide avec l'acquisition du plumage adulte, vers 5-7 ans. Mais \u00eatre sexuellement mature ne suffit pas : les jeunes doivent aussi \u00e9tablir un territoire et trouver un partenaire. Dans les populations denses, les bons territoires sont occup\u00e9s par des adultes \u00e9tablis, for\u00e7ant les jeunes \u00e0 errer comme 'flottants' pendant plusieurs ann\u00e9es suppl\u00e9mentaires en attendant qu'une place se lib\u00e8re.",
                 source: "Centre de Reproduction - Maturation tardive."
@@ -5516,7 +5751,7 @@ const quizzesData = {
             {
                 id: 28,
                 question: "Quel est le nombre moyen de mues par année chez l'aigle royal ?",
-                options: ["1 mue complète", "2 mues", "Mue progressive tout l'année", "3 mues"],
+                options: ["1 mue complète", "2 mues", "Mue progressive", "3 mues"],
                 correct: 2,
                 explanation: "L'aigle royal mue progressivement tout au long de l'ann\u00e9e, ne changeant que quelques plumes \u00e0 la fois pour maintenir toujours sa capacit\u00e9 de vol. La mue compl\u00e8te prend 2 \u00e0 3 ans chez les adultes. Ce processus lent est une adaptation aux exigences \u00e9nerg\u00e9tiques du vol : perdre trop de plumes simultan\u00e9ment d\u00e9graderait dangereusement les performances a\u00e9rodynamiques. Chez les jeunes, la mue est plus intense et visible car elle accompagne le passage au plumage adulte.",
                 source: "Institut d'Ornithologie - Renouvellement constant."
@@ -5532,7 +5767,12 @@ const quizzesData = {
             {
                 id: 30,
                 question: "À quel niveau d'intensité un aigle royal attaque-t-il sa proie ?",
-                options: ["Attaque faible", "Piqué à 200+ km/h avec serre en formation", "Approche lente", "Combat aérien"],
+                options: [
+                "Attaque faible",
+                "Piqué à 200+ km/h a",
+                "Approche lente",
+                "Combat aérien"
+            ],
                 correct: 1,
                 explanation: "La chasse de l'aigle royal combine vision hors pair et attaque explosive. Apr\u00e8s avoir rep\u00e9r\u00e9 une proie en vol plané, il effectue un piqué inclin\u00e9 \u00e0 150-200 km/h, les ailes semi-closes. \u00c0 quelques m\u00e8tres de la proie, il d\u00e9ploie les pattes en avant, serres ouvertes. L'impact est brutal : les serres transpercent les organes vitaux et la force du choc peut briser la col\u00f4ne vert\u00e9brale. Proie et oiseau roulent souvent sur plusieurs m\u00e8tres \u00e0 l'impact.",
                 source: "Centre de Biomécanique - Attaque spectaculaire."
@@ -5576,7 +5816,7 @@ const quizzesData = {
             {
                 id: 23,
                 question: "Quel est le rôle du 'Cainism' (fratricide) chez les aigles royaux ?",
-                options: ["Compétition vocale où l'aiglonneau le plus bruyant accapare la nourriture sans agression physique directe", "Aîné tue cadet pour monopoliser nourriture", "Différenciation des rôles permettant à chaque aiglonneau d'exploiter une ressource alimentaire distincte", "Partage équitable régulé par les parents qui surveillent l'apport et redistributent en cas d'inégalité"],
+                options: ["Compétition vocale où l'aiglonneau le plus bruyant accapare la nourriture sans agression physique", "Aîné tue cadet pour monopoliser nourriture", "Différenciation des rôles permettant à chaque aiglonneau d'exploiter une ressource alimentaire", "Partage équitable régulé par les parents qui surveillent l'apport et redistributent en cas"],
                 correct: 1,
                 explanation: "Le ca\u00efnisme est un ph\u00e9nom\u00e8ne adaptatif : les parents pondent deux \u0153ufs comme 'assurance' en cas de mort du premier \u0153uf ou de l'a\u00een\u00e9 en bas \u00e2ge. Une fois l'a\u00een\u00e9 bien \u00e9tabli, le cadet devient superflu. Les ressources alimentaires des Alpes ne permettent g\u00e9n\u00e9ralement pas d'\u00e9lever deux aiglons simultan\u00e9ment. Ce sacrifice programm\u00e9 du cadet est donc une strat\u00e9gie reproductrice efficace qui maximise le succ\u00e8s de l'a\u00een\u00e9.",
                 source: "Institut d'Éthologie Familiale - Compétition sibling."
@@ -5584,7 +5824,12 @@ const quizzesData = {
             {
                 id: 24,
                 question: "Quel est le mécanisme de détection des proies chez l'aigle royal ?",
-                options: ["Vision uniquement", "Vision et capteurs thermiques limitées", "Odorat exacerbé", "Audition seulement"],
+                options: [
+                "Vision uniquement",
+                "Vision et capteurs ther",
+                "Odorat exacerbé",
+                "Audition seulement"
+            ],
                 correct: 0,
                 explanation: "La d\u00e9tection des proies par l'aigle royal repose principalement sur la vision, mais aussi sur d'autres sens. Sa vue ultraviolette lui permet de d\u00e9tecter les pistes urinaires des rongeurs (l'urine des campagnols r\u00e9fl\u00e9chit les UV). Son ou\u00efe, orient\u00e9e vers l'avant par la forme concave de son disque facial, amplifie les sons du sol. L'odorat joue un r\u00f4le mineur, mais l'aigle peut d\u00e9tecter des charognes \u00e0 courte distance par l'odeur de d\u00e9composition.",
                 source: "Institut d'Ophtalmologie - Principalement visuelle."
@@ -5592,7 +5837,7 @@ const quizzesData = {
             {
                 id: 25,
                 question: "Quel est le processus de territorialité chez les aigles royaux ?",
-                options: ["Tolérance des intrus tant qu'ils ne s'approchent pas du site de nidification actif pendant la saison", "Défense active du territoire par actes aériens", "Délimitation par dépôt de fientes sur les rochers marquant les limites sans confrontation directe", "Abandon du territoire à tout concurrent plus grand sans résistance pour éviter les blessures mortelles"],
+                options: ["Tolérance des intrus tant qu'ils ne s'approchent pas du site de nidification actif pendant la", "Défense active du territoire par actes aériens", "Délimitation par dépôt de fientes sur les rochers marquant les limites sans confrontation", "Abandon du territoire à tout concurrent plus grand sans résistance pour éviter les blessures"],
                 correct: 1,
                 explanation: "La territorialit\u00e9 de l'aigle royal est multimodale. La d\u00e9fense primaire est a\u00e9rienne : les r\u00e9sidents d\u00e9collent \u00e0 vue d'un intrus et le pourchassent en piqués mena\u00e7ants jusqu'\u00e0 la fronti\u00e8re du territoire. Les survols r\u00e9guliers ('boundary patrols') servent \u00e0 surveiller et afficher la possession. Les cris et les parrades au-dessus du nid signalent l'occupation. Les confrontations physiques sont rares mais peuvent causer des blessures graves.",
                 source: "Institut d'Éthologie Territoriale - Démonstration élaborée."
@@ -5608,7 +5853,7 @@ const quizzesData = {
             {
                 id: 27,
                 question: "Quel est le mécanisme du 'inverse sexual size dimorphism' ?",
-                options: ["Taille identique entre mâles et femelles, le dimorphisme étant uniquement visible dans la coloration du plumage", "Femelles plus grandes pour rôle reproducteur", "Mâles significativement plus grands avec une envergure supérieure de 20% pour les combats territoriaux", "Dimorphisme inversé selon les saisons, les femelles dominant en été et les mâles en hiver"],
+                options: ["Taille identique entre mâles et femelles", "Femelles plus grandes pour rôle reproducteur", "Mâles significativement plus grands avec une envergure supérieure de 20% pour les combats", "Dimorphisme inversé selon les saisons"],
                 correct: 1,
                 explanation: "Le dimorphisme sexuel invers\u00e9 (femelle 25-30% plus grande) chez les rapaces est expliqu\u00e9 par plusieurs th\u00e9ories. La principale : les femelles plus grandes supportent mieux le je\u00fbne lors de l'incubation (3-6 semaines sur le nid). Une autre : la diff\u00e9rence de taille r\u00e9duit la comp\u00e9tition alimentaire entre partenaires, leur permettant de chasser des proies de tailles diff\u00e9rentes. La femelle \u00e9tant plus grande peut aussi mieux d\u00e9fendre le nid et les jeunes contre les pr\u00e9dateurs.",
                 source: "Université de Zoologie Comparative - Évolution adaptative."
@@ -5616,7 +5861,7 @@ const quizzesData = {
             {
                 id: 28,
                 question: "Quel est le processus de la 'philopatry' chez les jeunes aigles ?",
-                options: ["Dispersion systématique loin du site natal pour éviter la consanguinité et coloniser de nouveaux territoires", "Tendance à retourner au site natal pour reproduction", "Errance continue sans site préférentiel, le choix de nidification étant dicté uniquement par la disponibilité", "Retour au site natal uniquement en cas d'échec reproducteur ailleurs, servant de territoire de repli"],
+                options: ["Dispersion systématique loin du site natal pour éviter la consanguinité et coloniser de nouveaux", "Tendance à retourner au site natal pour reproduction", "Errance continue sans site préférentiel", "Retour au site natal uniquement en cas d'échec reproducteur ailleurs, servant de territoire de repli"],
                 correct: 1,
                 explanation: "La philopatrie natale de l'aigle royal est tr\u00e8s prononc\u00e9e, surtout chez les femelles. Des \u00e9tudes de baguage ont montr\u00e9 que de nombreux jeunes \u00e9tablis leur territoire \u00e0 quelques kilom\u00e8tres seulement de leur lieu de naissance. Les m\u00e2les se dispersent un peu plus loin. Ce comportement favorise l'adaptation locale : les aigles \u00e9lev\u00e9s dans les Alpes connaissent instinctivement et par apprentissage les ressources sp\u00e9cifiques de cet environnement.",
                 source: "Institut d'Écologie Comportementale - Retour au bercail."
@@ -5624,7 +5869,7 @@ const quizzesData = {
             {
                 id: 29,
                 question: "Quel est le rôle des 'cliff ledges' dans la nidification ?",
-                options: ["Régulation de l'humidité interne du nid par absorption ou restitution hydrique selon les conditions météo", "Protection des nids contre prédateurs et intempéries", "Isolation thermique supplémentaire par emprisonnement d'une couche d'air dans les branchages accumulés", "Signal visuel indiquant aux prédateurs potentiels la taille et la dangerosité du propriétaire du nid"],
+                options: ["Régulation de l'humidité interne du nid par absorption ou restitution hydrique selon les conditions", "Protection des nids contre prédateurs et intempéries", "Isolation thermique supplémentaire par emprisonnement d'une couche d'air dans les branchages accumulés", "Signal visuel indiquant aux prédateurs potentiels la taille et la dangerosité du propriétaire du nid"],
                 correct: 1,
                 explanation: "Les vires de falaises sont l'habitat de nidification id\u00e9al de l'aigle royal. Ces corniches naturelles offrent une protection contre les pr\u00e9dateurs terrestres (renard, martre, ours) qui ne peuvent pas les atteindre. La roche surplombante prot\u00e8ge du vent, de la pluie et de la neige. La hauteur (souvent 100-500 m\u00e8tres au-dessus du sol) facilite aussi le d\u00e9collage. Ces sites exceptionnels sont utilis\u00e9s pendant des g\u00e9n\u00e9rations car ils sont extr\u00eamement rares.",
                 source: "Institut d'Écologie Nidification - Choix de site critique."
@@ -5632,7 +5877,12 @@ const quizzesData = {
             {
                 id: 30,
                 question: "Quel est le mécanisme de la 'adaptive foraging' face aux changements ?",
-                options: ["Pas d'adaptation", "Modification techniques chasse selon disponibilité proies", "Régime fixe", "Migration forcée"],
+                options: [
+                "Pas d'adaptation",
+                "Modification techniq",
+                "Régime fixe",
+                "Migration forcée"
+            ],
                 correct: 1,
                 explanation: "L'alimentation de l'aigle royal est opportuniste et s'adapte aux ressources disponibles selon les saisons. En \u00e9t\u00e9 alpin : marmottes, lagop\u00e8des, li\u00e8vres. En hiver : renards, charognes (chamois morts, ongul\u00e9s), ovins. Lors des ann\u00e9es \u00e0 fort d\u00e9clin de rongeurs, il se rabat sur les reptiles, petits oiseaux ou m\u00eame insectes (locust\u00e8s). Cette flexibilit\u00e9 alimentaire est cruciale pour survivre dans des environnements montagnards o\u00f9 les ressources sont variables.",
                 source: "Université d'Écologie Comportementale - Flexibilité adaptative."
@@ -5640,7 +5890,7 @@ const quizzesData = {
             {
                 id: 31,
                 question: "Quel est le processus de l'établissement du territoire chez les jeunes ?",
-                options: ["Héritage du territoire parental dès que les parents atteignent une taille critique insuffisante pour défendre", "Compétition pour sites de nidification disponibles", "Attribution par consensus entre individus matures sans confrontation physique directe", "Colonisation aléatoire des zones non défendues sans évaluation préalable de la qualité du site"],
+                options: ["Héritage du territoire parental dès que les parents atteignent une taille critique insuffisante pour", "Compétition pour sites de nidification disponibles", "Attribution par consensus entre individus matures sans confrontation physique directe", "Colonisation aléatoire des zones non défendues sans évaluation préalable de la qualité du site"],
                 correct: 1,
                 explanation: "Les jeunes aigles royaux sans territoire errent sur de vastes zones, parfois 500 \u00e0 1 000 km de leur lieu de naissance. Ils recherchent des espaces libres o\u00f9 les adultes sont absents. L'\u00e9tablissement du territoire passe par des p\u00e9riodes de prospection intensive, de confrontations avec les r\u00e9sidents et parfois d'attente que des adultes meurent ou abandonnent. Dans les populations bien \u00e9tablies, il peut falloir plusieurs ann\u00e9es avant de trouver un territoire disponible.",
                 source: "Institut d'Éthologie Territoriale - Compétition intense."
@@ -5648,7 +5898,7 @@ const quizzesData = {
             {
                 id: 32,
                 question: "Quel est le rôle du 'dynamic soaring' dans l'efficacité énergétique ?",
-                options: ["Exploitation des vents de versant en volant au ras des crêtes rocheuses pour maintenir l'altitude sans effort", "Utilisation de gradients de vent pour vol sans effort", "Vol battu continu avec période de glissé planifié permettant de récupérer entre deux phases de propulsion", "Utilisation des courants d'air froids descendants pour accélérer lors des descentes vers les proies"],
+                options: ["Exploitation des vents de versant en volant au ras des crêtes rocheuses pour maintenir l'altitude sans", "Utilisation de gradients de vent pour vol sans effort", "Vol battu continu avec période de glissé planifié permettant de récupérer entre deux phases de propulsion", "Utilisation des courants d'air froids descendants pour accélérer lors des descentes vers les proies"],
                 correct: 1,
                 explanation: "Le 'dynamic soaring' est une technique de vol utilis\u00e9e par l'aigle royal dans les environnements montagneux \u00e0 fort vent. Il exploite les gradients de vitesse du vent (plus fort en altitude, plus faible pr\u00e8s du sol) pour acc\u00e9l\u00e9rer sans battre des ailes : monter face au vent (qui le propulse vers le haut), se retourner avec le vent dans le dos (qui l'acc\u00e9l\u00e8re), puis redescendre. Les albatros sont les champions de cette technique mais l'aigle royal en ma\u00eetrise une version adapt\u00e9e aux reliefs.",
                 source: "Institut d'Aérodynamique - Technique de vol extrême."
@@ -5656,7 +5906,7 @@ const quizzesData = {
             {
                 id: 33,
                 question: "À quel niveau d'océan énergétique un aigle royal opère-t-il ?",
-                options: ["Faible", "Intermédiaire", "Haut niveau trophique comme apex predator montagnard", "Producteur primaire"],
+                options: ["Faible", "Intermédiaire", "Haut niveau", "Producteur primaire"],
                 correct: 2,
                 explanation: "L'aigle royal est le pr\u00e9dateur apex des \u00e9cosyst\u00e8mes montagnards. Il joue un r\u00f4le r\u00e9gulateur sur les populations de lièvres, marmottes, lagop\u00e8des et m\u00eame de renards. Sa pr\u00e9sence influence le comportement des proies (vigilance accrue, utilisation de l'habitat) cr\u00e9ant des 'cascades trophiques' similaires \u00e0 celles des loups. Quand l'aigle royal dispara\u00eet d'un secteur, les populations de rongeurs et lagomorphes peuvent exploser, modifiant la v\u00e9g\u00e9tation alpine.",
                 source: "Institut d'Écologie Trophique - Position écologique."
@@ -5664,7 +5914,7 @@ const quizzesData = {
             {
                 id: 34,
                 question: "Quel est le mécanisme du 'mate guarding' chez les aigles royaux ?",
-                options: ["Séparation des territoires de chasse des deux partenaires pour maximiser la surface couverte sans compétition", "Proximité constante du couple lors de reproduction", "Indépendance totale des deux partenaires pendant la période de couvaison pour optimiser la recherche de nourriture", "Surveillance du périmètre par le seul mâle pendant que la femelle couve en permanence sans jamais quitter les œufs"],
+                options: ["Séparation des territoires de chasse des deux partenaires pour maximiser la surface couverte sans", "Proximité constante du couple lors de reproduction", "Indépendance totale des deux partenaires pendant la période de couvaison pour optimiser la recherche de", "Surveillance du périmètre par le seul mâle pendant que la femelle couve en permanence sans jamais quitter les"],
                 correct: 1,
                 explanation: "Le 'mate guarding' chez l'aigle royal est subtil. Le m\u00e2le surveille sa partenaire surtout en p\u00e9riode f\u00e9conde (avant la ponte), restant \u00e0 proximit\u00e9 et pourchassant les m\u00e2les intrus. Mais la vraie protection est territoriale : en maintenant un territoire exclusif bien d\u00e9fendu, le couple s'assure qu'aucun m\u00e2le \u00e9tranger ne peut approcher la femelle. La fid\u00e9lit\u00e9 \u00e0 long terme du couple r\u00e9duit aussi le risque d'infid\u00e9lit\u00e9 extraconjugale.",
                 source: "Université de Biologie Reproductive - Stratégie paternelle."
@@ -5672,7 +5922,7 @@ const quizzesData = {
             {
                 id: 35,
                 question: "À quel âge un aigle royal femelle commence-t-elle à pondre ?",
-                options: ["À 3 ans", "À 4-5 ans selon maturité", "À 5-6 ans", "À 6+ ans"],
+                options: ["À 3 ans", "À 4-5 ans selon", "À 5-6 ans", "À 6+ ans"],
                 correct: 1,
                 explanation: "La femelle aigle royal commence \u00e0 pondre entre 4 et 7 ans, quand elle a acquis son plumage adulte et \u00e9tabli un territoire stable avec un partenaire. L'\u00e2ge de la premi\u00e8re ponte est li\u00e9 \u00e0 la disponibilit\u00e9 des territoires : dans les zones satur\u00e9es, les femelles peuvent attendre jusqu'\u00e0 8-9 ans. La premi\u00e8re saison de reproduction est souvent un \u00e9chec \u2014 les nouveaux couples manquent d'exp\u00e9rience et les premiers \u0153ufs sont souvent fertiles mais les aiglons ne survivent pas.",
                 source: "Centre de Biologie Reproductive - Maturité tardive."
@@ -5680,7 +5930,7 @@ const quizzesData = {
             {
                 id: 36,
                 question: "Quel est le processus de la 'sequential polyandry' absent chez les aigles ?",
-                options: ["Absent", "Femelles s'accouplent avec plusieurs mâles", "Monogamie stable", "Pas d'accouplements"],
+                options: ["Absent", "Femelles", "Monogamie stable", "Pas d'accouplements"],
                 correct: 1,
                 explanation: "L'aigle royal est strictement monogame et ne pratique pas la polyandrie s\u00e9quentielle. Le couple reste uni pour la vie dans la grande majorit\u00e9 des cas. Si un partenaire meurt, l'autre se retrouve seul et peut attirer un nouvel individu sur son territoire, parfois en quelques semaines. Des analyses g\u00e9n\u00e9tiques confirment un taux de fid\u00e9lit\u00e9 tr\u00e8s \u00e9lev\u00e9, avec tr\u00e8s peu de cas d'accouplement extra-couple. Cette monogamie stricte est li\u00e9e \u00e0 l'investissement parental massif que requi\u00e8re l'\u00e9levage des aiglons.",
                 source: "Université d'Écologie Comportementale - Monogamie exclusive."
@@ -5688,7 +5938,12 @@ const quizzesData = {
             {
                 id: 37,
                 question: "À quel niveau de précision l'aigle royal peut-il évaluer la proie ?",
-                options: ["Vue générale", "Détails fins permettant sélection précise de proies", "Pas d'évaluation", "Hasard complet"],
+                options: [
+                "Vue générale",
+                "Détails fins permett",
+                "Pas d'évaluation",
+                "Hasard complet"
+            ],
                 correct: 1,
                 explanation: "La pr\u00e9cision visuelle de l'aigle royal lui permet d'\u00e9valuer la condition physique de ses proies potentielles \u00e0 grande distance. Il cible pr\u00e9f\u00e9rentiellement les animaux malades, bless\u00e9s ou juvéniles qui pr\u00e9sentent des signaux subtils (d\u00e9marche anormale, fourrure terne, comportement h\u00e9sitant). Cette s\u00e9lection des proies vuln\u00e9rables joue un r\u00f4le sanitaire dans les populations de proies et explique l'efficacit\u00e9 relative \u00e9lev\u00e9e de ses chasses.",
                 source: "Institut d'Ophtalmologie - Acuité visuelle exceptionnelle."
@@ -5704,7 +5959,7 @@ const quizzesData = {
             {
                 id: 39,
                 question: "Quel est le mécanisme de l'acquisition des skills de chasse ?",
-                options: ["Complètement instinctif", "Instinct + apprentissage intensif avec parents", "Apprentissage tardif par imitation", "Pas d'apprentissage"],
+                options: ["Complètement instinctif", "Instinct et apprentissage intensif avec la mère", "Apprentissage tardif par imitation", "Pas d'apprentissage"],
                 correct: 1,
                 explanation: "L'acquisition des comp\u00e9tences de chasse chez l'aigle royal est un processus long et structur\u00e9. Les comportements de base (agripper, frapper) sont inn\u00e9s. Mais la technique pr\u00e9cise (approche, calcul de la trajectoire, choix de l'angle d'attaque) s'apprend par observation et pratique sur plusieurs ann\u00e9es. Des \u00e9tudes ont montr\u00e9 que les aiglons pratiquent leurs attaques sur des objets inanim\u00e9s (c\u00f4nes, branches) bien avant de chasser de vraies proies. L'efficacit\u00e9 compl\u00e8te n'est atteinte qu'apr\u00e8s 2-3 ans d'ind\u00e9pendance.",
                 source: "Institut d'Éthologie - Éducation progressive."
@@ -5712,7 +5967,7 @@ const quizzesData = {
             {
                 id: 40,
                 question: "À quel degré de complexité cognitive les aigles royaux opèrent-ils ?",
-                options: ["Niveau purement instinctif sans capacité d'apprentissage individuel au-delà des comportements génétiques", "Moyen avec reconnaissance et mémoire spatiale avancée", "Très bas comparé aux corvides, les rapaces étant limités aux comportements de chasse stéréotypés", "Cognition exclusive liée à la chasse sans capacité de résolution de problèmes en dehors du contexte prédatoire"],
+                options: ["Niveau purement instinctif sans capacité d'apprentissage individuel au-delà des comportements génétiques", "Moyen avec reconnaissance et mémoire spatiale avancée", "Très bas comparé aux corvides, les rapaces étant limités aux comportements de chasse stéréotypés", "Cognition exclusive liée à la chasse sans capacité de résolution de problèmes en dehors du contexte"],
                 correct: 1,
                 explanation: "La cognition de l'aigle royal est plus d\u00e9velopp\u00e9e qu'on ne le pensait. Des \u00e9tudes r\u00e9v\u00e8lent une m\u00e9moire spatiale exceptionnelle (il m\u00e9morise les sites de chasse productifs et les comportements des proies), une capacit\u00e9 de planification (il anticipe les trajets migratoires de ses proies) et m\u00eame une certaine flexibilit\u00e9 comportementale. Au Kazakhstan, des aigles royaux dress\u00e9s par des fauconniers executent des t\u00e2ches complexes, d\u00e9montrant des capacit\u00e9s d'apprentissage comparables \u00e0 celles des corvid\u00e9s.",
                 source: "Université de Neuroscience Aviaire - Cerveau développé."
@@ -5753,25 +6008,25 @@ const quizzesData = {
             {
                 id: 1,
                 question: "Quel est le poids moyen d'un tigre mâle ?",
-                options: ["100-150 kg, poids typique d'un lion femelle adulte d'Afrique orientale, bien en dessous de la réalité pour un tigre mâle", "150-200 kg, poids comparable à un ours brun adulte d'Europe centrale, insuffisant pour le plus grand félidé du monde", "200-260 kg selon la sous-espèce", "260+ kg en toute circonstance, dépassant les 300 kg même pour les sous-espèces les plus petites comme le tigre de Sumatra"],
+                options: ["100-150 kg", "150-200 kg", "200-260 kg selon la", "260+ kg en toute"],
                 correct: 2,
                 explanation: "Le tigre est le plus grand f\u00e9lid\u00e9 du monde. Le tigre de Sibérie (Amour) est le plus lourd : les m\u00e2les atteignent 200 \u00e0 300 kg et peuvent mesurer 3,7 m\u00e8tres de la t\u00eate \u00e0 la queue. Le tigre du Bengale, le plus r\u00e9pandu, p\u00e8se 175 \u00e0 260 kg. Cette masse imposante en fait un pr\u00e9dateur capable de s'attaquer \u00e0 des proies bien plus grosses que lui, comme le buffle d'eau ou le gaur.",
                 source: "National Geographic - Le tigre est le plus gros félin.",
-                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Walking_tiger_female.jpg/800px-Walking_tiger_female.jpg"
+                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Bengal_tiger_%28Panthera_tigris_tigris%29_female_3_crop.jpg/960px-Bengal_tiger_%28Panthera_tigris_tigris%29_female_3_crop.jpg"
             },
             {
                 id: 2,
                 question: "Quel est le rôle des rayures du tigre ?",
-                options: ["Uniquement décoration sans avantage adaptatif, comme chez certains animaux tropicaux dont les couleurs vives n'ont aucune fonction de survie documentée", "Camouflage dans la forêt et l'herbe haute", "Signal d'agressivité envers les congénères, fonctionnant comme un avertissement visuel pour repousser les rivaux avant tout combat physique", "Thermorégulation par absorption sélective de chaleur, les zones sombres absorbant plus d'énergie solaire pour maintenir la température corporelle"],
+                options: ["Uniquement décoration sans avantage adaptatif", "Camouflage dans la forêt et l'herbe haute", "Signal d'agressivité envers les congénères", "Thermorégulation par absorption sélective de chaleur"],
                 correct: 1,
                 explanation: "Les rayures verticales du tigre sont un chef-d'\u0153uvre d'adaptation. Elles brisent le contour de sa silhouette dans les for\u00eats dens\u00e9es et les hautes herbes, le rendant presque invisible \u00e0 quelques m\u00e8tres. Fait \u00e9tonnant : les rayures sont aussi dans la peau, pas seulement dans les poils. Chaque tigre a un motif de rayures unique, comme nos empreintes digitales.",
                 source: "Institut d'Écologie Camouflage - Pattern très efficace.",
-                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Tiger_in_Ranthambhore.jpg/800px-Tiger_in_Ranthambhore.jpg"
+                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Bengal_tiger_%28Panthera_tigris_tigris%29_female_3_crop.jpg/960px-Bengal_tiger_%28Panthera_tigris_tigris%29_female_3_crop.jpg"
             },
             {
                 id: 3,
                 question: "Quel est le régime alimentaire principal du tigre ?",
-                options: ["Fruits et plantes comme les pandas géants, complétés par des insectes et des racines selon les saisons et la disponibilité", "Viande - cerfs, sangliers, buffles", "Poisson uniquement, capturé à la manière des loutres en pataugeant dans les rivières peu profondes de la forêt tropicale", "Omnivore équilibré consommant autant de végétaux que de proies animales, selon la saison et la région géographique"],
+                options: ["Fruits et plantes comme les pandas", "Viande - cerfs, sangliers, buffles", "Poisson uniquement", "Omnivore équilibré consommant autant de végétaux"],
                 correct: 1,
                 explanation: "Le tigre est un carnivore strict qui chasse seul par embuscade. Il pr\u00e9f\u00e8re les grands herbivores : cerf axis, sambar, chital, sanglier et buffle d'eau. Un tigre adulte a besoin de 5 \u00e0 7 kg de viande par jour mais peut consommer jusqu'\u00e0 40 kg en une seule fois apr\u00e8s une chasse. Il peut ensuite rester sans manger plusieurs jours, recouvrant sa carcasse de feuilles pour la conserver.",
                 source: "Centre de Recherche Africaine - Carnivore strict."
@@ -5779,7 +6034,7 @@ const quizzesData = {
             {
                 id: 4,
                 question: "À quel âge les jeunes tigres deviennent-ils indépendants ?",
-                options: ["À 6 mois, dès que les canines poussent et que le tigreaun commence à consommer de la viande apportée par la mère", "À 1-2 ans, lorsque les jeunes pèsent déjà plus de 80 kg et suivent leur mère à la chasse sans aide directe", "À 2-3 ans selon l'apprentissage", "À 3-4 ans, après avoir maîtrisé la mise à mort de grandes proies comme le buffle d'eau ou le gaur"],
+                options: ["À 6 mois", "À 1-2 ans", "À 2-3 ans selon", "À 3-4 ans"],
                 correct: 2,
                 explanation: "Les jeunes tigres restent avec leur m\u00e8re 2 \u00e0 3 ans, p\u00e9riode pendant laquelle ils apprennent toutes les techniques de chasse. La tigresse leur enseigne d'abord en apportant des proies vivantes \u00e9tourdies, puis en les accompagnant \u00e0 la chasse. L'ind\u00e9pendance est progressive : les jeunes quittent le territoire maternel pour \u00e9tablir le leur, parfois \u00e0 des centaines de kilom\u00e8tres.",
                 source: "Institut d'Éthologie - Indépendance progressive."
@@ -5787,7 +6042,7 @@ const quizzesData = {
             {
                 id: 5,
                 question: "Quel est le nombre moyen de tigres dans une portée ?",
-                options: ["1-2 jeunes seulement, comme la plupart des grands félins solitaires limitant les portées pour maximiser les ressources allouées à chaque petit", "2-3 jeunes, nombre typique chez les léopards et pumas vivant dans des environnements à densité de proies modérée", "3-4 jeunes", "4+ jeunes systématiquement, chaque portée comptant cinq ou six tigreaux comme chez certains petits carnivores"],
+                options: ["1-2 jeunes seulement", "2-3 jeunes", "3-4 jeunes", "4+ jeunes systématiquement"],
                 correct: 2,
                 explanation: "Une port\u00e9e de tigre compte g\u00e9n\u00e9ralement 2 \u00e0 4 petits, parfois jusqu'\u00e0 6. Les tigreaux naissent aveugles et pesant 1 kg environ. Ils ouvrent les yeux vers 10 jours. La tigresse les \u00e9l\u00e8ve seule, sans aide du m\u00e2le. Le taux de survie est faible : en nature, seuls 30 \u00e0 50% atteignent l'\u00e2ge d'un an, victimes de la faim, des pr\u00e9dateurs ou des m\u00e2les \u00e9trangers.",
                 source: "Centre de Reproduction - Portées modérées."
@@ -5811,7 +6066,7 @@ const quizzesData = {
             {
                 id: 8,
                 question: "Quel est le habitat préféré du tigre ?",
-                options: ["Savane sèche", "Forêts denses et humides", "Montagne alpine", "Désert"],
+                options: ["Savane sèche", "Forêts denses", "Montagne alpine", "Désert"],
                 correct: 1,
                 explanation: "Le tigre est avant tout un animal des for\u00eats tropicales et subtropicales, mais il s'adapte \u00e0 des milieux tr\u00e8s divers : for\u00eats temp\u00e9r\u00e9es de Sib\u00e9rie, mangroves des Sundarbans (Bangladesh), jungles de l'Asie du Sud-Est. Il a besoin de couvert dense pour chasser par embuscade, d'eau (les tigres adorent nager) et d'une densit\u00e9 suffisante de proies.",
                 source: "Centre d'Écologie - Préférence pour jungles."
@@ -5827,7 +6082,7 @@ const quizzesData = {
             {
                 id: 10,
                 question: "Quel est le nombre de rayures sur un tigre en moyenne ?",
-                options: ["20-30 rayures", "40-60 rayures", "80-100 rayures selon individu", "Plus de 100"],
+                options: ["20-30 rayures", "40-60 rayures", "80-100 rayures selon", "Plus de 100"],
                 correct: 2,
                 explanation: "Un tigre poss\u00e8de en moyenne 100 rayures, mais ce nombre varie selon l'individu et la sous-esp\u00e8ce. Ces rayures sont verticales sur le corps et horizontales sur les pattes. Fait remarquable : les rayures se prolongent dans la peau, pas uniquement dans le pelage \u2014 un tigre ras\u00e9 reste ray\u00e9. Le motif est unique \u00e0 chaque individu, ce qui permet aux chercheurs d'identifier les tigres sur des cam\u00e9ras-pi\u00e8ges.",
                 source: "Institut d'Éthologie - Pattern unique par individu."
@@ -5835,7 +6090,7 @@ const quizzesData = {
             {
                 id: 11,
                 question: "Quel est le son produit par le tigre pour communiquer ?",
-                options: ["Rugissement uniquement", "Rugissement, chuffement et gazouillis", "Miaulement", "Silence complet"],
+                options: ["Rugissement uniquement", "Rugissement", "Miaulement", "Silence complet"],
                 correct: 1,
                 explanation: "Le tigre communique avec un r\u00e9pertoire sonore vari\u00e9. Son rugissement porte jusqu'\u00e0 3 km et sert \u00e0 d\u00e9fendre son territoire. Le 'prusten' ou 'chuffing' \u2014 un souffle rapide par les narines \u2014 est un salut amical entre individus. Les tigres utilisent aussi des grognements, feulements, grondements et m\u00eame un gazouillis (chattering) lorsqu'ils observent une proie hors de port\u00e9e.",
                 source: "Institut d'Acoustique Féline - Vocalisations variées."
@@ -5843,7 +6098,7 @@ const quizzesData = {
             {
                 id: 12,
                 question: "Quelle est la couleur des yeux du tigre ?",
-                options: ["Bleu", "Jaune/orange ambre selon l'individu", "Noir", "Gris"],
+                options: ["Bleu", "Jaune/orang", "Noir", "Gris"],
                 correct: 1,
                 explanation: "Les tigres ont des yeux jaunes \u00e0 ambre, adapt\u00e9s \u00e0 la chasse cr\u00e9pusculaire et nocturne. Leur vision nocturne est environ 6 fois sup\u00e9rieure \u00e0 celle de l'humain gr\u00e2ce \u00e0 un tapetum lucidum \u2014 une couche r\u00e9flectrice derri\u00e8re la r\u00e9tine qui amplifie la lumi\u00e8re disponible. En revanche, les tigres sont daltoniens pour le rouge, percevant le monde principalement en bleu, vert et jaune.",
                 source: "Institut d'Ophtalmologie Animale - Teinte variable."
@@ -5851,7 +6106,7 @@ const quizzesData = {
             {
                 id: 13,
                 question: "À quelle heure du jour le tigre chasse-t-il préférentiellement ?",
-                options: ["Tôt le matin juste après l'aube quand les proies reprennent leur activité et leur vigilance est réduite", "En milieu de journée profitant de la somnolence des proies épuisées par la chaleur équatoriale intense", "Soir et nuit", "En fin d'après-midi lors du pic d'activité des herbivores se rendant aux points d'eau pour boire"],
+                options: ["Tôt le matin juste après", "En milieu de journée", "Soir et nuit", "En fin d'après-midi"],
                 correct: 2,
                 explanation: "Le tigre est un chasseur principalement cr\u00e9pusculaire et nocturne. Il chasse surtout entre le coucher et le lever du soleil, profitant de son excellente vision dans l'obscurit\u00e9 pour avoir un avantage sur ses proies. Pendant la journ\u00e9e, il se repose \u00e0 l'ombre pour \u00e9viter la chaleur. Dans les zones fr\u00e9quent\u00e9es par l'humain, il adapte son comportement pour devenir encore plus nocturne.",
                 source: "Centre de Comportement Félin - Chasseur crépusculaire."
@@ -5859,7 +6114,7 @@ const quizzesData = {
             {
                 id: 14,
                 question: "Quel est le lifespan moyen d'un tigre en nature ?",
-                options: ["10-12 ans", "12-15 ans", "15-20 ans selon conditions", "20+ ans"],
+                options: ["10-12 ans", "12-15 ans", "15-20 ans selon", "20+ ans"],
                 correct: 1,
                 explanation: "En libert\u00e9, les tigres vivent en moyenne 10 \u00e0 15 ans. Les femelles vivent souvent plus longtemps que les m\u00e2les, qui s'exposent davantage lors des combats territoriaux. En captivit\u00e9, ils peuvent atteindre 20-25 ans. La population mondiale de tigres sauvages est estim\u00e9e \u00e0 environ 3 500-5 000 individus \u2014 une remonte encourageante depuis le plus bas historique de 3 200 en 2010, gr\u00e2ce aux efforts de conservation.",
                 source: "Institut de Longévité Animale - Durée de vie estimée."
@@ -5867,7 +6122,7 @@ const quizzesData = {
             {
                 id: 15,
                 question: "Quel est le nombre moyen de sous-espèces de tigres aujourd'hui vivantes ?",
-                options: ["2-3", "4-5", "6 sous-espèces", "10+"],
+                options: ["2-3", "4-5", "6 sous-e", "10+"],
                 correct: 2,
                 explanation: "La taxonomie moderne reconna\u00eet 6 sous-esp\u00e8ces de tigres vivantes : le tigre du Bengale (le plus nombreux, ~2 500), le tigre de l'Amour (Sib\u00e9rie, ~600), le tigre de l'Indochine (~250), le tigre de Malaisie (~150), le tigre de Sumatra (~400) et le tigre de Chine du Sud (probablement \u00e9teint dans la nature). Trois sous-esp\u00e8ces sont d\u00e9j\u00e0 \u00e9teintes : le tigre du Bali, de Java et de la Caspienne.",
                 source: "Centre de Conservation - Diversité réelle."
@@ -5875,7 +6130,7 @@ const quizzesData = {
             {
                 id: 16,
                 question: "À quel âge un tigre atteint sa taille adulte ?",
-                options: ["À 1-2 ans", "À 2-3 ans", "À 3-4 ans selon l'individu", "À 5+ ans"],
+                options: ["À 1-2 ans", "À 2-3 ans", "À 3-4 ans selon", "À 5+ ans"],
                 correct: 2,
                 explanation: "Les tigres atteignent leur taille adulte entre 3 et 4 ans, avec une croissance rapide pendant les 2 premi\u00e8res ann\u00e9es. Les m\u00e2les continuent de prendre de la masse musculaire jusqu'\u00e0 5-6 ans. Cette maturit\u00e9 physique tardive est coupl\u00e9e \u00e0 un apprentissage long : un jeune tigre ne ma\u00eetrise totalement les techniques de chasse complexes (comme s'attaquer \u00e0 de gros buffles) qu'apr\u00e8s plusieurs ann\u00e9es d'exp\u00e9rience.",
                 source: "Institut de Croissance Féline - Développement progressif."
@@ -5883,7 +6138,7 @@ const quizzesData = {
             {
                 id: 17,
                 question: "Quel est le record de saut en hauteur pour un tigre ?",
-                options: ["2 mètres", "3 mètres", "5-6 mètres selon conditions", "10 mètres"],
+                options: ["2 mètres", "3 mètres", "5-6 mètres selon", "10 mètres"],
                 correct: 2,
                 explanation: "Le tigre est un sauteur exceptionnel. Il peut bondir jusqu'\u00e0 9-10 m\u00e8tres horizontalement et 5-6 m\u00e8tres en hauteur. Ces capacit\u00e9s athl\u00e9tiques sont essentielles pour sa technique de chasse : il s'approche en rampant, puis couvre les derniers m\u00e8tres en un ou deux bonds fulgurants, visant g\u00e9n\u00e9ralement la gorge ou la nuque de sa proie pour une mise \u00e0 mort rapide.",
                 source: "Institut de Biomécanique - Athlète exceptionnel."
@@ -5899,7 +6154,7 @@ const quizzesData = {
             {
                 id: 19,
                 question: "Quel est le nom de la zone blanche sur la nuque du tigre ?",
-                options: ["Cerné oculaire noir accentué visible chez tous les félins sauvages comme marqueur taxonomique", "Spot blanc ou 'eyespot'", "Plaque de poils blancs plus denses formant un miroir réfléchissant les signaux lumineux", "Anneau dépigmenté entourant la pupille réduisant l'éblouissement lors de la chasse en plein soleil"],
+                options: ["Cerné noir accentué visible en forêt dense", "Spot blanc ou 'eyespot'", "Plaque de poils blancs plus denses formant un miroir", "Anneau dépigmenté entourant la pupille réduisant"],
                 correct: 1,
                 explanation: "Les taches blanches sur la face post\u00e9rieure des oreilles du tigre sont un signal de communication fascinant. Quand une tigresse retourne les oreilles vers ses petits (comme pour dire 'suivez-moi'), les taches blanches deviennent visibles de loin dans la for\u00eat sombre, agissant comme des balises visuelles. Chez certains individus, ces 'ocelles' peuvent aussi imiter des yeux pour d\u00e9tourner l'attention d'\u00e9ventuels pr\u00e9dateurs arri\u00e8re.",
                 source: "Institut d'Anatomie Féline - Marqueur distinctif."
@@ -5907,7 +6162,7 @@ const quizzesData = {
             {
                 id: 20,
                 question: "À quel âge une femelle tigre peut-elle se reproduire ?",
-                options: ["À 1 an", "À 2-3 ans selon le développement", "À 3-4 ans", "À 5+ ans"],
+                options: ["À 1 an", "À 2-3 ans selon", "À 3-4 ans", "À 5+ ans"],
                 correct: 1,
                 explanation: "Les femelles tigres atteignent leur maturit\u00e9 sexuelle vers 3-4 ans. Elles sont en chaleur (\u0153strus) pendant 3 \u00e0 7 jours, toutes les 3 \u00e0 9 semaines si elles ne sont pas f\u00e9cond\u00e9es. Pendant cette p\u00e9riode, elles marquent intensivement leur territoire de ph\u00e9romones et de vocalises pour attirer les m\u00e2les. Les femelles \u00e9l\u00e8vent leurs petits seules, sans aide du m\u00e2le.",
                 source: "Institut de Reproduction - Maturité féline."
@@ -5935,7 +6190,7 @@ const quizzesData = {
             {
                 id: 11,
                 question: "Quel est le territoire moyen d'un tigre ?",
-                options: ["10-20 km²", "30-50 km²", "50-100 km² selon densité proies", "150+ km²"],
+                options: ["10-20 km²", "30-50 km²", "50-100 km² selon la", "150+ km²"],
                 correct: 2,
                 explanation: "Le territoire d'un tigre varie consid\u00e9rablement selon le milieu et la disponibilit\u00e9 des proies. Une femelle occupe 20 \u00e0 60 km\u00b2, un m\u00e2le 60 \u00e0 200 km\u00b2 (englobant g\u00e9n\u00e9ralement les territoires de 2 \u00e0 7 femelles). En Sib\u00e9rie o\u00f9 les proies sont rares, les territoires peuvent d\u00e9passer 1 000 km\u00b2. Les tigres marquent leurs limites avec de l'urine, des s\u00e9cr\u00e9tions glandulaires et des griffures sur les arbres.",
                 source: "Centre de Recherche Territoriale - Vaste domaine."
@@ -5951,7 +6206,7 @@ const quizzesData = {
             {
                 id: 13,
                 question: "À quelle distance un tigre peut-il entendre sa proie ?",
-                options: ["Quelques mètres", "100 mètres", "500 mètres selon conditions", "1+ km"],
+                options: ["Quelques mètres", "100 mètres", "500 mètres", "1+ km"],
                 correct: 2,
                 explanation: "L'ou\u00efe du tigre est tr\u00e8s d\u00e9velopp\u00e9e. Ses grandes oreilles, mobiles ind\u00e9pendamment, peuvent capter des sons \u00e0 des centaines de m\u00e8tres et se diriger pr\u00e9cis\u00e9ment vers une source sonore. Il entend des fr\u00e9quences inf\u00e9rasonores (en-dessous de 20 Hz) que l'humain ne per\u00e7oit pas, lui permettant de d\u00e9tecter les communications des \u00e9l\u00e9phants et m\u00eame les vibrations du sol provenant de proies \u00e9loign\u00e9es.",
                 source: "Institut d'Éthologie Sensorielle - Audition exacerbée."
@@ -5959,7 +6214,7 @@ const quizzesData = {
             {
                 id: 14,
                 question: "Quel est le rôle de la marque blanche sur la nuque du tigre ?",
-                options: ["Communication de statut dominant lors des rencontres agonistiques entre mâles de force comparable", "Signal de soumission et non-agression", "Amélioration du camouflage lors des affûts nocturnes dans les zones à végétation clairsemée", "Attraction des femelles en période d'œstrus grâce à la réflectance de la zone blanche sous lumière UV"],
+                options: ["Communication de statut dominant lors des rencontres agonistiques entre mâles de force", "Signal de soumission et non-agression", "Amélioration du camouflage lors des affûts nocturnes dans les zones à végétation", "Attraction des femelles en période d'œstrus grâce à la réflectance de la zone blanche"],
                 correct: 1,
                 explanation: "Les taches blanches sur la face post\u00e9rieure des oreilles du tigre jouent plusieurs r\u00f4les sociaux. Pendant la chasse, la tigresse retourne ses oreilles pour montrer ces taches \u00e0 ses petits qui la suivent dans la v\u00e9g\u00e9tation dense \u2014 signal de 'suivez-moi'. Elles peuvent aussi servir dans les interactions entre adultes pour signaler l'\u00e9tat \u00e9motionnel : oreilles couchs\u00e9es vers l'arri\u00e8re signalent l'agression, dress\u00e9es signalent l'attention.",
                 source: "Institut d'Éthologie - Marqueur communaux."
@@ -5975,7 +6230,7 @@ const quizzesData = {
             {
                 id: 16,
                 question: "Quel est le rôle du mugissement chez le tigre ?",
-                options: ["Attaque uniquement", "Marquage territorial et communication à longue distance", "Chasse", "Jeu"],
+                options: ["Attaque uniquement", "Marquage", "Chasse", "Jeu"],
                 correct: 1,
                 explanation: "Le rugissement du tigre est un son puissant portant jusqu'\u00e0 3 km en for\u00eat dense. Il sert \u00e0 affirmer la possession du territoire, attirer les partenaires sexuels et maintenir le contact \u00e0 distance. Les tigres rugissent aussi pour avertir leurs petits d'un danger. Contrairement aux lions, les tigres rugissent rarement en groupe \u2014 leur nature solitaire se refl\u00e8te dans leur communication acoustique.",
                 source: "Institut d'Acoustique Comportementale - Communication complexe."
@@ -5983,7 +6238,12 @@ const quizzesData = {
             {
                 id: 17,
                 question: "À quel âge les jeunes tigres commencent-ils à chasser ?",
-                options: ["À 3-4 mois", "À 6-8 mois", "À 10-12 mois selon apprentissage", "À 18+ mois"],
+                options: [
+                "À 3-4 mois",
+                "À 6-8 mois",
+                "À 10-12 mois selon",
+                "À 18+ mois"
+            ],
                 correct: 2,
                 explanation: "Les tigreaux commencent \u00e0 accompagner leur m\u00e8re \u00e0 la chasse vers 6 mois. Vers 10-12 mois, ils font leurs premi\u00e8res tentatives sur de petites proies. La ma\u00eetrise de la chasse est progressive : d'abord de petits animaux, puis des proies de taille moyenne, et enfin les grandes proies complexes vers 18-24 mois. Le taux d'\u00e9chec est \u00e9lev\u00e9 au d\u00e9but, mais chaque tentative affine les r\u00e9flexes et la technique.",
                 source: "Centre d'Apprentissage - Éducation progressive."
@@ -5999,7 +6259,7 @@ const quizzesData = {
             {
                 id: 19,
                 question: "À quel âge un tigre atteint sa taille adulte maximale ?",
-                options: ["À 2-3 ans", "À 4-5 ans", "À 5-6 ans selon l'individu", "À 6+ ans"],
+                options: ["À 2-3 ans", "À 4-5 ans", "À 5-6 ans selon", "À 6+ ans"],
                 correct: 2,
                 explanation: "Bien que les tigres soient sexuellement matures vers 3-4 ans, ils n'atteignent leur pleine taille adulte et leur masse musculaire maximale qu'entre 5 et 6 ans. Les m\u00e2les continuent de prendre du poids et de la puissance apr\u00e8s 4 ans. Cette maturit\u00e9 physique tardive est li\u00e9e \u00e0 la n\u00e9cessit\u00e9 d'\u00eatre suffisamment puissant pour \u00e9tablir et d\u00e9fendre un large territoire contre d'autres m\u00e2les adultes.",
                 source: "Centre de Croissance - Développement progressif."
@@ -6007,7 +6267,7 @@ const quizzesData = {
             {
                 id: 20,
                 question: "Quel est l'âge moyen de vie d'un tigre en nature ?",
-                options: ["10-12 ans", "12-15 ans", "15-20 ans selon conditions", "20+ ans"],
+                options: ["10-12 ans", "12-15 ans", "15-20 ans selon", "20+ ans"],
                 correct: 1,
                 explanation: "En libert\u00e9, les tigres vivent en moyenne 12 \u00e0 15 ans. Apr\u00e8s 10 ans, leurs dents s'usent, rendant la chasse plus difficile. Des tigres \u00e2g\u00e9s \u00e0 dents abim\u00e9es se rabattent parfois sur des proies plus faciles \u00e0 attraper \u2014 comme le b\u00e9tail ou, rarement, les humains \u2014 ce qui explique certains cas historiques de 'tigres man\u00e9aters'. En captivit\u00e9, avec soins v\u00e9t\u00e9rinaires, ils peuvent d\u00e9passer 20 ans.",
                 source: "Centre de Longévité - Durée de vie limitée."
@@ -6015,7 +6275,12 @@ const quizzesData = {
             {
                 id: 21,
                 question: "Quel est le secret de l'efficacité du camouflage du tigre ?",
-                options: ["Couleur uniquement", "Rayures qui brisent la silhouette en environnement", "Absence de son", "Vitesse seulement"],
+                options: [
+                "Couleur uniquement",
+                "Rayures qui brisent la silhouette",
+                "Absence de son",
+                "Vitesse seulement"
+            ],
                 correct: 1,
                 explanation: "L'efficacit\u00e9 du camouflage du tigre repose sur la 'disruptive coloration' : ses rayures verticales brisent visuellement son contour en fragments qui se confondent avec les herbes et tiges verticales. De plus, ses proies (cerfs, sangliers) ont une vision limit\u00e9e des couleurs \u2014 elles ne per\u00e7oivent pas l'orange, qui leur appara\u00eet comme du gris-vert, couleur parfaitement mimique avec la v\u00e9g\u00e9tation. Un tigre immobile \u00e0 5 m\u00e8tres peut \u00eatre totalement invisible.",
                 source: "Institut d'Écologie Visuelle - Rupture de contours."
@@ -6023,7 +6288,7 @@ const quizzesData = {
             {
                 id: 22,
                 question: "À quelle vitesse un tigre peut-il atteindre lors d'une charge ?",
-                options: ["30 km/h", "40 km/h", "50-60 km/h sur distance courte", "80+ km/h"],
+                options: ["30 km/h", "40 km/h", "50-60 km/h sur", "80+ km/h"],
                 correct: 2,
                 explanation: "Le tigre est un athl\u00e8te explosif capable d'atteindre 50-60 km/h en quelques bond\u00e9es. Sa technique de chasse repose sur une approche silencieuse jusqu'\u00e0 5-10 m\u00e8tres, suivie d'un sprint foudroyant. Il utilise ses pattes avant comme des crampons pour immobiliser la proie et ses crocs pour \u00e9trangler. Une seule patte de tigre peut fracasser le cr\u00e2ne d'un buffle \u2014 la force d'un coup est estim\u00e9e \u00e0 plusieurs centaines de kg.",
                 source: "Institut de Biomécanique Féline - Sprint redoutable."
@@ -6031,7 +6296,7 @@ const quizzesData = {
             {
                 id: 23,
                 question: "Quel est le nombre moyen de petits tigres par année pour une femelle ?",
-                options: ["0,5", "1-2 par ans selon reproduction", "2-3 par an", "3+ par an"],
+                options: ["0,5", "1-2 par", "2-3 par an", "3+ par an"],
                 correct: 1,
                 explanation: "Les tigresses ont une port\u00e9e tous les 2 \u00e0 3 ans en moyenne. Si la port\u00e9e est perdue (pr\u00e9dation, infanticide, famine), la femelle entre rapidement en chaleur \u00e0 nouveau. Le succ\u00e8s reproducteur d'une femelle sur toute sa vie est de 6 \u00e0 10 jeunes qui survivent jusqu'\u00e0 l'ind\u00e9pendance. Dans les r\u00e9serves bien prot\u00e9g\u00e9es comme Ranthambore (Inde), certaines femelles \u00e9l\u00e8vent plus de 20 tigreaux sur toute leur vie.",
                 source: "Centre de Biologie Reproductive - Fertilité modérée."
@@ -6039,7 +6304,7 @@ const quizzesData = {
             {
                 id: 24,
                 question: "À quelle profondeur un tigre peut-il nager ?",
-                options: ["Surface seulement", "Jusqu'à 2 mètres", "Jusqu'à 5 mètres selon le besoins", "Jusqu'à 10 mètres"],
+                options: ["Surface seulement", "Jusqu'à 2 mètres", "Jusqu'à 5 mètres selon le courant", "Jusqu'à 10 mètres"],
                 correct: 2,
                 explanation: "Le tigre est l'un des rares grands f\u00e9lid\u00e9s \u00e0 appr\u00e9cier l'eau et \u00e0 nager excellemment. Il peut traverser des rivi\u00e8res de plusieurs kilom\u00e8tres et chasser dans l'eau. Dans les Sundarbans (delta du Gange), les tigres nagent r\u00e9guli\u00e8rement entre les \u00eeles. Ils plong\u00e9ent pour chasser les cerfs qui traversent les cours d'eau. Cette capacit\u00e9 atypique chez les f\u00e9lid\u00e9s est li\u00e9e \u00e0 leur habitat originel de for\u00eats tropicales humides.",
                 source: "Institut de Comportement Aquatique - Nageur compétent."
@@ -6047,7 +6312,7 @@ const quizzesData = {
             {
                 id: 25,
                 question: "Quel est le temps moyen d'une chasse pour un tigre ?",
-                options: ["30 secondes à 1 minute", "1-5 minutes selon proie", "15-20 minutes", "1 heure"],
+                options: ["30 secondes à 1", "1-5 minutes selon", "15-20 minutes", "1 heure"],
                 correct: 1,
                 explanation: "La chasse du tigre est une s\u00e9quence pr\u00e9cise : d\u00e9tection de la proie (odorat, ouie, vision), approche rampante tr\u00e8s lente (parfois 30 minutes pour parcourir 100 m\u00e8tres), sprint final \u00e0 60 km/h, bond, immobilisation et mise \u00e0 mort par strangulation ou bris de la nuque. Toute la s\u00e9quence post-d\u00e9tection dure 1 \u00e0 5 minutes. L'\u00e9chec se produit souvent si la proie est alert\u00e9e au-del\u00e0 de 10 m\u00e8tres.",
                 source: "Centre d'Étude du Comportement - Chasse rapide."
@@ -6055,7 +6320,7 @@ const quizzesData = {
             {
                 id: 26,
                 question: "Quel est le nombre de tigres estimés en nature aujourd'hui ?",
-                options: ["Plusieurs milliers", "3000-4000 tigres environ", "10000+", "Plus de 50000"],
+                options: ["Plusieurs milliers", "3000-4000", "10000+", "Plus de 50000"],
                 correct: 1,
                 explanation: "Les estimations r\u00e9centes (2023) recensent environ 3 726 tigres sauvages dans le monde, en hausse par rapport aux 3 200 de 2010. L'Inde accueille la plus grande population (~3 167 individus, soit plus de 75% du total mondial). Cette tendance positive est due \u00e0 des politiques de conservation strictes, la cr\u00e9ation de r\u00e9serves et la r\u00e9duction du braconnage. La Russie, le N\u00e9pal, le Bhoutan et Bangladesh montrent aussi des progressions encourageantes.",
                 source: "WWF et Conservation - Espèce en danger."
@@ -6063,7 +6328,7 @@ const quizzesData = {
             {
                 id: 27,
                 question: "À quel moment du cycle reproductif la femelle tigre accepte-t-elle l'accouplement ?",
-                options: ["À n'importe quel moment de l'année car les tigresses n'ont pas de cycle saisonnier défini", "Pendant les chaleurs/estrus", "Pendant la période post-partum des 3 premiers mois suivant la mise bas des chatons", "Exclusivement lors des saisons sèches quand la concentration autour des points d'eau facilite les rencontres"],
+                options: ["À n'importe quel moment de l'année car les tigresses n'ont pas", "Pendant les chaleurs/estrus", "Pendant la période post-partum des 3 premiers mois suivant la", "Exclusivement lors des saisons sèches quand la concentration"],
                 correct: 1,
                 explanation: "La femelle tigre n'accepte le m\u00e2le que pendant sa courte p\u00e9riode d'\u0153strus (3 \u00e0 7 jours). Elle signale sa r\u00e9ceptivit\u00e9 par des vocalises sp\u00e9cifiques et des marquages chimiques intenses. L'accouplement est fr\u00e9quent (toutes les 15-20 minutes) mais tr\u00e8s bref (15-30 secondes). Le m\u00e2le peut s'accoupler avec plusieurs femelles de son territoire, mais il ne participe pas \u00e0 l'\u00e9levage des petits.",
                 source: "Institut de Reproduction - Cycle oestral."
@@ -6071,7 +6336,12 @@ const quizzesData = {
             {
                 id: 28,
                 question: "Quel est le rôle des vibrisses (moustaches) du tigre ?",
-                options: ["Uniquement apparence", "Détection spatiale et sensibilité tactile", "Communication", "Thermorégulation"],
+                options: [
+                "Uniquement apparence",
+                "Détection spatiale et sens",
+                "Communication",
+                "Thermorégulation"
+            ],
                 correct: 1,
                 explanation: "Les vibrisses (longues moustaches) du tigre sont des organes sensoriels extr\u00eamement d\u00e9velopp\u00e9s. Elles d\u00e9tectent les mouvements d'air et les vibrations proches, permettant au tigre de localiser une proie dans l'obscurit\u00e9 quasi-totale. Lors de la mise \u00e0 mort, les vibrisses aident \u00e0 positionner pr\u00e9cis\u00e9ment les crocs sur la gorge de la proie, m\u00eame sans voir clairement. Certaines vibrisses mesurent plus de 15 cm de long.",
                 source: "Institut d'Anatomie Sensorielle - Détecteurs sensitifs."
@@ -6079,7 +6349,7 @@ const quizzesData = {
             {
                 id: 29,
                 question: "À quel âge un tigre peut-il être considéré comme sénior ?",
-                options: ["À 10 ans", "À 12 ans", "À 15 ans selon l'individu", "À 20+ ans"],
+                options: ["À 10 ans", "À 12 ans", "À 15 ans selon", "À 20+ ans"],
                 correct: 2,
                 explanation: "Les tigres \u00e2g\u00e9s de 12 \u00e0 15 ans entrent dans leur phase s\u00e9nior. Leurs dents s'usent progressivement, leur vitesse diminue et leurs blessures cicatrisent plus lentement. Beaucoup d'anciens m\u00e2les perdent leur territoire face \u00e0 des jeunes plus vigoureux. Certains individus s'adaptent en se sp\u00e9cialisant dans des proies plus faciles. Les tigres les plus c\u00e9l\u00e8bres de r\u00e9serves indiennes ont v\u00e9cu jusqu'\u00e0 16-18 ans en libert\u00e9.",
                 source: "Centre de Gérontologie Féline - Vieillesse relative."
@@ -6087,7 +6357,7 @@ const quizzesData = {
             {
                 id: 30,
                 question: "Quel est le facteur principal de mortalité chez les jeunes tigres ?",
-                options: ["Maladie", "Prédation par adultes rivaux", "Accidents et indépendance", "Famine"],
+                options: ["Maladie", "Prédation par", "Accidents et", "Famine"],
                 correct: 2,
                 explanation: "La premi\u00e8re ann\u00e9e de vie est la plus dangereuse pour les tigreaux. Les principales causes de mortalit\u00e9 juvénile sont : l'infanticide par des m\u00e2les \u00e9trangers, les attaques de pr\u00e9dateurs (l\u00e9opards, ours, crocodiles), la famine si la m\u00e8re est tu\u00e9e ou bless\u00e9e, et les maladies. En libert\u00e9, moins de 50% des tigreaux atteignent l'\u00e2ge de 2 ans. La p\u00e9riode la plus critique est le sevrage, quand la m\u00e8re les laisse seuls pendant la chasse.",
                 source: "Institut d'Écologie Comportementale - Vulnérabilité juvénile."
@@ -6123,7 +6393,12 @@ const quizzesData = {
             {
                 id: 22,
                 question: "Quel est le rôle de la 'mane-like marking' chez le tigre mâle ?",
-                options: ["Décoration", "Démonstration de fitness et dominance sociale", "Thermorégulation", "Signal d'alerte"],
+                options: [
+                "Décoration",
+                "Démonstration de fit",
+                "Thermorégulation",
+                "Signal d'alerte"
+            ],
                 correct: 1,
                 explanation: "Contrairement au lion, le tigre m\u00e2le n'a pas de crini\u00e8re. Mais les m\u00e2les adultes d\u00e9veloppent des joues \u00e9largies (promenades) qui accentuent leur apparence imp\u00e9riale. Ces 'ruff' faciaux sont plus prononc\u00e9s chez les m\u00e2les \u00e2g\u00e9s et dominants. Ils jouent un r\u00f4le de signal social lors des rencontres entre m\u00e2les et peuvent influencer les choix des femelles, qui pr\u00e9f\u00e8rent les m\u00e2les aux marques faciales les plus d\u00e9velopp\u00e9es.",
                 source: "Université de Sélection Sexuelle - Traits de qualité."
@@ -6147,7 +6422,7 @@ const quizzesData = {
             {
                 id: 25,
                 question: "Quel est le rôle du 'allomothering' chez les femelles tigres ?",
-                options: ["Mères tigresses partageant leur territoire de chasse et leurs proies avec d'autres femelles en lactation", "Femelles non-mères aident à l'élevage des jeunes", "Infanticide systématique des petits des femelles voisines pour réduire la compétition territoriale future", "Enseignement des techniques de chasse aux jeunes d'autres femelles pendant les périodes de dispersion"],
+                options: ["Mères tigresses partageant leur territoire de chasse et leurs proies avec d'autres femelles en", "Femelles non-mères aident à l'élevage des jeunes", "Infanticide systématique des petits des femelles voisines pour réduire la compétition territoriale", "Enseignement des techniques de chasse aux jeunes d'autres femelles pendant les périodes de"],
                 correct: 1,
                 explanation: "Bien que les tigres soient g\u00e9n\u00e9ralement solitaires, des comportements d'allomothering ont \u00e9t\u00e9 observ\u00e9s dans de rares cas. Des femelles sans petits ont \u00e9t\u00e9 vues gardant des tigreaux orphelins ou aidant une femelle bless\u00e9e \u00e0 nourrir ses petits. Ce comportement, rare mais document\u00e9, sugg\u00e8re que les f\u00e9lid\u00e9s solitaires conservent une capacit\u00e9 de coop\u00e9ration sociale qui peut \u00eatre activ\u00e9e dans des circonstances exceptionnelles.",
                 source: "Université d'Éthologie Familiale - Comportement social."
@@ -6163,7 +6438,7 @@ const quizzesData = {
             {
                 id: 27,
                 question: "Quel est le processus de la 'inbreeding avoidance' chez les tigres ?",
-                options: ["Tolérance de la présence des jeunes adultes sur le territoire parental jusqu'à l'âge de 5 ans révolus", "Jeunes tigres dispersent loin du territoire parental", "Héritage partiel du territoire parental par le premier jeune à atteindre la maturité reproductive", "Reproduction indifférente à la proximité génétique, régulée uniquement par la disponibilité des partenaires"],
+                options: ["Tolérance de la présence des jeunes adultes sur le territoire parental jusqu'à l'âge de 5 ans révolus", "Jeunes tigres dispersent loin du territoire parental", "Héritage partiel du territoire parental par le premier jeune à atteindre la maturité reproductive", "Reproduction indifférente à la proximité génétique"],
                 correct: 1,
                 explanation: "L'\u00e9vitement de la consanguinit\u00e9 chez le tigre est assur\u00e9 par la dispersion des jeunes, particuli\u00e8rement les m\u00e2les qui s'\u00e9loignent consid\u00e9rablement de leur territoire natal. Des tigres marqu\u00e9s ont \u00e9t\u00e9 suivis sur plus de 300 km depuis leur lieu de naissance. Cette dispersion garantit un brassage g\u00e9n\u00e9tique crucial pour la vitalit\u00e9 de l'esp\u00e8ce. Dans les fragments d'habitat isol\u00e9s, l'impossibilit\u00e9 de disperser est l'une des causes de d\u00e9clin g\u00e9n\u00e9tique.",
                 source: "Université de Génétique Comportementale - Stratégie génétique."
@@ -6179,7 +6454,7 @@ const quizzesData = {
             {
                 id: 29,
                 question: "Quel est le mécanisme de la 'cryptic coloration' additionnelle ?",
-                options: ["Couleur orange du pelage servant de signal d'avertissement aux proies comme chez les insectes aposématiques", "Rayures + teinte permettent fusion avec environnement", "Teinte uniforme sans rayures visible uniquement dans les zones densément boisées à faible luminosité", "Camouflage exclusivement efficace sous lumière UV invisible à l'œil humain mais pas à celui des proies"],
+                options: ["Couleur orange du pelage servant de signal d'avertissement aux proies comme chez les insectes", "Rayures + teinte permettent fusion avec environnement", "Teinte uniforme sans rayures visible uniquement dans les zones densément boisées à faible luminosité", "Camouflage exclusivement efficace sous lumière UV invisible à l'œil humain mais pas à celui des proies"],
                 correct: 1,
                 explanation: "La coloration cryptique du tigre fonctionne \u00e0 plusieurs niveaux. Les rayures brisent la silhouette (disruptive coloration). La teinte orange-roux, invisible pour les cerfs daltoniens (qui voient l'orange comme du vert-gris), fusionne avec la v\u00e9g\u00e9tation tropicale. Le ventre blanc r\u00e9duit l'ombre port\u00e9e (contershading). Ensemble, ces \u00e9l\u00e9ments rendent un tigre de 200 kg quasi invisible \u00e0 5 m\u00e8tres dans son habitat naturel.",
                 source: "Institut d'Écologie Camouflage - Multimécanisme."
@@ -6187,7 +6462,7 @@ const quizzesData = {
             {
                 id: 30,
                 question: "Quel est le processus de l'impact de la 'island populations' sur la génétique ?",
-                options: ["Adaptation rapide des petites populations isolées par dérive génétique créant de nouvelles sous-espèces adaptées", "Petites populations isolées créent dépression génétique", "Amélioration génétique par sélection naturelle intensive éliminant les individus porteurs de gènes délétères", "Stabilité génétique maintenue par les comportements de dispersion des jeunes mâles entre territoires isolés"],
+                options: ["Adaptation rapide des petites populations isolées par dérive génétique créant de nouvelles sous-espèces", "Petites populations isolées créent dépression génétique", "Amélioration génétique par sélection naturelle intensive éliminant les individus porteurs de gènes délétères", "Stabilité génétique maintenue par les comportements de dispersion des jeunes mâles entre territoires isolés"],
                 correct: 1,
                 explanation: "La fragmentation des habitats isole les populations de tigres, emp\u00eachant les \u00e9changes g\u00e9n\u00e9tiques. Des populations de moins de 25 individus entrent dans une spirale de d\u00e9pression consanguine : accumulation de mutations d\u00e9l\u00e9t\u00e8res, r\u00e9duction de la fertilit\u00e9 et de la r\u00e9sistance aux maladies. Le tigre de Sumatra est un exemple critique, avec seulement ~400 individus r\u00e9partis en groupes isol\u00e9s. Des corridors \u00e9cologiques entre r\u00e9serves sont essentiels pour contrer ce ph\u00e9nom\u00e8ne.",
                 source: "Université de Biologie Évolutive - Conservation critique."
@@ -6195,7 +6470,7 @@ const quizzesData = {
             {
                 id: 31,
                 question: "Quel est le mécanisme de la 'stalk-and-ambush' predation ?",
-                options: ["Poursuite à vitesse maximale sur longue distance compensant le manque d'élément surprise", "Approche silencieuse puis attaque surprise", "Attaque frontale directe après vocalisation d'intimidation paralysant momentanément la proie de surprise", "Encerclement par deux individus coopérant malgré la solitarité connue du tigre en dehors de la famille"],
+                options: ["Poursuite à vitesse maximale sur longue distance compensant le manque d'élément", "Approche silencieuse puis attaque surprise", "Attaque frontale directe après vocalisation d'intimidation paralysant momentanément la proie de", "Encerclement par deux individus coopérant malgré la solitarité connue du tigre en dehors de la"],
                 correct: 1,
                 explanation: "La chasse \u00e0 l'affût du tigre est un mod\u00e8le d'efficacit\u00e9 \u00e9nerg\u00e9tique. Il localise les proies \u00e0 l'ou\u00efe et \u00e0 l'odorat, puis s'approche en rampant, profitant de chaque bruit (vent, autres animaux) pour couvrir ses propres sons. La phase finale (10 m\u00e8tres) est un sprint explos\u00e9 avec 5 \u00e0 10 bonds. La mise \u00e0 mort est presque instantan\u00e9e : il vise la gorge pour \u00e9trangler (grosses proies) ou la nuque pour une mort rapide (petites proies).",
                 source: "Institut de Stratégie Prédatrice - Technique sophistiquée."
@@ -6211,7 +6486,12 @@ const quizzesData = {
             {
                 id: 33,
                 question: "À quel âge un tigre atteint sa pleine maturité physique ?",
-                options: ["À 3 ans", "À 4-5 ans selon l'individu et le sexe", "À 6 ans", "À 7+ ans"],
+                options: [
+                "À 3 ans",
+                "À 4-5 ans selon l'i",
+                "À 6 ans",
+                "À 7+ ans"
+            ],
                 correct: 1,
                 explanation: "La maturit\u00e9 physique compl\u00e8te du tigre (masse musculaire, densit\u00e9 osseuse, d\u00e9veloppement des canines) n'est atteinte qu'\u00e0 4-5 ans. Cette maturation tardive s'accompagne de l'acquisition progressive d'un territoire stable. Un tigre m\u00e2le de 4-5 ans qui poss\u00e8de un territoire est au sommet de ses capacit\u00e9s : vitesse, force, exp\u00e9rience de chasse et reconnaissance du terrain se combinent pour en faire un pr\u00e9dateur redoutable.",
                 source: "Institut de Développement Félin - Maturation tardive."
@@ -6219,7 +6499,7 @@ const quizzesData = {
             {
                 id: 34,
                 question: "Quel est le mécanisme de la 'cooperative hunting' absent chez les tigres ?",
-                options: ["Les tigres forment des groupes familiaux stables de 3 à 5 individus partageant les proies équitablement", "Tigres sont généralement solitaires", "Les femelles délèguent la chasse aux mâles et se consacrent exclusivement à l'élevage des jeunes", "Différence de comportement inexistante car les tigres modifient leur socialité selon la disponibilité des proies"],
+                options: ["Les tigres forment des groupes familiaux stables de 3 à 5 individus partageant les", "Tigres sont généralement solitaires", "Les femelles délèguent la chasse aux mâles et se consacrent exclusivement à", "Différence de comportement inexistante car les tigres modifient leur socialité"],
                 correct: 1,
                 explanation: "Le tigre est l'exception parmi les grands f\u00e9lid\u00e9s : il chasse seul, contrairement aux lions qui chassent en groupe. Cette soli\u00e9tarité est adapt\u00e9e \u00e0 son environnement forestier dense o\u00f9 la coordination serait difficile. Cependant, des comportements temporairement coop\u00e9ratifs ont \u00e9t\u00e9 observ\u00e9s : une m\u00e8re chassant avec ses grands jeunes avant leur ind\u00e9pendance, ou deux fr\u00e8res de la m\u00eame port\u00e9e chassant \u00e0 proximit\u00e9 pendant la p\u00e9riode nomade.",
                 source: "Institut d'Éthologie Féline - Prédateurs solitaires."
@@ -6227,7 +6507,7 @@ const quizzesData = {
             {
                 id: 35,
                 question: "Quel est le nombre de vertèbres cervicales que possède un tigre ?",
-                options: ["5", "7 comme la plupart des mammifères", "9", "12"],
+                options: ["5", "7", "9", "12"],
                 correct: 1,
                 explanation: "Comme pr\u00e9sque tous les mammif\u00e8res (y compris la girafe), le tigre poss\u00e8de exactement 7 vert\u00e8bres cervicales. Ce nombre est remarquablement conserv\u00e9 dans l'\u00e9volution des mammif\u00e8res malgr\u00e9 la grande diversit\u00e9 des longueurs de cou. La flexibilit\u00e9 et la puissance du cou du tigre viennent non pas du nombre de vert\u00e8bres, mais de la musculature extraordinairement d\u00e9velopp\u00e9e qui l'entoure \u2014 suffisante pour tra\u00eener une carcasse de buffle de 300 kg.",
                 source: "Centre d'Anatomie Féline - Structure vertébrale conservée."
@@ -6235,7 +6515,7 @@ const quizzesData = {
             {
                 id: 36,
                 question: "Quel est le processus de la 'natal philopatry' chez les tigres femelles ?",
-                options: ["Dispersion obligatoire loin de la zone natale pour éviter toute compétition avec la mère encore présente", "Tendance à rester dans zone natale", "Migration saisonnière régulière entre forêts de basse et haute altitude selon les cycles de disponibilité des proies", "Absence de pattern spatial cohérent, chaque tigre se déplaçant de façon totalement imprévisible"],
+                options: ["Dispersion obligatoire loin de la zone natale pour éviter toute compétition avec", "Tendance à rester dans zone natale", "Migration saisonnière régulière entre forêts de basse et haute altitude selon", "Absence de pattern spatial cohérent"],
                 correct: 1,
                 explanation: "La philopatrie natale du tigre est un comportement nuanc\u00e9. Les femelles ont tendance \u00e0 rester proches de leur lieu de naissance et \u00e9tablissent leur territoire \u00e0 proximit\u00e9 de celui de leur m\u00e8re (si disponible). Les m\u00e2les, au contraire, se dispersent loin pour \u00e9viter la comp\u00e9tition et la consanguinit\u00e9. Cette asym\u00e9trie de dispersion entre sexes est une strat\u00e9gie \u00e9volutive efficace qui optimise \u00e0 la fois la transmission des connaissances locales et le brassage g\u00e9n\u00e9tique.",
                 source: "Institut d'Écologie Comportementale - Retour au site."
@@ -6243,7 +6523,7 @@ const quizzesData = {
             {
                 id: 37,
                 question: "À quel moment du cycle menstruel la femelle est-elle fertile ?",
-                options: ["Début du cycle lorsque les niveaux de progestérone sont à leur maximum favorisant la réceptivité", "Milieu du cycle - période d'estrus", "Fin du cycle lors du déclin hormonal déclenchant la nidation ou la menstruation selon la fécondation", "Absence de cycle régulier chez les femelles sauvages qui ovulent uniquement en réponse à la stimulation mâle"],
+                options: ["Début du cycle lorsque les niveaux de progestérone sont à leur maximum", "Milieu du cycle - période d'estrus", "Fin du cycle lors du déclin hormonal déclenchant la nidation ou la menstruation", "Absence de cycle régulier chez les femelles sauvages qui ovulent uniquement en"],
                 correct: 1,
                 explanation: "L'\u0153strus de la femelle tigre dure 3 \u00e0 7 jours et se produit toutes les 3 \u00e0 9 semaines si elle n'est pas f\u00e9cond\u00e9e. Pendant cette p\u00e9riode, sa chimie urinaire change radicalement, signal chimique per\u00e7u par les m\u00e2les \u00e0 grande distance. L'ovulation est induite par l'accouplement lui-m\u00eame (ovulation provoqu\u00e9e), m\u00e9canisme qui garantit qu'un accouplement effectif conduit \u00e0 une f\u00e9condation, m\u00eame si les rencontres sont rares en milieu sauvage.",
                 source: "Centre de Reproduction Féline - Fertilité cyclique."
@@ -6251,7 +6531,7 @@ const quizzesData = {
             {
                 id: 38,
                 question: "Quel est le facteur clé de la capacité de saut du tigre ?",
-                options: ["Force musculaire uniquement", "Structure osseuse, muscles et flexibilité", "Poids léger", "Longueur des pattes"],
+                options: ["Force musculaire", "Structure osseuse", "Poids léger", "Longueur des pattes"],
                 correct: 1,
                 explanation: "La capacit\u00e9 de saut du tigre repose sur une architecture musculo-squelettique exceptionnelle. Ses pattes arri\u00e8re, plus longues que les pattes avant, fonctionnent comme des ressorts puissants. Sa colonne vertébrale extrem\u00eament flexible se plie et se d\u00e9tend comme un arc, amplifiant la pouss\u00e9e. Les muscles des cuisses repr\u00e9sentent une part \u00e9norme de sa masse totale. Ce syst\u00e8me lui permet de passer de l'immobilit\u00e9 compl\u00e8te \u00e0 pleine vitesse en moins d'une seconde.",
                 source: "Institut de Biomécanique - Athlétisme complexe."
@@ -6259,7 +6539,7 @@ const quizzesData = {
             {
                 id: 39,
                 question: "Quel est le mécanisme de la 'temporal gland secretion' du tigre ?",
-                options: ["Lubrification de la fourrure pour la rendre imperméable lors des longues sessions de nage dans les rivières", "Communication chimique et marquage territorial", "Thermorégulation cutanée en facilitant l'évaporation de l'humidité lors des périodes de chaleur intense", "Défense active contre les ectoparasites en créant un environnement chimique hostile sur la peau"],
+                options: ["Lubrification de la fourrure pour la rendre imperméable lors des longues sessions de nage dans les", "Communication chimique et marquage territorial", "Thermorégulation cutanée en facilitant l'évaporation de l'humidité lors des périodes de chaleur", "Défense active contre les ectoparasites en créant un environnement chimique hostile sur la"],
                 correct: 1,
                 explanation: "La glande temporale du tigre, situ\u00e9e entre l'\u0153il et l'oreille, s\u00e9cr\u00e8te un fluide chimique utilis\u00e9 dans le marquage social. Contrairement aux marques urinaires (longue dur\u00e9e, grande distance), les s\u00e9cr\u00e9tions temporales sont d\u00e9pos\u00e9es par frottement de la t\u00eate contre des surfaces lors d'interactions proches. Elles transmettent des informations sur l'identit\u00e9 individuelle et l'\u00e9tat \u00e9motionnel. Les tigreaux frottent fr\u00e9quemment leur t\u00eate contre leur m\u00e8re pour consolider le lien social.",
                 source: "Institut d'Olfaction Féline - Phéromones glandulaires."
@@ -6267,7 +6547,7 @@ const quizzesData = {
             {
                 id: 40,
                 question: "Quel est le rôle de la 'vibrissa proprioception' dans la chasse ?",
-                options: ["Régulation de la pression auriculo-nasosinusienne lors des passages rapides dans la végétation dense", "Détection de mouvements air et localisation proie", "Maintien de l'équilibre postural lors des déplacements sur les substrats instables comme la neige profonde", "Communication inter-individuelle par vibrations basse fréquence transmises à travers la végétation dense"],
+                options: ["Régulation de la pression auriculo-nasosinusienne lors des passages rapides dans la végétation", "Détection de mouvements air et localisation proie", "Maintien de l'équilibre postural lors des déplacements sur les substrats instables comme la neige", "Communication inter-individuelle par vibrations basse fréquence transmises à travers la végétation"],
                 correct: 1,
                 explanation: "La proprioception vibrossale du tigre est une capacit\u00e9 fascinante. Les vibrisses sont reli\u00e9es \u00e0 des m\u00e9canor\u00e9cepteurs tr\u00e8s sensibles qui d\u00e9tectent les moindres variations de pression d'air et les vibrations transmises par le sol ou les objets. Pendant la mise \u00e0 mort dans l'obscurit\u00e9, le tigre utilise ses vibrisses pour positionner pr\u00e9cis\u00e9ment ses crocs sur la trachée de la proie. Sans vibrisses, la pr\u00e9cision de la mise \u00e0 mort est significativement r\u00e9duite.",
                 source: "Institut de Neurobiologie Sensorielle - Mécanoréception avancée."
@@ -6308,7 +6588,7 @@ const quizzesData = {
             {
                 id: 1,
                 question: "Dans quelle maison Harry Potter est-il trié à son arrivée à Poudlard ?",
-                options: ["Serpentard, car le Choixpeau lui reconnaît une vraie ambition et une ruse naturelle héritées de son lien avec Voldemort", "Poufsouffle, car le Choixpeau détecte chez lui une loyauté et une patience exceptionnelles que Dumbledore avait espéré voir développer", "Serdaigle, car ses aptitudes intellectuelles inhabituelles pour un enfant élevé sans magie auraient pu en faire un brillant studieux", "Gryffondor"],
+                options: ["Serpentard", "Poufsouffle", "Serdaigle", "Gryffondor"],
                 correct: 3,
                 explanation: "Harry Potter est trié dans la maison Gryffondor, symbole du courage et de la bravoure. Le Choixpeau magique envisage brièvement de le placer à Serpentard (il perçoit un potentiel réel), mais Harry supplie intérieurement de ne pas y aller, et le Choixpeau respecte ce choix. Gryffondor est aussi la maison de ses parents, James et Lily Potter.",
                 source: "J.K. Rowling, Harry Potter à l'École des Sorciers (1997), Chapitre 7 — Le Choixpeau magique."
@@ -6316,7 +6596,7 @@ const quizzesData = {
             {
                 id: 2,
                 question: "Comment s'appelle le célèbre quai secret depuis lequel partent les trains pour Poudlard ?",
-                options: ["Le quai 9, un quai ordinaire de la gare de Paddington dont l'accès magique est dissimulé derrière un pilier en apparence identique aux autres", "Le quai 11¾, accessible depuis la gare de Victoria via un escalier dérobé visible uniquement pour les sorciers à l'approche du 1er septembre", "Le quai 10, situé dans la gare de Waterloo, dont le mur de brique central cache un passage activé en chuchotant 'Poudlard'", "Le quai 9¾"],
+                options: ["Le quai 9", "Le quai 11¾", "Le quai 10", "Le quai 9¾"],
                 correct: 3,
                 explanation: "Le quai 9¾ est situé dans la gare de King's Cross à Londres. Pour y accéder, il faut traverser en courant le mur de brique entre les quais 9 et 10. C'est depuis ce quai que part l'Expresss de Poudlard chaque 1er septembre à 11h00 pile. Une vraie plaque commémorative et un chariot à demi-enfoncé dans le mur existent aujourd'hui à King's Cross pour les fans.",
                 source: "J.K. Rowling, Harry Potter à l'École des Sorciers (1997), Chapitre 6 — Le voyage depuis la gare King's Cross."
@@ -6324,7 +6604,7 @@ const quizzesData = {
             {
                 id: 3,
                 question: "Quel est le nom du grand méchant de la saga Harry Potter ?",
-                options: ["Grindelwald, le plus puissant mage noir de tous les temps, vaincu par Dumbledore en 1945 lors d'un duel légendaire qui dura trois jours", "Salazar Serpentard, fondateur maudit de Poudlard qui régna sur la magie noire pendant des siècles avant son bannissement définitif", "Bartemis Croupton Junior, cerveau véritable derrière la résurrection du seigneur des ténèbres et principal architecte de son retour au pouvoir", "Voldemort"],
+                options: ["Grindelwald", "Salazar Serpentard", "Bartemis Croupton Junior", "Voldemort"],
                 correct: 3,
                 explanation: "Lord Voldemort, de son vrai nom Tom Elvis Jedusor (en français), est le grand antagoniste de la saga. Son nom est si terrifiant que la plupart des sorciers refusent de le prononcer, préférant 'Celui-Dont-On-Ne-Doit-Pas-Prononcer-Le-Nom'. Harry est l'un des rares à l'appeler par son nom, ce qui déconcerte souvent son entourage.",
                 source: "J.K. Rowling, saga Harry Potter (1997-2007) — personnage central des 7 tomes."
@@ -6332,16 +6612,16 @@ const quizzesData = {
             {
                 id: 4,
                 question: "Quel animal de compagnie Harry reçoit-il pour son anniversaire avant sa première année à Poudlard ?",
-                options: ["Un chat roux très paresseux nommé Croutard, qu'Hagrid choisit pour sa résistance aux maléfices courants des corridors de Poudlard", "Un crapaud nommé Trevor, offert par sa tante Pétunia pour compenser des années de mauvais traitements, qu'il perd aussitôt dans le train", "Un rat blanc nommé Têtard, traditionnel animal des jeunes sorciers de première génération issu d'une lignée de rats de laboratoire du ministère", "Une chouette blanche nommée Hedwige"],
+                options: ["Un chat roux très paresseux nommé Croutard", "Un crapaud nommé Trevor", "Un rat blanc nommé Têtard", "Une chouette blanche nommée Hedwige"],
                 correct: 3,
                 explanation: "Hagrid offre à Harry une magnifique chouette blanche des neiges pour son 11e anniversaire. Harry la nomme Hedwige, un nom qu'il trouve dans son manuel Histoire de la Magie. Hedwige devient son principal moyen de communication magique et une fidèle compagne tout au long de la saga.",
                 source: "J.K. Rowling, Harry Potter à l'École des Sorciers (1997), Chapitre 5 — Diagon Alley.",
-                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Bubo_scandiacus_2.jpg/800px-Bubo_scandiacus_2.jpg"
+                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/SnowyOwlAmericanBlackDuck.jpg/960px-SnowyOwlAmericanBlackDuck.jpg"
             },
             {
                 id: 5,
                 question: "Quelle est la formule du sortilège de désarmement, l'un des plus utilisés par Harry ?",
-                options: ["Stupefix, un sortilège d'étourdissement qui projette l'adversaire en arrière et l'immobilise temporairement sans lui retirer sa baguette", "Riddikulus, un sortilège anti-épouvantard qui transforme ce qui effraie en quelque chose de comique pour en dissiper le pouvoir", "Protego, le bouclier magique qui dévie les sortilèges offensifs en les renvoyant parfois contre leur lanceur avec une force accrue", "Expelliarmus"],
+                options: ["Stupefix", "Riddikulus", "Protego", "Expelliarmus"],
                 correct: 3,
                 explanation: "Expelliarmus est le sortilège de désarmement qui expulse la baguette (ou tout objet tenu) de la main de l'adversaire. C'est la 'signature' de Harry Potter — il préfère désarmer plutôt que blesser, ce qui révèle son caractère. C'est d'ailleurs ce sort qu'il utilise lors du duel final contre Voldemort.",
                 source: "J.K. Rowling, Harry Potter et la Chambre des Secrets (1998) — premier usage notable lors du Club de Duels."
@@ -6349,7 +6629,7 @@ const quizzesData = {
             {
                 id: 6,
                 question: "Comment s'appelle le meilleur ami de Harry qui vient d'une grande famille de sorciers ?",
-                options: ["Neville Londubat, issu d'une famille de sorciers respectée dont les parents ont été torturés jusqu'à la démence par les mangemorts de Bellatrix Lestrange", "Drago Malefoy, rival de Harry dont la famille aristocratique a soutenu Voldemort et qui finira par trahir les siens au moment décisif", "Seamus Finnigan, ami irlandais de Harry connu pour ses sorts qui partent souvent en fumée et son loyalisme à toute épreuve dans la D.A.", "Ron Weasley"],
+                options: ["Neville Londubat", "Drago Malefoy", "Seamus Finnigan", "Ron Weasley"],
                 correct: 3,
                 explanation: "Ron Weasley est le meilleur ami de Harry, rencontré dans le train pour Poudlard. Il vient d'une grande famille de sorciers pure-sang mais modeste (7 enfants, une maison en désordre appelée le Terrier). Sa loyauté, son humour et son sens des échecs magiques en font un personnage attachant tout au long de la saga.",
                 source: "J.K. Rowling, Harry Potter à l'École des Sorciers (1997), Chapitre 6 — premier contact dans l'Expresso de Poudlard."
@@ -6357,7 +6637,7 @@ const quizzesData = {
             {
                 id: 7,
                 question: "Quel sport magique se joue sur des balais volants à Poudlard ?",
-                options: ["Le Nimbus, une course de vitesse entre deux équipes de sept joueurs sur une piste ovale délimitée par des buts dorés à trois anneaux de hauteur différente", "Le Vifsinge, un jeu de stratégie à basse altitude où deux équipes de cinq s'affrontent pour récupérer des Souvenin dorés cachés dans les tribunes", "Le Sombreball, un sport nocturne pratiqué uniquement par les élèves de Serpentard dans les souterrains du château pendant les nuits de pleine lune", "Le Quidditch"],
+                options: ["Le Nimbus", "Le Vifsinge", "Le Sombreball", "Le Quidditch"],
                 correct: 3,
                 explanation: "Le Quidditch est LE sport de la société sorcière, pratiqué sur des balais volants. Chaque équipe de 7 joueurs comprend 3 Poursuiveurs, 2 Batteurs, 1 Gardien et 1 Attrapeur. Le but est de marquer des points avec le Souafle (150 points pour chaque anneau) et surtout d'attraper le Vif d'or doré (150 points) pour mettre fin à la partie.",
                 source: "J.K. Rowling, Harry Potter à l'École des Sorciers (1997), Chapitre 11 — Quidditch à travers les âges."
@@ -6365,7 +6645,7 @@ const quizzesData = {
             {
                 id: 8,
                 question: "Quel est le prénom du gardien de Poudlard qui devient l'ami de Harry dès sa première visite dans le monde des sorciers ?",
-                options: ["Alastor, le fameux Fol Œil dont la réputation de chasseur de mangemorts précède largement son arrivée comme professeur de Défense contre les forces du Mal", "Abelforth, le frère discret de Dumbledore, tavernier à Pré-au-Lard et secrètement lié à l'Ordre du Phénix depuis les premières guerres magiques", "Argus, le concierge revêche et sans magie du château dont le chat Mrs Norris surveille nuit et jour les couloirs pour le compte de Dumbledore", "Rubeus (Hagrid)"],
+                options: ["Alastor", "Abelforth", "Argus", "Rubeus (Hagrid)"],
                 correct: 3,
                 explanation: "Rubeus Hagrid est le gardien des clés et lieux magiques de Poudlard. C'est lui qui révèle à Harry sa véritable identité de sorcier le soir de son 11e anniversaire, et qui l'accompagne pour ses premiers achats à Diagon Alley. Demi-géant expulsé de Poudlard à tort (accusé d'avoir ouvert la Chambre des Secrets), il voue une fidélité absolue à Dumbledore.",
                 source: "J.K. Rowling, Harry Potter à l'École des Sorciers (1997), Chapitre 4 — Le gardien des clés."
@@ -6381,7 +6661,7 @@ const quizzesData = {
             {
                 id: 10,
                 question: "Comment s'appelle la deuxième meilleure amie de Harry, brillante élève première de sa promotion ?",
-                options: ["Luna Lovegood, élève excentrique de Serdaigle dont l'intelligence atypique et la vision du monde décalée lui permettent de voir ce que les autres ignorent", "Ginny Weasley, sœur cadette de Ron dont les talents magiques exceptionnels et le courage discret en feront l'une des meilleurs sorcières de sa génération", "Lavande Brown, élève de Gryffondor passionnée de Divination qui développera une relation romantique tumultueuse avec Ron en sixième année", "Hermione Granger"],
+                options: ["Luna Lovegood", "Ginny Weasley", "Lavande Brown", "Hermione Granger"],
                 correct: 3,
                 explanation: "Hermione Granger est la troisième du trio principal. Issue d'une famille de Moldus (non-magiques), elle compense en travaillant deux fois plus que ses camarades et devient rapidement la meilleure élève de Poudlard. Son intelligence, sa mémoire encyclopédique et sa maîtrise des sorts sauvent Harry et Ron de nombreuses fois tout au long de la saga.",
                 source: "J.K. Rowling, Harry Potter à l'École des Sorciers (1997), Chapitre 6 — première apparition dans l'Expresso."
@@ -6397,7 +6677,7 @@ const quizzesData = {
             {
                 id: 12,
                 question: "Qui est le directeur de Poudlard durant la majeure partie de la scolarité de Harry ?",
-                options: ["Séverus Rogue, qui occupe brièvement ce poste lors de la prise de contrôle du ministère par Voldemort et dirige l'école sous la surveillance des mangemorts", "Minerva McGonagall, professeur de Métamorphose et directrice de Gryffondor, qui assume la direction par intérim à plusieurs reprises en l'absence de Dumbledore", "Cornelius Fudge, le Ministre de la Magie qui supervise Poudlard pendant une période de crise et tente d'en reprendre le contrôle politique direct", "Albus Dumbledore"],
+                options: ["Séverus Rogue", "Minerva McGonagall", "Cornelius Fudge", "Albus Dumbledore"],
                 correct: 3,
                 explanation: "Albus Perceval Wulfric Brian Dumbledore est le directeur de Poudlard pendant la quasi-totalité de la scolarité de Harry. Considéré comme le plus grand sorcier de son temps, il est le seul que Voldemort ait jamais craint. Il est aussi le maître de la Baguette de Sureau, l'une des Reliques de la Mort, et le guide spirituel de Harry.",
                 source: "J.K. Rowling, saga Harry Potter (1997-2007) — directeur de Poudlard jusqu'à sa mort dans Le Prince de Sang-Mêlé."
@@ -6405,7 +6685,7 @@ const quizzesData = {
             {
                 id: 13,
                 question: "Quelle est la formule du sortilège de lumière utilisé pour allumer le bout d'une baguette ?",
-                options: ["Lumos Maxima, version amplifiée qui projette un faisceau de lumière puissant couvrant une zone de plusieurs mètres de diamètre autour du lanceur", "Incendio Lumos, un hybride sortilège-feu qui produit une flamme bleue froide suspendue à la pointe de la baguette sans brûler l'environnement proche", "Fulgur, un sortilège de la famille des éclairs lumineux créé par les sorciers nordiques et enseigné exclusivement en cours de Défense Avancée", "Lumos"],
+                options: ["Lumos Maxima", "Incendio Lumos", "Fulgur", "Lumos"],
                 correct: 3,
                 explanation: "Lumos est l'un des sorts les plus simples et les plus utilisés dans la saga. Il allume le bout de la baguette magique comme une lampe de poche. Son contraire est Nox, qui éteint la lumière. C'est l'un des premiers sortilèges enseignés aux jeunes sorciers, emblème de la magie simple mais pratique du quotidien.",
                 source: "J.K. Rowling, saga Harry Potter — sortilège utilisé pour la première fois dans Harry Potter et la Chambre des Secrets (1998)."
@@ -6413,7 +6693,7 @@ const quizzesData = {
             {
                 id: 14,
                 question: "Quelle est la banque des sorciers où Harry possède un coffre rempli d'or ?",
-                options: ["La Bourse aux Gallions, fondée sous le règne de la reine Elizabeth Ire en 1580 par un consortium de sorciers marchands fuyant la persécution moldus", "La Caisse Magique d'Épargne, institution financière du Ministère de la Magie qui gère les fortunes héritées par les orphelins sorciers de pures familles", "Le Comptoir d'Or de Knockturn Alley, banque souterraine officieuse qui sert les deux camps et accepte les monnaies moldue et sorcière sans distinction", "Gringotts"],
+                options: ["La Bourse aux", "La Caisse Magique", "Le Comptoir d'Or de", "Gringotts"],
                 correct: 3,
                 explanation: "Gringotts est la banque des sorciers, gérée par des gobelins et réputée inviolable. Elle est située à Diagon Alley. Les coffres sont protégés par de puissants sortilèges et gardés par des dragons dans les niveaux les plus profonds. Harry y hérite du coffre de ses parents (numéro 687). Dans Les Reliques de la Mort, le trio parvient pourtant à s'y introduire.",
                 source: "J.K. Rowling, Harry Potter à l'École des Sorciers (1997), Chapitre 5 — visite de Gringotts avec Hagrid."
@@ -6421,7 +6701,7 @@ const quizzesData = {
             {
                 id: 15,
                 question: "Comment appelle-t-on les gens sans pouvoirs magiques dans l'univers Harry Potter ?",
-                options: ["Les Squibs, terme désignant précisément les personnes nées dans des familles de sorciers mais dépourvues de tout pouvoir magique comme Rusard le gardien", "Les Ordinaires, terme officiel du Ministère de la Magie pour désigner les non-magiques dans les rapports administratifs et les lois de protection", "Les Profanes, terme traditionnel utilisé par les vieilles familles pure-sang pour désigner ceux qui ignorent tout de l'existence du monde magique", "Des Moldus"],
+                options: ["Les Squibs", "Les Ordinaires", "Les Profanes", "Des Moldus"],
                 correct: 3,
                 explanation: "Le terme 'Moldu' (Muggle en version originale anglaise) désigne les personnes sans capacités magiques. Ce n'est pas un terme péjoratif en soi, bien que certains sorciers de familles pure-sang comme les Malefoy le prononcent avec mépris. Les Moldus ignorent l'existence du monde magique grâce aux sortilèges de dissimulation appliqués par le Ministère.",
                 source: "J.K. Rowling, Harry Potter à l'École des Sorciers (1997) — terme introduit dès le premier chapitre."
@@ -6429,7 +6709,7 @@ const quizzesData = {
             {
                 id: 16,
                 question: "Quel est le nom du train magique qui emmène les élèves à Poudlard ?",
-                options: ["Le Silverlink Express, un train à vapeur enchanté qui adapte sa vitesse en fonction du nombre d'élèves à bord et arrive toujours à l'heure exacte prévue", "Le Poudlard Special, nom officiel dans les documents du Ministère bien que les élèves aient depuis longtemps adopté le surnom populaire du train", "Le Grand Nord Magique, train express fondé en 1850 pour remplacer l'ancien système de portoloin collectif jugé dangereux pour les jeunes sorciers", "L'Expresso de Poudlard"],
+                options: ["Le Silverlink Express", "Le Poudlard Special", "Le Grand Nord Magique", "L'Expresso de Poudlard"],
                 correct: 3,
                 explanation: "L'Expresso de Poudlard est un train à vapeur cramoisi qui part chaque 1er septembre à 11h00 du quai 9¾ de la gare King's Cross. Il met environ une journée pour relier Londres à la Haute-Écosse où se trouve Poudlard. Les élèves y changent leurs habits moldus pour des robes de sorcier et achètent des friandises magiques au chariot.",
                 source: "J.K. Rowling, Harry Potter à l'École des Sorciers (1997), Chapitre 6 — The Journey from Platform Nine and Three-Quarters."
@@ -6437,7 +6717,7 @@ const quizzesData = {
             {
                 id: 17,
                 question: "Quel professeur enseigne la Défense contre les Forces du Mal lors de la première année de Harry ?",
-                options: ["Remus Lupin, le professeur le plus apprécié de tous les élèves, qui leur enseigne les contre-sorts pratiques dès la première année avant de révéler sa nature de loup-garou", "Gilderoy Lockhart, célébrité frauduleuse dont les mémoires inventés l'ont rendu célèbre dans tout le monde sorcier malgré une incompétence magique totale", "Bartemis Croupton Junior, mangemort déguisé grâce au Polynectar en Alastor Maugrey pour surveiller Harry et le diriger vers Voldemort tout au long de l'année", "Quirinus Quirinus (Quirrell)"],
+                options: ["Remus Lupin", "Gilderoy Lockhart", "Bartemis Croupton Junior", "Quirinus Quirinus (Quirrell)"],
                 correct: 3,
                 explanation: "Professeur Quirinus Quirrell enseigne la Défense contre les Forces du Mal en première année. Ce professeur nerveux et bégayant cache sous son turban le visage de Voldemort, dont il est le serviteur. C'est lui qui tente de dérober la Pierre philosophale pour son maître. Il meurt lorsque Harry le touche, car la protection magique de Lily brûle tout ce qui partage le corps de Voldemort.",
                 source: "J.K. Rowling, Harry Potter à l'École des Sorciers (1997), Chapitre 17 — révélation du double rôle de Quirrell."
@@ -6445,7 +6725,7 @@ const quizzesData = {
             {
                 id: 18,
                 question: "Quelle est la monnaie utilisée dans le monde des sorciers ?",
-                options: ["Les Doublons d'Or, monnaie ancienne créée par les fondateurs de Poudlard et acceptée uniquement dans les établissements certifiés par le Ministère de la Magie", "Les Merveilles, divisées en Éclairs d'argent et en Noisettes de bronze, nommées en hommage aux trois créateurs de la monnaie sorcière au Moyen Âge", "Les Dragots d'Or, divisés en Plumins d'argent et en Noises de bronze, système décimal simplifié adopté par le Ministère après la réforme monétaire de 1890", "Les Gallions, Mornilles et Noises"],
+                options: ["Les Doublons d'Or", "Les Merveilles", "Les Dragots d'Or", "Les Gallions, Mornilles et Noises"],
                 correct: 3,
                 explanation: "La monnaie sorcière comprend trois pièces : le Gallion d'or (la plus grande valeur), la Mornille d'argent (17 Mornilles = 1 Gallion) et la Noise de bronze (29 Noises = 1 Mornille). Cette monnaie est gérée par Gringotts. Elle n'a pas de valeur dans le monde moldu et ne peut être échangée qu'à la banque des gobelins.",
                 source: "J.K. Rowling, Harry Potter à l'École des Sorciers (1997) + Pottermore — système monétaire sorcier."
@@ -6453,7 +6733,7 @@ const quizzesData = {
             {
                 id: 19,
                 question: "Quel est le nom de la célèbre confiserie sous forme de cartes à collectionner représentant des sorciers célèbres ?",
-                options: ["Les Brioches des Sorcières, gâteaux magiques qui projettent une vision holographique du sorcier représenté pendant 10 secondes à l'ouverture", "Les Caramels Enchantés, confiserie ambulante vendue sur le chariot de l'Expresso dont les cartes se troquent depuis deux siècles entre élèves de Poudlard", "Les Pralines des Mages, chocolats noirs importés de la confiserie belge Vanderboom, dont la réputation de cartes à collectionner dépasse celle des chocolats eux-mêmes", "Les Chocogrenouilles"],
+                options: ["Les Brioches des Sorcières", "Les Caramels Enchantés", "Les Pralines des Mages", "Les Chocogrenouilles"],
                 correct: 3,
                 explanation: "Les Chocogrenouilles (Chocolate Frogs en VO) sont des grenouilles en chocolat qui bondissent vraiment à l'ouverture. Chaque paquet contient une carte de sorcier célèbre. C'est grâce à une carte d'Albus Dumbledore dans le train que Ron apprend à Harry l'existence du Sorcier Nicolas Flamel — un détail crucial pour l'intrigue du tome 1.",
                 source: "J.K. Rowling, Harry Potter à l'École des Sorciers (1997), Chapitre 6 — l'Expresso de Poudlard."
@@ -6461,7 +6741,7 @@ const quizzesData = {
             {
                 id: 20,
                 question: "Sous quel nom Voldemort est-il né dans la version française ?",
-                options: ["Tom Riddle, nom anglais anglicisé conservé tel quel dans la traduction française pour souligner l'héritage anglophone de la famille Jedusor paternelle", "Thomas Elvire Jedusor, version longue incluant le prénom maternel hérité de sa mère Merope Gaunt, souvent abrégé en T.E. Jedusor dans les documents officiels", "Antoine Marcel Jedusor, prénom donné par l'orphelinat londonien en 1926 qui ignorait son nom de famille sorcier et lui attribua un nom moldu courant", "Tom Elvis Jedusor"],
+                options: ["Tom Riddle", "Thomas Elvire Jedusor", "Antoine Marcel Jedusor", "Tom Elvis Jedusor"],
                 correct: 3,
                 explanation: "Tom Elvis Jedusor est l'anagramme parfait de 'Je suis Voldemort', adaptée en français par Jean-François Ménard. En anglais, Tom Marvolo Riddle est l'anagramme de 'I am Lord Voldemort'. Le traducteur français a donc inventé 'Elvis' comme deuxième prénom pour préserver l'anagramme — un tour de force de traduction.",
                 source: "J.K. Rowling, Harry Potter et la Chambre des Secrets (1998), Chapitre 17 — révélation de l'identité de T.E. Jedusor."
@@ -6469,7 +6749,7 @@ const quizzesData = {
             {
                 id: 21,
                 question: "Quelle est la formule du sortilège de la mort instantanée ?",
-                options: ["Morsus Finalis, le sort interdit de destruction totale créé par un mage noir médiéval et banni par la Confédération Internationale des Sorciers en 1689", "Crucio Terminus, une version extrême du sort de torture qui, maintenu assez longtemps, finit par provoquer la mort par arrêt cardiaque de la victime", "Letalis Maxima, le plus redouté des sortilèges interdits, reconnaissable à son jet de lumière rouge sang qui laisse la victime intacte extérieurement", "Avada Kedavra"],
+                options: ["Morsus Finalis", "Crucio Terminus", "Letalis Maxima", "Avada Kedavra"],
                 correct: 3,
                 explanation: "Avada Kedavra est l'un des trois Sortilèges Impardonnables, les plus noirs de la magie. Il projette un éclair de lumière verte et tue instantanément, sans laisser de trace sur le corps. Il n'existe aucun contre-sortilège direct — seul un sacrifice d'amour peut en neutraliser l'effet. Harry est le seul à y avoir survécu (deux fois), ce qui lui vaut son titre de 'L'Élu'.",
                 source: "J.K. Rowling, Harry Potter et la Coupe de Feu (2000), Chapitre 14 — cours de Défense avec Fol Œil Maugrey."
@@ -6477,7 +6757,7 @@ const quizzesData = {
             {
                 id: 22,
                 question: "Où Harry Potter a-t-il grandi avant de découvrir qu'il était sorcier ?",
-                options: ["Dans un orphelinat de Surrey tenu par des Moldus qui ignoraient tout de son passé magique et dont la directrice l'a protégé à son insu des mangemorts", "Dans la ferme de ses grands-parents maternels en Écosse, loin de Londres, où ses pouvoirs magiques incontrôlés avaient déjà provoqué plusieurs incidents remarqués", "Dans un appartement à Peckham partagé avec sa tante Marge, cousine germaine de Vernon Dursley, qui l'élevait contre rémunération du Ministère de la Magie", "Au 4 Privet Drive, chez sa tante Pétunia et son oncle Vernon Dursley"],
+                options: ["Dans un orphelinat de Surrey tenu par des Moldus qui ignoraient tout de son passé magique et dont la directrice l'a protégé à son insu des", "Dans la ferme de ses grands-parents maternels en Écosse", "Dans un appartement à Peckham partagé avec sa tante Marge", "Au 4 Privet Drive, chez sa tante Pétunia et son oncle Vernon Dursley"],
                 correct: 3,
                 explanation: "Harry a grandi au 4 Privet Drive, Little Whinging, Surrey, chez sa tante Pétunia (sœur de sa mère Lily), son oncle Vernon et leur fils Dudley. Ils le logeaient dans le placard sous l'escalier jusqu'à ce qu'il reçoive ses lettres de Poudlard. Dumbledore avait placé Harry chez les Dursley précisément parce que le sang de Lily coulait dans les veines de Pétunia, renforçant la protection magique.",
                 source: "J.K. Rowling, Harry Potter à l'École des Sorciers (1997), Chapitres 1-2 — L'Enfant qui a Survécu."
@@ -6485,7 +6765,7 @@ const quizzesData = {
             {
                 id: 23,
                 question: "Comment s'appelle le loup-garou professeur de Défense contre les Forces du Mal en troisième année ?",
-                options: ["Fenrir Greyback, le plus brutal des loups-garous du camp de Voldemort, qui infecte délibérément des enfants pour les recruter depuis leur plus jeune âge", "Sirius Black, le parrain de Harry sorti d'Azkaban que tous croient être le traître ayant livré ses parents, mais qui est en réalité innocent", "Pomfrey Lupin, frère aîné du directeur adjoint dont la transformation mensuelle est connue de tout le corps enseignant depuis ses propres études à Poudlard", "Remus Lupin"],
+                options: ["Fenrir Greyback", "Sirius Black", "Pomfrey Lupin", "Remus Lupin"],
                 correct: 3,
                 explanation: "Remus Lupin est le professeur de Défense contre les Forces du Mal en troisième année. Ami d'enfance de James Potter et Sirius Black, c'est le meilleur professeur que les élèves aient eu dans cette matière. Sa lycanthropie est révélée accidentellement, ce qui le force à démissionner. Son surnominué 'Lunard' par les élèves est une allusion discrète à sa nature (Luna = lune).",
                 source: "J.K. Rowling, Harry Potter et le Prisonnier d'Azkaban (1999)."
@@ -6501,7 +6781,7 @@ const quizzesData = {
             {
                 id: 25,
                 question: "Quel animal Hermione Granger a-t-elle comme animal de compagnie ?",
-                options: ["Un hibou tacheté nommé Chouette qu'elle a acheté à Eeylops Owl Emporium lors de sa première visite à Diagon Alley avant sa première année à Poudlard", "Un lapin blanc nommé Angora qu'elle garde dans la Tour de Gryffondor et qui l'aide à mémoriser ses sorts grâce à un conditionnement associatif", "Un rat blanc nommé Pattenrond qu'elle a reçu à Noël et dont la ressemblance troublante avec un vieux rat de famille intrigue bizarrement Ron Weasley", "Un chat roux aplati nommé Pattenrond"],
+                options: ["Un hibou tacheté nommé Chouette qu'elle a acheté à Eeylops Owl Emporium lors de sa", "Un lapin blanc nommé Angora qu'elle garde dans la Tour de Gryffondor et qui l'aide à", "Un rat blanc nommé Pattenrond qu'elle a reçu à Noël et dont la ressemblance", "Un chat roux aplati nommé Pattenrond"],
                 correct: 3,
                 explanation: "Hermione possède un chat orange mi-crapaud nommé Pattenrond (Crookshanks en VO). Ce chat très intelligent reconnaît immédiatement que Croûtard (le rat de Ron) est en réalité un Animagus humain — Peter Pettigrow. Pattenrond est en fait un mi-Kneazle (créature magique), ce qui explique son intelligence supérieure à la normale.",
                 source: "J.K. Rowling, Harry Potter et le Prisonnier d'Azkaban (1999), Chapitre 4 — achat à la boutique de la Rue des Emprunteurs."
@@ -6509,7 +6789,7 @@ const quizzesData = {
             {
                 id: 26,
                 question: "Quel est le prénom du père de Harry Potter ?",
-                options: ["Albus James Potter, nom choisi en hommage posthume à Dumbledore bien que ce soit le prénom d'un des fils de Harry et non du père lui-même", "Charlus Potter, sorcier pur-sang de la famille Potter dont l'arbre généalogique remonte à la famille Peverell, créateurs des Reliques de la Mort", "Harold Potter, prénom moldu délibérément choisi pour mieux se fondre dans la société non-magique lors de la première guerre contre Voldemort", "James Potter"],
+                options: ["Albus James Potter", "Charlus Potter", "Harold Potter", "James Potter"],
                 correct: 3,
                 explanation: "James Potter (né le 27 mars 1960, mort le 31 octobre 1981) est le père de Harry. Animagus capable de se transformer en cerf (d'où le patronus cerf de Harry), il faisait partie du groupe des Maraudeurs avec Sirius Black, Remus Lupin et Peter Pettigrow. Il est mort à 21 ans en tentant de protéger Lily et Harry de Voldemort.",
                 source: "J.K. Rowling, saga Harry Potter — personnage central de l'histoire familiale, révélé progressivement dans les tomes 3, 5 et 7."
@@ -6517,7 +6797,7 @@ const quizzesData = {
             {
                 id: 27,
                 question: "Quelle est la formule utilisée pour invoquer un Patronus ?",
-                options: ["Expecto Lumos, une version combinée des sortilèges de lumière et de protection créée par un mage gaulois au IVe siècle pour repousser les créatures de l'ombre", "Patronum Expelliarmus, un sort de désarmement spirituel qui projette la représentation animale de la lumière intérieure du lanceur vers la créature ciblée", "Lux Patroni, la forme abrégée utilisée en combat avancé par les Aurors qui ont maîtrisé le sortilège et peuvent le lancer sans prononcer les mots complets", "Expecto Patronum"],
+                options: ["Expecto Lumos", "Patronum Expelliarmus", "Lux Patroni", "Expecto Patronum"],
                 correct: 3,
                 explanation: "Expecto Patronum est le sortilège anti-Détraqueur par excellence. Il invoque un Patronus — une projection lumineuse argent prenant la forme d'un animal représentant la lumière intérieure du lanceur. Le Patronus de Harry est un cerf (comme son père James). C'est l'un des sorts les plus difficiles de la magie, car il nécessite de se concentrer sur un souvenir heureux puissant.",
                 source: "J.K. Rowling, Harry Potter et le Prisonnier d'Azkaban (1999), Chapitres 12 et 22 — apprentissage avec Lupin."
@@ -6525,7 +6805,7 @@ const quizzesData = {
             {
                 id: 28,
                 question: "Comment s'appelle la prison des sorciers gardée par les Détraqueurs ?",
-                options: ["Nurmengard, la forteresse construite par Grindelwald pour y enfermer ses opposants et dans laquelle il finira lui-même captif après sa défaite face à Dumbledore", "Knockturn Prison, prison souterraine officieuse du Ministère située sous Knockturn Alley, réservée aux mangemorts de haut rang condamnés à mort", "La Tour des Regrets, vieux château écossais reconverti en prison après la première guerre contre Voldemort et fermé en 1990 pour manque de place", "Azkaban"],
+                options: ["Nurmengard", "Knockturn Prison", "La Tour des Regrets", "Azkaban"],
                 correct: 3,
                 explanation: "Azkaban est une île-prison isolée dans la mer du Nord, gardée par des Détraqueurs qui sucent toute joie et tout souvenir heureux de leurs prisonniers. La plupart des détenus finissent par perdre la raison. Sirius Black est le seul à en être jamais évadé (en se transformant en chien, les Détraqueurs ne pouvant lire les émotions animales). Les Détraqueurs quittent Azkaban pour rejoindre Voldemort dans Le Tome 6.",
                 source: "J.K. Rowling, Harry Potter et le Prisonnier d'Azkaban (1999) — première description complète d'Azkaban."
@@ -6533,7 +6813,7 @@ const quizzesData = {
             {
                 id: 29,
                 question: "Quel objet Harry vole-t-il lors d'un cours de vol en première année, ce qui lui vaut d'intégrer l'équipe de Quidditch ?",
-                options: ["Le Vif d'or de réserve de Madame Bibine, qu'il attrape d'une main à 5 mètres du sol après l'avoir suivi pendant 200 mètres en plein vol horizontal", "Un Souafle oublié par un troisième année que Harry rattrape en piqué à deux mètres du sol pour le remettre à sa place avant l'arrivée de Madame Bibine", "La baguette de Neville Londubat, emportée par un vent magique et que Harry attrape au terme d'un vol de 30 secondes à 15 mètres de hauteur", "La Boufflette de Neville"],
+                options: ["Le Vif d'or de réserve de Madame Bibine", "Un Souafle oublié par un troisième année que Harry", "La baguette de Neville Londubat", "La Boufflette de Neville"],
                 correct: 3,
                 explanation: "Lors du premier cours de vol sur balai, Neville Londubat perd le contrôle de son balai et tombe. Drago Malefoy s'empare de sa Boufflette et la lance haut dans les airs. Harry s'élance instinctivement pour la rattraper — et la capture parfaitement après un piqué spectaculaire. Le professeur McGonagall, témoin de la scène, le recrute immédiatement dans l'équipe de Quidditch de Gryffondor.",
                 source: "J.K. Rowling, Harry Potter à l'École des Sorciers (1997), Chapitre 9 — Le duel de minuit."
@@ -6541,7 +6821,7 @@ const quizzesData = {
             {
                 id: 30,
                 question: "Quelle est la formule pour ouvrir la trappe à l'Arbre Cogneur ?",
-                options: ["Il faut taper trois fois sur le nœud avec sa baguette en prononçant 'Immobulus', mais cette méthode ne fonctionne que sous pleine lune selon Poudlard : Histoire", "Il suffit d'approcher doucement en rampant depuis l'est, car l'Arbre Cogneur ne détecte pas les mouvements lents en dessous de 0,3 m/s selon Hagrid", "Il n'y a pas de formule — il faut utiliser un Portoloin programmé par Dumbledore lui-même, le seul moyen sécurisé d'accéder au tunnel sans danger", "Appuyer sur le nœud de l'arbre"],
+                options: ["Il faut taper trois fois sur le nœud avec sa baguette en", "Il suffit d'approcher doucement en rampant depuis", "Il n'y a pas de formule", "Appuyer sur le nœud de l'arbre"],
                 correct: 3,
                 explanation: "L'Arbre Cogneur est un arbre magique extrêmement violent qui attaque tout ce qui l'approche. Son seul point faible est un nœud à sa base : y appuyer (avec une branche longue ou la baguette) le paralyse instantanément. C'est grâce à cette méthode que Sirius Black entrait et sortait du tunnel menant à la Cabane Hurlante quand il était à Poudlard.",
                 source: "J.K. Rowling, Harry Potter et le Prisonnier d'Azkaban (1999), Chapitre 17 — L'Arbre Cogneur."
@@ -6569,7 +6849,7 @@ const quizzesData = {
             {
                 id: 11,
                 question: "Quelle est l'identité secrète cachée derrière le pseudonyme 'Prongs' parmi les Maraudeurs ?",
-                options: ["Sirius Black, dont le nom 'Prongs' évoque les crocs d'un grand chien noir, sa forme animale d'Animagus adoptée pour accompagner Lupin les nuits de pleine lune", "Peter Pettigrow, dont le surnom 'Prongs' fait référence à la queue fourchue d'un rat, sa forme animale qui lui a permis de se cacher pendant douze ans", "Remus Lupin, pour qui ses amis ont inventé des surnoms liés à l'imagerie lunaire, 'Prongs' étant un terme ancien gaélique désignant le croissant de lune", "James Potter (le cerf)"],
+                options: ["Sirius Black", "Peter Pettigrow", "Remus Lupin", "James Potter (le cerf)"],
                 correct: 3,
                 explanation: "Les Maraudeurs avaient chacun un surnom lié à leur forme animale d'Animagus : Prongs (James = cerf), Patmol (Sirius = chien), Queue de Rat (Peter = rat) et Lunard (Remus = loup-garou, seul à ne pas être Animagus). La Carte du Maraudeur porte leur signature collective. 'Prongs' fait référence aux bois ramifiés (pronged antlers) d'un cerf.",
                 source: "J.K. Rowling, Harry Potter et le Prisonnier d'Azkaban (1999), Chapitre 18 — la vérité sur les Maraudeurs."
@@ -6577,7 +6857,7 @@ const quizzesData = {
             {
                 id: 12,
                 question: "Quel est le vrai nom de famille de Voldemort, révélé dans la Chambre des Secrets ?",
-                options: ["Gaunt, le nom de sa mère Merope, descendants directs de Salazar Serpentard par la lignée féminine, dont la famille avait gardé le médaillon de Serpentard", "Slytherin, le nom du fondateur dont il est le descendant direct par la lignée paternelle, qu'il a délibérément effacé de tous les registres magiques", "Marvolo, le prénom de son grand-père maternel qu'il a adopté comme nom de famille après avoir découvert son héritage Serpentard lors de ses années à l'orphelinat", "Jedusor (Tom Elvis Jedusor)"],
+                options: ["Gaunt", "Slytherin", "Marvolo", "Jedusor"],
                 correct: 3,
                 explanation: "Tom Elvis Jedusor est l'anagramme de 'Je suis Voldemort'. Tom est le prénom de son père moldu (Tom Jedusor Sr.) qu'il haïssait. Il a adopté le nom 'Lord Voldemort' pour effacer toute trace de ses origines moldu et réécrire son identité. C'est révélé quand Tom Jedusor écrit son nom dans l'air avec la baguette de Harry.",
                 source: "J.K. Rowling, Harry Potter et la Chambre des Secrets (1998), Chapitre 17 — la Chambre des Secrets."
@@ -6585,7 +6865,7 @@ const quizzesData = {
             {
                 id: 13,
                 question: "Quel objet permet de voir les pensées stockées dans une vasque ?",
-                options: ["Le Miroir du Risèd, miroir légendaire qui n'affiche pas le présent mais les désirs les plus profonds, parfois confondu avec un outil de visualisation mémorielle", "L'Omniaculaire, appareil de vision magique qui enregistre les événements en temps réel et peut les rejouer au ralenti, utilisé lors des événements sportifs", "La Boule de Cristal, utilisée en cours de Divination par la professeure Trelawney pour enseigner l'analyse des formes brumeuses et des visions prophétiques", "La Pensine"],
+                options: ["Le Miroir du Risèd", "L'Omniaculaire", "La Boule de Cristal", "La Pensine"],
                 correct: 3,
                 explanation: "La Pensine (Pensieve en VO) est une vasque en pierre gravée de runes qui permet d'extraire des souvenirs de sa tête avec sa baguette et de les stocker sous forme liquide argentée. En plongeant sa tête dans le souvenir, on peut le revivre comme si on y était présent. Dumbledore utilise la sienne régulièrement, et Harry y plonge notamment pour découvrir les souvenirs de Tom Jedusor.",
                 source: "J.K. Rowling, Harry Potter et la Coupe de Feu (2000), Chapitre 30 — première utilisation de la Pensine de Dumbledore."
@@ -6593,7 +6873,7 @@ const quizzesData = {
             {
                 id: 14,
                 question: "De quoi est faite la Cape d'Invisibilité de Harry ?",
-                options: ["De plumes de Détraqueur tissées avec du fil d'argent pur — la seule étoffe capable de bloquer les sorts de détection magique de n'importe quelle puissance", "De peau de Demiguise séchée et traitée, matériau couramment utilisé pour les Capes ordinaires qui s'estompent avec le temps et perdent leurs propriétés", "De soie d'araignée géante enchantée par les gobelins de Gringotts, matériau rare dont la fabrique a été interdite par la Confédération Internationale en 1800", "De la peau de Demiguise, mais c'est une Relique de la Mort"],
+                options: ["De plumes de Détraqueur tissées avec du fil d'argent pur", "De peau de Demiguise séchée et traitée", "De soie d'araignée géante enchantée par les gobelins de Gringotts", "De la peau de Demiguise, mais c'est une Relique de la Mort"],
                 correct: 3,
                 explanation: "La Cape d'Invisibilité de Harry est l'une des trois Reliques de la Mort créées selon la légende par la Mort elle-même. Contrairement aux autres capes ordinaires faites de peau de Demiguise (qui pâlissent avec le temps), celle-ci reste parfaite après des siècles car c'est une relique magique exceptionnelle. Elle appartient aux descendants de la famille Peverell, dont Harry est l'héritier.",
                 source: "J.K. Rowling, Harry Potter et les Reliques de la Mort (2007), Chapitre 21 — Le Conte des Trois Frères."
@@ -6601,7 +6881,7 @@ const quizzesData = {
             {
                 id: 15,
                 question: "Quel est le résultat du Tournoi des Trois Sorciers en termes de vainqueur officiel ?",
-                options: ["Fleur Delacour, représentante de Beauxbâtons, qui remporte la Coupe définitivement après la mort de Cedric, les règles interdisant de couronner un mort", "Viktor Krum, représentant de Durmstrang, qui cumule le plus de points sur les trois épreuves et est déclaré vainqueur au sens strict des règles du Tournoi", "Les juges décident d'annuler le Tournoi en raison des circonstances exceptionnelles et aucun vainqueur n'est officiellement déclaré pour la première fois de l'histoire", "Harry Potter et Cedric Diggory (ex-aequo), puis Cedric est tué"],
+                options: ["Fleur Delacour", "Viktor Krum", "Les juges décident d'annuler", "Harry Potter et Cedric Diggory"],
                 correct: 3,
                 explanation: "Harry Potter et Cedric Diggory touchent simultanément la Coupe de Feu (transformée en Portoloin) et arrivent ex-aequo. Immédiatement après, Voldemort ordonne à Pettigrow de tuer Cedric ('Tue le superflu'). Harry revient avec le corps de Cedric et la vérité sur le retour de Voldemort — que Fudge refuse de croire.",
                 source: "J.K. Rowling, Harry Potter et la Coupe de Feu (2000), Chapitres 31-33 — Le Tournoi des Trois Sorciers."
@@ -6609,7 +6889,7 @@ const quizzesData = {
             {
                 id: 16,
                 question: "Quel est le pouvoir particulier de Harry qui effraie les autres sorciers et l'a trahi comme Parseltongue ?",
-                options: ["La Légillimancie naturelle, capacité innée à lire dans les pensées qu'il n'a jamais appris à contrôler et qui lui permet d'accéder accidentellement aux esprits des autres", "La Magie Chronologique, pouvoir rarissime de percevoir des événements futurs probables sous forme de flash prémonitoires pendant son sommeil depuis l'âge de sept ans", "La Pyrokinésie incontrôlée, pouvoir de génération spontanée du feu qui s'est manifesté plusieurs fois chez les Dursley avant son entrée à Poudlard", "Parler aux serpents (Fourchelang)"],
+                options: ["La Légillimancie naturelle", "La Magie Chronologique", "La Pyrokinésie incontrôlée", "Parler aux serpents (Fourchelang)"],
                 correct: 3,
                 explanation: "Harry est Fourchelang (Parseltongue) — il peut parler et comprendre le langage des serpents. Ce pouvoir est extrêmement rare et associé à Salazar Serpentard et à ses descendants. Harry l'a acquis accidentellement quand Voldemort lui a transmis un fragment d'âme la nuit du meurtre. Ce pouvoir effraie les autres sorciers car il est traditionnellement associé aux mages noirs.",
                 source: "J.K. Rowling, Harry Potter et la Chambre des Secrets (1998), Chapitre 11 — Club de Duels, révélation du Fourchelang."
@@ -6617,7 +6897,7 @@ const quizzesData = {
             {
                 id: 17,
                 question: "Quel est le nom du groupe de résistance fondé secrètement par Harry en cinquième année ?",
-                options: ["Le Cercle de Gryffondor, groupe clandestin qui se réunit dans la Tour de Gryffondor les nuits sans surveillance de Umbridge pour réviser la Défense", "Les Frères du Phénix Junior, branche étudiante de l'Ordre du Phénix fondée avec l'accord tacite de Dumbledore pour former la relève des membres adultes", "La Brigade Anti-Umbridge, nom informel donné par Fred et George à toute action de résistance contre les décrets éducatifs de la Haute Inquisitrice", "L'Armée de Dumbledore (A.D.)"],
+                options: ["Le Cercle de Gryffondor", "Les Frères du Phénix Junior", "La Brigade Anti-Umbridge", "L'Armée de Dumbledore (A.D.)"],
                 correct: 3,
                 explanation: "L'Armée de Dumbledore (A.D.) est un groupe secret fondé par Harry, Ron et Hermione en réponse à l'incompétence délibérée du professeur Ombrage, qui refuse d'enseigner la magie pratique. Ils se réunissent dans la Salle sur Demande. Le nom 'Armée de Dumbledore' était une blague — jusqu'à ce qu'Ombrage le découvre et que Dumbledore assume la responsabilité pour protéger Harry.",
                 source: "J.K. Rowling, Harry Potter et l'Ordre du Phénix (2003), Chapitre 18 — naissance de l'A.D."
@@ -6641,7 +6921,7 @@ const quizzesData = {
             {
                 id: 20,
                 question: "Quel est le vrai maître de la Baguette de Sureau au moment où Harry affronte Voldemort pour la dernière fois ?",
-                options: ["Dumbledore, car la mort ne suffit pas à transférer la maîtrise d'une Relique de la Mort, dont la loyauté persiste post-mortem selon les lois de la magie ancienne", "Voldemort, qui a arraché la baguette du tombeau de Dumbledore et dont la domination physique de l'objet a suffi à lui en transférer la maîtrise complète", "Séverus Rogue, qui a tué Dumbledore et aurait dû en hériter la maîtrise si ce dernier n'avait pas arrangé sa mort pour contourner le transfert de loyauté", "Harry Potter (il a désarmé Drago qui avait désarmé Dumbledore)"],
+                options: ["Dumbledore", "Voldemort", "Séverus Rogue", "Harry Potter"],
                 correct: 3,
                 explanation: "La logique de la Baguette de Sureau repose sur la maîtrise : la loyauté va au sorcier qui a vaincu (désarmé ou tué) le maître précédent. Drago a désarmé Dumbledore (depuis une tour de Poudlard) avant que Rogue ne le tue. Harry a ensuite désarmé Drago à Manoir Malefoy. Donc la maîtrise est passée : Dumbledore → Drago → Harry. Voldemort l'ignore complètement.",
                 source: "J.K. Rowling, Harry Potter et les Reliques de la Mort (2007), Chapitre 36 — la logique de la Baguette de Sureau."
@@ -6657,7 +6937,7 @@ const quizzesData = {
             {
                 id: 22,
                 question: "Quel est le nom de la créature gardienne du Coffre n°713 de Gringotts au début du tome 1 ?",
-                options: ["Un Niffleur géant enchainé, créature attirée par les objets brillants qui est utilisée comme système d'alarme vivant par les gobelins depuis le XIVe siècle", "Un Botruc de pierre, variante magique du Botruc ordinaire dont la peau de granit résiste à tous les sortilèges connus et qui est sourd aux injonctions verbales", "Un Dragon des Carpates enchaîné, dont le rugissement déclenche une alarme au Ministère de la Magie si l'enchaînement est rompu sans les codes gobelins", "Un troll / des sortilèges (pas de créature nommée dans ce coffre)"],
+                options: ["Un Niffleur géant enchainé", "Un Botruc de pierre", "Un Dragon des Carpates enchaîné", "Un troll / des sortilèges"],
                 correct: 3,
                 explanation: "Le coffre n°713 de Gringotts (où est cachée la Pierre Philosophale, que Dumbledore demande à Hagrid de récupérer) est protégé par des sortilèges gobelins complexes, non par une créature nommée. En revanche, les coffres des niveaux supérieurs sont gardés par des dragons. Hagrid retire la pierre ce même jour — juste avant que Quirrell ne tente de la voler.",
                 source: "J.K. Rowling, Harry Potter à l'École des Sorciers (1997), Chapitre 5 — visite de Gringotts."
@@ -6665,7 +6945,7 @@ const quizzesData = {
             {
                 id: 23,
                 question: "Quel professeur est responsable du cours de Potions pendant la majeure partie de la scolarité de Harry ?",
-                options: ["Horace Slughorn, le professeur de Potions que Dumbledore sort de sa retraite dorée en sixième année et dont la collection de 'Slug Club' révèle ses vieilles relations", "Filius Flitwick, le minuscule professeur de Sortilèges dont la passion des potions complexes est un secret de Poudlard depuis son arrivée dans les années 1980", "Pomona Chourave, qui cumule l'enseignement des Botanique et des Potions jusqu'en troisième année avant qu'une réforme pédagogique ne sépare les deux matières", "Séverus Rogue"],
+                options: ["Horace Slughorn", "Filius Flitwick", "Pomona Chourave", "Séverus Rogue"],
                 correct: 3,
                 explanation: "Séverus Rogue enseigne les Potions pendant les 6 premières années de Harry, même s'il convoite le poste de Défense contre les Forces du Mal (qu'il obtient finalement en tome 6). Sa relation avec Harry est complexe : il le harcèle, le déteste à cause de son père James, mais le protège en secret par amour éternel pour Lily. Son sacrifice final est l'un des plus poignants de la saga.",
                 source: "J.K. Rowling, saga Harry Potter (1997-2007) — Séverus Rogue, personnage central."
@@ -6673,7 +6953,7 @@ const quizzesData = {
             {
                 id: 24,
                 question: "Comment s'appelle la prophétie qui concerne Harry et Voldemort, et qui l'a prononcée ?",
-                options: ["La Prophétie des Sept, prononcée par le fantôme du Baron Sanglant en 1945 et qui prédit l'arrivée d'un sorcier aux sept marques qui vaincra le seigneur des ténèbres renaissant", "La Prophétie du Phénix, transmise par Fumseck lui-même à Dumbledore la nuit de la mort des Potter et conservée dans un œuf d'or sous le Ministère de la Magie", "L'Oracle de Serpentard, gravé sur les murs de la Chambre des Secrets par Salazar lui-même et déchiffré par Dumbledore lors de sa première visite souterraine", "La Prophétie de Trelawney, transmise à Dumbledore lors d'une audition"],
+                options: ["La Prophétie des Sept", "La Prophétie du Phénix", "L'Oracle de Serpentard", "La Prophétie de Trelawney"],
                 correct: 3,
                 explanation: "La prophétie a été prononcée par Sybille Trelawney lors d'une audition pour un poste à Poudlard avec Dumbledore. Elle annonce : 'Celui qui a le pouvoir de vaincre le Seigneur des ténèbres approche... né de ceux qui lui ont résisté trois fois... né comme meurt le septième mois... et le Seigneur des ténèbres le marquera comme son égal.' Voldemort a entendu la première moitié via un espion.",
                 source: "J.K. Rowling, Harry Potter et l'Ordre du Phénix (2003), Chapitre 37 — la prophétie complète révélée à Harry."
@@ -6697,7 +6977,7 @@ const quizzesData = {
             {
                 id: 27,
                 question: "Quelle est la matière enseignée par le professeur Binns ?",
-                options: ["Divination, cours enseigné depuis une tour inaccessible et dont le professeur Trelawney nie mordicus avoir jamais croisé un collègue fantôme dans l'escalier", "Astronomie, matière nocturne enseignée depuis la tour du même nom, et dont Binns est le fondateur historique avant de céder sa place à une version vivante de lui-même", "Botanique, que Binns a enseignée pendant deux siècles avant de mourir en cours un matin de mars et de continuer à enseigner sans s'apercevoir du changement", "Histoire de la Magie"],
+                options: ["Divination", "Astronomie", "Botanique", "Histoire de la Magie"],
                 correct: 3,
                 explanation: "Le professeur Cuthbert Binns enseigne l'Histoire de la Magie. C'est un fantôme — il est mort en s'endormant devant sa cheminée et a tout simplement continué à enseigner le lendemain matin sans remarquer son décès. Ses cours sont réputés pour être les plus ennuyeux de Poudlard : il dicte des notes monotones sur des guerres de gobelins sans jamais lever les yeux.",
                 source: "J.K. Rowling, Harry Potter à l'École des Sorciers (1997), Chapitre 8 — première mention du professeur Binns."
@@ -6705,7 +6985,7 @@ const quizzesData = {
             {
                 id: 28,
                 question: "Quel objet Sirius Black offre-t-il à Harry pour communiquer secrètement ?",
-                options: ["Un journal enchanté qui transcrit automatiquement les messages en écriture inversée pour tromper les éventuels censeurs du courrier de Poudlard", "Une Plume-Rapporteur qui recopie chaque conversation tenue dans un rayon de 10 mètres dans un carnet, permettant de reconstituer les échanges importants", "Un Pensine de poche contenant les souvenirs d'enfance communs des Maraudeurs, offert comme preuve de leur lien avant de quitter définitivement le monde des vivants", "Un miroir en deux parties pour communiquer à distance"],
+                options: ["Un journal enchanté qui transcrit automatiquement les messages en écriture inversée pour tromper les éventuels censeurs du", "Une Plume-Rapporteur qui recopie chaque conversation tenue dans un rayon de 10 mètres dans un carnet", "Un Pensine de poche contenant les souvenirs d'enfance communs des Maraudeurs", "Un miroir en deux parties pour communiquer à distance"],
                 correct: 3,
                 explanation: "Sirius offre à Harry en cinquième année deux miroirs à deux faces (Two-Way Mirror) : chacun peut voir le visage de l'autre dans son miroir en prononçant son nom. Tragiquement, Harry ne s'en sert jamais de peur de déranger Sirius, et refuse d'utiliser l'objet à la veille du piège du Département des Mystères — ignorant qu'il aurait pu contacter Sirius directement.",
                 source: "J.K. Rowling, Harry Potter et l'Ordre du Phénix (2003), Chapitre 24 — cadeau de Sirius non ouvert."
@@ -6713,7 +6993,7 @@ const quizzesData = {
             {
                 id: 29,
                 question: "Quel est le résultat de la bataille du Département des Mystères ?",
-                options: ["Voldemort parvient à récupérer la prophétie avant que Harry ne la détruise, et décide finalement de ne pas la détruire mais de la laisser au Ministère comme piège", "Le Ministère reconnaît officiellement le retour de Voldemort après que Fudge a vu en personne Voldemort dans l'Atrium et ne peut plus dénier son retour", "Harry et l'A.D. parviennent à capturer Lucius Malefoy et plusieurs mangemorts qui sont emprisonnés à Azkaban avant que Voldemort n'intervienne personnellement", "Sirius Black meurt, la prophétie est détruite, Voldemort est vu par Fudge"],
+                options: ["Voldemort parvient à récupérer la prophétie avant que Harry ne la détruise", "Le Ministère reconnaît officiellement le retour de Voldemort après que Fudge a vu en personne Voldemort dans l'Atrium et ne peut plus dénier son", "Harry et l'A.D. parviennent à capturer Lucius Malefoy et plusieurs mangemorts qui sont emprisonnés à Azkaban avant que Voldemort n'intervienne", "Sirius Black meurt, la prophétie est détruite, Voldemort est vu par Fudge"],
                 correct: 3,
                 explanation: "La bataille du Département des Mystères est un tournant de la saga. Sirius Black est tué par Bellatrix Lestrange (tombant à travers le voile). La prophétie est détruite (Harry la lâche). Voldemort lui-même apparaît dans l'Atrium de la MdM, forçant Fudge à admettre son retour. C'est la fin du déni politique. Plusieurs mangemorts sont capturés, mais Bellatrix s'échappe.",
                 source: "J.K. Rowling, Harry Potter et l'Ordre du Phénix (2003), Chapitres 35-36 — La bataille du Département des Mystères."
@@ -6721,7 +7001,7 @@ const quizzesData = {
             {
                 id: 30,
                 question: "Comment Harry détruit-il le Diadème de Serdaigle (Horcruxe) ?",
-                options: ["En le plongeant dans un chaudron d'eau de mer bouillie conjointement avec du venin de basilic, la seule combinaison capable de dissoudre l'artefact de Serdaigle", "En le lançant contre le miroir de Vérité dans la Salle sur Demande, car les deux artefacts de Serdaigle se neutralisent mutuellement selon la magie des fondateurs", "En prononçant la formule Horcruxeum Frangere que Hermione avait trouvée dans les archives de la bibliothèque interdite de Poudlard après des semaines de recherches", "Il est détruit par le Fiendfye de Crabbe dans la Salle sur Demande"],
+                options: ["En le plongeant dans un chaudron d'eau de mer bouillie conjointement avec du venin de basilic", "En le lançant contre le miroir de Vérité dans la Salle sur Demande", "En prononçant la formule Horcruxeum Frangere que Hermione avait trouvée dans les archives de la bibliothèque interdite de Poudlard après des semaines de", "Il est détruit par le Fiendfye de Crabbe dans la Salle sur Demande"],
                 correct: 3,
                 explanation: "Le Diadème de Serdaigle est détruit involontairement par le Fiendfye (feu diabolique) déclenché par Vincent Crabbe dans la Salle sur Demande lors de la bataille de Poudlard. Le Fiendfye est un feu magique incontrôlable qui détruit tout sur son passage, y compris les Horcruxes — Crabbe lui-même en mourra, piégé par le feu qu'il ne peut contrôler.",
                 source: "J.K. Rowling, Harry Potter et les Reliques de la Mort (2007), Chapitre 31 — La bataille de Poudlard."
@@ -6745,7 +7025,7 @@ const quizzesData = {
             {
                 id: 33,
                 question: "Comment s'appelle le pub de Pré-au-Lard tenu par Madame Rosmerta ?",
-                options: ["Les Trois Balais, taverne pittoresque de Pré-au-Lard connue pour sa Bièraubeurre chaude et qui sert de lieu de rendez-vous informel pour les habitants du village", "La Citrouille Ailée, pub concurrent des Trois Balais situé à l'entrée du village, réputé pour ses cocktails à base de Brandy de Dragon importé de Roumanie", "L'Éclair d'Argent, ancienne auberge sorcière reconvertie en pub dans les années 1950 et dont la décoration intérieure n'a jamais été modifiée depuis lors", "Les Trois Balais"],
+                options: ["Les Trois Balais", "La Citrouille Ailée", "L'Éclair d'Argent", "Les Trois Balais"],
                 correct: 0,
                 explanation: "Les Trois Balais est le pub principal de Pré-au-Lard, tenu par la belle Madame Rosmerta. C'est un lieu central de la vie sociale sorcière : Harry et ses amis s'y retrouvent lors des sorties à Pré-au-Lard, et c'est là qu'Harry entend pour la première fois la vérité sur la trahison de Sirius Black (tome 3). La Bièraubeurre y est réputée comme la meilleure du village.",
                 source: "J.K. Rowling, Harry Potter et le Prisonnier d'Azkaban (1999), Chapitre 10 — Les Trois Balais."
@@ -6753,7 +7033,7 @@ const quizzesData = {
             {
                 id: 34,
                 question: "Quel objet permet de voyager instantanément d'un endroit à un autre dans le monde sorcier ?",
-                options: ["Le Portoloin, un objet banal enchanté par le Ministère qui transporte son porteur vers une destination préprogrammée à une heure précise ou à la demande", "La Poudre de Cheminette, poudre magique argentée qui permet de voyager dans les cheminées connectées au Réseau des Cheminettes du Ministère de la Magie", "L'Attrape-Portoloin, dispositif d'urgence réservé aux Aurors et aux membres de l'Ordre du Phénix, fonctionnant uniquement de nuit et par temps couvert", "Le Portoloin (et aussi la Poudre de Cheminette et l'Appararition)"],
+                options: ["Le Portoloin", "La Poudre de Cheminette", "L'Attrape-Portoloin", "Le Portoloin"],
                 correct: 3,
                 explanation: "Il existe plusieurs moyens de transport magique dans l'univers Potter : le Portoloin (objet enchanté qui transporte à une heure précise), la Poudre de Cheminette (voyage par les cheminées connectées), l'Apparition (téléportation directe, réservée aux sorciers majeurs ayant passé leur permis), et les balais. Chaque méthode a ses avantages et contraintes selon la situation.",
                 source: "J.K. Rowling, saga Harry Potter — moyens de transport magique détaillés dans plusieurs tomes."
@@ -6761,7 +7041,7 @@ const quizzesData = {
             {
                 id: 35,
                 question: "Qui a écrit 'Le Conte des Trois Frères', l'histoire qui explique l'origine des Reliques de la Mort ?",
-                options: ["Salazar Serpentard, qui aurait créé les Reliques lui-même avant de les disperser volontairement pour que seul son héritier puisse les rassembler un jour", "Bathilda Tourdesac, historienne sorcière de renom qui a consigné dans son œuvre 'Histoire de la Magie' les légendes entourant les artefacts des familles fondatrices", "Albus Dumbledore, qui a inventé le conte pour enfants afin de préparer Harry psychologiquement à la notion de sacrifice sans lui révéler directement les Reliques", "Beedle le Barde, dans Les Contes de Beedle le Barde"],
+                options: ["Salazar Serpentard", "Bathilda Tourdesac", "Albus Dumbledore", "Beedle le Barde"],
                 correct: 3,
                 explanation: "Le Conte des Trois Frères est issu du recueil 'Les Contes de Beedle le Barde', un livre de contes pour enfants sorciers écrit par Beedle le Barde au XVe siècle. Dumbledore en a légué une copie à Hermione dans son testament. C'est en déchiffrant ce conte qu'Hermione, Harry et Ron comprennent l'existence et la nature des Reliques de la Mort.",
                 source: "J.K. Rowling, Harry Potter et les Reliques de la Mort (2007), Chapitre 21 + Les Contes de Beedle le Barde (2008)."
@@ -6769,7 +7049,7 @@ const quizzesData = {
             {
                 id: 36,
                 question: "Quel sort Harry utilise-t-il pour voir dans le noir lors de son épreuve du Labyrinthe dans la Coupe de Feu ?",
-                options: ["Nox Revelio, un sortilège de vision nocturne appris en cours de Défense Avancée et que Harry maîtrise grâce aux entraînements de l'A.D. en cinquième année", "Lumos Solem, version solaire du sortilège de lumière qui projette une lumière blanche d'une intensité suffisante pour éclairer un rayon de 20 mètres dans l'obscurité", "Caecus Aperio, un sort de vision magique enseigné uniquement aux élèves de niveau O.W.L. en Défense contre les Forces du Mal selon les programmes de Poudlard", "Il utilise Lumos ou affronte le labyrinthe sans sort particulier de vision"],
+                options: ["Nox Revelio", "Lumos Solem", "Caecus Aperio", "Il utilise Lumos ou"],
                 correct: 3,
                 explanation: "Harry affronte le labyrinthe avec les sorts qu'il a appris : principalement Lumos pour s'éclairer, Expelliarmus pour se défendre et Accio pour attirer des objets. J.K. Rowling ne lui attribue pas de sort spécifique de vision nocturne — Harry se débrouille avec ses compétences habituelles et son instinct, ce qui rend son parcours plus humain et tendu.",
                 source: "J.K. Rowling, Harry Potter et la Coupe de Feu (2000), Chapitre 31 — Le Labyrinthe."
@@ -6785,7 +7065,7 @@ const quizzesData = {
             {
                 id: 38,
                 question: "Comment s'appelle le village natal de Harry Potter où ses parents ont été tués ?",
-                options: ["Ottery-Saint-Catchpole, village fictif du Devon qui abrite aussi le Terrier familial des Weasley et plusieurs autres familles sorcières selon la carte de l'univers Potter", "Little Whinging, banlieue de Surrey où Harry a grandi chez les Dursley au 4 Privet Drive, souvent confondue avec son village natal de naissance", "Spinner's End, ruelle industrielle dans le nord de l'Angleterre où Séverus Rogue a grandi et où se situe la maison de Cokeworth héritée de sa mère Eileen Prince", "Godric's Hollow"],
+                options: ["Ottery-Saint-Catchpole", "Little Whinging", "Spinner's End", "Godric's Hollow"],
                 correct: 3,
                 explanation: "Godric's Hollow est un village fictif d'Angleterre où Godric Gryffondor est né et où plusieurs sorciers célèbres ont vécu. C'est là que James et Lily Potter ont été tués par Voldemort le 31 octobre 1981. Harry et Hermione s'y rendent dans Les Reliques de la Mort pour visiter la tombe de ses parents et la maison en ruines, désormais monument commémoratif.",
                 source: "J.K. Rowling, Harry Potter et les Reliques de la Mort (2007), Chapitre 16 — Godric's Hollow."
@@ -6829,7 +7109,7 @@ const quizzesData = {
             {
                 id: 21,
                 question: "Quel est le numéro de téléphone du Ministère de la Magie (entrée secrète depuis la cabine téléphonique) ?",
-                options: ["625442, qui correspond à MAGIE sur un clavier téléphonique à correspondance lettre-chiffre, utilisé depuis l'installation des nouvelles cabines rouges en 1975", "726543, formant l'anagramme de SORCIER sur un clavier alphanumérique et sonnant une seule fois avant d'ouvrir directement le portail de la cabine", "100000, un code militaire attribué au Ministère lors de son enregistrement officiel auprès du gouvernement moldu en vertu du Traité Secret de 1908", "62442 (MAGIE)"],
+                options: ["625442", "726543", "100000", "62442 (MAGIE)"],
                 correct: 3,
                 explanation: "Pour accéder au Ministère de la Magie depuis l'extérieur, il faut entrer dans une cabine téléphonique rouge et composer le 62442, qui correspond aux lettres M-A-G-I-E sur un clavier téléphonique. Ce détail est mentionné dans Harry Potter et l'Ordre du Phénix lorsque Harry et Arthur Weasley se rendent au Ministère pour l'audition de Harry.",
                 source: "J.K. Rowling, Harry Potter et l'Ordre du Phénix (2003), Chapitre 7 — Le Ministère de la Magie."
@@ -6837,7 +7117,7 @@ const quizzesData = {
             {
                 id: 22,
                 question: "Quelle est la date de naissance de Harry Potter, et quelle signification a-t-elle par rapport à la prophétie ?",
-                options: ["Le 1er novembre 1980 — né 'comme meurt le huitième mois' selon l'ancienne interprétation calendaire où novembre était le neuvième mois du calendrier romain originel", "Le 15 juillet 1980 — né au milieu du septième mois, ce qui correspond à une interprétation astrologique du 'né comme meurt le septième mois' de la prophétie", "Le 31 août 1980 — né le dernier jour du septième mois selon le calendrier sorcier qui décale de deux mois le calendrier moldu pour des raisons magiques historiques", "Le 31 juillet 1980 — né 'comme meurt le septième mois' (juillet = 7e mois)"],
+                options: ["Le 1er novembre 1980", "Le 15 juillet 1980", "Le 31 août 1980", "Le 31 juillet 1980"],
                 correct: 3,
                 explanation: "Harry est né le 31 juillet 1980, le dernier jour de juillet (7e mois). La prophétie dit 'né comme meurt le septième mois' — ce qui correspond exactement. Neville Londubat, né le 30 juillet 1980, aurait aussi pu être 'l'Élu', mais Voldemort a choisi Harry en le marquant lui-même. J.K. Rowling partage son anniversaire avec son personnage.",
                 source: "J.K. Rowling, Harry Potter et l'Ordre du Phénix (2003), Chapitre 37 — La prophétie complète."
@@ -6845,7 +7125,7 @@ const quizzesData = {
             {
                 id: 23,
                 question: "Quelle est la signification latine de la formule 'Expecto Patronum' ?",
-                options: ["'Je convoque ma lumière intérieure' — une formulation médiévale liée aux rituels de purification spirituelle des moines irlandais du VIIe siècle", "'Je rappelle mes ancêtres' — un sort ancestral gaulois réinterprété par le Ministère de la Magie au XVIIIe siècle pour combattre les premières apparitions de Détraqueurs", "'Je cherche ma protection' — étymologie composite du latin 'expecto' (attendre) et 'patronum' (maître protecteur) qui évoque une invocation divine médiévale", "'J'attends (espère) un protecteur/gardien' — latin classique"],
+                options: ["'Je convoque ma lumière intérieure'", "'Je rappelle mes ancêtres'", "'Je cherche ma protection'", "'J'attends (espère) un protecteur/gardien' — latin classique"],
                 correct: 3,
                 explanation: "'Expecto' vient du latin 'exspecto' signifiant 'j'attends, j'espère, je réclame'. 'Patronum' vient de 'patronus' (protecteur, patron, défenseur). La formule entière signifie donc 'j'attends un protecteur' ou 'je réclame la protection d'un gardien'. J.K. Rowling s'est beaucoup inspirée du latin et du grec pour créer les noms et formules de sa magie.",
                 source: "J.K. Rowling / étymologie latine classique — Rowling a confirmé ses sources latines dans plusieurs interviews."
@@ -6869,7 +7149,7 @@ const quizzesData = {
             {
                 id: 26,
                 question: "Quelle est la nature réelle du lien entre Dumbledore et Grindelwald, révélée dans Les Animaux Fantastiques ?",
-                options: ["Ils étaient demi-frères, partageant le même père — un sorcier errant qui eut des enfants dans plusieurs pays d'Europe, liaison que Dumbledore a toujours cachée par honte familiale", "Grindelwald était l'élève de Dumbledore à Poudlard, et leur relation professeur-élève a tourné à l'obsession pour le pouvoir après que Dumbledore lui a enseigné la théorie des Reliques", "Grindelwald était le mentor de Dumbledore, venu étudier les Reliques de la Mort chez son grand-père Kendra, et dont l'influence intellectuelle a failli perdre Dumbledore définitivement", "Ils ont été amis intimes (amoureux selon Rowling) à 17 ans, liés par un Pacte du Sang"],
+                options: ["Ils étaient demi-frères", "Grindelwald était l'élève de Dumbledore à", "Grindelwald était le mentor de Dumbledore", "Ils ont été amis intimes"],
                 correct: 3,
                 explanation: "J.K. Rowling a confirmé que Dumbledore et Grindelwald ont vécu une passion amoureuse lors de l'été 1899 où Grindelwald séjournait à Godric's Hollow. Ils ont scellé un Pacte du Sang (visible dans Les Animaux Fantastiques 2) qui empêchait Dumbledore de s'opposer directement à lui — d'où son refus apparemment inexplicable d'intervenir, révélé dans le film.",
                 source: "J.K. Rowling (interviews et Pottermore) + Les Animaux Fantastiques : Les Crimes de Grindelwald (2018)."
@@ -6909,7 +7189,7 @@ const quizzesData = {
             {
                 id: 31,
                 question: "Quelle est la date exacte et le lieu de la mort de James et Lily Potter ?",
-                options: ["Le 30 octobre 1980 à Godric's Hollow — la veille de Samhain, date choisie par Voldemort pour maximiser la puissance de la malédiction lors d'une nuit de pouvoir sorcier", "Le 1er novembre 1981 à Spinner's End — le lendemain de la fête des sorciers, dans la maison que Voldemort avait réquisitionnée comme base d'opérations dans le nord", "Le 31 octobre 1980 à Pré-au-Lard — lors d'une fête d'Halloween que Voldemort a infiltrée sous Polynectar pour approcher la famille Potter sans éveiller les soupçons", "Le 31 octobre 1981 à Godric's Hollow — la nuit d'Halloween"],
+                options: ["Le 30 octobre 1980 à Godric's Hollow", "Le 1er novembre 1981 à Spinner's End", "Le 31 octobre 1980 à Pré-au-Lard", "Le 31 octobre 1981 à Godric's Hollow — la nuit d'Halloween"],
                 correct: 3,
                 explanation: "James et Lily Potter ont été tués le 31 octobre 1981 (nuit d'Halloween) dans leur maison de Godric's Hollow. James est mort en premier, sans sa baguette, en tentant de retarder Voldemort pour permettre à Lily de fuir avec Harry. Lily a refusé de s'écarter, choisissant de mourir plutôt que d'abandonner son fils — déclenchant la protection magique par l'amour.",
                 source: "J.K. Rowling, Harry Potter à l'École des Sorciers (1997), Chapitre 1 + Les Reliques de la Mort (2007), Chapitre 17."
@@ -7115,7 +7395,7 @@ const quizzesData = {
                 correct: 2,
                 explanation: "Le sabre laser de Dark Vador est rouge, couleur associée aux Sith dans l'univers Star Wars. Les Sith obtiennent cette couleur en 'saignant' leur kyber crystal à travers la haine et la douleur. Les Jedi utilisent généralement des sabres bleus ou verts.",
                 source: "Star Wars: A New Hope (1977) — sabre laser rouge de Vador.",
-                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Darth_Vader_in_Disneyland.jpg/800px-Darth_Vader_in_Disneyland.jpg"
+                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/SWC_6_-_Darth_Vader_Costume_%287865106344%29.jpg/960px-SWC_6_-_Darth_Vader_Costume_%287865106344%29.jpg"
             },
             {
                 id: 3,
@@ -7124,12 +7404,11 @@ const quizzesData = {
                 correct: 2,
                 explanation: "Luke Skywalker a grandi sur Tatooine, une planète désertique à deux soleils située dans la Bordure Extérieure. Il vivait avec son oncle Owen et sa tante Beru sur une ferme d'humidité. Tatooine est aussi la planète natale de son père Anakin Skywalker.",
                 source: "Star Wars: A New Hope (1977) — Tatooine, planète natale de Luke.",
-                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Two_Suns_Setting_%28crop%29.jpg/800px-Two_Suns_Setting_%28crop%29.jpg"
             },
             {
                 id: 4,
                 question: "Comment s'appelle le Wookie compagnon de Han Solo ?",
-                options: ["Jabba", "Chewie / Chewbacca", "Lando", "R2-D2"],
+                options: ["Jabba", "Chewie /", "Lando", "R2-D2"],
                 correct: 1,
                 explanation: "Chewbacca, surnommé Chewie, est le copilote et meilleur ami de Han Solo. Il est Wookie — une espèce de grand primate velu originaire de Kashyyyk. Chewbacca communique uniquement en Shyriiwook (les rugissements Wookie) et est connu pour son arbalète et sa loyauté sans faille.",
                 source: "Star Wars: A New Hope (1977) — Chewbacca, le Wookie."
@@ -7141,12 +7420,12 @@ const quizzesData = {
                 correct: 1,
                 explanation: "R2-D2 est le droïde astromécano qui contient les plans secrets de l'Étoile de la Mort remis par la princesse Leia. C'est ce qui déclenche toute l'aventure du premier film. R2-D2 et son compagnon C-3PO sont les deux droïdes qui apparaissent dans le plus de films de la saga.",
                 source: "Star Wars: A New Hope (1977) — R2-D2 porteur des plans de l'Étoile de la Mort.",
-                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/R2-D2_Droid.jpg/800px-R2-D2_Droid.jpg"
+                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/R2-D2_-_Genuine_Movie_Star.jpg/960px-R2-D2_-_Genuine_Movie_Star.jpg"
             },
             {
                 id: 6,
                 question: "Qui est le père de Luke Skywalker ?",
-                options: ["Obi-Wan Kenobi", "Palpatine", "Anakin Skywalker / Dark Vador", "Yoda"],
+                options: ["Obi-Wan Kenobi", "Palpatine", "Anakin", "Yoda"],
                 correct: 2,
                 explanation: "Anakin Skywalker, devenu Dark Vador après avoir basculé du côté obscur, est le père de Luke Skywalker. Cette révélation dans L'Empire contre-attaque est l'un des plus grands retournements de l'histoire du cinéma. Vador prononce la phrase \"Je suis ton père\" lors d'un duel mémorable.",
                 source: "Star Wars: The Empire Strikes Back (1980) — révélation de la paternité de Vador."
@@ -7158,7 +7437,6 @@ const quizzesData = {
                 correct: 1,
                 explanation: "L'Étoile de la Mort (Death Star) est la super-arme de l'Empire Galactique. Elle est capable de détruire une planète entière grâce à son superlaser. La première Étoile de la Mort est détruite par Luke Skywalker dans le premier film, en tirant des torpilles protoniques dans un puits d'échappement.",
                 source: "Star Wars: A New Hope (1977) — l'Étoile de la Mort.",
-                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Death_Star_explodes.jpg/800px-Death_Star_explodes.jpg"
             },
             {
                 id: 8,
@@ -7167,7 +7445,6 @@ const quizzesData = {
                 correct: 1,
                 explanation: "Le Faucon Millenium (Millennium Falcon) est le vaisseau de Han Solo. Han Solo se vante que ce cargo modifié a fait la Course de Kessel en moins de 12 parsecs. C'est l'un des vaisseaux les plus iconiques de la science-fiction, reconnaissable à sa forme aplatie et à son cockpit décentré.",
                 source: "Star Wars: A New Hope (1977) — le Faucon Millenium.",
-                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Millennium_Falcon_Celebration_2017.jpg/800px-Millennium_Falcon_Celebration_2017.jpg"
             },
             {
                 id: 9,
@@ -7227,7 +7504,6 @@ const quizzesData = {
                 correct: 2,
                 explanation: "Alderaan, planète pacifiste et planète natale de la Princesse Leia, est détruite par l'Étoile de la Mort sur ordre de Grand Moff Tarkin pour démontrer la puissance de l'Empire. Cette scène choc est l'une des plus marquantes de la saga et établit immédiatement l'Empire comme une menace absolue.",
                 source: "Star Wars: A New Hope (1977) — destruction d'Alderaan par l'Étoile de la Mort.",
-                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Alderaan_-_CGI.jpg/800px-Alderaan_-_CGI.jpg"
             },
             {
                 id: 13,
@@ -7248,7 +7524,7 @@ const quizzesData = {
             {
                 id: 15,
                 question: "Quelle organisation s'oppose à l'Empire Galactique ?",
-                options: ["La République Galactique", "L'Alliance Rebelle", "L'Ordre des Jedi", "La Confédération des Systèmes Indépendants"],
+                options: ["La République Galactique", "L'Alliance Rebelle", "L'Ordre des Jedi", "La Confédération des Systèmes"],
                 correct: 1,
                 explanation: "L'Alliance Rebelle (officiellement l'Alliance pour Restaurer la République) est l'organisation qui combat l'Empire Galactique dans la trilogie originale. Menée notamment par Leia, Han Solo et Luke, elle remporte une victoire décisive à la bataille d'Endor en détruisant la seconde Étoile de la Mort.",
                 source: "Star Wars Lore — L'Alliance Rebelle contre l'Empire Galactique."
@@ -7292,7 +7568,6 @@ const quizzesData = {
                 correct: 2,
                 explanation: "Yoda est connu pour sa façon de parler inversée (Yodaspeak) où le verbe vient souvent en fin de phrase. \"Mauvais pressentiment j'ai\" est l'une de ses expressions caractéristiques. George Lucas s'est inspiré du maître Zen et des traditions asiatiques pour créer ce personnage sage et mystérieux.",
                 source: "Star Wars Universe — la syntaxe inversée de Yoda est l'une de ses marques distinctives.",
-                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Yoda_at_the_Star_Wars_Celebration.jpg/800px-Yoda_at_the_Star_Wars_Celebration.jpg"
             },
             {
                 id: 21,
@@ -7317,7 +7592,7 @@ const quizzesData = {
                 correct: 0,
                 explanation: "Boba Fett est le célèbre chasseur de primes mandalorien qui capture Han Solo pour le compte de Jabba le Hutt. Malgré son apparition relativement courte dans la trilogie originale, il est devenu l'un des personnages les plus populaires. Il dispose de son propre spin-off : Le Livre de Boba Fett (Disney+).",
                 source: "Star Wars: The Empire Strikes Back (1980) — Boba Fett.",
-                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Boba_Fett_Celebration_2017.jpg/800px-Boba_Fett_Celebration_2017.jpg"
+                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Boba_Fett_Prototype_Armor_Cosplay_at_Star_Wars_Celebration_2017.jpg/960px-Boba_Fett_Prototype_Armor_Cosplay_at_Star_Wars_Celebration_2017.jpg"
             },
             {
                 id: 24,
@@ -7334,12 +7609,12 @@ const quizzesData = {
                 correct: 2,
                 explanation: "Le duel épique entre Anakin Skywalker (déjà devenu Dark Vador) et Obi-Wan Kenobi se déroule sur Mustafar, une planète volcanique couverte de lave. C'est l'un des combats les plus longs et émouvants de la saga. Anakin perd ses jambes et son bras, est brûlé par la lave, et doit être transformé en cyborg.",
                 source: "Star Wars: Revenge of the Sith (2005) — duel sur Mustafar.",
-                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Volcano_in_Kamchatka.jpg/800px-Volcano_in_Kamchatka.jpg"
+                image: "https://upload.wikimedia.org/wikipedia/commons/9/93/Stromboli_Eruption.jpg"
             },
             {
                 id: 26,
                 question: "Qui est le mentor d'Anakin Skywalker dans la prélogie ?",
-                options: ["Yoda", "Mace Windu", "Obi-Wan Kenobi", "Qui-Gon Jinn"],
+                options: ["Yoda", "Mace Windu", "Obi-Wan", "Qui-Gon Jinn"],
                 correct: 2,
                 explanation: "Obi-Wan Kenobi est le Maître Jedi qui entraîne Anakin Skywalker pendant la prélogie. C'est lui qui tient la promesse de Qui-Gon Jinn en formant l'\"Élu de la Force\". Leur relation est complexe — père et fils spirituels — ce qui rend la trahison d'Anakin d'autant plus déchirante.",
                 source: "Star Wars: Attack of the Clones (2002) — Obi-Wan, maître d'Anakin."
@@ -7347,7 +7622,7 @@ const quizzesData = {
             {
                 id: 27,
                 question: "Comment s'appelle l'ennemi principal de la trilogie sequel (épisodes VII-IX) ?",
-                options: ["Grand Moff Tarkin", "Le Premier Ordre / Kylo Ren", "Le général Grievous", "Darth Maul"],
+                options: ["Grand Moff Tarkin", "Le Premier Ordre / Kylo", "Le général Grievous", "Darth Maul"],
                 correct: 1,
                 explanation: "Dans la trilogie sequel, les antagonistes principaux sont le Premier Ordre (successeur de l'Empire) et Kylo Ren (Ben Solo, fils de Han et Leia) qui en est le leader militaire. L'Empereur Palpatine revient également comme antagoniste ultime dans L'Ascension de Skywalker.",
                 source: "Star Wars: The Force Awakens (2015) — le Premier Ordre et Kylo Ren."
@@ -7359,7 +7634,7 @@ const quizzesData = {
                 correct: 2,
                 explanation: "BB-8 est le petit droïde sphérique orange et blanc introduit dans Le Réveil de la Force. Il devient rapidement l'un des droïdes les plus appréciés de la franchise. BB-8 appartient à Poe Dameron, le meilleur pilote de la Résistance, et joue un rôle clé en transportant une carte menant à Luke Skywalker.",
                 source: "Star Wars: The Force Awakens (2015) — BB-8.",
-                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/BB8_Droid.jpg/800px-BB8_Droid.jpg"
+                image: "https://upload.wikimedia.org/wikipedia/commons/d/d6/The_droid_she_was_looking_for._Our_BB-8_projects_holograms..._and_JJ_Abrams_backstory_%2824159559709%29.jpg"
             },
             {
                 id: 29,
@@ -7390,7 +7665,7 @@ const quizzesData = {
             {
                 id: 12,
                 question: "Quelle espèce est Yoda ?",
-                options: ["Twi'lek", "Togruta", "Son espèce n'a jamais été nommée officiellement", "Lannik"],
+                options: ["Twi'lek", "Togruta", "Son espèce n'a", "Lannik"],
                 correct: 2,
                 explanation: "L'espèce de Yoda n'a jamais été officiellement nommée par George Lucas ou Lucasfilm — c'est un mystère intentionnel. Les fans l'appellent parfois 'race de Yoda'. Le personnage Grogu (Baby Yoda dans The Mandalorian) appartient à la même espèce, mais son nom reste également non révélé.",
                 source: "Lucasfilm — L'espèce de Yoda est intentionnellement gardée mystérieuse."
@@ -7406,11 +7681,10 @@ const quizzesData = {
             {
                 id: 14,
                 question: "Sur quelle planète vivent les Ewoks ?",
-                options: ["Endor la planète", "La lune forestière d'Endor", "Kashyyyk", "Felucia"],
+                options: ["Endor la planète", "La lune forestière", "Kashyyyk", "Felucia"],
                 correct: 1,
                 explanation: "Les Ewoks vivent sur la lune forestière d'Endor (aussi appelée Forest Moon of Endor). C'est une petite lune boisée orbitant la planète géante gazeuse Endor. Les Ewoks prennent initialement les Rebelles pour leurs ennemis avant de s'allier à eux contre l'Empire.",
                 source: "Star Wars: Return of the Jedi (1983) — les Ewoks sur la lune d'Endor.",
-                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Forest_Endor.jpg/800px-Forest_Endor.jpg"
             },
             {
                 id: 15,
@@ -7431,11 +7705,11 @@ const quizzesData = {
             {
                 id: 17,
                 question: "Quelle est la particularité du sabre laser à double lame de Darth Maul ?",
-                options: ["Il est bleu des deux côtés", "Il a deux lames rouges en opposition", "Il peut se plier", "Il est invisible"],
+                options: ["Il est bleu des deux côtés", "Il a deux lames rouges alignées", "Il peut se plier", "Il est invisible"],
                 correct: 1,
                 explanation: "Darth Maul manie un sabre laser à double lame (doubleblade lightsaber) avec deux lames rouges pointant dans des directions opposées. C'est l'une des armes les plus originales de la saga. Maul peut l'utiliser comme un bâton à double bout ou séparer en deux sabres. Son combat contre Qui-Gon et Obi-Wan est mémorable.",
                 source: "Star Wars: The Phantom Menace (1999) — le sabre laser à double lame de Darth Maul.",
-                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Darth_Maul_Celebration.jpg/800px-Darth_Maul_Celebration.jpg"
+                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Star_Wars_A_Galaxy_Far%2C_Far_Away_Darth_Maul_1.jpg/960px-Star_Wars_A_Galaxy_Far%2C_Far_Away_Darth_Maul_1.jpg"
             },
             {
                 id: 18,
@@ -7460,7 +7734,6 @@ const quizzesData = {
                 correct: 2,
                 explanation: "Mace Windu est le seul Jedi du Conseil à avoir un sabre laser violet. Cette couleur fut choisie par Samuel L. Jackson lui-même qui voulait se distinguer des autres Jedi. Dans le lore, le violet représente un équilibre entre la lumière et l'obscurité — Mace Windu pratique une forme de combat appelée Vaapad qui frôle le côté obscur.",
                 source: "Star Wars: Attack of the Clones (2002) — sabre violet de Mace Windu.",
-                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Mace_Windu_Celebration.jpg/800px-Mace_Windu_Celebration.jpg"
             },
             {
                 id: 21,
@@ -7481,7 +7754,7 @@ const quizzesData = {
             {
                 id: 23,
                 question: "Qui est Rey dans la trilogie sequel ?",
-                options: ["La fille de Luke Skywalker", "La petite-fille de l'Empereur Palpatine", "La fille d'Obi-Wan Kenobi", "Un clone de Leia"],
+                options: ["La fille de Luke Skywalker", "La petite-fille de l'Empereur", "La fille d'Obi-Wan Kenobi", "Un clone de Leia"],
                 correct: 1,
                 explanation: "Rey est révélée dans L'Ascension de Skywalker comme la petite-fille de l'Empereur Palpatine — ce qui explique sa puissance exceptionnelle dans la Force. Elle choisit néanmoins de rejeter son héritage Sith et de se proclamer 'Rey Skywalker' en hommage à ses maîtres Luke et Leia.",
                 source: "Star Wars: The Rise of Skywalker (2019) — révélation des origines de Rey."
@@ -7544,7 +7817,6 @@ const quizzesData = {
                 correct: 1,
                 explanation: "Anakin et Padmé se marient secrètement à Naboo, la planète natale de Padmé, à la fin de L'Attaque des Clones. Naboo est aussi la planète où Palpatine est né et d'où il commence son ascension politique. Avec ses paysages magnifiques et son architecture Art Nouveau, Naboo est l'une des planètes les plus visuellement belles de la saga.",
                 source: "Star Wars: Attack of the Clones (2002) — mariage secret sur Naboo.",
-                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Naboo_inspired_by_Lake_Como.jpg/800px-Naboo_inspired_by_Lake_Como.jpg"
             },
             {
                 id: 28,
@@ -7553,7 +7825,7 @@ const quizzesData = {
                 correct: 1,
                 explanation: "Le général Grievous est le commandant militaire des Séparatistes pendant les Guerres des Clones. C'est un être mi-organique mi-robotique qui collecte les sabres laser des Jedi qu'il a vaincus. Il peut manier jusqu'à 4 sabres simultanément. Il est tué par Obi-Wan Kenobi sur Utapau dans La Revanche des Sith.",
                 source: "Star Wars: Revenge of the Sith (2005) — le général Grievous.",
-                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/General_Grievous_Celebration.jpg/800px-General_Grievous_Celebration.jpg"
+                image: "https://upload.wikimedia.org/wikipedia/commons/b/b0/Star_Wars_Celebration_IV_-_Setting_up_the_General_Grievous_fan_costume_%284878899266%29.jpg"
             },
             {
                 id: 29,
@@ -7584,7 +7856,7 @@ const quizzesData = {
             {
                 id: 32,
                 question: "Combien de kyber crystals compose le superlaser de la première Étoile de la Mort ?",
-                options: ["1 cristal géant", "Plusieurs cristaux focalisés", "Aucun, c'est un réacteur à plasma", "7 cristaux alignés"],
+                options: ["1 cristal géant", "Plusieurs", "Aucun", "7 cristaux alignés"],
                 correct: 1,
                 explanation: "Le superlaser de l'Étoile de la Mort utilise plusieurs kyber crystals gigantesques focalisés ensemble. Les détails techniques sont explorés dans le roman 'Catalyst' (2016) et le film Rogue One. L'Empire vole des kyber crystals à travers toute la galaxie pour alimenter cette arme.",
                 source: "Rogue One: A Star Wars Story (2016) & Catalyst (2016) — les kyber crystals de l'Étoile de la Mort."
@@ -7608,7 +7880,12 @@ const quizzesData = {
             {
                 id: 35,
                 question: "Quel Jedi a survécu à l'Ordre 66 et devient un personnage central de la série Obi-Wan Kenobi ?",
-                options: ["Quinlan Vos", "Kanan Jarrus", "Reva / Inquisitrice Troisième Sœur", "Cal Kestis"],
+                options: [
+                "Quinlan Vos",
+                "Kanan Jarrus",
+                "Reva / Inquisitrice",
+                "Cal Kestis"
+            ],
                 correct: 2,
                 explanation: "Reva, également connue sous le nom d'Inquisitrice Troisième Sœur, est une ancienne Jedi Padawan qui a survécu à l'Ordre 66 en se cachant parmi les corps des autres Jedi. Son traumatisme et sa quête de vengeance contre Vador structurent la série Obi-Wan Kenobi (2022) sur Disney+.",
                 source: "Obi-Wan Kenobi (2022), Disney+ — l'histoire de Reva, survivante de l'Ordre 66."
@@ -7616,7 +7893,7 @@ const quizzesData = {
             {
                 id: 36,
                 question: "Quelle est la médichlorian count d'Anakin Skywalker selon Qui-Gon Jinn ?",
-                options: ["Moins de 10 000", "Plus haute que jamais enregistrée — plus de 20 000", "Exactement 13 000", "Inconnue, les tests ont échoué"],
+                options: ["Moins de 10 000", "Plus haute que jamais enregistrée", "Exactement 13 000", "Inconnue, les tests ont échoué"],
                 correct: 1,
                 explanation: "Qui-Gon Jinn est stupéfait de découvrir qu'Anakin possède un nombre de midichloriens plus élevé que jamais enregistré — plus de 20 000 par cellule, dépassant même Yoda. Ce chiffre extraordinaire convainc Qui-Gon qu'Anakin est 'l'Élu de la Force' destiné à rétablir l'équilibre.",
                 source: "Star Wars: The Phantom Menace (1999) — Qui-Gon teste les midichloriens d'Anakin."
@@ -7683,7 +7960,7 @@ const quizzesData = {
             {
                 id: 41,
                 question: "Quel est le nom de la technique permettant à un Jedi de survivre à la mort en devenant un 'fantôme de Force' ?",
-                options: ["Immortalité Jedi", "Art de la Force Vivante", "Téchnique de Qui-Gon / Shatterpoint", "Preservation via la Force"],
+                options: ["Immortalité Jedi", "Art de la Force Vivante", "Téchnique de Qui-Gon /", "Preservation via la Force"],
                 correct: 2,
                 explanation: "C'est Qui-Gon Jinn qui a découvert la technique permettant à un Jedi de préserver sa conscience après la mort et d'apparaître comme fantôme lumineux. Il l'a apprise des Gardiens de la Whills. Il transmet ensuite ce secret à Yoda, qui l'enseigne à Obi-Wan. Luke et Anakin l'apprennent également.",
                 source: "Star Wars: The Phantom Menace (1999) + Star Wars: Revenge of the Sith (2005) — origine des fantômes de Force."
@@ -7714,11 +7991,10 @@ const quizzesData = {
             {
                 id: 2,
                 question: "Quel démon roi est enfermé dans le corps de Yuji Itadori ?",
-                options: ["Mahito", "Jogo", "Ryomen Sukuna", "Geto Suguru"],
+                options: ["Mahito", "Jogo", "Ryomen", "Geto Suguru"],
                 correct: 2,
                 explanation: "Ryomen Sukuna, surnommé le Roi des Fléaux, est le démon le plus puissant de l'histoire du Jujutsu. Il a été exécuté par les exorcistes il y a mille ans, mais son énergie maudite survit dans ses 20 doigts. Yuji en avale un et devient son réceptacle — permettant à Sukuna de prendre le contrôle temporairement.",
                 source: "Gege Akutami — Jujutsu Kaisen (2018), Sukuna, le Roi des Fléaux.",
-                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Sukuna_Jujutsu_cosplay.jpg/800px-Sukuna_Jujutsu_cosplay.jpg"
             },
             {
                 id: 3,
@@ -7731,11 +8007,15 @@ const quizzesData = {
             {
                 id: 4,
                 question: "Comment s'appelle la technique de barrière ultime de Gojo Satoru ?",
-                options: ["Domaine Infini", "L'Infini Creux", "Expansion de Domaine : Vide Infini", "Six Yeux Scellés"],
+                options: [
+                "Domaine Infini",
+                "L'Infini Creux",
+                "Expansion de Domaine",
+                "Six Yeux Scellés"
+            ],
                 correct: 2,
                 explanation: "L'Expansion de Domaine de Gojo s'appelle Mu-Ryokuusho — le Vide Infini (Unlimited Void / Muryokusho). À l'intérieur, la cible est submergée par une quantité infinie d'informations simultanées, la plongeant dans une paralysie totale. C'est l'une des techniques les plus puissantes de la série.",
                 source: "Gege Akutami — Jujutsu Kaisen, arc Cursed Womb : Death Paintings.",
-                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Gojo_Satoru_cosplay.jpg/800px-Gojo_Satoru_cosplay.jpg"
             },
             {
                 id: 5,
@@ -7855,7 +8135,7 @@ const quizzesData = {
             {
                 id: 16,
                 question: "Quel est le vrai nom de Suguru Geto dans sa forme possédée ?",
-                options: ["Pseudo-Geto / Kenjaku", "Uraume", "Choso", "Naoya Zen'in"],
+                options: ["Pseudo-Geto /", "Uraume", "Choso", "Naoya Zen'in"],
                 correct: 0,
                 explanation: "Le corps de Suguru Geto est possédé par un sorcier antique appelé Kenjaku (ou Pseudo-Geto). Kenjaku est capable de transplanter son cerveau dans le corps d'autres personnes, leur permettant de garder leur apparence. Il est le vrai antagoniste de fond de la série, manipulant les événements depuis des siècles.",
                 source: "Gege Akutami — Jujutsu Kaisen, révélation de Kenjaku / Pseudo-Geto."
@@ -7871,7 +8151,12 @@ const quizzesData = {
             {
                 id: 18,
                 question: "Quelle est la technique unique d'Aoi Todo ?",
-                options: ["Boogie Woogie (échange de positions)", "Granite Blast", "Cursed Speech", "Body Repel"],
+                options: [
+                "Boogie Woogie",
+                "Granite Blast",
+                "Cursed Speech",
+                "Body Repel"
+            ],
                 correct: 0,
                 explanation: "Boogie Woogie est la technique innée d'Aoi Todo : en claquant des mains, il peut instantanément échanger la position de deux objets ou personnes dans un rayon donné (à condition qu'il ait canalisé son énergie maudite). Combinée avec les capacités physiques de Yuji, elle permet des attaques combinées déroutantes pour l'ennemi.",
                 source: "Gege Akutami — Jujutsu Kaisen, technique Boogie Woogie de Todo Aoi."
@@ -7895,7 +8180,7 @@ const quizzesData = {
             {
                 id: 21,
                 question: "Qu'est-ce que l'Expansion de Domaine (Domain Expansion) ?",
-                options: ["Une attaque physique surpuissante", "Une barrière qui crée un espace fermé amplifiant la technique innée", "Une technique de soin collectif", "Un portail vers le monde des fléaux"],
+                options: ["Une attaque physique surpuissante", "Une barrière qui crée un espace fermé amplifiant la technique", "Une technique de soin collectif", "Un portail vers le monde des fléaux"],
                 correct: 1,
                 explanation: "L'Expansion de Domaine (Ryōiki Tenkai) est la technique la plus avancée du Jujutsu. Elle crée un espace fermé (barrière + espace) entièrement contrôlé par l'utilisateur, dans lequel sa technique innée touche automatiquement la cible. Dans un duel entre deux utilisateurs de Domaine, le Domaine le plus raffiné annule l'autre.",
                 source: "Gege Akutami — Jujutsu Kaisen, explication des Expansions de Domaine."
@@ -7911,7 +8196,12 @@ const quizzesData = {
             {
                 id: 23,
                 question: "Quelle est la relation entre Yuji Itadori et Choso ?",
-                options: ["Choso est son oncle", "Ils sont frères par le sang maudit de Kenjaku", "Choso est son rival", "Ils n'ont aucun lien"],
+                options: [
+                "Choso est son oncle",
+                "Ils sont frères par le san",
+                "Choso est son rival",
+                "Ils n'ont aucun lien"
+            ],
                 correct: 1,
                 explanation: "Choso est un Peinture de Mort (Death Painting Womb), né du sang d'une femme humaine fécondée par Kenjaku. Or Kenjaku a aussi manipulé la naissance de Yuji. Cela fait techniquement de Choso et Yuji des 'frères' partageant le même 'père' sorcier. Choso finit par rejoindre Yuji après avoir réalisé ce lien.",
                 source: "Gege Akutami — Jujutsu Kaisen, révélation du lien Choso-Yuji."
@@ -7943,7 +8233,12 @@ const quizzesData = {
             {
                 id: 27,
                 question: "Quelle est la particularité physique visible de Ryomen Sukuna quand il prend le contrôle de Yuji ?",
-                options: ["Ses yeux deviennent rouges", "Des tatouages noirs apparaissent et des yeux supplémentaires s'ouvrent", "Ses cheveux deviennent blancs", "Son corps triple de taille"],
+                options: [
+                "Ses yeux deviennent rouges",
+                "Des tatouages noirs apparaissent et d",
+                "Ses cheveux deviennent blancs",
+                "Son corps triple de taille"
+            ],
                 correct: 1,
                 explanation: "Quand Sukuna prend le contrôle du corps de Yuji, des tatouages noirs caractéristiques apparaissent sur son visage et son corps — rappelant les marquages de Sukuna en tant qu'entité à 4 bras. Un second jeu d'yeux s'ouvre également sous les premiers. Ces changements physiques sont immédiatement reconnaissables.",
                 source: "Gege Akutami — Jujutsu Kaisen, manifestation visuelle de Sukuna dans Yuji."
@@ -7959,7 +8254,12 @@ const quizzesData = {
             {
                 id: 29,
                 question: "Quelle est l'arme de prédilection de Maki Zen'in ?",
-                options: ["Un katana maudit", "Ses poings", "Des armes maudites (spears, naginata...)", "Un arc maudit"],
+                options: [
+                "Un katana maudit",
+                "Ses poings",
+                "Des armes maudites",
+                "Un arc maudit"
+            ],
                 correct: 2,
                 explanation: "Maki Zen'in, née sans énergie maudite, compense ce handicap par une maîtrise exceptionnelle des armes maudites (outils imbibés d'énergie maudite). Elle manie diverses armes — naginata, lance, bâton — avec une précision et une force surhumaines. Son absence d'énergie la rend aussi imperceptible aux fléaux.",
                 source: "Gege Akutami — Jujutsu Kaisen, Maki Zen'in et son rapport aux armes maudites."
@@ -7977,7 +8277,7 @@ const quizzesData = {
             {
                 id: 11,
                 question: "Quelle est la technique innée de Ryomen Sukuna révélée dans la saga ?",
-                options: ["Dismantle & Cleave (Découper & Trancher)", "Malevolent Shrine (Sanctuaire Maléfique)", "Les deux sont ses techniques", "Fire Arrow"],
+                options: ["Dismantle & Cleave (Découper", "Malevolent Shrine (Sanctuaire", "Les deux sont ses", "Fire Arrow"],
                 correct: 2,
                 explanation: "Sukuna possède deux techniques tranchantes : Dismantle (Kaiho — découpe non ciblée) et Cleave (Saisoku — découpe adaptée à la durabilité de la cible). Son Expansion de Domaine est le Malevolent Shrine (Juku Shinzen — Sanctuaire Maléfique), unique en son genre car il ne crée pas de barrière close — il amplifie ses techniques sur une zone extérieure.",
                 source: "Gege Akutami — Jujutsu Kaisen, techniques de Sukuna révélées progressivement."
@@ -8001,7 +8301,7 @@ const quizzesData = {
             {
                 id: 14,
                 question: "Qu'est-ce que la Prison Realm (Gokumonkyō) qui scelle Gojo ?",
-                options: ["Une arme fabriquée par les Zen'in", "Un objet maudit de Grade Spécial qui scelle tout ce qu'il englobe", "Le domaine d'expansion d'un fléau antique", "Une barrière créée par Kenjaku"],
+                options: ["Une arme fabriquée par les Zen'in", "Un objet maudit de Grade Spécial qui scelle tout ce qu'il", "Le domaine d'expansion d'un fléau antique", "Une barrière créée par Kenjaku"],
                 correct: 1,
                 explanation: "La Prison Realm est un objet maudit de Grade Spécial — un cube vivant qui peut sceller n'importe qui dans un espace-temps figé à l'intérieur. Pour activer le scellement, la cible doit rester à portée pendant 4 secondes. Kenjaku utilise Geto comme appât pour distraire Gojo le temps nécessaire.",
                 source: "Gege Akutami — Jujutsu Kaisen, arc Shibuya, la Prison Realm."
@@ -8009,7 +8309,7 @@ const quizzesData = {
             {
                 id: 15,
                 question: "Qui est Panda dans Jujutsu Kaisen ?",
-                options: ["Un panda apprivoisé mascotte de l'école", "Un exorciste humain en costume", "Un Panda Évolué — un Cursed Corpse autonome et conscient", "Un shikigami de Megumi"],
+                options: ["Un panda apprivoisé mascotte de l'école", "Un exorciste humain en costume", "Un Panda Évolué", "Un shikigami de Megumi"],
                 correct: 2,
                 explanation: "Panda est un Cursed Corpse (cadavre maudit) créé par le principal Masamichi Yaga. C'est un panda qui peut parler, raisonner et se battre. Il a trois 'noyaux' internes lui donnant différents modes de combat. Malgré son apparence, il est officiellement un exorciste à part entière du Lycée de Tokyo.",
                 source: "Gege Akutami — Jujutsu Kaisen, présentation de Panda et des Cursed Corpses."
@@ -8017,7 +8317,12 @@ const quizzesData = {
             {
                 id: 16,
                 question: "Comment s'appelle la famille noble à laquelle appartient Megumi Fushiguro ?",
-                options: ["Famille Gojo", "Famille Kamo", "Famille Zen'in", "Famille Fushiguro (adoptée Zen'in)"],
+                options: [
+                "Famille Gojo",
+                "Famille Kamo",
+                "Famille Zen'in",
+                "Famille Fushiguro"
+            ],
                 correct: 2,
                 explanation: "Megumi est techniquement un Zen'in par le sang de son père Toji Fushiguro (né Zen'in). La Famille Zen'in est l'une des trois grandes familles nobles du Jujutsu japonais, connue pour son élitisme brutal et sa culture misogyne. Toji avait quitté la famille et changé son nom. Megumi refuse d'être reconnu comme Zen'in.",
                 source: "Gege Akutami — Jujutsu Kaisen, arc Zen'in, héritage de Megumi."
@@ -8041,7 +8346,12 @@ const quizzesData = {
             {
                 id: 19,
                 question: "Comment s'appelle le shikigami le plus puissant de Megumi, considéré comme invincible ?",
-                options: ["Divine Dog : Totality", "Great Serpent", "Mahoraga (Eight-Handled Sword Divergent Sila Divine General Mahoraga)", "Max Elephant"],
+                options: [
+                "Divine Dog : Totality",
+                "Great Serpent",
+                "Mahoraga",
+                "Max Elephant"
+            ],
                 correct: 2,
                 explanation: "Mahoraga (Hachi-Handled Sword Divergent Sila Divine General Mahoraga) est le shikigami ultime de la Technique des Dix Ombres. Aucun utilisateur de la technique dans l'histoire n'a jamais réussi à le dompter. Megumi l'invoque comme ultime recours en sachant qu'il attaquera tout le monde sans distinction — y compris lui-même.",
                 source: "Gege Akutami — Jujutsu Kaisen, Mahoraga, le shikigami indomptable."
@@ -8049,7 +8359,7 @@ const quizzesData = {
             {
                 id: 20,
                 question: "Que fait exactement Mahito avec sa technique Idle Transfiguration ?",
-                options: ["Il transforme les objets en armes", "Il manipule les âmes pour modifier les corps physiques des humains", "Il copie les techniques des autres", "Il crée des illusions"],
+                options: ["Il transforme les objets en armes", "Il manipule les âmes pour modifier les corps", "Il copie les techniques des autres", "Il crée des illusions"],
                 correct: 1,
                 explanation: "Idle Transfiguration (Jiyū Jizai no Henge) permet à Mahito de manipuler directement l'âme (et donc le corps) des humains en les touchant. Il peut les déformer, les fusionner, les transformer en soldats grotesques ou les tuer instantanément. Cette technique est considérée comme l'une des plus terrifiantes car elle touche l'essence même de l'être.",
                 source: "Gege Akutami — Jujutsu Kaisen, Idle Transfiguration de Mahito."
@@ -8084,7 +8394,12 @@ const quizzesData = {
             {
                 id: 21,
                 question: "Que se passe-t-il lors de l'activation d'un Domaine de Domaine (Domain vs Domain) ?",
-                options: ["Les deux utilisateurs meurent", "Le Domaine le plus raffiné techniquement s'impose et l'autre s'annule", "Les deux Domaines se fusionnent", "Le premier activé gagne toujours"],
+                options: [
+                "Les deux utilisateurs meurent",
+                "Le Domaine le plus raffiné techniquement",
+                "Les deux Domaines se fusionnent",
+                "Le premier activé gagne toujours"
+            ],
                 correct: 1,
                 explanation: "Dans un clash de Domaines (Domain vs Domain), les deux barrières entrent en compétition. Le Domaine ayant la technique la plus raffinée (meilleure précision, meilleure formule de barrière) annule celui de l'adversaire. C'est un test de maîtrise technique pure. Une technique appelée Domain Amplification peut neutraliser un Domaine sans en créer un.",
                 source: "Gege Akutami — Jujutsu Kaisen, règles des clashes de Domaines."
@@ -8108,7 +8423,7 @@ const quizzesData = {
             {
                 id: 24,
                 question: "Comment Yuta Okkotsu obtient-il son énergie maudite dans JJK 0 ?",
-                options: ["Il est né avec une grande énergie maudite naturelle", "Il est lié à Rika, l'esprit d'une amie décédée transformée en Queen of Curses", "Il a été expérimenté par Kenjaku", "Il a absorbé les doigts de Sukuna"],
+                options: ["Il est né avec une grande énergie maudite naturelle", "Il est lié à Rika", "Il a été expérimenté par Kenjaku", "Il a absorbé les doigts de Sukuna"],
                 correct: 1,
                 explanation: "Yuta Okkotsu est lié par une malédiction à Rika Orimoto, son amie d'enfance décédée qui s'est transformée en Queen of Curses (Reine des Fléaux) par sa profonde affection pour lui. Rika est une entité maudite de Grade Spécial d'une puissance dévastatrice. Gojo compare Yuta à Sukuna en termes de potentiel brut.",
                 source: "Gege Akutami — Jujutsu Kaisen 0, origine des pouvoirs de Yuta Okkotsu."
@@ -8116,7 +8431,12 @@ const quizzesData = {
             {
                 id: 25,
                 question: "Quelle est la Technique de Projection de Sorcellerie (Projection Sorcery) de Naobito Zen'in ?",
-                options: ["Projeter ses frappes à distance", "Créer des animations-frames et forcer les ennemis à s'y conformer", "Téléprojection d'énergie maudite", "Illusions cinématiques"],
+                options: [
+                "Projeter ses frappes à distance",
+                "Créer des animations-frames contraignantes",
+                "Téléprojection d'énergie maudite",
+                "Illusions cinématiques"
+            ],
                 correct: 1,
                 explanation: "La Projection Sorcery de Naobito Zen'in fonctionne comme une animation : il découpe chaque seconde en 24 frames et dépose une 'animation' sur sa cible. Tout ce qui ne respecte pas le chemin prévu dans l'animation est figé pendant une seconde. C'est pourquoi sa vitesse est comparée à celle de Gojo.",
                 source: "Gege Akutami — Jujutsu Kaisen, technique de Naobito Zen'in expliquée."
@@ -8134,7 +8454,12 @@ const quizzesData = {
             {
                 id: 32,
                 question: "Quelle est la signification du terme 'Jujutsu' dans le contexte du manga ?",
-                options: ["Arts martiaux du vide", "Technique occulte utilisant l'énergie maudite pour combattre les fléaux", "Exorcisme par la prière", "Science de l'ombre"],
+                options: [
+                "Arts martiaux du vide",
+                "Technique occulte utilisant l",
+                "Exorcisme par la prière",
+                "Science de l'ombre"
+            ],
                 correct: 1,
                 explanation: "Dans Jujutsu Kaisen, 'Jujutsu' (術 = technique, 呪 = malédiction/occulte) désigne l'ensemble des techniques utilisant l'énergie maudite (Juju) pour combattre, se protéger ou attaquer. Un exorciste est un 'Jujutsushi' (practicien de Jujutsu). Le titre complet signifie littéralement 'Bataille des Techniques Occultes'.",
                 source: "Gege Akutami — étymologie du titre Jujutsu Kaisen (呪術廻戦)."
@@ -8150,7 +8475,12 @@ const quizzesData = {
             {
                 id: 34,
                 question: "Qu'est-ce qui rend le Malevolent Shrine de Sukuna unique parmi toutes les Expansions de Domaine ?",
-                options: ["Il tue tout en quelques secondes", "Il n'a pas de barrière close — il s'applique dans l'espace réel sur plusieurs centaines de mètres", "Il copie le Domaine de l'adversaire", "Il peut être activé sans énergie maudite"],
+                options: [
+                "Il tue tout en quelques secondes",
+                "Il n'a pas de barrière close",
+                "Il copie le Domaine de l'adversaire",
+                "Il peut être activé sans énergie maudite"
+            ],
                 correct: 1,
                 explanation: "Le Malevolent Shrine (Juku Shinzen — Sanctuaire Maléfique) est le seul Domaine sans barrière externe. Au lieu d'enfermer la cible dans un espace séparé, il raffinements ses techniques de découpe (Dismantle & Cleave) dans l'espace réel sur un rayon de 200 mètres. Cette 'ouverture' compense le manque de barrière et rend l'attaque encore plus dévastatrice.",
                 source: "Gege Akutami — Jujutsu Kaisen, explication unique du Malevolent Shrine de Sukuna."
@@ -8166,7 +8496,7 @@ const quizzesData = {
             {
                 id: 36,
                 question: "Qu'est-ce que 'Tengen' dans Jujutsu Kaisen ?",
-                options: ["Le chef du Haut Conseil", "Une entité immortelle dont la technique d'éternité maintient les barrières protégeant le Japon", "Un ancien Roi des Fléaux", "Le créateur de l'Expansion de Domaine"],
+                options: ["Le chef du Haut Conseil", "Une entité immortelle dont la technique", "Un ancien Roi des Fléaux", "Le créateur de l'Expansion de Domaine"],
                 correct: 1,
                 explanation: "Tengen est un sorcier ayant activé sa technique Infinity il y a plus de 1000 ans, devenant immortel mais en perdant progressivement son humanité. Il maintient les barrières protégeant les lieux sacrés du Japon. Tous les 500 ans, il doit fusionner avec un 'Étoile Compatriote' pour réinitialiser son évolution — sinon il devient une menace.",
                 source: "Gege Akutami — Jujutsu Kaisen, révélations sur Tengen, gardien immortel."
@@ -8182,7 +8512,7 @@ const quizzesData = {
             {
                 id: 38,
                 question: "Quel est l'état 'Heian-era Sukuna' et pourquoi est-il différent du Sukuna dans Yuji ?",
-                options: ["C'est une version plus faible", "C'est la forme originale à 4 bras avec sa puissance complète, avant l'époque moderne", "C'est un clone de Sukuna", "C'est le Sukuna après avoir perdu ses doigts"],
+                options: ["C'est une version plus faible", "C'est la forme originale à 4 bras avec sa puissance complète", "C'est un clone de Sukuna", "C'est le Sukuna après avoir perdu ses doigts"],
                 correct: 1,
                 explanation: "Le Sukuna de l'Ère Heian est sa forme originale : un être à 4 bras et 4 yeux, à sa pleine puissance. Dans Yuji, il est fragmenté à hauteur des doigts avalés. Quand Sukuna prend un nouveau réceptacle avec tous ses doigts (Megumi dans le manga récent), il retrouve une puissance proche de son état originel — ce qui fait de lui une menace existentielle.",
                 source: "Gege Akutami — Jujutsu Kaisen, lore du Sukuna historique vs fragmenté."
@@ -8190,7 +8520,7 @@ const quizzesData = {
             {
                 id: 39,
                 question: "Quelle technique Yuta Okkotsu développe-t-il comme ability principale après JJK 0 ?",
-                options: ["Amplification de force brute", "Copie (Copy) — imiter n'importe quelle technique innée après l'avoir vue", "Contrôle des fantômes", "Amplification de la Parole Maudite"],
+                options: ["Amplification de force", "Copie (Copy)", "Contrôle des fantômes", "Amplification de la Parole"],
                 correct: 1,
                 explanation: "Yuta Okkotsu développe la technique Copy (Fukusha), qui lui permet de copier n'importe quelle technique innée après l'avoir observée, grâce à l'immense réservoir d'énergie maudite de feu-Rika qu'il a internalisée. Il peut ensuite utiliser ces techniques copiées en les alimentant avec son énergie, bien qu'à un niveau légèrement inférieur à l'original.",
                 source: "Gege Akutami — Jujutsu Kaisen, technique Copy de Yuta Okkotsu dans l'arc post-Shibuya."
@@ -8198,7 +8528,7 @@ const quizzesData = {
             {
                 id: 40,
                 question: "Pourquoi Kokichi Muta (Mechamaru) est-il confiné dans un corps mecanique malgré son grade d'exorciste ?",
-                options: ["Il a été puni par le Haut Conseil", "Sa technique est si puissante qu'elle a consumé son corps biologique", "Il est né avec un corps extrêmement fragile en échange d'une grande énergie maudite (Heavenly Restriction)", "Il a subi une expérimentation de Kenjaku"],
+                options: ["Il a été puni par le Haut Conseil", "Sa technique est si puissante qu'elle a consumé son corps", "Il est né avec un corps extrêmement fragile en échange d'une grande énergie", "Il a subi une expérimentation de Kenjaku"],
                 correct: 2,
                 explanation: "Kokichi Muta est né avec une Heavenly Restriction (Restriction Céleste) : son corps est extrêmement fragile et sensible (certaines parties absentes) en échange d'une réserve quasi illimitée d'énergie maudite. C'est le principe d'équilibre : moins de corps = plus de pouvoir. Il contrôle des robots Mechamaru à distance pour combattre.",
                 source: "Gege Akutami — Jujutsu Kaisen, explication de la Heavenly Restriction de Kokichi Muta."
