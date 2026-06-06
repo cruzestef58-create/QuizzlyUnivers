@@ -324,6 +324,18 @@ function startQuizChats(difficulty) {
     nextBtn.onclick = () => quizManager.nextQuestion();
 }
 
+function startQuizChiens(difficulty) {
+    document.getElementById('difficulty-selection').style.display = 'none';
+    document.getElementById('quiz-container').style.display = 'block';
+
+    const quizData = quizzesData.lesChiens;
+    quizManager = new QuizManager(quizData, difficulty);
+    quizManager.init();
+
+    const nextBtn = document.getElementById('next-button');
+    nextBtn.onclick = () => quizManager.nextQuestion();
+}
+
 // Function to start quiz with difficulty for ornithology
 function startQuizOrnithologie(difficulty) {
     document.getElementById('difficulty-selection').style.display = 'none';
@@ -654,7 +666,8 @@ const categories = {
     canides: {
         label: '🐕 Canidés',
         quizzes: [
-            { icon: '🐕', title: 'L\'Éducation Canine', desc: 'Secrets pour éduquer votre chien et comprendre son comportement.', url: 'quiz-education-canine.html' },
+            { icon: '🐕', title: 'Les Chiens', desc: 'Races, biologie, sens et histoire du meilleur ami de l\'humain.', url: 'quiz-les-chiens.html' },
+            { icon: '🎓', title: 'L\'Éducation Canine', desc: 'Secrets pour éduquer votre chien et comprendre son comportement.', url: 'quiz-education-canine.html' },
         ]
     },
     reptiles: {
@@ -708,6 +721,134 @@ function closeCategory() {
 window.openCategory = openCategory;
 window.closeCategory = closeCategory;
 
+// ── Barre de recherche ────────────────────────────────────────────────────────
+
+// Index plat de tous les quiz (construit à partir de `categories`)
+function buildSearchIndex() {
+    const index = [];
+    for (const [catKey, cat] of Object.entries(categories)) {
+        for (const quiz of cat.quizzes) {
+            index.push({
+                icon: quiz.icon,
+                title: quiz.title,
+                desc: quiz.desc,
+                url: quiz.url,
+                category: cat.label,
+                // Texte de recherche normalisé (minuscules, sans accents)
+                search: normalize(quiz.title + ' ' + quiz.desc + ' ' + cat.label),
+            });
+        }
+    }
+    return index;
+}
+
+function normalize(str) {
+    return str.toLowerCase()
+        .normalize('NFD')
+        .replace(/[̀-ͯ]/g, '');
+}
+
+function highlight(text, query) {
+    if (!query) return text;
+    const escaped = query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    const re = new RegExp(`(${escaped})`, 'gi');
+    return text.replace(re, '<mark>$1</mark>');
+}
+
+function initSearch() {
+    const input = document.getElementById('quiz-search');
+    if (!input) return;
+
+    const searchIndex = buildSearchIndex();
+    const resultsBox  = document.getElementById('search-results');
+    const clearBtn    = document.getElementById('search-clear');
+    const searchWrapper = document.getElementById('search-wrapper');
+
+    input.addEventListener('input', () => {
+        const raw   = input.value.trim();
+        const query = normalize(raw);
+
+        // Afficher / masquer bouton croix
+        clearBtn.classList.toggle('hidden', raw === '');
+
+        if (raw === '') {
+            resultsBox.classList.add('hidden');
+            showCategoriesView();
+            return;
+        }
+
+        // Masquer les catégories pendant la recherche
+        hideCategoriesView();
+
+        // Filtrer
+        const matches = searchIndex.filter(q => q.search.includes(query));
+
+        if (matches.length === 0) {
+            resultsBox.innerHTML = `<div class="search-no-result">😕 Aucun quiz trouvé pour "<strong>${raw}</strong>"</div>`;
+        } else {
+            resultsBox.innerHTML = matches.map(q => `
+                <a class="search-result-item" href="${q.url}">
+                    <span class="search-result-icon">${q.icon}</span>
+                    <div class="search-result-info">
+                        <div class="search-result-title">${highlight(q.title, raw)}</div>
+                        <div class="search-result-desc">${q.desc}</div>
+                    </div>
+                    <span class="search-result-category">${q.category}</span>
+                </a>
+            `).join('');
+        }
+
+        resultsBox.classList.remove('hidden');
+    });
+
+    // Fermer les résultats si clic en dehors
+    document.addEventListener('click', (e) => {
+        if (!searchWrapper.contains(e.target)) {
+            resultsBox.classList.add('hidden');
+        }
+    });
+
+    // Rouvrir si on refocus l'input et qu'il y a du texte
+    input.addEventListener('focus', () => {
+        if (input.value.trim() !== '') {
+            resultsBox.classList.remove('hidden');
+        }
+    });
+}
+
+function clearSearch() {
+    const input = document.getElementById('quiz-search');
+    const resultsBox = document.getElementById('search-results');
+    const clearBtn = document.getElementById('search-clear');
+    if (!input) return;
+    input.value = '';
+    clearBtn.classList.add('hidden');
+    resultsBox.classList.add('hidden');
+    showCategoriesView();
+    input.focus();
+}
+
+function hideCategoriesView() {
+    const cv = document.getElementById('categories-view');
+    const sv = document.getElementById('subthemes-view');
+    const title = document.getElementById('themes-title');
+    if (cv) cv.classList.add('hidden');
+    if (sv) sv.classList.add('hidden');
+    if (title) title.style.display = 'none';
+}
+
+function showCategoriesView() {
+    const cv = document.getElementById('categories-view');
+    const title = document.getElementById('themes-title');
+    if (cv) cv.classList.remove('hidden');
+    if (title) { title.style.display = ''; title.textContent = 'Thèmes de Quiz'; }
+}
+
+// Init au chargement de la page d'accueil
+document.addEventListener('DOMContentLoaded', initSearch);
+
+window.clearSearch = clearSearch;
+
 // Expose functions globally (requis pour type="module")
 window.suggestNewTheme = suggestNewTheme;
 window.openReportModal = openReportModal;
@@ -722,3 +863,4 @@ window.startQuizMammiferesMarin = startQuizMammiferesMarin;
 window.startQuizLion = startQuizLion;
 window.startQuizAigleRoyal = startQuizAigleRoyal;
 window.startQuizTigre = startQuizTigre;
+window.startQuizChiens = startQuizChiens;

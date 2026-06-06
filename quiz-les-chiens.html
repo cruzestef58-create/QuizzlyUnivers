@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz - Les Mammifères Marins</title>
+    <title>Quiz - Les Chiens</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -27,19 +27,19 @@
                     <p>Sélectionnez le niveau qui vous convient le mieux</p>
                 </div>
                 <div class="difficulty-grid">
-                    <div class="difficulty-card" onclick="startQuizMammiferesMarin('facile')">
+                    <div class="difficulty-card" onclick="startQuizChiens('facile')">
                         <div class="difficulty-level">⭐</div>
                         <h3>Facile</h3>
                         <p>10 questions de base pour débuter</p>
                         <div class="difficulty-badge">Débutant</div>
                     </div>
-                    <div class="difficulty-card active" onclick="startQuizMammiferesMarin('moyen')">
+                    <div class="difficulty-card active" onclick="startQuizChiens('moyen')">
                         <div class="difficulty-level">⭐⭐</div>
                         <h3>Moyen</h3>
                         <p>10 questions intermédiaires</p>
                         <div class="difficulty-badge">Intermédiaire</div>
                     </div>
-                    <div class="difficulty-card" onclick="startQuizMammiferesMarin('difficile')">
+                    <div class="difficulty-card" onclick="startQuizChiens('difficile')">
                         <div class="difficulty-level">⭐⭐⭐</div>
                         <h3>Difficile</h3>
                         <p>10 questions avancées</p>
@@ -51,7 +51,7 @@
             <!-- Quiz Section -->
             <div id="quiz-container" style="display: none;">
                 <div class="quiz-header">
-                    <h1>🐋 Les Mammifères Marins</h1>
+                    <h1>🐕 Les Chiens</h1>
                     <p>Questions basées sur les meilleures pratiques et sources vérifiées</p>
                 </div>
                 <div class="progress-bar">
@@ -64,7 +64,6 @@
                 </div>
 
                 <div class="button-container">
-
                     <button id="next-button" class="btn btn-primary">Suivante →</button>
                 </div>
             </div>
@@ -102,7 +101,7 @@
             <h2>À propos de ce Quiz</h2>
             <div class="info-content">
                 <div>
-                    <p>Ce quiz sur les mammifères marins vous propose 10 questions basées sur des sources fiables et les meilleures pratiques en océanographie.</p>
+                    <p>Ce quiz sur les chiens vous propose 10 questions basées sur des sources fiables couvrant races, biologie, sens et histoire du meilleur ami de l'humain.</p>
                 </div>
                 <div>
                     <ul>

@@ -730,6 +730,736 @@ const quizzesData = {
             }
         ]
     },
+    lesChiens: {
+        title: "Les Chiens",
+        description: "Testez vos connaissances sur les chiens : races, biologie, sens et histoire",
+        facile: [
+            {
+                id: 1,
+                question: "Combien de races de chiens reconnaît la Fédération Cynologique Internationale (FCI) ?",
+                options: ["Environ 100 races officielles, réparties en 5 grands groupes selon leur morphologie", "Environ 200 races officielles, classées principalement par taille (petite, moyenne, grande)", "Plus de 350 races officielles", "Plus de 600 races, dont la moitié sont issues de croisements récents reconnus ces vingt dernières années"],
+                correct: 2,
+                explanation: "La FCI reconnaît plus de 350 races de chiens, réparties en 10 groupes selon leur utilisation et leur morphologie (chiens de berger, terriers, chiens courants, chiens d'arrêt, etc.). Le nombre exact évolue au fil des années avec les nouvelles demandes de reconnaissance.",
+                source: "Fédération Cynologique Internationale — Plus de 350 races reconnues, classées en 10 groupes."
+            },
+            {
+                id: 2,
+                question: "Quel animal est l'ancêtre direct du chien domestique ?",
+                options: ["Le renard roux, dont certaines populations ont été domestiquées il y a environ 15 000 ans en Asie centrale", "Le chacal doré, qui vivait aux côtés des premiers villages humains et s'est progressivement apprivoisé", "Le loup gris", "Le dhole, un canidé sauvage d'Asie qui partage 98 % de l'ADN du chien domestique moderne"],
+                correct: 2,
+                explanation: "Le chien domestique (Canis lupus familiaris) descend directement du loup gris (Canis lupus). La domestication a commencé il y a entre 15 000 et 40 000 ans, probablement en Eurasie. Des analyses ADN ont confirmé ce lien génétique direct avec le loup gris, et non avec d'autres canidés.",
+                source: "National Geographic — Le chien descend du loup gris, domestiqué il y a au moins 15 000 ans."
+            },
+            {
+                id: 3,
+                question: "Combien de fois l'odorat d'un chien est-il plus développé que celui de l'humain ?",
+                options: ["Environ 5 à 10 fois, ce qui leur permet de détecter des odeurs légèrement plus faibles que nous", "Environ 50 fois, soit suffisamment pour repérer une source odorante à une centaine de mètres", "10 000 à 100 000 fois plus puissant", "Environ 1 000 fois, une performance comparable à celle du porc, autre animal reconnu pour son flair"],
+                correct: 2,
+                explanation: "Le chien possède environ 300 millions de récepteurs olfactifs contre 6 millions chez l'humain, et la zone cérébrale dédiée à l'analyse des odeurs est 40 fois plus grande proportionnellement. Selon les estimations, son odorat est 10 000 à 100 000 fois plus puissant que le nôtre, ce qui lui permet de détecter des maladies, des explosifs ou des personnes disparues.",
+                source: "Alexandra Horowitz, Barnard College — L'odorat du chien est estimé entre 10 000 et 100 000 fois supérieur à celui de l'humain."
+            },
+            {
+                id: 4,
+                question: "Quelle est la durée de gestation d'une chienne ?",
+                options: ["Environ 45 jours, soit une gestation très courte liée à la petite taille des chiots à la naissance", "Entre 75 et 85 jours, comparable à celle du renard et du loup", "Environ 63 jours", "Environ 90 jours, soit proche de celle du chat et des petits félins"],
+                correct: 2,
+                explanation: "La gestation de la chienne dure en moyenne 63 jours (entre 58 et 68 jours selon les individus), comptés à partir de l'ovulation. C'est une durée similaire à celle du loup, leur ancêtre direct. La portée varie généralement de 1 à 12 chiots selon la race.",
+                source: "American Kennel Club — La gestation dure en moyenne 63 jours chez la chienne."
+            },
+            {
+                id: 5,
+                question: "Quel est le chien officiellement le plus rapide au monde ?",
+                options: ["Le Saluki, un lévrier du Moyen-Orient capable d'atteindre 68 km/h sur longue distance grâce à son endurance exceptionnelle", "Le Whippet, un lévrier anglais qui dépasse régulièrement les 60 km/h lors des compétitions de coursing", "Le Lévrier Afghan, dont le pelage long cache une morphologie aérodynamique permettant des pointes à 65 km/h", "Le Greyhound (lévrier anglais)"],
+                correct: 3,
+                explanation: "Le Greyhound est officiellement le chien le plus rapide du monde, capable d'atteindre 72 km/h en pointe. Sa morphologie est entièrement adaptée à la vitesse : corps allongé, cage thoracique profonde, pattes longues et muscles puissants. Il est utilisé dans les courses depuis des siècles.",
+                source: "Guinness World Records — Le Greyhound est le chien le plus rapide, avec des pointes à 72 km/h."
+            },
+            {
+                id: 6,
+                question: "Comment s'appelle le chien le plus petit du monde selon les standards de race ?",
+                options: ["Le Toy Poodle, dont la version miniature peut peser moins de 2 kg et mesurer moins de 25 cm au garrot", "Le Pomeranian nain, issu de la sélection des spitz allemands pour leur taille toujours plus réduite", "Le Yorkshire Terrier miniature, dont certains individus sélectionnés pèsent moins de 1,5 kg", "Le Chihuahua"],
+                correct: 3,
+                explanation: "Le Chihuahua est la plus petite race de chien au monde selon les standards de la FCI. Il pèse généralement entre 1,5 et 3 kg et mesure 15 à 23 cm au garrot. Malgré sa taille minuscule, il est réputé pour son caractère vif, courageux et très attaché à son maître.",
+                source: "FCI — Le Chihuahua est la race de chien la plus petite du monde."
+            },
+            {
+                id: 7,
+                question: "À quelle température corporelle le chien commence-t-il à souffrir de coup de chaleur ?",
+                options: ["À partir de 38,5 °C, soit dès que la température dépasse légèrement la normale, car ils régulent mal la chaleur", "À partir de 40 °C, une température que le chien peut tolérer brièvement lors d'efforts intenses", "Au-delà de 41-42 °C", "À partir de 43 °C uniquement, car les chiens ont une tolérance naturelle élevée liée à leur métabolisme"],
+                correct: 2,
+                explanation: "La température normale d'un chien est de 38 à 39,2 °C. Au-delà de 41-42 °C, le chien entre en hyperthermie dangereuse pouvant endommager les organes. Le chien se refroidit principalement par le halètement (évaporation par la langue et les voies respiratoires), ce qui est moins efficace que la transpiration humaine.",
+                source: "American Veterinary Medical Association — Au-delà de 41 °C, le chien risque un coup de chaleur grave."
+            },
+            {
+                id: 8,
+                question: "Quelle est la race de chien la plus grande du monde ?",
+                options: ["Le Leonberg, un chien de montagne allemand qui peut dépasser 80 cm au garrot et peser jusqu'à 75 kg", "Le Saint-Bernard, réputé pour ses missions de sauvetage dans les Alpes et son gabarit imposant", "Le Mastiff Anglais, dont certains individus ont dépassé 100 kg, ce qui en fait le plus lourd", "Le Dogue Allemand (Grand Danois)"],
+                correct: 3,
+                explanation: "Le Dogue Allemand (Grand Danois) est officiellement la race de chien la plus grande du monde. Il peut mesurer plus de 80 cm au garrot et peser entre 50 et 90 kg. Le record du monde de hauteur est détenu par un Grand Danois nommé Zeus, qui mesurait 111,8 cm au garrot.",
+                source: "Guinness World Records — Le Grand Danois est la race de chien la plus grande du monde."
+            },
+            {
+                id: 9,
+                question: "Comment les chiens perçoivent-ils principalement le monde ?",
+                options: ["Par la vue, car leur vision des mouvements est exceptionnellement précise même dans l'obscurité totale", "Par l'ouïe, car ils peuvent entendre des fréquences trois fois plus larges que les humains à des distances bien supérieures", "Par l'odorat en priorité", "Par les vibrations du sol grâce à des mécanorécepteurs dans leurs coussinets particulièrement développés"],
+                correct: 2,
+                explanation: "L'odorat est le sens dominant du chien. Ils explorent leur environnement avant tout par le nez : identifier des individus, lire les marquages urinaires, détecter des émotions ou des états de santé. Le cerveau du chien consacre une proportion bien plus grande à l'analyse olfactive que le cerveau humain.",
+                source: "Alexandra Horowitz — L'odorat est le sens premier du chien pour percevoir et comprendre le monde."
+            },
+            {
+                id: 10,
+                question: "Quel est le rôle des coussinets du chien ?",
+                options: ["Uniquement amortir les chocs lors de la course et protéger les os des pattes sur terrain dur", "Réguler la température corporelle en été grâce à des glandes sudoripares abondantes dans toute leur surface", "Amortir les chocs, assurer la traction et contenir les seules glandes sudoripares du corps", "Sentir les vibrations du sol et détecter les proies souterraines comme le font les mustélidés"],
+                correct: 2,
+                explanation: "Les coussinets ont plusieurs fonctions : amortir les impacts lors de la marche et de la course, assurer la traction sur différents terrains, et protéger les os des pattes. Ils contiennent également les seules glandes sudoripares du chien — les autres zones corporelles ne transpirent pas, c'est pourquoi le chien halète pour se refroidir.",
+                source: "Veterinary Practice News — Les coussinets amortissent les chocs et contiennent les glandes sudoripares du chien."
+            },
+            {
+                id: 11,
+                question: "Quel est le chien officiel de la ville de Paris ?",
+                options: ["Le Bouledogue Français, symbole de la capitale depuis une décision du conseil municipal de 1987", "Le Caniche, dont l'histoire est intimement liée à la culture et aux arts français depuis le XVIIe siècle", "Le Berger de Beauce (Beauceron), race nationale française utilisée par la gendarmerie parisienne", "Il n'existe pas de chien officiel de Paris"],
+                correct: 3,
+                explanation: "Paris n'a pas de chien officiel. En revanche, le Bouledogue Français est souvent associé à la culture parisienne moderne et connaît un succès mondial depuis les années 2000. Le Caniche est lui aussi une race emblématique de la France, mais aucune ville française n'a officiellement adopté une race.",
+                source: "Mairie de Paris — Aucune race de chien n'est officiellement désignée comme symbole de Paris."
+            },
+            {
+                id: 12,
+                question: "Combien de temps dure la phase de socialisation du chiot, considérée comme critique pour son développement ?",
+                options: ["De 1 à 3 semaines, une fenêtre très courte pendant laquelle toutes les empreintes sensorielles sont gravées définitivement", "De 3 à 12 semaines environ", "De 6 mois à 1 an, quand le chiot commence à explorer son environnement de façon autonome et indépendante", "De la naissance à 6 mois, une période continue sans fenêtre critique particulière selon les dernières recherches"],
+                correct: 1,
+                explanation: "La fenêtre de socialisation primaire du chiot se situe entre 3 et 12 semaines environ. Durant cette période, le chiot est naturellement ouvert à de nouvelles expériences et forme ses références sociales et émotionnelles. Des expositions positives à divers humains, animaux, sons et environnements à ce stade réduisent les risques de peurs et d'agressivité à l'âge adulte.",
+                source: "American Veterinary Society of Animal Behavior — La socialisation primaire entre 3 et 12 semaines est déterminante."
+            },
+            {
+                id: 13,
+                question: "Quel est le sens le plus faible chez le chien comparé à l'humain ?",
+                options: ["L'ouïe, car les humains perçoivent une gamme de fréquences plus large dans les sons graves en dessous de 40 Hz", "L'odorat, car bien que puissant en absolu, il reste moins précis que celui de certains insectes comme les papillons", "La vue, notamment pour les détails fins et les couleurs", "Le toucher, car les coussinets et le pelage dense amortissent les sensations tactiles fines"],
+                correct: 2,
+                explanation: "La vue est le sens où le chien est généralement en retrait par rapport à l'humain pour certains aspects : moins bonne résolution des détails, vision des couleurs plus limitée (dichromate), et moins bonne acuité à courte distance. En revanche, il voit mieux de nuit et détecte les mouvements beaucoup plus rapidement que nous.",
+                source: "Applied Animal Behaviour Science — La vision du chien est moins précise que celle de l'humain pour les détails et les couleurs."
+            },
+            {
+                id: 14,
+                question: "Comment s'appelle le comportement où un chien tourne sur lui-même avant de se coucher ?",
+                options: ["La nidation rotative, un rituel hérité des loups qui construisaient des terriers circulaires pour protéger leur portée", "Un comportement compulsif lié au stress de captivité, uniquement observé chez les chiens vivant en appartement sans sortie suffisante", "Un instinct hérité de leurs ancêtres sauvages pour aplatir la végétation et vérifier les alentours", "Un mécanisme de régulation de la température corporelle activé automatiquement quand le chien ressent le besoin de dormir"],
+                correct: 2,
+                explanation: "Tourner en rond avant de se coucher est un comportement atavique hérité des ancêtres sauvages du chien. Dans la nature, ce mouvement servait à aplatir l'herbe ou les feuilles pour créer un nid confortable, à chasser les insectes ou les petits animaux, et à vérifier visuellement les environs pour repérer d'éventuels prédateurs.",
+                source: "Animal Cognition — Ce comportement circulaire est un instinct atavique des ancêtres sauvages du chien."
+            },
+            {
+                id: 15,
+                question: "Quelle fréquence d'ultrasons le chien peut-il entendre, contrairement à l'humain ?",
+                options: ["Jusqu'à 30 000 Hz, une capacité légèrement supérieure à l'humain qui perçoit jusqu'à 20 000 Hz", "Jusqu'à 45 000 Hz, ce qui lui permet d'entendre les sifflets à ultrasons conçus spécifiquement pour le dressage", "Jusqu'à 65 000 Hz", "Jusqu'à 100 000 Hz, une capacité proche de celle du dauphin utilisée pour la communication à longue distance"],
+                correct: 2,
+                explanation: "Le chien peut percevoir des sons jusqu'à 65 000 Hz, contre seulement 20 000 Hz pour l'humain. Cette capacité à entendre les ultrasons lui permet de détecter des sons imperceptibles pour nous : certains appareils électroniques, des mouvements de rongeurs dans les murs, ou encore les sifflets à ultrasons utilisés en dressage.",
+                source: "Journal of the Acoustical Society of America — Le chien perçoit des fréquences jusqu'à 65 000 Hz contre 20 000 Hz chez l'humain."
+            },
+            {
+                id: 16,
+                question: "Quel est l'espérance de vie moyenne d'un chien ?",
+                options: ["5 à 8 ans pour toutes les races, une durée limitée par leur métabolisme rapide et leur susceptibilité aux maladies infectieuses", "8 à 10 ans, une durée stable qui n'a pas évolué malgré les progrès de la médecine vétérinaire moderne", "10 à 15 ans selon la race et la taille", "18 à 20 ans pour les races robustes comme le Jack Russell, qui dépasse régulièrement ce seuil en bonne santé"],
+                correct: 2,
+                explanation: "L'espérance de vie d'un chien est en moyenne de 10 à 15 ans, mais varie considérablement selon la race. Les petites races vivent généralement plus longtemps (15 ans et plus pour le Chihuahua ou le Jack Russell) que les grandes races (7-9 ans pour le Dogue Allemand ou le Saint-Bernard). La qualité de vie, l'alimentation et les soins vétérinaires jouent également un rôle important.",
+                source: "Veterinary Record — L'espérance de vie canine varie de 7 à 15 ans selon la taille et la race."
+            },
+            {
+                id: 17,
+                question: "Quelle race de chien est connue pour ne presque pas aboyer ?",
+                options: ["Le Shar Pei, dont la morphologie particulière de la gorge rend l'aboiement difficile et douloureux", "Le Chow-Chow, une race ancienne dont la communication repose principalement sur les postures corporelles silencieuses", "Le Basenji", "Le Shiba Inu, qui préfère un cri aigu caractéristique appelé 'Shiba scream' à l'aboiement classique"],
+                correct: 2,
+                explanation: "Le Basenji, originaire d'Afrique centrale, est souvent appelé 'le chien qui n'aboie pas'. Sa morphologie laryngée particulière l'empêche de produire un aboiement classique. Il émet à la place un son unique appelé 'yodel' ou 'barroo', ainsi que des grognements, gémissements et couinements. C'est l'une des races les plus anciennes du monde.",
+                source: "AKC — Le Basenji est connu comme 'le chien qui n'aboie pas', en raison de sa morphologie laryngée particulière."
+            },
+            {
+                id: 18,
+                question: "Comment s'appelle la troisième paupière du chien ?",
+                options: ["La paupière clignotante, un tissu transparent qui se ferme horizontalement pour protéger l'œil sans bloquer la vision", "La membrane cornéenne, une protection fine qui s'active uniquement lors de contacts physiques directs avec l'œil", "La membrane nictitante", "La paupière choroïdale, une structure pigmentée qui régule la quantité de lumière entrant dans la pupille"],
+                correct: 2,
+                explanation: "La membrane nictitante (ou troisième paupière) est un repli conjonctival situé dans le coin interne de l'œil. Elle glisse horizontalement sur la surface de l'œil pour le protéger des frottements, des corps étrangers et pour répartir les larmes. Quand elle est visible en permanence, cela peut signaler une infection, un stress ou un problème de santé.",
+                source: "Veterinary Ophthalmology — La membrane nictitante est la troisième paupière du chien, visible dans le coin interne de l'œil."
+            },
+            {
+                id: 19,
+                question: "Quel est le plus ancien chien connu à avoir vécu en compagnie d'un humain, selon les fouilles archéologiques ?",
+                options: ["Un squelette découvert en Chine datant d'environ 7 000 ans, inhumé avec des objets de chasse suggérant un rôle de partenaire de traque", "Un fossile allemand de 14 000 ans montrant un chien enterré avec un humain", "Des traces de pas côte à côte trouvées en France, datant de 26 000 ans, interprétées comme la preuve d'une relation homme-chien préhistorique", "Un crâne de canidé domestiqué découvert en Sibérie, vieux de 33 000 ans, considéré comme le premier chien connu"],
+                correct: 1,
+                explanation: "L'un des plus anciens témoignages de la relation homme-chien est un squelette découvert à Bonn-Oberkassel (Allemagne), datant d'environ 14 000 ans. Un humain et un chien y avaient été enterrés ensemble, suggérant un lien affectif fort. Des recherches plus récentes évoquent des indices de domestication encore plus anciens (jusqu'à 33 000 ans), mais avec moins de certitude.",
+                source: "Journal of Archaeological Science — Le site de Bonn-Oberkassel (14 000 ans) est l'une des plus anciennes preuves d'inhumation commune homme-chien."
+            },
+            {
+                id: 20,
+                question: "Pourquoi les chiens se renifient-ils mutuellement les fesses en guise de salutation ?",
+                options: ["Pour évaluer la force physique de l'autre individu via des hormones musculaires excrétées par les glandes périanales actives", "Pour établir une hiérarchie dominance-soumission, le chien dominant reniflant toujours en premier selon un protocole social strict", "Pour lire des informations chimiques (identité, sexe, santé, état émotionnel) via les glandes anales", "Pour vérifier si l'autre chien a récemment mangé, une information cruciale pour les décisions de partage des ressources alimentaires"],
+                correct: 2,
+                explanation: "Les glandes anales (ou sacs anaux) du chien sécrètent un liquide unique à chaque individu, contenant des informations chimiques : identité, sexe, statut reproducteur, état de santé et même état émotionnel. C'est l'équivalent canin d'une carte d'identité. Renifler cette zone est donc une façon précise et rapide de 'lire' un inconnu.",
+                source: "Applied Animal Behaviour Science — Les glandes anales fournissent des informations chimiques uniques sur l'identité et l'état du chien."
+            },
+            {
+                id: 21,
+                question: "Quelle race est considérée comme la plus intelligente selon les études de Stanley Coren ?",
+                options: ["Le Golden Retriever, dont les capacités d'apprentissage rapide et la docilité naturelle en font le chien de thérapie le plus utilisé au monde", "Le Berger Allemand, sélectionné pour son obéissance et son adaptabilité dans des situations complexes depuis plus d'un siècle", "Le Border Collie", "Le Labrador Retriever, dont la polyvalence (guide, détection, thérapie, chasse) témoigne d'une intelligence pratique exceptionnelle"],
+                correct: 2,
+                explanation: "Dans son ouvrage 'The Intelligence of Dogs' (1994), le psychologue Stanley Coren classe le Border Collie en première position pour l'obéissance et l'apprentissage. Il peut apprendre une nouvelle commande en moins de 5 répétitions et l'exécuter correctement dans 95 % des cas. Certains Border Collies ont mémorisé plus de 1 000 mots distincts.",
+                source: "Stanley Coren, 'The Intelligence of Dogs' — Le Border Collie est classé premier pour l'obéissance et la capacité d'apprentissage."
+            },
+            {
+                id: 22,
+                question: "Quel pays a le plus grand nombre de chiens domestiques dans le monde ?",
+                options: ["Les États-Unis, avec environ 90 millions de chiens domestiques selon les dernières enquêtes nationales sur les animaux de compagnie", "La Chine, dont l'essor économique a entraîné une explosion de la possession d'animaux de compagnie depuis les années 2000", "Le Brésil", "La France, premier pays d'Europe pour le nombre de chiens et troisième mondial toutes espèces confondues"],
+                correct: 2,
+                explanation: "Le Brésil est le pays comptant le plus grand nombre de chiens domestiques au monde, avec plus de 54 millions de chiens. Les États-Unis arrivent en deuxième position avec environ 90 millions selon certaines estimations, mais le Brésil se distingue par sa densité canine et sa culture très attachée aux animaux de compagnie.",
+                source: "World Animal Protection — Le Brésil possède la plus grande population de chiens domestiques au monde."
+            },
+            {
+                id: 23,
+                question: "Comment s'appelle le mouvement de la patte que fait un chien quand on lui gratte le ventre ?",
+                options: ["Le réflexe lombaire, une contraction musculaire involontaire des muscles spinaux qui se propage vers les membres postérieurs", "Le réflexe de Babinski canin, identique au réflexe neurologique humain qui indique l'état de maturation du système nerveux", "Le réflexe de grattage", "Le réflexe périnéal, une réponse autonome du système nerveux sympathique activée par le toucher de la zone inguinale"],
+                correct: 2,
+                explanation: "Le réflexe de grattage est une réponse involontaire du système nerveux : quand une zone sensible du ventre ou du flanc est stimulée, le cerveau envoie un signal automatique pour 'gratter' l'irritation supposée. C'est un réflexe de défense contre les parasites (puces, tiques). Le chien ne contrôle pas ce mouvement — d'où le côté comique et incontrôlable de la patte qui s'agite.",
+                source: "Neuroscience Letters — Le réflexe de grattage est une réponse automatique du système nerveux à la stimulation des zones sensibles du ventre."
+            },
+            {
+                id: 24,
+                question: "Combien de litres d'eau un chien adulte de taille moyenne doit-il boire par jour ?",
+                options: ["Moins de 500 ml par jour, ses reins étant adaptés pour concentrer l'urine et récupérer un maximum d'eau métabolique", "Environ 1 à 2 litres par jour selon son poids et son niveau d'activité", "Exactement 3 litres par jour quelle que soit la race, le poids ou la saison, une valeur fixée par son métabolisme de base", "Plus de 4 litres par jour, les chiens étant de grands consommateurs d'eau en raison de leur thermorégulation par halètement"],
+                correct: 1,
+                explanation: "Un chien adulte doit boire environ 50 à 70 ml d'eau par kg de poids corporel par jour. Pour un chien de 20 kg, cela représente 1 à 1,5 litre. Ce besoin augmente par temps chaud, après l'effort, ou si le chien mange des croquettes sèches (moins hydratées que la pâtée). Une consommation excessive ou insuffisante peut signaler un problème de santé.",
+                source: "American Kennel Club — Un chien doit boire environ 50-70 ml/kg/jour, soit 1-1,5 litre pour un chien de 20 kg."
+            },
+            {
+                id: 25,
+                question: "Quel chien célèbre a inspiré la marque RCA Victor ?",
+                options: ["Rex, un fox-terrier britannique dressé à écouter des phonographes lors de démonstrations commerciales à Londres dès 1895", "Pal, un Collie Rough qui devint célèbre sous le nom de Lassie et fut le porte-parole non officiel de plusieurs marques américaines", "Nipper", "Fido, un chien errant florentin dont la fidélité légendaire inspira le nom générique anglais pour désigner tous les chiens domestiques"],
+                correct: 2,
+                explanation: "Nipper est le célèbre fox-terrier blanc peint en 1898 par Francis Barraud, la tête penchée vers un phonographe, intrigué par la voix de son maître. Ce tableau, intitulé 'His Master's Voice', devint le logo de la Gramophone Company, puis de HMV et de RCA Victor. Nipper est l'un des animaux les plus célèbres de l'histoire de la publicité.",
+                source: "RCA Victor / HMV — Nipper le fox-terrier est la mascotte historique de 'His Master's Voice', logo de RCA Victor."
+            },
+            {
+                id: 26,
+                question: "Pourquoi dit-on que le chien est 'daltonien' ?",
+                options: ["Parce qu'il ne voit strictement qu'en niveaux de gris, comme une photo en noir et blanc, sans aucune perception de teinte colorée", "Parce qu'il confond le rouge et le vert, ces deux couleurs lui apparaissant comme une même teinte jaunâtre ou grisâtre", "Parce que sa vision nocturne est tellement dominante qu'elle écrase toute perception des couleurs même en plein jour", "Parce que ses cônes rétiniens sont distribués différemment de ceux de l'humain, rendant certains angles du champ visuel achromatiques"],
+                correct: 1,
+                explanation: "Le terme 'daltonien' est souvent utilisé à tort pour dire que le chien ne voit qu'en gris — ce n'est pas exact. Le chien est dichromate : ses deux types de cônes perçoivent le bleu et le jaune-vert. Il voit donc des couleurs, mais confond le rouge et le vert, qui lui apparaissent tous deux comme une teinte jaunâtre ou brun-gris. Sa palette est similaire à celle d'un humain daltonien rouge-vert.",
+                source: "Neitz et al. — Les chiens sont dichromates et confondent rouge et vert, une forme de daltonisme analogue à la deutéranopie humaine."
+            },
+            {
+                id: 27,
+                question: "Quel est le rôle principal du marquage urinaire chez le chien ?",
+                options: ["Délimiter un territoire exclusif pour empêcher physiquement d'autres chiens d'y pénétrer, comme une barrière chimique dissuasive", "Communiquer son identité, son statut et son état émotionnel aux autres chiens via les phéromones urinaires", "Indiquer la présence de ressources alimentaires aux membres de la meute, un comportement coopératif hérité du loup", "Réduire le stress du chien en déposant une odeur familière dans les environnements nouveaux ou stressants"],
+                correct: 1,
+                explanation: "Le marquage urinaire est avant tout un moyen de communication chimique. L'urine contient des phéromones qui renseignent les autres chiens sur l'identité du déposant, son sexe, son statut reproducteur (chaleurs, castration), sa santé et son état émotionnel. Les chiens 'lisent' ces messages en reniflant longuement les marquages, puis y répondent souvent en laissant leur propre trace.",
+                source: "Hormones and Behavior — Le marquage urinaire est un système de communication chimique complexe chez le chien."
+            },
+            {
+                id: 28,
+                question: "Combien de temps un chien peut-il rester seul sans souffrir d'anxiété de séparation selon les comportementalistes ?",
+                options: ["Pas plus de 2 heures, au-delà desquelles tout chien développe un stress mesurable quelle que soit son histoire ou son tempérament", "4 heures maximum pour les adultes équilibrés, les chiots ne devant jamais rester seuls plus de 30 minutes", "4 à 6 heures pour un adulte équilibré, avec des variations selon l'individu", "10 à 12 heures sans problème pour les races indépendantes comme le Shar Pei ou le Chow-Chow"],
+                correct: 2,
+                explanation: "La plupart des comportementalistes estiment qu'un chien adulte équilibré peut tolérer 4 à 6 heures de solitude sans souffrir. Au-delà, le risque d'anxiété, d'ennui ou de comportements destructeurs augmente. Cela dépend beaucoup de l'individu, de son éducation et de ses habitudes. Les chiots et les chiens anxieux ont besoin de périodes beaucoup plus courtes.",
+                source: "International Association of Animal Behavior Consultants — Un chien adulte équilibré peut rester seul 4 à 6 heures sans anxiété."
+            },
+            {
+                id: 29,
+                question: "Quelle race est à l'origine de la plupart des chiens de traîneau modernes ?",
+                options: ["Le Malamute d'Alaska, la race de traîneau la plus ancienne d'Amérique du Nord, utilisée depuis 4 000 ans par le peuple Mahlemiut", "Le Samoyède, race sibérienne également utilisée comme chien de berger et chien de garde par les nomades Nenets", "Le Husky Sibérien", "Le Groenlandais, la race la plus résistante au froid extrême, capable de travailler à -50°C sans protection supplémentaire"],
+                correct: 2,
+                explanation: "Le Husky Sibérien, originaire de Sibérie orientale où il était élevé par le peuple Tchouktche, est la race emblématique du traîneau. Léger, endurant et résistant au froid, il a été importé en Alaska au début du XXe siècle pour les courses de traîneaux. Il est à la base de nombreuses lignées de chiens de sport nordiques modernes.",
+                source: "AKC — Le Husky Sibérien est la race emblématique du traîneau, issue du peuple Tchouktche de Sibérie orientale."
+            },
+            {
+                id: 30,
+                question: "Que signifie un chien qui bâille en présence d'un autre chien ou d'un humain ?",
+                options: ["Il est fatigué et souhaite mettre fin à l'interaction, le bâillement étant un signal de clôture sociale universel chez les canidés", "Il montre sa domination en exposant ses dents et en étirant sa mâchoire, un signal d'intimidation subtil", "Il envoie un signal d'apaisement pour réduire la tension ou exprimer un léger inconfort", "Il manifeste de la faim, le bâillement étant déclenché par une chute du taux de glucose détectée par l'hypothalamus"],
+                correct: 2,
+                explanation: "Chez le chien, le bâillement est l'un des 'calming signals' (signaux d'apaisement) décrits par Turid Rugaas. Dans un contexte social, bâiller signale à l'autre : 'je ne suis pas une menace' ou 'cette situation m'est inconfortable'. C'est différent du bâillement de fatigue, qui survient dans un contexte de repos. Les humains qui ne connaissent pas ce signal l'interprètent souvent à tort comme de l'ennui.",
+                source: "Turid Rugaas — Le bâillement est un signal d'apaisement que le chien utilise pour désamorcer les tensions sociales."
+            }
+        ],
+        moyen: [
+            {
+                id: 11,
+                question: "Quel organe sensoriel particulier permet au chien de 'goûter' les odeurs ?",
+                options: ["Les papilles gustatives olfactives situées à la base de la langue, qui analysent simultanément goût et odeur en un seul signal combiné", "Les cellules ciliées de l'épithélium nasal, capables de distinguer 500 types d'odeurs différentes simultanément", "L'organe voméronasal (organe de Jacobson)", "Les récepteurs sensoriels du palais mou, qui traitent les molécules aromatiques dissoutes dans la salive"],
+                correct: 2,
+                explanation: "L'organe voméronasal (ou de Jacobson) est situé dans le palais. Il détecte les phéromones et les signaux chimiques complexes que l'odorat classique ne capte pas. Le chien l'utilise surtout pour lire les informations sociales et reproductives — c'est notamment pour cela qu'un chien reniflera longuement les marquages urinaires d'autres congénères.",
+                source: "Journal of Veterinary Science — L'organe voméronasal traite les phéromones et signaux chimiques sociaux chez le chien."
+            },
+            {
+                id: 12,
+                question: "Quelle est la fréquence cardiaque normale d'un chien adulte au repos ?",
+                options: ["30 à 50 bpm, proche de celle des grands mammifères comme le cheval, en raison de leur gabarit similaire", "50 à 70 bpm, comparable à la fréquence cardiaque d'un humain sportif de haut niveau", "60 à 140 bpm selon la taille", "180 à 220 bpm, une fréquence élevée liée à leur métabolisme rapide et à leur nature prédatrice"],
+                correct: 2,
+                explanation: "La fréquence cardiaque d'un chien varie selon sa taille : 60-80 bpm pour les grandes races, jusqu'à 120-140 bpm pour les petites races. C'est une règle générale chez les mammifères : plus l'animal est petit, plus son cœur bat vite. Au-delà ou en dessous de ces valeurs au repos, une consultation vétérinaire est conseillée.",
+                source: "American Veterinary Medical Association — Fréquence cardiaque normale : 60-80 bpm (grandes races), 100-140 bpm (petites races)."
+            },
+            {
+                id: 13,
+                question: "Quelle race est à l'origine de la majorité des races de berger européennes modernes ?",
+                options: ["Le Berger de Beauce (Beauceron), une race française réputée pour sa polyvalence et sa résistance dans les conditions climatiques difficiles", "Le Berger Allemand, créé à la fin du XIXe siècle à partir d'un programme de sélection rigoureux", "Le Colley Rough (Lassie), sélectionné en Écosse pour son intelligence exceptionnelle et son obéissance naturelle", "Le Berger Blanc Suisse, ancêtre probable de nombreux bergers continentaux selon les analyses génétiques récentes"],
+                correct: 1,
+                explanation: "Le Berger Allemand a été créé en 1899 par Max von Stephanitz à partir de chiens de berger allemands. Il a rapidement été adopté comme chien de travail (police, armée, assistance) et a influencé de nombreuses races. Aujourd'hui l'une des races les plus répandues dans le monde, il est un standard de référence pour les chiens de service.",
+                source: "FCI — Le Berger Allemand, créé en 1899, est l'une des races de service les plus influentes au monde."
+            },
+            {
+                id: 14,
+                question: "Comment s'appelle le processus par lequel le chien crée un lien fort avec ses propriétaires dès ses premières semaines ?",
+                options: ["L'attachement néonatal, une phase critique des 10 premiers jours pendant lesquels tout stimulus devient une empreinte permanente", "Le conditionnement opérant, par lequel le chiot associe les humains à des récompenses positives répétées", "La socialisation primaire", "L'imprégnation maternelle, qui transfère le référentiel social de la mère au groupe humain en présence"],
+                correct: 2,
+                explanation: "La socialisation primaire est la période critique entre 3 et 12 semaines pendant laquelle le chiot forge ses références sociales et émotionnelles. Un chiot exposé positivement à de nombreux humains, animaux, sons et environnements pendant cette fenêtre sera plus équilibré toute sa vie. Un manque de socialisation à cette période entraîne souvent de l'anxiété ou de l'agressivité.",
+                source: "American Veterinary Society of Animal Behavior — La période de socialisation primaire (3-12 semaines) est déterminante."
+            },
+            {
+                id: 15,
+                question: "Quel groupe sanguin est le plus fréquent chez le chien ?",
+                options: ["Le groupe DEA 3, présent chez plus de 80 % des chiens toutes races confondues, ce qui en fait le groupe universel receveur", "Le groupe DEA 7, un groupe récemment identifié qui est désormais dominant dans les populations canines mondiales", "Le groupe DEA 1 (anciennement DEA 1.1)", "Le groupe DEA 4, considéré comme le groupe universel donneur en médecine vétérinaire d'urgence"],
+                correct: 2,
+                explanation: "Le système sanguin canin (DEA, Dog Erythrocyte Antigen) compte plusieurs groupes. DEA 1 (anciennement DEA 1.1) est le plus fréquent et le plus important cliniquement, car une incompatibilité peut provoquer des réactions transfusionnelles graves. En médecine vétérinaire, le typage sanguin avant une transfusion est fortement recommandé.",
+                source: "Journal of Veterinary Internal Medicine — DEA 1 est le groupe sanguin canin le plus fréquent et le plus cliniquement significatif."
+            },
+            {
+                id: 16,
+                question: "Quelle est la particularité du Dalmatien par rapport aux autres races ?",
+                options: ["Il naît avec ses taches noires visibles dès la naissance, contrairement à une idée reçue qui prétend qu'elles apparaissent avec l'âge", "Il est la seule race à ne pas posséder de sous-poil, ce qui explique sa thermorégulation différente des autres chiens à poil court", "Il naît entièrement blanc, les taches apparaissent ensuite", "Il possède une colonne vertébrale légèrement plus longue que la moyenne des chiens de sa taille, ce qui lui confère son allure"],
+                correct: 2,
+                explanation: "Les chiots Dalmatiens naissent entièrement blancs. Les taches caractéristiques (noires ou foie) apparaissent progressivement au cours des premières semaines de vie, à mesure que la mélanine se dépose dans les poils. Ce phénomène est lié à la migration des mélanocytes après la naissance.",
+                source: "AKC — Les Dalmatiens naissent blancs, leurs taches apparaissant dans les premières semaines de vie."
+            },
+            {
+                id: 17,
+                question: "Quel chien a officiellement été le premier à aller dans l'espace ?",
+                options: ["Belka, une chienne soviétique lancée à bord de Spoutnik 5 en 1960 et revenue vivante sur Terre après 17 orbites", "Strelka, la compagne de Belka lors de la mission Spoutnik 5, qui est devenue le symbole des missions spatiales animales soviétiques", "Laïka", "Dezik, le premier chien soviétique à dépasser l'atmosphère lors d'un vol suborbital en 1951, souvent oublié de l'histoire officielle"],
+                correct: 2,
+                explanation: "Laïka, une chienne croisée de rue soviétique, est le premier être vivant à avoir orbité autour de la Terre, le 3 novembre 1957 à bord de Spoutnik 2. Elle n'a pas survécu à la mission (les conditions de survie n'étaient pas prévues), mais son voyage a ouvert la voie à la conquête spatiale habitée.",
+                source: "NASA — Laïka est le premier être vivant à avoir orbité la Terre, le 3 novembre 1957."
+            },
+            {
+                id: 18,
+                question: "Combien de muscles les chiens utilisent-ils pour bouger chaque oreille ?",
+                options: ["3 muscles, soit le même nombre que chez l'humain, bien que les chiens les contrôlent de façon beaucoup plus précise", "7 muscles, permettant des mouvements suffisamment fins pour distinguer la source d'un son à quelques degrés près", "Plus de 18 muscles indépendants", "12 muscles par oreille, un nombre légèrement supérieur à celui des chats qui en possèdent 9 par oreille"],
+                correct: 2,
+                explanation: "Le chien possède plus de 18 muscles dans chaque oreille, ce qui lui permet de les orienter indépendamment avec une grande précision. Cette mobilité auriculaire lui sert à localiser les sons avec précision et à communiquer ses émotions (oreilles dressées, en arrière, aplaties). L'humain, en comparaison, possède seulement 3 muscles auriculaires atrophiés.",
+                source: "Comparative Anatomy Journal — Le chien possède plus de 18 muscles par oreille, contre 3 chez l'humain."
+            },
+            {
+                id: 19,
+                question: "Quelle est la principale différence visuelle entre le chien et l'humain ?",
+                options: ["Le chien voit en niveaux de gris complets, sans aucune perception de couleur, à la manière d'une vieille photographie en noir et blanc", "Le chien a une vision plus précise que l'humain de jour, grâce à une densité de photorécepteurs supérieure dans sa fovéa", "Le chien est dichromate et perçoit principalement bleu et jaune, pas le rouge-vert", "Le chien voit uniquement les objets en mouvement, sa vision statique étant quasi inexistante contrairement à ce qu'on pourrait croire"],
+                correct: 2,
+                explanation: "Les chiens sont dichromates : ils ont deux types de cônes (contre trois chez l'humain), sensibles au bleu et au jaune-vert. Ils distinguent mal le rouge et le vert, qui leur apparaissent comme des nuances de jaune ou de gris. Leur vision nocturne est en revanche bien meilleure que la nôtre, grâce au tapetum lucidum qui amplifie la lumière disponible.",
+                source: "Applied Animal Behaviour Science — Les chiens sont dichromates, percevant principalement le bleu et le jaune."
+            },
+            {
+                id: 20,
+                question: "Qu'est-ce que le 'tapetum lucidum' chez le chien ?",
+                options: ["Un cartilage souple situé à la base des oreilles qui leur permet de les orienter avec une précision de 0,06 degré", "Une membrane nictitante (troisième paupière) qui protège l'œil lors des chasses en végétation dense", "Une couche réfléchissante derrière la rétine qui améliore la vision nocturne", "Un organe chimiorécepteur du palais qui analyse les phéromones en complément de l'organe voméronasal"],
+                correct: 2,
+                explanation: "Le tapetum lucidum est une couche de tissu réfléchissant située derrière la rétine. Il réfléchit la lumière qui traverse la rétine sans être absorbée, lui permettant de stimuler les photorécepteurs une seconde fois. Cela améliore considérablement la vision dans l'obscurité. C'est aussi ce qui fait briller les yeux des chiens (et des chats) dans le noir ou face à une lumière vive.",
+                source: "Veterinary Ophthalmology — Le tapetum lucidum amplifie la lumière disponible et améliore la vision nocturne du chien."
+            },
+            {
+                id: 21,
+                question: "Qu'est-ce que la 'proprioception' chez le chien et quel rôle joue-t-elle dans le mouvement ?",
+                options: ["La capacité à détecter les champs magnétiques terrestres, utilisée lors des déplacements nocturnes pour maintenir une trajectoire rectiligne", "La perception des odeurs du sol via les coussinets, permettant au chien de reconstituer le passage d'un individu jusqu'à 48 heures après", "La conscience de la position de son propre corps dans l'espace, permettant coordination et équilibre", "La sensibilité aux vibrations sonores basses transmises par le sol, utilisée pour détecter des animaux souterrains"],
+                correct: 2,
+                explanation: "La proprioception est le sens qui informe le cerveau de la position et du mouvement des membres et du corps dans l'espace, sans recourir à la vue. Chez le chien, elle est essentielle pour courir sur des terrains irréguliers, sauter avec précision et maintenir l'équilibre. Un déficit proprioceptif est souvent un signe précoce de troubles neurologiques.",
+                source: "Journal of Veterinary Neurology — La proprioception est un indicateur neurologique clé chez le chien."
+            },
+            {
+                id: 22,
+                question: "Pourquoi les chiens de race brachycéphale sont-ils souvent interdits en soute d'avion ?",
+                options: ["En raison de leur tendance à l'hyperactivité en espace confiné, qui stresse les autres passagers et l'équipage", "Parce que leur pelage dense crée un risque de charges électrostatiques dans la soute pressurisée", "Parce que leurs voies respiratoires comprimées les rendent très vulnérables au stress thermique et à la pression réduite en soute", "En raison de règlementations sanitaires liées à leur prédisposition aux infections oculaires"],
+                correct: 2,
+                explanation: "Les chiens brachycéphales ont des voies respiratoires anatomiquement compromises. Le stress du transport, la chaleur de la soute et la légère modification de pression atmosphérique peuvent provoquer une détresse respiratoire grave, voire mortelle. Plusieurs compagnies aériennes les ont interdits en soute après plusieurs décès signalés.",
+                source: "IATA — Les races brachycéphales sont fréquemment interdites en soute en raison de leur vulnérabilité respiratoire."
+            },
+            {
+                id: 23,
+                question: "Comment s'appelle la technique de pistage où le chien suit une odeur de contact laissée sur le sol ?",
+                options: ["Le tracking aérien, une technique où le chien lève la tête pour capter les molécules odorantes en suspension dans l'air", "Le tracking au sol (pistage de contact)", "Le mantrailing actif, où le chien alterne entre piste au sol et cônes d'odeur aériens", "La recherche thermique, exploitant la chaleur corporelle résiduelle laissée par les empreintes"],
+                correct: 1,
+                explanation: "Le tracking (ou pistage au sol) est la technique où le chien suit, nez bas, l'odeur de contact déposée par les pieds d'une personne — herbes écrasées, terre retournée, sueur et cellules épidermiques. C'est une des méthodes utilisées en compétition canine (IGP) et en recherche de personnes disparues.",
+                source: "IGP Regulations — Le tracking au sol est l'une des disciplines canoniques du travail olfactif canin."
+            },
+            {
+                id: 24,
+                question: "Qu'est-ce que la 'mémoire épisodique' chez le chien, récemment démontrée par des études ?",
+                options: ["La capacité à mémoriser des séquences de commandes apprises et les reproduire dans l'ordre des semaines après", "La mémoire des lieux précis où des récompenses ont été cachées", "La capacité à se souvenir d'événements spécifiques passés, démontrée par le rappel d'actions humaines observées", "La mémorisation à long terme des odeurs individuelles permettant d'identifier des individus absents depuis plus d'un an"],
+                correct: 2,
+                explanation: "Une étude hongroise (Fugazza et al., 2016) a démontré que les chiens possèdent une mémoire épisodique : ils peuvent se souvenir d'actions humaines spécifiques qu'ils ont observées, même sans y être entraînés et après un délai. Cela suggère une mémoire autobiographique rudimentaire.",
+                source: "Current Biology (Fugazza et al., 2016) — Les chiens montrent des signes de mémoire épisodique en rappelant des actions observées."
+            },
+            {
+                id: 25,
+                question: "Comment le chien détecte-t-il la direction d'un son avec autant de précision ?",
+                options: ["En utilisant la différence de phase entre les deux oreilles, identique au mécanisme humain mais avec une résolution angulaire supérieure", "En comparant l'intensité sonore perçue par chaque oreille, avec des pinnae orientables permettant de maximiser la différence", "En orientant ses oreilles indépendamment et en calculant le décalage temporel d'arrivée du son entre les deux oreilles", "Grâce à un organe supplémentaire situé dans l'oreille interne qui triangule la source sonore par réflexion des ondes"],
+                correct: 2,
+                explanation: "Le chien localise les sons en orientant chaque oreille indépendamment (grâce à ses 18+ muscles auriculaires) et en calculant le décalage temporel d'arrivée du son entre les deux oreilles — quelques microsecondes suffisent. Cette capacité lui permet de localiser une source sonore avec une précision d'environ 0,06 degré et à des distances bien supérieures à l'humain.",
+                source: "Journal of the Acoustical Society — Le chien oriente ses oreilles indépendamment pour localiser les sons avec une précision exceptionnelle."
+            },
+            {
+                id: 26,
+                question: "Qu'est-ce que le syndrome de dysfonction cognitive (SDC) chez le chien âgé ?",
+                options: ["Un trouble métabolique lié à une insuffisance thyroïdienne fréquente après 8 ans, provoquant léthargie et prise de poids", "Une dégénérescence progressive des disques intervertébraux causant des douleurs chroniques et une réduction de mobilité", "Une forme de démence canine avec désorientation, troubles du sommeil et changements de comportement", "Un syndrome douloureux chronique lié à l'arthrose généralisée, souvent confondu avec une baisse d'énergie normale liée à l'âge"],
+                correct: 2,
+                explanation: "Le syndrome de dysfonction cognitive est l'équivalent canin de la maladie d'Alzheimer. Il se manifeste par de la désorientation, des changements dans les cycles veille-sommeil, une réduction des interactions sociales, des oublis de comportements appris et des signes d'anxiété accrue. Il touche environ 14 % des chiens de plus de 8 ans et jusqu'à 68 % des chiens de plus de 15 ans.",
+                source: "Journal of Veterinary Behavior — Le SDC touche jusqu'à 68 % des chiens de plus de 15 ans."
+            },
+            {
+                id: 27,
+                question: "Quelle race de chien est la plus utilisée dans les unités cynophiles de police et gendarmerie en France ?",
+                options: ["Le Rottweiler, dont la puissance physique et la résistance à la douleur en font le chien d'intervention préféré des unités de maintien de l'ordre", "Le Malinois (Berger Belge)", "Le Berger Allemand, race historiquement dominante dans les forces de l'ordre depuis la Seconde Guerre mondiale", "Le Dobermann, sélectionné spécifiquement au XIXe siècle pour les patrouilles nocturnes par le percepteur Karl Friedrich Louis Dobermann"],
+                correct: 1,
+                explanation: "Le Malinois (Berger Belge Malinois) a largement supplanté le Berger Allemand dans les forces de l'ordre et l'armée. Plus léger, plus rapide et plus résistant, il présente une drive de travail élevée et une meilleure endurance. Il est aujourd'hui la race dominante dans la plupart des unités cynophiles européennes, dans les forces spéciales et même dans les opérations militaires américaines.",
+                source: "Gendarmerie Nationale — Le Malinois est aujourd'hui la race dominante dans les unités cynophiles françaises."
+            },
+            {
+                id: 28,
+                question: "Comment fonctionne la communication par 'appel au jeu' (play bow) chez le chien ?",
+                options: ["C'est une posture de soumission complète adressée aux chiens dominants pour signaler l'absence d'intention agressive lors d'une rencontre", "C'est un signal d'alarme qui prévient les congénères d'un danger imminent tout en restant visible par l'animal menaçant", "C'est une invitation ritualisée au jeu, avec pattes avant au sol et arrière-train levé, qui suspend temporairement les règles sociales normales", "C'est un comportement de régulation thermique où le chien étire ses muscles après une période d'inactivité prolongée"],
+                correct: 2,
+                explanation: "Le play bow (révérence de jeu) est un signal de communication inné : pattes avant au sol, arrière-train levé, queue agitée. Il signale une intention ludique et 'entre parenthèses' les comportements qui suivent — mordre, poursuivre, sauter — en indiquant qu'il s'agit de jeu et non d'agression. Ce signal est universel chez les canidés et compris dès le plus jeune âge.",
+                source: "Marc Bekoff — Le play bow est un méta-signal universel chez les canidés qui encadre les interactions ludiques."
+            },
+            {
+                id: 29,
+                question: "Que montre la recherche sur la compréhension du regard humain par le chien ?",
+                options: ["Les chiens ignorent systématiquement le regard humain et se concentrent uniquement sur les gestes manuels pour décoder les intentions", "Les chiens suivent le regard humain mais uniquement vers des zones contenant de la nourriture, une association apprise par conditionnement", "Les chiens suivent le regard humain pour trouver des informations sur l'environnement, une compétence absente chez le loup", "Les chiens interprètent le contact visuel direct comme une menace, ce qui explique leur tendance à détourner le regard en cas de conflit"],
+                correct: 2,
+                explanation: "Des études comparatives ont montré que les chiens domestiques suivent le regard humain pour trouver des informations sur l'environnement — une compétence que les loups, même élevés par des humains, ne développent pas. Cela suggère que cette habileté sociale a été sélectionnée lors de la domestication, facilitant la communication interspécifique.",
+                source: "Brian Hare et al. — Les chiens suivent le regard humain pour obtenir des informations, une compétence sélectionnée lors de la domestication."
+            },
+            {
+                id: 30,
+                question: "Qu'est-ce que l'ostéosarcome et pourquoi touche-t-il surtout les grandes races ?",
+                options: ["Un lymphome agressif des ganglions lymphatiques deux fois plus fréquent chez les races géantes en raison de leur système immunitaire hyperactif", "Une insuffisance cardiaque dilatée liée à une surcharge pondérale des ventricules, corrélée au poids corporel élevé des grandes races", "Un cancer des os primaire, fréquent chez les grandes races en raison de leur croissance rapide et de leur masse osseuse importante", "Une dysplasie articulaire dégénérative évoluant en tumeur synoviale, uniquement observée chez les chiens de plus de 40 kg"],
+                correct: 2,
+                explanation: "L'ostéosarcome est le cancer osseux primaire le plus fréquent chez le chien. Il touche principalement les grandes et très grandes races (Dogue Allemand, Berger Allemand, Rottweiler, Golden Retriever) car leur croissance rapide et leur grande masse osseuse augmentent le risque de mutations cellulaires dans les os longs. Il se manifeste souvent aux membres et est malheureusement très agressif.",
+                source: "Veterinary Cancer Society — L'ostéosarcome touche préférentiellement les grandes races en raison de leur croissance rapide."
+            },
+            {
+                id: 31,
+                question: "Qu'est-ce que la 'théorie de l'attachement' appliquée au chien et comment diffère-t-elle de la hiérarchie de dominance ?",
+                options: ["La théorie de l'attachement décrit une relation affective bidirectionnelle basée sur la confiance, alors que la dominance décrit une relation de contrainte unilatérale", "La théorie de l'attachement s'applique exclusivement aux chiots de moins de 6 mois, la dominance décrivant mieux les relations entre adultes", "Ce sont deux théories équivalentes qui décrivent le même phénomène relationnel avec des vocabulaires issus de traditions scientifiques différentes", "La théorie de l'attachement décrit le lien du chien avec son propriétaire, la dominance décrivant uniquement les interactions entre chiens"],
+                correct: 0,
+                explanation: "La théorie de l'attachement (Bowlby, adaptée au chien par Topál et al.) décrit le lien affectif chien-humain comme une relation de sécurité basée sur la confiance. Le concept de dominance, souvent mal appliqué, décrit des dynamiques de compétition pour des ressources. De nombreux comportementalistes recommandent d'abandonner le modèle dominance-soumission pour comprendre la relation homme-chien.",
+                source: "Topál et al., Applied Animal Behaviour Science — Le lien chien-humain correspond mieux au modèle de l'attachement qu'à celui de la dominance."
+            },
+            {
+                id: 32,
+                question: "Comment évaluer la douleur chronique chez un chien qui ne vocalise pas ?",
+                options: ["Par mesure de la fréquence cardiaque au repos : une augmentation persistante de plus de 20 bpm par rapport à la baseline indique une douleur chronique significative", "Par l'observation de marqueurs comportementaux subtils : posture, expression faciale, mobilité réduite, changements d'appétit et d'interactions sociales", "Par dosage sanguin du cortisol salivaire : un taux supérieur à 15 nmol/L à jeun le matin est considéré comme indicateur validé de douleur chronique", "Par thermographie infrarouge des zones suspectes : une asymétrie de température supérieure à 1,5 °C indique une inflammation active sous-jacente"],
+                correct: 1,
+                explanation: "Le chien exprime peu la douleur chronique par vocalisation — un héritage évolutif (montrer sa faiblesse est dangereux en milieu sauvage). Les outils validés comme le CBPI (Canine Brief Pain Inventory) ou le Helsinki Chronic Pain Index évaluent des indicateurs comportementaux : posture de soulagement, réduction de l'activité, changements d'expression faciale, refus d'escaliers ou de sauts.",
+                source: "Helsinki Chronic Pain Index — L'évaluation comportementale est l'outil de référence pour la douleur chronique canine."
+            },
+            {
+                id: 33,
+                question: "Qu'est-ce que la 'fenêtre thérapeutique' dans le traitement des phobies canines par désensibilisation ?",
+                options: ["L'intervalle de dosage optimal des anxiolytiques vétérinaires au cours duquel leur concentration plasmatique est suffisante pour réduire l'anxiété sans sédation excessive", "Le niveau d'exposition au stimulus phobogène à partir duquel le chien réagit légèrement sans dépasser son seuil de panique, permettant l'apprentissage", "La période post-traumatique de 72 heures après une exposition phobique majeure pendant laquelle la reconsolidation mémorielle est encore modifiable", "L'intervalle de temps entre deux séances de désensibilisation pendant lequel la mémoire de la session précédente se consolide sans rechute possible"],
+                correct: 1,
+                explanation: "La fenêtre thérapeutique en désensibilisation est le niveau d'exposition où le chien perçoit le stimulus phobogène (tonnerre, voiture, autre chien) suffisamment pour s'y habituer, mais pas assez intensément pour déclencher une réaction de panique. Au-delà du seuil de panique, la séance renforce la peur. La maîtrise de cette fenêtre est la compétence centrale de la désensibilisation systématique.",
+                source: "Karen Overall, 'Clinical Behavioral Medicine for Small Animals' — La gestion du niveau d'exposition est centrale dans la désensibilisation des phobies canines."
+            },
+            {
+                id: 34,
+                question: "Pourquoi les Colleys et Bergers Australiens ne doivent-ils pas recevoir certains antiparasitaires courants ?",
+                options: ["Parce que leur foie surexprime les enzymes CYP3A4 qui métabolisent trop rapidement l'ivermectine, la rendant inefficace à dose standard", "Parce qu'une mutation du gène ABCB1 rend leur barrière hémato-encéphalique perméable à certaines molécules normalement exclues du cerveau", "Parce que leurs récepteurs GABA cérébraux ont une sensibilité anormalement élevée aux molécules de la famille des avermectines", "Parce qu'une résistance croisée aux antiparasitaires a été sélectionnée lors de la domestication de ces races dans des environnements pastoraux traités intensivement"],
+                correct: 1,
+                explanation: "La mutation ABCB1-Δ (anciennement MDR1) inactive la P-glycoprotéine, une pompe normalement présente dans la barrière hémato-encéphalique. L'ivermectine, la moxidectine, la loperamide ou la vincristine peuvent alors s'accumuler dans le cerveau et provoquer des signes neurologiques graves (ataxie, coma, mort) à des doses sans danger pour d'autres races. Un test génétique permet de dépister les porteurs.",
+                source: "Washington State University — La mutation ABCB1 est présente chez 70 % des Colleys et nécessite d'éviter plusieurs médicaments courants."
+            },
+            {
+                id: 35,
+                question: "Qu'est-ce que l'hépatite chronique héréditaire du Bedlington Terrier et quel est son mécanisme ?",
+                options: ["Une cirrhose biliaire primitive liée à une mutation du gène CFTR, perturbant la composition de la bile et causant une cholestase progressive", "Une hépatite auto-immune où le système immunitaire produit des anticorps anti-hépatocytes, transmise sur un mode dominant avec pénétrance incomplète", "Une accumulation de cuivre dans le foie due à une mutation du gène COMMD1, provoquant une hépatite toxique progressive", "Une stéatose hépatique héréditaire liée à un déficit en lipoprotéine lipase, causant une infiltration graisseuse massive du foie avant l'âge de 5 ans"],
+                correct: 2,
+                explanation: "Le Bedlington Terrier est prédisposé à une hépatopathie au cuivre causée par une mutation du gène COMMD1 (anciennement MURR1). Cette mutation perturbe l'excrétion biliaire du cuivre, qui s'accumule dans les hépatocytes et provoque une hépatite toxique progressive pouvant évoluer en cirrhose. Un dépistage génétique et des biopsies hépatiques permettent le diagnostic précoce.",
+                source: "Journal of Hepatology — La mutation COMMD1 cause une accumulation hépatique de cuivre chez le Bedlington Terrier."
+            },
+            {
+                id: 36,
+                question: "Qu'est-ce que le 'counter-conditioning' et en quoi diffère-t-il de la désensibilisation simple ?",
+                options: ["Le counter-conditioning modifie la réponse comportementale motrice (fuite, agression) tandis que la désensibilisation modifie uniquement la réponse émotionnelle interne", "Le counter-conditioning associe le stimulus phobogène à quelque chose de positif pour changer l'émotion sous-jacente, en plus de réduire la réactivité", "Ce sont deux noms différents pour la même technique, le terme 'counter-conditioning' étant surtout utilisé en Europe anglophone", "Le counter-conditioning utilise exclusivement des punitions négatives pour inhiber la réponse anxieuse, alors que la désensibilisation n'utilise que des renforcements"],
+                correct: 1,
+                explanation: "La désensibilisation réduit progressivement la réactivité par exposition graduée. Le contre-conditionnement va plus loin : il associe le stimulus déclencheur (tonnerre, autre chien) à quelque chose de très positif (friandise exceptionnelle) pour modifier l'émotion sous-jacente — transformer 'menace' en 'signal de récompense'. Les deux techniques sont souvent utilisées ensemble (DS/CC) pour une efficacité maximale.",
+                source: "Karen Overall — La combinaison désensibilisation et contre-conditionnement (DS/CC) est la méthode de référence pour les phobies canines."
+            },
+            {
+                id: 37,
+                question: "Pourquoi le Shar Pei est-il prédisposé à la fièvre familiale du Shar Pei (FSF) ?",
+                options: ["Une mutation des récepteurs IL-1 qui amplifie la cascade inflammatoire lors de toute infection bactérienne mineure, causant des pics fébriles répétés", "Une surproduction d'acide hyaluronique liée à des duplications du gène HAS2, causant une inflammation périodique et des dépôts d'amyloïde", "Un déficit héréditaire en IgA sérique qui rend le chien vulnérable aux infections récurrentes déclenchant des épisodes fébriles auto-résolutifs", "Une dysfonction des neutrophiles liée à une mutation du gène LYST, causant une neutrophilie paradoxale lors de chaque épisode fébrile"],
+                correct: 1,
+                explanation: "Le Shar Pei est prédisposé à la fièvre familiale en raison de duplications du gène HAS2 qui entraînent une surproduction d'acide hyaluronique (responsable de ses plis cutanés caractéristiques). Cet excès cause une inflammation systémique périodique avec fièvre, gonflement des jarrets et, à long terme, des dépôts d'amyloïde dans les organes (amyloïdose). Sans traitement, l'amyloïdose rénale peut être fatale.",
+                source: "PLOS Genetics — Les duplications HAS2 sont responsables des plis cutanés et de la prédisposition à l'amyloïdose chez le Shar Pei."
+            },
+            {
+                id: 38,
+                question: "Comment le chien perçoit-il les champs magnétiques terrestres et comment ce sens est-il utilisé ?",
+                options: ["Via des cristaux de magnétite dans les cellules olfactives nasales, détectés par IRM et permettant une orientation précise à longue distance", "Via des photorécepteurs magnétosensibles dans la rétine (cryptochrome), l'information magnétique étant superposée au champ visuel", "Des études ont montré que les chiens s'alignent préférentiellement nord-sud lors de la défécation, mais le mécanisme reste mal compris", "Via des mécanorécepteurs dans les coussinets sensibles aux variations du champ magnétique terrestre, actifs principalement lors des migrations saisonnières"],
+                correct: 2,
+                explanation: "Hart et al. (2013) ont montré que les chiens s'alignent préférentiellement selon l'axe nord-sud lors de la défécation et de la miction, suggérant une sensibilité magnétique. Le mécanisme précis reste mal élucidé — des hypothèses évoquent les cryptochomes rétiniens ou des dépôts de magnétite. Cette capacité pourrait jouer un rôle dans l'orientation spatiale et le retour au domicile.",
+                source: "Frontiers in Zoology (Hart et al., 2013) — Les chiens s'alignent préférentiellement nord-sud lors de l'élimination, suggérant une perception magnétique."
+            },
+            {
+                id: 39,
+                question: "Qu'est-ce que la dysérythropoïèse héréditaire canine (anémie des English Springer Spaniels) ?",
+                options: ["Une anémie hémolytique auto-immune liée à des anticorps anti-érythrocytaires transmis sur un mode dominant, traitable par immunosuppresseurs", "Une déficience en facteur intrinsèque causant une malabsorption de la vitamine B12 et une anémie mégaloblastique progressive", "Une anémie héréditaire causée par une anomalie de maturation des globules rouges due à une mutation affectant la synthèse des protéines membranaires", "Une polyglobulie compensatoire héréditaire liée à une surproduction d'érythropoïétine causant une hyperviscosité sanguine et des thromboses récurrentes"],
+                correct: 2,
+                explanation: "La dysérythropoïèse héréditaire du Springer Spaniel Anglais est causée par une mutation affectant les protéines de la membrane érythrocytaire, provoquant une maturation anormale des précurseurs des globules rouges dans la moelle osseuse. Les chiens atteints développent une anémie de sévérité variable, souvent associée à une splénomégalie compensatoire.",
+                source: "Veterinary Pathology — La dysérythropoïèse héréditaire du Springer Spaniel est liée à une anomalie des protéines membranaires érythrocytaires."
+            },
+            {
+                id: 40,
+                question: "Comment la consanguinité affecte-t-elle la santé des races canines et comment est-elle mesurée ?",
+                options: ["Par le score OFA (Orthopedic Foundation for Animals) qui mesure le pourcentage d'allèles délétères identifiés dans le génome d'un individu par rapport à la population", "Par le coefficient de consanguinité (COI) qui mesure la probabilité qu'un individu porte deux copies identiques d'un gène hérité d'un ancêtre commun", "Par le ratio de diversité allélique (RDA) qui compare le nombre de variants uniques d'un individu à la moyenne de la race sur 100 marqueurs microsatellites", "Par l'indice de Wright (IS) qui mesure l'écart à l'équilibre de Hardy-Weinberg dans les 10 loci les plus polymorphes de la race concernée"],
+                correct: 1,
+                explanation: "Le coefficient de consanguinité (COI, Coefficient of Inbreeding) mesure la probabilité qu'un individu soit homozygote pour un allèle identique par descendance. Plus le COI est élevé, plus le risque d'exprimer des maladies récessives augmente. Des études montrent qu'au-delà de 6,25 % (équivalent d'un croisement arrière), les effets négatifs sur la santé et la fertilité deviennent significatifs dans de nombreuses races.",
+                source: "Animal Genetics — Le coefficient de consanguinité (COI) est l'outil standard pour mesurer et gérer la consanguinité dans les races canines."
+            }
+        ],
+        difficile: [
+            {
+                id: 21,
+                question: "Quel mécanisme génétique explique la grande diversité morphologique des races de chien malgré leur proximité génétique ?",
+                options: ["Des mutations ponctuelles accumulées sur des millions d'années dans des gènes non codants, activées lors de la domestication par pression de sélection artificielle intense", "La duplication génomique complète survenue lors de la domestication, qui a multiplié le nombre de gènes disponibles pour la sélection phenotypique", "Des variations dans un petit nombre de gènes à effet majeur (IGF1, HMGA2, BMP3…)", "L'épigénétique transgénérationnelle, par laquelle les choix de sélection humains modifient l'expression génétique sur plusieurs générations sans modifier la séquence ADN"],
+                correct: 2,
+                explanation: "Malgré leur diversité morphologique spectaculaire, les races de chiens diffèrent génétiquement peu. Des études ont montré que la plupart des différences de taille, de morphologie cranio-faciale ou de structure corporelle s'expliquent par des variations dans un petit nombre de gènes à fort effet phénotypique, comme IGF1 (taille), HMGA2, BMP3 ou RSPO2. C'est un exemple remarquable de comment peu de changements génétiques peuvent produire une grande diversité visible.",
+                source: "Science (Boyko et al.) — La diversité morphologique canine est due à des variants dans un petit nombre de gènes à effet majeur."
+            },
+            {
+                id: 22,
+                question: "Qu'est-ce que la dysplasie coxo-fémorale et quelles races sont les plus touchées ?",
+                options: ["Une malformation congénitale des valves cardiaques fréquente chez les races brachycéphales (Bouledogue, Carlin, Shih Tzu) due à une sélection sur la morphologie cranio-faciale", "Un trouble neurologique dégénératif du cortex cérébelleux touchant principalement les Springers Spaniels et les Corgis gallois", "Une malformation de l'articulation de la hanche causant arthrose et douleur, fréquente chez les grandes races", "Une dégénérescence progressive de la cornée touchant les chiens à poil long comme le Border Collie et le Shetland"],
+                correct: 2,
+                explanation: "La dysplasie coxo-fémorale est un développement anormal de l'articulation de la hanche, où la tête fémorale s'emboîte mal dans le cotyle. Elle provoque une usure précoce du cartilage, de l'arthrose et des douleurs chroniques. Les grandes races comme le Berger Allemand, le Golden Retriever, le Labrador et le Rottweiler sont particulièrement prédisposées. L'alimentation, l'exercice et la génétique jouent tous un rôle.",
+                source: "Orthopedic Foundation for Animals — La dysplasie de la hanche touche particulièrement les grandes races et nécessite un dépistage radiographique."
+            },
+            {
+                id: 23,
+                question: "Quel est le rôle de l'IGF-1 (Insulin-like Growth Factor 1) dans les différences de taille entre les races ?",
+                options: ["Il régule la production de mélanine dans les poils, ce qui explique indirectement les corrélations observées entre couleur de robe et gabarit dans certaines races", "Il contrôle la minéralisation osseuse et la densité des os longs, déterminant ainsi la robustesse du squelette sans affecter directement la taille finale", "Des niveaux bas d'IGF-1 sont associés aux petites races, des niveaux élevés aux grandes races", "Il détermine le ratio longueur/hauteur du corps en agissant différemment sur les os verticaux et horizontaux selon la concentration circulante"],
+                correct: 2,
+                explanation: "L'IGF-1 est un facteur de croissance dont la concentration est fortement corrélée à la taille corporelle chez le chien. Les petites races comme le Chihuahua ont des variants du gène IGF1 qui produisent de faibles taux d'IGF-1, tandis que les grandes races en produisent davantage. Un seul SNP (polymorphisme nucléotidique) dans ce gène explique une grande part de la variation de taille entre races.",
+                source: "Sutter et al., Science 2007 — Un seul SNP dans le gène IGF1 explique une part majeure de la variation de taille entre races canines."
+            },
+            {
+                id: 24,
+                question: "Qu'est-ce que la 'dilatation-torsion de l'estomac' (DTE) et pourquoi est-elle considérée comme une urgence vitale ?",
+                options: ["Une inflammation chronique de la muqueuse gastrique causée par une surproduction d'acide chlorhydrique, fréquente chez les Labradors et les Boxers en surpoids", "Une torsion intestinale partielle causée par l'accumulation de gaz dans le côlon descendant, récurrente chez les chiens nourris uniquement avec des croquettes sèches", "L'estomac se dilate de gaz et peut pivoter sur lui-même, coupant la circulation — urgence mortelle en quelques heures", "Un prolapsus partiel de l'estomac à travers le hiatus œsophagien, diagnostiqué par endoscopie et traitable chirurgicalement en urgence différée"],
+                correct: 2,
+                explanation: "La dilatation-torsion gastrique survient quand l'estomac se remplit de gaz et tourne sur son axe, comprimant les vaisseaux sanguins. Sans intervention chirurgicale d'urgence, le chien peut mourir en quelques heures de nécrose gastrique et choc circulatoire. Les grandes races à thorax profond (Dogue Allemand, Berger Allemand, Dogue de Bordeaux) sont les plus à risque. La prévention inclut éviter l'exercice intense après les repas.",
+                source: "Journal of Veterinary Emergency and Critical Care — La DTE est une urgence chirurgicale mortelle chez les grandes races à thorax profond."
+            },
+            {
+                id: 25,
+                question: "Comment fonctionne la détection des chiens renifleurs de cancer ?",
+                options: ["Ils détectent les micro-saignements internes grâce à des composés ferreux volatils spécifiques qui s'échappent par la peau et l'haleine uniquement chez les patients en phase avancée", "Ils perçoivent les modifications du champ électromagnétique émis par les cellules cancéreuses en division rapide, via des magnétorécepteurs nasaux encore peu documentés", "Ils détectent les composés organiques volatils (COV) spécifiques émis par les cellules cancéreuses", "Ils identifient les protéines tumorales circulantes excrétées dans la sueur, que leur odorat peut distinguer avec une précision de l'ordre de la femtomole"],
+                correct: 2,
+                explanation: "Les cellules cancéreuses produisent un profil métabolique anormal qui génère des composés organiques volatils (COV) spécifiques, détectables dans l'urine, l'haleine, la sueur ou les selles. Le chien peut apprendre à identifier ces odeurs caractéristiques avec une précision remarquable (jusqu'à 97 % dans certaines études) pour des cancers du poumon, du sein, du côlon ou de la prostate.",
+                source: "British Medical Journal — Les chiens détectent les COV tumoraux avec une fiabilité pouvant dépasser 97 % dans certaines études."
+            },
+            {
+                id: 26,
+                question: "Qu'est-ce que la 'communication calming' chez le chien selon Turid Rugaas ?",
+                options: ["Un ensemble de vocalisations basses (grognements doux, couinements modulés) que les chiens utilisent pour désamorcer les conflits avant qu'ils deviennent physiques", "Des postures d'immobilité totale que le chien adopte face à une menace pour imiter un objet inanimé et éviter une réaction d'attaque réflexe", "Des signaux d'apaisement corporels (bâiller, se lécher le nez, tourner la tête) pour réduire les tensions", "Une série de comportements de jeu ritualisés permettant d'établir une relation de confiance entre deux chiens qui ne se connaissent pas"],
+                correct: 2,
+                explanation: "Turid Rugaas, éducatrice norvégienne, a identifié et décrit des dizaines de 'signaux d'apaisement' (calming signals) que les chiens utilisent pour réduire leur propre stress et celui des autres : bâiller, se lécher le nez, tourner la tête, s'asseoir, renifler le sol, se gratter. Ces signaux régulent les interactions sociales et sont souvent ignorés ou mal interprétés par les humains.",
+                source: "Turid Rugaas, 'On Talking Terms with Dogs: Calming Signals' — Description des signaux d'apaisement canins."
+            },
+            {
+                id: 27,
+                question: "Quel phénomène neurologique explique pourquoi certains chiens semblent comprendre les émotions humaines ?",
+                options: ["Un transfert d'ondes beta-gamma entre cerveaux humain et canin lors du contact visuel prolongé, mesuré par EEG comparatif dans des études récentes", "La présence de neurones miroirs associée à l'ocytocine, activés lors des interactions avec les humains familiers", "Une hypersensibilité des centres limbiques aux modulations vocales humaines, acquise génétiquement lors de la domestication et renforcée par la coévolution", "La mémorisation à long terme de centaines de micro-expressions faciales humaines, stockées dans l'hippocampe et reconnues par correspondance lors de situations similaires"],
+                correct: 1,
+                explanation: "Les chiens ont co-évolué avec les humains pendant des millénaires, développant une sensibilité exceptionnelle aux signaux humains. Des études ont montré qu'ils possèdent des neurones miroirs actifs lors des interactions sociales, et que le contact visuel avec leur maître provoque une libération d'ocytocine (l'hormone du lien social) chez les deux individus — un phénomène unique parmi les animaux non-humains.",
+                source: "Science (Nagasawa et al., 2015) — Le regard mutuel chien-humain provoque une libération d'ocytocine chez les deux individus."
+            },
+            {
+                id: 28,
+                question: "Qu'est-ce que la maladie de von Willebrand chez le chien ?",
+                options: ["Une insuffisance rénale héréditaire touchant principalement les races nordiques (Samoyède, Husky), causée par une malformation des néphrons due à une mutation du gène COL4A3", "Une dégénérescence progressive des myélines spinales entraînant une paraplégie progressive, fréquente chez le Berger Allemand après 5 ans", "Un trouble héréditaire de la coagulation par déficit en facteur von Willebrand, causant des saignements prolongés", "Un syndrome métabolique héréditaire lié à un déficit en lipoprotéine lipase, provoquant une hyperlipidémie sévère chez les Schnauzers miniatures"],
+                correct: 2,
+                explanation: "La maladie de von Willebrand est le trouble héréditaire de la coagulation le plus fréquent chez le chien. Elle est causée par un déficit ou un dysfonctionnement du facteur von Willebrand, une protéine essentielle à l'agrégation plaquettaire. Les chiens atteints saignent excessivement lors de blessures ou d'opérations. Le Dobermann est la race la plus touchée, avec une prévalence très élevée.",
+                source: "Veterinary Clinics of North America — La maladie de von Willebrand est le trouble de coagulation héréditaire le plus fréquent chez le chien."
+            },
+            {
+                id: 29,
+                question: "Comment s'appelle le processus évolutif qui a conduit à la docilité et aux traits néoténiques des chiens ?",
+                options: ["L'orthogénèse dirigée, une théorie évolutive aujourd'hui réfutée qui postulait une progression naturelle vers des formes plus évoluées et compatibles avec la cohabitation humaine", "La sélection stabilisante, qui a favorisé les individus présentant des comportements moyens ni trop agressifs ni trop craintifs, créant progressivement un phénotype stable et prévisible", "La domestication par auto-sélection, couplée à une sélection artificielle humaine favorisant la néoténie", "La dérive génétique fondatrice, amplifiée par les goulots d'étranglement populationnels répétés lors des migrations humaines qui ont emporté de petits groupes de loups apprivoisés"],
+                correct: 2,
+                explanation: "La théorie dominante est celle de l'auto-domestication : des loups au tempérament moins craintif s'approchaient des campements humains pour se nourrir des déchets. Ces individus se reproduisaient et transmettaient leur tolérance aux humains. La sélection artificielle a ensuite amplifié des traits néoténiques (yeux grands, museau raccourci, comportement joueur) issus d'un arrêt partiel du développement adulte.",
+                source: "Brian Hare et al. — La domestication canine combine auto-sélection sur la tolérance et sélection artificielle sur la néoténie."
+            },
+            {
+                id: 30,
+                question: "Qu'est-ce que le syndrome brachycéphale et quelles sont ses conséquences anatomiques ?",
+                options: ["Un déséquilibre hormonal chez les races à poil court causant une prise de poids rapide et une résistance à l'insuline, fréquent chez le Labrador et le Beagle castrés avant l'âge d'un an", "Une dysfonction progressive des cartilages auriculaires chez les races à oreilles tombantes, entraînant une prédisposition aux otites chroniques et une perte auditive partielle", "Un ensemble de malformations des voies respiratoires hautes (narines sténosées, palais mou allongé, trachée étroite) causant une détresse respiratoire", "Un trouble de la vision binoculaire chez les races à face plate, causé par un axe oculaire divergent qui réduit la perception de la profondeur en dessous de 30 cm"],
+                correct: 2,
+                explanation: "Le syndrome brachycéphale touche les races à face aplatie (Bouledogue Anglais, Carlin, Bulldog Français, Shih Tzu). Le raccourcissement du crâne comprime les tissus des voies respiratoires : narines sténosées, palais mou hypertrophié, trachée hypoplasique, cornets nasaux hypertrophiés. Ces chiens peinent à respirer, surchauffent facilement et ronflent. La chirurgie corrective améliore leur qualité de vie mais ne corrige pas l'ensemble des malformations.",
+                source: "Veterinary Surgery — Le syndrome brachycéphale est une malformation sélectionnée involontairement liée à l'élevage pour la face aplatie."
+            },
+            {
+                id: 31,
+                question: "Qu'est-ce que la myélopathie dégénérative canine (MDC) et quelle race est la plus touchée ?",
+                options: ["Une dégénérescence progressive du cartilage articulaire de la hanche liée à un déficit en protéoglycanes, fréquente chez le Golden Retriever après 10 ans", "Une neuropathie périphérique héréditaire touchant les nerfs des membres postérieurs, diagnostiquée principalement chez le Labrador", "Une dégénérescence progressive de la moelle épinière causant une paralysie ascendante, très fréquente chez le Berger Allemand", "Un trouble démyélinisant des nerfs crâniens causant une ataxie cérébelleuse progressive, surtout observé chez le Bouvier Bernois"],
+                correct: 2,
+                explanation: "La myélopathie dégénérative est une maladie neurologique progressive qui détruit la myéline de la moelle épinière. Elle débute par une faiblesse des membres postérieurs et évolue vers une paralysie complète. Le Berger Allemand est la race la plus touchée. Elle est liée à une mutation du gène SOD1 (aussi impliqué dans la SLA humaine) et n'a pas de traitement curatif.",
+                source: "Journal of Veterinary Internal Medicine — La MDC est liée à une mutation du gène SOD1 et touche principalement le Berger Allemand."
+            },
+            {
+                id: 32,
+                question: "Quel neurotransmetteur est principalement impliqué dans le lien d'attachement entre le chien et son propriétaire ?",
+                options: ["La sérotonine, dont le taux sanguin augmente de façon mesurable chez le chien lors de sessions de jeu prolongées avec son maître", "La dopamine, libérée dans le nucleus accumbens lors de toute interaction positive et créant une dépendance comportementale au contact humain", "L'ocytocine, libérée lors du contact visuel et physique entre le chien et son propriétaire", "Le cortisol, dont la diminution rapide lors du retour du maître marque l'intensité du lien d'attachement préalablement formé"],
+                correct: 2,
+                explanation: "Des études (Nagasawa et al., Science 2015) ont montré que le contact visuel mutuel entre un chien et son propriétaire provoque une libération d'ocytocine chez les deux individus. L'ocytocine est l'hormone du lien social, impliquée dans l'attachement mère-enfant. Ce mécanisme, unique parmi les animaux non-humains, expliquerait la profondeur exceptionnelle du lien homme-chien.",
+                source: "Science (Nagasawa et al., 2015) — Le contact visuel chien-humain déclenche une libération d'ocytocine chez les deux individus."
+            },
+            {
+                id: 33,
+                question: "Comment s'appelle le phénomène génétique responsable du pelage merle chez certaines races de chiens ?",
+                options: ["La mélanose partielle, une mutation ponctuelle du gène TYRP1 qui réduit la production de phéomélanine dans certaines zones folliculaires aléatoires", "Le chimerisme somatique, une fusion de deux embryons distincts lors du développement fœtal créant un pelage à deux génotypes distincts", "Une insertion rétrovirale dans le gène SILV/PMEL qui dilue aléatoirement la mélanine eumélanine", "L'épistasie colorimétrique, une interaction entre les gènes A, B et E qui inhibe la production de mélanine dans les zones à poil blanc"],
+                correct: 2,
+                explanation: "Le patron merle est causé par une insertion d'un rétrotransposon (SINE) dans le gène SILV (aussi appelé PMEL17), qui perturbe la distribution de la mélanine eumélanine de façon aléatoire. Le résultat est un pelage tacheté avec des zones diluées. Les chiens double merle (deux copies de l'allèle merle) risquent de graves défauts visuels et auditifs.",
+                source: "Genetics — L'insertion rétrovirale dans SILV/PMEL est responsable du patron merle et de ses risques en homozygotie."
+            },
+            {
+                id: 34,
+                question: "Qu'est-ce que l'épilepsie idiopathique héréditaire et quelles races sont prédisposées ?",
+                options: ["Une forme d'épilepsie secondaire causée par des lésions cérébrales périnatales lors de naissances difficiles, fréquente dans les races brachycéphales", "Une épilepsie réflexe déclenchée par des stimuli sensoriels spécifiques (lumière, son), observée surtout chez les chiens de race nordique", "Une épilepsie génétique sans cause structurelle identifiable, fréquente chez le Border Collie, le Labrador et le Berger Belge", "Une épilepsie métabolique liée à un déficit enzymatique héréditaire du cycle de l'urée, touchant principalement le Dalmatien"],
+                correct: 2,
+                explanation: "L'épilepsie idiopathique héréditaire (EIH) est la forme d'épilepsie la plus fréquente chez le chien. Elle survient sans lésion cérébrale identifiable et est transmise génétiquement. Le Border Collie, le Labrador Retriever, le Berger Belge Tervueren et le Golden Retriever sont parmi les races les plus touchées. Elle se manifeste généralement entre 1 et 5 ans.",
+                source: "Journal of Veterinary Internal Medicine — L'épilepsie idiopathique héréditaire est la forme d'épilepsie la plus fréquente chez le chien."
+            },
+            {
+                id: 35,
+                question: "Qu'est-ce que la 'théorie de l'auto-domestication' du chien et quelles preuves la soutiennent ?",
+                options: ["La théorie selon laquelle des humains paléolithiques ont activement capturé des louveteaux pour les élever, créant une pression de sélection artificielle directe dès la génération F1", "L'hypothèse que les chiens se sont domestiqués eux-mêmes en s'approchant des déchets humains, les individus tolérants se reproduisant davantage", "Le modèle évolutif proposant que la domestication a eu lieu simultanément sur plusieurs continents à partir de populations de loups locales génétiquement distinctes", "La théorie co-évolutive stipulant que les humains et les loups ont développé une symbiose de chasse mutuelle avant toute forme de domestication formelle"],
+                correct: 1,
+                explanation: "La théorie de l'auto-domestication postule que des loups au tempérament moins craintif se sont approchés des déchets des campements humains. Ces individus, moins stressés par la présence humaine, avaient un avantage nutritionnel et se reproduisaient davantage. Au fil des générations, la tolérance envers les humains a augmenté, et la sélection artificielle a ensuite amplifié des traits désirables. Des expériences sur les renards de Belyaev soutiennent ce modèle.",
+                source: "Brian Hare & Michael Tomasello — L'auto-domestication par sélection sur la tolérance est le modèle évolutif dominant."
+            },
+            {
+                id: 36,
+                question: "Comment fonctionne le test de dépistage BAER pour les chiens sourds ?",
+                options: ["C'est un test ADN qui identifie les mutations génétiques connues associées à la surdité héréditaire chez les races à risque", "C'est une mesure de l'audiogramme comportemental où le chien est conditionné à signaler la perception d'un son par un comportement spécifique", "C'est un électroencéphalogramme qui mesure les réponses électriques du tronc cérébral à des stimulations sonores", "C'est un test d'imagerie à résonnance magnétique qui visualise la structure de la cochlée pour détecter des anomalies anatomiques"],
+                correct: 2,
+                explanation: "Le BAER (Brainstem Auditory Evoked Response) est le test de référence pour la surdité canine. Des électrodes mesurent les réponses électriques du tronc cérébral à des clics sonores de différentes fréquences. Il peut évaluer chaque oreille séparément et est utilisé dans les élevages de races prédisposées (Dalmatien, Bull Terrier, Bouvier Australien) pour éliminer les individus sourds de la reproduction.",
+                source: "Strain, Louisiana State University — Le BAER est le test de référence pour diagnostiquer la surdité héréditaire chez le chien."
+            },
+            {
+                id: 37,
+                question: "Qu'est-ce que la leucoencéphalomyélopathie du Rottweiler et quelle en est la cause génétique ?",
+                options: ["Une dégénérescence progressive du nerf optique causant une cécité bilatérale progressive avant l'âge de 3 ans, liée à une mutation du gène RPGRIP1", "Une cardiomyopathie dilatée héréditaire spécifique au Rottweiler, associée à une mutation faux-sens du gène LAMA2 affectant les cardiomyocytes", "Une démyélinisation progressive de la substance blanche du cerveau et de la moelle, liée à une mutation récessive affectant le métabolisme des lipides", "Une myopathie congénitale héréditaire causant une faiblesse musculaire généralisée dès la naissance, liée à une délétion du gène RYR1"],
+                correct: 2,
+                explanation: "La leucoencéphalomyélopathie du Rottweiler est une maladie dégénérative rare touchant la substance blanche du système nerveux central. Elle provoque une ataxie progressive, une faiblesse des membres et des troubles de la déglutition. Elle est transmise sur un mode autosomique récessif et liée à des mutations affectant le métabolisme des lipides membranaires.",
+                source: "Acta Neuropathologica — La leucoencéphalomyélopathie du Rottweiler est une démyélinisation héréditaire rare à transmission récessive."
+            },
+            {
+                id: 38,
+                question: "Qu'est-ce que le 'syndrome de Rage' (Rage Syndrome) et quelle race est historiquement associée ?",
+                options: ["Un syndrome d'hyperactivité motrice incontrôlable causé par une épilepsie partielle complexe du lobe frontal, fréquent chez les races à crâne plat", "Un trouble dissociatif post-traumatique survenant chez les chiens ayant subi des abus sévères, caractérisé par des états de stupeur alternant avec une agression intense", "Un épisode soudain d'agression explosive sans stimulus apparent, puis retour au calme, observé notamment chez le Cocker Spaniel", "Un état de réactivité agressive permanente lié à une hyperproduction de testostérone et de cortisol, traitable par castration chirurgicale"],
+                correct: 2,
+                explanation: "Le Rage Syndrome (ou Cocker Rage) est un trouble comportemental rare caractérisé par des épisodes soudains d'agression explosive, sans signe d'avertissement apparent, suivis d'un retour au calme comme si rien ne s'était passé. Il a été décrit principalement chez le Cocker Spaniel Anglais. Sa cause exacte est débattue — base génétique, épilepsie du lobe limbique ou trouble neurochimique selon les hypothèses.",
+                source: "Applied Animal Behaviour Science — Le Rage Syndrome est un épisode d'agression explosive idiopathique décrit principalement chez le Cocker Spaniel."
+            },
+            {
+                id: 39,
+                question: "Quel est le mécanisme de la résistance à la multidrug (MDR1/ABCB1) chez certaines races de chiens ?",
+                options: ["Une surexpression des enzymes hépatiques CYP450 qui métabolisent trop rapidement les médicaments, réduisant leur concentration sanguine efficace", "Une mutation du gène ABCB1 (MDR1) qui inactive la P-glycoprotéine, rendant la barrière hémato-encéphalique perméable à certains médicaments", "Une résistance acquise aux antiparasitaires par sélection des parasites porteurs de mutations de résistance, transférée à l'hôte par un mécanisme épigénétique", "Une mutation des récepteurs GABA qui réduit la sensibilité aux benzodiazépines et aux barbituriques chez les chiens porteurs"],
+                correct: 1,
+                explanation: "La mutation MDR1 (ABCB1-Δ) inactive la P-glycoprotéine, une pompe qui expulse normalement certaines substances hors du cerveau. Les chiens porteurs (Colley, Berger Australien, Shetland…) laissent passer des médicaments normalement exclus de leur cerveau — ivermectine, lopéramide, vincristine — provoquant des toxicités graves, voire mortelles, à des doses normalement sans danger.",
+                source: "Journal of Veterinary Pharmacology — La mutation ABCB1-Δ rend la barrière hémato-encéphalique perméable chez les Colleys et races apparentées."
+            },
+            {
+                id: 40,
+                question: "Comment la domestication a-t-elle modifié l'expression de certains gènes liés aux émotions sociales chez le chien par rapport au loup ?",
+                options: ["Elle a inactivé les gènes d'agressivité inter-spécifique par méthylation des promoteurs, sans modifier les capacités de communication sociale intra-spécifique", "Elle a amplifié les gènes de production de cortisol pour permettre au chien de tolérer le stress chronique de la cohabitation humaine en espace confiné", "Elle a modifié l'expression de gènes liés à l'ocytocine et aux récepteurs de la vasopressine, augmentant la sensibilité aux signaux sociaux humains", "Elle a réduit le volume de l'amygdale via une sélection sur des individus présentant naturellement une réponse de peur atténuée face aux humains"],
+                correct: 2,
+                explanation: "Des études comparatives entre chiens et loups ont montré que la domestication a modifié l'expression de gènes impliqués dans les systèmes ocytocinergique et vasopressinergique — deux systèmes clés de la neurobiologie sociale. Les chiens sont plus sensibles aux signaux sociaux humains et répondent différemment aux expressions faciales humaines que les loups élevés par des humains.",
+                source: "PNAS — La domestication a modifié l'expression des gènes du système ocytocinergique, augmentant la sensibilité sociale aux humains."
+            },
+            {
+                id: 41,
+                question: "Qu'est-ce que le gène FOXI3 et quel phénotype produit-il chez les chiens qui en portent une mutation ?",
+                options: ["Une mutation gain-de-fonction causant une hyperprolifération des mélanocytes, responsable du patron de robe tigré dans les races Boxer et Mastiff", "Une délétion provoquant une absence de poils (chiens nus) et souvent une dentition incomplète — c'est le gène des races sans poil", "Une mutation de FOXI3 causant une surdité bilatérale congénitale liée à un développement incomplet de l'oreille interne", "Un gène de régulation du développement crânien dont la surexpression provoque le phénotype brachycéphale observé dans de nombreuses races modernes"],
+                correct: 1,
+                explanation: "Le gène FOXI3 régule le développement des ectodermes. Une délétion dans ce gène provoque le phénotype des races sans poil (Xoloitzcuintle, Crested Chinois, Pérou sans poil). Ces chiens ont peu ou pas de poils et souvent une dentition réduite ou absente. C'est un exemple remarquable de pléiotropie — un seul gène affecte à la fois la formation des poils et des dents.",
+                source: "Science — La délétion du gène FOXI3 est responsable du phénotype sans poil et sans dents dans plusieurs races canines."
+            },
+            {
+                id: 42,
+                question: "Qu'est-ce que l'ataxie cérébelleuse congénitale et quelle race est touchée par la forme liée au gène SEL1L ?",
+                options: ["Le Labrador Retriever, chez qui une mutation du gène RPGRIP1L cause une dégénérescence cérébelleuse progressive débutant à 8-12 semaines", "Le Border Collie, chez qui une mutation récessive cause une ataxie cérébelleuse néonatale létale dans les premières semaines de vie", "Le Berger Américain Miniature, chez qui une mutation de SEL1L provoque une ataxie congénitale non progressive", "Le Beagle, chez qui des microdélétions chromosomiques répétées causent un syndrome cérébelleux variable en expression clinique"],
+                correct: 2,
+                explanation: "Le Berger Américain Miniature (et des races apparentées) peut porter une mutation dans SEL1L, impliqué dans la dégradation des protéines mal repliées (voie ERAD). La mutation provoque une ataxie cérébelleuse congénitale non progressive : les chiots affectés ont des difficultés de coordination mais stabilisent cliniquement avec l'âge.",
+                source: "PLOS Genetics — La mutation SEL1L cause une ataxie cérébelleuse congénitale non progressive dans le Berger Américain Miniature."
+            },
+            {
+                id: 43,
+                question: "Pourquoi la stérilisation précoce est-elle controversée pour les grandes races ?",
+                options: ["Parce qu'elle provoque une obésité systématique par réduction du métabolisme basal de 30 %, impossible à compenser par un ajustement alimentaire seul", "Parce qu'elle augmente le risque de certains cancers et troubles articulaires en supprimant les hormones sexuelles pendant la croissance", "Parce que les chiennes stérilisées avant 6 mois développent systématiquement une incontinence urinaire sévère, affectant leur qualité de vie", "Parce qu'elle supprime les comportements de garde et de protection qui justifient l'acquisition de grandes races de travail"],
+                correct: 1,
+                explanation: "Plusieurs études (Hart et al., JAVMA) ont montré que la stérilisation avant la maturité sexuelle augmente le risque de certains cancers (lymphome, ostéosarcome, hémangiosarcome) et de dysplasies articulaires chez les grandes races comme le Golden Retriever et le Labrador. Les hormones sexuelles jouent un rôle dans la fermeture des plaques de croissance et dans certains mécanismes immunitaires.",
+                source: "JAVMA (Hart et al.) — La stérilisation précoce augmente le risque de certains cancers et troubles articulaires dans les grandes races."
+            },
+            {
+                id: 44,
+                question: "Qu'est-ce que la 'sélection artificielle de relaxation' (relaxed selection) et comment affecte-t-elle les races domestiques ?",
+                options: ["Un processus par lequel les caractères défavorables naturellement éliminés en milieu sauvage persistent et s'accumulent dans les populations domestiques", "Une méthode d'élevage qui sélectionne les individus les moins stressés pour améliorer le bien-être général de la race sur plusieurs générations", "Le relâchement des critères de sélection sur les performances de travail dans les races de compagnie, causant une dérive des capacités cognitives", "Une pression de sélection inverse qui favorise les individus présentant des phénotypes juvéniles permanents (néoténie) au détriment des adultes"],
+                correct: 0,
+                explanation: "La relaxed selection (sélection de relaxation) désigne le relâchement de la pression de sélection naturelle dans un environnement domestique. Des mutations délétères qui seraient éliminées en milieu sauvage peuvent s'accumuler car la domestication protège les individus de leurs conséquences. Cela explique en partie l'augmentation des maladies héréditaires dans les races à petit effectif ou fortement consanguines.",
+                source: "Trends in Genetics — La relaxed selection dans les populations domestiques permet l'accumulation de variants délétères."
+            },
+            {
+                id: 45,
+                question: "Comment la génomique moderne a-t-elle révisé la compréhension de l'origine géographique de la domestication du chien ?",
+                options: ["Elle a confirmé une origine unique en Asie du Sud-Est il y a environ 15 000 ans, les chiens se dispersant ensuite avec les migrations humaines vers l'Europe et l'Amérique", "Elle a montré que tous les chiens dérivent d'une seule population de loups du Moyen-Orient domestiqués par des agriculteurs néolithiques", "Les résultats sont contradictoires : certaines études pointent l'Asie, d'autres l'Europe ou le Moyen-Orient, suggérant des origines multiples ou complexes", "Elle a établi que la domestication a eu lieu simultanément en Afrique subsaharienne et en Europe il y a 20 000 ans, avec deux lignées indépendantes"],
+                correct: 2,
+                explanation: "L'origine géographique du chien reste l'une des questions les plus débattues en génomique évolutive. Des études ADN ancienne et moderne ont successivement pointé l'Asie du Sud-Est, le Moyen-Orient, l'Europe centrale, puis parfois des origines multiples. Les contradictions entre études reflètent des mélanges populationnels complexes et la difficulté de distinguer domestication primaire, migrations et croisements secondaires avec des loups locaux.",
+                source: "Science (Frantz et al., 2016) — L'origine géographique du chien reste débattue, les données génomiques suggérant des origines potentiellement multiples."
+            },
+            {
+                id: 46,
+                question: "Qu'est-ce que la narcolepsie canine et quel gène en est responsable dans les formes héréditaires ?",
+                options: ["Une épilepsie du sommeil paradoxal liée à une mutation du gène CHRNA7, codant un récepteur nicotinique impliqué dans les cycles d'éveil", "Un trouble du rythme circadien lié à une mutation perte-de-fonction du gène CLOCK, causant des phases de sommeil excessif en pleine journée", "Un trouble causé par une mutation du récepteur de l'hypocrétine (orexine-2), provoquant des cataplexies soudaines souvent déclenchées par l'excitation", "Un syndrome d'apnée du sommeil héréditaire lié à une anomalie du palais mou, fréquent dans les races brachycéphales à croissance rapide"],
+                correct: 2,
+                explanation: "La narcolepsie canine héréditaire (décrite d'abord chez le Dobermann et le Labrador) est causée par une mutation du gène HCRTR2 codant le récepteur de l'hypocrétine-2 (orexine). Les chiens affectés présentent des cataplexies soudaines — effondrement musculaire souvent déclenché par l'enthousiasme lors de jeux ou de repas. La découverte de ce gène a contribué à comprendre la narcolepsie humaine.",
+                source: "Cell (Lin et al., 1999) — La mutation HCRTR2 est responsable de la narcolepsie héréditaire canine, une découverte clé pour la narcolepsie humaine."
+            },
+            {
+                id: 47,
+                question: "Qu'est-ce que la 'théorie du cerveau social' (social brain hypothesis) appliquée à la domestication du chien ?",
+                options: ["L'hypothèse que les loups vivant en meutes plus grandes ont développé de plus grandes capacités cognitives générales, favorisant leur domestication préférentielle", "L'idée que la co-évolution avec les humains a sélectionné des capacités cognitives sociales spécifiques plutôt qu'une intelligence générale supérieure", "La théorie postulant que les humains ont d'abord domestiqué les loups les plus intelligents, créant un chien cognitivement supérieur à son ancêtre", "L'hypothèse que la taille du cerveau canin a augmenté lors de la domestication pour traiter la complexité sociale accrue de la vie avec les humains"],
+                correct: 1,
+                explanation: "La théorie du cerveau social appliquée au chien (Hare & Tomasello) propose que la domestication a sélectionné des compétences cognitives sociales spécifiques — lire les intentions humaines, suivre le regard, comprendre les gestes pointés — plutôt qu'une intelligence générale supérieure. Les chiens surpassent les chimpanzés et les loups dans ces tâches précises, mais pas dans les tâches cognitives non-sociales.",
+                source: "Brian Hare & Michael Tomasello, Science 2005 — La domestication a sélectionné des compétences sociales spécifiques, pas une intelligence générale."
+            },
+            {
+                id: 48,
+                question: "Quel est le rôle du microbiome intestinal dans le comportement du chien et comment la dysbiose peut-elle l'affecter ?",
+                options: ["Le microbiome produit des vitamines B qui régulent la synthèse de myéline des nerfs périphériques, une dysbiose causant des neuropathies comportementales légères", "Des déséquilibres du microbiome sont liés à des comportements anxieux et agressifs via l'axe intestin-cerveau, les bactéries influençant la production de neurotransmetteurs", "Le microbiome régule principalement le métabolisme des acides biliaires, une dysbiose causant une encéphalopathie hépatique qui altère secondairement le comportement", "Les bactéries intestinales modulent directement l'expression des gènes des récepteurs olfactifs, une dysbiose réduisant la sensibilité olfactive comportementalement observable"],
+                correct: 1,
+                explanation: "L'axe intestin-cerveau (gut-brain axis) est un domaine de recherche actif en médecine vétérinaire. Des études préliminaires montrent que la composition du microbiome canin est corrélée à certains comportements (anxiété, agressivité). Les bactéries intestinales produisent des précurseurs de sérotonine et d'autres neurotransmetteurs qui influencent le système nerveux central. Une dysbiose pourrait donc avoir des répercussions comportementales.",
+                source: "Animal Microbiome — L'axe intestin-cerveau chez le chien : le microbiome influence les comportements anxieux via les neurotransmetteurs."
+            },
+            {
+                id: 49,
+                question: "Comment fonctionne le dépistage génétique pré-implantoire chez le chien et dans quels cas est-il utilisé ?",
+                options: ["C'est une technique où des biopsies de tissu fœtal sont prélevées par amniocentèse à 30 jours de gestation pour détecter des anomalies chromosomiques majeures", "Ce sont des analyses ADN sur des cellules prélevées sur un embryon in vitro avant son transfert dans l'utérus, pour détecter des maladies héréditaires", "C'est un dépistage sérique pratiqué sur la chienne gestante à 21 jours pour détecter des protéines fœtales anormales indicatrices de malformations génétiques", "C'est une technique d'échographie génomique qui analyse les ondes de résonance du noyau cellulaire fœtal pour détecter des mutations ponctuelles"],
+                correct: 1,
+                explanation: "Le diagnostic génétique pré-implantoire (DGP) est utilisé en reproduction canine assistée avancée. Des embryons obtenus par FIV sont biopsiés au stade blastocyste, et les cellules analysées pour détecter des mutations héréditaires connues avant le transfert utérin. Bien que encore rare en médecine vétérinaire, cette technique commence à être utilisée pour éliminer des maladies héréditaires graves dans des races fortement touchées.",
+                source: "Theriogenology — Le DGP est une technique émergente en reproduction canine pour éliminer les maladies héréditaires dès le stade embryonnaire."
+            },
+            {
+                id: 50,
+                question: "Qu'est-ce que l'épigénétique transgénérationnelle et comment peut-elle expliquer des différences comportementales entre lignées de chiens ?",
+                options: ["Des modifications des histones transmises par la lignée germinale, qui altèrent l'expression de gènes comportementaux sans modifier la séquence ADN sur plusieurs générations", "Un mécanisme d'imprinting génomique spécifique aux canidés qui fait que certains gènes comportementaux ne s'expriment que s'ils proviennent de la mère ou du père", "Des transferts horizontaux de petits ARN entre mère et fœtus via le placenta qui programment l'axe HPA et la réactivité au stress des descendants", "Une accumulation de mutations somatiques dans les cellules germinales causée par le stress oxydatif, transmissible aux trois générations suivantes"],
+                correct: 0,
+                explanation: "L'épigénétique transgénérationnelle désigne des modifications de l'expression génique (méthylation de l'ADN, modifications des histones) qui peuvent être transmises sur plusieurs générations sans changement de séquence. En élevage canin, des études montrent que le stress ou les traumatismes des parents peuvent modifier la réactivité au stress des descendants via ces mécanismes. Cela souligne l'importance du bien-être des reproducteurs pour le tempérament des chiots.",
+                source: "Nature Reviews Genetics — L'épigénétique transgénérationnelle pourrait expliquer la transmission intergénérationnelle du tempérament chez le chien."
+            }
+        ]
+    },
     lesChats: {
         title: "Les Félins (Chats)",
         description: "Testez vos connaissances sur les chats et leur comportement",
