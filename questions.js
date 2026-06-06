@@ -7094,5 +7094,608 @@ const quizzesData = {
                 source: "J.K. Rowling - Harry Potter à l'École des Sorciers, Chapitre 7 : le Choixpeau hésite longuement pour Harry."
             }
         ]
+    },
+
+    starWars: {
+        title: "Star Wars",
+        description: "Testez vos connaissances sur la saga Star Wars",
+        facile: [
+            {
+                id: 1,
+                question: "Quelle est la phrase emblématique de la saga Star Wars ?",
+                options: ["Que la Force soit avec toi", "Utilise la Force, Luke", "Je suis ton père", "Il y a une perturbation dans la Force"],
+                correct: 0,
+                explanation: "\"Que la Force soit avec toi\" (May the Force be with you) est la phrase la plus célèbre et récurrente de toute la saga Star Wars. Elle apparaît dans presque tous les films et est devenue une expression culturelle mondiale. Le 4 mai est d'ailleurs devenu le Star Wars Day (May the 4th be with you).",
+                source: "Star Wars: A New Hope (1977) — George Lucas."
+            },
+            {
+                id: 2,
+                question: "De quelle couleur est le sabre laser de Dark Vador ?",
+                options: ["Bleu", "Vert", "Rouge", "Violet"],
+                correct: 2,
+                explanation: "Le sabre laser de Dark Vador est rouge, couleur associée aux Sith dans l'univers Star Wars. Les Sith obtiennent cette couleur en 'saignant' leur kyber crystal à travers la haine et la douleur. Les Jedi utilisent généralement des sabres bleus ou verts.",
+                source: "Star Wars: A New Hope (1977) — sabre laser rouge de Vador.",
+                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Darth_Vader_in_Disneyland.jpg/800px-Darth_Vader_in_Disneyland.jpg"
+            },
+            {
+                id: 3,
+                question: "Quelle planète est le monde natal de Luke Skywalker ?",
+                options: ["Coruscant", "Naboo", "Tatooine", "Alderaan"],
+                correct: 2,
+                explanation: "Luke Skywalker a grandi sur Tatooine, une planète désertique à deux soleils située dans la Bordure Extérieure. Il vivait avec son oncle Owen et sa tante Beru sur une ferme d'humidité. Tatooine est aussi la planète natale de son père Anakin Skywalker.",
+                source: "Star Wars: A New Hope (1977) — Tatooine, planète natale de Luke.",
+                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Two_Suns_Setting_%28crop%29.jpg/800px-Two_Suns_Setting_%28crop%29.jpg"
+            },
+            {
+                id: 4,
+                question: "Comment s'appelle le Wookie compagnon de Han Solo ?",
+                options: ["Jabba", "Chewie / Chewbacca", "Lando", "R2-D2"],
+                correct: 1,
+                explanation: "Chewbacca, surnommé Chewie, est le copilote et meilleur ami de Han Solo. Il est Wookie — une espèce de grand primate velu originaire de Kashyyyk. Chewbacca communique uniquement en Shyriiwook (les rugissements Wookie) et est connu pour son arbalète et sa loyauté sans faille.",
+                source: "Star Wars: A New Hope (1977) — Chewbacca, le Wookie."
+            },
+            {
+                id: 5,
+                question: "Quel droïde contient les plans de l'Étoile de la Mort dans le premier film ?",
+                options: ["C-3PO", "R2-D2", "BB-8", "K-2SO"],
+                correct: 1,
+                explanation: "R2-D2 est le droïde astromécano qui contient les plans secrets de l'Étoile de la Mort remis par la princesse Leia. C'est ce qui déclenche toute l'aventure du premier film. R2-D2 et son compagnon C-3PO sont les deux droïdes qui apparaissent dans le plus de films de la saga.",
+                source: "Star Wars: A New Hope (1977) — R2-D2 porteur des plans de l'Étoile de la Mort.",
+                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/R2-D2_Droid.jpg/800px-R2-D2_Droid.jpg"
+            },
+            {
+                id: 6,
+                question: "Qui est le père de Luke Skywalker ?",
+                options: ["Obi-Wan Kenobi", "Palpatine", "Anakin Skywalker / Dark Vador", "Yoda"],
+                correct: 2,
+                explanation: "Anakin Skywalker, devenu Dark Vador après avoir basculé du côté obscur, est le père de Luke Skywalker. Cette révélation dans L'Empire contre-attaque est l'un des plus grands retournements de l'histoire du cinéma. Vador prononce la phrase \"Je suis ton père\" lors d'un duel mémorable.",
+                source: "Star Wars: The Empire Strikes Back (1980) — révélation de la paternité de Vador."
+            },
+            {
+                id: 7,
+                question: "Comment s'appelle la station spatiale de l'Empire capable de détruire une planète ?",
+                options: ["Le Destroyer Stellaire", "L'Étoile de la Mort", "Le Faucon Millenium", "La Station Alpha"],
+                correct: 1,
+                explanation: "L'Étoile de la Mort (Death Star) est la super-arme de l'Empire Galactique. Elle est capable de détruire une planète entière grâce à son superlaser. La première Étoile de la Mort est détruite par Luke Skywalker dans le premier film, en tirant des torpilles protoniques dans un puits d'échappement.",
+                source: "Star Wars: A New Hope (1977) — l'Étoile de la Mort.",
+                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Death_Star_explodes.jpg/800px-Death_Star_explodes.jpg"
+            },
+            {
+                id: 8,
+                question: "Quel est le nom du vaisseau de Han Solo ?",
+                options: ["L'Étoile Noire", "Le Faucon Millenium", "Le Devastator", "L'Invisible Hand"],
+                correct: 1,
+                explanation: "Le Faucon Millenium (Millennium Falcon) est le vaisseau de Han Solo. Han Solo se vante que ce cargo modifié a fait la Course de Kessel en moins de 12 parsecs. C'est l'un des vaisseaux les plus iconiques de la science-fiction, reconnaissable à sa forme aplatie et à son cockpit décentré.",
+                source: "Star Wars: A New Hope (1977) — le Faucon Millenium.",
+                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Millennium_Falcon_Celebration_2017.jpg/800px-Millennium_Falcon_Celebration_2017.jpg"
+            },
+            {
+                id: 9,
+                question: "Quelle est la couleur du sabre laser de Yoda ?",
+                options: ["Bleu", "Rouge", "Jaune", "Vert"],
+                correct: 3,
+                explanation: "Yoda possède un sabre laser vert, comme la plupart des Maîtres Jedi. Sa taille minuscule contraste avec sa maîtrise extraordinaire du combat au sabre. On voit Yoda en combat pour la première fois dans L'Attaque des Clones, ce qui a surpris de nombreux fans habitués à le voir uniquement comme un sage.",
+                source: "Star Wars: Attack of the Clones (2002) — premier combat de Yoda au sabre laser."
+            },
+            {
+                id: 10,
+                question: "Qui a réalisé le premier film Star Wars (1977) ?",
+                options: ["Steven Spielberg", "James Cameron", "George Lucas", "Ridley Scott"],
+                correct: 2,
+                explanation: "George Lucas a créé, écrit et réalisé Star Wars: A New Hope (1977). Après le succès du premier film, il a confié la réalisation des épisodes suivants à d'autres réalisateurs (Irvin Kershner pour L'Empire, Richard Marquand pour Le Retour) tout en restant producteur et scénariste. Il a vendu la franchise à Disney en 2012.",
+                source: "IMDb — Star Wars: A New Hope (1977), réalisé par George Lucas."
+            },
+            {
+                id: 101,
+                type: "vrai_faux",
+                question: "Yoda est le Jedi le plus âgé de la saga, avec plus de 900 ans.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Yoda est âgé de 900 ans au moment de sa mort dans Le Retour du Jedi. C'est le personnage le plus âgé de la saga principale. Malgré son grand âge, il reste l'un des Jedi les plus puissants de la galaxie jusqu'à la fin de sa vie.",
+                source: "Star Wars: Return of the Jedi (1983) — Yoda révèle son âge de 900 ans avant de mourir."
+            },
+            {
+                id: 102,
+                type: "vrai_faux",
+                question: "Le côté obscur de la Force est plus puissant que le côté lumineux.",
+                options: ["Vrai", "Faux"],
+                correct: 1,
+                explanation: "Faux ! Selon la philosophie Jedi et la narration de la saga, le côté obscur n'est pas intrinsèquement plus puissant — il est simplement plus rapide et plus facile d'accès, car il puise dans des émotions primitives (colère, peur, haine). Les Jedi maîtrisent une force plus profonde et durable, même si le chemin est plus difficile.",
+                source: "Star Wars: The Empire Strikes Back (1980) — Yoda : 'Le côté obscur est plus rapide, plus séduisant, plus puissant... pas'."
+            },
+            {
+                id: 103,
+                type: "vrai_faux",
+                question: "La saga Star Wars se déroule dans notre galaxie, la Voie Lactée.",
+                options: ["Vrai", "Faux"],
+                correct: 1,
+                explanation: "Faux ! La saga se déroule dans \"une galaxie très très lointaine\" — une galaxie fictive sans lien avec la nôtre. C'est d'ailleurs la première phrase qui s'affiche dans tous les films : \"Il y a bien longtemps, dans une galaxie très très lointaine...\". Cette formulation place l'histoire hors du temps et de l'espace réels.",
+                source: "Star Wars: A New Hope (1977) — ouverture : \"Il y a bien longtemps, dans une galaxie très très lointaine...\""
+            },
+            {
+                id: 11,
+                question: "Comment s'appelle la princesse alliée des Rebelles ?",
+                options: ["Padmé", "Rey", "Leia", "Ahsoka"],
+                correct: 2,
+                explanation: "La princesse Leia Organa est la leader de l'Alliance Rebelle et l'une des protagonistes de la trilogie originale. Adoptée par la famille royale d'Alderaan, elle cache ses origines Jedi et son lien avec Vador. Elle est jouée par Carrie Fisher, décédée en 2016, et son personnage rend hommage à sa mémoire dans L'Ascension de Skywalker.",
+                source: "Star Wars: A New Hope (1977) — La Princesse Leia."
+            },
+            {
+                id: 12,
+                question: "Quelle planète est détruite par l'Étoile de la Mort dans le premier film ?",
+                options: ["Tatooine", "Naboo", "Alderaan", "Coruscant"],
+                correct: 2,
+                explanation: "Alderaan, planète pacifiste et planète natale de la Princesse Leia, est détruite par l'Étoile de la Mort sur ordre de Grand Moff Tarkin pour démontrer la puissance de l'Empire. Cette scène choc est l'une des plus marquantes de la saga et établit immédiatement l'Empire comme une menace absolue.",
+                source: "Star Wars: A New Hope (1977) — destruction d'Alderaan par l'Étoile de la Mort.",
+                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Alderaan_-_CGI.jpg/800px-Alderaan_-_CGI.jpg"
+            },
+            {
+                id: 13,
+                question: "Qui entraîne Luke Skywalker à Dagobah ?",
+                options: ["Obi-Wan Kenobi", "Yoda", "Palpatine", "Mace Windu"],
+                correct: 1,
+                explanation: "Yoda entraîne Luke sur la planète marécageuse Dagobah dans L'Empire contre-attaque. C'est là que Luke apprend les arts de la Force sous la guidance du vieux Maître. Dagobah a été choisie par Yoda comme lieu d'exil car son côté obscur naturel masquait sa présence à l'Empereur.",
+                source: "Star Wars: The Empire Strikes Back (1980) — entraînement de Luke par Yoda sur Dagobah."
+            },
+            {
+                id: 14,
+                question: "Quelle est la réplique de Dark Vador la plus célèbre de la saga ?",
+                options: ["Que la Force soit avec toi", "Je suis ton père", "La Force est puissante en toi", "L'Empire ne tolère pas la faiblesse"],
+                correct: 1,
+                explanation: "\"Je suis ton père\" (\"I am your father\") est la réplique la plus célèbre de Dark Vador, prononcée lors du duel contre Luke dans L'Empire contre-attaque. C'est un des plus grands retournements de situation de l'histoire du cinéma. Curieusement, la réplique exacte est \"Non, JE suis ton père\" en réponse à Luke.",
+                source: "Star Wars: The Empire Strikes Back (1980) — la révélation la plus célèbre du cinéma."
+            },
+            {
+                id: 15,
+                question: "Quelle organisation s'oppose à l'Empire Galactique ?",
+                options: ["La République Galactique", "L'Alliance Rebelle", "L'Ordre des Jedi", "La Confédération des Systèmes Indépendants"],
+                correct: 1,
+                explanation: "L'Alliance Rebelle (officiellement l'Alliance pour Restaurer la République) est l'organisation qui combat l'Empire Galactique dans la trilogie originale. Menée notamment par Leia, Han Solo et Luke, elle remporte une victoire décisive à la bataille d'Endor en détruisant la seconde Étoile de la Mort.",
+                source: "Star Wars Lore — L'Alliance Rebelle contre l'Empire Galactique."
+            },
+            {
+                id: 16,
+                question: "Comment s'appelle l'arme emblématique d'un Jedi ?",
+                options: ["Blaster", "Sabre laser", "Vibrolame", "Arc plasma"],
+                correct: 1,
+                explanation: "Le sabre laser est l'arme emblématique des Jedi et des Sith. Il est composé d'un kyber crystal qui génère une lame d'énergie plasma. \"Une arme élégante d'une époque plus civilisée\" selon Obi-Wan Kenobi. Chaque cristal est en harmonie avec son porteur et détermine la couleur de la lame.",
+                source: "Star Wars Universe — Le sabre laser, arme des Jedi."
+            },
+            {
+                id: 17,
+                question: "Sur quelle lune se déroule la bataille finale du Retour du Jedi ?",
+                options: ["Dagobah", "Hoth", "Endor", "Mustafar"],
+                correct: 2,
+                explanation: "La bataille d'Endor se déroule sur la lune boisée d'Endor, peuplée par les Ewoks — de petits êtres ressemblant à des ours. Les Ewoks aident les Rebelles à détruire le générateur de bouclier de la seconde Étoile de la Mort, malgré leur technologie primitive face aux AT-AT et aux Stormtroopers.",
+                source: "Star Wars: Return of the Jedi (1983) — bataille d'Endor."
+            },
+            {
+                id: 18,
+                question: "Qui joue Obi-Wan Kenobi dans la trilogie originale ?",
+                options: ["Liam Neeson", "Ewan McGregor", "Alec Guinness", "Samuel L. Jackson"],
+                correct: 2,
+                explanation: "Alec Guinness joue Obi-Wan Kenobi dans la trilogie originale (1977-1983). C'est un acteur britannique légendaire, récipiendaire d'un Oscar. Dans la prélogie, le rôle est repris par Ewan McGregor qui incarne un Obi-Wan plus jeune. Les deux acteurs ont chacun apporté une dimension unique au personnage.",
+                source: "IMDb — Alec Guinness dans le rôle d'Obi-Wan Kenobi (1977-1983)."
+            },
+            {
+                id: 19,
+                question: "Quelle est la devise / code des Jedi ?",
+                options: ["La Force sera avec toi, toujours", "Il n'y a pas d'émotion, il y a la paix", "Que la Force guide ton sabre", "La colère mène à la puissance"],
+                correct: 1,
+                explanation: "Le Code Jedi commence par \"Il n'y a pas d'émotion, il y a la paix\" (There is no emotion, there is peace). C'est un code de discipline mentale qui guide les Jedi dans leur rejet des passions incontrôlées. Ce code est souvent mis en tension avec les émotions humaines des personnages tout au long de la saga.",
+                source: "Star Wars: The Phantom Menace (1999) — le Code Jedi dans les archives du Temple."
+            },
+            {
+                id: 20,
+                question: "Quel personnage dit \"Mauvais pressentiment j'ai\" ?",
+                options: ["Obi-Wan Kenobi", "Dark Vador", "Yoda", "Luke Skywalker"],
+                correct: 2,
+                explanation: "Yoda est connu pour sa façon de parler inversée (Yodaspeak) où le verbe vient souvent en fin de phrase. \"Mauvais pressentiment j'ai\" est l'une de ses expressions caractéristiques. George Lucas s'est inspiré du maître Zen et des traditions asiatiques pour créer ce personnage sage et mystérieux.",
+                source: "Star Wars Universe — la syntaxe inversée de Yoda est l'une de ses marques distinctives.",
+                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Yoda_at_the_Star_Wars_Celebration.jpg/800px-Yoda_at_the_Star_Wars_Celebration.jpg"
+            },
+            {
+                id: 21,
+                question: "Combien d'épisodes compte la saga Star Wars principale ?",
+                options: ["6", "7", "9", "12"],
+                correct: 2,
+                explanation: "La saga Skywalker comprend 9 épisodes (I à IX), répartis en trois trilogies : la prélogie (I-III : La Menace Fantôme, L'Attaque des Clones, La Revanche des Sith), la trilogie originale (IV-VI : Un Nouvel Espoir, L'Empire contre-attaque, Le Retour du Jedi) et la trilogie sequel (VII-IX : Le Réveil de la Force, Les Derniers Jedi, L'Ascension de Skywalker).",
+                source: "Lucasfilm — La saga Skywalker en 9 épisodes (1977-2019)."
+            },
+            {
+                id: 22,
+                question: "Quelle est la planète couverte de neige où se déroule la bataille au début de L'Empire contre-attaque ?",
+                options: ["Dagobah", "Hoth", "Kamino", "Mustafar"],
+                correct: 1,
+                explanation: "La bataille de Hoth ouvre L'Empire contre-attaque. La base Echo des Rebelles, cachée sur cette planète glaciale, est attaquée par l'Empire et ses AT-AT (marcheurs). C'est une des batailles les plus iconiques de la saga, avec les Rebelles utilisant des câbles de harpons pour faire tomber les gigantesques marcheurs.",
+                source: "Star Wars: The Empire Strikes Back (1980) — bataille de Hoth."
+            },
+            {
+                id: 23,
+                question: "Comment s'appelle le chasseur de primes qui capture Han Solo dans L'Empire contre-attaque ?",
+                options: ["Boba Fett", "Bossk", "IG-88", "Dengar"],
+                correct: 0,
+                explanation: "Boba Fett est le célèbre chasseur de primes mandalorien qui capture Han Solo pour le compte de Jabba le Hutt. Malgré son apparition relativement courte dans la trilogie originale, il est devenu l'un des personnages les plus populaires. Il dispose de son propre spin-off : Le Livre de Boba Fett (Disney+).",
+                source: "Star Wars: The Empire Strikes Back (1980) — Boba Fett.",
+                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Boba_Fett_Celebration_2017.jpg/800px-Boba_Fett_Celebration_2017.jpg"
+            },
+            {
+                id: 24,
+                question: "Quel est le surnom de l'Ordre 66 dans Star Wars ?",
+                options: ["L'extinction des Jedi", "Le Grand Purge", "La Purge des Jedi", "Le protocole final"],
+                correct: 2,
+                explanation: "L'Ordre 66, aussi appelé la Grande Purge des Jedi, est un commandement programmé dans les clones soldats qui les force à tuer leurs généraux Jedi. Déclenché par Palpatine, il provoque l'élimination quasi totale de l'Ordre Jedi en quelques heures. Seule une poignée de Jedi survit, dont Yoda et Obi-Wan Kenobi.",
+                source: "Star Wars: Revenge of the Sith (2005) — l'Ordre 66 et la purge des Jedi."
+            },
+            {
+                id: 25,
+                question: "Sur quelle planète se déroule le duel final entre Anakin et Obi-Wan dans La Revanche des Sith ?",
+                options: ["Coruscant", "Tatooine", "Mustafar", "Geonosis"],
+                correct: 2,
+                explanation: "Le duel épique entre Anakin Skywalker (déjà devenu Dark Vador) et Obi-Wan Kenobi se déroule sur Mustafar, une planète volcanique couverte de lave. C'est l'un des combats les plus longs et émouvants de la saga. Anakin perd ses jambes et son bras, est brûlé par la lave, et doit être transformé en cyborg.",
+                source: "Star Wars: Revenge of the Sith (2005) — duel sur Mustafar.",
+                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Volcano_in_Kamchatka.jpg/800px-Volcano_in_Kamchatka.jpg"
+            },
+            {
+                id: 26,
+                question: "Qui est le mentor d'Anakin Skywalker dans la prélogie ?",
+                options: ["Yoda", "Mace Windu", "Obi-Wan Kenobi", "Qui-Gon Jinn"],
+                correct: 2,
+                explanation: "Obi-Wan Kenobi est le Maître Jedi qui entraîne Anakin Skywalker pendant la prélogie. C'est lui qui tient la promesse de Qui-Gon Jinn en formant l'\"Élu de la Force\". Leur relation est complexe — père et fils spirituels — ce qui rend la trahison d'Anakin d'autant plus déchirante.",
+                source: "Star Wars: Attack of the Clones (2002) — Obi-Wan, maître d'Anakin."
+            },
+            {
+                id: 27,
+                question: "Comment s'appelle l'ennemi principal de la trilogie sequel (épisodes VII-IX) ?",
+                options: ["Grand Moff Tarkin", "Le Premier Ordre / Kylo Ren", "Le général Grievous", "Darth Maul"],
+                correct: 1,
+                explanation: "Dans la trilogie sequel, les antagonistes principaux sont le Premier Ordre (successeur de l'Empire) et Kylo Ren (Ben Solo, fils de Han et Leia) qui en est le leader militaire. L'Empereur Palpatine revient également comme antagoniste ultime dans L'Ascension de Skywalker.",
+                source: "Star Wars: The Force Awakens (2015) — le Premier Ordre et Kylo Ren."
+            },
+            {
+                id: 28,
+                question: "Quel droïde sphérique est introduit dans Le Réveil de la Force ?",
+                options: ["R2-D2", "C-3PO", "BB-8", "D-O"],
+                correct: 2,
+                explanation: "BB-8 est le petit droïde sphérique orange et blanc introduit dans Le Réveil de la Force. Il devient rapidement l'un des droïdes les plus appréciés de la franchise. BB-8 appartient à Poe Dameron, le meilleur pilote de la Résistance, et joue un rôle clé en transportant une carte menant à Luke Skywalker.",
+                source: "Star Wars: The Force Awakens (2015) — BB-8.",
+                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/BB8_Droid.jpg/800px-BB8_Droid.jpg"
+            },
+            {
+                id: 29,
+                question: "Quel est le nom du personnage qui dit la phrase 'Je t'aime' à quoi Leia répond 'Je sais' ?",
+                options: ["Luke", "Lando", "Han Solo", "Wedge"],
+                correct: 2,
+                explanation: "C'est Han Solo qui dit \"Je t'aime\" à Leia juste avant d'être congelé dans la carbonite dans L'Empire contre-attaque. Leia répond simplement \"Je sais\" — une réplique improvisée par Harrison Ford qui trouvait sa réplique originale trop ordinaire. C'est devenu l'un des échanges romantiques les plus célèbres du cinéma.",
+                source: "Star Wars: The Empire Strikes Back (1980) — 'Je t'aime / Je sais'."
+            },
+            {
+                id: 30,
+                question: "Quel ordre mystérieux suit la règle de deux (un maître, un apprenti) ?",
+                options: ["L'Ordre Jedi", "Les Sith", "Les Mandaloriens", "Les Inquisiteurs"],
+                correct: 1,
+                explanation: "Les Sith suivent la Règle de Deux, établie par Dark Bane après la destruction de l'ancien ordre Sith. Selon cette règle, il ne peut y avoir qu'un seul Maître Sith et un seul apprenti à la fois. Ainsi, la haine entre eux maintient leur pouvoir — l'apprenti cherche toujours à surpasser le maître.",
+                source: "Star Wars: The Phantom Menace (1999) — Yoda mentionne la Règle de Deux des Sith."
+            }
+        ],
+        moyen: [
+            {
+                id: 11,
+                question: "Quel est le vrai nom de Dark Vador avant sa transformation en Sith ?",
+                options: ["Anakin Lars", "Anakin Skywalker", "Ben Skywalker", "Darth Plagueis"],
+                correct: 1,
+                explanation: "Avant de basculer du côté obscur, Dark Vador s'appelait Anakin Skywalker. Il était considéré comme l'Élu de la Force, destiné à rétablir l'équilibre. Séduit par les promesses de Palpatine/Darth Sidious, il prend le nom de Sith Darth Vader après avoir trahi l'Ordre Jedi.",
+                source: "Star Wars: Revenge of the Sith (2005) — transformation d'Anakin en Dark Vador."
+            },
+            {
+                id: 12,
+                question: "Quelle espèce est Yoda ?",
+                options: ["Twi'lek", "Togruta", "Son espèce n'a jamais été nommée officiellement", "Lannik"],
+                correct: 2,
+                explanation: "L'espèce de Yoda n'a jamais été officiellement nommée par George Lucas ou Lucasfilm — c'est un mystère intentionnel. Les fans l'appellent parfois 'race de Yoda'. Le personnage Grogu (Baby Yoda dans The Mandalorian) appartient à la même espèce, mais son nom reste également non révélé.",
+                source: "Lucasfilm — L'espèce de Yoda est intentionnellement gardée mystérieuse."
+            },
+            {
+                id: 13,
+                question: "Comment s'appelle le titre de Seigneur Sith de Palpatine ?",
+                options: ["Darth Maul", "Darth Plagueis", "Darth Sidious", "Darth Tyranus"],
+                correct: 2,
+                explanation: "Palpatine, Chancelier puis Empereur de la République/Empire, porte le titre Sith de Darth Sidious. Son apprenti Darth Maul (prélogie) est remplacé par Darth Tyranus (Comte Dooku), puis par Darth Vader (Anakin). Sidious est révélé comme la menace ultime ayant tout manigancé depuis le début.",
+                source: "Star Wars: The Phantom Menace (1999) — Darth Sidious / Palpatine."
+            },
+            {
+                id: 14,
+                question: "Sur quelle planète vivent les Ewoks ?",
+                options: ["Endor la planète", "La lune forestière d'Endor", "Kashyyyk", "Felucia"],
+                correct: 1,
+                explanation: "Les Ewoks vivent sur la lune forestière d'Endor (aussi appelée Forest Moon of Endor). C'est une petite lune boisée orbitant la planète géante gazeuse Endor. Les Ewoks prennent initialement les Rebelles pour leurs ennemis avant de s'allier à eux contre l'Empire.",
+                source: "Star Wars: Return of the Jedi (1983) — les Ewoks sur la lune d'Endor.",
+                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Forest_Endor.jpg/800px-Forest_Endor.jpg"
+            },
+            {
+                id: 15,
+                question: "Quelle planète est le centre politique de la galaxie et siège du Sénat ?",
+                options: ["Naboo", "Alderaan", "Coruscant", "Tatooine"],
+                correct: 2,
+                explanation: "Coruscant est une planète-ville entièrement recouverte d'une métropole géante. C'est le centre politique de la galaxie, siège du Sénat Galactique et du Temple Jedi. Elle apparaît principalement dans la prélogie et représente la civilisation galactique à son apogée — et sa corruption.",
+                source: "Star Wars Prequel Trilogy — Coruscant, capitale de la République puis de l'Empire."
+            },
+            {
+                id: 16,
+                question: "Quel personnage prononce la phrase 'Je possède le terrain, l'avantage de la position supérieure !' ?",
+                options: ["Mace Windu", "Dark Vador", "Obi-Wan Kenobi", "Anakin Skywalker"],
+                correct: 2,
+                explanation: "Obi-Wan Kenobi crie cette phrase à Anakin lors de leur duel sur Mustafar dans La Revanche des Sith, juste avant de lui couper les jambes. 'C'est moi qui possède le terrain' ('I have the high ground') est devenu un mème internet célèbre, symbolisant l'erreur fatale d'Anakin qui ignore l'avertissement.",
+                source: "Star Wars: Revenge of the Sith (2005) — duel sur Mustafar, réplique d'Obi-Wan."
+            },
+            {
+                id: 17,
+                question: "Quelle est la particularité du sabre laser à double lame de Darth Maul ?",
+                options: ["Il est bleu des deux côtés", "Il a deux lames rouges en opposition", "Il peut se plier", "Il est invisible"],
+                correct: 1,
+                explanation: "Darth Maul manie un sabre laser à double lame (doubleblade lightsaber) avec deux lames rouges pointant dans des directions opposées. C'est l'une des armes les plus originales de la saga. Maul peut l'utiliser comme un bâton à double bout ou séparer en deux sabres. Son combat contre Qui-Gon et Obi-Wan est mémorable.",
+                source: "Star Wars: The Phantom Menace (1999) — le sabre laser à double lame de Darth Maul.",
+                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Darth_Maul_Celebration.jpg/800px-Darth_Maul_Celebration.jpg"
+            },
+            {
+                id: 18,
+                question: "Qui est la mère d'Anakin Skywalker ?",
+                options: ["Padmé Amidala", "Shmi Skywalker", "Leia Organa", "Mon Mothma"],
+                correct: 1,
+                explanation: "Shmi Skywalker est la mère d'Anakin. Elle vivait comme esclave sur Tatooine. Sa mort tragique aux mains des Tusken Raiders est le premier signe de la bascule d'Anakin vers le côté obscur — la colère et la douleur qu'il ressent après l'avoir trouvée mourante déclenchent un massacre. C'est un tournant crucial de la prélogie.",
+                source: "Star Wars: Attack of the Clones (2002) — mort de Shmi Skywalker."
+            },
+            {
+                id: 19,
+                question: "Comment s'appelle le Seigneur Sith maître de Palpatine ?",
+                options: ["Darth Bane", "Darth Maul", "Darth Plagueis", "Darth Revan"],
+                correct: 2,
+                explanation: "Darth Plagueis 'le Sage' est le maître Sith de Palpatine. Il était si puissant qu'il pouvait manipuler la Force pour empêcher la mort. Palpatine mentionne 'La Tragédie de Darth Plagueis le Sage' dans La Revanche des Sith — et révèle qu'il l'a tué dans son sommeil. Beaucoup pensent que Plagueis aurait créé Anakin via la Force.",
+                source: "Star Wars: Revenge of the Sith (2005) — l'histoire de Darth Plagueis racontée par Palpatine."
+            },
+            {
+                id: 20,
+                question: "Quel Jedi est connu pour son sabre laser violet unique ?",
+                options: ["Kit Fisto", "Plo Koon", "Mace Windu", "Aayla Secura"],
+                correct: 2,
+                explanation: "Mace Windu est le seul Jedi du Conseil à avoir un sabre laser violet. Cette couleur fut choisie par Samuel L. Jackson lui-même qui voulait se distinguer des autres Jedi. Dans le lore, le violet représente un équilibre entre la lumière et l'obscurité — Mace Windu pratique une forme de combat appelée Vaapad qui frôle le côté obscur.",
+                source: "Star Wars: Attack of the Clones (2002) — sabre violet de Mace Windu.",
+                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Mace_Windu_Celebration.jpg/800px-Mace_Windu_Celebration.jpg"
+            },
+            {
+                id: 21,
+                question: "Dans quel épisode Han Solo est-il congelé dans la carbonite ?",
+                options: ["Episode IV", "Episode V", "Episode VI", "Episode VII"],
+                correct: 1,
+                explanation: "Han Solo est congelé dans la carbonite par Dark Vador à la fin de L'Empire contre-attaque (Episode V). Jabba le Hutt utilise cette technique pour transporter des prisonniers ou des marchandises. Han est libéré par Leia au début du Retour du Jedi (Episode VI), mais souffre temporairement de cécité due à la privation sensorielle.",
+                source: "Star Wars: The Empire Strikes Back (1980) — Han Solo congelé dans la carbonite."
+            },
+            {
+                id: 22,
+                question: "Quelle est la planète couverte d'eau sur laquelle sont créés les soldats clones ?",
+                options: ["Kamino", "Mon Calamari", "Naboo", "Rodia"],
+                correct: 0,
+                explanation: "Kamino est une planète entièrement couverte d'eau sur laquelle les Kaminoans ont développé l'art du clonage. C'est là qu'Obi-Wan découvre que l'armée de clones a été commandée secrètement au nom d'un Jedi (Sifo-Dyas). Les clones constituent l'armée de la République pendant les Guerres des Clones.",
+                source: "Star Wars: Attack of the Clones (2002) — Kamino et la création des soldats clones."
+            },
+            {
+                id: 23,
+                question: "Qui est Rey dans la trilogie sequel ?",
+                options: ["La fille de Luke Skywalker", "La petite-fille de l'Empereur Palpatine", "La fille d'Obi-Wan Kenobi", "Un clone de Leia"],
+                correct: 1,
+                explanation: "Rey est révélée dans L'Ascension de Skywalker comme la petite-fille de l'Empereur Palpatine — ce qui explique sa puissance exceptionnelle dans la Force. Elle choisit néanmoins de rejeter son héritage Sith et de se proclamer 'Rey Skywalker' en hommage à ses maîtres Luke et Leia.",
+                source: "Star Wars: The Rise of Skywalker (2019) — révélation des origines de Rey."
+            },
+            {
+                id: 24,
+                question: "Quel est le nom de la technique Jedi permettant de déplacer des objets avec l'esprit ?",
+                options: ["Tutaminis", "Telekinésie / Force Push", "Art Jedi", "Force Wave"],
+                correct: 1,
+                explanation: "Les Jedi utilisent la télékinésie via la Force pour déplacer, attraper ou repousser des objets à distance. On appelle cela le Force Pull (pour attirer) ou le Force Push (pour repousser). Attraper son sabre laser à distance est l'un des usages les plus courants et visuellement spectaculaires.",
+                source: "Star Wars Universe — la télékinésie est l'une des capacités de base des utilisateurs de la Force."
+            },
+            {
+                id: 25,
+                question: "Qui dirige la flotte de l'Empire en tant que commandant militaire suprême ?",
+                options: ["Grand Moff Tarkin", "L'Amiral Piett", "Grand Amiral Thrawn", "Le général Veers"],
+                correct: 0,
+                explanation: "Grand Moff Tarkin est le gouverneur militaire de l'Empire et commande l'Étoile de la Mort. C'est lui qui ordonne la destruction d'Alderaan malgré les supplications de Leia. Il représente l'arrogance et la brutalité de l'Empire. Tarkin est joué par Peter Cushing dans le premier film.",
+                source: "Star Wars: A New Hope (1977) — Grand Moff Tarkin."
+            },
+            {
+                id: 201,
+                type: "vrai_faux",
+                question: "George Lucas a vendu la franchise Star Wars à Disney pour 4 milliards de dollars.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! En octobre 2012, George Lucas a vendu Lucasfilm (et donc la franchise Star Wars) à Disney pour environ 4,05 milliards de dollars. C'est l'une des plus grandes acquisitions de l'industrie du divertissement. Disney a rapidement annoncé une nouvelle trilogie, puis de nombreuses séries sur Disney+.",
+                source: "Walt Disney Company Press Release (2012) — acquisition de Lucasfilm pour 4,05 milliards de dollars."
+            },
+            {
+                id: 202,
+                type: "vrai_faux",
+                question: "Le personnage de Jar Jar Binks a été entièrement créé en images de synthèse — c'est le premier personnage CGI principal d'un film.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Jar Jar Binks dans La Menace Fantôme (1999) est le premier personnage entièrement généré par ordinateur à jouer un rôle principal dans un film. Bien que critiqué par les fans, il représente une avancée technologique majeure dans l'histoire du cinéma, préfigurant les personnages CGI de films comme Le Seigneur des Anneaux.",
+                source: "ILM (Industrial Light & Magic) — Jar Jar Binks, premier personnage CGI principal d'un film (1999)."
+            },
+            {
+                id: 203,
+                type: "vrai_faux",
+                question: "Dans Star Wars, les Stormtroopers sont tous des clones du même individu.",
+                options: ["Vrai", "Faux"],
+                correct: 1,
+                explanation: "Faux pour la trilogie originale ! Dans la prélogie, les soldats clones sont bien des clones de Jango Fett. Mais dans la trilogie originale, l'Empire recrute des soldats humains normaux (recrutement volontaire ou forcé) — les Stormtroopers ne sont plus des clones. Kylo Ren et Finn dans le sequel en témoignent.",
+                source: "Star Wars: Revenge of the Sith (2005) — transition des soldats clones aux Stormtroopers recrutés."
+            },
+            {
+                id: 26,
+                question: "Quel est le premier mot prononcé dans Star Wars (Episode IV) ?",
+                options: ["Force", "Aide", "Vador", "Rebel"],
+                correct: 1,
+                explanation: "Le premier mot prononcé dans Star Wars: A New Hope est 'Help' ('Aide') par le droïde C-3PO alors qu'il traverse un couloir en pleine bataille. Plus exactement, il dit 'Did you hear that? They've shut down the main reactor. We'll be destroyed for sure. This is madness!' — mais 'Did' est le premier mot. C-3PO ouvre littéralement l'univers Star Wars au spectateur.",
+                source: "Star Wars: A New Hope (1977) — première scène, premier dialogue de C-3PO."
+            },
+            {
+                id: 27,
+                question: "Quelle planète Anakin et Padmé visitent-ils pour leur lune de miel secrète ?",
+                options: ["Tatooine", "Naboo", "Alderaan", "Coruscant"],
+                correct: 1,
+                explanation: "Anakin et Padmé se marient secrètement à Naboo, la planète natale de Padmé, à la fin de L'Attaque des Clones. Naboo est aussi la planète où Palpatine est né et d'où il commence son ascension politique. Avec ses paysages magnifiques et son architecture Art Nouveau, Naboo est l'une des planètes les plus visuellement belles de la saga.",
+                source: "Star Wars: Attack of the Clones (2002) — mariage secret sur Naboo.",
+                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Naboo_inspired_by_Lake_Como.jpg/800px-Naboo_inspired_by_Lake_Como.jpg"
+            },
+            {
+                id: 28,
+                question: "Comment s'appelle le droïde général qui commande l'armée séparatiste ?",
+                options: ["Darth Maul", "Le général Grievous", "Nute Gunray", "Dark Tyranus"],
+                correct: 1,
+                explanation: "Le général Grievous est le commandant militaire des Séparatistes pendant les Guerres des Clones. C'est un être mi-organique mi-robotique qui collecte les sabres laser des Jedi qu'il a vaincus. Il peut manier jusqu'à 4 sabres simultanément. Il est tué par Obi-Wan Kenobi sur Utapau dans La Revanche des Sith.",
+                source: "Star Wars: Revenge of the Sith (2005) — le général Grievous.",
+                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/General_Grievous_Celebration.jpg/800px-General_Grievous_Celebration.jpg"
+            },
+            {
+                id: 29,
+                question: "Quelle est la signification de 'May the 4th be with you' ?",
+                options: ["Un salut militaire Jedi", "Le Star Wars Day célébré le 4 mai", "Une prophétie Sith", "Le code de l'Ordre 66"],
+                correct: 1,
+                explanation: "'May the 4th be with you' est un jeu de mots sur 'May the Force be with you'. Le 4 mai (May 4th en anglais) est devenu le Star Wars Day officiel célébré mondialement. La phrase a été utilisée pour la première fois dans un journal britannique le 4 mai 1979 pour féliciter Margaret Thatcher de son élection.",
+                source: "StarWars.com — Star Wars Day, le 4 mai, 'May the 4th be with you'."
+            },
+            {
+                id: 30,
+                question: "Quel personnage est 'le Mandalorien' dans la série Disney+ ?",
+                options: ["Boba Fett", "Din Djarin", "Paz Vizsla", "Bo-Katan Kryze"],
+                correct: 1,
+                explanation: "Din Djarin est le Mandalorien de la série éponyme Disney+. C'est un chasseur de primes solitaire qui adopte Grogu (Baby Yoda) et lutte pour le protéger. Son histoire révèle la culture mandaorienne en profondeur. La série, créée par Jon Favreau, est l'une des plus populaires de Disney+.",
+                source: "The Mandalorian (2019), Disney+ — Din Djarin, le Mandalorien."
+            }
+        ],
+        difficile: [
+            {
+                id: 31,
+                question: "Quel est le nom complet du protocole de domination militaire de l'Empire décrit dans les romans Legends ?",
+                options: ["Doctrine Tarkin", "Protocole Omega", "Initiative Stellaire", "Code de l'Empire"],
+                correct: 0,
+                explanation: "La Doctrine Tarkin (Tarkin Doctrine) est la politique militaire de Grand Moff Tarkin : gouverner par la peur plutôt que par la loyauté. La destruction d'Alderaan en est l'illustration parfaite. Cette doctrine est détaillée dans le roman 'Tarkin' de James Luceno (2014), dans le canon officiel post-Disney.",
+                source: "Tarkin (2014), James Luceno — roman canon Star Wars détaillant la Doctrine Tarkin."
+            },
+            {
+                id: 32,
+                question: "Combien de kyber crystals compose le superlaser de la première Étoile de la Mort ?",
+                options: ["1 cristal géant", "Plusieurs cristaux focalisés", "Aucun, c'est un réacteur à plasma", "7 cristaux alignés"],
+                correct: 1,
+                explanation: "Le superlaser de l'Étoile de la Mort utilise plusieurs kyber crystals gigantesques focalisés ensemble. Les détails techniques sont explorés dans le roman 'Catalyst' (2016) et le film Rogue One. L'Empire vole des kyber crystals à travers toute la galaxie pour alimenter cette arme.",
+                source: "Rogue One: A Star Wars Story (2016) & Catalyst (2016) — les kyber crystals de l'Étoile de la Mort."
+            },
+            {
+                id: 33,
+                question: "Quel est le nom de la technique Sith permettant de lancer des éclairs de Force ?",
+                options: ["Force Lightning", "Sith Thunder", "Dark Tempest", "Bane's Power"],
+                correct: 0,
+                explanation: "Le Force Lightning (Foudre de la Force ou Éclairs de la Force) est une technique Sith qui canalise l'énergie du côté obscur en éclairs électriques. Seuls les utilisateurs du côté obscur peuvent le faire — Palpatine l'utilise abondamment. Mace Windu peut le dévier avec son sabre ; Dark Vador le reçoit en sauvant Luke à la fin.",
+                source: "Star Wars Universe — Force Lightning, technique exclusive des Sith."
+            },
+            {
+                id: 34,
+                question: "Quel est le nom original de Star Wars Episode IV avant la renumérotation ?",
+                options: ["Star Wars (1977)", "Star Wars: A Beginning", "Star Wars: Episode I", "The Star Wars"],
+                correct: 0,
+                explanation: "Le film de 1977 s'appelait simplement 'Star Wars'. La renumérotation en 'Episode IV: A New Hope' (Un Nouvel Espoir) n'est apparue que lors de la ressortie de 1981, après que Lucas eut planifié la prélogie. Initialement, le film n'était pas conçu comme le quatrième d'une série.",
+                source: "Lucasfilm Archives — 'Episode IV: A New Hope' ajouté au titre original en 1981."
+            },
+            {
+                id: 35,
+                question: "Quel Jedi a survécu à l'Ordre 66 et devient un personnage central de la série Obi-Wan Kenobi ?",
+                options: ["Quinlan Vos", "Kanan Jarrus", "Reva / Inquisitrice Troisième Sœur", "Cal Kestis"],
+                correct: 2,
+                explanation: "Reva, également connue sous le nom d'Inquisitrice Troisième Sœur, est une ancienne Jedi Padawan qui a survécu à l'Ordre 66 en se cachant parmi les corps des autres Jedi. Son traumatisme et sa quête de vengeance contre Vador structurent la série Obi-Wan Kenobi (2022) sur Disney+.",
+                source: "Obi-Wan Kenobi (2022), Disney+ — l'histoire de Reva, survivante de l'Ordre 66."
+            },
+            {
+                id: 36,
+                question: "Quelle est la médichlorian count d'Anakin Skywalker selon Qui-Gon Jinn ?",
+                options: ["Moins de 10 000", "Plus haute que jamais enregistrée — plus de 20 000", "Exactement 13 000", "Inconnue, les tests ont échoué"],
+                correct: 1,
+                explanation: "Qui-Gon Jinn est stupéfait de découvrir qu'Anakin possède un nombre de midichloriens plus élevé que jamais enregistré — plus de 20 000 par cellule, dépassant même Yoda. Ce chiffre extraordinaire convainc Qui-Gon qu'Anakin est 'l'Élu de la Force' destiné à rétablir l'équilibre.",
+                source: "Star Wars: The Phantom Menace (1999) — Qui-Gon teste les midichloriens d'Anakin."
+            },
+            {
+                id: 37,
+                question: "Quel est le nom de la ville dans les nuages gouvernée par Lando Calrissian ?",
+                options: ["Cloud City", "Bespin Station", "Cato Neimoidia", "Tibannopolis"],
+                correct: 0,
+                explanation: "Cloud City est une cité minière flottante dans les nuages de la planète gazeuse Bespin. Elle produit du gaz tibanna utilisé dans les armes à énergie. Lando Calrissian est le Baron Administrateur de Cloud City avant de trahir puis de rejoindre les Rebelles. C'est là qu'Han Solo est congelé.",
+                source: "Star Wars: The Empire Strikes Back (1980) — Cloud City sur Bespin."
+            },
+            {
+                id: 38,
+                question: "Quel est le nom de la philosophie de combat au sabre laser de Mace Windu ?",
+                options: ["Ataru", "Vaapad", "Soresu", "Makashi"],
+                correct: 1,
+                explanation: "Vaapad est la septième forme de combat au sabre laser, créée par Mace Windu lui-même. Elle est extrêmement dangereuse car elle canalise les émotions sombres du combattant pour les retourner contre l'adversaire. C'est la raison pour laquelle seul Windu peut la pratiquer sans basculer vers le côté obscur.",
+                source: "Star Wars Legends — le Vaapad, Form VII du combat au sabre laser de Mace Windu."
+            },
+            {
+                id: 39,
+                question: "Quel est le titre exact donné à l'Empereur Palpatine dans les discours officiels ?",
+                options: ["Votre Altesse Obscure", "Sa Majesté Impériale", "Galactic Overlord", "Votre Révérence Sith"],
+                correct: 1,
+                explanation: "L'Empereur Palpatine est officiellement adressé comme 'Sa Majesté Impériale' (His Imperial Majesty) ou 'Votre Majesté'. Les officiers militaires utilisent simplement 'l'Empereur' ou 'Votre Altesse'. Dans le cercle Sith, il est appelé 'Maître' ou 'Seigneur Sidious'.",
+                source: "Star Wars Canon — titres officiels de l'Empereur Palpatine."
+            },
+            {
+                id: 40,
+                question: "Combien de films Star Wars ont été réalisés par George Lucas lui-même ?",
+                options: ["2 films", "4 films", "6 films", "1 film"],
+                correct: 1,
+                explanation: "George Lucas a réalisé 4 films Star Wars : Star Wars (1977/Episode IV), La Menace Fantôme (I), L'Attaque des Clones (II) et La Revanche des Sith (III). L'Empire contre-attaque a été réalisé par Irvin Kershner, Le Retour du Jedi par Richard Marquand. Les sequel trilogy (VII-IX) ont été réalisés respectivement par Abrams, Johnson et Abrams.",
+                source: "IMDb — George Lucas a réalisé uniquement 4 des 9 films principaux Star Wars."
+            },
+            {
+                id: 301,
+                type: "vrai_faux",
+                question: "Le son du sabre laser a été créé en combinant le bourdonnement d'un projecteur de film et l'interférence d'un téléviseur.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Ben Burtt, le légendaire sound designer de Star Wars, a créé le son du sabre laser en combinant le bourdonnement d'un vieux projecteur de film 35mm avec le feedback électromagnétique d'un téléviseur analogique. Ce mélange accidentel lors d'une promenade avec un micro a donné naissance à l'un des sons les plus reconnaissables de l'histoire du cinéma.",
+                source: "Ben Burtt interview (2004) — création du son du sabre laser pour Star Wars (1977)."
+            },
+            {
+                id: 302,
+                type: "vrai_faux",
+                question: "Dark Vador n'apparaît à l'écran que pendant 12 minutes dans le film Star Wars Episode IV.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Malgré son statut de villain iconique, Dark Vador n'apparaît que 12 minutes dans Star Wars: A New Hope (1977). Pourtant, son impact est tel qu'il est devenu l'un des méchants les plus mémorables du cinéma. Preuve que le temps d'écran ne fait pas tout — la présence, la voix de James Earl Jones et le design ont suffi.",
+                source: "Screen Time Analysis — Darth Vader : 12 minutes à l'écran dans Episode IV."
+            },
+            {
+                id: 303,
+                type: "vrai_faux",
+                question: "Harrison Ford était plombier avant d'être choisi pour jouer Han Solo.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Harrison Ford travaillait comme charpentier (pas plombier — il posait des portes et fenêtres) chez Universal Studios pour payer ses factures quand George Lucas l'a repéré. Ford était installé une porte chez un producteur quand Lucas l'a vu et l'a rappelé pour passer un essai. Le reste appartient à l'histoire du cinéma.",
+                source: "Harrison Ford Biography — charpentier avant son casting comme Han Solo."
+            },
+            {
+                id: 41,
+                question: "Quel est le nom de la technique permettant à un Jedi de survivre à la mort en devenant un 'fantôme de Force' ?",
+                options: ["Immortalité Jedi", "Art de la Force Vivante", "Téchnique de Qui-Gon / Shatterpoint", "Preservation via la Force"],
+                correct: 2,
+                explanation: "C'est Qui-Gon Jinn qui a découvert la technique permettant à un Jedi de préserver sa conscience après la mort et d'apparaître comme fantôme lumineux. Il l'a apprise des Gardiens de la Whills. Il transmet ensuite ce secret à Yoda, qui l'enseigne à Obi-Wan. Luke et Anakin l'apprennent également.",
+                source: "Star Wars: The Phantom Menace (1999) + Star Wars: Revenge of the Sith (2005) — origine des fantômes de Force."
+            },
+            {
+                id: 42,
+                question: "Quel est le nom de la station spatiale dans Rogue One qui précède la première Étoile de la Mort ?",
+                options: ["Station Jedha", "Étoile Noire Proto", "Eadu Research Station", "Scarif Platform"],
+                correct: 3,
+                explanation: "La base de Scarif est la station/archive impériale sur la planète Scarif où sont stockés les plans de l'Étoile de la Mort. Rogue One culmine sur l'assaut de cette base par Jyn Erso et son équipe. C'est sur Scarif que les plans sont transmis à Leia — transition directe vers le début d'Episode IV.",
+                source: "Rogue One: A Star Wars Story (2016) — assaut sur Scarif."
+            }
+        ]
     }
 };
