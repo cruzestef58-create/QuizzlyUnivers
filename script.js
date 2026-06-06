@@ -761,12 +761,6 @@ function openCategory(key) {
     const cat = categories[key];
     if (!cat) return;
 
-    // Si un seul quiz, aller directement
-    if (cat.quizzes.length === 1) {
-        window.location.href = cat.quizzes[0].url;
-        return;
-    }
-
     // Afficher les sous-thèmes
     const grid = document.getElementById('subthemes-grid');
     grid.innerHTML = cat.quizzes.map(q => `
