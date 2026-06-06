@@ -746,6 +746,7 @@ const categories = {
         quizzes: [
             { icon: '⚡', title: 'Harry Potter', desc: 'Sorts, Horcruxes, Poudlard et tous les secrets de l\'univers de J.K. Rowling.', url: 'quiz-harry-potter.html' },
             { icon: '⭐', title: 'Star Wars', desc: 'La Force, les Jedi, les Sith et toute la saga Skywalker dans une galaxie très très lointaine.', url: 'quiz-star-wars.html' },
+            { icon: '🩸', title: 'Jujutsu Kaisen', desc: 'Sukuna, Gojo, les fléaux maudits et toute la saga Jujutsu Kaisen de Gege Akutami.', url: 'quiz-jujutsu-kaisen.html' },
         ]
     },
 };
@@ -1007,3 +1008,16 @@ function startQuizStarWars(difficulty) {
     nextBtn.onclick = () => quizManager.nextQuestion();
 }
 window.startQuizStarWars = startQuizStarWars;
+
+function startQuizJujutsuKaisen(difficulty) {
+    document.getElementById('difficulty-selection').style.display = 'none';
+    document.getElementById('quiz-container').style.display = 'block';
+
+    const quizData = quizzesData.jujutsuKaisen;
+    quizManager = new QuizManager(quizData, difficulty);
+    quizManager.init();
+
+    const nextBtn = document.getElementById('next-button');
+    nextBtn.onclick = () => quizManager.nextQuestion();
+}
+window.startQuizJujutsuKaisen = startQuizJujutsuKaisen;

@@ -7697,5 +7697,539 @@ const quizzesData = {
                 source: "Rogue One: A Star Wars Story (2016) — assaut sur Scarif."
             }
         ]
+    },
+
+    jujutsuKaisen: {
+        title: "Jujutsu Kaisen",
+        description: "Testez vos connaissances sur l'univers de Jujutsu Kaisen",
+        facile: [
+            {
+                id: 1,
+                question: "Quel est le nom du protagoniste principal de Jujutsu Kaisen ?",
+                options: ["Megumi Fushiguro", "Yuji Itadori", "Nobara Kugisaki", "Yuta Okkotsu"],
+                correct: 1,
+                explanation: "Yuji Itadori est le protagoniste principal de Jujutsu Kaisen. Lycéen ordinaire aux capacités physiques exceptionnelles, il avale un doigt de Ryomen Sukuna pour sauver ses camarades et devient le réceptacle du Roi des Fléaux. Il intègre ensuite le Lycée de Jujutsu de Tokyo sous la tutelle de Gojo Satoru.",
+                source: "Gege Akutami — Jujutsu Kaisen (2018), Chapitre 1."
+            },
+            {
+                id: 2,
+                question: "Quel démon roi est enfermé dans le corps de Yuji Itadori ?",
+                options: ["Mahito", "Jogo", "Ryomen Sukuna", "Geto Suguru"],
+                correct: 2,
+                explanation: "Ryomen Sukuna, surnommé le Roi des Fléaux, est le démon le plus puissant de l'histoire du Jujutsu. Il a été exécuté par les exorcistes il y a mille ans, mais son énergie maudite survit dans ses 20 doigts. Yuji en avale un et devient son réceptacle — permettant à Sukuna de prendre le contrôle temporairement.",
+                source: "Gege Akutami — Jujutsu Kaisen (2018), Sukuna, le Roi des Fléaux.",
+                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Sukuna_Jujutsu_cosplay.jpg/800px-Sukuna_Jujutsu_cosplay.jpg"
+            },
+            {
+                id: 3,
+                question: "Dans quelle école Yuji Itadori est-il enrôlé en tant qu'exorciste ?",
+                options: ["L'Académie Kyoto d'Arts Occultes", "Le Lycée d'Exorcisme de Tokyo", "L'Institut Jujutsu de Tokyo", "La Maison Zen'in"],
+                correct: 2,
+                explanation: "Yuji est enrôlé au Lycée Métropolitain de Jujutsu de Tokyo (Tokyo Jujutsu High), l'une des deux principales institutions d'enseignement des arts occultes au Japon. L'autre est le Lycée de Kyoto. Ces deux écoles s'affrontent chaque année lors d'un tournoi inter-lycées.",
+                source: "Gege Akutami — Jujutsu Kaisen (2018), présentation de l'école."
+            },
+            {
+                id: 4,
+                question: "Comment s'appelle la technique de barrière ultime de Gojo Satoru ?",
+                options: ["Domaine Infini", "L'Infini Creux", "Expansion de Domaine : Vide Infini", "Six Yeux Scellés"],
+                correct: 2,
+                explanation: "L'Expansion de Domaine de Gojo s'appelle Mu-Ryokuusho — le Vide Infini (Unlimited Void / Muryokusho). À l'intérieur, la cible est submergée par une quantité infinie d'informations simultanées, la plongeant dans une paralysie totale. C'est l'une des techniques les plus puissantes de la série.",
+                source: "Gege Akutami — Jujutsu Kaisen, arc Cursed Womb : Death Paintings.",
+                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Gojo_Satoru_cosplay.jpg/800px-Gojo_Satoru_cosplay.jpg"
+            },
+            {
+                id: 5,
+                question: "De quelle couleur est le bandeau que porte Gojo Satoru sur les yeux ?",
+                options: ["Noir", "Blanc", "Rouge", "Bleu"],
+                correct: 1,
+                explanation: "Gojo Satoru porte un bandeau blanc sur les yeux dans la majorité de ses apparitions. Il le retire lors des combats sérieux pour révéler ses légendaires Six Yeux — une technique héréditaire de la Famille Gojo qui permet une maîtrise absolue de l'énergie maudite. Ses yeux sont bleus turquoise sous le bandeau.",
+                source: "Gege Akutami — Jujutsu Kaisen, description de Gojo Satoru."
+            },
+            {
+                id: 6,
+                question: "Combien de doigts de Sukuna existent-ils en tout ?",
+                options: ["10", "15", "20", "24"],
+                correct: 2,
+                explanation: "Ryomen Sukuna avait 4 bras et 4 yeux de son vivant. Après son exécution, ses 20 doigts sont devenus des reliques maudites indestructibles. Chaque doigt avale augmente la puissance de Sukuna dans son réceptacle. Yuji doit tous les avaler pour que Sukuna soit finalement exécuté.",
+                source: "Gege Akutami — Jujutsu Kaisen, lore de Sukuna et ses doigts."
+            },
+            {
+                id: 7,
+                question: "Quel est le grade d'exorciste de Gojo Satoru ?",
+                options: ["Grade 1", "Grade 2", "Grade Spécial", "Hors Catégorie"],
+                correct: 2,
+                explanation: "Gojo Satoru est un exorciste de Grade Spécial (Special Grade), le rang le plus élevé et le plus rare dans la hiérarchie Jujutsu. Il est considéré comme l'homme le plus fort du monde jujutsu moderne. Son niveau dépasse tellement les autres qu'on dit souvent qu'il représente à lui seul la moitié de la puissance mondiale des exorcistes.",
+                source: "Gege Akutami — Jujutsu Kaisen, classification des grades d'exorcistes."
+            },
+            {
+                id: 8,
+                question: "Comment s'appelle la camarade de Yuji spécialisée dans les techniques de marteau et clous ?",
+                options: ["Maki Zen'in", "Mai Zen'in", "Nobara Kugisaki", "Utahime Iori"],
+                correct: 2,
+                explanation: "Nobara Kugisaki est la troisième membre du trio principal avec Yuji et Megumi. Sa technique innée, Straw Doll Technique (Technique de la Poupée de Paille), utilise des clous et un marteau sur des poupées liées à ses cibles. Elle peut aussi planter des clous directement dans son propre corps pour blesser les fantômes liés à elle.",
+                source: "Gege Akutami — Jujutsu Kaisen, présentation de Nobara Kugisaki."
+            },
+            {
+                id: 9,
+                question: "Quelle est la technique innée de Megumi Fushiguro ?",
+                options: ["Renforcement du Corps", "Ten Shadows Technique (Dix Ombres)", "Straw Doll Technique", "Granite Blast"],
+                correct: 1,
+                explanation: "Megumi Fushiguro utilise la Ten Shadows Technique (Technique des Dix Ombres), un héritage de la Famille Fushiguro. Il invoque des shikigami (esprits divins) en utilisant son ombre comme portail. Parmi ses shikigami : les chiens Divine Dogs, Toad, Max Elephant, et le légendaire Mahoraga.",
+                source: "Gege Akutami — Jujutsu Kaisen, la Technique des Dix Ombres de Megumi."
+            },
+            {
+                id: 10,
+                question: "Comment s'appelle la fléau maudit capable de transformer la forme des humains ?",
+                options: ["Jogo", "Hanami", "Mahito", "Dagon"],
+                correct: 2,
+                explanation: "Mahito est un fléau maudit né de la haine et du dégoût des humains envers eux-mêmes. Sa technique innée Idle Transfiguration lui permet de manipuler et transformer l'âme des humains, modifiant leur corps de façon grotesque. Il est l'antagoniste principal du arc Mahito et l'un des ennemis les plus cruels de la série.",
+                source: "Gege Akutami — Jujutsu Kaisen, présentation de Mahito."
+            },
+            {
+                id: 101,
+                type: "vrai_faux",
+                question: "Gojo Satoru est le seul exorciste vivant à posséder les Six Yeux.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Les Six Yeux (Rikugan) sont une technique héréditaire rarissime de la Famille Gojo. Ils ne naissent que chez un seul individu à la fois dans toute la génération. Gojo est le premier en plus d'un siècle à les posséder. Ils lui permettent une perception absolue de l'énergie maudite et une maîtrise parfaite de l'Infini.",
+                source: "Gege Akutami — Jujutsu Kaisen, lore des Six Yeux de Gojo."
+            },
+            {
+                id: 102,
+                type: "vrai_faux",
+                question: "Yuji Itadori est le fils de Ryomen Sukuna.",
+                options: ["Vrai", "Faux"],
+                correct: 1,
+                explanation: "Faux ! Yuji n'est pas le fils de Sukuna — il est son réceptacle (vessel). Yuji est né de parents humains ordinaires, mais possède une physiologie exceptionnelle qui lui permet de contenir l'énergie de Sukuna sans être détruit. Son père biologique est Jin Itadori, et il a une origine mystérieuse liée à Kenjaku.",
+                source: "Gege Akutami — Jujutsu Kaisen, origines de Yuji Itadori."
+            },
+            {
+                id: 103,
+                type: "vrai_faux",
+                question: "Jujutsu Kaisen est d'abord sorti comme manga avant l'anime.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Le manga Jujutsu Kaisen de Gege Akutami a commencé à être publié dans le Weekly Shōnen Jump en mars 2018. L'adaptation animée par MAPPA est sortie en octobre 2020. Le préquel Jujutsu Kaisen 0 (film) est sorti en décembre 2021 au Japon et s'appuie sur le one-shot Tokyo Metropolitan Curse Technical School (2017).",
+                source: "Weekly Shōnen Jump — Jujutsu Kaisen manga depuis mars 2018, anime MAPPA depuis octobre 2020."
+            },
+            {
+                id: 11,
+                question: "Quel personnage est surnommé 'le plus fort' dans Jujutsu Kaisen ?",
+                options: ["Yuji Itadori", "Ryomen Sukuna", "Gojo Satoru", "Yuta Okkotsu"],
+                correct: 2,
+                explanation: "Gojo Satoru est officiellement reconnu comme 'le plus fort' (saikyo) parmi les exorcistes vivants. Sa combinaison des Six Yeux et de la technique innée Limitless / Infinity le rend quasiment invincible. L'organisation Jujutsu elle-même craint sa puissance autant qu'elle en dépend.",
+                source: "Gege Akutami — Jujutsu Kaisen, titre officieux de Gojo Satoru."
+            },
+            {
+                id: 12,
+                question: "Quelle est la technique héréditaire de la Famille Gojo ?",
+                options: ["Ten Shadows", "Projection Sorcery", "Limitless (Infinity / Mugen)", "Cursed Speech"],
+                correct: 2,
+                explanation: "La technique innée de la Famille Gojo est le Limitless (Mugen — l'Infini), qui manipule l'espace à l'échelle atomique. En combinaison avec les Six Yeux, elle permet à Gojo d'appliquer l'Infini en permanence — une barrière invisible qui repousse tout ce qui s'approche. Ses applications incluent Blue (attraction), Red (répulsion) et Hollow Purple.",
+                source: "Gege Akutami — Jujutsu Kaisen, technique innée de Gojo : Limitless."
+            },
+            {
+                id: 13,
+                question: "Comment s'appelle l'attaque combinée ultime de Gojo qui fusionne Blue et Red ?",
+                options: ["Black Flash", "Hollow Purple (Fushoku Murasaki)", "Divergent Fist", "Domain Amplification"],
+                correct: 1,
+                explanation: "Hollow Purple (Fushoku Murasaki — Mauve Creux) est la technique ultime de Gojo. Elle combine le Blue (attraction) et le Red (répulsion) pour créer une sphère d'annihilation absolue qui efface littéralement tout sur son passage. C'est une technique tellement destructrice que Gojo ne l'utilise qu'en dernier recours.",
+                source: "Gege Akutami — Jujutsu Kaisen, Hollow Purple de Gojo Satoru."
+            },
+            {
+                id: 14,
+                question: "Qui est le professeur de classe de Yuji, Megumi et Nobara ?",
+                options: ["Nanami Kento", "Gojo Satoru", "Utahime Iori", "Ijichi Kiyotaka"],
+                correct: 1,
+                explanation: "Gojo Satoru est officiellement le professeur du Groupe 1 du Lycée de Tokyo, dont font partie Yuji, Megumi et Nobara. Bien qu'il soit souvent absent ou peu conventionnel dans ses méthodes pédagogiques, c'est lui qui a personnellement recruté Yuji et guide leur développement en tant qu'exorcistes.",
+                source: "Gege Akutami — Jujutsu Kaisen, Gojo comme professeur du groupe 1."
+            },
+            {
+                id: 15,
+                question: "Quelle technique permet d'infliger des dégâts non-linéaires en synchronisant l'énergie maudite avec une frappe physique ?",
+                options: ["Renforcement du Corps", "Black Flash (Kokusen)", "Divergent Fist", "Straw Doll"],
+                correct: 1,
+                explanation: "Black Flash (Kokusen — Éclair Noir) est une technique avancée qui se produit quand l'énergie maudite est appliquée dans les 0,000001 secondes suivant un impact physique. Cela crée une distorsion de l'espace et amplifie les dégâts de façon exponentielle. Yuji, Nanami et Todo l'ont tous réalisé, mais c'est très rare.",
+                source: "Gege Akutami — Jujutsu Kaisen, explication du Black Flash."
+            },
+            {
+                id: 16,
+                question: "Quel est le vrai nom de Suguru Geto dans sa forme possédée ?",
+                options: ["Pseudo-Geto / Kenjaku", "Uraume", "Choso", "Naoya Zen'in"],
+                correct: 0,
+                explanation: "Le corps de Suguru Geto est possédé par un sorcier antique appelé Kenjaku (ou Pseudo-Geto). Kenjaku est capable de transplanter son cerveau dans le corps d'autres personnes, leur permettant de garder leur apparence. Il est le vrai antagoniste de fond de la série, manipulant les événements depuis des siècles.",
+                source: "Gege Akutami — Jujutsu Kaisen, révélation de Kenjaku / Pseudo-Geto."
+            },
+            {
+                id: 17,
+                question: "Dans quel arc majeur Gojo Satoru est-il scellé dans la Prison Realm ?",
+                options: ["L'arc Mahito", "L'arc Événement de Shibuya", "L'arc Jeux de Sélection", "L'arc École de Kyoto"],
+                correct: 1,
+                explanation: "L'Événement de Shibuya est l'arc le plus dévastateur de la série, durant lequel Gojo Satoru est piégé et scellé dans la Prison Realm (Gokumonkyō) par Kenjaku / Pseudo-Geto. Cet événement marque le tournant de la série — sans Gojo, les exorcistes sont en grande difficulté face aux fléaux.",
+                source: "Gege Akutami — Jujutsu Kaisen, arc Événement de Shibuya."
+            },
+            {
+                id: 18,
+                question: "Quelle est la technique unique d'Aoi Todo ?",
+                options: ["Boogie Woogie (échange de positions)", "Granite Blast", "Cursed Speech", "Body Repel"],
+                correct: 0,
+                explanation: "Boogie Woogie est la technique innée d'Aoi Todo : en claquant des mains, il peut instantanément échanger la position de deux objets ou personnes dans un rayon donné (à condition qu'il ait canalisé son énergie maudite). Combinée avec les capacités physiques de Yuji, elle permet des attaques combinées déroutantes pour l'ennemi.",
+                source: "Gege Akutami — Jujutsu Kaisen, technique Boogie Woogie de Todo Aoi."
+            },
+            {
+                id: 19,
+                question: "Quel personnage possède la technique 'Cursed Speech' (Parole Maudite) ?",
+                options: ["Toge Inumaki", "Noritoshi Kamo", "Panda", "Maki Zen'in"],
+                correct: 0,
+                explanation: "Toge Inumaki possède la Parole Maudite (Cursed Speech / Jujutsu Gengo), une technique héréditaire de la Famille Inumaki. Tout ce qu'il dit avec de l'énergie maudite devient une commande que le corps de la cible doit obéir. Pour éviter d'affecter les alliés, il ne communique qu'avec des noms d'ingrédients d'onigiri.",
+                source: "Gege Akutami — Jujutsu Kaisen, Toge Inumaki et la Parole Maudite."
+            },
+            {
+                id: 20,
+                question: "Quel grade d'exorciste est Nanami Kento ?",
+                options: ["Grade 2", "Semi Grade 1", "Grade 1", "Grade Spécial"],
+                correct: 2,
+                explanation: "Nanami Kento est un exorciste de Grade 1, l'un des niveaux les plus élevés après le Grade Spécial. Ancien salaryman reconverti en exorciste, il est connu pour son sérieux, sa méthode et son refus de faire des heures supplémentaires. Sa technique Ratio (Jūshichijō Tansa Jutsu) frappe le point faible de n'importe quel objet.",
+                source: "Gege Akutami — Jujutsu Kaisen, Nanami Kento Grade 1."
+            },
+            {
+                id: 21,
+                question: "Qu'est-ce que l'Expansion de Domaine (Domain Expansion) ?",
+                options: ["Une attaque physique surpuissante", "Une barrière qui crée un espace fermé amplifiant la technique innée", "Une technique de soin collectif", "Un portail vers le monde des fléaux"],
+                correct: 1,
+                explanation: "L'Expansion de Domaine (Ryōiki Tenkai) est la technique la plus avancée du Jujutsu. Elle crée un espace fermé (barrière + espace) entièrement contrôlé par l'utilisateur, dans lequel sa technique innée touche automatiquement la cible. Dans un duel entre deux utilisateurs de Domaine, le Domaine le plus raffiné annule l'autre.",
+                source: "Gege Akutami — Jujutsu Kaisen, explication des Expansions de Domaine."
+            },
+            {
+                id: 22,
+                question: "Comment se nomme le fléau maudit en forme de volcan qui peut utiliser le feu ?",
+                options: ["Hanami", "Dagon", "Jogo", "Eso"],
+                correct: 2,
+                explanation: "Jogo est un fléau maudit de Grade Spécial doté d'une tête en forme de volcan. Il maîtrise les techniques liées au feu et à la lave. Il est associé à Kenjaku dans leur plan de 'l'évolution de l'humanité maudite'. Malgré sa puissance considérable, il est défait humiliant par Gojo qui joue avec lui comme avec un enfant.",
+                source: "Gege Akutami — Jujutsu Kaisen, présentation de Jogo, fléau Grade Spécial."
+            },
+            {
+                id: 23,
+                question: "Quelle est la relation entre Yuji Itadori et Choso ?",
+                options: ["Choso est son oncle", "Ils sont frères par le sang maudit de Kenjaku", "Choso est son rival", "Ils n'ont aucun lien"],
+                correct: 1,
+                explanation: "Choso est un Peinture de Mort (Death Painting Womb), né du sang d'une femme humaine fécondée par Kenjaku. Or Kenjaku a aussi manipulé la naissance de Yuji. Cela fait techniquement de Choso et Yuji des 'frères' partageant le même 'père' sorcier. Choso finit par rejoindre Yuji après avoir réalisé ce lien.",
+                source: "Gege Akutami — Jujutsu Kaisen, révélation du lien Choso-Yuji."
+            },
+            {
+                id: 24,
+                question: "Quelle école rivale affronte le Lycée de Tokyo lors du tournoi inter-lycées ?",
+                options: ["L'École d'Osaka", "L'École de Kyoto", "L'Académie d'Hiroshima", "L'Institut de Nagoya"],
+                correct: 1,
+                explanation: "Le Lycée Métropolitain de Jujutsu de Kyoto (Kyoto Jujutsu High) est l'école rivale de Tokyo. Chaque année, les deux lycées s'affrontent lors d'une compétition officielle. Les élèves de Kyoto incluent Aoi Todo, Mechamaru (Kokichi Muta), Noritoshi Kamo, Mai Zen'in et Kasumi Miwa.",
+                source: "Gege Akutami — Jujutsu Kaisen, arc Tournoi Inter-Lycées."
+            },
+            {
+                id: 25,
+                question: "Comment s'appelle le film préquel de Jujutsu Kaisen sorti en 2021 ?",
+                options: ["Jujutsu Kaisen : Origines", "Jujutsu Kaisen 0", "Tokyo Jujutsu High", "Yuta : Le Début"],
+                correct: 1,
+                explanation: "Jujutsu Kaisen 0 est un film d'animation sorti en décembre 2021 au Japon, centré sur Yuta Okkotsu — un exorciste de Grade Spécial lié à l'esprit de sa défunte amie Rika. C'est l'adaptation du one-shot de Gege Akutami publié avant le manga principal. Il présente notamment un jeune Gojo et Geto avant leur séparation.",
+                source: "MAPPA — Jujutsu Kaisen 0 (2021), préquel du manga Jujutsu Kaisen."
+            },
+            {
+                id: 26,
+                question: "Quel personnage dit souvent 'Quel genre de musique écoute ta meuf ?' pour se faire des amis ?",
+                options: ["Yuji Itadori", "Aoi Todo", "Panda", "Megumi Fushiguro"],
+                correct: 1,
+                explanation: "Aoi Todo est connu pour sa façon originale de juger les gens : il pose la question 'Quel genre de femme tu aimes ?' (ou de musique selon la version) — et si la réponse lui plaît, il considère la personne comme son 'meilleur ami'. C'est ainsi qu'il décide spontanément que Yuji est son frère d'armes.",
+                source: "Gege Akutami — Jujutsu Kaisen, trait de caractère d'Aoi Todo."
+            },
+            {
+                id: 27,
+                question: "Quelle est la particularité physique visible de Ryomen Sukuna quand il prend le contrôle de Yuji ?",
+                options: ["Ses yeux deviennent rouges", "Des tatouages noirs apparaissent et des yeux supplémentaires s'ouvrent", "Ses cheveux deviennent blancs", "Son corps triple de taille"],
+                correct: 1,
+                explanation: "Quand Sukuna prend le contrôle du corps de Yuji, des tatouages noirs caractéristiques apparaissent sur son visage et son corps — rappelant les marquages de Sukuna en tant qu'entité à 4 bras. Un second jeu d'yeux s'ouvre également sous les premiers. Ces changements physiques sont immédiatement reconnaissables.",
+                source: "Gege Akutami — Jujutsu Kaisen, manifestation visuelle de Sukuna dans Yuji."
+            },
+            {
+                id: 28,
+                question: "Quelle organisation gouverne officiellement le monde du Jujutsu au Japon ?",
+                options: ["Le Conseil des Anciens Jujutsu", "L'Association des Exorcistes", "Le Haut Conseil d'Arts Occultes", "Jujutsu Headquarters (Tokyo)"],
+                correct: 0,
+                explanation: "Le Haut Conseil (Jujutsu Headquarters), dirigé par les trois familles nobles (Zen'in, Gojo, Kamo) et supervisé par des Grands Anciens, gouverne le monde du Jujutsu japonais. C'est une organisation profondément conservatrice et corrompue qui utilise les exorcistes comme outils et méprise ceux sans technique innée.",
+                source: "Gege Akutami — Jujutsu Kaisen, structure du monde du Jujutsu."
+            },
+            {
+                id: 29,
+                question: "Quelle est l'arme de prédilection de Maki Zen'in ?",
+                options: ["Un katana maudit", "Ses poings", "Des armes maudites (spears, naginata...)", "Un arc maudit"],
+                correct: 2,
+                explanation: "Maki Zen'in, née sans énergie maudite, compense ce handicap par une maîtrise exceptionnelle des armes maudites (outils imbibés d'énergie maudite). Elle manie diverses armes — naginata, lance, bâton — avec une précision et une force surhumaines. Son absence d'énergie la rend aussi imperceptible aux fléaux.",
+                source: "Gege Akutami — Jujutsu Kaisen, Maki Zen'in et son rapport aux armes maudites."
+            },
+            {
+                id: 30,
+                question: "Qui est le mangaka (auteur) de Jujutsu Kaisen ?",
+                options: ["Tite Kubo", "Hajime Isayama", "Gege Akutami", "Koyoharu Gotouge"],
+                correct: 2,
+                explanation: "Jujutsu Kaisen est créé par Gege Akutami (pseudonyme), publié dans le Weekly Shōnen Jump depuis mars 2018. Akutami est connu pour sa narration impitoyable — il n'hésite pas à tuer des personnages importants. Le manga a vendu plus de 80 millions d'exemplaires dans le monde en 2023.",
+                source: "Weekly Shōnen Jump — Jujutsu Kaisen par Gege Akutami (2018-présent)."
+            }
+        ],
+        moyen: [
+            {
+                id: 11,
+                question: "Quelle est la technique innée de Ryomen Sukuna révélée dans la saga ?",
+                options: ["Dismantle & Cleave (Découper & Trancher)", "Malevolent Shrine (Sanctuaire Maléfique)", "Les deux sont ses techniques", "Fire Arrow"],
+                correct: 2,
+                explanation: "Sukuna possède deux techniques tranchantes : Dismantle (Kaiho — découpe non ciblée) et Cleave (Saisoku — découpe adaptée à la durabilité de la cible). Son Expansion de Domaine est le Malevolent Shrine (Juku Shinzen — Sanctuaire Maléfique), unique en son genre car il ne crée pas de barrière close — il amplifie ses techniques sur une zone extérieure.",
+                source: "Gege Akutami — Jujutsu Kaisen, techniques de Sukuna révélées progressivement."
+            },
+            {
+                id: 12,
+                question: "Comment Geto Suguru est-il mort avant que Kenjaku prenne son corps ?",
+                options: ["Tué par un fléau Grade Spécial", "Tué par Gojo Satoru", "Tué par Yuta Okkotsu", "Mort d'une maladie maudite"],
+                correct: 2,
+                explanation: "Suguru Geto, après avoir massacré 112 civils et être devenu un exorciste renégat, est finalement tué par Yuta Okkotsu à la fin de Jujutsu Kaisen 0. C'est après sa mort que Kenjaku transplante son cerveau dans le corps de Geto, prenant son apparence tout en conservant sa capacité à absorber les fléaux.",
+                source: "Gege Akutami — Jujutsu Kaisen 0 (2017), mort de Geto par Yuta."
+            },
+            {
+                id: 13,
+                question: "Quelle est la technique de Ratio de Nanami Kento ?",
+                options: ["Il frappe toujours le même point vital", "Il divise mentalement sa cible en 10 parties et frappe le point 7/10", "Il calcule le ratio force/faiblesse en temps réel", "Il double la puissance de chaque frappe paire"],
+                correct: 1,
+                explanation: "La Ratio Technique (Jūshichijō Tansa Jutsu) de Nanami divise mentalement n'importe quel objet en 10 parties égales. Le point entre les 7/10 et les 3/10 est toujours un point de rupture — une faiblesse structurelle. En frappant ce point précis avec de l'énergie maudite, il peut infliger des dégâts à pratiquement n'importe quoi.",
+                source: "Gege Akutami — Jujutsu Kaisen, Ratio Technique de Nanami expliquée."
+            },
+            {
+                id: 14,
+                question: "Qu'est-ce que la Prison Realm (Gokumonkyō) qui scelle Gojo ?",
+                options: ["Une arme fabriquée par les Zen'in", "Un objet maudit de Grade Spécial qui scelle tout ce qu'il englobe", "Le domaine d'expansion d'un fléau antique", "Une barrière créée par Kenjaku"],
+                correct: 1,
+                explanation: "La Prison Realm est un objet maudit de Grade Spécial — un cube vivant qui peut sceller n'importe qui dans un espace-temps figé à l'intérieur. Pour activer le scellement, la cible doit rester à portée pendant 4 secondes. Kenjaku utilise Geto comme appât pour distraire Gojo le temps nécessaire.",
+                source: "Gege Akutami — Jujutsu Kaisen, arc Shibuya, la Prison Realm."
+            },
+            {
+                id: 15,
+                question: "Qui est Panda dans Jujutsu Kaisen ?",
+                options: ["Un panda apprivoisé mascotte de l'école", "Un exorciste humain en costume", "Un Panda Évolué — un Cursed Corpse autonome et conscient", "Un shikigami de Megumi"],
+                correct: 2,
+                explanation: "Panda est un Cursed Corpse (cadavre maudit) créé par le principal Masamichi Yaga. C'est un panda qui peut parler, raisonner et se battre. Il a trois 'noyaux' internes lui donnant différents modes de combat. Malgré son apparence, il est officiellement un exorciste à part entière du Lycée de Tokyo.",
+                source: "Gege Akutami — Jujutsu Kaisen, présentation de Panda et des Cursed Corpses."
+            },
+            {
+                id: 16,
+                question: "Comment s'appelle la famille noble à laquelle appartient Megumi Fushiguro ?",
+                options: ["Famille Gojo", "Famille Kamo", "Famille Zen'in", "Famille Fushiguro (adoptée Zen'in)"],
+                correct: 2,
+                explanation: "Megumi est techniquement un Zen'in par le sang de son père Toji Fushiguro (né Zen'in). La Famille Zen'in est l'une des trois grandes familles nobles du Jujutsu japonais, connue pour son élitisme brutal et sa culture misogyne. Toji avait quitté la famille et changé son nom. Megumi refuse d'être reconnu comme Zen'in.",
+                source: "Gege Akutami — Jujutsu Kaisen, arc Zen'in, héritage de Megumi."
+            },
+            {
+                id: 17,
+                question: "Quelle est la technique Reversed Cursed Technique (Technique Maudite Inversée) ?",
+                options: ["Une attaque qui inverse les dégâts vers l'attaquant", "L'utilisation d'énergie maudite positive pour soigner", "Une technique qui inverse les effets d'un domaine", "Une contre-attaque automatique"],
+                correct: 1,
+                explanation: "La Reversed Cursed Technique (Hanten Jujutsu) multiplie l'énergie maudite négative par elle-même pour produire une énergie positive capable de soigner les blessures. C'est extrêmement difficile — seuls des exorcistes de haut niveau comme Gojo, Shoko Ieiri (la médecin de l'école) ou Sukuna peuvent l'utiliser.",
+                source: "Gege Akutami — Jujutsu Kaisen, explication de la Reversed Cursed Technique."
+            },
+            {
+                id: 18,
+                question: "Qui est le père biologique de Megumi Fushiguro ?",
+                options: ["Suguru Geto", "Naoya Zen'in", "Toji Fushiguro", "Kenjaku"],
+                correct: 2,
+                explanation: "Toji Fushiguro (né Zen'in) est le père de Megumi. Surnommé le 'Chasseur de Sorciers' (Sorcerer Killer), il est l'un des humains les plus redoutables du monde Jujutsu malgré une absence totale d'énergie maudite — compensée par une force physique absolue et une perception sensorielle surnaturelle. Il a vendu Megumi aux Zen'in avant sa mort.",
+                source: "Gege Akutami — Jujutsu Kaisen, révélation sur Toji Fushiguro, père de Megumi."
+            },
+            {
+                id: 19,
+                question: "Comment s'appelle le shikigami le plus puissant de Megumi, considéré comme invincible ?",
+                options: ["Divine Dog : Totality", "Great Serpent", "Mahoraga (Eight-Handled Sword Divergent Sila Divine General Mahoraga)", "Max Elephant"],
+                correct: 2,
+                explanation: "Mahoraga (Hachi-Handled Sword Divergent Sila Divine General Mahoraga) est le shikigami ultime de la Technique des Dix Ombres. Aucun utilisateur de la technique dans l'histoire n'a jamais réussi à le dompter. Megumi l'invoque comme ultime recours en sachant qu'il attaquera tout le monde sans distinction — y compris lui-même.",
+                source: "Gege Akutami — Jujutsu Kaisen, Mahoraga, le shikigami indomptable."
+            },
+            {
+                id: 20,
+                question: "Que fait exactement Mahito avec sa technique Idle Transfiguration ?",
+                options: ["Il transforme les objets en armes", "Il manipule les âmes pour modifier les corps physiques des humains", "Il copie les techniques des autres", "Il crée des illusions"],
+                correct: 1,
+                explanation: "Idle Transfiguration (Jiyū Jizai no Henge) permet à Mahito de manipuler directement l'âme (et donc le corps) des humains en les touchant. Il peut les déformer, les fusionner, les transformer en soldats grotesques ou les tuer instantanément. Cette technique est considérée comme l'une des plus terrifiantes car elle touche l'essence même de l'être.",
+                source: "Gege Akutami — Jujutsu Kaisen, Idle Transfiguration de Mahito."
+            },
+            {
+                id: 201,
+                type: "vrai_faux",
+                question: "Toge Inumaki ne parle presque jamais normalement pour éviter de blesser ses alliés avec sa Parole Maudite.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Toge Inumaki évite de parler normalement car sa Parole Maudite est active dès qu'il parle avec de l'énergie maudite. Pour communiquer sans risque, il utilise exclusivement des noms d'ingrédients d'onigiri (saumon, roe, tuna mayo...) comme substituts aux mots courants. Ses alliés ont appris à décoder ce langage unique.",
+                source: "Gege Akutami — Jujutsu Kaisen, trait de caractère de Toge Inumaki."
+            },
+            {
+                id: 202,
+                type: "vrai_faux",
+                question: "Jujutsu Kaisen est animé par le studio Ufotable.",
+                options: ["Vrai", "Faux"],
+                correct: 1,
+                explanation: "Faux ! L'anime Jujutsu Kaisen est produit par le studio MAPPA (connu aussi pour L'Attaque des Titans saison finale, Chainsaw Man). Le studio Ufotable est célèbre pour Demon Slayer et Fate/stay night. MAPPA est réputé pour ses animations de combat très fluides et dynamiques dans JJK.",
+                source: "MAPPA Co., Ltd. — Jujutsu Kaisen anime (2020), production officielle."
+            },
+            {
+                id: 203,
+                type: "vrai_faux",
+                question: "Il existe un règlement qui autorise les exorcistes à exécuter Yuji Itadori car il est le réceptacle de Sukuna.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Dès le début du manga, la décision officielle du Haut Conseil est qu'Yuji doit être exécuté après avoir avalé tous les doigts de Sukuna — permettant d'éliminer les deux en une fois. Gojo négocie un sursis en proposant d'utiliser Yuji pour collecter les doigts restants. Cette sentence pèse sur toute la série.",
+                source: "Gege Akutami — Jujutsu Kaisen Chapitre 3, décision du Haut Conseil sur Yuji."
+            },
+            {
+                id: 21,
+                question: "Que se passe-t-il lors de l'activation d'un Domaine de Domaine (Domain vs Domain) ?",
+                options: ["Les deux utilisateurs meurent", "Le Domaine le plus raffiné techniquement s'impose et l'autre s'annule", "Les deux Domaines se fusionnent", "Le premier activé gagne toujours"],
+                correct: 1,
+                explanation: "Dans un clash de Domaines (Domain vs Domain), les deux barrières entrent en compétition. Le Domaine ayant la technique la plus raffinée (meilleure précision, meilleure formule de barrière) annule celui de l'adversaire. C'est un test de maîtrise technique pure. Une technique appelée Domain Amplification peut neutraliser un Domaine sans en créer un.",
+                source: "Gege Akutami — Jujutsu Kaisen, règles des clashes de Domaines."
+            },
+            {
+                id: 22,
+                question: "Quel exorciste de Grade 1 est connu pour son refus catégorique des heures supplémentaires ?",
+                options: ["Ijichi Kiyotaka", "Nanami Kento", "Noritoshi Kamo", "Kiyotaka Ijichi"],
+                correct: 1,
+                explanation: "Nanami Kento est célèbre pour son code de travail strict : il refuse de travailler au-delà de ses heures contractuelles — quitte à arrêter un combat en plein milieu. Cette règle personnelle est une façon pour lui de maintenir une limite entre sa vie professionnelle et sa sanité mentale dans un métier particulièrement éprouvant.",
+                source: "Gege Akutami — Jujutsu Kaisen, trait de caractère de Nanami Kento."
+            },
+            {
+                id: 23,
+                question: "Qu'est-ce que le Jeux de Sélection (Culling Game) initié par Kenjaku ?",
+                options: ["Un tournoi officiel entre exorcistes", "Un jeu de massacre forcé visant à concentrer l'énergie maudite au Japon", "Une compétition pour devenir Grade Spécial", "Un rituel d'initiation pour les nouveaux exorcistes"],
+                correct: 1,
+                explanation: "Le Culling Game (Jeux de Sélection) est un massacre orchestré par Kenjaku qui réveille des sorciers dormants dans des corps normaux au Japon, les obligeant à s'entre-tuer sous peine de mort automatique. L'objectif est de concentrer une quantité massive d'énergie maudite pour un rituel visant à fusionner Tengen avec l'humanité.",
+                source: "Gege Akutami — Jujutsu Kaisen, arc Culling Game, plan de Kenjaku."
+            },
+            {
+                id: 24,
+                question: "Comment Yuta Okkotsu obtient-il son énergie maudite dans JJK 0 ?",
+                options: ["Il est né avec une grande énergie maudite naturelle", "Il est lié à Rika, l'esprit d'une amie décédée transformée en Queen of Curses", "Il a été expérimenté par Kenjaku", "Il a absorbé les doigts de Sukuna"],
+                correct: 1,
+                explanation: "Yuta Okkotsu est lié par une malédiction à Rika Orimoto, son amie d'enfance décédée qui s'est transformée en Queen of Curses (Reine des Fléaux) par sa profonde affection pour lui. Rika est une entité maudite de Grade Spécial d'une puissance dévastatrice. Gojo compare Yuta à Sukuna en termes de potentiel brut.",
+                source: "Gege Akutami — Jujutsu Kaisen 0, origine des pouvoirs de Yuta Okkotsu."
+            },
+            {
+                id: 25,
+                question: "Quelle est la Technique de Projection de Sorcellerie (Projection Sorcery) de Naobito Zen'in ?",
+                options: ["Projeter ses frappes à distance", "Créer des animations-frames et forcer les ennemis à s'y conformer", "Téléprojection d'énergie maudite", "Illusions cinématiques"],
+                correct: 1,
+                explanation: "La Projection Sorcery de Naobito Zen'in fonctionne comme une animation : il découpe chaque seconde en 24 frames et dépose une 'animation' sur sa cible. Tout ce qui ne respecte pas le chemin prévu dans l'animation est figé pendant une seconde. C'est pourquoi sa vitesse est comparée à celle de Gojo.",
+                source: "Gege Akutami — Jujutsu Kaisen, technique de Naobito Zen'in expliquée."
+            }
+        ],
+        difficile: [
+            {
+                id: 31,
+                question: "Quel est le vrai nom de la technique de Gojo qui combine Blue et Red ?",
+                options: ["Murasaki (Purple)", "Fushoku Murasaki (Hollow Purple)", "Convergence Maximale", "Tenkai Mugen"],
+                correct: 1,
+                explanation: "Hollow Purple (Fushoku Murasaki — Mauve Creux ou Violet Creux) est le nom officiel de l'attaque ultime de Gojo. 'Fushoku' signifie 'Void/Empty' et 'Murasaki' signifie 'Violet'. La technique fusionne Blue (attraction) et Red (répulsion), créant une sphère imaginaire qui efface tout sur son passage en annihilant la matière.",
+                source: "Gege Akutami — Jujutsu Kaisen, terminologie officielle Hollow Purple de Gojo."
+            },
+            {
+                id: 32,
+                question: "Quelle est la signification du terme 'Jujutsu' dans le contexte du manga ?",
+                options: ["Arts martiaux du vide", "Technique occulte utilisant l'énergie maudite pour combattre les fléaux", "Exorcisme par la prière", "Science de l'ombre"],
+                correct: 1,
+                explanation: "Dans Jujutsu Kaisen, 'Jujutsu' (術 = technique, 呪 = malédiction/occulte) désigne l'ensemble des techniques utilisant l'énergie maudite (Juju) pour combattre, se protéger ou attaquer. Un exorciste est un 'Jujutsushi' (practicien de Jujutsu). Le titre complet signifie littéralement 'Bataille des Techniques Occultes'.",
+                source: "Gege Akutami — étymologie du titre Jujutsu Kaisen (呪術廻戦)."
+            },
+            {
+                id: 33,
+                question: "Comment s'appelle la technique qui permet de condenser l'énergie maudite dans un point puis de la libérer en une frappe non-ciblée universelle ?",
+                options: ["Maximum Uzumaki", "Divergent Fist", "Black Flash Convergence", "Cursed Energy Manifestation"],
+                correct: 0,
+                explanation: "Maximum Uzumaki (Maximum : Whirlpool) est la technique de Geto qui condense tous les fléaux absorbés en une seule boule d'énergie massive libérée en un seul coup. C'est l'attaque ultime de sa technique d'absorption Cursed Spirit Manipulation. Elle utilise l'énergie de centaines de fléaux simultanément.",
+                source: "Gege Akutami — Jujutsu Kaisen, Maximum Uzumaki de Geto/Kenjaku."
+            },
+            {
+                id: 34,
+                question: "Qu'est-ce qui rend le Malevolent Shrine de Sukuna unique parmi toutes les Expansions de Domaine ?",
+                options: ["Il tue tout en quelques secondes", "Il n'a pas de barrière close — il s'applique dans l'espace réel sur plusieurs centaines de mètres", "Il copie le Domaine de l'adversaire", "Il peut être activé sans énergie maudite"],
+                correct: 1,
+                explanation: "Le Malevolent Shrine (Juku Shinzen — Sanctuaire Maléfique) est le seul Domaine sans barrière externe. Au lieu d'enfermer la cible dans un espace séparé, il raffinements ses techniques de découpe (Dismantle & Cleave) dans l'espace réel sur un rayon de 200 mètres. Cette 'ouverture' compense le manque de barrière et rend l'attaque encore plus dévastatrice.",
+                source: "Gege Akutami — Jujutsu Kaisen, explication unique du Malevolent Shrine de Sukuna."
+            },
+            {
+                id: 35,
+                question: "Quelle est l'origine exacte de l'énergie maudite selon le lore de Jujutsu Kaisen ?",
+                options: ["Elle vient de rituels antiques", "Elle naît des émotions négatives humaines", "Elle est générée par les étoiles", "Elle provient d'un autre monde"],
+                correct: 1,
+                explanation: "L'énergie maudite (Juju) est générée naturellement par les émotions négatives humaines : peur, haine, regret, tristesse. Tout être humain en produit, mais seuls ceux qui peuvent la maîtriser consciemment deviennent exorcistes. Les fléaux naissent eux-mêmes de ces émotions négatives concentrées dans certains lieux.",
+                source: "Gege Akutami — Jujutsu Kaisen, fondements du système de magie (énergie maudite)."
+            },
+            {
+                id: 36,
+                question: "Qu'est-ce que 'Tengen' dans Jujutsu Kaisen ?",
+                options: ["Le chef du Haut Conseil", "Une entité immortelle dont la technique d'éternité maintient les barrières protégeant le Japon", "Un ancien Roi des Fléaux", "Le créateur de l'Expansion de Domaine"],
+                correct: 1,
+                explanation: "Tengen est un sorcier ayant activé sa technique Infinity il y a plus de 1000 ans, devenant immortel mais en perdant progressivement son humanité. Il maintient les barrières protégeant les lieux sacrés du Japon. Tous les 500 ans, il doit fusionner avec un 'Étoile Compatriote' pour réinitialiser son évolution — sinon il devient une menace.",
+                source: "Gege Akutami — Jujutsu Kaisen, révélations sur Tengen, gardien immortel."
+            },
+            {
+                id: 37,
+                question: "Quelle est la règle numéro 1 du Culling Game établie par Kenjaku ?",
+                options: ["Les participants doivent s'enregistrer avant de tuer", "Tout participant tué par un joueur lui donne ses points", "Les non-participants peuvent être tués sans conséquence", "Un participant qui n'a pas tué dans les 19 jours est exécuté"],
+                correct: 3,
+                explanation: "La Règle 2 du Culling Game stipule qu'un participant qui n'a pas marqué au moins 1 point (1 kill) dans les 19 premiers jours est condamné à mort par la barrière elle-même (son cerveau explose). Cela force tout le monde à s'entre-tuer. La Règle 1 est qu'un participant peut proposer de nouvelles règles avec 100 points.",
+                source: "Gege Akutami — Jujutsu Kaisen, règles officielles du Culling Game."
+            },
+            {
+                id: 38,
+                question: "Quel est l'état 'Heian-era Sukuna' et pourquoi est-il différent du Sukuna dans Yuji ?",
+                options: ["C'est une version plus faible", "C'est la forme originale à 4 bras avec sa puissance complète, avant l'époque moderne", "C'est un clone de Sukuna", "C'est le Sukuna après avoir perdu ses doigts"],
+                correct: 1,
+                explanation: "Le Sukuna de l'Ère Heian est sa forme originale : un être à 4 bras et 4 yeux, à sa pleine puissance. Dans Yuji, il est fragmenté à hauteur des doigts avalés. Quand Sukuna prend un nouveau réceptacle avec tous ses doigts (Megumi dans le manga récent), il retrouve une puissance proche de son état originel — ce qui fait de lui une menace existentielle.",
+                source: "Gege Akutami — Jujutsu Kaisen, lore du Sukuna historique vs fragmenté."
+            },
+            {
+                id: 39,
+                question: "Quelle technique Yuta Okkotsu développe-t-il comme ability principale après JJK 0 ?",
+                options: ["Amplification de force brute", "Copie (Copy) — imiter n'importe quelle technique innée après l'avoir vue", "Contrôle des fantômes", "Amplification de la Parole Maudite"],
+                correct: 1,
+                explanation: "Yuta Okkotsu développe la technique Copy (Fukusha), qui lui permet de copier n'importe quelle technique innée après l'avoir observée, grâce à l'immense réservoir d'énergie maudite de feu-Rika qu'il a internalisée. Il peut ensuite utiliser ces techniques copiées en les alimentant avec son énergie, bien qu'à un niveau légèrement inférieur à l'original.",
+                source: "Gege Akutami — Jujutsu Kaisen, technique Copy de Yuta Okkotsu dans l'arc post-Shibuya."
+            },
+            {
+                id: 40,
+                question: "Pourquoi Kokichi Muta (Mechamaru) est-il confiné dans un corps mecanique malgré son grade d'exorciste ?",
+                options: ["Il a été puni par le Haut Conseil", "Sa technique est si puissante qu'elle a consumé son corps biologique", "Il est né avec un corps extrêmement fragile en échange d'une grande énergie maudite (Heavenly Restriction)", "Il a subi une expérimentation de Kenjaku"],
+                correct: 2,
+                explanation: "Kokichi Muta est né avec une Heavenly Restriction (Restriction Céleste) : son corps est extrêmement fragile et sensible (certaines parties absentes) en échange d'une réserve quasi illimitée d'énergie maudite. C'est le principe d'équilibre : moins de corps = plus de pouvoir. Il contrôle des robots Mechamaru à distance pour combattre.",
+                source: "Gege Akutami — Jujutsu Kaisen, explication de la Heavenly Restriction de Kokichi Muta."
+            },
+            {
+                id: 301,
+                type: "vrai_faux",
+                question: "Dans Jujutsu Kaisen, les fléaux maudits ne peuvent être détruits que par l'énergie maudite — les armes normales sont inefficaces.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Les fléaux maudits sont des entités composées d'énergie maudite pure. Les armes physiques normales ne peuvent pas les blesser durablement. Seule l'énergie maudite appliquée à une frappe physique ou une technique innée peut les endommager ou les détruire. C'est pour ça que seuls les exorcistes (maîtrisant l'énergie maudite) peuvent les combattre.",
+                source: "Gege Akutami — Jujutsu Kaisen, règles fondamentales du système de combat."
+            },
+            {
+                id: 302,
+                type: "vrai_faux",
+                question: "Le manga Jujutsu Kaisen a dépassé les 80 millions d'exemplaires vendus dans le monde.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! En 2023, Jujutsu Kaisen a franchi la barre des 80 millions d'exemplaires vendus worldwide, en faisant l'un des mangas les plus vendus de la décennie. Ce succès est amplifié par l'anime MAPPA et le film JJK 0. Le manga figure régulièrement en tête des ventes hebdomadaires au Japon.",
+                source: "Shueisha — Jujutsu Kaisen : 80+ millions d'exemplaires vendus mondialement (2023)."
+            },
+            {
+                id: 303,
+                type: "vrai_faux",
+                question: "Satoru Gojo et Suguru Geto étaient amis et partenaires d'entraînement avant que Geto ne devienne un renégat.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Le passé de Gojo et Geto est exploré dans le manga (arc Hidden Inventory) et dans JJK 0. Ils étaient les deux élèves les plus forts de leur génération et meilleurs amis pendant leurs années de lycée. La rupture idéologique de Geto — qui décide que les 'moldus' sont inutiles — est l'une des déchirures les plus tragiques de la série.",
+                source: "Gege Akutami — Jujutsu Kaisen, arc Hidden Inventory / Premature Death, passé de Gojo et Geto."
+            }
+        ]
     }
 };
