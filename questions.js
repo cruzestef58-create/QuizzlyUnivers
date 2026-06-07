@@ -15,7 +15,7 @@ const quizzesData = {
             {
                 id: 2,
                 question: "Quel renforcement est le plus efficace pour l'apprentissage du chien ?",
-                options: ["Les punitions sévères appliquées immédiatement après le", "Les récompenses positives", "L'ignorance systématique du comportement", "La répétition intensive des exercices sur de longues sessions"],
+                options: ["Les punitions immédiates après le comportement", "Les récompenses positives", "L'ignorance systématique du comportement", "La répétition intensive des exercices sur de longues sessions"],
                 correct: 1,
                 explanation: "Les récompenses positives (friandises, jeux, caresses) stimulent les zones du plaisir du cerveau du chien et renforcent les comportements désirés. Les punitions créent de l'anxiété et peuvent causer des problèmes comportementaux à long terme.",
                 source: "Université du Québec - Le renforcement positif crée des apprentissages durables et renforce la relation humain-chien."
@@ -65,7 +65,7 @@ const quizzesData = {
             {
                 id: 7,
                 question: "Comment réagir quand un chien vous saute dessus pour vous saluer ?",
-                options: ["Le repousser doucement", "L'ignorer et détourner le regard", "Le caresser", "Le laisser faire"],
+                options: ["Le repousser doucement", "L'ignorer et détourner le rega", "Le caresser", "Le laisser faire"],
                 correct: 1,
                 explanation: "Quand un chien saute, même le repousser ou lui crier dessus est une forme d'attention qui l'encourage à recommencer. La bonne technique est de se détourner complètement, croiser les bras et ignorer totalement le chien jusqu'à ce qu'il ait les 4 pattes au sol, puis le récompenser immédiatement. La constance est clé : tout le monde dans le foyer doit faire pareil.",
                 source: "International Association of Animal Behavior Consultants - Ignorer le comportement indésirable décourage le chien de sauter."
@@ -121,7 +121,7 @@ const quizzesData = {
             {
                 id: 14,
                 question: "Quelle est la vision des couleurs chez le chien ?",
-                options: ["Vision trichromatique identique à l'humain avec perception du rouge", "Vision entièrement achromatique percevant uniquement des nuances de", "Pas de distinction rouge-vert", "Vision nocturne supérieure à l'humain mais identique aux chats avec"],
+                options: ["Vision trichromatique identique à l'humain avec perception du rouge", "Vision entièrement achromatique en niveaux de gris", "Pas de distinction rouge-vert", "Vision nocturne supérieure à l'humain mais identique aux chats avec"],
                 correct: 2,
                 explanation: "Les chiens ne voient pas le monde en noir et blanc comme on le croyait autrefois. Ils distinguent les couleurs, mais leur spectre est limité : ils voient bien le bleu et le jaune, mais confondent le rouge et le vert (qui leur apparaissent tous les deux jaunâtres). C'est similaire à une forme de daltonisme rouge-vert chez l'humain.",
                 source: "Université de Biologie Canine - Les chiens voient principalement en bleu et jaune."
@@ -306,7 +306,7 @@ const quizzesData = {
             {
                 id: 12,
                 question: "Comment réagir quand votre chien tire sur la laisse ?",
-                options: ["Tirer fortement en", "S'arrêter et attendre", "Utiliser une laisse", "Le punir"],
+                options: ["Tirer fortement en sens inverse", "S'arrêter et attendre", "Utiliser une laisse", "Le punir"],
                 correct: 1,
                 explanation: "Quand vous tirez en retour sur la laisse, le chien tire encore plus fort (c'est le réflexe d'opposition). La bonne technique : dès que la laisse se tend, on s'arrête complètement et on attend que le chien revienne vers vous. Puis on repart. Le chien comprend rapidement que tirer ralentit la balade, alors que marcher sans tirer la fait avancer.",
                 source: "International Association of Animal Behavior Consultants (IAABC) - Vous enseignez que tirer n'obtient pas ce qu'il veut."
@@ -383,7 +383,7 @@ const quizzesData = {
             {
                 id: 31,
                 question: "Quel est l'impact du sevrage précoce sur le développement comportemental ?",
-                options: ["Aucun impact", "Problèmes de socialisation et", "Amélioration de l'autonomie", "Renforce le lien avec la"],
+                options: ["Aucun impact", "Problèmes de socialisation et d’a", "Amélioration de l'autonomie", "Renforce le lien avec la mère"],
                 correct: 1,
                 explanation: "Un chiot séparé de sa mère et de sa portée avant 7 semaines rate une phase clé d'apprentissage social. C'est entre 5 et 7 semaines que les chiots apprennent les bases de la communication canine : comment jouer sans blesser, comment gérer la frustration, comment se soumettre. Sans ça, ils peuvent devenir anxieux, agressifs ou incapables de s'entendre avec d'autres chiens.",
                 source: "International Association of Animal Behavior Consultants - Le sevrage précoce peut causer du stress."
@@ -404,7 +404,7 @@ const quizzesData = {
             {
                 id: 33,
                 question: "Quel est le seuil de douleur généralement accepté chez les chiens ?",
-                options: ["Très bas", "Similaire aux", "Plus élevé que chez", "Inexistant"],
+                options: ["Très bas", "Similaire aux humains", "Plus élevé que chez", "Inexistant"],
                 correct: 2,
                 explanation: "Les chiens ont un seuil de douleur généralement plus élevé que les humains, ce qui est un héritage évolutif : un animal qui montre sa douleur en milieu naturel devient une cible. C'est pourquoi les chiens cachent souvent leurs blessures ou maladies jusqu'à un stade avancé. Il faut donc surveiller des signes subtils : boiterie légère, manque d'appétit, comportement plus calme qu'habituellement.",
                 source: "Centre Vétérinaire d'Anesthésiologie - Les chiens ont généralement un seuil de douleur plus élevé."
@@ -428,7 +428,7 @@ const quizzesData = {
             {
                 id: 36,
                 question: "Quel est le processus de 'counter-surfing' et comment le corriger ?",
-                options: ["Sauter sur les", "Sauter sur les", "Comportement normal", "Maladie"],
+                options: ["Sauter sur les plans de trav", "Sauter sur les plans de trav", "Comportement normal", "Maladie"],
                 correct: 1,
                 explanation: "Le counter-surfing, c'est quand le chien pose les pattes sur les plans de travail ou les tables pour voler de la nourriture. Ce comportement est renforcé par la réussite : dès qu'il a réussi une fois, il recommence. La solution : ne jamais laisser de nourriture à portée, rediriger vers un comportement incompatible (s'asseoir), et ne jamais laisser le chien seul dans une cuisine avec de la nourriture accessible pendant l'apprentissage.",
                 source: "Association Française de Comportement - L'ignorance décourage ce comportement."
@@ -465,7 +465,7 @@ const quizzesData = {
             {
                 id: 40,
                 question: "Quel est le processus appelé 'habituation' dans le contexte des bruits ?",
-                options: ["Peur accrue", "Réduction progressive de", "Ignorance du bruit", "Sensibilité augmentée"],
+                options: ["Peur accrue", "Réduction progressive de la ré", "Ignorance du bruit", "Sensibilité augmentée"],
                 correct: 1,
                 explanation: "L'habituation, c'est le processus par lequel le cerveau apprend à ignorer un stimulus répété sans conséquences. Par exemple, un chien qui sursaute aux feux d'artifice peut être désensibilisé en l'exposant progressivement à des enregistrements sonores à faible volume, puis en augmentant graduellement l'intensité sur plusieurs semaines. Forcer l'exposition brutale (flooding) peut aggraver la peur.",
                 source: "International Association of Animal Behavior Consultants - L'habituation réduit l'anxiété aux bruits."
@@ -531,7 +531,7 @@ const quizzesData = {
             {
                 id: 47,
                 question: "Quel est l'impact de la musique sur le stress du chien ?",
-                options: ["Aucun impact", "Réduction du stress et de l'anxiété", "Augmentation du stress", "Hyperactivité"],
+                options: ["Aucun impact", "Réduction du stress et de l'anxié", "Augmentation du stress", "Hyperactivité"],
                 correct: 1,
                 explanation: "Des études ont montré que la musique classique calme les chiens en chenil : leur rythme cardiaque baisse et ils aboient moins. La musique reggae et le soft rock auraient aussi des effets positifs. En revanche, le heavy metal augmente l'agitation. Laisser de la musique douce quand le chien est seul à la maison peut réduire l'anxiété de séparation.",
                 source: "Université de Zoopsychologie - La musique apaisante réduit le cortisol chez le chien."
@@ -555,7 +555,7 @@ const quizzesData = {
             {
                 id: 50,
                 question: "Quel est l'impact de la socialisation précoce sur l'adaptation future ?",
-                options: ["Aucun impact", "Meilleure adaptation aux", "Augmentation des peurs", "Indépendance exacerbée"],
+                options: ["Aucun impact", "Meilleure adaptation aux nouvelle", "Augmentation des peurs", "Indépendance exacerbée"],
                 correct: 1,
                 explanation: "Un chiot bien socialisé avant 16 semaines aborde les nouvelles situations avec curiosité plutôt qu'avec peur. Il a été exposé à des bruits variés, des gens différents, des textures, des véhicules, d'autres animaux... Ces expériences encodent 'le monde est normal et sans danger' dans son cerveau. Un adulte mal socialisé peut être réhabilité, mais c'est bien plus long et difficile qu'une bonne socialisation précoce.",
                 source: "Université de Développement Comportemental - La socialisation précoce est cruciale."
@@ -613,7 +613,7 @@ const quizzesData = {
             {
                 id: 23,
                 question: "Quelle est la théorie de la dominance du loup versus celle du chien domestique ?",
-                options: ["Identiques", "La théorie de la", "Le chien suit la hiérarchie", "Elles ne sont pas en accord"],
+                options: ["Identiques", "La théorie de la dominance d", "Le chien suit la hiérarchie", "Elles ne sont pas en accord"],
                 correct: 1,
                 explanation: "La théorie de la dominance chez le chien (être le 'chef de meute') vient d'études sur des loups en captivité dans les années 1940, qui ne se comportent pas comme des loups sauvages. L. David Mech, l'auteur original de cette théorie, a lui-même déclaré s'être trompé. Les chiens domestiques ne forment pas de hiérarchies fixes : leur comportement dépend du contexte, de la ressource et de la relation avec l'humain.",
                 source: "L. David Mech - Recherches corrigées montrant que les chiens domestiques n'ont pas de hiérarchie de dominance stricte."
@@ -698,7 +698,7 @@ const quizzesData = {
             {
                 id: 53,
                 question: "Quel est le processus de 'long-term potentiation' dans l'apprentissage canin ?",
-                options: ["Oubli rapide", "Renforcement durable des", "Perte de mémoire", "Apprentissage immédiat"],
+                options: ["Oubli rapide", "Renforcement durable des connexio", "Perte de mémoire", "Apprentissage immédiat"],
                 correct: 1,
                 explanation: "La potentialisation à long terme (LTP) est le mécanisme neurologique de la mémoire : quand deux neurones s'activent ensemble de façon répétée, leur connexion synaptique se renforce durablement. En éducation canine, chaque répétition réussie d'un exercice renforce littéralement les connexions cérébrales associées. C'est pourquoi la répétition régulière est indispensable pour que les apprentissages deviennent automatiques.",
                 source: "Université de Neurosciences de l'Apprentissage - La LTP est la base de la mémoire."
@@ -730,7 +730,7 @@ const quizzesData = {
             {
                 id: 57,
                 question: "Quel est le mécanisme de la 'sensitization' face aux stimuli menaçants ?",
-                options: ["Réduction de la", "Augmentation progressive", "Habituation", "Indifférence"],
+                options: ["Réduction de la sensibilité au stimulus", "Augmentation progressive", "Habituation", "Indifférence"],
                 correct: 1,
                 explanation: "La sensitisation est l'opposé de l'habituation : au lieu de s'adapter à un stimulus, le cerveau devient de plus en plus réactif à chaque exposition. Cela arrive quand le stimulus est associé à une expérience négative. Un chien mordu par un autre chien peut devenir de plus en plus réactif aux chiens en général, même ceux qu'il connaissait avant. Sans intervention, cette sensibilisation peut s'aggraver progressivement.",
                 source: "Institut de Psychologie Comportementale - La sensibilisation augmente l'anxiété."
@@ -778,7 +778,7 @@ const quizzesData = {
             {
                 id: 63,
                 question: "Quel est le processus de 'state-dependent learning' ?",
-                options: ["Pas d'effet d'état", "L'apprentissage dépend", "Apprentissage indépendant du", "Oubli rapide"],
+                options: ["Pas d'effet d'état", "L'apprentissage dépend", "Apprentissage indépendant du contexte", "Oubli rapide"],
                 correct: 1,
                 explanation: "L'apprentissage dépendant de l'état signifie que la mémoire est mieux rappelée dans le même état qu'au moment de l'apprentissage. Un chien entraîné uniquement à la maison peut échouer en balade car l'état émotionnel est différent (plus excité, plus de distractions). C'est pourquoi il est crucial de généraliser les apprentissages dans des contextes variés : différents endroits, différents niveaux de distraction.",
                 source: "Université de Psychologie de l'Apprentissage - L'état affecte la rétention."
@@ -931,7 +931,7 @@ const quizzesData = {
             {
                 id: 8,
                 question: "Quelle est la race de chien la plus grande du monde ?",
-                options: ["Le Leonberg", "Le Saint-Bernard", "Le Mastiff Anglais", "Le Dogue Allemand (Grand Danois)"],
+                options: ["Le Leonberg", "Le Saint-Bernard", "Le Mastiff Anglais", "Le Dogue Allemand"],
                 correct: 3,
                 explanation: "Le Dogue Allemand (Grand Danois) est officiellement la race de chien la plus grande du monde. Il peut mesurer plus de 80 cm au garrot et peser entre 50 et 90 kg. Le record du monde de hauteur est détenu par un Grand Danois nommé Zeus, qui mesurait 111,8 cm au garrot.",
                 source: "Guinness World Records — Le Grand Danois est la race de chien la plus grande du monde."
@@ -939,7 +939,7 @@ const quizzesData = {
             {
                 id: 9,
                 question: "Comment les chiens perçoivent-ils principalement le monde ?",
-                options: ["Par la vue", "Par l'ouïe", "Par l'odorat en", "Par les vibrations du sol"],
+                options: ["Par la vue", "Par l'ouïe", "Par l'odorat avant tout", "Par les vibrations du sol"],
                 correct: 2,
                 explanation: "L'odorat est le sens dominant du chien. Ils explorent leur environnement avant tout par le nez : identifier des individus, lire les marquages urinaires, détecter des émotions ou des états de santé. Le cerveau du chien consacre une proportion bien plus grande à l'analyse olfactive que le cerveau humain.",
                 source: "Alexandra Horowitz — L'odorat est le sens premier du chien pour percevoir et comprendre le monde."
@@ -955,7 +955,7 @@ const quizzesData = {
             {
                 id: 11,
                 question: "Quel est le chien officiel de la ville de Paris ?",
-                options: ["Le Bouledogue", "Le Caniche", "Le Berger de Beauce", "Il n'existe pas de"],
+                options: ["Le Bouledogue", "Le Caniche", "Le Berger de Beauce", "Il n'existe pas de chien officiel"],
                 correct: 3,
                 explanation: "Paris n'a pas de chien officiel. En revanche, le Bouledogue Français est souvent associé à la culture parisienne moderne et connaît un succès mondial depuis les années 2000. Le Caniche est lui aussi une race emblématique de la France, mais aucune ville française n'a officiellement adopté une race.",
                 source: "Mairie de Paris — Aucune race de chien n'est officiellement désignée comme symbole de Paris."
@@ -995,7 +995,7 @@ const quizzesData = {
             {
                 id: 16,
                 question: "Quel est l'espérance de vie moyenne d'un chien ?",
-                options: ["5 à 8 ans pour toutes les", "8 à 10 ans", "10 à 15 ans selon la race", "18 à 20 ans pour les races"],
+                options: ["5 à 8 ans selon la race", "8 à 10 ans", "10 à 15 ans selon la race", "18 à 20 ans pour les races"],
                 correct: 2,
                 explanation: "L'espérance de vie d'un chien est en moyenne de 10 à 15 ans, mais varie considérablement selon la race. Les petites races vivent généralement plus longtemps (15 ans et plus pour le Chihuahua ou le Jack Russell) que les grandes races (7-9 ans pour le Dogue Allemand ou le Saint-Bernard). La qualité de vie, l'alimentation et les soins vétérinaires jouent également un rôle important.",
                 source: "Veterinary Record — L'espérance de vie canine varie de 7 à 15 ans selon la taille et la race."
@@ -1176,7 +1176,7 @@ const quizzesData = {
             {
                 id: 15,
                 question: "Quel groupe sanguin est le plus fréquent chez le chien ?",
-                options: ["Le groupe DEA 3", "Le groupe DEA 7", "Le groupe DEA 1 (anciennement DEA 1.1)", "Le groupe DEA 4"],
+                options: ["Le groupe DEA 3", "Le groupe DEA 7", "Le groupe DEA 1", "Le groupe DEA 4"],
                 correct: 2,
                 explanation: "Le système sanguin canin (DEA, Dog Erythrocyte Antigen) compte plusieurs groupes. DEA 1 (anciennement DEA 1.1) est le plus fréquent et le plus important cliniquement, car une incompatibilité peut provoquer des réactions transfusionnelles graves. En médecine vétérinaire, le typage sanguin avant une transfusion est fortement recommandé.",
                 source: "Journal of Veterinary Internal Medicine — DEA 1 est le groupe sanguin canin le plus fréquent et le plus cliniquement significatif."
@@ -1200,7 +1200,7 @@ const quizzesData = {
             {
                 id: 18,
                 question: "Combien de muscles les chiens utilisent-ils pour bouger chaque oreille ?",
-                options: ["3 muscles", "7 muscles", "Plus de 18 muscles", "12 muscles par"],
+                options: ["3 muscles", "7 muscles", "Plus de 18 muscles", "12 muscles par oreille"],
                 correct: 2,
                 explanation: "Le chien possède plus de 18 muscles dans chaque oreille, ce qui lui permet de les orienter indépendamment avec une grande précision. Cette mobilité auriculaire lui sert à localiser les sons avec précision et à communiquer ses émotions (oreilles dressées, en arrière, aplaties). L'humain, en comparaison, possède seulement 3 muscles auriculaires atrophiés.",
                 source: "Comparative Anatomy Journal — Le chien possède plus de 18 muscles par oreille, contre 3 chez l'humain."
@@ -1735,7 +1735,7 @@ const quizzesData = {
             {
                 id: 7,
                 question: "Quel est le cri d'accouplement des chattes en chaleur ?",
-                options: ["Un miaulement grave et prolongé similaire à celui produit lors d'une", "Un cri très bruyant et répété", "Une vocalisation discrète et basse destinée uniquement aux mâles", "Un ronronnement intense et modulé dont la fréquence évolue tout au"],
+                options: ["Un miaulement grave et prolongé similaire à celui produit lors d'une", "Un cri très bruyant et répété", "Une vocalisation discrète et basse destinée uniquement aux mâles", "Un ronronnement intense et modulé"],
                 correct: 1,
                 explanation: "Les chattes en chaleur émettent des vocalisations intenses et répétées, souvent décrites comme un 'gémissement' ou un 'hurlement'. Ce comportement peut durer plusieurs jours et est destiné à attirer les mâles à distance. Il s'accompagne de roulades, de postures particulières et de marquages urinaires. La stérilisation est la seule solution durable pour l'éviter.",
                 source: "Association Française de Comportement Félin - Les chattes en chaleur produisent des miaulements très particuliers."
@@ -1855,7 +1855,7 @@ const quizzesData = {
             {
                 id: 22,
                 question: "Quel est l'instinct naturel d'un chaton orphelin ?",
-                options: ["Chercher de la", "Chercher sa mère", "Chercher un territoire", "Dormir"],
+                options: ["Chercher de la chaleur et du lait", "Chercher sa mère", "Chercher un territoire", "Dormir"],
                 correct: 1,
                 explanation: "Un chaton orphelin va instinctivement miauler pour appeler sa mère. Sans elle, il risque l'hypothermie car il ne peut pas réguler sa propre température avant 4 semaines. Il doit être nourri toutes les 2 heures avec du lait de substitution spécial chatons (jamais du lait de vache), et stimulé avec un tissu humide pour l'aider à uriner et déféquer (rôle normalement joué par la langue de la mère).",
                 source: "Institut de Développement Félin - Les chatons orphelins miaulent pour leur mère."
@@ -2020,7 +2020,7 @@ const quizzesData = {
             {
                 id: 19,
                 question: "Que signifie les yeux qui se plissent chez un chat ?",
-                options: ["Il a peur", "Il est affectueux ou", "Il va mordre", "Il a mal"],
+                options: ["Il a peur", "Il est affectueux ou en conf", "Il va mordre", "Il a mal"],
                 correct: 1,
                 explanation: "Quand un chat plisse lentement les yeux en vous regardant, c'est l'équivalent d'un sourire ou d'un câlin en langage félin — parfois appelé 'slow blink' ou 'bisou du chat'. Des études ont confirmé que les humains qui imitent ce clignement lent obtiennent une réponse similaire de la part du chat, établissant une communication de confiance. C'est l'une des façons les plus simples de créer un lien avec un chat inconnu.",
                 source: "Institut de Comportement Animal - Les chats plissent les yeux comme marque d'affection."
@@ -2166,7 +2166,7 @@ const quizzesData = {
             {
                 id: 46,
                 question: "Quel est le rôle de la prostrate chez le chat mâle ?",
-                options: ["Synthèse des androgènes régulant les comportements territoriaux et", "Production de fluide séminal", "Sécrétion d'enzymes protéolytiques dégradant les protéines de la", "Régulation de la fréquence respiratoire via des chémorécepteurs"],
+                options: ["Synthèse des androgènes territoriaux", "Production de fluide séminal", "Sécrétion d'enzymes protéolytiques dégradant les protéines de la", "Régulation de la fréquence respiratoire via des chémorécepteurs"],
                 correct: 1,
                 explanation: "La prostate du chat mâle produit une partie du liquide séminal qui nourrit et transporte les spermatozoïdes lors de l'éjaculation. Contrairement au chien et à l'humain, les maladies de la prostate sont rares chez le chat. La castration réduit considérablement la taille de la prostate et les risques associés. Les mâles castrés présentent rarement des problèmes prostatiques au cours de leur vie.",
                 source: "Institut d'Anatomie Reproductive - La prostrate soutient la reproduction."
@@ -2274,7 +2274,7 @@ const quizzesData = {
             {
                 id: 24,
                 question: "Quel est le rôle du tapetum lucidum chez le chat ?",
-                options: ["Filtre UV", "Réflexion lumineuse", "Production de larmes", "Protection de la"],
+                options: ["Filtre UV", "Réflexion lumineuse", "Production de larmes", "Protection de la rétine contre l’éblouissement"],
                 correct: 1,
                 explanation: "Le tapetum lucidum est une couche de cellules réfléchissantes située derrière la rétine du chat. Quand la lumière traverse la rétine sans être absorbée par un photorécepteur, le tapetum la réfléchit une seconde fois, donnant une seconde chance aux photorécepteurs de la capter. Cela améliore la sensibilité lumineuse d'environ 40%. C'est aussi ce qui provoque l'effet 'yeux brillants' quand on éclaire un chat dans l'obscurité.",
                 source: "Journal of Veterinary Ophthalmology - Structure réfléchissante améliorant la sensibilité lumineuse."
@@ -2581,7 +2581,7 @@ const quizzesData = {
             {
                 id: 7,
                 question: "Les plumes d'un oiseau servent principalement à quoi ?",
-                options: ["Uniquement au vol", "Au vol", "Uniquement à la", "À la nage"],
+                options: ["Uniquement au vol", "Au vol", "Uniquement à la régulation t", "À la nage"],
                 correct: 1,
                 explanation: "Les plumes sont des structures remarquablement polyvalentes. Les plumes de vol (rémiges et rectrices) assurent la portance et la direction. Les plumes de contour donnent la forme aérodynamique. Le duvet, situé près de la peau, piège l'air chaud et assure l'isolation thermique. Enfin, les oiseaux aquatiques imperméabilisent leurs plumes avec une huile produite par la glande uropygienne, étalée lors du toilettage.",
                 source: "Université de Strasbourg - Les plumes ont de multiples fonctions essentielles."
@@ -2620,7 +2620,7 @@ const quizzesData = {
             },
             {
                 id: 12,
-                question: "Quel est l'âge moyen d'une aigle ?",
+                question: "Quel est l'âge moyen d'un aigle ?",
                 options: ["10-15 ans", "20-30 ans", "40-50 ans", "60+ ans"],
                 correct: 2,
                 explanation: "Les grands rapaces comme l'aigle royal vivent en moyenne 20 à 30 ans dans la nature, et peuvent atteindre 40 à 50 ans en captivité. Leur longévité s'explique par leur position au sommet de la chaîne alimentaire (peu de prédateurs) et leur faible taux de reproduction (1-2 jeunes par an). Un aigle royal peut mettre 5 ans avant d'atteindre son plumage adulte et de se reproduire.",
@@ -2834,7 +2834,7 @@ const quizzesData = {
             {
                 id: 15,
                 question: "Quel est le rôle du jabot chez les oiseaux ?",
-                options: ["Respiration", "Stockage temporaire de", "Production de sons", "Reproduction"],
+                options: ["Respiration", "Stockage temporaire de la nour", "Production de sons", "Reproduction"],
                 correct: 1,
                 explanation: "Le jabot est une poche dilatée de l'œsophage qui sert de réservoir alimentaire temporaire. Il permet à l'oiseau d'ingérer rapidement une grande quantité de nourriture (utile pour les espèces qui mangent dans des endroits exposés aux prédateurs) et de digérer ensuite en sécurité. Certains pigeons produisent dans leur jabot un 'lait de jabot' — une sécrétion riche en protéines — pour nourrir leurs poussins.",
                 source: "Centre d'Éducation Ornithologique - Le jabot stocke la nourriture avant sa descente à l'estomac."
@@ -2919,7 +2919,7 @@ const quizzesData = {
             {
                 id: 35,
                 question: "Quel est le système de communication principal chez les oiseaux aquatiques ?",
-                options: ["Vision uniquement", "Vocalisations et", "Tactile", "Chimique"],
+                options: ["Vision uniquement", "Vocalisations et postures co", "Tactile", "Chimique"],
                 correct: 1,
                 explanation: "Les oiseaux aquatiques communiquent principalement par des vocalisations (cris d'alarme, chants de parade, appels de contact) et des postures corporelles élaborées. Lors des parades nuptiales, de nombreuses espèces combinent les deux : le grèbe huppé exécute une danse symétrique spectaculaire avec son partenaire, se dressant hors de l'eau en miroir. Ces rituels garantissent que les partenaires appartiennent à la même espèce et évaluent leur qualité génétique.",
                 source: "Institut d'Éthologie Aviaire - La communication est multisensorielle."
@@ -3200,7 +3200,7 @@ const quizzesData = {
             {
                 id: 54,
                 question: "Quel est le rôle des marques génétiques sur les plumes ?",
-                options: ["Résistance mécanique renforcée par des liaisons croisées de kératine bêta", "Identification et communication", "Isolation thermique supplémentaire par emprisonnement d'air entre les", "Réduction de la friction lors des plongeons à grande vitesse dans"],
+                options: ["Résistance mécanique renforcée par des liaisons croisées de kératine bêta", "Identification et communication", "Isolation thermique supplémentaire par emprisonnement d'air entre les", "Réduction de la friction en plongeon rapide"],
                 correct: 1,
                 explanation: "Les motifs et couleurs des plumes transmettent de nombreuses informations : l'identité spécifique (pour éviter les hybridations), le sexe, l'âge (juvénile vs adulte), et surtout la qualité génétique. Des études ont montré que la vivacité des couleurs (souvent liée à l'alimentation en caroténoïdes) indique la santé et la résistance parasitaire du porteur. Les femelles choisissent préférentiellement les mâles aux couleurs les plus vives — ce que Darwin appelait la sélection sexuelle.",
                 source: "Institut d'Éthologie Ornithologique - Les marques communiquent le statut."
@@ -3440,7 +3440,7 @@ const quizzesData = {
             {
                 id: 9,
                 question: "Quel reptile pond des œufs ?",
-                options: ["Aucun reptile", "Tous les reptiles", "Certains reptiles", "Uniquement les crocodiliens et les"],
+                options: ["Aucun reptile", "Tous les reptiles", "Certains reptiles", "Uniquement les crocodiliens et les lézards"],
                 correct: 1,
                 explanation: "Attention : cette affirmation est en réalité incorrecte ! Certains reptiles sont vivipares (ils donnent naissance à des petits vivants). Par exemple, de nombreuses vipères d'Europe, le boa constrictor et certains lézards gardent les œufs à l'intérieur jusqu'à l'éclosion (ovoviviparité) ou nourrissent directement l'embryon via un placenta (viviparité vraie). La majorité des reptiles pondent des œufs, mais pas tous.",
                 source: "Institut de Reproduction des Reptiles - Tous les reptiles pondent des œufs."
@@ -3576,7 +3576,7 @@ const quizzesData = {
             {
                 id: 26,
                 question: "Quel est le rôle de la fosse thermosensible chez le python ?",
-                options: ["Analyse des gradients chimiques olfactifs pour localiser les proies par", "Détection infrarouge des proies", "Perception visuelle haute résolution de la chaleur corporelle des proies", "Transmission des vibrations basse fréquence du sol via les écailles"],
+                options: ["Détection des gradients chimiques olfactifs", "Détection infrarouge des proies", "Perception visuelle haute résolution de la chaleur corporelle des proies", "Transmission des vibrations basse fréquence du sol via les écailles"],
                 correct: 1,
                 explanation: "Les fossettes labiales des pythons (situées sur les écailles des lèvres) sont des organes thermosensibles capables de détecter des variations de température de 0,003°C. Elles créent une 'image thermique' de l'environnement, complétant la vision ordinaire. En lumière nulle, un python peut ainsi repérer et frapper une proie à sang chaud avec une précision redoutable. Ces mêmes organes existent chez les boas et les crotales, mais dans des positions anatomiques différentes.",
                 source: "Institut de Sensorimotricité Reptilienne - Les fossettes détectent la chaleur."
@@ -3592,7 +3592,7 @@ const quizzesData = {
             {
                 id: 28,
                 question: "Quel est le temps moyen de digestion chez un serpent ?",
-                options: ["Quelques jours", "1-2 semaines", "2-4 semaines selon la", "1-2 mois"],
+                options: ["Quelques jours", "1-2 semaines", "2-4 semaines selon la taille", "1-2 mois"],
                 correct: 2,
                 explanation: "La digestion d'un serpent est un processus fascinant et lent. Après avoir avalé une proie entière, le serpent la digère pendant 2 à 4 semaines selon sa taille. Son métabolisme s'emballe — le foie double de volume, les intestins se développent et la production d'acide gastrique augmente massivement. Un python python peut digérer un cochon entier. Pendant ce temps, il reste immobile et vulnérable, c'est pourquoi il choisit un endroit caché pour digérer.",
                 source: "Centre de Physiologie Reptilienne - La digestion est lente mais complète."
@@ -3738,7 +3738,7 @@ const quizzesData = {
             {
                 id: 32,
                 question: "Quel est le processus de défense du caméléon face au prédateur ?",
-                options: ["Fuite", "Changement de", "Attaque directe", "Camouflage"],
+                options: ["Fuite", "Changement de couleur et imm", "Attaque directe", "Camouflage"],
                 correct: 1,
                 explanation: "Le caméléon face à un prédateur déploie plusieurs stratégies de défense. Il change d'abord de couleur pour se fondre dans son environnement (camouflage). Si découvert, il se gonfle latéralement pour paraître plus grand, ouvre grand la gueule, se balance pour imiter une feuille agitée par le vent, et siffle ou crache. En dernier recours, il peut mordre. Il se déplace aussi en balancement saccadé pour imiter le mouvement d'une feuille et dérouter les prédateurs à vision adaptée au mouvement.",
                 source: "Institut d'Éthologie Défensive - Multi-stratégies de défense."
@@ -3754,7 +3754,7 @@ const quizzesData = {
             {
                 id: 34,
                 question: "Quel est le rôle de la membrane nictitante chez les reptiles aquatiques ?",
-                options: ["Filtration des longueurs d'onde UV permettant la vision dans les", "Protection des yeux sous l'eau", "Amplification de la sensibilité aux mouvements latéraux par", "Détection des changements d'intensité lumineuse signalant les"],
+                options: ["Filtration des longueurs d'onde UV", "Protection des yeux sous l'eau", "Amplification de la sensibilité aux mouvements", "Détection des changements d'intensité lumineuse"],
                 correct: 1,
                 explanation: "La membrane nictitante (troisième paupière) des reptiles aquatiques se ferme horizontalement sur l'œil lors de la plongée, comme des lunettes de natation transparentes. Elle protège l'œil des débris, de l'eau salée et des chocs, tout en maintenant une vision fonctionnelle sous l'eau. Les crocodiles, tortues marines et certains lézards aquatiques en sont équipés. Chez les crocodiles, elle peut aussi se fermer lors des combats ou des prises de proies.",
                 source: "Institut d'Ophtalmologie Reptilienne - Protection adaptée à l'aquatique."
@@ -3794,7 +3794,7 @@ const quizzesData = {
             {
                 id: 39,
                 question: "Quel est le rôle du cloaque chez les reptiles ?",
-                options: ["Respiration uniquement", "Cavité commune pour", "Digestion uniquement", "Stockage"],
+                options: ["Respiration uniquement", "Cavité commune pour reproduc", "Digestion uniquement", "Stockage"],
                 correct: 1,
                 explanation: "Le cloaque est une innovation évolutive des tétrapodes (vertébrés terrestres). Il regroupe en une seule ouverture toutes les fonctions d'évacuation : digestive (matières fécales), urinaire (urates chez les reptiles, qui excrètent de l'acide urique plutôt que de l'urée pour économiser l'eau) et reproductive (sperme, œufs). Cette économie anatomique est particulièrement adaptée aux animaux à peau imperméable qui doivent conserver l'eau précieusement.",
                 source: "Institut d'Anatomie Comparée - Multifonctionne structure reptilienne."
@@ -4012,7 +4012,7 @@ const quizzesData = {
             {
                 id: 30,
                 question: "Quel est le rôle du sulfate de calcium dans la résine utilisée par certains serpents ?",
-                options: ["Lubrification", "Formation et", "Digestion", "Communication"],
+                options: ["Lubrification", "Formation et durcissement des structures osseuses", "Digestion", "Communication"],
                 correct: 1,
                 explanation: "Les crocs des serpents venimeux sont des dents fortement minéralisées — leur extrémité contient des concentrations élevées de calcium et de zinc qui les rendent particulièrement durs et résistants à la flexion. Cette dureté est essentielle car les crocs doivent percer peaux, écailles ou plumes tout en conduisant le venin avec précision. Les crocs se cassent et se remplacent régulièrement (polyphyodontie), et plusieurs crocs de remplacement sont toujours en réserve dans la gencive, prêts à prendre la place.",
                 source: "Journal de Toxinologie - Le sulfate de calcium renforce les structures des crocs."
@@ -4277,7 +4277,7 @@ const quizzesData = {
             {
                 id: 7,
                 question: "À quelle profondeur maximale les baleines peuvent-elles plonger ?",
-                options: ["100 mètres environ", "500 mètres pour les espèces les", "2000+ mètres selon", "3000+ mètres"],
+                options: ["100 mètres environ", "500 mètres pour certaines espèces", "2000+ mètres selon", "3000+ mètres"],
                 correct: 2,
                 explanation: "Les capacit\u00e9s de plong\u00e9e varient selon les esp\u00e8ces. La baleine \u00e0 bec de Cuvier d\u00e9tient le record avec plus de 3 000 m\u00e8tres et plus de 3 heures d'apn\u00e9e. Ces exploits sont rendus possibles par des adaptations extraordinaires : effondrement des poumons, redistribution du sang vers les organes vitaux, et stockage d'oxyg\u00e8ne dans les muscles gr\u00e2ce \u00e0 la myoglobine.",
                 source: "Centre d'Étude des Cétacés - Certaines baleines plongent très profond."
@@ -4447,7 +4447,7 @@ const quizzesData = {
             {
                 id: 28,
                 question: "Quel est le taux d'allaitement chez une baleine mère ?",
-                options: ["Continu", "Plusieurs fois par", "Une fois par jour", "Tous les 2-3 jours"],
+                options: ["Continu", "Plusieurs fois par heure", "Une fois par jour", "Tous les 2-3 jours"],
                 correct: 1,
                 explanation: "L'allaitement chez les baleines est une prouesse logistique sous-marine. La m\u00e8re injecte litt\u00e9ralement son lait dans la bouche du baleineau sous pression \u2014 le baleineau ne t\u00e8te pas activement. Le lait est si \u00e9pais qu'il ne se diffuse pas dans l'eau. Une baleine bleue peut produire 300 \u00e0 600 litres de lait par jour, permettant au baleineau de grossir de 80 \u00e0 90 kg quotidiennement.",
                 source: "Institut de Reproduction Marine - Lait très nutritif allaitement fréquent."
@@ -4532,7 +4532,7 @@ const quizzesData = {
             {
                 id: 15,
                 question: "Quel est le mecanisme de plongée profonde des phoques ?",
-                options: ["Augmentation de la respiration", "Ralentissement du cœur et utilisation de l'oxygène stocké", "Augmentation du volume pulmonaire", "Métabolisme accéléré"],
+                options: ["Augmentation de la respiration", "Ralentissement du cœur et utilisation de l'oxygène stock", "Augmentation du volume pulmonaire", "Métabolisme accéléré"],
                 correct: 1,
                 explanation: "Lors d'une plong\u00e9e, les phoques activent automatiquement le 'r\u00e9flexe de plong\u00e9e' : leur fr\u00e9quence cardiaque chute de 100-150 battements/min \u00e0 seulement 4-15 battements/min. La circulation sanguine est redirig\u00e9e vers le cerveau et le c\u0153ur uniquement. La rate, tr\u00e8s grande chez les phoques, se contracte pour lib\u00e9rer des globules rouges suppl\u00e9mentaires \u2014 ces adaptations permettent des plong\u00e9es de plusieurs heures.",
                 source: "Institut de Physiologie Plongée - Les phoques ralentissent leur métabolisme."
@@ -4556,7 +4556,7 @@ const quizzesData = {
             {
                 id: 18,
                 question: "Quel type de migration les baleines effectuent-elles ?",
-                options: ["Sédentaires et sans", "Régionale courte", "Longue distance entre", "Aléatoire"],
+                options: ["Sédentaires et sans migration saisonnière", "Régionale courte", "Longue distance entre", "Aléatoire"],
                 correct: 2,
                 explanation: "La migration des baleines est l'une des plus spectaculaires du r\u00e8gne animal. Elles passent l'\u00e9t\u00e9 dans les eaux polaires riches en krill pour s'alimenter, puis migrent vers les zones tropicales pour se reproduire en hiver. La baleine \u00e0 bosse parcourt jusqu'\u00e0 25 000 km par an \u2014 le record chez les mammif\u00e8res. Ces zones chaudes offrent moins de nourriture mais moins de pr\u00e9dateurs pour les baleineaux.",
                 source: "Université de Migration - Les baleines migrent sur des milliers de kilomètres."
@@ -4645,7 +4645,7 @@ const quizzesData = {
             {
                 id: 39,
                 question: "À quel âge une baleine femelle devient-elle ménopausée ?",
-                options: ["À 20-30 ans pour toutes les baleines à fanons selon", "À 40-50 ans selon l'espèce", "À 50 ans et au-delà", "La longévité ne peut jamais être estimée avec"],
+                options: ["À 20-30 ans pour toutes les baleines à fanons selon", "À 40-50 ans selon l'espèce", "À 50 ans et au-delà", "La longévité ne peut être estimée avec certitude"],
                 correct: 1,
                 explanation: "La m\u00e9nopause est un ph\u00e9nom\u00e8ne rarissime dans le r\u00e8gne animal, observ\u00e9 chez seulement 5 esp\u00e8ces : l'humain, l'orque, le cachalot, le b\u00e9luga et le narval. Chez les orques, les femelles cessent de se reproduire vers 40-50 ans mais vivent encore plusieurs d\u00e9cennies. Ces 'grand-m\u00e8res' jouent un r\u00f4le crucial : les pods avec des grand-m\u00e8res survivent mieux gr\u00e2ce \u00e0 leur connaissance des zones de p\u00eache.",
                 source: "Institut de Biologie Reproductive - Ménopause chez les cétacés."
@@ -5456,7 +5456,7 @@ const quizzesData = {
             },
             {
                 id: 7,
-                question: "Combien d'œufs pond généralement une aigle royale ?",
+                question: "Combien d'œufs pond généralement un aigle royal ?",
                 options: ["1-2 œufs", "2-3 œufs", "3-4 œufs", "4+ œufs"],
                 correct: 1,
                 explanation: "L'aigle royale pond g\u00e9n\u00e9ralement 1 \u00e0 3 \u0153ufs (2 en moyenne), \u00e0 intervalle de 3 \u00e0 4 jours. Les \u0153ufs mesurent environ 7 cm et p\u00e8sent 130 g. Fait crucial : l'incubation commence d\u00e8s le premier \u0153uf, ce qui cr\u00e9e un d\u00e9calage d'\u00e2ge entre les aiglons. L'a\u00een\u00e9 \u00e9clot 3 \u00e0 4 jours avant le cadet, lui donnant un avantage de taille qui m\u00e8nera souvent au cainsme (fratricide).",
@@ -5472,7 +5472,7 @@ const quizzesData = {
             },
             {
                 id: 9,
-                question: "Quel est le poids moyen d'une aigle royale femelle ?",
+                question: "Quel est le poids moyen d'un aigle royal femelle ?",
                 options: ["2-3 kg", "3-4 kg", "4-6 kg", "6+ kg"],
                 correct: 2,
                 explanation: "La femelle aigle royal est nettement plus grande que le m\u00e2le : elle p\u00e8se 3,6 \u00e0 6,7 kg contre 2,8 \u00e0 4,6 kg pour le m\u00e2le. Ce dimorphisme sexuel invers\u00e9 (la femelle plus grande) est typique des rapaces. Les th\u00e9ories l'expliquent par la n\u00e9cessit\u00e9 pour la femelle de jeûner sur le nid pendant l'incubation (r\u00e9serves \u00e9nerg\u00e9tiques plus importantes) et de d\u00e9fendre le nid contre les pr\u00e9dateurs.",
@@ -5489,7 +5489,7 @@ const quizzesData = {
             {
                 id: 11,
                 question: "Combien de serres possède un aigle royal ?",
-                options: ["2 serres par patte", "4 serres", "8 serres par patte", "Plus de 10 serres au"],
+                options: ["2 serres par patte", "4 serres", "8 serres par patte", "Plus de 10 serres au total"],
                 correct: 1,
                 explanation: "L'aigle royal poss\u00e8de 4 serres (griffes) sur chaque patte, comme tous les oiseaux de proie. L'halux (serre arri\u00e8re, la plus longue) est particulièrement d\u00e9velopp\u00e9 et joue le r\u00f4le principal dans la capture. La force de pression des serres est estim\u00e9e \u00e0 15-20 fois celle de l'humain. Cette puissance permet de transpercer la col\u00f4te vertébrale de proies comme les lièvres ou les renards en une fraction de seconde, causant une mort quasi instantan\u00e9e.",
                 source: "Institut d'Anatomie Aviaire - 4 serres par patte."
@@ -5512,7 +5512,7 @@ const quizzesData = {
             },
             {
                 id: 14,
-                question: "Quel est le nombre de nids qu'une aigle royale peut construire ?",
+                question: "Quel est le nombre de nids qu'un aigle royal peut construire ?",
                 options: ["1 seul nid", "2-3 nids alternatifs", "5+ nids", "Un nouveau chaque"],
                 correct: 1,
                 explanation: "Un couple d'aigles royaux construit et entretient g\u00e9n\u00e9ralement 2 \u00e0 8 nids alternatifs (aires) dans son territoire, utilis\u00e9s en rotation selon les ann\u00e9es. Ces aires, plac\u00e9es sur des vires de falaises ou dans de grands arbres, sont agrandies chaque ann\u00e9e : certaines atteignent 2 m\u00e8tres de diam\u00e8tre et 1 m\u00e8tre de hauteur apr\u00e8s des d\u00e9cennies d'utilisation, pesant parfois plusieurs centaines de kilos.",
@@ -5621,7 +5621,7 @@ const quizzesData = {
             {
                 id: 15,
                 question: "Quel est le rôle du 'kleptoparasitism' chez l'aigle royal ?",
-                options: ["Technique de chasse coopérative où les deux partenaires rabattent les", "Vol de proies à d'autres rapaces", "Signal de communication inter-individuel permettant la coordination des", "Défense du territoire contre les grands rapaces concurrents par des"],
+                options: ["Chasse coopérative où les partenaires rabattent les proies", "Vol de proies à d'autres rapaces", "Signal de communication pour la coordination", "Défense du territoire contre les concurrents"],
                 correct: 1,
                 explanation: "Le klepto-parasitisme (vol de nourriture) est un comportement observ\u00e9 chez l'aigle royal, bien que moins fr\u00e9quent que chez l'aigle de mer. Il peut harceler des buses, des corneilles ou des faucons p\u00e8lerins jusqu'\u00e0 ce qu'ils l\u00e2chent leur proie. Ironiquement, l'aigle royal est lui-m\u00eame victime de klepto-parasitisme de la part de l'aigle de mer en Scandinavie, qui est plus grand et plus agressif.",
                 source: "Institut d'Éthologie Alimentaire - Stratégie prédatrice."
@@ -5672,7 +5672,7 @@ const quizzesData = {
             {
                 id: 20,
                 question: "Quel est l'impact de la force d'un aigle royal ?",
-                options: ["Faible", "Peut soulever", "Peut soulever plus de", "Force sans limites"],
+                options: ["Faible", "Peut soulever", "Peut soulever plus de 5 kg", "Force sans limites"],
                 correct: 1,
                 explanation: "La force de l'aigle royal est impressionnante mais souvent exag\u00e9r\u00e9e dans les l\u00e9gendes. En r\u00e9alit\u00e9, il peut soulever et transporter des proies de 3 \u00e0 5 kg en vol (environ son propre poids). Pour les proies plus lourdes (renard, jeune chevreuil de 8-10 kg), il les d\u00e9coupe sur place ou les tra\u00eene sur le sol. La pression de ses serres peut atteindre 300-400 kg/cm\u00b2, suffisante pour briser la col\u00f4ne vert\u00e9brale d'un lièvre.",
                 source: "Centre de Biomécanique - Force relative."
@@ -6008,7 +6008,7 @@ const quizzesData = {
             {
                 id: 1,
                 question: "Quel est le poids moyen d'un tigre mâle ?",
-                options: ["100-150 kg", "150-200 kg", "200-260 kg selon la", "260+ kg en toute"],
+                options: ["100-150 kg", "150-200 kg", "200-260 kg selon la région", "260+ kg en toute"],
                 correct: 2,
                 explanation: "Le tigre est le plus grand f\u00e9lid\u00e9 du monde. Le tigre de Sibérie (Amour) est le plus lourd : les m\u00e2les atteignent 200 \u00e0 300 kg et peuvent mesurer 3,7 m\u00e8tres de la t\u00eate \u00e0 la queue. Le tigre du Bengale, le plus r\u00e9pandu, p\u00e8se 175 \u00e0 260 kg. Cette masse imposante en fait un pr\u00e9dateur capable de s'attaquer \u00e0 des proies bien plus grosses que lui, comme le buffle d'eau ou le gaur.",
                 source: "National Geographic - Le tigre est le plus gros félin.",
@@ -6190,7 +6190,7 @@ const quizzesData = {
             {
                 id: 11,
                 question: "Quel est le territoire moyen d'un tigre ?",
-                options: ["10-20 km²", "30-50 km²", "50-100 km² selon la", "150+ km²"],
+                options: ["10-20 km²", "30-50 km²", "50-100 km² selon la disponib", "150+ km²"],
                 correct: 2,
                 explanation: "Le territoire d'un tigre varie consid\u00e9rablement selon le milieu et la disponibilit\u00e9 des proies. Une femelle occupe 20 \u00e0 60 km\u00b2, un m\u00e2le 60 \u00e0 200 km\u00b2 (englobant g\u00e9n\u00e9ralement les territoires de 2 \u00e0 7 femelles). En Sib\u00e9rie o\u00f9 les proies sont rares, les territoires peuvent d\u00e9passer 1 000 km\u00b2. Les tigres marquent leurs limites avec de l'urine, des s\u00e9cr\u00e9tions glandulaires et des griffures sur les arbres.",
                 source: "Centre de Recherche Territoriale - Vaste domaine."
@@ -6288,7 +6288,7 @@ const quizzesData = {
             {
                 id: 22,
                 question: "À quelle vitesse un tigre peut-il atteindre lors d'une charge ?",
-                options: ["30 km/h", "40 km/h", "50-60 km/h sur", "80+ km/h"],
+                options: ["30 km/h", "40 km/h", "50-60 km/h sur courte distan", "80+ km/h"],
                 correct: 2,
                 explanation: "Le tigre est un athl\u00e8te explosif capable d'atteindre 50-60 km/h en quelques bond\u00e9es. Sa technique de chasse repose sur une approche silencieuse jusqu'\u00e0 5-10 m\u00e8tres, suivie d'un sprint foudroyant. Il utilise ses pattes avant comme des crampons pour immobiliser la proie et ses crocs pour \u00e9trangler. Une seule patte de tigre peut fracasser le cr\u00e2ne d'un buffle \u2014 la force d'un coup est estim\u00e9e \u00e0 plusieurs centaines de kg.",
                 source: "Institut de Biomécanique Féline - Sprint redoutable."
@@ -6328,7 +6328,7 @@ const quizzesData = {
             {
                 id: 27,
                 question: "À quel moment du cycle reproductif la femelle tigre accepte-t-elle l'accouplement ?",
-                options: ["À n'importe quel moment de l'année car les tigresses n'ont pas", "Pendant les chaleurs/estrus", "Pendant la période post-partum des 3 premiers mois suivant la", "Exclusivement lors des saisons sèches quand la concentration"],
+                options: ["À n'importe quel moment de l'année car les tigresses n'ont pas", "Pendant les chaleurs/estrus", "Pendant la période post-partum", "Exclusivement lors des saisons sèches quand la concentration"],
                 correct: 1,
                 explanation: "La femelle tigre n'accepte le m\u00e2le que pendant sa courte p\u00e9riode d'\u0153strus (3 \u00e0 7 jours). Elle signale sa r\u00e9ceptivit\u00e9 par des vocalises sp\u00e9cifiques et des marquages chimiques intenses. L'accouplement est fr\u00e9quent (toutes les 15-20 minutes) mais tr\u00e8s bref (15-30 secondes). Le m\u00e2le peut s'accoupler avec plusieurs femelles de son territoire, mais il ne participe pas \u00e0 l'\u00e9levage des petits.",
                 source: "Institut de Reproduction - Cycle oestral."
@@ -6357,7 +6357,7 @@ const quizzesData = {
             {
                 id: 30,
                 question: "Quel est le facteur principal de mortalité chez les jeunes tigres ?",
-                options: ["Maladie", "Prédation par", "Accidents et", "Famine"],
+                options: ["Maladie", "Prédation par d’autres carnivores", "Accidents et prédateurs", "Famine"],
                 correct: 2,
                 explanation: "La premi\u00e8re ann\u00e9e de vie est la plus dangereuse pour les tigreaux. Les principales causes de mortalit\u00e9 juvénile sont : l'infanticide par des m\u00e2les \u00e9trangers, les attaques de pr\u00e9dateurs (l\u00e9opards, ours, crocodiles), la famine si la m\u00e8re est tu\u00e9e ou bless\u00e9e, et les maladies. En libert\u00e9, moins de 50% des tigreaux atteignent l'\u00e2ge de 2 ans. La p\u00e9riode la plus critique est le sevrage, quand la m\u00e8re les laisse seuls pendant la chasse.",
                 source: "Institut d'Écologie Comportementale - Vulnérabilité juvénile."
@@ -6693,7 +6693,7 @@ const quizzesData = {
             {
                 id: 14,
                 question: "Quelle est la banque des sorciers où Harry possède un coffre rempli d'or ?",
-                options: ["La Bourse aux", "La Caisse Magique", "Le Comptoir d'Or de", "Gringotts"],
+                options: ["La Bourse aux Gobelins de Pa", "La Caisse Magique", "Le Comptoir d'Or de la Ruelle du Chaudron", "Gringotts"],
                 correct: 3,
                 explanation: "Gringotts est la banque des sorciers, gérée par des gobelins et réputée inviolable. Elle est située à Diagon Alley. Les coffres sont protégés par de puissants sortilèges et gardés par des dragons dans les niveaux les plus profonds. Harry y hérite du coffre de ses parents (numéro 687). Dans Les Reliques de la Mort, le trio parvient pourtant à s'y introduire.",
                 source: "J.K. Rowling, Harry Potter à l'École des Sorciers (1997), Chapitre 5 — visite de Gringotts avec Hagrid."
@@ -6717,7 +6717,7 @@ const quizzesData = {
             {
                 id: 17,
                 question: "Quel professeur enseigne la Défense contre les Forces du Mal lors de la première année de Harry ?",
-                options: ["Remus Lupin", "Gilderoy Lockhart", "Bartemis Croupton Junior", "Quirinus Quirinus (Quirrell)"],
+                options: ["Remus Lupin", "Gilderoy Lockhart", "Bartemis Croupton Junior", "Quirinus Quirinus"],
                 correct: 3,
                 explanation: "Professeur Quirinus Quirrell enseigne la Défense contre les Forces du Mal en première année. Ce professeur nerveux et bégayant cache sous son turban le visage de Voldemort, dont il est le serviteur. C'est lui qui tente de dérober la Pierre philosophale pour son maître. Il meurt lorsque Harry le touche, car la protection magique de Lily brûle tout ce qui partage le corps de Voldemort.",
                 source: "J.K. Rowling, Harry Potter à l'École des Sorciers (1997), Chapitre 17 — révélation du double rôle de Quirrell."
@@ -6821,7 +6821,7 @@ const quizzesData = {
             {
                 id: 30,
                 question: "Quelle est la formule pour ouvrir la trappe à l'Arbre Cogneur ?",
-                options: ["Il faut taper trois fois sur le nœud avec sa baguette en", "Il suffit d'approcher doucement en rampant depuis", "Il n'y a pas de formule", "Appuyer sur le nœud de l'arbre"],
+                options: ["Il faut taper trois fois le nœud de l’arbre", "Il suffit d'approcher doucement en rampant depuis", "Il n'y a pas de formule", "Appuyer sur le nœud de l'arbre"],
                 correct: 3,
                 explanation: "L'Arbre Cogneur est un arbre magique extrêmement violent qui attaque tout ce qui l'approche. Son seul point faible est un nœud à sa base : y appuyer (avec une branche longue ou la baguette) le paralyse instantanément. C'est grâce à cette méthode que Sirius Black entrait et sortait du tunnel menant à la Cabane Hurlante quand il était à Poudlard.",
                 source: "J.K. Rowling, Harry Potter et le Prisonnier d'Azkaban (1999), Chapitre 17 — L'Arbre Cogneur."
@@ -7049,7 +7049,7 @@ const quizzesData = {
             {
                 id: 36,
                 question: "Quel sort Harry utilise-t-il pour voir dans le noir lors de son épreuve du Labyrinthe dans la Coupe de Feu ?",
-                options: ["Nox Revelio", "Lumos Solem", "Caecus Aperio", "Il utilise Lumos ou"],
+                options: ["Nox Revelio", "Lumos Solem", "Caecus Aperio", "Il utilise Lumos ou affronte s"],
                 correct: 3,
                 explanation: "Harry affronte le labyrinthe avec les sorts qu'il a appris : principalement Lumos pour s'éclairer, Expelliarmus pour se défendre et Accio pour attirer des objets. J.K. Rowling ne lui attribue pas de sort spécifique de vision nocturne — Harry se débrouille avec ses compétences habituelles et son instinct, ce qui rend son parcours plus humain et tendu.",
                 source: "J.K. Rowling, Harry Potter et la Coupe de Feu (2000), Chapitre 31 — Le Labyrinthe."
@@ -7149,7 +7149,7 @@ const quizzesData = {
             {
                 id: 26,
                 question: "Quelle est la nature réelle du lien entre Dumbledore et Grindelwald, révélée dans Les Animaux Fantastiques ?",
-                options: ["Ils étaient demi-frères", "Grindelwald était l'élève de Dumbledore à", "Grindelwald était le mentor de Dumbledore", "Ils ont été amis intimes"],
+                options: ["Ils étaient demi-frères", "Grindelwald était l'ancien ami de Dumbledore", "Grindelwald était le mentor de Dumbledore", "Ils ont été amis intimes"],
                 correct: 3,
                 explanation: "J.K. Rowling a confirmé que Dumbledore et Grindelwald ont vécu une passion amoureuse lors de l'été 1899 où Grindelwald séjournait à Godric's Hollow. Ils ont scellé un Pacte du Sang (visible dans Les Animaux Fantastiques 2) qui empêchait Dumbledore de s'opposer directement à lui — d'où son refus apparemment inexplicable d'intervenir, révélé dans le film.",
                 source: "J.K. Rowling (interviews et Pottermore) + Les Animaux Fantastiques : Les Crimes de Grindelwald (2018)."
@@ -8052,7 +8052,7 @@ const quizzesData = {
             {
                 id: 9,
                 question: "Quelle est la technique innée de Megumi Fushiguro ?",
-                options: ["Renforcement du Corps", "Ten Shadows Technique (Dix Ombres)", "Straw Doll Technique", "Granite Blast"],
+                options: ["Renforcement du Corps", "Ten Shadows Technique", "Straw Doll Technique", "Granite Blast"],
                 correct: 1,
                 explanation: "Megumi Fushiguro utilise la Ten Shadows Technique (Technique des Dix Ombres), un héritage de la Famille Fushiguro. Il invoque des shikigami (esprits divins) en utilisant son ombre comme portail. Parmi ses shikigami : les chiens Divine Dogs, Toad, Max Elephant, et le légendaire Mahoraga.",
                 source: "Gege Akutami — Jujutsu Kaisen, la Technique des Dix Ombres de Megumi."
@@ -8103,7 +8103,7 @@ const quizzesData = {
             {
                 id: 12,
                 question: "Quelle est la technique héréditaire de la Famille Gojo ?",
-                options: ["Ten Shadows", "Projection Sorcery", "Limitless (Infinity / Mugen)", "Cursed Speech"],
+                options: ["Ten Shadows", "Projection Sorcery", "Limitless", "Cursed Speech"],
                 correct: 2,
                 explanation: "La technique innée de la Famille Gojo est le Limitless (Mugen — l'Infini), qui manipule l'espace à l'échelle atomique. En combinaison avec les Six Yeux, elle permet à Gojo d'appliquer l'Infini en permanence — une barrière invisible qui repousse tout ce qui s'approche. Ses applications incluent Blue (attraction), Red (répulsion) et Hollow Purple.",
                 source: "Gege Akutami — Jujutsu Kaisen, technique innée de Gojo : Limitless."
@@ -8111,7 +8111,7 @@ const quizzesData = {
             {
                 id: 13,
                 question: "Comment s'appelle l'attaque combinée ultime de Gojo qui fusionne Blue et Red ?",
-                options: ["Black Flash", "Hollow Purple (Fushoku Murasaki)", "Divergent Fist", "Domain Amplification"],
+                options: ["Black Flash", "Hollow Purple", "Divergent Fist", "Domain Amplification"],
                 correct: 1,
                 explanation: "Hollow Purple (Fushoku Murasaki — Mauve Creux) est la technique ultime de Gojo. Elle combine le Blue (attraction) et le Red (répulsion) pour créer une sphère d'annihilation absolue qui efface littéralement tout sur son passage. C'est une technique tellement destructrice que Gojo ne l'utilise qu'en dernier recours.",
                 source: "Gege Akutami — Jujutsu Kaisen, Hollow Purple de Gojo Satoru."
@@ -8423,7 +8423,7 @@ const quizzesData = {
             {
                 id: 24,
                 question: "Comment Yuta Okkotsu obtient-il son énergie maudite dans JJK 0 ?",
-                options: ["Il est né avec une grande énergie maudite naturelle", "Il est lié à Rika", "Il a été expérimenté par Kenjaku", "Il a absorbé les doigts de Sukuna"],
+                options: ["Il est né avec une grande énergie maudite natur", "Il est lié à Rika", "Il a été expérimenté par Kenjaku", "Il a absorbé les doigts de Sukuna"],
                 correct: 1,
                 explanation: "Yuta Okkotsu est lié par une malédiction à Rika Orimoto, son amie d'enfance décédée qui s'est transformée en Queen of Curses (Reine des Fléaux) par sa profonde affection pour lui. Rika est une entité maudite de Grade Spécial d'une puissance dévastatrice. Gojo compare Yuta à Sukuna en termes de potentiel brut.",
                 source: "Gege Akutami — Jujutsu Kaisen 0, origine des pouvoirs de Yuta Okkotsu."
@@ -8446,7 +8446,7 @@ const quizzesData = {
             {
                 id: 31,
                 question: "Quel est le vrai nom de la technique de Gojo qui combine Blue et Red ?",
-                options: ["Murasaki (Purple)", "Fushoku Murasaki (Hollow Purple)", "Convergence Maximale", "Tenkai Mugen"],
+                options: ["Murasaki (Purple)", "Fushoku Murasaki", "Convergence Maximale", "Tenkai Mugen"],
                 correct: 1,
                 explanation: "Hollow Purple (Fushoku Murasaki — Mauve Creux ou Violet Creux) est le nom officiel de l'attaque ultime de Gojo. 'Fushoku' signifie 'Void/Empty' et 'Murasaki' signifie 'Violet'. La technique fusionne Blue (attraction) et Red (répulsion), créant une sphère imaginaire qui efface tout sur son passage en annihilant la matière.",
                 source: "Gege Akutami — Jujutsu Kaisen, terminologie officielle Hollow Purple de Gojo."
@@ -8730,7 +8730,7 @@ const quizzesData = {
             {
                 id: 21,
                 question: "Quel est le muscle le plus puissant du corps humain par rapport à sa taille ?",
-                options: ["Le quadriceps", "Le masséter (muscle de la mâchoire)", "Le grand dorsal", "Le biceps"],
+                options: ["Le quadriceps", "Le masséter", "Le grand dorsal", "Le biceps"],
                 correct: 1,
                 explanation: "Le masséter, le muscle principal de la mâchoire, est le muscle le plus puissant proportionnellement à sa taille. Il peut exercer une force de morsure de 70 à 100 kg sur les molaires. Le grand fessier (gluteus maximus) est le plus grand muscle du corps.",
                 source: "Moore K.L. — Clinically Oriented Anatomy — Muscles masticateurs."
@@ -8746,7 +8746,7 @@ const quizzesData = {
             {
                 id: 23,
                 question: "De quoi est composé le sang ?",
-                options: ["Uniquement de globules rouges et blancs", "D'eau uniquement", "De plasma, globules rouges, blancs et plaquettes", "De sérum et d'os dissous"],
+                options: ["Uniquement de globules rouges et blancs", "D'eau uniquement", "De plasma", "De sérum et d'os dissous"],
                 correct: 2,
                 explanation: "Le sang est composé à 55% de plasma (eau, protéines, hormones, nutriments) et à 45% d'éléments figurés : globules rouges (érythrocytes), globules blancs (leucocytes) et plaquettes (thrombocytes). Les globules rouges représentent 99% des cellules sanguines.",
                 source: "Marieb E.N. — Anatomie et physiologie humaines, chapitre Sang."
@@ -8762,7 +8762,7 @@ const quizzesData = {
             {
                 id: 25,
                 question: "Quel est le rôle principal du cervelet ?",
-                options: ["La mémoire", "La vision", "La coordination des mouvements et l'équilibre", "La régulation des émotions"],
+                options: ["La mémoire", "La vision", "La coordination des mouvemen", "La régulation des émotions"],
                 correct: 2,
                 explanation: "Le cervelet, situé à la base du crâne, coordonne les mouvements volontaires, maintient l'équilibre et le tonus musculaire. Il reçoit des informations des muscles, de l'oreille interne et du cortex cérébral pour affiner chaque mouvement.",
                 source: "Kandel E.R. — Principles of Neural Science — Cervelet."
@@ -8855,7 +8855,7 @@ const quizzesData = {
             {
                 id: 13,
                 question: "Quel est le rôle du système lymphatique ?",
-                options: ["Pomper le sang", "Produire les hormones", "Drainer les liquides tissulaires et défendre contre les infections", "Digérer les aliments"],
+                options: ["Pomper le sang", "Produire les hormones", "Drainer les liquides tissulaires et déf", "Digérer les aliments"],
                 correct: 2,
                 explanation: "Le système lymphatique draine l'excès de liquide interstitiel vers le sang, transporte les graisses absorbées par l'intestin et joue un rôle central dans l'immunité via les lymphocytes produits dans les ganglions lymphatiques, la rate et le thymus.",
                 source: "Marieb E.N. — Anatomie et physiologie humaines — Système lymphatique."
@@ -8863,7 +8863,7 @@ const quizzesData = {
             {
                 id: 14,
                 question: "Quelle est la différence entre un neurone moteur et un neurone sensoriel ?",
-                options: ["Le moteur transmet les sensations, le sensoriel commande les muscles", "Le moteur commande les muscles, le sensoriel transmet les informations des organes des sens", "Ils ont la même fonction", "Le sensoriel est plus grand que le moteur"],
+                options: ["Le moteur transmet les sensations", "Le moteur commande les muscles", "Ils ont la même fonction", "Le sensoriel est plus grand que le moteur"],
                 correct: 1,
                 explanation: "Les neurones moteurs (efférents) transmettent les influx du système nerveux central vers les muscles et les glandes pour déclencher une action. Les neurones sensoriels (afférents) transmettent les informations des récepteurs sensoriels (peau, yeux, oreilles…) vers le SNC.",
                 source: "Kandel E.R. — Principles of Neural Science — Classification des neurones."
@@ -8879,7 +8879,7 @@ const quizzesData = {
             {
                 id: 16,
                 question: "Quelle est la fonction principale de la rate ?",
-                options: ["Produire l'insuline", "Filtrer le sang et recycler les vieux globules rouges", "Produire la bile", "Réguler la pression artérielle"],
+                options: ["Produire l'insuline", "Filtrer le sang et recycler les vieux globul", "Produire la bile", "Réguler la pression artérielle"],
                 correct: 1,
                 explanation: "La rate est le plus grand organe lymphoïde. Elle filtre le sang, détruit les globules rouges vieillis ou défectueux, stocke les plaquettes et les globules blancs, et participe à la réponse immunitaire. Elle peut être ablative sans que cela soit fatal.",
                 source: "Marieb E.N. — Anatomie et physiologie humaines — Rate et immunité."
@@ -8887,7 +8887,7 @@ const quizzesData = {
             {
                 id: 17,
                 question: "Qu'est-ce que le cartilage et en quoi diffère-t-il de l'os ?",
-                options: ["Le cartilage est un type d'os mou", "Le cartilage est un tissu conjonctif souple sans vaisseaux sanguins, l'os en a", "Le cartilage est plus dur que l'os", "Ils sont identiques"],
+                options: ["Le cartilage est un type d'os mou", "Le cartilage est un tissu conjonctif souple sans vais", "Le cartilage est plus dur que l'os", "Ils sont identiques"],
                 correct: 1,
                 explanation: "Le cartilage est un tissu conjonctif souple et élastique, avasculaire (sans vaisseaux sanguins), qui se nourrit par diffusion. L'os est minéralisé (calcium et phosphore) et richement vascularisé. Le cartilage recouvre les surfaces articulaires et compose notamment le nez, les oreilles et les disques intervertébraux.",
                 source: "Marieb E.N. — Anatomie et physiologie humaines — Tissu conjonctif."
@@ -8988,7 +8988,7 @@ const quizzesData = {
             {
                 id: 31,
                 question: "Quel mécanisme cellulaire permet la production d'énergie (ATP) à partir du glucose ?",
-                options: ["La photosynthèse", "La glycolyse puis la phosphorylation oxydative mitochondriale", "La transcription", "La phagocytose"],
+                options: ["La photosynthèse", "La glycolyse puis la phosphorylation ox", "La transcription", "La phagocytose"],
                 correct: 1,
                 explanation: "La production d'ATP à partir du glucose suit deux grandes étapes : la glycolyse (dans le cytoplasme, 2 ATP nets) suivie du cycle de Krebs et de la phosphorylation oxydative (dans les mitochondries, ~34 ATP). La combustion complète d'une molécule de glucose produit 36-38 ATP.",
                 source: "Lehninger A.L. — Principles of Biochemistry — Métabolisme énergétique."
@@ -8996,7 +8996,7 @@ const quizzesData = {
             {
                 id: 32,
                 question: "Qu'est-ce que l'hématopoïèse ?",
-                options: ["La formation des os", "La digestion des lipides", "La formation des cellules sanguines dans la moelle osseuse", "La production de kératine"],
+                options: ["La formation des os", "La digestion des lipides", "La formation des cellules sanguines dans la moelle os", "La production de kératine"],
                 correct: 2,
                 explanation: "L'hématopoïèse est le processus de formation et de renouvellement des cellules sanguines (globules rouges, blancs et plaquettes) à partir de cellules souches hématopoïétiques dans la moelle osseuse rouge. Environ 200 milliards de globules rouges et 10 milliards de globules blancs sont produits chaque jour.",
                 source: "Hoffbrand A.V. — Essential Haematology, 7e édition."
@@ -9004,7 +9004,7 @@ const quizzesData = {
             {
                 id: 33,
                 question: "Quel est le mécanisme d'action des cellules NK (Natural Killer) du système immunitaire ?",
-                options: ["Produire des anticorps", "Détruire directement les cellules infectées par des virus ou les cellules tumorales sans sensibilisation préalable", "Phagocyter les bactéries", "Présenter les antigènes aux lymphocytes T"],
+                options: ["Produire des anticorps", "Détruire directement les cellules infectées ou tumorales", "Phagocyter les bactéries", "Présenter les antigènes aux lymphocytes T"],
                 correct: 1,
                 explanation: "Les cellules NK (Natural Killer) sont des lymphocytes cytotoxiques innés capables de détruire les cellules infectées ou cancéreuses sans nécessiter de sensibilisation préalable. Elles reconnaissent l'absence de CMH-I (que les cellules tumorales camouflent souvent) et libèrent des perforines et granzymes pour induire l'apoptose.",
                 source: "Janeway C.A. — Immunobiology — Cellules Natural Killer."
@@ -9028,7 +9028,7 @@ const quizzesData = {
             {
                 id: 36,
                 question: "Qu'est-ce que le réflexe myotatique (ou réflexe ostéotendineux) ?",
-                options: ["La contraction volontaire d'un muscle", "La contraction réflexe involontaire d'un muscle suite à son étirement", "La relaxation musculaire lors du sommeil", "La contraction cardiaque"],
+                options: ["La contraction volontaire d'un muscle", "La contraction réflexe involontaire d'un muscle suite à son étireme", "La relaxation musculaire lors du sommeil", "La contraction cardiaque"],
                 correct: 1,
                 explanation: "Le réflexe myotatique est un arc réflexe monosynaptique : l'étirement d'un muscle active ses fuseaux neuromusculaires, qui envoient un signal à la moelle épinière via un neurone afférent Ia, déclenchant immédiatement la contraction du même muscle. Le réflexe rotulien est un exemple classique.",
                 source: "Kandel E.R. — Principles of Neural Science — Réflexes spinaux."
@@ -9060,7 +9060,7 @@ const quizzesData = {
             {
                 id: 40,
                 question: "Quelle est la différence entre immunité humorale et immunité cellulaire ?",
-                options: ["L'immunité humorale implique les lymphocytes T, la cellulaire implique les anticorps", "L'immunité humorale implique les anticorps produits par les lymphocytes B, la cellulaire implique les lymphocytes T cytotoxiques", "Ce sont des synonymes", "L'immunité humorale est innée et la cellulaire est acquise"],
+                options: ["L'immunité humorale implique les lymphocytes T", "L'immunité humorale repose sur les anticorps (lymphocytes B)", "Ce sont des synonymes", "L'immunité humorale est innée et la cellulaire est acquise"],
                 correct: 1,
                 explanation: "L'immunité humorale repose sur les lymphocytes B qui produisent des anticorps (immunoglobulines) circulant dans le sang et les fluides — efficace contre les bactéries extracellulaires et virus. L'immunité cellulaire repose sur les lymphocytes T cytotoxiques (CD8+) qui détruisent directement les cellules infectées.",
                 source: "Janeway C.A. — Immunobiology — Immunité humorale vs cellulaire."
