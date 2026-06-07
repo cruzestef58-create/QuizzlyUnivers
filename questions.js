@@ -9093,5 +9093,909 @@ const quizzesData = {
                 source: "Babler W.J. — Embryologic development of epidermal ridges. Birth Defects, 1991."
             }
         ]
+    },
+
+    geographie: {
+        title: "Géographie",
+        description: "Capitales, pays, reliefs, fleuves et géopolitique mondiale",
+        facile: [
+            {
+                id: 1,
+                question: "Quelle est la capitale de la France ?",
+                options: ["Lyon", "Marseille", "Paris", "Bordeaux"],
+                correct: 2,
+                explanation: "Paris est la capitale et la plus grande ville de France avec environ 2,1 millions d'habitants intramuros (12 millions en Île-de-France). Fondée il y a plus de 2 000 ans par les Parisii, elle est le centre politique, économique et culturel du pays.",
+                source: "INSEE — Recensement de la population française 2023."
+            },
+            {
+                id: 2,
+                question: "Quel est le plus grand océan du monde ?",
+                options: ["Océan Atlantique", "Océan Indien", "Océan Arctique", "Océan Pacifique"],
+                correct: 3,
+                explanation: "L'océan Pacifique est le plus grand et le plus profond des océans, couvrant environ 165 millions de km². Il s'étend du cercle arctique à l'Antarctique et de l'Asie aux Amériques.",
+                source: "NOAA — Ocean Facts, National Oceanic and Atmospheric Administration."
+            },
+            {
+                id: 3,
+                question: "Sur quel continent se trouve le Sahara ?",
+                options: ["Asie", "Amérique du Sud", "Afrique", "Australie"],
+                correct: 2,
+                explanation: "Le Sahara est le plus grand désert chaud du monde, couvrant environ 9,2 millions de km² au nord de l'Afrique. Il s'étend sur 11 pays, du Maroc à l'Égypte.",
+                source: "National Geographic — Sahara Desert geography."
+            },
+            {
+                id: 4,
+                question: "Quelle est la capitale de l'Espagne ?",
+                options: ["Barcelone", "Séville", "Valence", "Madrid"],
+                correct: 3,
+                explanation: "Madrid est la capitale et la plus grande ville d'Espagne avec environ 3,3 millions d'habitants. Située au centre géographique de la péninsule Ibérique, c'est la troisième plus grande ville de l'Union Européenne après Londres et Berlin.",
+                source: "Instituto Nacional de Estadística (INE) — Padrón municipal 2023."
+            },
+            {
+                id: 5,
+                question: "Combien de continents y a-t-il sur Terre ?",
+                options: ["5", "6", "7", "8"],
+                correct: 2,
+                explanation: "La convention la plus répandue reconnaît 7 continents : Afrique, Antarctique, Asie, Australie/Océanie, Europe, Amérique du Nord et Amérique du Sud.",
+                source: "National Geographic — How many continents are there?"
+            },
+            {
+                id: 6,
+                question: "Quel fleuve est généralement reconnu comme le plus long du monde ?",
+                options: ["L'Amazone", "Le Congo", "Le Mississippi", "Le Nil"],
+                correct: 3,
+                explanation: "Le Nil est généralement reconnu comme le fleuve le plus long du monde avec environ 6 650 km. Il traverse 11 pays d'Afrique du Nord-Est avant de se jeter dans la Méditerranée en Égypte.",
+                source: "National Geographic — The Nile River."
+            },
+            {
+                id: 7,
+                question: "Quelle est la capitale de l'Australie ?",
+                options: ["Sydney", "Melbourne", "Brisbane", "Canberra"],
+                correct: 3,
+                explanation: "Canberra est la capitale fédérale de l'Australie depuis 1913. Elle a été construite spécialement comme capitale après la rivalité entre Sydney et Melbourne. Sa population est d'environ 460 000 habitants.",
+                source: "Australian Bureau of Statistics — National capital profile."
+            },
+            {
+                id: 8,
+                question: "Quelle montagne est la plus haute du monde ?",
+                options: ["K2", "Kangchenjunga", "Mont Blanc", "Everest"],
+                correct: 3,
+                explanation: "L'Everest culmine à 8 849 mètres d'altitude (mesure 2020), en faisant la plus haute montagne du monde. Il se situe dans l'Himalaya, à la frontière entre le Népal et la Chine (Tibet).",
+                source: "National Geographic Society — Mount Everest updated elevation 8,849m (2020)."
+            },
+            {
+                id: 9,
+                question: "Quelle est la capitale du Japon ?",
+                options: ["Osaka", "Kyoto", "Hiroshima", "Tokyo"],
+                correct: 3,
+                explanation: "Tokyo est la capitale du Japon et la plus grande aire métropolitaine du monde avec environ 37 millions d'habitants. Elle est le centre politique, économique et culturel du pays.",
+                source: "Statistics Bureau of Japan — Tokyo Metropolitan Area 2023."
+            },
+            {
+                id: 10,
+                question: "Quel pays a la plus grande superficie du monde ?",
+                options: ["Le Canada", "Les États-Unis", "La Chine", "La Russie"],
+                correct: 3,
+                explanation: "La Russie est le plus grand pays du monde avec 17,1 millions de km², couvrant 11 fuseaux horaires de l'Europe à l'extrême est de l'Asie.",
+                source: "Rosstat — Statistiques officielles de la Fédération de Russie."
+            },
+            {
+                id: 11,
+                question: "Quel fleuve traverse Paris ?",
+                options: ["La Loire", "La Garonne", "Le Rhône", "La Seine"],
+                correct: 3,
+                explanation: "La Seine traverse Paris sur environ 13 km. Elle mesure 775 km au total, prenant sa source en Côte-d'Or et se jetant dans la Manche à l'estuaire du Havre.",
+                source: "DRIEAT — Agence de l'eau Seine-Normandie."
+            },
+            {
+                id: 12,
+                question: "Quel est le plus petit pays du monde ?",
+                options: ["Monaco", "San Marin", "Nauru", "Le Vatican"],
+                correct: 3,
+                explanation: "Le Vatican est le plus petit État souverain du monde avec seulement 0,44 km² et environ 800 habitants permanents. Enclavé dans Rome, c'est le siège de l'Église catholique.",
+                source: "Holy See — Statistiques officielles du Vatican."
+            },
+            {
+                id: 13,
+                question: "Quelle est la capitale du Brésil ?",
+                options: ["Rio de Janeiro", "São Paulo", "Salvador", "Brasília"],
+                correct: 3,
+                explanation: "Brasília est la capitale du Brésil depuis 1960, construite de toutes pièces en 41 mois pour remplacer Rio de Janeiro. Elle est classée au patrimoine mondial de l'UNESCO.",
+                source: "IBGE — Instituto Brasileiro de Geografia e Estatística."
+            },
+            {
+                id: 14,
+                question: "Dans quel pays se trouve la Tour Eiffel ?",
+                options: ["Belgique", "Italie", "Suisse", "France"],
+                correct: 3,
+                explanation: "La Tour Eiffel est située à Paris, France. Construite en 1889 pour l'Exposition Universelle, elle mesure 330 mètres et est le monument le plus visité du monde avec environ 7 millions de visiteurs par an.",
+                source: "Société d'Exploitation de la Tour Eiffel (SETE)."
+            },
+            {
+                id: 15,
+                question: "Quel pays compte le plus grand nombre d'habitants ?",
+                options: ["La Chine", "Les États-Unis", "L'Indonésie", "L'Inde"],
+                correct: 3,
+                explanation: "L'Inde est devenue le pays le plus peuplé du monde en 2023 avec environ 1,43 milliard d'habitants, dépassant la Chine (1,41 milliard).",
+                source: "ONU — World Population Prospects 2023, UNFPA."
+            },
+            {
+                id: 16,
+                question: "Quelle mer sépare l'Europe du sud de l'Afrique du nord ?",
+                options: ["La Mer Rouge", "La Mer Noire", "La Méditerranée", "La Mer du Nord"],
+                correct: 2,
+                explanation: "La Mer Méditerranée sépare l'Europe du sud de l'Afrique du nord. Elle couvre environ 2,5 millions de km² et est bordée par 21 pays.",
+                source: "UNEP/MAP — Mediterranean Sea geography."
+            },
+            {
+                id: 17,
+                question: "Quelle est la capitale de l'Allemagne ?",
+                options: ["Munich", "Hambourg", "Francfort", "Berlin"],
+                correct: 3,
+                explanation: "Berlin est la capitale et la plus grande ville d'Allemagne avec environ 3,7 millions d'habitants. Divisée par le Mur de Berlin de 1961 à 1989, elle est redevenue la capitale de l'Allemagne réunifiée en 1990.",
+                source: "Statistisches Bundesamt — Bevölkerungszahlen 2023."
+            },
+            {
+                id: 18,
+                question: "Sur quel continent se trouve le Brésil ?",
+                options: ["Amérique Centrale", "Afrique", "Amérique du Nord", "Amérique du Sud"],
+                correct: 3,
+                explanation: "Le Brésil est le plus grand pays d'Amérique du Sud et le 5e plus grand du monde avec 8,5 millions de km². Il représente environ 47% de la surface totale de l'Amérique du Sud.",
+                source: "IBGE — Instituto Brasileiro de Geografia e Estatística."
+            },
+            {
+                id: 19,
+                question: "Quel détroit sépare l'Europe de l'Afrique ?",
+                options: ["Détroit de Malacca", "Détroit de Magellan", "Détroit de Gibraltar", "Détroit du Bosphore"],
+                correct: 2,
+                explanation: "Le détroit de Gibraltar sépare la péninsule Ibérique (Europe) du Maroc (Afrique), ne mesurant que 14 km à son point le plus étroit. Il relie la Méditerranée à l'Atlantique.",
+                source: "International Hydrographic Organization — Strait of Gibraltar."
+            },
+            {
+                id: 20,
+                question: "Dans quel pays se trouve la Grande Muraille ?",
+                options: ["Japon", "Corée du Sud", "Mongolie", "Chine"],
+                correct: 3,
+                explanation: "La Grande Muraille de Chine s'étend sur environ 21 196 km selon les relevés officiels de 2012. Construite principalement sous la dynastie Ming, c'est l'une des merveilles de l'architecture humaine.",
+                source: "National Cultural Heritage Administration of China — 2012 official survey."
+            },
+            {
+                id: 21,
+                question: "Quelle est la capitale de l'Argentine ?",
+                options: ["Santiago", "Montevideo", "Lima", "Buenos Aires"],
+                correct: 3,
+                explanation: "Buenos Aires est la capitale et la plus grande ville d'Argentine avec environ 3 millions d'habitants intramuros (16 millions en zone métropolitaine).",
+                source: "INDEC — Instituto Nacional de Estadística y Censos Argentina."
+            },
+            {
+                id: 22,
+                question: "Quel est le plus grand pays d'Afrique par superficie ?",
+                options: ["La RD Congo", "Le Soudan du Sud", "La Libye", "L'Algérie"],
+                correct: 3,
+                explanation: "L'Algérie est le plus grand pays d'Afrique avec 2,38 millions de km², depuis la partition du Soudan en 2011. Plus de 85% de son territoire est désertique (Sahara).",
+                source: "Office National des Statistiques Algérie — Superficie territoriale."
+            },
+            {
+                id: 23,
+                question: "Quel pays partage ses frontières avec le plus grand nombre de voisins ?",
+                options: ["La Russie", "La Chine", "Le Brésil", "L'Allemagne"],
+                correct: 1,
+                explanation: "La Chine partage ses frontières terrestres avec 14 pays : Russie, Kazakhstan, Kirghizistan, Tadjikistan, Afghanistan, Pakistan, Inde, Népal, Bhoutan, Myanmar, Laos, Vietnam, Mongolie et Corée du Nord. La Russie est aussi à 14 voisins.",
+                source: "CIA World Factbook — China / Russia borders."
+            },
+            {
+                id: 24,
+                question: "Quelle est la capitale du Canada ?",
+                options: ["Toronto", "Vancouver", "Montréal", "Ottawa"],
+                correct: 3,
+                explanation: "Ottawa est la capitale fédérale du Canada depuis 1857. Avec environ 1 million d'habitants, c'est la quatrième ville du Canada. Toronto est la plus grande ville.",
+                source: "Statistics Canada — Ottawa Census 2021."
+            },
+            {
+                id: 25,
+                question: "Sur quel continent se trouve l'Égypte ?",
+                options: ["Asie", "Europe", "Moyen-Orient", "Afrique"],
+                correct: 3,
+                explanation: "L'Égypte est un pays transcontinental : la quasi-totalité de son territoire (99%) est en Afrique, mais la péninsule du Sinaï est géographiquement en Asie. La capitale Le Caire est en Afrique.",
+                source: "United Nations — Egyptian Arab Republic country profile."
+            },
+            {
+                id: 26,
+                question: "Quel est le plus long fleuve d'Amérique du Sud ?",
+                options: ["Le Paraná", "L'Orénoque", "Le Rio de la Plata", "L'Amazone"],
+                correct: 3,
+                explanation: "L'Amazone est le plus long fleuve d'Amérique du Sud (environ 6 400 km) et le plus puissant du monde en débit. Son bassin versant de 7 millions de km² abrite la plus grande forêt tropicale.",
+                source: "National Geographic — Amazon River geography."
+            },
+            {
+                id: 27,
+                question: "Quelle est la capitale de la Chine ?",
+                options: ["Shanghai", "Guangzhou", "Shenzhen", "Pékin"],
+                correct: 3,
+                explanation: "Pékin (Beijing) est la capitale de la République populaire de Chine depuis 1949. Avec environ 22 millions d'habitants, c'est l'un des centres politiques et culturels les plus importants d'Asie.",
+                source: "National Bureau of Statistics of China — Beijing population 2020."
+            },
+            {
+                id: 28,
+                question: "Dans quel pays se trouve le Machu Picchu ?",
+                options: ["Bolivie", "Équateur", "Colombie", "Pérou"],
+                correct: 3,
+                explanation: "Le Machu Picchu est une cité inca du XVe siècle, située dans les Andes péruviennes à 2 430 mètres d'altitude. Redécouverte en 1911, elle est classée au patrimoine mondial de l'UNESCO.",
+                source: "UNESCO World Heritage — Machu Picchu Historic Sanctuary."
+            },
+            {
+                id: 29,
+                question: "Quel est le plus grand lac d'eau douce du monde par superficie ?",
+                options: ["Lac Titicaca", "Lac Baïkal", "Mer Caspienne", "Lac Supérieur"],
+                correct: 3,
+                explanation: "Le Lac Supérieur (entre les États-Unis et le Canada) est le plus grand lac d'eau douce du monde par superficie avec 82 100 km². Le Lac Baïkal est le plus profond (1 642 m) et contient le plus grand volume.",
+                source: "Great Lakes Information Network — Lake Superior statistics."
+            },
+            {
+                id: 30,
+                question: "Quelle est la capitale de l'Italie ?",
+                options: ["Milan", "Naples", "Florence", "Rome"],
+                correct: 3,
+                explanation: "Rome est la capitale de l'Italie avec environ 2,8 millions d'habitants. Surnommée la 'Ville Éternelle', elle accueille aussi le Vatican, le plus petit État du monde.",
+                source: "ISTAT — Istituto Nazionale di Statistica Italia."
+            },
+            {
+                id: 101,
+                type: "vrai_faux",
+                question: "L'Australie est à la fois un pays et un continent.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! L'Australie est unique en étant le seul pays à occuper un continent entier. L'Australie est le 6e plus grand pays du monde par superficie.",
+                source: "National Geographic Society — Australia as a continent."
+            },
+            {
+                id: 102,
+                type: "vrai_faux",
+                question: "L'équateur passe par le Brésil.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! L'équateur (latitude 0°) traverse le nord du Brésil, notamment par l'État d'Amapá. La ville brésilienne de Macapá est construite exactement sur la ligne équatoriale.",
+                source: "IBGE — Localização geográfica do Brasil — Equador."
+            },
+            {
+                id: 103,
+                type: "vrai_faux",
+                question: "La Russie est le pays avec le plus grand nombre de fuseaux horaires.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! La Russie s'étend sur 11 fuseaux horaires, de UTC+2 à UTC+12. Si on inclut les territoires d'outre-mer, la France atteint 12 fuseaux, mais en territoire continu c'est bien la Russie.",
+                source: "Russian Federal Agency on Technical Regulating — Time zones Russia."
+            }
+        ],
+        moyen: [
+            {
+                id: 11,
+                question: "Quel pays possède le plus long littoral maritime du monde ?",
+                options: ["La Russie", "L'Australie", "Les États-Unis", "Le Canada"],
+                correct: 3,
+                explanation: "Le Canada possède le littoral le plus long du monde avec environ 202 000 km de côtes, incluant les îles. Ce littoral est influencé par trois océans : l'Atlantique, le Pacifique et l'Arctique.",
+                source: "Natural Resources Canada — Canadian coastline statistics."
+            },
+            {
+                id: 12,
+                question: "Dans quelle chaîne de montagnes se trouve l'Everest ?",
+                options: ["Les Andes", "Le Caucase", "Les Alpes", "L'Himalaya"],
+                correct: 3,
+                explanation: "L'Everest fait partie de l'Himalaya, la plus haute chaîne de montagnes du monde, s'étendant sur 2 400 km à travers le Pakistan, l'Inde, le Népal, la Chine et le Bhoutan.",
+                source: "National Geographic — Himalaya mountain range."
+            },
+            {
+                id: 13,
+                question: "Quel est le pays le plus densément peuplé (hors micro-états) ?",
+                options: ["Les Pays-Bas", "La Corée du Sud", "Le Bangladesh", "Taiwan"],
+                correct: 2,
+                explanation: "Le Bangladesh est le pays le plus densément peuplé (hors micro-États) avec environ 1 300 habitants/km². Ses 147 000 km² abritent environ 170 millions de personnes.",
+                source: "Bangladesh Bureau of Statistics — Population and Housing Census 2022."
+            },
+            {
+                id: 14,
+                question: "Quel détroit sépare l'Asie de l'Amérique du Nord ?",
+                options: ["Détroit de Béring", "Détroit de Malacca", "Détroit de Drake", "Détroit de Magellan"],
+                correct: 0,
+                explanation: "Le détroit de Béring sépare la Russie de l'Alaska sur seulement 85 km. Durant les glaciations, ce détroit était une terre émergée (Béringie) qui a permis la migration humaine vers les Amériques.",
+                source: "NOAA — Bering Strait oceanographic data."
+            },
+            {
+                id: 15,
+                question: "Quelle capitale européenne est la plus à l'est ?",
+                options: ["La capitale de Finlande", "La capitale de Grèce", "La capitale de Bulgarie", "La capitale de Chypre"],
+                correct: 3,
+                explanation: "Nicosie (Lefkosia), capitale de Chypre, est la capitale européenne la plus à l'est, à environ 33°36' de longitude Est. Chypre est géographiquement en Asie mais politiquement membre de l'Union Européenne.",
+                source: "Eurostat — European capitals geolocation data."
+            },
+            {
+                id: 16,
+                question: "Quel est le plus grand archipel du monde ?",
+                options: ["Les Philippines", "Le Japon", "Les Maldives", "L'Indonésie"],
+                correct: 3,
+                explanation: "L'Indonésie est le plus grand archipel du monde avec environ 17 000 îles, dont 6 000 sont habitées. Il s'étend sur 5 000 km d'est en ouest. L'Indonésie est le 4e pays le plus peuplé du monde.",
+                source: "Badan Informasi Geospasial — Indonesia's official island count."
+            },
+            {
+                id: 17,
+                question: "Quel canal maritime relie la Méditerranée à la Mer Rouge ?",
+                options: ["Canal de Panama", "Canal de Kiel", "Canal de Suez", "Canal du Mozambique"],
+                correct: 2,
+                explanation: "Le canal de Suez, inauguré en 1869, relie la Méditerranée à la Mer Rouge via l'Égypte. Long de 193 km, il permet d'éviter le contournement de l'Afrique, réduisant le trajet Europe-Asie de 7 000 km.",
+                source: "Suez Canal Authority — Canal statistics and history."
+            },
+            {
+                id: 18,
+                question: "Quelle est la capitale de la Turquie ?",
+                options: ["Istanbul", "Izmir", "Bursa", "Ankara"],
+                correct: 3,
+                explanation: "Ankara est la capitale de la Turquie depuis 1923, choisie par Mustafa Kemal Atatürk pour sa position centrale. Istanbul (11 millions d'hab.) est bien plus grande mais n'est pas la capitale politique.",
+                source: "TÜİK — Türkiye İstatistik Kurumu, Ankara city data."
+            },
+            {
+                id: 19,
+                question: "Quel est le point le plus bas de la surface terrestre ?",
+                options: ["La Mer Morte", "Le Lac Assal", "La dépression de Qattara", "La dépression de Turpan"],
+                correct: 0,
+                explanation: "La Mer Morte (entre Israël, la Palestine et la Jordanie) est le point le plus bas à environ 430 mètres sous le niveau de la mer. Sa forte salinité (~34%) permet de flotter facilement.",
+                source: "Survey of Israel / Jordanian Department of Lands — Dead Sea elevation."
+            },
+            {
+                id: 20,
+                question: "Quel pays européen a le plus grand nombre de pays voisins ?",
+                options: ["La France", "La Suisse", "L'Allemagne", "L'Autriche"],
+                correct: 2,
+                explanation: "L'Allemagne partage ses frontières avec 9 pays : Danemark, Pays-Bas, Belgique, Luxembourg, France, Suisse, Autriche, République Tchèque et Pologne. C'est le pays européen avec le plus de voisins terrestres.",
+                source: "Federal Agency for Civic Education (BpB) — German borders."
+            },
+            {
+                id: 21,
+                question: "Dans quel pays se trouve la ville de Dubaï ?",
+                options: ["Arabie Saoudite", "Qatar", "Bahreïn", "Émirats Arabes Unis"],
+                correct: 3,
+                explanation: "Dubaï est la plus grande ville des Émirats Arabes Unis (EAU), un pays fédéral du Golfe Persique composé de 7 émirats. Abou Dhabi est la capitale fédérale. Dubaï compte environ 3,5 millions d'habitants.",
+                source: "Dubai Statistics Center — Population 2023."
+            },
+            {
+                id: 22,
+                question: "Quel est l'océan situé entre l'Afrique et l'Australie ?",
+                options: ["Océan Atlantique", "Océan Pacifique", "Océan Indien", "Océan Austral"],
+                correct: 2,
+                explanation: "L'Océan Indien s'étend entre l'Afrique à l'ouest, l'Asie au nord et l'Australie à l'est. C'est le troisième plus grand océan du monde avec environ 70 millions de km².",
+                source: "IHO — International Hydrographic Organization, Indian Ocean."
+            },
+            {
+                id: 23,
+                question: "Quel pays hispanique est enclavé, sans accès à la mer ?",
+                options: ["L'Équateur", "La Bolivie", "Le Paraguay", "Le Pérou"],
+                correct: 1,
+                explanation: "La Bolivie est l'un des deux pays enclavés d'Amérique du Sud (avec le Paraguay). Elle a perdu son accès à la mer en 1884 après la Guerre du Pacifique contre le Chili et revendique toujours un couloir maritime.",
+                source: "CIA World Factbook — Bolivia geography."
+            },
+            {
+                id: 24,
+                question: "Quelle mer intérieure turque sépare l'Europe de l'Asie ?",
+                options: ["Mer Noire", "Mer Égée", "Mer Caspienne", "Mer de Marmara"],
+                correct: 3,
+                explanation: "La Mer de Marmara est une mer intérieure turque qui sépare la partie européenne de la partie asiatique de la Turquie. Elle est connectée à la Mer Noire via le Bosphore et à la Mer Égée via les Dardanelles.",
+                source: "IHO — Sea of Marmara, Turkey maritime geography."
+            },
+            {
+                id: 25,
+                question: "Dans quelle ville se trouve le Colisée antique ?",
+                options: ["Athènes", "Naples", "Florence", "Rome"],
+                correct: 3,
+                explanation: "Le Colisée est un amphithéâtre construit à Rome entre 70 et 80 après J.-C. Pouvant accueillir 50 000 à 80 000 spectateurs, c'est le plus grand amphithéâtre de l'histoire romaine.",
+                source: "Soprintendenza Speciale per il Colosseo — History and architecture."
+            },
+            {
+                id: 201,
+                type: "vrai_faux",
+                question: "Le Portugal est le pays d'Europe continentale le plus à l'ouest.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! Le Cap Roca (Cabo da Roca), situé à l'ouest de Lisbonne au Portugal, est le point le plus occidental de l'Europe continentale à 9°30' de longitude Ouest.",
+                source: "Instituto Geográfico Português — Cabo da Roca coordinates."
+            },
+            {
+                id: 202,
+                type: "vrai_faux",
+                question: "Le Panama est le seul endroit où on peut voir le soleil se lever sur le Pacifique et se coucher sur l'Atlantique.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! L'isthme de Panama est orienté d'est en ouest, ce qui fait que la côte Pacifique est légèrement à l'est. Depuis certains points élevés du Panama, on peut observer ce phénomène unique.",
+                source: "Smithsonian Tropical Research Institute — Panama isthmus geography."
+            },
+            {
+                id: 203,
+                type: "vrai_faux",
+                question: "L'Afrique est le continent qui possède le plus grand nombre de pays.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! L'Afrique compte 54 États souverains reconnus par l'ONU, soit le plus grand nombre de pays d'un continent. Elle représente environ 20% de la surface terrestre.",
+                source: "African Union — Member States list, 54 countries."
+            }
+        ],
+        difficile: [
+            {
+                id: 31,
+                question: "Quel courant océanique réchauffe le climat de l'Europe du Nord-Ouest ?",
+                options: ["Le courant de Benguela", "Le courant du Labrador", "Le Gulf Stream", "El Niño"],
+                correct: 2,
+                explanation: "Le Gulf Stream est un puissant courant marin chaud transportant des eaux tièdes du Golfe du Mexique vers l'Europe du Nord-Ouest. Il explique pourquoi Londres (51°N) a un climat bien plus doux que Calgary (51°N) au Canada.",
+                source: "NOAA — Gulf Stream and North Atlantic circulation."
+            },
+            {
+                id: 32,
+                question: "Quelle est la capitale de la Mongolie ?",
+                options: ["Almaty", "Oulan-Bator", "Bishkek", "Douchanbé"],
+                correct: 1,
+                explanation: "Oulan-Bator (Ulaanbaatar) est la capitale de Mongolie, regroupant environ 45% de la population totale. C'est la capitale nationale la plus froide du monde avec une température moyenne annuelle de -1,3°C.",
+                source: "National Statistics Office of Mongolia — Ulaanbaatar census data."
+            },
+            {
+                id: 33,
+                question: "Quels pays revendiquent le territoire du Cachemire ?",
+                options: ["L'Inde et le Pakistan uniquement", "L'Inde, le Pakistan et la Chine", "Le Pakistan et l'Afghanistan", "L'Inde et la Chine uniquement"],
+                correct: 1,
+                explanation: "Le Cachemire est disputé entre l'Inde, le Pakistan et dans une moindre mesure la Chine. L'Inde contrôle le Jammu-et-Cachemire, le Pakistan contrôle l'Azad Cachemire, la Chine contrôle l'Aksai Chin.",
+                source: "UN Security Council — Kashmir dispute resolutions."
+            },
+            {
+                id: 34,
+                question: "Quelle est la capitale gouvernementale la plus haute en altitude ?",
+                options: ["Katmandou (Népal)", "Addis-Abeba (Éthiopie)", "La Paz (Bolivie)", "Quito (Équateur)"],
+                correct: 2,
+                explanation: "La Paz (siège du gouvernement bolivien) est la capitale gouvernementale la plus haute du monde à 3 640 mètres d'altitude. Sucre est la capitale constitutionnelle officielle. Quito culmine à 2 850 m.",
+                source: "INE Bolivia — La Paz altitude and demographics."
+            },
+            {
+                id: 35,
+                question: "Qu'est-ce que le phénomène El Niño ?",
+                options: ["Une tempête tropicale récurrente", "Un refroidissement du Pacifique Nord", "Un réchauffement anormal du Pacifique équatorial est", "Un courant froid côtier sud-américain"],
+                correct: 2,
+                explanation: "El Niño est un réchauffement anormal des eaux de surface de l'océan Pacifique tropical est, survenant tous les 2 à 7 ans. Il perturbe les régimes de pluie et de sécheresse à l'échelle mondiale.",
+                source: "WMO — El Niño/La Niña Update, World Meteorological Organization."
+            },
+            {
+                id: 36,
+                question: "Quel est le plus grand désert froid du monde ?",
+                options: ["Le désert de Gobi", "Le désert de Patagonie", "Le Grand Bassin américain", "L'Antarctique"],
+                correct: 3,
+                explanation: "L'Antarctique est le plus grand désert du monde (froid et chaud confondus) avec 14,2 millions de km². Un désert est défini par ses très faibles précipitations (<250 mm/an).",
+                source: "British Antarctic Survey — Antarctic Desert classification."
+            },
+            {
+                id: 37,
+                question: "Combien de pays sont sans accès à la mer (enclavés) dans le monde ?",
+                options: ["28", "32", "44", "57"],
+                correct: 2,
+                explanation: "Il existe 44 pays enclavés dans le monde (16 en Afrique, 12 en Europe, 10 en Asie, 2 en Amérique du Sud). Le Liechtenstein et l'Ouzbékistan sont doublement enclavés (entourés de pays enclavés).",
+                source: "UNCTAD — List of landlocked developing countries."
+            },
+            {
+                id: 38,
+                question: "Quelle est la ville la plus peuplée d'Afrique ?",
+                options: ["Johannesburg", "Kinshasa", "Lagos", "Le Caire"],
+                correct: 2,
+                explanation: "Lagos est la ville la plus peuplée d'Afrique avec environ 15 à 24 millions d'habitants en aire métropolitaine. C'est le principal centre économique du Nigeria, pays le plus peuplé d'Afrique.",
+                source: "UN World Urbanization Prospects 2023 — Lagos metropolitan area."
+            },
+            {
+                id: 39,
+                question: "Sur quelle plaque tectonique repose la majeure partie de l'Amérique du Nord ?",
+                options: ["Plaque Pacifique", "Plaque Caraïbe", "Plaque Nord-Américaine", "Plaque Eurasienne"],
+                correct: 2,
+                explanation: "La plaque nord-américaine couvre l'Amérique du Nord, le Groenland et une partie de l'Asie du Nord-Est. Sa collision avec la plaque Pacifique provoque tremblements de terre en Californie et éruptions volcaniques.",
+                source: "USGS — Tectonic plates and boundaries."
+            },
+            {
+                id: 40,
+                question: "Quelle mer borde l'ouest de l'île de Bornéo ?",
+                options: ["Mer de Chine Méridionale", "Mer de Java", "Mer de Célèbes", "Mer de Banda"],
+                correct: 0,
+                explanation: "L'île de Bornéo (3e plus grande île du monde) est bordée à l'ouest et au nord par la Mer de Chine Méridionale. Elle est partagée entre l'Indonésie (Kalimantan), la Malaisie (Sarawak, Sabah) et le Brunei.",
+                source: "National Geographic — Borneo island geography."
+            },
+            {
+                id: 301,
+                type: "vrai_faux",
+                question: "Le Groenland est le plus grand pays insulaire souverain du monde.",
+                options: ["Vrai", "Faux"],
+                correct: 1,
+                explanation: "Faux ! Le Groenland est la plus grande île du monde (2,16 millions de km²) mais ce n'est pas un pays souverain : c'est un territoire autonome du Danemark. Le plus grand pays insulaire souverain est l'Indonésie.",
+                source: "Statistics Greenland — Greenland as Danish autonomous territory."
+            },
+            {
+                id: 302,
+                type: "vrai_faux",
+                question: "La capitale de l'Australie est Sydney.",
+                options: ["Vrai", "Faux"],
+                correct: 1,
+                explanation: "Faux ! La capitale de l'Australie est Canberra, et non Sydney. Canberra a été choisie comme compromis entre Sydney et Melbourne. Sydney est la plus grande ville australienne avec 5,3 millions d'habitants.",
+                source: "Australian Bureau of Statistics — National capital."
+            },
+            {
+                id: 303,
+                type: "vrai_faux",
+                question: "L'Oural est la chaîne de montagnes qui marque la frontière traditionnelle entre l'Europe et l'Asie.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! L'Oural est la frontière géographique conventionnelle entre l'Europe et l'Asie. Cette frontière suit les monts Oural du nord au sud, puis le fleuve Oural, la mer Caspienne et le Caucase. La Russie est donc transcontinentale.",
+                source: "Royal Geographical Society — Europe-Asia boundary convention."
+            }
+        ]
+    },
+
+    histoireFrance: {
+        title: "Histoire de France",
+        description: "Rois, révolutions, guerres et grands personnages de l'histoire française",
+        facile: [
+            {
+                id: 1,
+                question: "En quelle année a eu lieu la Révolution française ?",
+                options: ["1769", "1789", "1799", "1815"],
+                correct: 1,
+                explanation: "La Révolution française débute en 1789, avec la prise de la Bastille le 14 juillet. Elle marque la fin de l'Ancien Régime et de la monarchie absolue, et pose les bases des valeurs républicaines de Liberté, Égalité, Fraternité.",
+                source: "Furet F. & Ozouf M. — Dictionnaire critique de la Révolution française, Flammarion, 1988."
+            },
+            {
+                id: 2,
+                question: "Qui était Napoléon Bonaparte ?",
+                options: ["Un roi de France", "Un général devenu Empereur des Français", "Un philosophe des Lumières", "Un cardinal de l'Église catholique"],
+                correct: 1,
+                explanation: "Napoléon Bonaparte (1769-1821) est un général corse qui prit le pouvoir lors du coup d'État du 18 Brumaire (1799) et se proclama Empereur des Français en 1804. Il réforma profondément la France (Code civil, lycées, Banque de France) et conquit une grande partie de l'Europe.",
+                source: "Tulard J. — Napoléon ou le mythe du sauveur, Fayard, 1977."
+            },
+            {
+                id: 3,
+                question: "Quel est le symbole de la Révolution française resté emblème de la France ?",
+                options: ["La croix de Lorraine", "La Bastille", "La Tour Eiffel", "Marianne"],
+                correct: 3,
+                explanation: "Marianne est le symbole officiel de la République française depuis la Révolution. Elle représente la liberté et la raison. Son buste orne toutes les mairies de France et elle figure sur les timbres et pièces de monnaie.",
+                source: "Agulhon M. — Marianne au combat, Flammarion, 1979."
+            },
+            {
+                id: 4,
+                question: "Qui était Jeanne d'Arc ?",
+                options: ["Une reine de France", "Une sainte qui aida à chasser les Anglais", "Une philosophe du Moyen Âge", "Une exploratrice française"],
+                correct: 1,
+                explanation: "Jeanne d'Arc (1412-1431) est une paysanne lorraine qui, guidée selon elle par des voix divines, contribua à renverser le cours de la Guerre de Cent Ans en menant le siège d'Orléans en 1429. Capturée, elle fut brûlée vive à Rouen et canonisée en 1920.",
+                source: "Pernoud R. & Clin M.-V. — Jeanne d'Arc, Fayard, 1986."
+            },
+            {
+                id: 5,
+                question: "Quel roi était surnommé le 'Roi-Soleil' ?",
+                options: ["Louis XIII", "Louis XIV", "Louis XV", "Louis XVI"],
+                correct: 1,
+                explanation: "Louis XIV (1638-1715) est surnommé le 'Roi-Soleil' car il choisit le soleil comme emblème et centralisa tout le pouvoir autour de sa personne. Son règne de 72 ans est le plus long de l'histoire de France. Il fit bâtir le château de Versailles.",
+                source: "Bluche F. — Louis XIV, Fayard, 1986."
+            },
+            {
+                id: 6,
+                question: "Quelle est la devise de la République française ?",
+                options: ["Honneur et Patrie", "Dieu et mon droit", "Liberté, Égalité, Fraternité", "Un pour tous, tous pour un"],
+                correct: 2,
+                explanation: "« Liberté, Égalité, Fraternité » est la devise de la République française, inscrite dans la Constitution. Née de la Révolution de 1789, elle fut officiellement adoptée sous la IIIe République. Elle figure sur les bâtiments officiels et les documents d'État.",
+                source: "Constitution française du 4 octobre 1958, article 2."
+            },
+            {
+                id: 7,
+                question: "En quelle année la Tour Eiffel a-t-elle été construite ?",
+                options: ["1869", "1879", "1889", "1899"],
+                correct: 2,
+                explanation: "La Tour Eiffel fut construite par Gustave Eiffel pour l'Exposition Universelle de Paris de 1889, qui célébrait le centenaire de la Révolution française. Elle mesurait à l'époque 300 mètres et était la plus haute structure du monde.",
+                source: "Société d'Exploitation de la Tour Eiffel — Histoire de la construction."
+            },
+            {
+                id: 8,
+                question: "Qui a fondé la Ve République française ?",
+                options: ["Georges Pompidou", "Charles de Gaulle", "François Mitterrand", "Valéry Giscard d'Estaing"],
+                correct: 1,
+                explanation: "Charles de Gaulle (1890-1970) a fondé la Ve République en 1958, lors de la crise algérienne. Il en rédigea la Constitution avec Michel Debré, instituant un régime semi-présidentiel fort. Il en fut le premier président jusqu'en 1969.",
+                source: "Lacouture J. — De Gaulle, Tome 2 : Le politique, Seuil, 1985."
+            },
+            {
+                id: 9,
+                question: "Quelle bataille de 1815 marqua la défaite définitive de Napoléon ?",
+                options: ["Bataille d'Austerlitz", "Bataille de Trafalgar", "Bataille de Waterloo", "Bataille de Borodino"],
+                correct: 2,
+                explanation: "La bataille de Waterloo (18 juin 1815, en Belgique actuelle) vit Napoléon battu par les armées britannique de Wellington et prussienne de Blücher. Cette défaite entraîna sa seconde abdication et son exil définitif à Sainte-Hélène.",
+                source: "Houssaye H. — 1815 : Waterloo, Perrin, réédition 2003."
+            },
+            {
+                id: 10,
+                question: "Quel événement se commémore le 11 novembre en France ?",
+                options: ["La fin de la Révolution française", "La fin de la Seconde Guerre mondiale", "L'armistice de la Première Guerre mondiale", "La fondation de la République"],
+                correct: 2,
+                explanation: "Le 11 novembre 1918, l'armistice mit fin à la Première Guerre mondiale (1914-1918). La France perdit environ 1,4 million de soldats. Ce jour est férié en France et donne lieu à des cérémonies devant les monuments aux morts.",
+                source: "Ministère des Armées — Journée du 11 novembre, commémorations officielles."
+            },
+            {
+                id: 11,
+                question: "Où résidait la cour royale de France aux XVIIe et XVIIIe siècles ?",
+                options: ["Au Louvre à Paris", "Au château de Versailles", "Au château de Chambord", "Au Palais-Royal"],
+                correct: 1,
+                explanation: "Louis XIV installa définitivement la cour royale à Versailles en 1682. Le château de Versailles devint le centre du pouvoir politique et social français jusqu'à la Révolution de 1789, quand Louis XVI fut contraint de revenir à Paris.",
+                source: "Château de Versailles — Histoire du château et de la cour royale."
+            },
+            {
+                id: 12,
+                question: "Quel est le prénom de Napoléon Bonaparte ?",
+                options: ["Auguste", "Napoléon", "Jean-Baptiste", "Louis"],
+                correct: 1,
+                explanation: "Napoléon Bonaparte s'appelait bien Napoléon — son prénom complet était Napoleone di Buonaparte, corse d'origine, francisé en Napoléon Bonaparte après 1796. Il était le deuxième enfant de Carlo et Letizia Ramolino.",
+                source: "Tulard J. — Dictionnaire Napoléon, Fayard, 1999."
+            },
+            {
+                id: 13,
+                question: "Qui était le dernier roi de France avant la Révolution ?",
+                options: ["Louis XIII", "Louis XIV", "Louis XV", "Louis XVI"],
+                correct: 3,
+                explanation: "Louis XVI (1754-1793) fut le dernier roi de France de l'Ancien Régime. Il fut guillotiné le 21 janvier 1793 place de la Révolution (aujourd'hui place de la Concorde) à Paris, après avoir été jugé et condamné à mort par la Convention nationale.",
+                source: "Hardman J. — Louis XVI, Yale University Press, 1993."
+            },
+            {
+                id: 14,
+                question: "Quelle est la fête nationale française ?",
+                options: ["Le 1er mai", "Le 8 mai", "Le 14 juillet", "Le 11 novembre"],
+                correct: 2,
+                explanation: "Le 14 juillet est la fête nationale française. Il commémore la prise de la Bastille le 14 juillet 1789 et la Fête de la Fédération du 14 juillet 1790. Il est célébré par un défilé militaire sur les Champs-Élysées et des feux d'artifice.",
+                source: "Loi du 6 juillet 1880 instituant le 14 juillet comme fête nationale."
+            },
+            {
+                id: 15,
+                question: "Quel général a lancé l'Appel du 18 juin 1940 ?",
+                options: ["Philippe Pétain", "Maxime Weygand", "Charles de Gaulle", "Jean Moulin"],
+                correct: 2,
+                explanation: "Le 18 juin 1940, depuis Londres sur la BBC, Charles de Gaulle lança un appel à la résistance contre l'Allemagne nazie, refusant l'armistice signé par Pétain. Cet appel est considéré comme l'acte fondateur de la France Libre.",
+                source: "Fondation Charles de Gaulle — L'Appel du 18 juin 1940."
+            },
+            {
+                id: 101,
+                type: "vrai_faux",
+                question: "La Marseillaise a été composée pendant la Révolution française.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! La Marseillaise fut composée dans la nuit du 25 au 26 avril 1792 par Claude Joseph Rouget de Lisle à Strasbourg, sous le titre 'Chant de guerre pour l'armée du Rhin'. Elle est devenue l'hymne national français en 1795.",
+                source: "Ministère de la Culture — Histoire de la Marseillaise."
+            },
+            {
+                id: 102,
+                type: "vrai_faux",
+                question: "Napoléon Bonaparte est né en France métropolitaine.",
+                options: ["Vrai", "Faux"],
+                correct: 1,
+                explanation: "Faux ! Napoléon Bonaparte est né le 15 août 1769 à Ajaccio, en Corse — une île qui venait d'être cédée à la France par la République de Gênes seulement un an plus tôt, en 1768. Il était donc de naissance corse.",
+                source: "Masson F. — Napoléon et sa famille, Goupil, 1897."
+            },
+            {
+                id: 103,
+                type: "vrai_faux",
+                question: "La France est le pays qui a eu le plus de présidents sous la Ve République.",
+                options: ["Vrai", "Faux"],
+                correct: 1,
+                explanation: "Faux ! Cette affirmation n'a pas de sens comparatif. Sous la Ve République (depuis 1958), la France a eu 8 présidents : de Gaulle, Pompidou, Giscard d'Estaing, Mitterrand, Chirac, Sarkozy, Hollande et Macron.",
+                source: "Conseil constitutionnel — Liste des présidents de la Ve République."
+            }
+        ],
+        moyen: [
+            {
+                id: 11,
+                question: "Quel traité mit fin à la Guerre de Cent Ans ?",
+                options: ["Traité de Brétigny", "Traité de Paris", "Traité de Picquigny", "Traité de Troyes"],
+                correct: 2,
+                explanation: "La Guerre de Cent Ans (1337-1453) prit fin de facto avec la bataille de Castillon (1453), et diplomatiquement avec le traité de Picquigny en 1475, qui consolida la reconquête française. La France récupéra la quasi-totalité de ses territoires, à l'exception de Calais.",
+                source: "Contamine P. — La Guerre de Cent Ans, PUF, Que sais-je ?, 2002."
+            },
+            {
+                id: 12,
+                question: "Quelle est la signification du 'Serment du Jeu de Paume' (1789) ?",
+                options: ["L'engagement des nobles à soutenir le roi", "Le refus des députés du Tiers État de se disperser", "La déclaration de guerre à l'Autriche", "L'abolition des privilèges de la noblesse"],
+                correct: 1,
+                explanation: "Le 20 juin 1789, les députés du Tiers État, exclus de la salle de réunion des États Généraux, se réunirent dans la salle du Jeu de Paume et jurèrent de ne pas se séparer avant d'avoir donné une Constitution à la France. C'est un acte fondateur de la Révolution.",
+                source: "Vovelle M. — La Révolution française, Armand Colin, 1992."
+            },
+            {
+                id: 13,
+                question: "Quel roi de France fut sacré à Reims par Jeanne d'Arc en 1429 ?",
+                options: ["Charles VI", "Charles VII", "Louis XI", "Charles VIII"],
+                correct: 1,
+                explanation: "Charles VII (1403-1461) fut sacré roi de France à Reims le 17 juillet 1429, grâce aux victoires militaires menées par Jeanne d'Arc. Ce sacre légitima son règne face aux Anglais et aux Bourguignons qui reconnaissaient Henri VI d'Angleterre.",
+                source: "Beaune C. — Jeanne d'Arc, Perrin, 2004."
+            },
+            {
+                id: 14,
+                question: "Quelle guerre civile et religieuse divisa la France au XVIe siècle ?",
+                options: ["Les guerres de la Fronde", "La guerre des Armagnacs", "Les guerres de Religion", "La guerre de la Ligue"],
+                correct: 2,
+                explanation: "Les guerres de Religion (1562-1598) opposèrent catholiques et protestants (Huguenots) en France. Elles comprirent des événements comme la Saint-Barthélemy (1572) et se terminèrent avec l'Édit de Nantes signé par Henri IV, accordant la liberté de culte aux protestants.",
+                source: "Jouanna A. — La France du XVIe siècle, PUF, 1996."
+            },
+            {
+                id: 15,
+                question: "Qui était Jean Moulin ?",
+                options: ["Un général de la Première Guerre mondiale", "Le chef de la Résistance française en zone occupée", "Un premier ministre de la IVe République", "Un résistant communiste fusillé en 1940"],
+                correct: 1,
+                explanation: "Jean Moulin (1899-1943) fut préfet républicain et principal organisateur de la Résistance intérieure française. Envoyé par de Gaulle, il unifia les mouvements de résistance en créant le Conseil National de la Résistance (CNR) en 1943. Arrêté par la Gestapo, il mourut sous la torture.",
+                source: "Cordier D. — Jean Moulin, la République des catacombes, Gallimard, 1999."
+            },
+            {
+                id: 16,
+                question: "Sous quel régime la France était-elle gouvernée de 1940 à 1944 ?",
+                options: ["La IIIe République", "L'État français (régime de Vichy)", "La France Libre", "La IVe République"],
+                correct: 1,
+                explanation: "De 1940 à 1944, la France non occupée était gouvernée par l'État français, dit 'régime de Vichy', sous l'autorité du maréchal Philippe Pétain. Ce régime collabora avec l'Allemagne nazie, notamment en participant à la déportation de Juifs de France.",
+                source: "Paxton R.O. — La France de Vichy, Seuil, 1973."
+            },
+            {
+                id: 17,
+                question: "Quel événement historique est à l'origine de la construction du canal de Suez par Ferdinand de Lesseps ?",
+                options: ["La demande du khédive égyptien", "Une décision de l'ONU", "Un accord franco-britannique", "Une initiative de Napoléon III"],
+                correct: 0,
+                explanation: "C'est le khédive (vice-roi) d'Égypte Saïd Pacha qui accorda en 1854 la concession à Ferdinand de Lesseps pour creuser le canal. Inauguré en 1869, le canal appartint à la Compagnie universelle du canal maritime de Suez jusqu'à sa nationalisation par Nasser en 1956.",
+                source: "Karabell Z. — Parting the Desert: The Creation of the Suez Canal, Knopf, 2003."
+            },
+            {
+                id: 18,
+                question: "Quelle affaire politico-judiciaire déchira la France à la fin du XIXe siècle ?",
+                options: ["L'affaire Dreyfus", "L'affaire Stavisky", "L'affaire des Fiches", "L'affaire Panama"],
+                correct: 0,
+                explanation: "L'affaire Dreyfus (1894-1906) est une crise politique majeure. Le capitaine Alfred Dreyfus, juif alsacien, fut injustement condamné pour espionnage. Elle divisa profondément la France entre dreyfusards et antidreyfusards, révélant l'antisémitisme et les failles de l'institution militaire.",
+                source: "Duclert V. — L'affaire Dreyfus, La Découverte, 1994."
+            },
+            {
+                id: 19,
+                question: "En quelle année la France abolit-elle l'esclavage définitivement ?",
+                options: ["1794", "1815", "1848", "1905"],
+                correct: 2,
+                explanation: "L'esclavage fut définitivement aboli en France et dans ses colonies par le décret du 27 avril 1848, sous la IIe République, à l'initiative de Victor Schoelcher. Une première abolition avait eu lieu en 1794 sous la Convention, mais Napoléon l'avait rétabli en 1802.",
+                source: "Schoelcher V. — Des colonies françaises : abolition immédiate de l'esclavage, 1842."
+            },
+            {
+                id: 20,
+                question: "Quel roi mit fin aux guerres de Religion en signant l'Édit de Nantes ?",
+                options: ["François Ier", "Charles IX", "Henri III", "Henri IV"],
+                correct: 3,
+                explanation: "Henri IV (1553-1610), ancien chef protestant converti au catholicisme, signa l'Édit de Nantes en 1598, accordant aux protestants la liberté de culte et des places de sûreté. Cet édit mit fin aux guerres de Religion qui ravageaient la France depuis 1562.",
+                source: "Babelon J.-P. — Henri IV, Fayard, 1982."
+            },
+            {
+                id: 201,
+                type: "vrai_faux",
+                question: "La guillotine a été inventée par le médecin Joseph-Ignace Guillotin.",
+                options: ["Vrai", "Faux"],
+                correct: 1,
+                explanation: "Faux ! Joseph-Ignace Guillotin a proposé l'usage d'une machine à décapiter pour humaniser les exécutions, mais ne l'a pas inventée. L'appareil fut conçu par Antoine Louis et fabriqué par Tobias Schmidt. Guillotin s'opposa même à ce que son nom y soit associé.",
+                source: "Kershaw A. — Guillotine: Its Legend and Lore, Doubleday, 1958."
+            },
+            {
+                id: 202,
+                type: "vrai_faux",
+                question: "Louis XIV a dit 'L'État, c'est moi'.",
+                options: ["Vrai", "Faux"],
+                correct: 1,
+                explanation: "Faux ! Cette célèbre formule est très probablement apocryphe. Les historiens n'ont trouvé aucune source contemporaine attestant que Louis XIV l'ait prononcée. Elle semble avoir été inventée après sa mort pour symboliser l'absolutisme royal.",
+                source: "Bluche F. — Louis XIV, Fayard, 1986 — note sur les citations apocryphes."
+            },
+            {
+                id: 203,
+                type: "vrai_faux",
+                question: "La Première Guerre mondiale a causé plus de morts français que la Seconde.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! La Première Guerre mondiale fit environ 1,4 million de morts militaires français (et 300 000 civils). La Seconde Guerre mondiale causa environ 600 000 morts français toutes causes confondues. La Grande Guerre fut proportionnellement dévastatrice pour la France.",
+                source: "Audoin-Rouzeau S. & Becker A. — 14-18 : retrouver la Guerre, Gallimard, 2000."
+            }
+        ],
+        difficile: [
+            {
+                id: 31,
+                question: "Quel traité de 843 divisa l'Empire carolingien entre les fils de Louis le Pieux ?",
+                options: ["Traité de Verdun", "Traité de Mersen", "Traité de Ribemont", "Traité de Meersen"],
+                correct: 0,
+                explanation: "Le traité de Verdun (843) divisa l'Empire carolingien entre les trois fils de Louis le Pieux : Charles le Chauve reçut la Francia Occidentalis (future France), Louis le Germanique la Francia Orientalis (future Allemagne), et Lothaire le titre impérial avec la Francie médiane.",
+                source: "Le Jan R. — La société du haut Moyen Âge, VIe-IXe siècle, Armand Colin, 2003."
+            },
+            {
+                id: 32,
+                question: "Qu'est-ce que la 'Nuit du 4 août 1789' ?",
+                options: ["La prise de la Bastille", "L'abolition des privilèges féodaux", "L'adoption de la Déclaration des droits de l'homme", "L'exécution de Louis XVI"],
+                correct: 1,
+                explanation: "Dans la nuit du 4 au 5 août 1789, l'Assemblée nationale constituante vota dans l'enthousiasme l'abolition des privilèges féodaux : corvées, droits seigneuriaux, dîme ecclésiastique. C'est l'un des actes les plus radicaux de la Révolution, mettant fin à l'Ancien Régime.",
+                source: "Soboul A. — La Révolution française, Gallimard, 1982."
+            },
+            {
+                id: 33,
+                question: "Quel Premier ministre français signa les accords d'Évian mettant fin à la guerre d'Algérie ?",
+                options: ["Michel Debré", "Georges Pompidou", "Louis Joxe", "Michel Rocard"],
+                correct: 2,
+                explanation: "Les accords d'Évian furent signés le 18 mars 1962 entre le gouvernement français et le FLN algérien. La délégation française était conduite par Louis Joxe, ministre des Affaires algériennes. Ils mirent fin à une guerre de 8 ans (1954-1962) qui avait causé plus de 400 000 morts.",
+                source: "Stora B. — La gangrène et l'oubli, La Découverte, 1991."
+            },
+            {
+                id: 34,
+                question: "Quelle crise de 1968 faillit renverser de Gaulle ?",
+                options: ["La crise du Canal de Suez", "Mai 68 — grèves et contestation étudiante", "Le putsch des généraux", "La crise des missiles de Cuba"],
+                correct: 1,
+                explanation: "Mai 68 est une crise sociale et politique majeure débutée par des mouvements étudiants et amplifiée par une grève générale de 10 millions de travailleurs. De Gaulle, isolé, envisagea d'abdiquer mais se ressaisit. Il dissout l'Assemblée et gagna les élections, mais démissionna en 1969.",
+                source: "Damamme D. et al. — Mai-juin 68, Éditions de l'Atelier, 2008."
+            },
+            {
+                id: 35,
+                question: "Qui était Robespierre et quel fut son sort ?",
+                options: ["Un général guillotiné à Waterloo", "Un révolutionnaire guillotiné lors de Thermidor", "Un député royaliste exilé", "Un ministre de Louis XVI emprisonné"],
+                correct: 1,
+                explanation: "Maximilien de Robespierre (1758-1794) fut l'un des leaders de la Révolution et dirigea le Comité de Salut public durant la Terreur (1793-1794). Il fut renversé lors du coup d'État du 9 Thermidor an II (27 juillet 1794) et guillotiné le lendemain avec ses alliés.",
+                source: "Scurr R. — Fatal Purity: Robespierre and the French Revolution, Metropolitan Books, 2006."
+            },
+            {
+                id: 36,
+                question: "Quelle est la signification du 'Code Napoléon' promulgué en 1804 ?",
+                options: ["Un code militaire de l'armée impériale", "Un recueil de lois civiles unifiant le droit français", "La constitution de l'Empire napoléonien", "Un traité diplomatique avec la Prusse"],
+                correct: 1,
+                explanation: "Le Code civil (dit 'Code Napoléon') promulgué en 1804 unifia les multiples droits régionaux de France en un seul système juridique cohérent. Il codifiait le droit des personnes, de la famille et de la propriété. Son influence s'étendit dans toute l'Europe et le monde entier.",
+                source: "Arnaud A.-J. — Les origines doctrinales du Code civil français, LGDJ, 1969."
+            },
+            {
+                id: 37,
+                question: "Quel événement mit fin à la IIIe République en 1940 ?",
+                options: ["Un coup d'État militaire", "Le vote des pleins pouvoirs à Pétain par l'Assemblée", "L'invasion allemande de Paris", "L'abdication du président Lebrun"],
+                correct: 1,
+                explanation: "Le 10 juillet 1940, les parlementaires réunis à Vichy votèrent (569 pour, 80 contre) les pleins pouvoirs constituants au maréchal Pétain, mettant fin légalement à la IIIe République. Les 80 parlementaires qui refusèrent sont restés dans l'histoire comme les 'héros du refus'.",
+                source: "Azéma J.-P. — De Munich à la Libération, Seuil, 1979."
+            },
+            {
+                id: 38,
+                question: "Qu'est-ce que la loi de séparation de l'Église et de l'État de 1905 établit en France ?",
+                options: ["L'interdiction des religions", "La laïcité comme principe constitutionnel", "Le financement public des cultes", "L'expulsion des congrégations religieuses"],
+                correct: 1,
+                explanation: "La loi du 9 décembre 1905 sépara officiellement l'Église de l'État en France, mettant fin au Concordat de 1801. Elle établit la laïcité : l'État ne reconnaît ni ne finance aucun culte. Elle garantit la liberté de conscience tout en retirant toute influence officielle des religions sur l'État.",
+                source: "Baubérot J. — Histoire de la laïcité en France, PUF, Que sais-je ?, 2000."
+            },
+            {
+                id: 39,
+                question: "Quelle est la bataille de 1214 où Philippe Auguste consolida le royaume de France ?",
+                options: ["Bataille de Hastings", "Bataille de Bouvines", "Bataille de Crécy", "Bataille de Poitiers"],
+                correct: 1,
+                explanation: "La bataille de Bouvines (27 juillet 1214) vit Philippe Auguste II de France vaincre une coalition menée par l'Empereur germanique Otton IV, le roi d'Angleterre Jean sans Terre et les comtes de Flandre et de Boulogne. Cette victoire consolida l'autorité royale et l'unité du royaume capétien.",
+                source: "Duby G. — Le dimanche de Bouvines, Gallimard, 1973."
+            },
+            {
+                id: 40,
+                question: "Quel philosophe des Lumières écrivit 'Du Contrat social' (1762), influençant la Révolution française ?",
+                options: ["Voltaire", "Diderot", "Montesquieu", "Jean-Jacques Rousseau"],
+                correct: 3,
+                explanation: "Jean-Jacques Rousseau (1712-1778) publia 'Du Contrat social' en 1762, théorisant la souveraineté du peuple et la volonté générale. Ces idées influencèrent profondément les révolutionnaires de 1789, notamment la Déclaration des droits de l'homme.",
+                source: "Rousseau J.-J. — Du Contrat social, Marc-Michel Rey, Amsterdam, 1762."
+            },
+            {
+                id: 301,
+                type: "vrai_faux",
+                question: "La France a été le premier pays à abolir la monarchie en Europe.",
+                options: ["Vrai", "Faux"],
+                correct: 1,
+                explanation: "Faux ! La France n'est pas le premier pays à abolir la monarchie. La République de Saint-Marin existe depuis 1243. La Suisse confédérale n'a jamais eu de roi. En Europe moderne, le Portugal (1910), la Turquie ottomane (1922) et d'autres ont suivi des trajectoires très différentes.",
+                source: "Duverger M. — Les régimes politiques, PUF, 1948."
+            },
+            {
+                id: 302,
+                type: "vrai_faux",
+                question: "Napoléon a vendu la Louisiane aux États-Unis en 1803.",
+                options: ["Vrai", "Faux"],
+                correct: 0,
+                explanation: "Vrai ! En 1803, Napoléon vendit le territoire de la Louisiane (2,1 millions de km²) aux États-Unis pour 15 millions de dollars, doublant ainsi la superficie des États-Unis. Il avait besoin de fonds pour financer ses guerres et avait renoncé à son projet américain après la défaite à Saint-Domingue.",
+                source: "Kastor P. — The Nation's Crucible: The Louisiana Purchase, Yale University Press, 2004."
+            },
+            {
+                id: 303,
+                type: "vrai_faux",
+                question: "La France est le pays qui a le plus de sites classés au patrimoine mondial de l'UNESCO en Europe.",
+                options: ["Vrai", "Faux"],
+                correct: 1,
+                explanation: "Faux ! L'Italie est le pays qui possède le plus grand nombre de sites classés au patrimoine mondial de l'UNESCO (58 sites en 2023), devant la Chine (57) et l'Allemagne (52). La France en compte 52, à égalité avec l'Allemagne et l'Iran.",
+                source: "UNESCO World Heritage Centre — World Heritage List statistics 2023."
+            }
+        ]
     }
 };

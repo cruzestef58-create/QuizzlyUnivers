@@ -747,6 +747,18 @@ const categories = {
             { icon: '🫀', title: 'Le Corps Humain', desc: 'Anatomie, physiologie et biologie — des organes aux cellules.', url: 'quiz-corps-humain.html' },
         ]
     },
+    geographie: {
+        label: '🌍 Géographie',
+        quizzes: [
+            { icon: '🌍', title: 'Géographie Mondiale', desc: 'Capitales, pays, fleuves, reliefs et géopolitique — partez à la conquête du monde.', url: 'quiz-geographie.html' },
+        ]
+    },
+    histoire: {
+        label: '🇫🇷 Histoire',
+        quizzes: [
+            { icon: '⚜️', title: 'Histoire de France', desc: 'Rois, révolutions, guerres et grands personnages qui ont forgé l\'identité française.', url: 'quiz-histoire-france.html' },
+        ]
+    },
     filmsseries: {
         label: '🎬 Films & Séries',
         quizzes: [
@@ -1034,3 +1046,29 @@ function startQuizCorpsHumain(difficulty) {
     nextBtn.onclick = () => quizManager.nextQuestion();
 }
 window.startQuizCorpsHumain = startQuizCorpsHumain;
+
+function startQuizGeographie(difficulty) {
+    document.getElementById('difficulty-selection').style.display = 'none';
+    document.getElementById('quiz-container').style.display = 'block';
+
+    const quizData = quizzesData.geographie;
+    quizManager = new QuizManager(quizData, difficulty);
+    quizManager.init();
+
+    const nextBtn = document.getElementById('next-button');
+    nextBtn.onclick = () => quizManager.nextQuestion();
+}
+window.startQuizGeographie = startQuizGeographie;
+
+function startQuizHistoireFrance(difficulty) {
+    document.getElementById('difficulty-selection').style.display = 'none';
+    document.getElementById('quiz-container').style.display = 'block';
+
+    const quizData = quizzesData.histoireFrance;
+    quizManager = new QuizManager(quizData, difficulty);
+    quizManager.init();
+
+    const nextBtn = document.getElementById('next-button');
+    nextBtn.onclick = () => quizManager.nextQuestion();
+}
+window.startQuizHistoireFrance = startQuizHistoireFrance;
